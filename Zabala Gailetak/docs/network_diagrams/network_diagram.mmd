@@ -1,0 +1,64 @@
+graph TD
+    %% Definición de Estilos
+    classDef internet fill:#fff,stroke:#333,stroke-width:2px;
+    classDef firewall fill:#f96,stroke:#333,stroke-width:2px;
+    classDef it_zone fill:#d5e8d4,stroke:#82b366,stroke-width:1px;
+    classDef dmz_zone fill:#fff2cc,stroke:#d6b656,stroke-width:1px;
+    classDef ot_zone fill:#f8cecc,stroke:#b85450,stroke-width:1px;
+    classDef dmz_ot_zone fill:#ffe6cc,stroke:#d79b00,stroke-width:1px;
+
+    %% Nube de Internet
+    Internet((🌐 Internet)):::internet
+
+    %% Subgrafo U1
+    subgraph U1 [Perímetro U1]
+        PA1[🔥 Palo Alto Firewall]:::firewall
+        
+        subgraph U1_Nodes [Servicios IT]
+            DMZ_IT[🖥️ DMZ IT]:::dmz_zone
+            IT_Erab[🖥️ IT-Erab AD]:::it_zone
+            IT_Sis[🖥️ IT-Sis UniFi]:::dmz_zone
+        end
+    end
+
+    %% Subgrafo EG
+    subgraph EG [Perímetro EG]
+        PA2[🔥 Palo Alto Firewall]:::firewall
+        MT[Router MikroTik]
+        
+        subgraph EG_IT [Zona IT / VLANs]
+            V128[VLAN 128: Erabiltzaileak - AD]:::it_zone
+            V160[VLAN 160: Interenpresa - DB]:::it_zone
+            V191[VLAN 191: Sistemak]:::it_zone
+            Wifi((📶 AP Ubiquiti))
+        end
+
+        FG[🔥 Fortigate Firewall]:::firewall
+
+        subgraph DMZ_OT_Zone [DMZ OT]
+            AV[👁️ AlienVault OSSIM]:::dmz_ot_zone
+        end
+
+        subgraph OT_Critical [Zona OT]
+            PLC[📟 PLCs / Node-RED]:::ot_zone
+            Ignition[⚙️ SCADA / Ignition]:::ot_zone
+        end
+    end
+
+    %% Conexiones
+    Internet --- PA1
+    Internet --- PA2
+
+    PA1 --- DMZ_IT
+    PA1 --- IT_Erab
+    PA1 --- IT_Sis
+
+    PA2 --- MT
+    MT --- V128
+    MT --- V160
+    MT --- V191
+    MT --- Wifi
+    MT --- FG
+
+    FG --- DMZ_OT_Zone
+    FG --- OT_Critical
