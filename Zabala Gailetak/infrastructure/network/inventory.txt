@@ -1,0 +1,37 @@
+# Sare Azpiegitura Inbentarioa - Zabala Gailetak
+
+Dokumentu honek sareko gailu eta zerbitzari nagusiak zerrendatzen ditu, diseinatutako sare eskeman oinarrituta.
+
+## 1. Sare Gailuak
+| ID | Mota | Kokapena | Funtzioa | IP (Adibidea) |
+| :--- | :--- | :--- | :--- | :--- |
+| **FW-PERIM** | Suebaki Perimetrala | Sarrera (Edge) | Interneteko trafikoa iragazi, VPN, DMZ kudeaketa | 192.168.1.1 |
+| **FW-INT** | Barne Suebakia | IT/OT Muga | IT eta OT sareen arteko segmentazio zorrotza | 10.0.0.1 |
+| **SW-CORE** | Switch Core | CPD | Sare nagusiaren bizkarrezurra | 10.0.1.1 |
+| **SW-ACC-OFF** | Switch Sarbidea | Bulegoak | Administrazio eta Ikerketa ekipoak konektatu | 10.0.2.1 |
+| **SW-ACC-PROD** | Switch Industriala | Fabrika | OT gailuak konektatu (Gogortua) | 172.16.1.1 |
+| **WIFI-AP** | Sarbide Puntuak | Bulegoak/Fabrika | Langileen eta gonbidatuen Wi-Fia (VLAN bereiziak) | - |
+
+## 2. Zerbitzariak (IT)
+| Hostname | OS | Funtzioa | IP (Adibidea) |
+| :--- | :--- | :--- | :--- |
+| **SRV-DC01** | Windows Server | Domeinu Kontrolatzailea (AD), DNS, DHCP | 10.0.10.10 |
+| **SRV-ERP** | Linux/Windows | ERP Sistema eta Datu-basea | 10.0.10.20 |
+| **SRV-WEB** | Linux | Webgune publikoa eta E-commerce (DMZ-an egon beharko luke) | 192.168.2.10 |
+| **SRV-APP** | Linux | Mugikorreko App-aren API zerbitzaria | 10.0.10.30 |
+| **SRV-FILE** | Windows/Linux | Fitxategi zerbitzaria (Dokumentazioa, Diseinuak) | 10.0.10.40 |
+| **SRV-SIEM** | Linux | Logen bilketa eta segurtasun monitorizazioa | 10.0.10.50 |
+
+## 3. OT Kontrolagailuak
+*   **PLC-KNEAD-01/02:** Oratzeko makinak.
+*   **PLC-OVEN-01:** Labe nagusia.
+*   **SCADA-SRV:** Ekoizpen datuen zerbitzaria (OT Sarean).
+
+## 4. IP Planifikazioa (Segmentazioa)
+*   **DMZ:** 192.168.2.0/24 (Web zerbitzariak, Honeypot)
+*   **Erabiltzaileak (IT):** 10.0.20.0/24 (Bulegoak)
+*   **Zerbitzariak (IT):** 10.0.10.0/24
+*   **OT Sarea:** 172.16.0.0/16
+    *   *OT Kudeaketa:* 172.16.1.0/24
+    *   *OT Prozesua:* 172.16.2.0/24
+*   **Gonbidatuak:** 192.168.100.0/24 (Isolatuta)
