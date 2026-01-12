@@ -1,1387 +1,1077 @@
-# Data Subject Rights Procedures
-## Zabala Gailetak S.A. - GDPR Articles 15-22
+# Datu Interesdunen Eskubideen Prozedurak
+## Zabala Gailetak S.A. - GDPR 15-22 Artikuluak
 
-**Document ID:** DSR-001  
-**Version:** 1.0  
-**Date:** January 8, 2026  
-**Classification:** Internal Use  
-**Owner:** Data Protection Officer (DPO)  
-**Review Frequency:** Annual  
-**Next Review Date:** January 8, 2027
-
----
-
-## 1. Document Control
-
-### 1.1 Version History
-
-| Version | Date | Author | Changes |
-|---------|------|--------|---------|
-| 1.0 | 2026-01-08 | DPO | Initial procedure creation |
-
-### 1.2 Purpose
-
-This document establishes procedures for handling data subject rights requests under GDPR Articles 15-22. It ensures Zabala Gailetak responds to requests in a timely, compliant, and user-friendly manner.
-
-### 1.3 Scope
-
-These procedures apply to all requests from data subjects (customers, employees, suppliers, website visitors) exercising their GDPR rights.
+**Dokumentuaren IDa:** DSR-001  
+**Bertsioa:** 1.0  
+**Data:** 2026ko Urtarrilaren 8a  
+**Sailkapena:** Barne Erabilera  
+**Jabea:** Datuen Babeserako Ordezkaria (DBO/DPO)  
+**Berrikuspen Maiztasuna:** Urterokoa  
+**Hurrengo Berrikuspen Data:** 2027ko Urtarrilaren 8a
 
 ---
 
-## 2. Overview of Data Subject Rights
+## 1. Dokumentuaren Kontrola
 
-### 2.1 GDPR Rights Summary
+### 1.1 Bertsio Historia
 
-| Right | GDPR Article | Description | Timeline |
-|-------|--------------|-------------|----------|
-| **Right of Access** | Article 15 | Obtain confirmation of processing and copy of data | 1 month (extendable to 3 months) |
-| **Right to Rectification** | Article 16 | Correct inaccurate or incomplete data | 1 month (extendable to 3 months) |
-| **Right to Erasure ("Right to be Forgotten")** | Article 17 | Request deletion of personal data | 1 month (extendable to 3 months) |
-| **Right to Restriction** | Article 18 | Limit processing of personal data | 1 month (extendable to 3 months) |
-| **Right to Data Portability** | Article 20 | Receive data in structured, machine-readable format | 1 month (extendable to 3 months) |
-| **Right to Object** | Article 21 | Object to processing (especially for marketing) | 1 month (extendable to 3 months) |
-| **Rights Related to Automated Decision-Making** | Article 22 | Not be subject to automated decisions with significant effects | 1 month (extendable to 3 months) |
-| **Right to Withdraw Consent** | Article 7(3) | Withdraw consent at any time (where consent is legal basis) | Immediate |
+| Bertsioa | Data | Egilea | Aldaketak |
+|----------|------|--------|-----------|
+| 1.0 | 2026-01-08 | DPO | Hasierako prozeduraren sorrera |
 
-### 2.2 General Principles
+### 1.2 Helburua
 
-**Free of Charge:** Requests are free of charge unless manifestly unfounded, excessive, or repetitive (then reasonable fee or refusal permitted).
+Dokumentu honek GDPR 15-22 artikuluen araberako datu interesdunen eskubideen eskaerak kudeatzeko prozedurak ezartzen ditu. Zabala Gailetak-ek eskaerei garaiz, legedia betez eta erabilerraza den moduan erantzutea ziurtatzen du.
 
-**Response Timeline:** 1 month from receipt of request (extendable to 3 months for complex or numerous requests with notification to data subject).
+### 1.3 Esparrua
 
-**Verification:** Data subject identity must be verified before fulfilling request.
-
-**Communication:** Response in clear, plain language; same format as request (electronic if requested electronically).
-
-**No Discrimination:** Cannot refuse service or penalize data subjects for exercising rights.
+Prozedura hauek beren GDPR eskubideak erabiltzen dituzten datu interesdunen (bezeroak, langileak, hornitzaileak, webgune bisitariak) eskaera guztiei aplikatzen zaizkie.
 
 ---
 
-## 3. General Request Handling Procedures
+## 2. Datu Interesdunen Eskubideen Ikuspegi Orokorra
 
-### 3.1 Receiving Requests
+### 2.1 GDPR Eskubideen Laburpena
 
-**Request Channels:**
+| Eskubidea | GDPR Artikulua | Deskribapena | Epea |
+|-----------|----------------|----------------|------|
+| **Sartzeko Eskubidea** | 15. Artikulua | Tratamenduaren baieztapena eta datuen kopia lortu | Hilabete 1 (3 hilabetera luza daiteke) |
+| **Zuzentzeko Eskubidea** | 16. Artikulua | Datu okerrak edo osatu gabeak zuzendu | Hilabete 1 (3 hilabetera luza daiteke) |
+| **Ezabatzeko Eskubidea ("Ahaztua Izateko Eskubidea")** | 17. Artikulua | Datu pertsonalen ezabaketa eskatu | Hilabete 1 (3 hilabetera luza daiteke) |
+| **Mugatzeko Eskubidea** | 18. Artikulua | Datu pertsonalen tratamendua mugatu | Hilabete 1 (3 hilabetera luza daiteke) |
+| **Datuen Eramangarritasunerako Eskubidea** | 20. Artikulua | Datuak formatu egituratu eta irakurgarrian jaso | Hilabete 1 (3 hilabetera luza daiteke) |
+| **Aurka Egiteko Eskubidea** | 21. Artikulua | Tratamenduaren aurka egin (bereziki marketinerako) | Hilabete 1 (3 hilabetera luza daiteke) |
+| **Erabaki Automatizatuekin Lotutako Eskubideak** | 22. Artikulua | Ondorio esanguratsuak dituzten erabaki automatizatuen menpe ez egon | Hilabete 1 (3 hilabetera luza daiteke) |
+| **Baimena Kentzeko Eskubidea** | 7(3). Artikulua | Baimena edozein unetan kendu (baimena oinarri juridikoa denean) | Berehalakoa |
 
-Data subjects may submit requests via:
-- **Email:** dpo@zabalagailetak.com (primary)
-- **Web Form:** https://www.zabalagailetak.com/privacy/data-request
-- **Mail:** Data Protection Officer, Zabala Gailetak S.A., [Address], [City, Postal Code], Spain
-- **In-Person:** At our offices during business hours
-- **Phone:** +34 XXX XXX XXX (we will ask caller to confirm in writing)
+### 2.2 Printzipio Orokorrak
 
-**Who Can Receive Requests:**
+**Doakoa:** Eskaerak doakoak dira nabarmenki oinarrigabeak, gehiegizkoak edo errepikakorrak izan ezean (orduan arrazoizko tasa bat edo ezezkoa baimenduta dago).
 
-Any employee receiving a data subject rights request must immediately forward it to:
-- **Primary:** DPO at dpo@zabalagailetak.com
-- **CC:** CISO and Legal Counsel
+**Erantzun Epea:** Eskaera jasotzen denetik hilabete 1 (3 hilabetera luza daiteke eskaera konplexu edo ugarietarako, datu interesdunari jakinarazita).
 
-**Do not:**
-- Ignore or delay forwarding requests
-- Attempt to respond without DPO coordination
-- Request unnecessary information from data subject
+**Egiaztapena:** Datu interesdunaren identitatea egiaztatu behar da eskaera bete aurretik.
 
-### 3.2 Request Logging
+**Komunikazioa:** Erantzuna hizkuntza argi eta errazean; eskaeraren formatu berean (elektronikoa elektronikoki eskatzen bada).
 
-**All requests must be logged immediately upon receipt:**
+**Diskriminaziorik Ez:** Ezin da zerbitzua ukatu edo datu interesdunak zigortu eskubideak erabiltzeagatik.
 
-**Request Log Entry:**
+---
+
+## 3. Eskaerak Kudeatzeko Prozedura Orokorrak
+
+### 3.1 Eskaerak Jasotzea
+
+**Eskaera Kanalak:**
+
+Datu interesdunek eskaerak honela aurkez ditzakete:
+- **Emaila:** dpo@zabalagailetak.com (lehentasunezkoa)
+- **Web Inprimakia:** https://www.zabalagailetak.com/privacy/data-request
+- **Posta:** Datuen Babeserako Ordezkaria, Zabala Gailetak S.A., [Helbidea], [Herria, Posta Kodea], Espainia
+- **Aurrez Aurre:** Gure bulegoetan negozio orduetan
+- **Telefonoa:** +34 XXX XXX XXX (deitzaileari idatziz berresteko eskatuko diogu)
+
+**Nork Jaso Ditzake Eskaerak:**
+
+Datu interesdunen eskubideen eskaera bat jasotzen duen edozein langilek berehala birbidali behar dio:
+- **Lehentasuna:** DBOri dpo@zabalagailetak.com helbidean
+- **CC:** CISO eta Aholkulari Juridikoa
+
+**Ez egin:**
+- Eskaerak alde batera utzi edo atzeratu
+- DBOren koordinaziorik gabe erantzuten saiatu
+- Datu interesdunari beharrezkoa ez den informazioa eskatu
+
+### 3.2 Eskaera Erregistroa
+
+**Eskaera guztiak berehala erregistratu behar dira jaso ondoren:**
+
+**Eskaera Erregistro Sarrera:**
 
 ```
-Request ID: DSR-[YYYY]-[NNN]
-Date Received: [Date]
-Channel: [Email/Web/Mail/In-Person/Phone]
-Data Subject Name: [Name]
-Data Subject Contact: [Email/Phone]
-Data Subject Type: [Customer/Employee/Supplier/Other]
-Right Exercised: [Access/Rectification/Erasure/etc.]
-Request Details: [Brief summary]
-Assigned To: [DPO/Team Member]
-Status: [Received/Verification/Processing/Responded/Closed]
-Due Date: [1 month from receipt]
+Eskaera IDa: DSR-[UUUU]-[NNN]
+Jasotako Data: [Data]
+Kanala: [Emaila/Web/Posta/Aurrez Aurre/Telefonoa]
+Datu Interesdunaren Izena: [Izena]
+Datu Interesdunaren Kontaktua: [Emaila/Telefonoa]
+Datu Interesdun Mota: [Bezeroa/Langilea/Hornitzailea/Bestelakoa]
+Erabilitako Eskubidea: [Sarbidea/Zuzenketa/Ezabaketa/etab.]
+Eskaera Xehetasunak: [Laburpen laburra]
+Esleituta: [DBO/Taldekidea]
+Egoera: [Jasota/Egiaztapena/Prozesatzen/Erantzunda/Itxita]
+Epemuga: [Jasotzen denetik hilabete 1]
 ```
 
-**Request Log Location:** Secure database accessible only to DPO, CISO, Legal Counsel
+**Eskaera Erregistroaren Kokapena:** Datu-base segurua, soilik DBO, CISO eta Aholkulari Juridikoarentzat eskuragarria.
 
-### 3.3 Identity Verification
+### 3.3 Identitate Egiaztapena
 
-**Before fulfilling any request, verify data subject identity:**
+**Edozein eskaera bete aurretik, egiaztatu datu interesdunaren identitatea:**
 
-**Standard Verification (Low-Risk Requests):**
-- Request confirmation email to registered email address
-- Answer security questions (if account exists)
-- Provide recent order number or account information
+**Egiaztapen Estandarra (Arrisku Baxuko Eskaerak):**
+- Berrespen emaila eskatu erregistratutako email helbidera
+- Segurtasun galderei erantzun (kontua badago)
+- Azken eskaera zenbakia edo kontu informazioa eman
 
-**Enhanced Verification (High-Risk Requests - e.g., erasure, portability):**
-- Copy of government-issued ID (DNI, NIE, passport)
-- Video call verification
-- Notarized authorization (for representatives)
+**Egiaztapen Hobetua (Arrisku Handiko Eskaerak - adib., ezabaketa, eramangarritasuna):**
+- Gobernuak emandako NANaren kopia (DNI, NIE, pasaportea)
+- Bideo dei bidezko egiaztapena
+- Baimen notariala (ordezkarientzat)
 
-**Verification Process:**
+**Egiaztapen Prozesua:**
 
-1. Send verification request within 24 hours of receiving initial request
-2. Clearly explain why verification is necessary (security)
-3. Request only information necessary for verification
-4. Do not fulfill request until identity confirmed
-5. If data subject fails to verify within 30 days, close request with notification
+1. Bidali egiaztapen eskaera jatorrizko eskaera jaso eta 24 orduko epean
+2. Argi azaldu zergatik den beharrezkoa egiaztapena (segurtasuna)
+3. Egiaztapenerako beharrezkoa den informazioa soilik eskatu
+4. Ez bete eskaera identitatea baieztatu arte
+5. Datu interesdunak ez badu 30 egunetan egiaztatzen, itxi eskaera jakinarazpenarekin
 
-**Third-Party Requests:**
+**Hirugarrenen Eskaerak:**
 
-If someone other than the data subject makes the request (legal representative, parent of minor, executor of deceased):
-- Request proof of authority (power of attorney, guardianship papers, death certificate + will)
-- Verify identity of both representative and data subject
-- Document authorization in request log
+Datu interesduna ez den beste norbaitek eskaera egiten badu (legezko ordezkaria, adingabe baten gurasoa, hildakoaren betearazlea):
+- Agintaritza froga eskatu (ahalorde, tutoretza agiriak, heriotza ziurtagiria + testamentua)
+- Ordezkariaren eta datu interesdunaren identitatea egiaztatu
+- Baimena dokumentatu eskaera erregistroan
 
-### 3.4 Response Timeline Management
+### 3.4 Erantzun Epearen Kudeaketa
 
-**Standard Timeline:**
-- **Day 0:** Request received and logged
-- **Day 1:** Identity verification initiated
-- **Day 3-7:** Identity confirmed, request processing begins
-- **Day 20:** Internal reminder to DPO (10 days before deadline)
-- **Day 25:** Escalate if not yet resolved
-- **Day 28:** Final review and prepare response
-- **Day 30:** Response sent to data subject
+**Epe Estandarra:**
+- **0 Eguna:** Eskaera jaso eta erregistratu
+- **1. Eguna:** Identitate egiaztapena hasi
+- **3-7. Egunak:** Identitatea baieztatuta, eskaera prozesatzen hasi
+- **20. Eguna:** Barne oroigarria DBOri (epemuga baino 10 egun lehenago)
+- **25. Eguna:** Eskalatu oraindik ebatzi ez bada
+- **28. Eguna:** Azken berrikuspena eta erantzuna prestatu
+- **30. Eguna:** Erantzuna datu interesdunari bidali
 
-**Extension to 3 Months:**
+**3 Hilabetera Luzatzea:**
 
-If extension needed due to complexity or volume:
-1. Notify data subject within 1 month of receipt
-2. Explain reason for extension
-3. Provide new expected completion date
-4. Update request log with extension justification
+Konplexutasun edo bolumenagatik luzapena behar bada:
+1. Jakinarazi datu interesdunari jasotzen denetik hilabete 1eko epean
+2. Azaldu luzapenaren arrazoia
+3. Eman espero den osatze data berria
+4. Eguneratu eskaera erregistroa luzapen justifikazioarekin
 
-**Criteria for Extension:**
-- Request affects large volume of data
-- Technical complexity (data in multiple systems)
-- Need to consult with third parties
-- Numerous simultaneous requests from same data subject
+**Luzapen Irizpideak:**
+- Eskaerak datu bolumen handia hartzen du
+- Konplexutasun teknikoa (datuak sistema anitzetan)
+- Hirugarrenekin kontsultatu beharra
+- Datu interesdun beraren aldibereko eskaera ugari
 
-### 3.5 Fee Assessment
+### 3.5 Tasen Ebaluazioa
 
-**Free of Charge:** Default
+**Doakoa:** Lehenetsia
 
-**Fee May Be Charged If:**
-- Request is manifestly unfounded (no basis for claim)
-- Request is excessive (repetitive, unreasonable)
+**Tasa Kobratu Daiteke:**
+- Eskaera nabarmenki oinarrigabea bada (erreklamaziorako oinarririk gabe)
+- Eskaera gehiegizkoa bada (errepikakorra, arrazoigabea)
 
-**Fee Calculation:**
-- Based on administrative costs
-- Must be reasonable and documented
-- Provide cost breakdown to data subject
-- Obtain approval from Legal Counsel and DPO before charging
+**Tasa Kalkulua:**
+- Administrazio kostuetan oinarrituta
+- Arrazoizkoa eta dokumentatua izan behar da
+- Eman kostuen banakapena datu interesdunari
+- Lortu Aholkulari Juridikoaren eta DBOren onarpena kobratu aurretik
 
-**Refusal:**
-- If request is manifestly unfounded or excessive, may refuse instead of charging
-- Must provide justification to data subject
-- Inform of right to complain to AEPD and judicial remedy
+**Ezezkoa:**
+- Eskaera nabarmenki oinarrigabea edo gehiegizkoa bada, ukatu egin daiteke kobratu beharrean
+- Justifikazioa eman behar zaio datu interesdunari
+- AEPDri kexa jartzeko eta erremedio judiziala bilatzeko eskubideaz informatu
 
-### 3.6 Response Delivery
+### 3.6 Erantzun Bidalketa
 
-**Format:**
-- Same medium as request (email response to email request, letter to postal request)
-- Clear, plain language (avoid legal jargon)
-- Structured and easy to understand (use tables, lists, headings)
-- If extensive data, consider secure download link (password-protected)
+**Formatua:**
+- Eskaeraren bide bera (email erantzuna email eskaerari, gutuna posta eskaerari)
+- Hizkuntza argi eta erraza (saihestu jargon legala)
+- Egituratua eta ulerterraza (erabili taulak, zerrendak, izenburuak)
+- Datu zabalak badira, kontuan hartu deskarga esteka segurua (pasahitz bidez babestua)
 
-**Content:**
-- Reference to original request
-- Confirmation of action taken OR explanation of refusal
-- If applicable, information provided or data delivered
-- Inform of right to complain to AEPD
-- Inform of judicial remedy rights
+**Edukia:**
+- Jatorrizko eskaeraren erreferentzia
+- Hartutako ekintzaren baieztapena EDO ezezkoaren azalpena
+- Aplikagarria bada, emandako informazioa edo entregatutako datuak
+- AEPDri kexa jartzeko eskubideaz informatu
+- Erremedio judiziala bilatzeko eskubideaz informatu
 
-**Security:**
-- Do not send sensitive data via unencrypted email
-- Use secure transfer methods (encrypted email, secure portal, registered mail)
-- Verify delivery (read receipt, tracking)
+**Segurtasuna:**
+- Ez bidali datu sentikorrik enkriptatu gabeko email bidez
+- Erabili transferentzia metodo seguruak (enkriptatutako emaila, atari segurua, posta ziurtatua)
+- Egiaztatu bidalketa (irakurketa agiria, jarraipena)
 
 ---
 
-## 4. Right of Access (Article 15)
+## 4. Sartzeko Eskubidea (15. Artikulua)
 
-### 4.1 What Data Subjects Can Request
+### 4.1 Datu Interesdunek Eskatu Dezaketena
 
-Data subjects have the right to:
-1. **Confirmation:** Is their data being processed?
-2. **Copy of Data:** Free copy of personal data being processed
-3. **Additional Information:**
-   - Purposes of processing
-   - Categories of personal data
-   - Recipients or categories of recipients
-   - Retention period (or criteria to determine it)
-   - Rights to rectification, erasure, restriction, objection
-   - Right to complain to AEPD
-   - Source of data (if not collected from data subject)
-   - Existence of automated decision-making and logic involved
-   - Safeguards for international transfers (if applicable)
+Datu interesdunek eskubidea dute:
+1. **Baieztapena:** Haien datuak tratatzen ari al dira?
+2. **Datuen Kopia:** Tratatzen ari diren datu pertsonalen doako kopia
+3. **Informazio Gehigarria:**
+   - Tratamenduaren helburuak
+   - Datu pertsonalen kategoriak
+   - Hartzaileak edo hartzaile kategoriak
+   - Atxikipen epea (edo zehazteko irizpideak)
+   - Zuzentzeko, ezabatzeko, mugatzeko, aurka egiteko eskubideak
+   - AEPDri kexa jartzeko eskubidea
+   - Datuen iturria (datu interesdunarengandik bildu ez bada)
+   - Erabaki automatizatuen existentzia eta inplikatutako logika
+   - Nazioarteko transferentzietarako bermeak (aplikagarria bada)
 
-### 4.2 Processing Access Requests
+### 4.2 Sarbide Eskaerak Prozesatzea
 
-**Step 1: Search for Data**
+**1. Urratsa: Datuak Bilatu**
 
-Identify all systems and databases containing data subject's personal data:
-- **Customer Data:** CRM, order database, web application database
-- **Employee Data:** HR system, payroll, email, personnel files
-- **Supplier Data:** Procurement system, contracts database
-- **Marketing:** Email marketing platform, analytics
-- **Logs:** Access logs, audit logs, security logs
-- **Backups:** Note data in backups (but don't need to restore for access requests)
-- **Paper Records:** Physical files, archived documents
-- **Third Parties:** Data held by processors (request from them if necessary)
+Identifikatu datu interesdunaren datu pertsonalak dituzten sistema eta datu-base guztiak:
+- **Bezero Datuak:** CRM, eskaera datu-basea, web aplikazio datu-basea
+- **Langile Datuak:** Giza Baliabideetako sistema, nominak, emaila, langile fitxategiak
+- **Hornitzaile Datuak:** Kontratazio sistema, kontratuen datu-basea
+- **Marketina:** Email marketin plataforma, analitika
+- **Log-ak:** Sarbide log-ak, audit log-ak, segurtasun log-ak
+- **Babeskopiak:** Datuak babeskopietan daudela ohartarazi (baina ez da beharrezkoa leheneratu sarbide eskaeretarako)
+- **Paperezko Erregistroak:** Fitxategi fisikoak, artxibatutako dokumentuak
+- **Hirugarrenak:** Prozesatzaileek dituzten datuak (eskatu beharrezkoa bada)
 
-**Step 2: Compile Data**
+**2. Urratsa: Datuak Bildu**
 
-- Export data from each system
-- Organize by category (identification, contact, transaction, usage, etc.)
-- Remove data about other individuals (redact where necessary)
-- If volume is excessive, ask data subject to specify scope
+- Esportatu datuak sistema bakoitzetik
+- Kategoriaz antolatu (identifikazioa, kontaktua, transakzioa, erabilera, etab.)
+- Kendu beste pertsonei buruzko datuak (zentsuratu beharrezkoa bada)
+- Bolumena gehiegizkoa bada, eskatu datu interesdunari esparrua zehazteko
 
-**Step 3: Prepare Response Package**
+**3. Urratsa: Erantzun Paketea Prestatu**
 
-**Cover Letter Template:**
+**Aurkezpen Gutun Txantiloia:**
 
 ```
-Dear [Data Subject Name],
+Agur [Datu Interesdunaren Izena],
 
-Re: Data Subject Access Request - Reference: DSR-[YYYY]-[NNN]
+Gaia: Datu Interesdunaren Sarbide Eskaera - Erreferentzia: DSR-[UUUU]-[NNN]
 
-Thank you for your request dated [Date] to access your personal data held by Zabala Gailetak S.A.
+Eskerrik asko [Data]-n Zabala Gailetak S.A.-k dituen zure datu pertsonaletara sartzeko egindako eskaeragatik.
 
-We are pleased to provide you with the information requested below.
+Pozik gaude behean eskatutako informazioa emateaz.
 
-**1. CONFIRMATION**
-Yes, we are processing your personal data.
+**1. BAIEZTAPENA**
+Bai, zure datu pertsonalak tratatzen ari gara.
 
-**2. PERSONAL DATA CATEGORIES**
-We hold the following categories of personal data about you:
-- Identification Data: Name, email, phone, address
-- Transaction Data: Order history, payment information
-- [Add other categories as applicable]
+**2. DATU PERTSONALEN KATEGORIAK**
+Zuri buruzko honako datu pertsonal kategoria hauek ditugu:
+- Identifikazio Datuak: Izena, emaila, telefonoa, helbidea
+- Transakzio Datuak: Eskaera historia, ordainketa informazioa
+- [Gehitu beste kategoria batzuk aplikagarria bada]
 
-**3. PURPOSES OF PROCESSING**
-We process your data for the following purposes:
-- Order fulfillment and customer service
-- Marketing communications (with your consent)
-- [Add other purposes as applicable]
+**3. TRATAMENDU HELBURUAK**
+Zure datuak helburu hauetarako tratatzen ditugu:
+- Eskaera betetzea eta bezeroarentzako arreta
+- Marketin komunikazioak (zure baimenarekin)
+- [Gehitu beste helburu batzuk aplikagarria bada]
 
-**4. LEGAL BASIS**
-- Contract performance (order processing)
-- Consent (marketing communications)
-- [Add other legal bases as applicable]
+**4. OINARRI JURIDIKOA**
+- Kontratuaren betetzea (eskaera prozesatzea)
+- Baimena (marketin komunikazioak)
+- [Gehitu beste oinarri juridiko batzuk aplikagarria bada]
 
-**5. RECIPIENTS**
-Your data has been shared with:
-- Payment processor: [Name]
-- Shipping provider: [Name]
-- [Add other recipients as applicable]
+**5. HARTZAILEAK**
+Zure datuak hauekin partekatu dira:
+- Ordainketa prozesatzailea: [Izena]
+- Bidalketa hornitzailea: [Izena]
+- [Gehitu beste hartzaile batzuk aplikagarria bada]
 
-**6. RETENTION PERIOD**
-- Transaction data: 7 years (legal obligation for accounting)
-- Marketing data: Until consent withdrawn
-- [Add other retention periods as applicable]
+**6. ATXIKIPEN EPEA**
+- Transakzio datuak: 7 urte (lege obligazioa kontabilitaterako)
+- Marketin datuak: Baimena kendu arte
+- [Gehitu beste atxikipen epe batzuk aplikagarria bada]
 
-**7. YOUR RIGHTS**
-You have the right to:
-- Request rectification of inaccurate data
-- Request erasure of your data (subject to legal obligations)
-- Request restriction of processing
-- Object to processing (especially marketing)
-- Data portability
-- Lodge a complaint with AEPD (www.aepd.es)
+**7. ZURE ESKUBIDEAK**
+Eskubidea duzu:
+- Datu okerrak zuzentzea eskatzeko
+- Zure datuak ezabatzea eskatzeko (lege obligazioen menpe)
+- Tratamendua mugatzea eskatzeko
+- Tratamenduaren aurka egiteko (bereziki marketina)
+- Datuen eramangarritasuna
+- AEPDn kexa jartzeko (www.aepd.es)
 
-**8. DATA SOURCE**
-Your data was collected:
-- Directly from you (account registration, orders)
-- [Add other sources if applicable, e.g., "From public business registries"]
+**8. DATU ITURRIA**
+Zure datuak honela bildu ziren:
+- Zuzenean zuregandik (kontu erregistroa, eskaerak)
+- [Gehitu beste iturri batzuk aplikagarria bada, adib., "Enpresa erregistro publikoetatik"]
 
-**9. AUTOMATED DECISION-MAKING**
-[If applicable: We do not use automated decision-making or profiling with legal or significant effects]
-[OR: We use automated processing for [purpose]. The logic involves [explain]. You have the right to contest decisions and request human intervention.]
+**9. ERABAKI AUTOMATIZATUAK**
+[Aplikagarria bada: Ez dugu erabaki automatizaturik edo profilatzerik erabiltzen legezko edo eragin esanguratsuekin]
+[EDO: Prozesu automatizatua erabiltzen dugu [helburua]-rako. Logikak [azaldu] inplikatzen du. Erabakiak aurkaratzeko eta giza esku-hartzea eskatzeko eskubidea duzu.]
 
-**10. INTERNATIONAL TRANSFERS**
-[If applicable: Your data is transferred to [Country]. We ensure adequate protection through [Standard Contractual Clauses/other safeguard].]
+**10. NAZIOARTEKO TRANSFERENTZIAK**
+[Aplikagarria bada: Zure datuak [Herrialdea]-ra transferitzen dira. Babes egokia bermatzen dugu [Klausula Kontraktual Estandarrak/beste berme bat] bidez.]
 
-**11. YOUR DATA**
-Please find attached a copy of your personal data in [format - PDF/CSV/JSON].
+**11. ZURE DATUAK**
+Mesedez, aurkitu erantsita zure datu pertsonalen kopia bat [formatua - PDF/CSV/JSON] formatuan.
 
-[If extensive data: Your data is available for secure download at [URL] using password: [Password]. This link expires on [Date].]
+[Datu zabalak badira: Zure datuak deskarga segururako eskuragarri daude [URL] helbidean pasahitz hau erabiliz: [Pasahitza]. Esteka hau [Data]-n iraungiko da.]
 
-If you have any questions or wish to exercise any other rights, please contact us at dpo@zabalagailetak.com.
+Galderarik baduzu edo beste eskubideren bat erabili nahi baduzu, jarri harremanetan gurekin dpo@zabalagailetak.com helbidean.
 
-Sincerely,
+Adeitasunez,
 
-[DPO Name]
-Data Protection Officer
+[DBO Izena]
+Datuen Babeserako Ordezkaria
 Zabala Gailetak S.A.
 
-Date: [Date]
+Data: [Data]
 ```
 
-**Data Attachment Format:**
+**Datu Eranskinaren Formatua:**
 
-Provide data in clear, understandable format:
-- **PDF:** Structured tables with clear labels
-- **CSV/Excel:** For structured data (orders, transactions)
-- **JSON:** If requested or for technical users
+Eman datuak formatu argi eta ulergarrian:
+- **PDF:** Egituratutako taulak etiketa argiekin
+- **CSV/Excel:** Datu egituratuetarako (eskaerak, transakzioak)
+- **JSON:** Eskatzen bada edo erabiltzaile teknikoentzat
 
-**Example Data Structure (Customer):**
+**Adibidezko Datu Egitura (Bezeroa):**
 
 ```
-===== PERSONAL INFORMATION =====
-Name: Juan García López
-Email: juan.garcia@example.com
-Phone: +34 XXX XXX XXX
-Address: Calle Example, 123, 28001 Madrid, Spain
-Date of Birth: 1980-05-15
-Account Created: 2024-01-10
+===== INFORMAZIO PERTSONALA =====
+Izena: Juan García López
+Emaila: juan.garcia@example.com
+Telefonoa: +34 XXX XXX XXX
+Helbidea: Calle Example, 123, 28001 Madril, Espainia
+Jaioteguna: 1980-05-15
+Kontua Sortua: 2024-01-10
 
-===== ORDER HISTORY =====
-Order #12345 | Date: 2025-09-15 | Total: €45.00 | Status: Delivered
-Products: Chocolate Chip Cookies (2 boxes), Oatmeal Cookies (1 box)
+===== ESKAERA HISTORIA =====
+Eskaera #12345 | Data: 2025-09-15 | Guztira: €45.00 | Egoera: Entregatua
+Produktuak: Txokolatezko Gailetak (2 kaxa), Zereal Gailetak (1 kaxa)
 
-Order #12678 | Date: 2025-12-20 | Total: €30.00 | Status: Delivered
-Products: Butter Cookies (3 boxes)
+Eskaera #12678 | Data: 2025-12-20 | Guztira: €30.00 | Egoera: Entregatua
+Produktuak: Gurin Gailetak (3 kaxa)
 
-===== MARKETING PREFERENCES =====
-Email Marketing: Consented (Date: 2024-01-10)
-SMS Marketing: Not Consented
-Preferences: Interested in: New Products, Special Offers
+===== MARKETIN LEHENTASUNAK =====
+Email Marketina: Onartua (Data: 2024-01-10)
+SMS Marketina: Ez Onartua
+Lehentasunak: Interesa: Produktu Berriak, Eskaintza Bereziak
 
-===== COMMUNICATION HISTORY =====
-2025-09-20: Support ticket #789 - Question about delivery time (Resolved)
-2025-12-22: Email sent - Holiday special offer
+===== KOMUNIKAZIO HISTORIA =====
+2025-09-20: Laguntza tiketa #789 - Bidalketa denborari buruzko galdera (Ebatzia)
+2025-12-22: Emaila bidalia - Gabonetako eskaintza berezia
 
-===== LOGIN ACTIVITY (Last 10 logins) =====
-2026-01-05 10:23 CET | IP: 81.32.xxx.xxx | Device: Chrome/Windows
-2025-12-28 14:15 CET | IP: 81.32.xxx.xxx | Device: Chrome/Windows
+===== SAIO-HASIERA JARDUERA (Azken 10ak) =====
+2026-01-05 10:23 CET | IP: 81.32.xxx.xxx | Gailua: Chrome/Windows
+2025-12-28 14:15 CET | IP: 81.32.xxx.xxx | Gailua: Chrome/Windows
 [...]
 ```
 
-### 4.3 Limitations and Exceptions
+### 4.3 Mugak eta Salbuespenak
 
-**May refuse or redact if:**
-- Request affects rights of others (redact names/data of other individuals)
-- Legal professional privilege applies
-- Disproportionate effort required (ask data subject to specify scope)
+**Ukatu edo zentsuratu daiteke baldin eta:**
+- Eskaerak besteen eskubideei eragiten badie (zentsuratu beste norbanakoen izenak/datuak)
+- Pribilegio profesional legala aplikatzen bada
+- Ahalegin neurrigabea behar bada (eskatu datu interesdunari esparrua zehazteko)
 
-**Cannot refuse based on:**
-- Commercial confidentiality of our own business information (may redact trade secrets but not personal data)
-- Cost or inconvenience (unless manifestly excessive)
+**Ezin da ukatu oinarrituta:**
+- Gure negozio informazioaren konfidentzialtasun komertzialean (merkataritza sekretuak zentsuratu daitezke baina ez datu pertsonalak)
+- Kostuan edo eragozpenean (nabarmenki gehiegizkoa ez bada)
 
-### 4.4 Additional Copies
+### 4.4 Kopia Gehigarriak
 
-**First copy:** Free
+**Lehen kopia:** Doan
 
-**Additional copies:** May charge reasonable fee based on administrative costs (if data subject requests multiple copies within short time)
+**Kopia gehigarriak:** Administrazio kostuetan oinarritutako arrazoizko tasa kobratu daiteke (datu interesdunak denbora gutxian kopia anitz eskatzen baditu)
 
 ---
 
-## 5. Right to Rectification (Article 16)
+## 5. Zuzentzeko Eskubidea (16. Artikulua)
 
-### 5.1 What Data Subjects Can Request
+### 5.1 Datu Interesdunek Eskatu Dezaketena
 
-Data subjects can request:
-- Correction of inaccurate personal data
-- Completion of incomplete personal data (including supplementary statement)
+Datu interesdunek eska dezakete:
+- Datu pertsonal okerrak zuzentzea
+- Osatu gabeko datu pertsonalak osatzea (adierazpen osagarri bat barne)
 
-### 5.2 Processing Rectification Requests
+### 5.2 Zuzenketa Eskaerak Prozesatzea
 
-**Step 1: Assess Request**
+**1. Urratsa: Eskaera Ebaluatu**
 
-- Verify what data is claimed to be inaccurate
-- Request evidence if needed (e.g., updated ID for address change, proof of name change)
-- Determine if request is valid
+- Egiaztatu zein datu diren okerrak
+- Eskatu ebidentzia beharrezkoa bada (adib., NAN eguneratua helbide aldaketarako, izen aldaketaren froga)
+- Zehaztu eskaera baliozkoa den
 
-**Step 2: Update Data**
+**2. Urratsa: Datuak Eguneratu**
 
-If request is valid:
-- Update data in all relevant systems (CRM, database, marketing, etc.)
-- Document changes (audit log showing old value, new value, date, authorized by)
-- Verify updates across all systems
+Eskaera baliozkoa bada:
+- Eguneratu datuak sistema garrantzitsu guztietan (CRM, datu-basea, marketina, etab.)
+- Aldaketak dokumentatu (audit log-a balio zaharra, balio berria, data, nork baimendua erakutsiz)
+- Egiaztatu eguneraketak sistema guztietan
 
-**Step 3: Notify Third Parties**
+**3. Urratsa: Hirugarrenak Jakinarazi**
 
-If data was disclosed to third parties (processors, recipients):
-- Notify them of rectification
-- Request they also update their records
-- Document notifications
+Datuak hirugarrenei ezagutarazi bazitzaizkien (prozesatzaileak, hartzaileak):
+- Jakinarazi zuzenketaz
+- Eskatu beren erregistroak ere eguneratzeko
+- Jakinarazpenak dokumentatu
 
-**Step 4: Respond to Data Subject**
+**4. Urratsa: Datu Interesdunari Erantzun**
 
-**Response Template:**
+**Erantzun Txantiloia:**
 
 ```
-Dear [Data Subject Name],
+Agur [Datu Interesdunaren Izena],
 
-Re: Data Rectification Request - Reference: DSR-[YYYY]-[NNN]
+Gaia: Datu Zuzenketa Eskaera - Erreferentzia: DSR-[UUUU]-[NNN]
 
-Thank you for your request dated [Date] to rectify your personal data.
+Eskerrik asko [Data]-n zure datu pertsonalak zuzentzeko egindako eskaeragatik.
 
-We have reviewed your request and made the following updates:
+Zure eskaera berrikusi dugu eta honako eguneraketa hauek egin ditugu:
 
-**Data Updated:**
-- [Field]: Changed from "[Old Value]" to "[New Value]"
-- [Field]: Changed from "[Old Value]" to "[New Value]"
+**Eguneratutako Datuak:**
+- [Eremua]: "[Balio Zaharra]"-tik "[Balio Berria]"-ra aldatu da
+- [Eremua]: "[Balio Zaharra]"-tik "[Balio Berria]"-ra aldatu da
 
-**Systems Updated:**
-- Customer database
-- Marketing platform
-- [List all systems]
+**Eguneratutako Sistemak:**
+- Bezero datu-basea
+- Marketin plataforma
+- [Zerrendatu sistema guztiak]
 
-**Third Parties Notified:**
-We have notified the following recipients of the rectification:
-- [Recipient Name] - [Purpose]
+**Hirugarrenak Jakinaraziak:**
+Honako hartzaile hauei jakinarazi diegu zuzenketaz:
+- [Hartzaile Izena] - [Helburua]
 
-Your data is now accurate and up to date in our systems.
+Zure datuak orain zehatzak eta eguneratuak daude gure sistemetan.
 
-If you have any further questions or concerns, please contact us at dpo@zabalagailetak.com.
+Galdera edo kezka gehiago baduzu, jarri harremanetan gurekin dpo@zabalagailetak.com helbidean.
 
-Sincerely,
+Adeitasunez,
 
-[DPO Name]
-Data Protection Officer
+[DBO Izena]
+Datuen Babeserako Ordezkaria
 Zabala Gailetak S.A.
 
-Date: [Date]
+Data: [Data]
 ```
 
-### 5.3 Refusing Rectification
+### 5.3 Zuzenketa Ukatzea
 
-**May refuse if:**
-- Data is demonstrably accurate (provide evidence)
-- Request is not specific enough (ask for clarification)
+**Ukatu daiteke baldin eta:**
+- Datuak zehatzak direla froga badaiteke (eman ebidentzia)
+- Eskaera ez bada nahiko zehatza (eskatu argibidea)
 
-**Refusal Template:**
+**Ezeztapen Txantiloia:**
 
 ```
-Dear [Data Subject Name],
+Agur [Datu Interesdunaren Izena],
 
-Re: Data Rectification Request - Reference: DSR-[YYYY]-[NNN]
+Gaia: Datu Zuzenketa Eskaera - Erreferentzia: DSR-[UUUU]-[NNN]
 
-Thank you for your request dated [Date] to rectify your personal data.
+Eskerrik asko [Data]-n zure datu pertsonalak zuzentzeko egindako eskaeragatik.
 
-After careful review, we are unable to fulfill your request for the following reason:
+Arreta handiz berrikusi ondoren, ezin dugu zure eskaera bete honako arrazoiagatik:
 
-[Explain reason - e.g., "Our records show that the address you claim is incorrect matches the address provided during your account registration on [Date]. If you have recently moved, please provide proof of your new address (utility bill, bank statement, or government correspondence)."]
+[Azaldu arrazoia - adib., "Gure erregistroek erakusten dute okerra dela diozun helbidea bat datorrela [Data]-n kontu erregistroan emandako helbidearekin. Duela gutxi lekualdatu bazara, mesedez eman zure helbide berriaren froga (zerbitzu faktura, banku laburpena edo gobernu gutuna)."]
 
-You have the right to:
-- Lodge a complaint with the Spanish Data Protection Authority (AEPD) at www.aepd.es or +34 901 100 099
-- Seek judicial remedy
+Eskubidea duzu:
+- Datuen Babeserako Espainiako Bulegoan (AEPD) kexa jartzeko www.aepd.es edo +34 901 100 099
+- Erremedio judiziala bilatzeko
 
-If you have additional information supporting your request, please provide it and we will reconsider.
+Zure eskaera onartzen duen informazio gehigarria baduzu, mesedez eman eta berriro kontuan hartuko dugu.
 
-Sincerely,
+Adeitasunez,
 
-[DPO Name]
-Data Protection Officer
+[DBO Izena]
+Datuen Babeserako Ordezkaria
 Zabala Gailetak S.A.
 
-Date: [Date]
+Data: [Data]
 ```
 
 ---
 
-## 6. Right to Erasure / "Right to be Forgotten" (Article 17)
+## 6. Ezabatzeko Eskubidea / "Ahaztua Izateko Eskubidea" (17. Artikulua)
 
-### 6.1 When Erasure is Required
+### 6.1 Noiz den Ezabaketa Beharrezkoa
 
-Data subject can request erasure when:
-1. Data no longer necessary for original purpose
-2. Data subject withdraws consent (and no other legal basis exists)
-3. Data subject objects and no overriding legitimate grounds exist
-4. Data processed unlawfully
-5. Legal obligation requires erasure
-6. Data collected from child for online services (special protection)
+Datu interesdunak ezabaketa eska dezake honako kasuetan:
+1. Datuak jada ez dira beharrezkoak jatorrizko helbururako
+2. Datu interesdunak baimena kentzen du (eta ez dago beste oinarri juridikorik)
+3. Datu interesdunak aurka egiten du eta ez dago gainditzen duen oinarri legitimorik
+4. Datuak legez kanpo tratatu dira
+5. Lege obligazio batek ezabaketa eskatzen du
+6. Datuak haur batengandik bildu ziren online zerbitzuetarako (babes berezia)
 
-### 6.2 Exceptions (When Erasure Cannot Be Granted)
+### 6.2 Salbuespenak (Noiz Ezin den Ezabaketa Eman)
 
-Must refuse erasure if processing is necessary for:
-1. **Freedom of expression and information**
-2. **Legal obligation** (e.g., tax records, accounting)
-3. **Public health** in the public interest
-4. **Archiving, research, statistics** in the public interest
-5. **Legal claims** (establishing, exercising, or defending legal claims)
+Ezabaketa ukatu behar da tratamendua beharrezkoa bada honakoetarako:
+1. **Adierazpen eta informazio askatasuna**
+2. **Lege obligazioa** (adib., zerga erregistroak, kontabilitatea)
+3. **Osasun publikoa** interes publikoan
+4. **Artxibatzea, ikerketa, estatistika** interes publikoan
+5. **Lege erreklamazioak** (lege erreklamazioak ezarri, erabili edo defendatu)
 
-### 6.3 Processing Erasure Requests
+### 6.3 Ezabaketa Eskaerak Prozesatzea
 
-**Step 1: Assess Eligibility**
+**1. Urratsa: Hautagarritasuna Ebaluatu**
 
-- Review request against Article 17 grounds
-- Check for exceptions that apply
-- Consider retention obligations (tax, accounting, contracts)
+- Berrikusi eskaera 17. artikuluko arrazoien aurka
+- Egiaztatu aplikatzen diren salbuespenak
+- Kontuan hartu atxikipen betebeharrak (zerga, kontabilitatea, kontratuak)
 
-**Decision Matrix:**
+**Erabaki Matrizea:**
 
-| Data Category | Typical Decision | Reason |
-|---------------|------------------|--------|
-| Marketing data (consent-based) | **GRANT** | Consent withdrawn, no other legal basis |
-| Transaction records < 7 years | **REFUSE** | Legal obligation (Spanish tax/accounting law) |
-| Employee records < limitation period | **REFUSE** | Legal claims (potential employment disputes) |
-| Website browsing history | **GRANT** | No longer necessary, no legal obligation |
-| Customer account (no recent orders) | **GRANT** (with exceptions) | No longer necessary; retain financial records per legal obligation |
+| Datu Kategoria | Ohiko Erabakia | Arrazoia |
+|----------------|----------------|----------|
+| Marketin datuak (baimenean oinarrituta) | **ONARTU** | Baimena kenduta, beste oinarri juridikorik ez |
+| Transakzio erregistroak < 7 urte | **UKATU** | Lege Obligazioa (Espainiako zerga/kontabilitate legea) |
+| Langile erregistroak < preskripzio epea | **UKATU** | Lege erreklamazioak (balizko lan gatazkak) |
+| Webgune nabigazio historia | **ONARTU** | Jada ez da beharrezkoa, lege obligaziorik ez |
+| Bezero kontua (azken eskaerarik gabe) | **ONARTU** (salbuespenekin) | Jada ez da beharrezkoa; finantza erregistroak gorde lege obligazioagatik |
 
-**Step 2: If Erasure Granted**
+**2. Urratsa: Ezabaketa Onartzen Bada**
 
-**Systems to Erase From:**
-- Production databases
-- Marketing platforms
-- Email lists
-- CRM systems
-- Analytics platforms
-- Log files (where feasible)
-- Backup systems (mark for deletion at next backup cycle; explain this to data subject)
+**Ezabatu beharreko Sistemak:**
+- Produkzio datu-baseak
+- Marketin plataformak
+- Email zerrendak
+- CRM sistemak
+- Analitika plataformak
+- Log fitxategiak (bideragarria denean)
+- Babeskopia sistemak (ezabatzeko markatu hurrengo babeskopia zikloan; azaldu hau datu interesdunari)
 
-**Erasure Methods:**
-- **Hard Delete:** Permanently remove data (preferred)
-- **Pseudonymization:** If hard delete not technically feasible (explain to data subject)
-- **Archival Separation:** If legal obligation requires retention (isolate data, restrict access)
+**Ezabaketa Metodoak:**
+- **Hard Delete:** Datuak betirako kendu (lehentasunezkoa)
+- **Pseudonimizazioa:** Hard delete teknikoki bideragarria ez bada (azaldu datu interesdunari)
+- **Artxibo Bereizketa:** Lege obligazioak atxikipena eskatzen badu (datuak isolatu, sarbidea mugatu)
 
-**Erasure Verification:**
-- Run search across all systems to confirm deletion
-- Document deletion date and method
-- Retain erasure request documentation (but not the personal data itself)
+**Ezabaketa Egiaztapena:**
+- Bilaketa exekutatu sistema guztietan ezabaketa baieztatzeko
+- Ezabaketa data eta metodoa dokumentatu
+- Ezabaketa eskaera dokumentazioa gorde (baina ez datu pertsonalak beraiek)
 
-**Step 3: Notify Third Parties**
+**3. Urratsa: Hirugarrenak Jakinarazi**
 
-If data was disclosed to third parties:
-- Notify all recipients of erasure request
-- Request they also erase the data
-- Document notifications
+Datuak hirugarrenei ezagutarazi bazitzaizkien:
+- Jakinarazi hartzaile guztiei ezabaketa eskaeraz
+- Eskatu beraiek ere datuak ezabatzeko
+- Jakinarazpenak dokumentatu
 
-**Step 4: Respond to Data Subject**
+**4. Urratsa: Datu Interesdunari Erantzun**
 
-**Erasure Granted Template:**
+**Ezabaketa Onartu Txantiloia:**
 
 ```
-Dear [Data Subject Name],
+Agur [Datu Interesdunaren Izena],
 
-Re: Data Erasure Request - Reference: DSR-[YYYY]-[NNN]
+Gaia: Datu Ezabaketa Eskaera - Erreferentzia: DSR-[UUUU]-[NNN]
 
-Thank you for your request dated [Date] to erase your personal data.
+Eskerrik asko [Data]-n zure datu pertsonalak ezabatzeko egindako eskaeragatik.
 
-We have processed your request and erased your personal data from our systems as follows:
+Zure eskaera prozesatu dugu eta zure datu pertsonalak gure sistemetatik ezabatu ditugu honela:
 
-**Data Erased:**
-- Personal account information (name, email, phone, address)
-- Order history details
-- Marketing preferences and communication history
-- Website browsing and usage data
+**Ezabatutako Datuak:**
+- Kontu pertsonaleko informazioa (izena, emaila, telefonoa, helbidea)
+- Eskaera historiaren xehetasunak
+- Marketin lehentasunak eta komunikazio historia
+- Webgune nabigazio eta erabilera datuak
 
-**Systems Erased From:**
-- Customer database
-- Marketing platform
-- Web analytics
-- [List all systems]
+**Ezabatutako Sistemak:**
+- Bezero datu-basea
+- Marketin plataforma
+- Web analitika
+- [Zerrendatu sistema guztiak]
 
-**Third Parties Notified:**
-We have notified the following recipients and requested erasure:
-- [Recipient Name] - [Purpose]
+**Hirugarrenak Jakinaraziak:**
+Honako hartzaile hauei jakinarazi diegu eta ezabaketa eskatu dugu:
+- [Hartzaile Izena] - [Helburua]
 
-**Data Retained (Legal Obligation):**
-Please note that we are legally required to retain certain financial records for 7 years under Spanish accounting law:
-- Invoice records (Order #12345, #12678) - Retained until [Date]
-- Payment transaction records - Retained until [Date]
+**Atxikitako Datuak (Lege Obligazioa):**
+Mesedez, kontuan izan legez behartuta gaudela finantza erregistro batzuk 7 urtez gordetzera Espainiako kontabilitate legearen arabera:
+- Faktura erregistroak (Eskaera #12345, #12678) - [Data]-ra arte atxikita
+- Ordainketa transakzio erregistroak - [Data]-ra arte atxikita
 
-This retained data is archived separately, access-restricted, and will be securely deleted once the legal retention period expires.
+Atxikitako datu hauek bereizita artxibatuta daude, sarbide mugatuarekin, eta segurtasunez ezabatuko dira legezko atxikipen epea amaitzean.
 
-**Backup Systems:**
-Data in backup systems will be deleted during the next backup rotation cycle (within 90 days). These backups are not used for active processing and are only accessed in disaster recovery scenarios.
+**Babeskopia Sistemak:**
+Babeskopia sistemetako datuak hurrengo babeskopia txandakatze zikloan ezabatuko dira (90 eguneko epean). Babeskopia hauek ez dira prozesamendu aktiborako erabiltzen eta hondamendiak berreskuratzeko eszenatokietan soilik sartzen dira.
 
-Your erasure request is now complete. Your account has been closed and you will not receive further communications from us.
+Zure ezabaketa eskaera osatu da. Zure kontua itxi egin da eta ez duzu guregandik komunikazio gehiagorik jasoko.
 
-If you have any questions, please contact us at dpo@zabalagailetak.com.
+Galderarik baduzu, jarri harremanetan gurekin dpo@zabalagailetak.com helbidean.
 
-Sincerely,
+Adeitasunez,
 
-[DPO Name]
-Data Protection Officer
+[DBO Izena]
+Datuen Babeserako Ordezkaria
 Zabala Gailetak S.A.
 
-Date: [Date]
+Data: [Data]
 ```
 
-**Erasure Refused Template:**
+**Ezabaketa Ukatu Txantiloia:**
 
 ```
-Dear [Data Subject Name],
+Agur [Datu Interesdunaren Izena],
 
-Re: Data Erasure Request - Reference: DSR-[YYYY]-[NNN]
+Gaia: Datu Ezabaketa Eskaera - Erreferentzia: DSR-[UUUU]-[NNN]
 
-Thank you for your request dated [Date] to erase your personal data.
+Eskerrik asko [Data]-n zure datu pertsonalak ezabatzeko egindako eskaeragatik.
 
-After careful review, we are unable to fully comply with your erasure request for the following reason(s):
+Arreta handiz berrikusi ondoren, ezin dugu zure ezabaketa eskaera guztiz bete honako arrazoi(ar)engatik:
 
-**Legal Obligation:**
-We are legally required to retain certain records under Spanish law:
-- Financial and accounting records: 7 years (per General Tax Law and Commercial Code)
-- Employment records: Until limitation period expires [if applicable]
+**Lege Obligazioa:**
+Legez behartuta gaude erregistro batzuk gordetzera Espainiako legearen arabera:
+- Finantza eta kontabilitate erregistroak: 7 urte (Zerga Lege Orokorraren eta Merkataritza Kodearen arabera)
+- Enplegu erregistroak: Preskripzio epea amaitu arte [aplikagarria bada]
 
-The following data categories are retained:
-- [Specify categories and retention period]
+Honako datu kategoria hauek atxikitzen dira:
+- [Zehaztu kategoriak eta atxikipen epea]
 
-All other data not subject to legal retention obligations has been erased.
+Legezko atxikipen obligazioen menpe ez dauden beste datu guztiak ezabatu egin dira.
 
-**Restricted Access:**
-The retained data has been:
-- Moved to secure archive with restricted access
-- Flagged for automatic deletion once retention period expires
-- Will not be used for active processing except where legally required
+**Sarbide Mugatua:**
+Atxikitako datuak honela tratatu dira:
+- Artxibo segurura mugitu dira sarbide mugatuarekin
+- Atxikipen epea amaitzean ezabaketa automatikorako markatu dira
+- Ez dira prozesamendu aktiborako erabiliko legez beharrezkoa ez bada
 
-You have the right to:
-- Lodge a complaint with AEPD at www.aepd.es or +34 901 100 099
-- Seek judicial remedy
+Eskubidea duzu:
+- AEPDn kexa jartzeko www.aepd.es edo +34 901 100 099
+- Erremedio judiziala bilatzeko
 
-If you have questions about the legal basis for retention, please contact us.
+Atxikipenaren oinarri juridikoari buruzko galderarik baduzu, jarri harremanetan gurekin.
 
-Sincerely,
+Adeitasunez,
 
-[DPO Name]
-Data Protection Officer
+[DBO Izena]
+Datuen Babeserako Ordezkaria
 Zabala Gailetak S.A.
 
-Date: [Date]
+Data: [Data]
 ```
 
-### 6.4 Special Considerations
+### 6.4 Gogoeta Bereziak
 
-**Deceased Persons:**
-- GDPR doesn't apply to deceased persons
-- Spanish LOPDGDD Article 3 provides some rights to relatives
-- Assess requests from family members case-by-case with legal counsel
+**Hildako Pertsonak:**
+- GDPR ez zaie hildako pertsonei aplikatzen
+- Espainiako DBLO-GDD 3. artikuluak eskubide batzuk ematen dizkie senideei
+- Ebaluatu familiako kideen eskaerak kasuan-kasu aholkulari juridikoarekin
 
-**Children's Data:**
-- Enhanced scrutiny for erasure requests related to data collected from children
-- Lower threshold for granting erasure
+**Haurren Datuak:**
+- Azterketa zorrotzagoa haurrengandik bildutako datuekin lotutako ezabaketa eskaerentzat
+- Atalase baxuagoa ezabaketa onartzeko
 
 ---
 
-## 7. Right to Restriction of Processing (Article 18)
+## 7. Tratamendua Mugatzeko Eskubidea (18. Artikulua)
 
-### 7.1 When Restriction Can Be Requested
+### 7.1 Noiz Eskatu Daitekeen Mugatzea
 
-Data subject can request restriction when:
-1. **Accuracy is contested** (restrict while verifying accuracy)
-2. **Processing is unlawful** (data subject prefers restriction over erasure)
-3. **No longer needed by controller** but data subject needs it for legal claims
-4. **Objection pending** (restrict while verifying if legitimate grounds override objection)
+Datu interesdunak mugatzea eska dezake honako kasuetan:
+1. **Zehaztasuna aurkaratzen da** (mugatu zehaztasuna egiaztatzen den bitartean)
+2. **Tratamendua legez kanpokoa da** (datu interesdunak mugatzea nahiago du ezabatzea baino)
+3. **Arduradunak jada ez du behar** baina datu interesdunak behar du lege erreklamazioetarako
+4. **Objekzioa zain dago** (mugatu oinarri legitimoek objekzioa gainditzen duten egiaztatzen den bitartean)
 
-### 7.2 What Restriction Means
+### 7.2 Zer Esan Nahi Du Mugatzeak
 
-When processing is restricted:
-- **Can:** Store the data
-- **Can:** Process with data subject consent
-- **Can:** Process for legal claims
-- **Can:** Process to protect rights of another person or public interest
-- **Cannot:** Use for any other purpose (no marketing, no analytics, no sharing with third parties)
+Tratamendua mugatzen denean:
+- **Ahal da:** Datuak gorde
+- **Ahal da:** Tratatu datu interesdunaren baimenarekin
+- **Ahal da:** Tratatu lege erreklamazioetarako
+- **Ahal da:** Tratatu beste pertsona baten eskubideak edo interes publikoa babesteko
+- **Ezin da:** Beste edozein helburutarako erabili (ez marketinik, ez analitikarik, ez hirugarrenekin partekatu)
 
-### 7.3 Processing Restriction Requests
+### 7.3 Mugatze Eskaerak Prozesatzea
 
-**Step 1: Assess Request**
+**1. Urratsa: Eskaera Ebaluatu**
 
-- Identify which ground applies
-- Determine scope of restriction
-- Set timeline for resolution (e.g., accuracy verification period)
+- Identifikatu zein oinarri aplikatzen den
+- Zehaztu mugatze esparrua
+- Ezarri ebazpen epea (adib., zehaztasuna egiaztatzeko epea)
 
-**Step 2: Implement Restriction**
+**2. Urratsa: Mugatzea Inplementatu**
 
-**Technical Methods:**
-- Flag data as "restricted" in database
-- Move data to separate restricted storage
-- Implement access controls preventing use
-- Document restriction date and reason
+**Metodo Teknikoak:**
+- Datuak "mugatuta" gisa markatu datu-basean
+- Datuak biltegiratze mugatu bereizira mugitu
+- Erabilera prebenitzen duten sarbide kontrolak ezarri
+- Mugatze data eta arrazoia dokumentatu
 
-**Systems to Restrict:**
-- All systems processing the restricted data
-- Third-party systems (notify processors)
+**Mugatu Beharreko Sistemak:**
+- Datu mugatuak tratatzen dituzten sistema guztiak
+- Hirugarrenen sistemak (jakinarazi prozesatzaileei)
 
-**Step 3: Notify Third Parties**
+**3. Urratsa: Hirugarrenak Jakinarazi**
 
-If data was disclosed to third parties:
-- Notify all recipients of restriction
-- Request they also restrict processing
+Datuak hirugarrenei ezagutarazi bazitzaizkien:
+- Jakinarazi hartzaile guztiei mugatzeaz
+- Eskatu beraiek ere tratamendua mugatzeko
 
-**Step 4: Respond to Data Subject**
+**4. Urratsa: Datu Interesdunari Erantzun**
 
-**Restriction Granted Template:**
+**Mugatzea Onartu Txantiloia:**
 
 ```
-Dear [Data Subject Name],
+Agur [Datu Interesdunaren Izena],
 
-Re: Data Restriction Request - Reference: DSR-[YYYY]-[NNN]
+Gaia: Datu Mugatze Eskaera - Erreferentzia: DSR-[UUUU]-[NNN]
 
-Thank you for your request dated [Date] to restrict processing of your personal data.
+Eskerrik asko [Data]-n zure datu pertsonalen tratamendua mugatzeko egindako eskaeragatik.
 
-We have implemented restriction as follows:
+Mugatzea honela inplementatu dugu:
 
-**Reason for Restriction:**
-[E.g., "While we verify the accuracy of your address as per your rectification request"]
+**Mugatzeko Arrazoia:**
+[Adib., "Zure helbidearen zehaztasuna egiaztatzen dugun bitartean zure zuzenketa eskaeraren arabera"]
 
-**Data Restricted:**
-- [List categories]
+**Mugatutako Datuak:**
+- [Zerrendatu kategoriak]
 
-**Restriction Implemented:**
-Your data has been flagged as restricted in our systems. It will be stored but not used for:
-- Marketing communications
-- Analytics or profiling
-- Sharing with third parties
-- [List restricted activities]
+**Inplementatutako Mugatzea:**
+Zure datuak mugatu gisa markatu dira gure sistemetan. Gorde egingo dira baina ez dira erabiliko honakoetarako:
+- Marketin komunikazioak
+- Analitika edo profilatzea
+- Hirugarrenekin partekatzea
+- [Zerrendatu mugatutako jarduerak]
 
-Your data may only be processed:
-- With your explicit consent
-- For legal claims
-- To protect rights of others
-- For public interest reasons
+Zure datuak soilik honela tratatu daitezke:
+- Zure berariazko baimenarekin
+- Lege erreklamazioetarako
+- Besteen eskubideak babesteko
+- Interes publikoko arrazoiengatik
 
-**Timeline:**
-We expect to complete [accuracy verification/objection assessment] by [Date], after which the restriction will be lifted or your data will be [rectified/erased] as appropriate.
+**Epea:**
+[Egiaztapena/Objekzio ebaluazioa] [Data]-rako osatzea espero dugu, eta ondoren mugatzea kenduko da edo zure datuak [zuzendu/ezabatu] egingo dira egokia den moduan.
 
-**Lifting Restriction:**
-We will inform you before the restriction is lifted.
+**Mugatzea Kentzea:**
+Mugatzea kendu aurretik jakinaraziko dizugu.
 
-If you have any questions, please contact us at dpo@zabalagailetak.com.
+Galderarik baduzu, jarri harremanetan gurekin dpo@zabalagailetak.com helbidean.
 
-Sincerely,
+Adeitasunez,
 
-[DPO Name]
-Data Protection Officer
+[DBO Izena]
+Datuen Babeserako Ordezkaria
 Zabala Gailetak S.A.
 
-Date: [Date]
+Data: [Data]
 ```
 
-**Step 5: Resolve and Lift Restriction**
+**5. Urratsa: Ebatzi eta Mugatzea Kendu**
 
-Once underlying issue is resolved (accuracy verified, objection assessed):
-1. Notify data subject **before** lifting restriction
-2. Take appropriate action (rectify, erase, or resume processing)
-3. Update systems to remove restriction flag
-4. Document resolution
+Azpiko arazoa ebatzi ondoren (zehaztasuna egiaztatuta, objekzioa ebaluatuta):
+1. Jakinarazi datu interesdunari mugatzea kendu **aurretik**
+2. Hartu ekintza egokia (zuzendu, ezabatu edo tratamendua berrekin)
+3. Eguneratu sistemak mugatze marka kentzeko
+4. Ebazpena dokumentatu
 
 ---
 
-## 8. Right to Data Portability (Article 20)
+## 8. Datuen Eramangarritasunerako Eskubidea (20. Artikulua)
 
-### 8.1 When Portability Applies
+### 8.1 Noiz Aplikatzen den Eramangarritasuna
 
-Data portability applies when **ALL** conditions are met:
-1. **Legal basis is consent or contract** (not legal obligation, not legitimate interests)
-2. **Processing is automated** (not paper records)
-3. **Request is technically feasible**
+Datuen eramangarritasuna baldintza hauek **GUZTIAK** betetzen direnean aplikatzen da:
+1. **Oinarri juridikoa baimena edo kontratua da** (ez lege obligazioa, ez interes legitimoak)
+2. **Tratamendua automatizatua da** (ez paperezko erregistroak)
+3. **Eskaera teknikoki bideragarria da**
 
-### 8.2 What Data is Portable
+### 8.2 Zein Datu Dira Eramangarriak
 
-**Portable Data:**
-- Data **provided by** data subject (account info, orders, preferences)
-- Data **generated by** data subject's activity (usage logs, purchase history)
+**Datu Eramangarriak:**
+- Datu interesdunak **emandako** datuak (kontu info, eskaerak, lehentasunak)
+- Datu interesdunaren jarduerak **sortutako** datuak (erabilera log-ak, erosketa historia)
 
-**Not Portable:**
-- Inferred or derived data (analytics, profiling results)
-- Data about others (cannot infringe others' rights)
+**Ez Eramangarriak:**
+- Ondorioztatutako edo eratorritako datuak (analitika, profilatze emaitzak)
+- Besteei buruzko datuak (ezin dira besteen eskubideak urratu)
 
-### 8.3 Processing Portability Requests
+### 8.3 Eramangarritasun Eskaerak Prozesatzea
 
-**Step 1: Assess Eligibility**
+**1. Urratsa: Hautagarritasuna Ebaluatu**
 
-- Verify legal basis (consent or contract?)
-- Verify data is automated (not manual/paper records?)
-- Determine what data is portable
+- Egiaztatu oinarri juridikoa (baimena edo kontratua?)
+- Egiaztatu datuak automatizatuak diren (ez eskuliburuak/paperak?)
+- Zehaztu zein datu diren eramangarriak
 
-**Step 2: Prepare Data Export**
+**2. Urratsa: Datu Esportazioa Prestatu**
 
-**Format:**
-- **Structured:** CSV, JSON, XML
-- **Commonly used:** Industry-standard formats
-- **Machine-readable:** Can be easily imported by another controller
+**Formatua:**
+- **Egituratua:** CSV, JSON, XML
+- **Erabilera arruntekoa:** Industria estandarreko formatuak
+- **Irakurgarria makinaz:** Beste kontrolatzaile batek erraz inporta dezakeena
 
-**Preferred Formats:**
-- **Customer data:** JSON or CSV
-- **Transaction history:** CSV with clear column headers
-- **Communications:** mbox format (for emails) or plain text
+**Lehentasunezko Formatuak:**
+- **Bezero datuak:** JSON edo CSV
+- **Transakzio historia:** CSV zutabe goiburu argiekin
+- **Komunikazioak:** mbox formatua (emailentzat) edo testu laua
 
-**Example JSON Export (Customer Data):**
+**3. Urratsa: Datuak Entregatu**
 
-```json
-{
-  "personal_information": {
-    "name": "Juan García López",
-    "email": "juan.garcia@example.com",
-    "phone": "+34XXXXXXXXX",
-    "address": {
-      "street": "Calle Example, 123",
-      "city": "Madrid",
-      "postal_code": "28001",
-      "country": "Spain"
-    },
-    "date_of_birth": "1980-05-15",
-    "account_created": "2024-01-10"
-  },
-  "orders": [
-    {
-      "order_id": "12345",
-      "date": "2025-09-15",
-      "total": 45.00,
-      "currency": "EUR",
-      "status": "Delivered",
-      "items": [
-        {
-          "product": "Chocolate Chip Cookies",
-          "quantity": 2,
-          "price": 20.00
-        },
-        {
-          "product": "Oatmeal Cookies",
-          "quantity": 1,
-          "price": 10.00
-        }
-      ],
-      "shipping_address": {
-        "street": "Calle Example, 123",
-        "city": "Madrid",
-        "postal_code": "28001"
-      }
-    }
-  ],
-  "marketing_preferences": {
-    "email_marketing_consent": true,
-    "consent_date": "2024-01-10",
-    "interests": ["New Products", "Special Offers"]
-  }
-}
-```
+**Entregatze Metodoak:**
+- **Email eranskina:** Datu multzo txikietarako (<10 MB)
+- **Deskarga esteka segurua:** Datu multzo handiagoetarako (pasahitz bidez babestua, denbora mugatua)
+- **Zuzeneko transmisioa beste kontrolatzaile bati:** Eskatzen bada eta teknikoki bideragarria bada
 
-**Step 3: Deliver Data**
+**4. Urratsa: Datu Interesdunari Erantzun**
 
-**Delivery Methods:**
-- **Email attachment:** For small datasets (<10 MB)
-- **Secure download link:** For larger datasets (password-protected, time-limited)
-- **Direct transmission to another controller:** If requested and technically feasible
-
-**Step 4: Respond to Data Subject**
-
-**Portability Granted Template:**
+**Eramangarritasuna Onartu Txantiloia:**
 
 ```
-Dear [Data Subject Name],
+Agur [Datu Interesdunaren Izena],
 
-Re: Data Portability Request - Reference: DSR-[YYYY]-[NNN]
+Gaia: Datu Eramangarritasun Eskaera - Erreferentzia: DSR-[UUUU]-[NNN]
 
-Thank you for your request dated [Date] for a copy of your personal data in a portable format.
+Eskerrik asko [Data]-n zure datu pertsonalen kopia bat formatu eramangarrian jasotzeko egindako eskaeragatik.
 
-**Data Provided:**
-Please find attached your personal data in JSON format, which includes:
-- Personal account information
-- Order history
-- Marketing preferences
-- [List categories]
+**Emandako Datuak:**
+Mesedez, aurkitu erantsita zure datu pertsonalak JSON formatuan, honako hauek barne:
+- Kontu pertsonaleko informazioa
+- Eskaera historia
+- Marketin lehentasunak
+- [Zerrendatu kategoriak]
 
-**Format:**
-The data is provided in JSON format, which is structured, commonly used, and machine-readable. It can be easily imported into other systems.
+**Formatua:**
+Datuak JSON formatuan ematen dira, zeina egituratua, erabilera arruntekoa eta makinaz irakurgarria den. Beste sistema batzuetan erraz inporta daiteke.
 
-**Direct Transmission:**
-[If applicable: As requested, we have also transmitted your data directly to [Other Controller Name] on [Date].]
+**Zuzeneko Transmisioa:**
+[Aplikagarria bada: Eskatu bezala, zure datuak zuzenean transmititu dizkiogu [Beste Kontrolatzaile Izena]-ri [Data]-n.]
 
-**Instructions:**
-You can use this data to:
-- Import into another service
-- Review your data
-- Store for your records
+**Argibideak:**
+Datu hauek erabil ditzakezu:
+- Beste zerbitzu batera inportatzeko
+- Zure datuak berrikusteko
+- Zure erregistroetarako gordetzeko
 
-If you need the data in a different format or have questions, please contact us at dpo@zabalagailetak.com.
+Datuak beste formatu batean behar badituzu edo galderarik baduzu, jarri harremanetan gurekin dpo@zabalagailetak.com helbidean.
 
-Sincerely,
+Adeitasunez,
 
-[DPO Name]
-Data Protection Officer
+[DBO Izena]
+Datuen Babeserako Ordezkaria
 Zabala Gailetak S.A.
 
-Date: [Date]
+Data: [Data]
 ```
 
-**Portability Not Applicable Template:**
+---
+
+## 9. Aurka Egiteko Eskubidea (21. Artikulua)
+
+### 9.1 Objekzio Motak
+
+**Tratamenduaren Aurka Egitea (Orokorra):**
+- Tratamendua **interes legitimoetan** (6(1)(f) Art.) edo **zeregin publikoan** (6(1)(e) Art.) oinarritzen denean aplikatzen da
+- "Egoera zehatzari lotutako arrazoiak" frogatu behar dira
+- Arduradunak jarrai dezake **oinarri legitimo sinesgarriek objekzioa gainditzen badute**
+
+**Zuzeneko Marketinaren Aurka Egitea:**
+- **Eskubide absolutua** - ez da justifikaziorik behar
+- Berehala gelditu behar da tratamendua
+- Marketinarekin lotutako profilatzea barne hartzen du
+
+### 9.2 Objekzio Eskaerak Prozesatzea
+
+**Zuzeneko Marketin Objekzioetarako:**
+
+**1. Urratsa: Berehala Gelditu Tratamendua**
+- Kendu marketin zerrendetatik (emaila, SMS, telefonoa)
+- Marketin plataformetan ezabatu (berriro gehitzea ekidin)
+- Eguneratu lehentasunak CRM-n
+- Ez da oreka probarik behar - objekzioa absolutua da
+
+**2. Urratsa: Datu Interesdunari Erantzun**
+
+**Marketin Objekzio Erantzuna:**
 
 ```
-Dear [Data Subject Name],
+Agur [Datu Interesdunaren Izena],
 
-Re: Data Portability Request - Reference: DSR-[YYYY]-[NNN]
+Gaia: Marketinaren Aurka Egitea - Erreferentzia: DSR-[UUUU]-[NNN]
 
-Thank you for your request dated [Date] for data portability.
+Eskerrik asko [Data]-n zuzeneko marketin komunikazioen aurka egiteko eskaeragatik.
 
-After review, we are unable to provide your data in portable format for the following reason:
+Zure eskaera berehala prozesatu da. Zu:
+- Gure email marketin zerrendatik kendu zaitugu
+- Gure SMS marketin zerrendatik kendu zaitugu
+- Gure "ez kontaktatu" ezabatze zerrendara gehitu zaitugu
 
-[Select applicable reason:]
-- The data you requested is not processed based on consent or contract (legal basis is [legal obligation/legitimate interests])
-- The data is not held in automated form (paper records)
-- [Other reason]
+Ez duzu guregandik marketin komunikazio gehiagorik jasoko. Mesedez, onartu 48 ordu arte aldaketa honek gure sistema guztietan eragina izan dezan.
 
-**Alternative:**
-You may still exercise your right of access under Article 15, which provides a copy of your personal data (though not necessarily in portable format). If you would like to proceed with an access request, please let us know.
+**Oharra:** Oraindik jaso ditzakezu zure eskaerei edo kontuari lotutako transakzio komunikazioak (eskaera berrespenak, bidalketa jakinarazpenak, kontu segurtasun alertak), hauek zerbitzua emateko beharrezkoak baitira.
 
-You have the right to:
-- Lodge a complaint with AEPD at www.aepd.es or +34 901 100 099
-- Seek judicial remedy
+48 ordu igaro ondoren guregandik marketin komunikaziorik jasotzen baduzu, jarri harremanetan gurekin berehala dpo@zabalagailetak.com helbidean.
 
-If you have questions, please contact us at dpo@zabalagailetak.com.
+Adeitasunez,
 
-Sincerely,
-
-[DPO Name]
-Data Protection Officer
+[DBO Izena]
+Datuen Babeserako Ordezkaria
 Zabala Gailetak S.A.
 
-Date: [Date]
+Data: [Data]
 ```
+
+**Tratamendu Orokorraren Aurka Egiteko (Interes Legitimoak):**
+
+**1. Urratsa: Objekzioa Ebaluatu**
+- Berrikusi datu interesdunaren arrazoiak (egoera zehatza)
+- Oreka proba egin: Gure oinarri legitimoek objekzioa gainditzen al dute?
+
+**Oreka Proba Faktoreak:**
+- **Gure Interesak:** Iruzur prebentzioa, sare segurtasuna, ikerketa, etab.
+- **Datu Interesdunaren Interesak:** Pribatutasuna, askatasuna, egoera bereziak
+- **Beharrezkotasuna:** Tratamendua beharrezkoa al da gure intereserako?
+- **Alternatibak:** Helburua beste modu batean lor genezake?
+- **Eragina:** Zein da eragina datu interesdunarengan jarraitzen badugu?
+
+**2. Urratsa: Erabakia**
+
+**Objekzioa Onartzen Bada (Gure Interesek Ez Dute Gainditzen):**
+- Gelditu tratamendua helburu horretarako
+- Beste helburu batzuetarako tratamenduarekin jarrai daiteke beste oinarri juridiko batekin
+- Erantzun datu interesdunari
+
+**Objekzioa Ukatzen Bada (Gure Interesek Gainditzen Dute):**
+- Eman justifikazio zehatza
+- Azaldu oinarri legitimo sinesgarriak
+- Erantzun datu interesdunari
 
 ---
 
-## 9. Right to Object (Article 21)
+## 10. Erabaki Automatizatuekin Lotutako Eskubideak (22. Artikulua)
 
-### 9.1 Types of Objections
+### 10.1 Noiz Aplikatzen den 22. Artikulua
 
-**Objection to Processing (General):**
-- Applies when processing based on **legitimate interests** (Article 6(1)(f)) or **public task** (Article 6(1)(e))
-- Must demonstrate "grounds relating to particular situation"
-- Controller can continue if **compelling legitimate grounds override objection**
+Datu interesdunek eskubidea dute **lege edo antzeko ondorio esanguratsuak** dituzten erabaki automatizatuen menpe **ez egoteko** SALBU ETA:
+1. **Kontraturako beharrezkoa bada** (eta babes neurri egokiak badaude)
+2. **Legeak baimentzen badu** (neurri egokiekin)
+3. **Berariazko baimenean oinarrituta** (neurri egokiekin)
 
-**Objection to Direct Marketing:**
-- **Absolute right** - no need to justify
-- Must stop processing immediately
-- Includes profiling related to marketing
+### 10.2 Eskatutako Bermeak
 
-**Objection to Scientific/Historical Research or Statistics:**
-- Applies unless research serves public interest
+Erabaki automatizatuak erabiltzen badira:
+- **Giza esku-hartzea:** Giza berrikuspena lortzeko eskubidea
+- **Azalpena:** Erabakiaren eta logikaren azalpena lortzeko eskubidea
+- **Erabakia aurkaratu:** Iritzia emateko eta erabakia inpugnatzeko eskubidea
+- **Kategoria bereziko daturik ez:** Berariazko baimenik edo interes publiko handirik gabe (eta neurri egokiekin)
 
-### 9.2 Processing Objection Requests
+### 10.3 Erabaki Automatizatuen Eskaerak Prozesatzea
 
-**For Direct Marketing Objections:**
+**1. Urratsa: Erabaki Automatizatuak Identifikatu**
 
-**Step 1: Stop Processing Immediately**
-- Remove from marketing lists (email, SMS, phone)
-- Suppress in marketing platforms (ensure not re-added)
-- Update preferences in CRM
-- No balancing test required - objection is absolute
+Berrikusi gure tratamendua:
+- Erabaki automatizatuak hartzen al ditugu?
+- Lege edo ondorio esanguratsuak al dituzte?
+- Zein berme daude indarrean?
 
-**Step 2: Respond to Data Subject**
+**Uneko Ebaluazioa (Zabala Gailetak):**
+- **Ez dago ondorio esanguratsuko erabaki automatizaturik une honetan erabiltzen**
+- Eskaera prozesatzea automatizatua da baina giza berrikuspenaren menpe dago
+- Iruzur detekzioa automatizatua da baina giza berrikuspena abiarazten du (ez ukazio automatikoa)
 
-**Marketing Objection Response:**
+**2. Urratsa: Eskaerari Erantzun**
+
+**Erabaki Automatizaturik Ez Txantiloia:**
 
 ```
-Dear [Data Subject Name],
+Agur [Datu Interesdunaren Izena],
 
-Re: Objection to Marketing - Reference: DSR-[YYYY]-[NNN]
+Gaia: Erabaki Automatizatuei Buruzko Kontsulta - Erreferentzia: DSR-[UUUU]-[NNN]
 
-Thank you for your objection dated [Date] to direct marketing communications.
+Eskerrik asko [Data]-n erabaki automatizatuei buruz egindako kontsultagatik.
 
-Your request has been processed immediately. You have been:
-- Removed from our email marketing list
-- Removed from our SMS marketing list
-- Added to our "do not contact" suppression list
+**Gure Prozesu Automatizatuen Erabilera:**
+Sistema automatizatuak erabiltzen ditugu prozesu batzuekin laguntzeko (eskaera prozesatzea, iruzur detekzioa), hala ere:
+- Ez da zuri buruzko lege edo antzeko ondorio esanguratsurik duen erabaki automatizaturik hartzen
+- Erabaki esanguratsu guztiek giza berrikuspena eta esku-hartzea dakarte
+- Iruzur detekzio automatizatuak giza berrikuspena abiarazten du baina ez ditu eskaerak automatikoki ukatzen
 
-You will not receive further marketing communications from us. Please allow up to 48 hours for this change to take effect across all our systems.
+Gure prozesu automatizatuei buruzko praktikak berrikusi ditzakezu gure Pribatutasun Oharrean hemen: www.zabalagailetak.com/privacy.
 
-**Note:** You may still receive transactional communications related to your orders or account (order confirmations, shipping notifications, account security alerts), as these are necessary for service delivery.
+Kezka edo galdera zehatzak badituzu, jarri harremanetan gurekin dpo@zabalagailetak.com helbidean.
 
-If you receive marketing communications from us after 48 hours, please contact us immediately at dpo@zabalagailetak.com.
+Adeitasunez,
 
-Sincerely,
-
-[DPO Name]
-Data Protection Officer
+[DBO Izena]
+Datuen Babeserako Ordezkaria
 Zabala Gailetak S.A.
 
-Date: [Date]
-```
-
-**For General Processing Objections (Legitimate Interests):**
-
-**Step 1: Assess Objection**
-- Review data subject's grounds (particular situation)
-- Conduct balancing test: Do our legitimate grounds override objection?
-
-**Balancing Test Factors:**
-- **Our Interests:** Fraud prevention, network security, research, etc.
-- **Data Subject Interests:** Privacy, freedom, particular circumstances
-- **Necessity:** Is processing necessary for our interest?
-- **Alternatives:** Could we achieve purpose another way?
-- **Impact:** What is impact on data subject if we continue?
-
-**Step 2: Decision**
-
-**If Objection Granted (Our Interests Do Not Override):**
-- Stop processing for that purpose
-- May continue processing for other purposes with different legal basis
-- Respond to data subject
-
-**If Objection Refused (Our Interests Override):**
-- Provide detailed justification
-- Explain compelling legitimate grounds
-- Respond to data subject
-
-**General Objection Granted Template:**
-
-```
-Dear [Data Subject Name],
-
-Re: Objection to Processing - Reference: DSR-[YYYY]-[NNN]
-
-Thank you for your objection dated [Date] to processing of your personal data.
-
-We have reviewed your objection and the particular circumstances you described. After careful consideration, we have decided to grant your objection.
-
-**Processing Stopped:**
-We have stopped processing your data for [purpose - e.g., "behavioral analytics and personalization"].
-
-**Processing Continued:**
-We will continue to process your data where required for:
-- [E.g., "Order fulfillment (legal basis: contract performance)"]
-- [E.g., "Accounting records (legal basis: legal obligation)"]
-
-If you have any questions, please contact us at dpo@zabalagailetak.com.
-
-Sincerely,
-
-[DPO Name]
-Data Protection Officer
-Zabala Gailetak S.A.
-
-Date: [Date]
-```
-
-**General Objection Refused Template:**
-
-```
-Dear [Data Subject Name],
-
-Re: Objection to Processing - Reference: DSR-[YYYY]-[NNN]
-
-Thank you for your objection dated [Date] to processing of your personal data for [purpose].
-
-We have carefully reviewed your objection and the particular circumstances you described. After balancing your interests against our legitimate grounds, we have determined that we must continue processing for the following compelling reasons:
-
-**Compelling Legitimate Grounds:**
-[Provide detailed, specific justification. Example:
-"We process your IP address and transaction details for fraud prevention and security purposes. This processing is necessary to:
-- Protect our business and other customers from fraudulent transactions
-- Comply with legal obligations to prevent money laundering
-- Detect and prevent security threats
-
-Ceasing this processing would expose our business and other customers to significant risk. The processing is narrowly scoped to security purposes, uses automated systems with limited human access, and does not result in profiling or decisions affecting you.
-
-While we understand your privacy concerns, we believe the compelling need to prevent fraud and ensure security overrides your objection in this particular case."]
-
-**Your Rights:**
-You have the right to:
-- Lodge a complaint with AEPD at www.aepd.es or +34 901 100 099
-- Seek judicial remedy
-
-If you have additional information or concerns, please contact us at dpo@zabalagailetak.com.
-
-Sincerely,
-
-[DPO Name]
-Data Protection Officer
-Zabala Gailetak S.A.
-
-Date: [Date]
+Data: [Data]
 ```
 
 ---
 
-## 10. Rights Related to Automated Decision-Making (Article 22)
+## 11. Baimena Kentzeko Eskubidea (7(3). Artikulua)
 
-### 10.1 When Article 22 Applies
+### 11.1 Noiz Aplikatzen den Kentzea
 
-Data subjects have the right **not to be subject** to automated decisions with **legal or similarly significant effects** UNLESS:
-1. **Necessary for contract** (and adequate safeguards in place)
-2. **Authorized by law** (with suitable measures)
-3. **Based on explicit consent** (with suitable measures)
+Tratamendua baimenean oinarritzen bada:
+- Datu interesdunak baimena edozein unetan kendu dezake
+- Baimena kentzea ematea bezain erraza izan behar da
+- Zerbitzua ezin da baimenaren menpe jarri (baimena zerbitzurako beharrezkoa ez denean)
 
-**Examples of Significant Effects:**
-- Loan or credit decisions
-- Employment decisions (hiring, firing)
-- Benefit or entitlement decisions
-- Decisions affecting access to services
+### 11.2 Kentzeko Mekanismoak
 
-**Not Significant Effects:**
-- Product recommendations (no significant impact)
-- Targeted advertising (generally not significant)
-- Pricing (unless discriminatory or significantly disadvantageous)
+**Kentzeko Metodo Errazak:**
+- **Harpidetza kentzeko esteka** marketin email guztietan
+- **Kontu ezarpenak** orria (baimena aktibatu/desaktibatu)
+- **Emaila DBOri:** dpo@zabalagailetak.com
+- **Web inprimakia:** Pribatutasun lehentasun zentroa
 
-### 10.2 Safeguards Required
+**Erantzun Epea:** Berehalakoa (bereziki marketinerako)
 
-If automated decision-making is used:
-- **Human intervention:** Right to obtain human review
-- **Explanation:** Right to obtain explanation of decision and logic
-- **Contest decision:** Right to express views and challenge
-- **No special category data:** Unless explicit consent or substantial public interest (and adequate measures)
+### 11.3 Baimen Kentzeak Prozesatzea
 
-### 10.3 Processing Automated Decision-Making Requests
+**1. Urratsa: Tratamendua Gelditu**
+- Berehala gelditu kendutako baimenean oinarritutako tratamendua
+- Oharra: Kendu aurreko tratamendua legezkoa izaten jarraitzen du
 
-**Step 1: Identify Automated Decisions**
+**2. Urratsa: Ordezko Oinarri Juridikoa Egiaztatu**
+- Jarrai al dezakegu tratamenduarekin beste oinarri juridiko batekin? (kontratua, lege obligazioa, interes legitimoak)
+- Bai bada, jakinarazi datu interesdunari
+- Ez bada, ezabatu datuak (beste salbuespenik aplikatzen ez bada)
 
-Review our processing:
-- Do we make automated decisions?
-- Do they have legal or significant effects?
-- What safeguards are in place?
+**3. Urratsa: Datu Interesdunari Erantzun**
 
-**Current Assessment (Zabala Gailetak):**
-- **No significant automated decision-making currently in use**
-- Order processing is automated but subject to human review
-- Fraud detection is automated but triggers human review (not automatic rejection)
+---
 
-**Step 2: Respond to Request**
+## 12. Kexak eta Eskalazioa
 
-**No Automated Decision-Making Template:**
+### 12.1 Kexak Kudeatzea
 
-```
-Dear [Data Subject Name],
+Datu interesduna gure erantzunarekin pozik ez badago:
+1. **Kexa onartu** berehala
+2. **Erabakia berrikusi** ikuspegi berri batekin (idealki beste pertsona bat)
+3. **Datu interesdunarekin harremanetan jarri** - kezkak ulertu
+4. **Azalpen zehatza eman** edo erabakia berrikusi egokia bada
+5. **Zuzendaritzari eskalatu** beharrezkoa bada
 
-Re: Automated Decision-Making Inquiry - Reference: DSR-[YYYY]-[NNN]
+### 12.2 AEPDri Kexa Jartzeko Eskubideaz Informatzea
 
-Thank you for your inquiry dated [Date] regarding automated decision-making.
-
-**Our Use of Automated Processing:**
-We use automated systems to assist with certain processes (order processing, fraud detection), however:
-- No automated decisions with legal or similarly significant effects are made about you
-- All significant decisions involve human review and intervention
-- Automated fraud detection triggers human review but does not automatically deny orders
-
-You can review our automated processing practices in our Privacy Notice at www.zabalagailetak.com/privacy.
-
-If you have specific concerns or questions, please contact us at dpo@zabalagailetak.com.
-
-Sincerely,
-
-[DPO Name]
-Data Protection Officer
-Zabala Gailetak S.A.
-
-Date: [Date]
-```
-
-**If Automated Decision-Making is Used:**
+**Erantzun guztiek barne hartu behar dute:**
 
 ```
-[Provide details of automated processing, logic involved, significance, and safeguards. Offer human intervention, explanation, and opportunity to contest.]
+Eskubidea duzu Datuen Babeserako Espainiako Bulegoan (AEPD) kexa jartzeko:
+- Webgunea: www.aepd.es
+- Telefonoa: +34 901 100 099
+- Helbidea: C/ Jorge Juan, 6, 28001 Madril, Espainia
+- Online kexa inprimakia: https://sedeagpd.gob.es
+
+Erremedio judiziala bilatzeko eskubidea ere baduzu.
 ```
 
 ---
 
-## 11. Right to Withdraw Consent (Article 7(3))
+## 13. Harremanetarako Informazioa
 
-### 11.1 When Withdrawal Applies
+**Datuen Babeserako Ordezkaria (DBO/DPO):**  
+Izena: [DBO Izena]  
+Emaila: dpo@zabalagailetak.com  
+Telefonoa: +34 XXX XXX XXX
 
-If processing is based on consent:
-- Data subject can withdraw consent at any time
-- Must be as easy to withdraw as to give
-- Cannot make service conditional on consent (where consent is not necessary for service)
-
-### 11.2 Withdrawal Mechanisms
-
-**Easy Withdrawal Methods:**
-- **Unsubscribe link** in every marketing email
-- **Account settings** page (toggle on/off consent)
-- **Email to DPO:** dpo@zabalagailetak.com
-- **Web form:** Privacy preference center
-
-**Response Time:** Immediate (especially for marketing)
-
-### 11.3 Processing Consent Withdrawals
-
-**Step 1: Stop Processing**
-- Immediately stop processing based on withdrawn consent
-- Note: Processing before withdrawal remains lawful
-
-**Step 2: Check for Alternative Legal Basis**
-- Can we continue processing under different legal basis? (contract, legal obligation, legitimate interests)
-- If yes, inform data subject
-- If no, erase data (unless other exception applies)
-
-**Step 3: Respond to Data Subject**
-
-**Consent Withdrawal Template:**
-
-```
-Dear [Data Subject Name],
-
-Re: Consent Withdrawal - Reference: DSR-[YYYY]-[NNN]
-
-Thank you for withdrawing your consent for [specific processing purpose - e.g., "marketing communications"].
-
-Your consent has been withdrawn and processing has stopped immediately.
-
-**Processing Stopped:**
-- Marketing emails
-- [Other consent-based processing]
-
-**Processing Continued:**
-[If applicable:]
-We continue to process your data for the following purposes under different legal bases:
-- Order fulfillment (legal basis: contract performance)
-- Accounting records (legal basis: legal obligation)
-
-**Data Retention:**
-[If applicable:]
-Data from previous processing will be [erased / retained for X period due to legal obligation].
-
-You can re-consent at any time by [explain how].
-
-If you have any questions, please contact us at dpo@zabalagailetak.com.
-
-Sincerely,
-
-[DPO Name]
-Data Protection Officer
-Zabala Gailetak S.A.
-
-Date: [Date]
-```
+**Datu Interesdunen Eskubideen Eskaeretarako:**  
+- **Lehentasunezkoa:** Emaila dpo@zabalagailetak.com
+- **Web Inprimakia:** https://www.zabalagailetak.com/privacy/data-request
+- **Posta:** Datuen Babeserako Ordezkaria, Zabala Gailetak S.A., [Helbidea], [Herria, Posta Kodea], Espainia
 
 ---
 
-## 12. Complaints and Escalation
+**DATU INTERESDUNEN ESKUBIDEEN PROZEDUREN AMAIERA**
 
-### 12.1 Handling Complaints
-
-If data subject is dissatisfied with our response:
-1. **Acknowledge complaint** immediately
-2. **Review decision** with fresh eyes (ideally different person)
-3. **Engage with data subject** - understand concerns
-4. **Provide detailed explanation** or revise decision if appropriate
-5. **Escalate to management** if needed
-
-### 12.2 Informing of Right to Complain to AEPD
-
-**Every response must include:**
-
-```
-You have the right to lodge a complaint with the Spanish Data Protection Authority (AEPD):
-- Website: www.aepd.es
-- Phone: +34 901 100 099
-- Address: C/ Jorge Juan, 6, 28001 Madrid, Spain
-- Online complaint form: https://sedeagpd.gob.es
-
-You also have the right to seek judicial remedy.
-```
-
-### 12.3 AEPD Investigation
-
-If AEPD contacts us regarding complaint:
-1. **Respond within deadline** (typically 10 days, extendable)
-2. **Provide full documentation** (request log, communications, justification)
-3. **Cooperate fully** with investigation
-4. **Review and remediate** if AEPD finds issues
-5. **Document lessons learned** and update procedures
-
----
-
-## 13. Request Log and Metrics
-
-### 13.1 Request Log
-
-**Maintain comprehensive log of all requests:**
-
-| Request ID | Date Received | Data Subject | Right Exercised | Status | Due Date | Resolution Date | Outcome | Notes |
-|------------|---------------|--------------|----------------|--------|----------|-----------------|---------|-------|
-| DSR-2026-001 | 2026-01-05 | Juan García | Access | Closed | 2026-02-04 | 2026-01-20 | Granted | |
-| DSR-2026-002 | 2026-01-08 | María López | Erasure | Closed | 2026-02-07 | 2026-01-25 | Partial (legal retention) | |
-
-### 13.2 Metrics and Reporting
-
-**Track monthly/quarterly:**
-- Total requests received (by right type)
-- Average response time
-- Percentage within 1-month deadline
-- Percentage granted vs. refused
-- Extensions requested
-- Complaints escalated to AEPD
-- Trends and patterns
-
-**Quarterly Report to Management:**
-- Volume trends
-- Common request types
-- Issues or challenges
-- Process improvements
-- Training needs
-
----
-
-## 14. Training and Awareness
-
-### 14.1 Staff Training
-
-**All staff who may receive requests:**
-- How to recognize data subject rights requests
-- How to forward requests to DPO immediately
-- What NOT to do (don't ignore, don't respond without DPO)
-
-**DPO and Response Team:**
-- Detailed training on each right
-- How to use templates and procedures
-- Legal requirements and deadlines
-- When to consult legal counsel
-
-**Annual refresher training** for all staff.
-
-### 14.2 Making Rights Easy to Exercise
-
-**Transparency:**
-- Clear information in Privacy Notice about rights
-- Simple language (avoid legal jargon)
-- Multiple channels to exercise rights
-
-**Accessibility:**
-- Web form easy to find and use
-- Email response within 24 hours acknowledging receipt
-- Support for individuals with disabilities
-- Alternative formats if needed (large print, audio, etc.)
-
----
-
-## 15. Continuous Improvement
-
-### 15.1 Regular Review
-
-**Review procedures:**
-- Annually or when GDPR guidance updates
-- After AEPD investigations or complaints
-- When new processing activities require new considerations
-
-### 15.2 Lessons Learned
-
-After each complex or escalated request:
-- What went well?
-- What could be improved?
-- Update templates or procedures
-- Share learnings with team
-
----
-
-## 16. Contact Information
-
-**Data Protection Officer (DPO):**  
-Name: [DPO Name]  
-Email: dpo@zabalagailetak.com  
-Phone: +34 XXX XXX XXX  
-Office: [Location]
-
-**For Data Subject Rights Requests:**  
-- **Primary:** Email dpo@zabalagailetak.com
-- **Web Form:** https://www.zabalagailetak.com/privacy/data-request
-- **Mail:** Data Protection Officer, Zabala Gailetak S.A., [Address], [City, Postal Code], Spain
-- **In-Person:** [Address], Monday-Friday 9:00-17:00
-
-**Supervisory Authority:**  
-Agencia Española de Protección de Datos (AEPD)  
-Website: www.aepd.es  
-Phone: +34 901 100 099  
-Online Complaint Form: https://sedeagpd.gob.es
-
----
-
-**END OF DATA SUBJECT RIGHTS PROCEDURES**
-
-**Document Owner:** Data Protection Officer  
-**Last Reviewed:** January 8, 2026  
-**Next Review:** January 8, 2027
+**Dokumentuaren Jabea:** Datuen Babeserako Ordezkaria  
+**Azken Berrikuspena:** 2026ko Urtarrilaren 8a  
+**Hurrengo Berrikuspena:** 2027ko Urtarrilaren 8a

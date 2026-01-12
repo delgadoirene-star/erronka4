@@ -207,7 +207,7 @@ const Order = () => {
         navigate('/products');
       }, 3000);
     } catch (err) {
-      setError(err.response?.data?.errors?.[0]?.msg || err.message || 'Eskaera sortzea errorea');
+      setError(err.response?.data?.errors?.[0]?.msg || err.message || 'Eskaera sortzean errorea gertatu da');
     } finally {
       setLoading(false);
     }
@@ -273,7 +273,7 @@ const Order = () => {
               value={customerEmail}
               onChange={(e) => setCustomerEmail(e.target.value)}
               required
-              placeholder="email@example.com"
+              placeholder="email@adibidea.com"
             />
           </FormGroup>
 

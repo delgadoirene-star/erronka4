@@ -138,7 +138,7 @@ const MFA = () => {
     <Container>
       <Card>
         <Title>MFA Balidazioa</Title>
-        <Subtitle>Autentikatzaile aplikazioko kodea sartu</Subtitle>
+        <Subtitle>Sartu autentikatzaile aplikazioko kodea</Subtitle>
         
         <Info>
           Zure autentikatzaile aplikaziotik (Google Authenticator, Authy, etab.)

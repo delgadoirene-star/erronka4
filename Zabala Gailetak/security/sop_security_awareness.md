@@ -1,17 +1,17 @@
-# Security Awareness Training SOP - Zabala Gailetak
+# Segurtasun Kontzientziaziorako Prestakuntza (SOP) - Zabala Gailetak
 
-## 1. Training Requirements
-- All employees: Annual mandatory training
-- Developers: Secure coding practices
-- IT Staff: Advanced security topics
-- Management: Risk awareness
+## 1. Prestakuntza Baldintzak
+- Langile guztiak: Urteroko derrigorrezko prestakuntza
+- Garatzaileak: Kodeketa seguru praktikak
+- IT Langileak: Segurtasun gai aurreratuak
+- Zuzendaritza: Arrisku kontzientziazioa
 
-## 2. Phishing Simulation
-- Monthly simulated phishing emails
-- Track click rates
-- Provide immediate training for failures
+## 2. Phishing Simulazioa
+- Hilero phishing simulazio mezuak bidali
+- Klik tasen jarraipena egin
+- Berehalako prestakuntza eman huts egiten dutenei
 
-## 3. Compliance Tracking
-- Maintain training records
-- Generate compliance reports
-- Follow up with non-compliant employees
+## 3. Betetze Jarraipena
+- Prestakuntza erregistroak mantendu
+- Betetze txostenak sortu
+- Betetzen ez duten langileei jarraipena egin

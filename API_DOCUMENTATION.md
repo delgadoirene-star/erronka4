@@ -1,34 +1,34 @@
-# Zabala Gailetak API Documentation
+# Zabala Gailetak API Dokumentazioa
 
-**Version:** 1.0  
-**Base URL:** `https://api.zabala-gailetak.com/api`  
-**Authentication:** JWT Bearer Token + MFA
-
----
-
-## Table of Contents
-
-1. [Authentication](#1-authentication)
-2. [Products](#2-products)
-3. [Orders](#3-orders)
-4. [System](#4-system)
-5. [Error Codes](#5-error-codes)
-6. [Rate Limiting](#6-rate-limiting)
-7. [Security](#7-security)
+**Bertsioa:** 1.0  
+**Oinarrizko URL:** `https://api.zabala-gailetak.com/api`  
+**Autentikazioa:** JWT Bearer Token + MFA
 
 ---
 
-## 1. Authentication
+## Aurkibidea
 
-### 1.1 Register New User
+1. [Autentikazioa](#1-autentikazioa)
+2. [Produktuak](#2-produktuak)
+3. [Eskaerak](#3-eskaerak)
+4. [Sistema](#4-sistema)
+5. [Errore Kodeak](#5-errore-kodeak)
+6. [Tasa Mugatzea](#6-tasa-mugatzea)
+7. [Segurtasuna](#7-segurtasuna)
 
-Creates a new user account.
+---
+
+## 1. Autentikazioa
+
+### 1.1 Erabiltzaile Berria Erregistratu
+
+Erabiltzaile kontu berria sortzen du.
 
 **Endpoint:** `POST /auth/register`  
-**Authentication:** None required  
-**Rate Limit:** 5 requests / 15 minutes
+**Autentikazioa:** Ez da beharrezkoa  
+**Tasa Muga:** 5 eskaera / 15 minutu
 
-**Request Body:**
+**Eskaera Gorputza (Request Body):**
 
 ```json
 {
@@ -38,15 +38,15 @@ Creates a new user account.
 }
 ```
 
-**Request Validation:**
+**Eskaera Balidazioa:**
 
-| Field | Type | Required | Validation |
-|-------|------|----------|-------------|
-| username | string | Yes | 3-30 characters, alphanumeric |
-| email | string | Yes | Valid email format |
-| password | string | Yes | Minimum 8 characters |
+| Eremua | Mota | Beharrezkoa | Balidazioa |
+|--------|------|-------------|------------|
+| username | string | Bai | 3-30 karaktere, alfanumerikoa |
+| email | string | Bai | Email formatu balioduna |
+| password | string | Bai | Gutxienez 8 karaktere |
 
-**Success Response (201):**
+**Arrakasta Erantzuna (201):**
 
 ```json
 {
@@ -56,7 +56,7 @@ Creates a new user account.
 }
 ```
 
-**Error Response (400):**
+**Errore Erantzuna (400):**
 
 ```json
 {
@@ -70,7 +70,7 @@ Creates a new user account.
 }
 ```
 
-**Error Response (409):**
+**Errore Erantzuna (409):**
 
 ```json
 {
@@ -80,15 +80,15 @@ Creates a new user account.
 
 ---
 
-### 1.2 Login
+### 1.2 Saioa Hasi (Login)
 
-Authenticates a user and returns a JWT token.
+Erabiltzailea autentikatzen du eta JWT token bat itzultzen du.
 
 **Endpoint:** `POST /auth/login`  
-**Authentication:** None required  
-**Rate Limit:** 5 requests / 15 minutes
+**Autentikazioa:** Ez da beharrezkoa  
+**Tasa Muga:** 5 eskaera / 15 minutu
 
-**Request Body:**
+**Eskaera Gorputza:**
 
 ```json
 {
@@ -97,7 +97,7 @@ Authenticates a user and returns a JWT token.
 }
 ```
 
-**Success Response with MFA (200):**
+**Arrakasta Erantzuna MFArekin (200):**
 
 ```json
 {
@@ -107,7 +107,7 @@ Authenticates a user and returns a JWT token.
 }
 ```
 
-**Success Response without MFA (200):**
+**Arrakasta Erantzuna MFA gabe (200):**
 
 ```json
 {
@@ -116,7 +116,7 @@ Authenticates a user and returns a JWT token.
 }
 ```
 
-**Error Response (401):**
+**Errore Erantzuna (401):**
 
 ```json
 {
@@ -126,21 +126,21 @@ Authenticates a user and returns a JWT token.
 
 ---
 
-### 1.3 Setup MFA
+### 1.3 MFA Konfiguratu
 
-Initiates MFA setup for authenticated user.
+Autentikatutako erabiltzailearentzat MFA konfigurazioa hasten du.
 
 **Endpoint:** `POST /auth/mfa/setup`  
-**Authentication:** Required (Bearer Token)  
-**Rate Limit:** 3 requests / hour
+**Autentikazioa:** Beharrezkoa (Bearer Token)  
+**Tasa Muga:** 3 eskaera / orduko
 
-**Request Headers:**
+**Eskaera Goiburuak (Headers):**
 
 ```http
 Authorization: Bearer <JWT_TOKEN>
 ```
 
-**Success Response (200):**
+**Arrakasta Erantzuna (200):**
 
 ```json
 {
@@ -150,7 +150,7 @@ Authorization: Bearer <JWT_TOKEN>
 }
 ```
 
-**Error Response (400):**
+**Errore Erantzuna (400):**
 
 ```json
 {
@@ -160,21 +160,21 @@ Authorization: Bearer <JWT_TOKEN>
 
 ---
 
-### 1.4 Verify MFA
+### 1.4 MFA Egiaztatu
 
-Verifies MFA TOTP code and completes authentication.
+MFA TOTP kodea egiaztatzen du eta autentikazioa osatzen du.
 
 **Endpoint:** `POST /auth/mfa/verify`  
-**Authentication:** Required (Bearer Token)  
-**Rate Limit:** 10 requests / 15 minutes
+**Autentikazioa:** Beharrezkoa (Bearer Token)  
+**Tasa Muga:** 10 eskaera / 15 minutu
 
-**Request Headers:**
+**Eskaera Goiburuak:**
 
 ```http
 Authorization: Bearer <JWT_TOKEN>
 ```
 
-**Request Body:**
+**Eskaera Gorputza:**
 
 ```json
 {
@@ -182,13 +182,13 @@ Authorization: Bearer <JWT_TOKEN>
 }
 ```
 
-**Request Validation:**
+**Eskaera Balidazioa:**
 
-| Field | Type | Required | Validation |
-|-------|------|----------|-------------|
-| token | string | Yes | 6 digits, numeric |
+| Eremua | Mota | Beharrezkoa | Balidazioa |
+|--------|------|-------------|------------|
+| token | string | Bai | 6 digitu, zenbakizkoa |
 
-**Success Response (200):**
+**Arrakasta Erantzuna (200):**
 
 ```json
 {
@@ -197,7 +197,7 @@ Authorization: Bearer <JWT_TOKEN>
 }
 ```
 
-**Error Response (401):**
+**Errore Erantzuna (401):**
 
 ```json
 {
@@ -207,21 +207,21 @@ Authorization: Bearer <JWT_TOKEN>
 
 ---
 
-### 1.5 Disable MFA
+### 1.5 MFA Desgaitu
 
-Disables MFA for authenticated user.
+Autentikatutako erabiltzailearentzat MFA desgaitzen du.
 
 **Endpoint:** `POST /auth/mfa/disable`  
-**Authentication:** Required (Bearer Token)  
-**Rate Limit:** 1 request / hour
+**Autentikazioa:** Beharrezkoa (Bearer Token)  
+**Tasa Muga:** 1 eskaera / orduko
 
-**Request Headers:**
+**Eskaera Goiburuak:**
 
 ```http
 Authorization: Bearer <JWT_TOKEN>
 ```
 
-**Success Response (200):**
+**Arrakasta Erantzuna (200):**
 
 ```json
 {
@@ -231,17 +231,17 @@ Authorization: Bearer <JWT_TOKEN>
 
 ---
 
-## 2. Products
+## 2. Produktuak
 
-### 2.1 Get All Products
+### 2.1 Produktu Guztiak Lortu
 
-Retrieves list of all available products.
+Eskuragarri dauden produktu guztien zerrenda lortzen du.
 
 **Endpoint:** `GET /products`  
-**Authentication:** Optional  
-**Rate Limit:** 50 requests / 15 minutes
+**Autentikazioa:** Aukerakoa  
+**Tasa Muga:** 50 eskaera / 15 minutu
 
-**Success Response (200):**
+**Arrakasta Erantzuna (200):**
 
 ```json
 [
@@ -272,20 +272,20 @@ Retrieves list of all available products.
 ]
 ```
 
-**Pagination (Future):**
+**Orrialdekatzea (Etorkizunean):**
 
 `GET /products?page=1&limit=10&sort=name&order=asc`
 
 ---
 
-### 2.2 Get Product by ID (Future)
+### 2.2 Produktua ID bidez Lortu (Etorkizunean)
 
-Retrieves specific product details.
+Produktu zehatz baten xehetasunak lortzen ditu.
 
 **Endpoint:** `GET /products/:id`  
-**Authentication:** Optional
+**Autentikazioa:** Aukerakoa
 
-**Success Response (200):**
+**Arrakasta Erantzuna (200):**
 
 ```json
 {
@@ -304,7 +304,7 @@ Retrieves specific product details.
 }
 ```
 
-**Error Response (404):**
+**Errore Erantzuna (404):**
 
 ```json
 {
@@ -314,24 +314,24 @@ Retrieves specific product details.
 
 ---
 
-## 3. Orders
+## 3. Eskaerak
 
-### 3.1 Create Order
+### 3.1 Eskaera Sortu
 
-Creates a new order for authenticated user.
+Autentikatutako erabiltzailearentzat eskaera berria sortzen du.
 
 **Endpoint:** `POST /orders`  
-**Authentication:** Required (Bearer Token)  
-**Rate Limit:** 25 requests / 15 minutes
+**Autentikazioa:** Beharrezkoa (Bearer Token)  
+**Tasa Muga:** 25 eskaera / 15 minutu
 
-**Request Headers:**
+**Eskaera Goiburuak:**
 
 ```http
 Authorization: Bearer <JWT_TOKEN>
 Content-Type: application/json
 ```
 
-**Request Body:**
+**Eskaera Gorputza:**
 
 ```json
 {
@@ -343,17 +343,17 @@ Content-Type: application/json
 }
 ```
 
-**Request Validation:**
+**Eskaera Balidazioa:**
 
-| Field | Type | Required | Validation |
-|-------|------|----------|-------------|
-| productId | integer | Yes | Must exist |
-| quantity | integer | Yes | 1-100 |
-| customerEmail | string | Yes | Valid email |
-| customerName | string | Yes | 2-100 characters |
-| shippingAddress | string | Yes | 10-500 characters |
+| Eremua | Mota | Beharrezkoa | Balidazioa |
+|--------|------|-------------|------------|
+| productId | integer | Bai | Existitu behar da |
+| quantity | integer | Bai | 1-100 |
+| customerEmail | string | Bai | Email balioduna |
+| customerName | string | Bai | 2-100 karaktere |
+| shippingAddress | string | Bai | 10-500 karaktere |
 
-**Success Response (201):**
+**Arrakasta Erantzuna (201):**
 
 ```json
 {
@@ -365,7 +365,7 @@ Content-Type: application/json
 }
 ```
 
-**Error Response (400):**
+**Errore Erantzuna (400):**
 
 ```json
 {
@@ -379,7 +379,7 @@ Content-Type: application/json
 }
 ```
 
-**Error Response (422):**
+**Errore Erantzuna (422):**
 
 ```json
 {
@@ -389,20 +389,20 @@ Content-Type: application/json
 
 ---
 
-### 3.2 Get User Orders (Future)
+### 3.2 Erabiltzailearen Eskaerak Lortu (Etorkizunean)
 
-Retrieves orders for authenticated user.
+Autentikatutako erabiltzailearen eskaerak lortzen ditu.
 
 **Endpoint:** `GET /orders`  
-**Authentication:** Required (Bearer Token)
+**Autentikazioa:** Beharrezkoa (Bearer Token)
 
-**Request Headers:**
+**Eskaera Goiburuak:**
 
 ```http
 Authorization: Bearer <JWT_TOKEN>
 ```
 
-**Success Response (200):**
+**Arrakasta Erantzuna (200):**
 
 ```json
 {
@@ -425,14 +425,14 @@ Authorization: Bearer <JWT_TOKEN>
 
 ---
 
-### 3.3 Get Order by ID (Future)
+### 3.3 Eskaera ID bidez Lortu (Etorkizunean)
 
-Retrieves specific order details.
+Eskaera zehatz baten xehetasunak lortzen ditu.
 
 **Endpoint:** `GET /orders/:id`  
-**Authentication:** Required (Bearer Token)
+**Autentikazioa:** Beharrezkoa (Bearer Token)
 
-**Success Response (200):**
+**Arrakasta Erantzuna (200):**
 
 ```json
 {
@@ -453,16 +453,16 @@ Retrieves specific order details.
 
 ---
 
-## 4. System
+## 4. Sistema
 
-### 4.1 Health Check
+### 4.1 Osasun Egiaztapena (Health Check)
 
-Returns API health status.
+APIaren osasun egoera itzultzen du.
 
 **Endpoint:** `GET /health`  
-**Authentication:** None required
+**Autentikazioa:** Ez da beharrezkoa
 
-**Success Response (200):**
+**Arrakasta Erantzuna (200):**
 
 ```json
 {
@@ -477,7 +477,7 @@ Returns API health status.
 }
 ```
 
-**Error Response (503):**
+**Errore Erantzuna (503):**
 
 ```json
 {
@@ -488,14 +488,14 @@ Returns API health status.
 
 ---
 
-### 4.2 API Info
+### 4.2 API Informazioa
 
-Returns API information.
+APIaren informazioa itzultzen du.
 
 **Endpoint:** `GET /`  
-**Authentication:** None required
+**Autentikazioa:** Ez da beharrezkoa
 
-**Success Response (200):**
+**Arrakasta Erantzuna (200):**
 
 ```json
 {
@@ -509,27 +509,27 @@ Returns API information.
 
 ---
 
-## 5. Error Codes
+## 5. Errore Kodeak
 
-### 5.1 HTTP Status Codes
+### 5.1 HTTP Egoera Kodeak
 
-| Code | Description |
-|------|-------------|
-| 200 | OK - Request successful |
-| 201 | Created - Resource created |
-| 400 | Bad Request - Invalid input |
-| 401 | Unauthorized - Authentication required or failed |
-| 403 | Forbidden - Insufficient permissions |
-| 404 | Not Found - Resource not found |
-| 409 | Conflict - Resource already exists |
-| 422 | Unprocessable Entity - Business logic error |
-| 429 | Too Many Requests - Rate limit exceeded |
-| 500 | Internal Server Error - Server error |
-| 503 | Service Unavailable - Service down |
+| Kodea | Deskribapena |
+|-------|--------------|
+| 200 | OK - Eskaera arrakastatsua |
+| 201 | Created - Baliabidea sortua |
+| 400 | Bad Request - Sarrera baliogabea |
+| 401 | Unauthorized - Autentikazioa beharrezkoa edo okerra |
+| 403 | Forbidden - Baimen nahikorik ez |
+| 404 | Not Found - Baliabidea ez da aurkitu |
+| 409 | Conflict - Baliabidea jada existitzen da |
+| 422 | Unprocessable Entity - Negozio logika errorea |
+| 429 | Too Many Requests - Tasa muga gainditua |
+| 500 | Internal Server Error - Zerbitzariaren errorea |
+| 503 | Service Unavailable - Zerbitzua erorita |
 
-### 5.2 Error Response Format
+### 5.2 Errore Erantzun Formatua
 
-**Validation Error (400):**
+**Balidazio Errorea (400):**
 
 ```json
 {
@@ -543,7 +543,7 @@ Returns API information.
 }
 ```
 
-**Business Error (422):**
+**Negozio Errorea (422):**
 
 ```json
 {
@@ -556,7 +556,7 @@ Returns API information.
 }
 ```
 
-**Server Error (500):**
+**Zerbitzari Errorea (500):**
 
 ```json
 {
@@ -567,22 +567,22 @@ Returns API information.
 
 ---
 
-## 6. Rate Limiting
+## 6. Tasa Mugatzea (Rate Limiting)
 
-### 6.1 Rate Limit Rules
+### 6.1 Tasa Muga Arauak
 
-| Endpoint | Limit | Window |
-|----------|-------|--------|
-| POST /auth/register | 5 | 15 minutes |
-| POST /auth/login | 5 | 15 minutes |
-| POST /auth/mfa/verify | 10 | 15 minutes |
-| GET /products | 50 | 15 minutes |
-| POST /orders | 25 | 15 minutes |
-| Others | 100 | 15 minutes |
+| Endpoint | Muga | Leihoa |
+|----------|------|--------|
+| POST /auth/register | 5 | 15 minutu |
+| POST /auth/login | 5 | 15 minutu |
+| POST /auth/mfa/verify | 10 | 15 minutu |
+| GET /products | 50 | 15 minutu |
+| POST /orders | 25 | 15 minutu |
+| Besteak | 100 | 15 minutu |
 
-### 6.2 Rate Limit Headers
+### 6.2 Tasa Muga Goiburuak
 
-**Response Headers:**
+**Erantzun Goiburuak:**
 
 ```http
 X-RateLimit-Limit: 100
@@ -590,7 +590,7 @@ X-RateLimit-Remaining: 95
 X-RateLimit-Reset: 1704729600
 ```
 
-### 6.3 Rate Limit Error (429)
+### 6.3 Tasa Muga Errorea (429)
 
 ```json
 {
@@ -601,11 +601,11 @@ X-RateLimit-Reset: 1704729600
 
 ---
 
-## 7. Security
+## 7. Segurtasuna
 
-### 7.1 Authentication
+### 7.1 Autentikazioa
 
-**JWT Token Format:**
+**JWT Token Formatua:**
 
 ```http
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
@@ -623,11 +623,11 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 }
 ```
 
-**Token Expiration:** 1 hour
+**Token Iraungitzea:** 1 ordu
 
-### 7.2 Security Headers
+### 7.2 Segurtasun Goiburuak (Headers)
 
-**Response Headers:**
+**Erantzun Goiburuak:**
 
 ```http
 X-Frame-Options: SAMEORIGIN
@@ -640,38 +640,38 @@ Referrer-Policy: strict-origin-when-cross-origin
 
 ### 7.3 CORS
 
-**Allowed Origins:**
+**Baimendutako Jatorriak (Origins):**
 - `https://zabala-gailetak.com`
 - `https://www.zabala-gailetak.com`
 
-**Allowed Methods:**
+**Baimendutako Metodoak:**
 - GET, POST, PUT, DELETE, OPTIONS
 
-**Allowed Headers:**
+**Baimendutako Goiburuak:**
 - Content-Type, Authorization, X-Requested-With
 
-### 7.4 Input Validation
+### 7.4 Sarrera Balidazioa
 
-All input is validated and sanitized:
-- SQL injection prevention
-- XSS prevention
-- CSRF protection
-- Command injection prevention
+Sarrera guztiak balidatu eta sanitizatzen dira:
+- SQL injection prebentzioa
+- XSS prebentzioa
+- CSRF babesa
+- Command injection prebentzioa
 
-### 7.5 Encryption
+### 7.5 Enkriptatzea
 
-- **Password**: bcrypt (cost factor: 10)
-- **MFA Secret**: Encrypted at rest
+- **Pasahitza**: bcrypt (cost factor: 10)
+- **MFA Sekretua**: Enkriptatuta geldirik (at rest)
 - **TLS**: TLS 1.2 / TLS 1.3
-- **Ciphers**: HIGH security cipher suites
+- **Zifratzeak**: HIGH security cipher suites
 
 ---
 
-## Appendix A: Testing Examples
+## Eranskina A: Test Adibideak
 
-### cURL Examples
+### cURL Adibideak
 
-**Register:**
+**Erregistratu:**
 
 ```bash
 curl -X POST https://api.zabala-gailetak.com/api/auth/register \
@@ -679,7 +679,7 @@ curl -X POST https://api.zabala-gailetak.com/api/auth/register \
   -d '{"username":"johndoe","email":"john@example.com","password":"SecurePass123!"}'
 ```
 
-**Login:**
+**Saioa Hasi:**
 
 ```bash
 curl -X POST https://api.zabala-gailetak.com/api/auth/login \
@@ -687,13 +687,13 @@ curl -X POST https://api.zabala-gailetak.com/api/auth/login \
   -d '{"username":"johndoe","password":"SecurePass123!"}'
 ```
 
-**Get Products:**
+**Produktuak Lortu:**
 
 ```bash
 curl https://api.zabala-gailetak.com/api/products
 ```
 
-**Create Order:**
+**Eskaera Sortu:**
 
 ```bash
 curl -X POST https://api.zabala-gailetak.com/api/orders \
@@ -704,7 +704,7 @@ curl -X POST https://api.zabala-gailetak.com/api/orders \
 
 ---
 
-## Appendix B: SDK Examples
+## Eranskina B: SDK Adibideak
 
 ### JavaScript (Axios)
 
@@ -716,7 +716,7 @@ const apiClient = axios.create({
   timeout: 10000
 });
 
-// Login
+// Saioa Hasi
 const login = async (username, password) => {
   const response = await apiClient.post('/auth/login', {
     username,
@@ -732,13 +732,13 @@ const login = async (username, password) => {
   return response.data;
 };
 
-// Get Products
+// Produktuak Lortu
 const getProducts = async () => {
   const response = await apiClient.get('/products');
   return response.data;
 };
 
-// Create Order
+// Eskaera Sortu
 const createOrder = async (orderData) => {
   const response = await apiClient.post('/orders', orderData);
   return response.data;
@@ -747,19 +747,19 @@ const createOrder = async (orderData) => {
 
 ---
 
-## Appendix C: Changelog
+## Eranskina C: Aldaketa Erregistroa
 
-### Version 1.0 (2024-01-08)
-- Initial API release
-- Authentication endpoints
-- Products endpoints
-- Orders endpoints
-- MFA support
-- Rate limiting
-- Security headers
+### 1.0 Bertsioa (2024-01-08)
+- Hasierako API argitalpena
+- Autentikazio endpoint-ak
+- Produktu endpoint-ak
+- Eskaera endpoint-ak
+- MFA euskarria
+- Tasa mugatzea (Rate limiting)
+- Segurtasun goiburuak
 
 ---
 
-**Document Version:** 1.0  
-**Last Updated:** 2024-01-08  
-**Maintained By:** Zabala Gailetak Development Team
+**Dokumentu Bertsioa:** 1.0  
+**Azken Eguneratzea:** 2024-01-08  
+**Mantentzailea:** Zabala Gailetak Garapen Taldea

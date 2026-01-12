@@ -1,896 +1,896 @@
-# Password Policy
+# Pasahitz Politika
 ## Zabala Gailetak S.A.
 
-**Document ID:** PWD-001  
-**Version:** 1.0  
-**Date:** January 8, 2026  
-**Classification:** Internal Use  
-**Owner:** Chief Information Security Officer (CISO)  
-**Review Frequency:** Annual  
-**Next Review Date:** January 8, 2027
+**Dokumentuaren IDa:** PWD-001  
+**Bertsioa:** 1.0  
+**Data:** 2026ko Urtarrilaren 8a  
+**Sailkapena:** Barne Erabilera  
+**Jabea:** Informazioaren Segurtasuneko Arduradun Nagusia (CISO)  
+**Berrikuspen Maiztasuna:** Urterokoa  
+**Hurrengo Berrikuspen Data:** 2027ko Urtarrilaren 8a
 
 ---
 
-## 1. Document Control
+## 1. Dokumentuaren Kontrola
 
-### 1.1 Version History
+### 1.1 Bertsio Historia
 
-| Version | Date | Author | Changes |
-|---------|------|--------|---------|
-| 1.0 | 2026-01-08 | CISO | Initial policy creation |
+| Bertsioa | Data | Egilea | Aldaketak |
+|----------|------|--------|-----------|
+| 1.0 | 2026-01-08 | CISO | Hasierako politikaren sorrera |
 
-### 1.2 Approval
+### 1.2 Onarpena
 
-| Role | Name | Signature | Date |
+| Rola | Izena | Sinadura | Data |
 |------|------|-----------|------|
-| Chief Executive Officer | [Name] | | |
-| Chief Information Security Officer | [Name] | | |
-| IT Manager | [Name] | | |
+| Zuzendari Nagusia (CEO) | [Izena] | | |
+| Informazioaren Segurtasuneko Arduradun Nagusia (CISO) | [Izena] | | |
+| IT Kudeatzailea | [Izena] | | |
 
 ---
 
-## 2. Purpose and Scope
+## 2. Helburua eta Esparrua
 
-### 2.1 Purpose
+### 2.1 Helburua
 
-This Password Policy establishes requirements for creating, managing, and protecting passwords used to access Zabala Gailetak's information systems. Strong password practices are critical for:
-- Preventing unauthorized access to systems and data
-- Protecting customer and employee information
-- Ensuring compliance with ISO/IEC 27001:2022 and GDPR
-- Reducing risk of credential theft and account compromise
-- Meeting regulatory and contractual security requirements
+Pasahitz Politika honek Zabala Gailetak-en informazio-sistemetara sartzeko erabiltzen diren pasahitzak sortzeko, kudeatzeko eta babesteko baldintzak ezartzen ditu. Pasahitz praktika sendoak kritikoak dira honakoetarako:
+- Baimenik gabeko sarbideak prebenitzea sistemetara eta datuetara
+- Bezeroen eta langileen informazioa babestea
+- ISO/IEC 27001:2022 eta GDPR betetzen direla ziurtatzea
+- Kredentzialen lapurreta eta kontu arriskua murriztea
+- Segurtasun baldintza arautzaileak eta kontratuzkoak betetzea
 
-### 2.2 Scope
+### 2.2 Esparrua
 
-This policy applies to:
-- **All Users:** Employees, contractors, consultants, temporary staff, and third parties
-- **All Systems:** IT systems (workstations, servers, applications, cloud services) and OT systems (PLCs, SCADA, HMI)
-- **All Access Methods:** Local login, remote access (VPN), web applications, mobile devices, administrative interfaces
-- **All Password Types:** User passwords, administrative passwords, service accounts, API keys, encryption keys
+Politika hau honako hauei aplikatzen zaie:
+- **Erabiltzaile Guztiak:** Langileak, kontratistak, aholkulariak, aldi baterako langileak eta hirugarrenak
+- **Sistema Guztiak:** IT sistemak (lan-estazioak, zerbitzariak, aplikazioak, hodeiko zerbitzuak) eta OT sistemak (PLCak, SCADA, HMI)
+- **Sarbide Metodo Guztiak:** Tokiko saio-hasiera, urruneko sarbidea (VPN), web aplikazioak, gailu mugikorrak, administrazio interfazeak
+- **Pasahitz Mota Guztiak:** Erabiltzaile pasahitzak, administrazio pasahitzak, zerbitzu kontuak, API gakoak, enkriptatze gakoak
 
-### 2.3 Compliance
+### 2.3 Betetzea
 
-Compliance with this policy is mandatory. Violations may result in:
-- Account suspension
-- Forced password reset
-- Disciplinary action (per Acceptable Use Policy)
-- Termination of employment or contract
+Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
+- Kontua etetea
+- Pasahitza berrezartzea behartzea
+- Diziplina ekintzak (Erabilera Onargarriaren Politikaren arabera)
+- Enpleguaren edo kontratuaren amaiera
 
 ---
 
-## 3. Password Requirements
+## 3. Pasahitz Baldintzak
 
-### 3.1 Standard User Accounts
+### 3.1 Erabiltzaile Kontu Estandarrak
 
-**Minimum Requirements:**
-- **Length:** Minimum 12 characters
-- **Complexity:** Must contain at least three of the following four categories:
-  - Uppercase letters (A-Z)
-  - Lowercase letters (a-z)
-  - Numbers (0-9)
-  - Special characters (!@#$%^&*()_+-=[]{}|;:,.<>?)
-- **Expiration:** 90 days (180 days if Multi-Factor Authentication enabled)
-- **History:** Cannot reuse last 12 passwords
-- **Lockout:** Account locked after 5 failed login attempts for 30 minutes
-- **Change Requirements:** Must differ significantly from previous password (not just incrementing numbers)
+**Gutxieneko Baldintzak:**
+- **Luzera:** Gutxienez 12 karaktere
+- **Konplexutasuna:** Honako lau kategorietatik gutxienez hiru eduki behar ditu:
+  - Letra larriak (A-Z)
+  - Letra xeheak (a-z)
+  - Zenbakiak (0-9)
+  - Karaktere bereziak (!@#$%^&*()_+-=[]{}|;:,.<>?)
+- **Iraungitzea:** 90 egun (180 egun Faktore Anitzeko Autentifikazioa gaituta badago)
+- **Historia:** Ezin dira azken 12 pasahitzak berrerabili
+- **Blokeoa:** Kontua blokeatu egiten da 5 saio-hasiera okerren ondoren 30 minutuz
+- **Aldaketa Baldintzak:** Aurreko pasahitzetik nabarmen desberdina izan behar du (ez zenbakiak gehitzea bakarrik)
 
-**Example Strong Passwords:**
-- `Coffee&Cookies2026!`
+**Pasahitz Sendoen Adibideak:**
+- `Kafea&Gailetak2026!`
 - `Zabala$Gailetak#456`
-- `MyD0g!LovesCookies`
-- `Spain2026@Barcelona`
+- `NireTxakurrak!MaiteDituGailetak`
+- `Donostia2026@Uda`
 
-**Recommended:** Use passphrases (4+ random words):
-- `correct-horse-battery-staple`
-- `BlueElephant!DancesSalsa77`
-- `Pizza$Oven#Baker$2026`
+**Gomendatua:** Erabili pasaesaldiak (4+ ausazko hitz):
+- `zaldi-zuzena-bateria-grapagailua`
+- `ElefanteUrdina!DantzanSalsa77`
+- `Pizza$Labea#Okina$2026`
 
-### 3.2 Privileged and Administrative Accounts
+### 3.2 Kontu Pribilegiatuak eta Administratiboak
 
-**Elevated Requirements:**
-- **Length:** Minimum 14 characters
-- **Complexity:** Must contain all four character categories (upper, lower, number, special)
-- **Expiration:** 60 days (90 days if MFA enabled)
-- **History:** Cannot reuse last 24 passwords
-- **Lockout:** Account locked after 3 failed login attempts for 1 hour
-- **Separate Accounts:** Administrators must have separate admin account (e.g., `admin_jsmith`) distinct from regular user account (`jsmith`)
-- **Session Timeout:** Automatic logout after 15 minutes of inactivity
+**Baldintza Handituak:**
+- **Luzera:** Gutxienez 14 karaktere
+- **Konplexutasuna:** Lau karaktere kategoriak eduki behar ditu (larria, xehea, zenbakia, berezia)
+- **Iraungitzea:** 60 egun (90 egun MFA gaituta badago)
+- **Historia:** Ezin dira azken 24 pasahitzak berrerabili
+- **Blokeoa:** Kontua blokeatu egiten da 3 saio-hasiera okerren ondoren ordu batez
+- **Kontu Bereiziak:** Administratzaileek administrazio kontu bereizia izan behar dute (adib., `admin_jgarcia`) erabiltzaile kontu arruntetik bereizita (`jgarcia`)
+- **Saio Amaiera:** Saio-amaiera automatikoa 15 minutu inaktibitate ondoren
 
-**Scope:**
-- Domain Administrators
-- Server administrators (root, Administrator accounts)
-- Database administrators
-- Network administrators (firewall, switch, router access)
-- Cloud platform administrators (AWS, Azure, M365 Global Admin)
-- SCADA/OT system administrators
-- Security system administrators
+**Esparrua:**
+- Domeinu Administratzaileak
+- Zerbitzari administratzaileak (root, Administrator kontuak)
+- Datu-base administratzaileak
+- Sare administratzaileak (suebaki, switch, router sarbidea)
+- Hodei plataforma administratzaileak (AWS, Azure, M365 Global Admin)
+- SCADA/OT sistema administratzaileak
+- Segurtasun sistema administratzaileak
 
-### 3.3 Service Accounts
+### 3.3 Zerbitzu Kontuak
 
-**Requirements:**
-- **Length:** Minimum 20 characters (randomly generated)
-- **Complexity:** Maximum randomness (all character types)
-- **Expiration:** 365 days or never (if rotation disruptive to services)
-- **Storage:** Encrypted password vault (HashiCorp Vault, CyberArk, or approved equivalent)
-- **Usage:** Automated processes only (no interactive login)
-- **Monitoring:** Service account activity logged and monitored
-- **Least Privilege:** Permissions limited to exact requirements
+**Baldintzak:**
+- **Luzera:** Gutxienez 20 karaktere (ausaz sortua)
+- **Konplexutasuna:** Ausazkotasun maximoa (karaktere mota guztiak)
+- **Iraungitzea:** 365 egun edo inoiz ez (zerbitzuei eragiten badie)
+- **Biltegiratzea:** Pasahitz kutxa enkriptatua (HashiCorp Vault, CyberArk, edo baliokidea)
+- **Erabilera:** Prozesu automatizatuak soilik (saio-hasiera interaktiborik ez)
+- **Monitorizazioa:** Zerbitzu kontuen jarduera erregistratu eta monitorizatzen da
+- **Pribilegio Gutxienekoa:** Baimenak eskakizun zehatzetara mugatuta
 
-**Examples:**
-- Database service account for application connections
-- Backup service account
-- Monitoring agent accounts
-- API integration accounts
+**Adibideak:**
+- Datu-base zerbitzu kontua aplikazio konexioetarako
+- Babeskopia zerbitzu kontua
+- Monitorizazio agente kontuak
+- API integrazio kontuak
 
-### 3.4 Shared and Group Accounts
+### 3.4 Partekatutako eta Talde Kontuak
 
-**Policy:** Shared accounts are **prohibited** except where technically unavoidable.
+**Politika:** Partekatutako kontuak **debekatuta** daude teknikoki saihestezina den kasuetan izan ezik.
 
-**Exceptions Require:**
-- CISO approval with business justification
-- Enhanced logging (track which individual used shared account)
-- Password change after each authorized user's access ends
-- Regular access reviews (monthly)
+**Salbuespenek Behar Dute:**
+- CISOren onarpena negozio justifikazioarekin
+- Erregistro hobetua (jarraitu zein norbanakok erabili duen kontu partekatua)
+- Pasahitz aldaketa baimendutako erabiltzaile bakoitzaren sarbidea amaitzean
+- Aldizkako sarbide berrikuspenak (hilero)
 
-**Typical Exceptions:**
-- Emergency "break-glass" administrator account (sealed envelope in safe)
-- Specific industrial equipment with single local console (supplement with individual remote access)
-- Legacy systems without multi-user support (scheduled for replacement)
+**Ohiko Salbuespenak:**
+- Larrialdi "kristala apurtu" administratzaile kontua (gutun-azal zigilatua kutxa gotorrean)
+- Tokiko kontsola bakarra duten industria ekipamendu espezifikoak (banakako urruneko sarbidearekin osatua)
+- Erabiltzaile anitzeko euskarririk gabeko sistema zaharrak (ordezkatzeko programatuta)
 
-### 3.5 Temporary and Guest Accounts
+### 3.5 Aldi Baterako eta Gonbidatu Kontuak
 
-**Requirements:**
-- **Default Password:** Randomly generated (minimum 12 characters)
-- **Force Change:** Must change password on first login
-- **Expiration:** Account expires automatically after defined period (default: 30 days)
-- **Approval:** Requires manager and IT approval
-- **Monitoring:** Activity logged and reviewed
+**Baldintzak:**
+- **Pasahitz Lehenetsia:** Ausaz sortua (gutxienez 12 karaktere)
+- **Aldaketa Behartu:** Pasahitza aldatu behar da lehen saio-hasieran
+- **Iraungitzea:** Kontua automatikoki iraungitzen da epe zehatz baten ondoren (lehenetsia: 30 egun)
+- **Onarpena:** Kudeatzailearen eta ITren onarpena behar du
+- **Monitorizazioa:** Jarduera erregistratu eta berrikusten da
 
-**Use Cases:**
-- Contractors and consultants (short-term projects)
-- Temporary employees
-- Auditors
-- Vendors (limited-duration system access)
+**Erabilera Kasuak:**
+- Kontratistak eta aholkulariak (epe laburreko proiektuak)
+- Aldi baterako langileak
+- Auditoreak
+- Hornitzaileak (sistema sarbide mugatua)
 
 ---
 
-## 4. Password Creation Guidelines
+## 4. Pasahitz Sortze Jarraibideak
 
-### 4.1 Strong Password Characteristics
+### 4.1 Pasahitz Sendoen Ezaugarriak
 
-**DO Create Passwords That:**
-- Are long (12+ characters for users, 14+ for admins)
-- Use mix of character types (upper, lower, number, special)
-- Are easy for you to remember but hard for others to guess
-- Are unique to each system (never reuse passwords)
-- Use passphrases (multiple random words)
+**EGIN Pasahitzak Honelakoak:**
+- Luzeak dira (12+ karaktere erabiltzaileentzat, 14+ adminentzat)
+- Karaktere mota nahasketa erabiltzen dute (larria, xehea, zenbakia, berezia)
+- Zuretzat gogoratzen errazak dira baina besteentzat asmatzen zailak
+- Bakarrak dira sistema bakoitzerako (inoiz ez berrerabili pasahitzak)
+- Pasaesaldiak erabiltzen dituzte (ausazko hitz anitz)
 
-**Techniques for Memorable Strong Passwords:**
-1. **Passphrase Method:** String of random words
-   - Example: `Purple!Elephant$Dances#Tango`
-2. **Sentence Method:** First letters of sentence + modifications
-   - Sentence: "I love eating Zabala cookies at 3pm every Friday!"
-   - Password: `IleZc@3peF!`
-3. **Character Substitution:** Replace letters with similar characters
-   - Word: "Chocolate Chip Cookie"
-   - Password: `Ch0c0l@t3Ch1pC00k!e`
+**Pasahitz Sendo Gogangarriak Sortzeko Teknikak:**
+1. **Pasaesaldi Metodoa:** Ausazko hitz kateak
+   - Adibidea: `Elefante!Morea$Dantzan#Tangoa`
+2. **Esaldi Metodoa:** Esaldi baten lehen letrak + aldaketak
+   - Esaldia: "Zabala gailetak jatea maite dut arratsaldeko 3etan ostiralero!"
+   - Pasahitza: `Zgjmd@a3eo!`
+3. **Karaktere Ordezkapena:** Letrak antzeko karaktereekin ordezkatu
+   - Hitza: "Txokolate Txip Gaileta"
+   - Pasahitza: `Tx0k0l@t3Tx1pG@1l3t@`
 
-### 4.2 Prohibited Password Practices
+### 4.2 Debekatutako Pasahitz Praktikak
 
-**DO NOT Create Passwords That:**
-- Contain dictionary words (single words easily cracked)
-- Contain personal information:
-  - Your name, username, employee ID
-  - Family member or pet names
-  - Birth dates, anniversaries
-  - Phone numbers, addresses
-- Contain company information:
-  - Company name ("Zabala", "Gailetak")
-  - Department names
-  - Product names
-- Are simple patterns:
+**EZ EGIN Pasahitzik:**
+- Hiztegi hitzak dituztenak (hitz bakarrak erraz pitzatzen dira)
+- Informazio pertsonala dutenak:
+  - Zure izena, erabiltzaile-izena, langile IDa
+  - Familiako kideen edo maskoten izenak
+  - Jaiotegunak, urteurrenak
+  - Telefono zenbakiak, helbideak
+- Enpresa informazioa dutenak:
+  - Enpresa izena ("Zabala", "Gailetak")
+  - Departamentu izenak
+  - Produktu izenak
+- Eredu sinpleak dituztenak:
   - `123456`, `password`, `qwerty`, `abc123`
-  - Keyboard patterns (`qwertyuiop`, `asdfghjkl`)
-  - Sequences (`abcdefgh`, `12345678`)
-  - Repeating characters (`aaaaaaaa`, `11111111`)
-- Are slight variations of old passwords:
-  - Incrementing numbers (`Password1`, `Password2`, `Password3`)
-  - Seasonal changes (`Summer2025`, `Fall2025`, `Winter2026`)
-  - Just adding `!` or `1` to old password
+  - Teklatu ereduak (`qwertyuiop`, `asdfghjkl`)
+  - Sekuentziak (`abcdefgh`, `12345678`)
+  - Errepikatutako karaktereak (`aaaaaaaa`, `11111111`)
+- Pasahitz zaharren aldaketa txikiak direnak:
+  - Zenbakiak gehitzea (`Pasahitza1`, `Pasahitza2`, `Pasahitza3`)
+  - Urtaro aldaketak (`Uda2025`, `Udazkena2025`, `Negua2026`)
+  - Pasahitz zaharrari `!` edo `1` gehitzea soilik
 
-**Examples of WEAK Passwords (Never Use):**
-- `Zabala2026` (company name + year)
-- `Password123!` (common word + pattern)
-- `Gailetak!` (company name + special char)
-- `Admin@123` (role + simple pattern)
-- `123456` (sequence)
-- `qwerty` (keyboard pattern)
-- `JohnSmith1975` (name + birth year)
-- `Summer2026!` (season + year)
+**Pasahitz AHULEN Adibideak (Inoiz Ez Erabili):**
+- `Zabala2026` (enpresa izena + urtea)
+- `Pasahitza123!` (hitz arrunta + eredua)
+- `Gailetak!` (enpresa izena + karaktere berezia)
+- `Admin@123` (rola + eredu sinplea)
+- `123456` (sekuentzia)
+- `qwerty` (teklatu eredua)
+- `JuanGarcia1975` (izena + jaiotze urtea)
+- `Uda2026!` (urtaroa + urtea)
 
 ---
 
-## 5. Password Management
+## 5. Pasahitz Kudeaketa
 
-### 5.1 Password Protection
+### 5.1 Pasahitz Babesa
 
-**NEVER:**
-- Share your password with anyone (including managers, IT staff, colleagues)
-- Write passwords on paper (sticky notes, notebooks, whiteboards)
-- Store passwords in unencrypted files (Word docs, Excel spreadsheets, text files)
-- Send passwords via email or instant message
-- Say password out loud where others can hear
-- Enter password while someone is watching (shoulder surfing)
-- Use the same password for work and personal accounts
+**INOIZ EZ:**
+- Partekatu zure pasahitza inorekin (kudeatzaileak, IT langileak, lankideak barne)
+- Idatzi pasahitzak paperean (post-it oharrak, koadernoak, arbelak)
+- Gorde pasahitzak enkriptatu gabeko fitxategietan (Word dokumentuak, Excel orriak, testu fitxategiak)
+- Bidali pasahitzak posta elektronikoz edo berehalako mezu bidez
+- Esan pasahitza ozenki besteek entzun dezaketen lekuan
+- Sartu pasahitza norbait begira dagoen bitartean ("shoulder surfing")
+- Erabili pasahitz bera laneko eta kontu pertsonaletarako
 
-**ALWAYS:**
-- Keep passwords confidential
-- Change password immediately if compromise suspected
-- Use different passwords for different systems
-- Log out when leaving workstation unattended
-- Lock screen when stepping away (Windows+L)
+**BETI:**
+- Mantendu pasahitzak konfidentzial
+- Aldatu pasahitza berehala arriskua susmatzen bada
+- Erabili pasahitz desberdinak sistema desberdinetarako
+- Itxi saioa lan-estazioa zaintzarik gabe uztean
+- Blokeatu pantaila aldentzen zarenean (Windows+L)
 
-### 5.2 Password Managers (Approved)
+### 5.2 Pasahitz Kudeatzaileak (Onartuak)
 
-**Organization-Approved Password Managers:**
-- **1Password Business** (primary recommendation)
+**Erakundeak Onartutako Pasahitz Kudeatzaileak:**
+- **1Password Business** (gomendio nagusia)
 - **LastPass Enterprise**
 - **Dashlane Business**
-- **KeePass** (open-source, for specific use cases)
+- **KeePass** (kode irekia, erabilera kasu zehatzetarako)
 
-**Benefits:**
-- Generate strong random passwords
-- Store passwords encrypted
-- Auto-fill credentials (reduce typing errors, phishing resistance)
-- Unique password for every account
-- Secure password sharing (when necessary)
-- Audit trail and reporting
+**Abantailak:**
+- Pasahitz sendoak eta ausazkoak sortu
+- Pasahitzak enkriptatuta gorde
+- Kredentzialak automatikoki bete (idazteko erroreak murriztu, phishing erresistentzia)
+- Pasahitz bakarra kontu bakoitzerako
+- Pasahitz partekatze segurua (beharrezkoa denean)
+- Auditoretza arrastoa eta txostenak
 
-**Usage Requirements:**
-- Use strong master password (minimum 16 characters)
-- Enable Multi-Factor Authentication for password manager
-- Do not share master password
-- Regularly review and update stored passwords
-- Remove old/unused credentials
+**Erabilera Baldintzak:**
+- Erabili pasahitz maisu sendoa (gutxienez 16 karaktere)
+- Gaitu Faktore Anitzeko Autentifikazioa pasahitz kudeatzailean
+- Ez partekatu pasahitz maisua
+- Aldizka berrikusi eta eguneratu gordetako pasahitzak
+- Kendu kredentzial zaharrak/erabili gabeak
 
-**Prohibited:**
-- Browser built-in password managers (Chrome, Firefox "Save Password") for work accounts
-- Personal/consumer password managers for work passwords
-- Unencrypted password storage (text files, spreadsheets)
+**Debekatuta:**
+- Nabigatzailean integratutako pasahitz kudeatzaileak (Chrome, Firefox "Gorde Pasahitza") laneko kontuetarako
+- Pasahitz kudeatzaile pertsonalak/kontsumo mailakoak laneko pasahitzetarako
+- Enkriptatu gabeko pasahitz biltegiratzea (testu fitxategiak, kalkulu orriak)
 
-### 5.3 Password Changes
+### 5.3 Pasahitz Aldaketak
 
-**Routine Changes:**
-- Standard users: Every 90 days (automatic expiration)
-- Administrators: Every 60 days
-- Service accounts: Every 365 days (or as practical)
-- Users with MFA: Every 180 days (extended due to MFA protection)
+**Errutina Aldaketak:**
+- Erabiltzaile estandarrak: 90 egunero (iraungitze automatikoa)
+- Administratzaileak: 60 egunero
+- Zerbitzu kontuak: 365 egunero (edo bideragarria denean)
+- MFA duten erabiltzaileak: 180 egunero (luzatua MFA babesagatik)
 
-**Forced Changes Required When:**
-- Initial/temporary password (first login)
-- Password reset by IT
-- Suspected or confirmed compromise
-- Departure of person with shared/delegated access
-- Security incident affecting authentication system
-- After extended leave (>90 days)
+**Behartutako Aldaketak Beharrezkoak Dira:**
+- Hasierako/aldi baterako pasahitza (lehen saio-hasiera)
+- IT-k pasahitza berrezartzea
+- Arriskua susmatzen edo baieztatzen denean
+- Sarbide partekatua/eskuordetua duen pertsona baten irteera
+- Autentifikazio sistemari eragiten dion segurtasun intzidentea
+- Baimen luze baten ondoren (>90 egun)
 
-**Change Process:**
-- Users notified 14 days before expiration (daily reminders in final 3 days)
-- Self-service password change via portal or Ctrl+Alt+Del → Change Password
-- Helpdesk support available for issues
-- Cannot reuse last 12 passwords (last 24 for admins)
+**Aldaketa Prozesua:**
+- Erabiltzaileei jakinarazten zaie iraungitze data baino 14 egun lehenago (eguneroko oroigarriak azken 3 egunetan)
+- Auto-zerbitzu pasahitz aldaketa atariaren bidez edo Ctrl+Alt+Del → Aldatu Pasahitza
+- Helpdesk laguntza eskuragarri arazoetarako
+- Ezin dira azken 12 pasahitzak berrerabili (azken 24 administratzaileentzat)
 
-### 5.4 Password Resets
+### 5.4 Pasahitz Berrezartzeak
 
-**Self-Service Reset:**
-- Available through: https://password.zabalagailetak.com
-- Requires multi-factor authentication:
-  - Security questions (set during account creation)
-  - Email verification (to registered email)
-  - SMS code (to registered mobile)
+**Auto-Zerbitzu Berrezarpena:**
+- Eskuragarri hemen: https://password.zabalagailetak.com
+- Faktore anitzeko autentifikazioa behar du:
+  - Segurtasun galderak (kontu sorreran ezarriak)
+  - Email egiaztapena (erregistratutako emailera)
+  - SMS kodea (erregistratutako mugikorrera)
 
-**Helpdesk Reset:**
-- Contact IT helpdesk: helpdesk@zabalagailetak.com | +34 XXX XXX XXX
-- Identity verification required:
-  - Employee ID
-  - Personal information verification
-  - Manager confirmation (if remote)
-- Temporary password provided (must change on first login)
-- Reset logged and monitored
+**Helpdesk Berrezarpena:**
+- Kontaktatu IT helpdesk: helpdesk@zabalagailetak.com | +34 XXX XXX XXX
+- Identitate egiaztapena beharrezkoa:
+  - Langile IDa
+  - Informazio pertsonalaren egiaztapena
+  - Kudeatzailearen berrespena (urrunekoa bada)
+- Aldi baterako pasahitza ematen da (lehen saio-hasieran aldatu behar da)
+- Berrezarpena erregistratu eta monitorizatzen da
 
-**Security Measures:**
-- Password reset links expire after 1 hour
-- Reset link single-use only
-- Account lockout reset requires approval (after repeated failed logins)
-- Administrator password reset requires CISO approval
+**Segurtasun Neurriak:**
+- Pasahitz berrezartze estekak ordu 1 igaro ondoren iraungitzen dira
+- Berrezartze esteka erabilera bakarrekoa da
+- Kontu blokeoaren berrezarpenak onarpena behar du (errepikatutako saio-hasiera okerren ondoren)
+- Administratzaile pasahitz berrezarpenak CISOren onarpena behar du
 
 ---
 
-## 6. Multi-Factor Authentication (MFA)
+## 6. Faktore Anitzeko Autentifikazioa (MFA)
 
-### 6.1 MFA Requirements
+### 6.1 MFA Baldintzak
 
-**MFA Required For:**
-- Remote access (VPN)
-- Administrative and privileged accounts
-- Access to systems containing Highly Confidential data:
-  - Customer databases
-  - Financial systems
-  - HR systems
-- Cloud services:
-  - Microsoft 365 admin accounts
-  - AWS root and administrative accounts
-  - GitHub admin accounts
-- External access to internal systems
+**MFA Derrigorrezkoa da:**
+- Urruneko sarbiderako (VPN)
+- Administrazio eta pribilegiatutako kontuetarako
+- Oso Konfidentziala den datuak dituzten sistemetarako sarbidea:
+  - Bezero datu-baseak
+  - Finantza sistemak
+  - HR sistemak
+- Hodeiko zerbitzuetarako:
+  - Microsoft 365 admin kontuak
+  - AWS root eta administrazio kontuak
+  - GitHub admin kontuak
+- Barne sistemetarako kanpo sarbidea
 
-**MFA Recommended For:**
-- All user accounts (standard workstations)
-- Mobile device access to company email
-- Any system accessing customer or employee PII
+**MFA Gomendagarria da:**
+- Erabiltzaile kontu guztietarako (lan-estazio estandarrak)
+- Enpresako emailerako gailu mugikorren sarbidea
+- Bezero edo langile PIIra sartzen den edozein sistema
 
-**MFA Benefits:**
-- Passwords alone are vulnerable (phishing, theft, guessing)
-- MFA adds second verification factor (something you have)
-- Reduces account compromise risk by 99.9%
-- Allows longer password expiration (less frequent changes)
+**MFA Abantailak:**
+- Pasahitzak bakarrik zaurgarriak dira (phishing, lapurreta, asmatzea)
+- MFAk bigarren egiaztapen faktorea gehitzen du (duzun zerbait)
+- Kontu arriskua %99,9 murrizten du
+- Pasahitz iraungitze luzeagoa ahalbidetzen du (aldaketa gutxiago)
 
-### 6.2 MFA Methods
+### 6.2 MFA Metodoak
 
-**Approved MFA Methods (in order of preference):**
+**Onartutako MFA Metodoak (lehentasun ordenan):**
 
-1. **Authenticator App (TOTP - Time-based One-Time Password):**
-   - Recommended: Microsoft Authenticator, Google Authenticator, Authy
-   - Generates 6-digit code every 30 seconds
-   - Works offline
-   - Most secure for day-to-day use
+1. **Autentifikatzaile Aplikazioa (TOTP - Denboran Oinarritutako Erabilera Bakarreko Pasahitza):**
+   - Gomendatua: Microsoft Authenticator, Google Authenticator, Authy
+   - 6 digituko kodea sortzen du 30 segundoro
+   - Lineaz kanpo funtzionatzen du
+   - Eguneroko erabilerarako seguruena
 
-2. **Hardware Token (FIDO2/U2F):**
+2. **Hardware Tokena (FIDO2/U2F):**
    - YubiKey, Titan Security Key
-   - Physical device inserted into USB port or tapped via NFC
-   - Highest security (phishing-resistant)
-   - Required for highest privilege accounts (domain admins, root)
+   - USB portuan sartzen den edo NFC bidez ukitzen den gailu fisikoa
+   - Segurtasun handiena (phishing erresistentea)
+   - Pribilegio handieneko kontuetarako derrigorrezkoa (domeinu adminak, root)
 
-3. **Push Notification:**
+3. **Push Jakinarazpena:**
    - Microsoft Authenticator, Duo Push
-   - Approve login request on mobile device
-   - Convenient but requires internet connectivity
-   - Verify login details before approving (number matching)
+   - Onartu saio-hasiera eskaera gailu mugikorrean
+   - Erosoa baina internet konexioa behar du
+   - Egiaztatu saio-hasiera xehetasunak onartu aurretik (zenbaki parekatzea)
 
-4. **SMS Code (Least Preferred):**
-   - 6-digit code sent via text message
-   - Use only if other methods unavailable
-   - Vulnerable to SIM swapping attacks
-   - Not approved for administrative accounts
+4. **SMS Kodea (Gutxien Hobetsia):**
+   - Testu mezu bidez bidalitako 6 digituko kodea
+   - Beste metodoak ez badaude eskuragarri soilik erabili
+   - SIM swapping erasoen aurrean zaurgarria
+   - Ez onartua administrazio kontuetarako
 
-**Prohibited MFA Methods:**
-- Email-based codes (same channel as primary authentication)
-- Voice calls (social engineering risk)
-- Unverified mobile apps
+**Debekatutako MFA Metodoak:**
+- Email bidezko kodeak (autentifikazio nagusiaren kanal berean)
+- Ahots deiak (gizarte ingeniaritza arriskua)
+- Egiaztatu gabeko mugikor aplikazioak
 
-### 6.3 MFA Setup and Backup
+### 6.3 MFA Konfigurazioa eta Babeskopia
 
-**Initial Setup:**
-- All users must enroll in MFA within 7 days of account creation
-- IT provides setup instructions and support
-- Test MFA login before disabling alternative access
+**Hasierako Konfigurazioa:**
+- Erabiltzaile guztiek MFAn izena eman behar dute kontua sortu eta 7 eguneko epean
+- IT-k konfigurazio argibideak eta laguntza ematen ditu
+- Probatu MFA saio-hasiera ordezko sarbidea desgaitu aurretik
 
-**Backup Methods:**
-- Enroll at least two MFA devices (primary and backup)
-- Examples: Authenticator app on phone + YubiKey
-- Store backup codes in secure location (password manager)
-- Register backup phone number
+**Babeskopia Metodoak:**
+- Eman izena gutxienez bi MFA gailutan (nagusia eta babeskopia)
+- Adibideak: Autentifikatzaile aplikazioa telefonoan + YubiKey
+- Gorde babeskopia kodeak leku seguruan (pasahitz kudeatzailea)
+- Erregistratu babeskopia telefono zenbakia
 
-**Lost or Stolen MFA Device:**
-- Report immediately to IT helpdesk
-- Use backup MFA method to access accounts
-- IT can temporarily disable MFA for account recovery (with verification)
-- Re-enroll new device within 24 hours
-
----
-
-## 7. Account Lockout and Security
-
-### 7.1 Account Lockout Policy
-
-**Standard Accounts:**
-- **Failed Login Threshold:** 5 incorrect attempts
-- **Lockout Duration:** 30 minutes (automatic unlock)
-- **Manual Unlock:** IT helpdesk (with identity verification)
-
-**Administrative Accounts:**
-- **Failed Login Threshold:** 3 incorrect attempts
-- **Lockout Duration:** 1 hour (automatic unlock)
-- **Manual Unlock:** CISO approval required
-
-**Rationale:**
-- Prevents brute-force password guessing
-- Balances security with usability
-- Logs all lockout events for monitoring
-
-**If Locked Out:**
-1. Wait for automatic unlock (30 or 60 minutes)
-2. OR contact IT helpdesk for identity verification and manual unlock
-3. Verify you're using correct username and password
-4. Check for Caps Lock, keyboard layout (EN vs ES)
-5. If repeated lockouts, change password (may be compromised)
-
-### 7.2 Password Attacks and Detection
-
-**Common Password Attack Types:**
-- **Brute Force:** Trying all possible combinations (mitigated by complexity + lockout)
-- **Dictionary Attack:** Trying common words and passwords (mitigated by complexity)
-- **Credential Stuffing:** Using passwords leaked from other breaches (mitigated by unique passwords + MFA)
-- **Phishing:** Tricking users into revealing passwords (mitigated by training + MFA)
-- **Keylogging:** Malware capturing keystrokes (mitigated by endpoint protection + MFA)
-- **Social Engineering:** Manipulating users to share passwords (mitigated by training + "never share" policy)
-
-**Detection and Response:**
-- SIEM monitors for:
-  - Multiple failed login attempts
-  - Impossible travel (logins from distant locations within short time)
-  - Login from unusual IP addresses or countries
-  - Login outside normal hours (for specific users)
-  - Multiple account lockouts
-- Automated alerts to security team
-- Automated response: Block IP address, force password reset, account suspension
-- User notification of suspicious activity
+**Galdutako edo Lapurtutako MFA Gailua:**
+- Jakinarazi berehala IT helpdesk-ari
+- Erabili babeskopia MFA metodoa kontuetara sartzeko
+- IT-k aldi baterako MFA desgaitu dezake kontua berreskuratzeko (egiaztapenarekin)
+- Gailu berrian izena eman 24 orduko epean
 
 ---
 
-## 8. Special Use Cases
+## 7. Kontu Blokeoa eta Segurtasuna
 
-### 8.1 OT Systems (PLCs, SCADA, HMI)
+### 7.1 Kontu Blokeo Politika
 
-**Challenges:**
-- Legacy systems with limited password capabilities
-- Systems that cannot be easily rebooted (production impact)
-- Local console access only (no network authentication)
+**Kontu Estandarrak:**
+- **Huts Egindako Saio-hasiera Muga:** 5 saiakera oker
+- **Blokeo Iraupena:** 30 minutu (desblokeo automatikoa)
+- **Eskuzko Desblokeoa:** IT helpdesk (identitate egiaztapenarekin)
 
-**Requirements:**
-- **Minimum Length:** 12 characters (if system supports)
-- **Complexity:** Maximum possible given system limitations
-- **Change Frequency:** 180 days (or per vendor recommendations)
-- **Documentation:** Password stored in encrypted vault
-- **Access Control:** Physical access to OT area restricted
-- **Backup Authentication:** Separate remote access with MFA where possible
-- **Monitoring:** All OT authentication logged
+**Administrazio Kontuak:**
+- **Huts Egindako Saio-hasiera Muga:** 3 saiakera oker
+- **Blokeo Iraupena:** 1 ordu (desblokeo automatikoa)
+- **Eskuzko Desblokeoa:** CISOren onarpena beharrezkoa
 
-**Procedure:**
-- OT password changes coordinated with maintenance windows
-- Two authorized personnel present for changes (dual control)
-- Test authentication before and after changes
-- Update password vault immediately
-- Document change in change management system
+**Arrazoibidea:**
+- Indar gordin bidezko pasahitz asmatzea prebenitzen du
+- Segurtasuna eta erabilgarritasuna orekatzen ditu
+- Blokeo gertaera guztiak erregistratzen ditu monitorizaziorako
 
-### 8.2 Emergency Access ("Break-Glass")
+**Blokeatuta Bada:**
+1. Itxaron desblokeo automatikoa (30 edo 60 minutu)
+2. EDO jarri harremanetan IT helpdesk-arekin identitate egiaztapenerako eta eskuzko desblokeorako
+3. Egiaztatu erabiltzaile-izen eta pasahitz zuzena erabiltzen ari zarela
+4. Egiaztatu Maiuskula Blokeoa, teklatuaren konfigurazioa (EN vs ES)
+5. Errepikatutako blokeoak badaude, aldatu pasahitza (arriskuan egon daiteke)
 
-**Purpose:**
-- Emergency administrator access when primary authentication unavailable
-- Last resort during disaster recovery or major incident
+### 7.2 Pasahitz Erasoak eta Detekzioa
 
-**Controls:**
-- Password sealed in envelope, stored in physical safe
-- Safe requires two keys (CEO and CISO)
-- Envelope seal broken only in documented emergency
-- Password changed immediately after use
-- All actions logged and reviewed
-- Incident report required explaining use
+**Ohiko Pasahitz Eraso Motak:**
+- **Indar Gordina (Brute Force):** Konbinazio posible guztiak probatzea (konplexutasuna + blokeoa bidez arinduta)
+- **Hiztegi Erasoa:** Hitz eta pasahitz arruntak probatzea (konplexutasuna bidez arinduta)
+- **Kredentzial Stuffing-a:** Beste urraketa batzuetatik filtratutako pasahitzak erabiltzea (pasahitz bakarrak + MFA bidez arinduta)
+- **Phishing-a:** Erabiltzaileak engainatzea pasahitzak eman ditzaten (prestakuntza + MFA bidez arinduta)
+- **Keylogging-a:** Tekla sakatzeak harrapatzen dituen malwarea (endpoint babesa + MFA bidez arinduta)
+- **Gizarte Ingeniaritza:** Erabiltzaileak manipulatzea pasahitzak parteka ditzaten (prestakuntza + "inoiz ez partekatu" politika bidez arinduta)
 
-**Break-Glass Scenarios:**
-- Primary authentication system failure (Active Directory down)
-- Administrator account lockout during critical incident
-- Disaster recovery (all administrators unavailable)
-- Ransomware affecting authentication systems
-
-### 8.3 API Keys and Application Secrets
-
-**Not Traditional Passwords But Similar Protection:**
-- **API Keys:** Credentials for application-to-application communication
-- **Database Connection Strings:** Include username/password
-- **Encryption Keys:** Protect encrypted data
-- **SSH Private Keys:** Authenticate SSH connections
-- **Certificates and Private Keys:** TLS/SSL certificates
-
-**Requirements:**
-- **Generation:** Cryptographically random (minimum 32 characters for API keys)
-- **Storage:** Encrypted vault or secrets management system (HashiCorp Vault, AWS Secrets Manager, Azure Key Vault)
-- **Transmission:** Encrypted channels only (TLS, SSH)
-- **Access Control:** Least privilege (only applications/users needing access)
-- **Rotation:** Regular rotation (90-365 days depending on use)
-- **Monitoring:** Log all access and usage
-- **Revocation:** Immediately revoke if compromised
-
-**Prohibited:**
-- Hardcoding secrets in source code
-- Storing secrets in version control (Git repositories)
-- Sending secrets via email or chat
-- Storing secrets in unencrypted files
+**Detekzioa eta Erantzuna:**
+- SIEM-ek honako hauek monitorizatzen ditu:
+  - Huts egindako saio-hasiera saiakera anitz
+  - Ezinezko bidaia (distantzia luzeko kokapenetatik denbora laburrean saioa hastea)
+  - Ezohiko IP helbide edo herrialdeetatik saioa hastea
+  - Ordu arruntez kanpoko saio-hasiera (erabiltzaile zehatzentzat)
+  - Kontu blokeo anitz
+- Segurtasun taldeari alerta automatizatuak
+- Erantzun automatizatua: IP helbidea blokeatu, pasahitza berrezartzea behartu, kontua eten
+- Erabiltzaileari jakinarazpena jarduera susmagarriaz
 
 ---
 
-## 9. Password Policy Enforcement
+## 8. Erabilera Kasu Bereziak
 
-### 9.1 Technical Controls
+### 8.1 OT Sistemak (PLCak, SCADA, HMI)
+
+**Erronkak:**
+- Pasahitz gaitasun mugatuak dituzten sistema zaharrak
+- Erraz berrabiarazi ezin diren sistemak (produkzio eragina)
+- Tokiko kontsola sarbidea soilik (sare autentifikaziorik ez)
+
+**Baldintzak:**
+- **Gutxieneko Luzera:** 12 karaktere (sistemak onartzen badu)
+- **Konplexutasuna:** Ahalik eta handiena sistemaren mugen barruan
+- **Aldaketa Maiztasuna:** 180 egun (edo saltzailearen gomendioen arabera)
+- **Dokumentazioa:** Pasahitza kutxa enkriptatuan gordeta
+- **Sarbide Kontrola:** OT eremura sarbide fisikoa mugatuta
+- **Babeskopia Autentifikazioa:** Urruneko sarbide bereizia MFArekin ahal denean
+- **Monitorizazioa:** OT autentifikazio guztiak erregistratuta
+
+**Prozedura:**
+- OT pasahitz aldaketak mantentze leihoekin koordinatuta
+- Bi langile baimendu aldaketetarako (kontrol bikoitza)
+- Probatu autentifikazioa aldaketen aurretik eta ondoren
+- Eguneratu pasahitz kutxa berehala
+- Dokumentatu aldaketa aldaketa kudeaketa sisteman
+
+### 8.2 Larrialdi Sarbidea ("Kristala Apurtu")
+
+**Helburua:**
+- Larrialdiko administratzaile sarbidea autentifikazio nagusia erabilgarri ez dagoenean
+- Azken aukera hondamendi berreskuratze edo intzidente larri batean
+
+**Kontrolak:**
+- Pasahitza gutun-azal batean zigilatuta, kutxa gotor fisiko batean gordeta
+- Kutxa gotorrak bi giltza behar ditu (CEO eta CISO)
+- Gutun-azalaren zigilua dokumentatutako larrialdian bakarrik hausten da
+- Pasahitza berehala aldatzen da erabili ondoren
+- Ekintza guztiak erregistratu eta berrikusten dira
+- Intzidente txostena beharrezkoa da erabilera azaltzeko
+
+**"Kristala Apurtu" Eszenatokiak:**
+- Autentifikazio sistema nagusiaren hutsegitea (Active Directory erorita)
+- Administratzaile kontu blokeoa intzidente kritikoan zehar
+- Hondamendi berreskuratzea (administratzaile guztiak ez daude eskuragarri)
+- Ransomware-ak autentifikazio sistemei eragiten die
+
+### 8.3 API Gakoak eta Aplikazio Sekretuak
+
+**Ez Dira Pasahitz Tradizionalak Baina Antzeko Babesa Behar Dute:**
+- **API Gakoak:** Aplikazioen arteko komunikaziorako kredentzialak
+- **Datu-base Konexio Kateak:** Erabiltzaile-izena/pasahitza barne
+- **Enkriptatze Gakoak:** Enkriptatutako datuak babesteko
+- **SSH Gako Pribatuak:** SSH konexioak autentifikatzeko
+- **Ziurtagiriak eta Gako Pribatuak:** TLS/SSL ziurtagiriak
+
+**Baldintzak:**
+- **Sorkuntza:** Kriptografikoki ausazkoa (gutxienez 32 karaktere API gakoetarako)
+- **Biltegiratzea:** Kutxa enkriptatua edo sekretuen kudeaketa sistema (HashiCorp Vault, AWS Secrets Manager, Azure Key Vault)
+- **Transmisioa:** Kanal enkriptatuak soilik (TLS, SSH)
+- **Sarbide Kontrola:** Pribilegio gutxienekoa (sarbidea behar duten aplikazio/erabiltzaileak soilik)
+- **Txandakatzea:** Ohiko txandakatzea (90-365 egun erabileraren arabera)
+- **Monitorizazioa:** Sarbide eta erabilera guztiak erregistratu
+- **Baliogabetzea:** Berehala baliogabetu arriskuan badaude
+
+**Debekatuta:**
+- Sekretuak iturburu kodean hardcodeatzea
+- Sekretuak bertsio kontrolean gordetzea (Git biltegiak)
+- Sekretuak posta elektronikoz edo txat bidez bidaltzea
+- Sekretuak enkriptatu gabeko fitxategietan gordetzea
+
+---
+
+## 9. Pasahitz Politika Betearaztea
+
+### 9.1 Kontrol Teknikoak
 
 **Active Directory / LDAP:**
-- Password complexity enforced via Group Policy
-- Password history (last 12 passwords)
-- Minimum/maximum password age
-- Account lockout policy
-- Fine-Grained Password Policy for privileged accounts
+- Pasahitz konplexutasuna Talde Politikaren bidez behartuta
+- Pasahitz historia (azken 12 pasahitzak)
+- Gutxieneko/gehieneko pasahitz adina
+- Kontu blokeo politika
+- Fine-Grained Pasahitz Politika kontu pribilegiatuetarako
 
-**Web Applications:**
-- Password strength meter (visual feedback during creation)
-- Complexity validation (frontend and backend)
-- Password breach check (compare against known breached passwords database - Have I Been Pwned API)
-- Session timeout enforcement
-- MFA enforcement for sensitive actions
+**Web Aplikazioak:**
+- Pasahitz indar neurgailua (ikusizko iritzia sortzean)
+- Konplexutasun balidazioa (frontend eta backend)
+- Pasahitz urraketa egiaztapena (ezagunak diren urratutako pasahitzen datu-basearen aurka konparatu - Have I Been Pwned API)
+- Saio denbora-muga betearaztea
+- MFA betearaztea ekintza sentikorretarako
 
-**Password Hashing:**
-- Passwords never stored in plaintext
-- Hashing algorithms:
-  - **Preferred:** bcrypt (cost factor 12+), Argon2id
-  - **Acceptable:** PBKDF2 (100,000+ iterations), scrypt
-  - **Prohibited:** MD5, SHA1, plain SHA256 (no salt/iterations)
-- Salted hashes (unique salt per password)
-- Pepper (global secret) for additional protection
+**Pasahitz Hashing-a:**
+- Pasahitzak inoiz ez dira testu lauan gordetzen
+- Hashing algoritmoak:
+  - **Hobetsia:** bcrypt (kostu faktorea 12+), Argon2id
+  - **Onargarria:** PBKDF2 (100.000+ iterazio), scrypt
+  - **Debekatuta:** MD5, SHA1, SHA256 arrunta (gatz/iterazio gabe)
+- Gatzatutako hash-ak (gatz bakarra pasahitz bakoitzerako)
+- Piperra (sekretu globala) babes gehigarrirako
 
-**Implementation Reference:**
+**Inplementazio Erreferentzia:**
 ```javascript
-// Example from User model (see src/api/models/User.js)
+// User ereduaren adibidea (ikus src/api/models/User.js)
 const bcrypt = require('bcryptjs');
 const saltRounds = 12;
 
-// Hash password before storing
+// Pasahitza hash-eatu gorde aurretik
 userSchema.pre('save', async function(next) {
   if (!this.isModified('password')) return next();
   this.password = await bcrypt.hash(this.password, saltRounds);
   next();
 });
 
-// Compare password for authentication
+// Konparatu pasahitza autentifikaziorako
 userSchema.methods.comparePassword = async function(candidatePassword) {
   return await bcrypt.compare(candidatePassword, this.password);
 };
 ```
 
-### 9.2 Monitoring and Auditing
+### 9.2 Monitorizazioa eta Auditoretza
 
-**Password-Related Events Logged:**
-- Password changes (successful and failed)
-- Password resets (self-service and helpdesk)
-- Failed login attempts
-- Account lockouts and unlocks
-- MFA enrollment and changes
-- Privilege escalation (sudo, run as administrator)
-- Password policy violations
+**Pasahitzekin Lotutako Gertaerak Erregistratuta:**
+- Pasahitz aldaketak (arrakastatsuak eta huts egindakoak)
+- Pasahitz berrezartzeak (auto-zerbitzua eta helpdesk)
+- Huts egindako saio-hasiera saiakerak
+- Kontu blokeoak eta desblokeoak
+- MFA izen-ematea eta aldaketak
+- Pribilegio eskalatzea (sudo, administratzaile gisa exekutatu)
+- Pasahitz politika urraketak
 
-**SIEM Alerts:**
-- Multiple failed logins (potential brute force)
-- Multiple account lockouts (potential password spray attack)
-- Login from unusual location or device
-- Administrative password reset (require justification)
-- Privileged account usage outside normal hours
-- Multiple users locked out simultaneously (potential attack)
+**SIEM Alertak:**
+- Huts egindako saio-hasiera anitz (balizko indar gordina)
+- Kontu blokeo anitz (balizko pasahitz spray erasoa)
+- Ezohiko kokapen edo gailutik saioa hastea
+- Administrazio pasahitz berrezarpena (justifikazioa eskatu)
+- Pribilegiatutako kontu erabilera ordu arruntetatik kanpo
+- Erabiltzaile anitz aldi berean blokeatuta (balizko erasoa)
 
-**Regular Reviews:**
-- Quarterly access review (verify users still require access)
-- Monthly privileged account review (verify admin access still needed)
-- Immediate review after security incidents
-- Annual comprehensive audit (password policy compliance)
-
----
-
-## 10. User Education and Awareness
-
-### 10.1 Training
-
-**New Employees:**
-- Password policy overview during onboarding (30 minutes)
-- How to create strong passwords
-- Password manager setup and usage
-- MFA enrollment
-- Phishing awareness (password theft)
-
-**All Employees (Annual Refresher):**
-- Password best practices reminder
-- Latest threats (credential stuffing, phishing trends)
-- MFA importance
-- Incident case studies (anonymized)
-
-**Specialized Training:**
-- Administrators: Privileged access management, break-glass procedures
-- Developers: Secrets management, secure password storage
-- Managers: Enforcement responsibilities, suspicious activity recognition
-
-### 10.2 Awareness Materials
-
-**Available Resources:**
-- Password policy quick reference guide (1-page PDF)
-- Strong password creation guide
-- Password manager setup videos
-- MFA enrollment instructions
-- Phishing identification tips
-- Security awareness posters (break rooms, near workstations)
-
-**Communication Channels:**
-- Monthly security newsletter
-- Intranet security page
-- Email reminders before password expiration
-- Login screen password tips
-- IT helpdesk knowledge base
+**Ohiko Berrikuspenak:**
+- Hiruhileko sarbide berrikuspena (egiaztatu erabiltzaileek oraindik sarbidea behar duten)
+- Hileroko kontu pribilegiatuen berrikuspena (egiaztatu admin sarbidea oraindik beharrezkoa den)
+- Berehalako berrikuspena segurtasun intzidenteen ondoren
+- Urteroko auditoria integrala (pasahitz politika betetzea)
 
 ---
 
-## 11. Exceptions and Waivers
+## 10. Erabiltzaile Hezkuntza eta Kontzientziazioa
 
-### 11.1 Exception Process
+### 10.1 Prestakuntza
 
-**When Exceptions May Be Granted:**
-- Legacy system technical limitations
-- Vendor-required password formats
-- Specific compliance requirements
-- Emergency business need
+**Langile Berriak:**
+- Pasahitz politikaren ikuspegi orokorra onboarding-ean (30 minutu)
+- Pasahitz sendoak nola sortu
+- Pasahitz kudeatzailearen konfigurazioa eta erabilera
+- MFA izen-ematea
+- Phishing kontzientziazioa (pasahitz lapurreta)
 
-**Exception Request:**
-1. Submit written request to CISO
-2. Include:
-   - System/account affected
-   - Specific requirement that cannot be met
-   - Business justification
-   - Proposed compensating controls
-   - Risk assessment
-   - Duration of exception (maximum 6 months)
-3. CISO review and risk evaluation
-4. Approval or denial with documentation
-5. If approved: Implement compensating controls, schedule review
+**Langile Guztiak (Urteroko Freskatzea):**
+- Pasahitz jardunbide egokien oroigarria
+- Azken mehatxuak (kredentzial stuffing-a, phishing joerak)
+- MFA garrantzia
+- Intzidente kasu azterketak (anonimizatuak)
 
-**Compensating Controls:**
-- Enhanced monitoring
-- Restricted access (IP whitelisting, network segmentation)
-- Additional authentication factor
-- Reduced permission scope
-- Frequent password changes
-- Regular audits
+**Prestakuntza Espezializatua:**
+- Administratzaileak: Pribilegiatutako sarbide kudeaketa, kristala apurtu prozedurak
+- Garatzaileak: Sekretuen kudeaketa, pasahitz biltegiratze segurua
+- Kudeatzaileak: Betearazpen erantzukizunak, jarduera susmagarrien ezagutza
 
-**Example Exceptions:**
-- OT system supporting maximum 8-character passwords → Compensate with physical access control + isolated network
-- Service account requiring static password → Compensate with secrets vault + enhanced logging
-- Legacy application without MFA support → Compensate with IP whitelisting + frequent password changes
+### 10.2 Kontzientziazio Materialak
 
-### 11.2 Exception Review
+**Eskuragarri dauden Baliabideak:**
+- Pasahitz politika erreferentzia azkarreko gida (orrialde bateko PDF)
+- Pasahitz sendoak sortzeko gida
+- Pasahitz kudeatzailearen konfigurazio bideoak
+- MFA izen-emate argibideak
+- Phishing identifikazio aholkuak
+- Segurtasun kontzientziazio kartelak (atseden gelak, lan-estazioetatik gertu)
 
-- Exceptions reviewed quarterly
-- Renewal required every 6 months (justify ongoing need)
-- Exceptions revoked when:
-  - Compensating controls fail
-  - System upgrade enables compliance
-  - Business need no longer exists
-  - Risk level becomes unacceptable
+**Komunikazio Kanalak:**
+- Hileroko segurtasun buletina
+- Intranet segurtasun orria
+- Email oroigarriak pasahitza iraungitze aurretik
+- Saio-hasiera pantailako pasahitz aholkuak
+- IT helpdesk ezagutza oinarria
 
 ---
 
-## 12. Password Policy Violations
+## 11. Salbuespenak eta Uko Egiteak
 
-### 12.1 Common Violations
+### 11.1 Salbuespen Prozesua
 
-**Severity: Low (Warning)**
-- Weak password not meeting complexity (detected by system)
-- Writing password down (not in secure location)
-- Using same password for internal and external accounts (detected via breach monitoring)
+**Noiz Eman Daitezkeen Salbuespenak:**
+- Sistema zaharren muga teknikoak
+- Saltzaileak eskatutako pasahitz formatuak
+- Betetze baldintza zehatzak
+- Larrialdiko negozio beharra
 
-**Severity: Medium (Written Warning, Retraining)**
-- Sharing password with colleague (even with good intentions)
-- Reusing old passwords (attempting to circumvent history)
-- Not changing password after suspected compromise
-- Storing passwords in unencrypted file
+**Salbuespen Eskaera:**
+1. Bidali idatzizko eskaera CISOri
+2. Sartu:
+   - Kaltetutako sistema/kontua
+   - Bete ezin den baldintza zehatza
+   - Negozio justifikazioa
+   - Proposatutako konpentsazio kontrolak
+   - Arrisku ebaluazioa
+   - Salbuespen iraupena (gehienez 6 hilabete)
+3. CISO berrikuspena eta arrisku ebaluazioa
+4. Onarpena edo ukazioa dokumentazioarekin
+5. Onartzen bada: Konpentsazio kontrolak inplementatu, berrikuspena programatu
 
-**Severity: High (Suspension, Possible Termination)**
-- Sharing administrative password
-- Intentionally weak password for convenience after multiple warnings
-- Failing to report known compromise
-- Malicious password sharing (enabling unauthorized access)
+**Konpentsazio Kontrolak:**
+- Monitorizazio hobetua
+- Sarbide mugatua (IP zerrenda zuria, sare segmentazioa)
+- Autentifikazio faktore gehigarria
+- Baimen esparru murriztua
+- Maizko pasahitz aldaketak
+- Aldizkako auditoriak
 
-### 12.2 Remediation
+**Adibidezko Salbuespenak:**
+- Gehienez 8 karaktereko pasahitzak onartzen dituen OT sistema → Konpentsatu sarbide fisiko kontrolatua + sare isolatuarekin
+- Pasahitz estatikoa behar duen zerbitzu kontua → Konpentsatu sekretuen kutxarekin + erregistro hobetuarekin
+- MFA euskarririk gabeko aplikazio zaharra → Konpentsatu IP zerrenda zuriarekin + maizko pasahitz aldaketekin
 
-**Immediate Actions:**
-- Force password reset
-- Suspend compromised account
-- Review account activity (identify unauthorized actions)
-- Notify affected users/systems
-- Disciplinary process per HR policy
+### 11.2 Salbuespen Berrikuspena
 
-**Follow-up:**
-- Mandatory retraining
-- Enhanced monitoring (90 days)
-- Report to management
-- Document in employee file
-
----
-
-## 13. Related Policies and Standards
-
-**Internal Documents:**
-- Information Security Policy (ISP-001)
-- Acceptable Use Policy (AUP-001)
-- Access Control Policy
-- Incident Response Procedure
-
-**External Standards:**
-- ISO/IEC 27001:2022 - Annex A 5.17 (Authentication Information)
-- NIST SP 800-63B - Digital Identity Guidelines (Authentication and Lifecycle Management)
-- CIS Controls v8 - Control 6 (Access Control Management)
-- GDPR Article 32 - Security of Processing
+- Salbuespenak hiruhilero berrikusten dira
+- Berritzea 6 hilabetero beharrezkoa (etengabeko beharra justifikatu)
+- Salbuespenak baliogabetzen dira honako kasuetan:
+  - Konpentsazio kontrolak huts egiten dutenean
+  - Sistema berritzeak betetzea ahalbidetzen duenean
+  - Negozio beharra jada existitzen ez denean
+  - Arrisku maila onartezina bihurtzen denean
 
 ---
 
-## 14. Policy Review and Updates
+## 12. Pasahitz Politika Urraketak
 
-**Review Frequency:** Annual or when triggered by:
-- Security incidents involving passwords
-- Changes in threat landscape
-- Technology updates (new authentication methods)
-- Regulatory changes
-- User feedback and usability concerns
+### 12.1 Ohiko Urraketak
 
-**Update Process:**
-1. CISO initiates review
-2. Consultation with IT, security team, users
-3. Draft updates
-4. Management approval
-5. User communication
-6. Training updates
-7. Technical implementation
-8. Monitoring and feedback
+**Larritasuna: Baxua (Abisua)**
+- Pasahitz ahula konplexutasuna betetzen ez duena (sistemak detektatua)
+- Pasahitza idaztea (leku seguruan ez)
+- Pasahitz bera erabiltzea barne eta kanpo kontuetarako (urraketa monitorizazio bidez detektatua)
+
+**Larritasuna: Ertaina (Idatzizko Ohartarazpena, Berriro Prestatzea)**
+- Pasahitza lankidearekin partekatzea (nahiz eta asmo onekin izan)
+- Pasahitz zaharrak berrerabiltzea (historia saihestu nahian)
+- Pasahitza ez aldatzea ustezko konpromisoaren ondoren
+- Pasahitzak enkriptatu gabeko fitxategian gordetzea
+
+**Larritasuna: Handia (Etenaldia, Kaleratze Posiblea)**
+- Administrazio pasahitza partekatzea
+- Nahita pasahitz ahula erabiltzea erosotasunagatik abisu anitzen ondoren
+- Ezaguna den konpromisoa ez jakinaraztea
+- Pasahitz partekatze maltzurra (baimenik gabeko sarbidea ahalbidetuz)
+
+### 12.2 Konponketa
+
+**Berehalako Ekintzak:**
+- Pasahitza berrezartzea behartu
+- Arriskuan dagoen kontua eten
+- Kontu jarduera berrikusi (baimenik gabeko ekintzak identifikatu)
+- Kaltetutako erabiltzaile/sistemak jakinarazi
+- Diziplina prozesua HR politikaren arabera
+
+**Jarraipena:**
+- Derrigorrezko berriro prestatzea
+- Monitorizazio hobetua (90 egun)
+- Zuzendaritzari txostena
+- Langile fitxategian dokumentatu
 
 ---
 
-## 15. Contact Information
+## 13. Lotutako Politikak eta Estandarrak
 
-**Questions or Issues:**
+**Barne Dokumentuak:**
+- Informazioaren Segurtasun Politika (ISP-001)
+- Erabilera Onargarriaren Politika (AUP-001)
+- Sarbide Kontrol Politika
+- Intzidente Erantzun Prozedura
+
+**Kanpo Estandarrak:**
+- ISO/IEC 27001:2022 - A Eranskina 5.17 (Autentifikazio Informazioa)
+- NIST SP 800-63B - Identitate Digitalaren Gidalerroak (Autentifikazioa eta Bizi-zikloaren Kudeaketa)
+- CIS Controls v8 - 6. Kontrola (Sarbide Kontrol Kudeaketa)
+- GDPR 32. Artikulua - Tratamenduaren Segurtasuna
+
+---
+
+## 14. Politika Berrikuspena eta Eguneraketak
+
+**Berrikuspen Maiztasuna:** Urtero edo honakoek eraginda:
+- Pasahitzekin lotutako segurtasun intzidenteak
+- Mehatxu paisaian aldaketak
+- Teknologia eguneraketak (autentifikazio metodo berriak)
+- Arau aldaketak
+- Erabiltzaile iritzia eta erabilgarritasun kezkak
+
+**Eguneratze Prozesua:**
+1. CISO berrikuspena hasten du
+2. IT, segurtasun talde eta erabiltzaileekin kontsulta
+3. Eguneraketa zirriborroa
+4. Zuzendaritza onarpena
+5. Erabiltzaile komunikazioa
+6. Prestakuntza eguneraketak
+7. Inplementazio teknikoa
+8. Monitorizazioa eta iritzia
+
+---
+
+## 15. Harremanetarako Informazioa
+
+**Galderak edo Arazoak:**
 - **IT Helpdesk:** helpdesk@zabalagailetak.com | +34 XXX XXX XXX
-- **Password Resets:** https://password.zabalagailetak.com
+- **Pasahitz Berrezartzeak:** https://password.zabalagailetak.com
 - **CISO:** ciso@zabalagailetak.com | +34 XXX XXX XXX
-- **Security Incidents:** security@zabalagailetak.com | +34 XXX XXX XXX (24/7)
+- **Segurtasun Intzidenteak:** security@zabalagailetak.com | +34 XXX XXX XXX (24/7)
 
 ---
 
-## Appendix A: Password Policy Quick Reference
+## Eranskina A: Pasahitz Politika Erreferentzia Azkarra
 
-### For Standard Users:
-- ✅ **Minimum 12 characters** (longer is better!)
-- ✅ **Mix of uppercase, lowercase, numbers, special characters**
-- ✅ **Unique password for each system**
-- ✅ **Use password manager**
-- ✅ **Enable MFA everywhere possible**
-- ✅ **Change every 90 days** (automatic reminder)
-- ❌ **Never share passwords with anyone**
-- ❌ **Never write passwords down**
-- ❌ **Never reuse old passwords**
-- ❌ **Never use personal info (name, birth date)**
+### Erabiltzaile Estandarrentzat:
+- ✅ **Gutxienez 12 karaktere** (luzeagoa hobe!)
+- ✅ **Maiuskula, minuskula, zenbaki eta karaktere berezien nahasketa**
+- ✅ **Pasahitz bakarra sistema bakoitzerako**
+- ✅ **Erabili pasahitz kudeatzailea**
+- ✅ **Gaitu MFA ahal den guztietan**
+- ✅ **Aldatu 90 egunero** (oroigarri automatikoa)
+- ❌ **Inoiz ez partekatu pasahitzak inorekin**
+- ❌ **Inoiz ez idatzi pasahitzak**
+- ❌ **Inoiz ez berrerabili pasahitz zaharrak**
+- ❌ **Inoiz ez erabili informazio pertsonala (izena, jaioteguna)**
 
-### For Administrators:
-- ✅ **Minimum 14 characters**
-- ✅ **All character types required**
-- ✅ **Separate admin account**
-- ✅ **Hardware MFA token (YubiKey)**
-- ✅ **Change every 60 days**
-- ❌ **Never share admin passwords**
-- ❌ **Never use admin account for daily work**
-
----
-
-## Appendix B: Password Strength Examples
-
-| Password | Strength | Why? |
-|----------|----------|------|
-| `password` | ❌ Very Weak | Common word, in dictionary |
-| `Password123` | ❌ Weak | Common pattern, predictable |
-| `Zabala2026!` | ⚠️ Poor | Company name, year, single special char |
-| `JohnSmith1975` | ⚠️ Poor | Personal info (name, birth year) |
-| `C0ff33&C00k!es` | ✅ Good | 14 chars, mixed case, numbers, special, but predictable substitutions |
-| `Blue#Elephant$Runs77` | ✅ Strong | 21 chars, random words, numbers, special |
-| `MyD0gLovesZabalaCookies!` | ✅ Strong | 24 chars, passphrase, memorable |
-| `Xk9$mP2#vQ7!nR5@wL3%` | ✅ Very Strong | 20 chars, fully random (use password manager) |
+### Administratzaileentzat:
+- ✅ **Gutxienez 14 karaktere**
+- ✅ **Karaktere mota guztiak beharrezkoak**
+- ✅ **Administrazio kontu bereizia**
+- ✅ **Hardware MFA tokena (YubiKey)**
+- ✅ **Aldatu 60 egunero**
+- ❌ **Inoiz ez partekatu administrazio pasahitzak**
+- ❌ **Inoiz ez erabili administrazio kontua eguneroko lanerako**
 
 ---
 
-## Appendix C: Password Manager Setup Guide
+## Eranskina B: Pasahitz Indar Adibideak
 
-### 1Password Setup (Recommended):
-1. IT admin creates 1Password Business account for you
-2. You receive invitation email
-3. Click link and create Master Password:
-   - Minimum 16 characters
-   - Use passphrase or very strong password
-   - Write down ONLY master password in secure location (home safe)
-   - Enable MFA on 1Password account
-4. Install 1Password app:
-   - Desktop: Windows/Mac/Linux
-   - Browser extension: Chrome/Firefox/Edge
-   - Mobile: iOS/Android
-5. Store work passwords in "Work" vault (shared with IT if needed)
-6. Store personal passwords in "Personal" vault (private)
-7. Generate new strong passwords when changing work passwords
-
-### Using 1Password:
-- **Auto-fill:** Browser extension detects login pages, offers to fill credentials
-- **Generate:** Click "Generate Password" when creating new accounts
-- **Security Check:** Identifies weak, reused, or compromised passwords
-- **Emergency Access:** Designate trusted person (IT manager) as emergency contact
+| Pasahitza | Indarra | Zergatik? |
+|-----------|---------|-----------|
+| `password` | ❌ Oso Ahula | Hitz arrunta, hiztegian |
+| `Password123` | ❌ Ahula | Eredu arrunta, aurreikusgarria |
+| `Zabala2026!` | ⚠️ Eskasa | Enpresa izena, urtea, karaktere berezi bakarra |
+| `JuanGarcia1975` | ⚠️ Eskasa | Info pertsonala (izena, jaiotze urtea) |
+| `K0ff33&K00k!et4k` | ✅ Ona | 14 karaktere, nahasketa, baina ordezkapen aurreikusgarriak |
+| `Urdina#Elefantea$Dantzan77` | ✅ Sendoa | 24 karaktere, ausazko hitzak, zenbakiak, bereziak |
+| `NireTxakurrakZabalaGailetakMaiteDitu!` | ✅ Sendoa | 36 karaktere, pasaesaldia, gogangarria |
+| `Xk9$mP2#vQ7!nR5@wL3%` | ✅ Oso Sendoa | 20 karaktere, guztiz ausazkoa (erabili pasahitz kudeatzailea) |
 
 ---
 
-## Appendix D: MFA Enrollment Instructions
+## Eranskina C: Pasahitz Kudeatzailea Konfiguratzeko Gida
 
-### Microsoft Authenticator Setup:
-1. Install Microsoft Authenticator app on smartphone:
+### 1Password Konfigurazioa (Gomendatua):
+1. IT administratzaileak 1Password Business kontua sortzen du zuretzat
+2. Gonbidapen emaila jasotzen duzu
+3. Klikatu estekan eta sortu Pasahitz Maisua:
+   - Gutxienez 16 karaktere
+   - Erabili pasaesaldia edo oso pasahitz sendoa
+   - Idatzi Pasahitz Maisua BAKARRIK eta gorde leku seguruan (etxeko kutxa gotorra)
+   - Gaitu MFA 1Password kontuan
+4. Instalatu 1Password aplikazioa:
+   - Mahaigainean: Windows/Mac/Linux
+   - Nabigatzaile luzapena: Chrome/Firefox/Edge
+   - Mugikorrean: iOS/Android
+5. Gorde laneko pasahitzak "Lana" kutxan (ITrekin partekatua beharrezkoa bada)
+6. Gorde pasahitz pertsonalak "Pertsonala" kutxan (pribatua)
+7. Sortu pasahitz sendo berriak laneko pasahitzak aldatzean
+
+### 1Password Erabiliz:
+- **Auto-betetzea:** Nabigatzaile luzapenak saio-hasiera orriak detektatzen ditu, kredentzialak betetzea eskaintzen du
+- **Sortu:** Klikatu "Sortu Pasahitza" kontu berriak sortzean
+- **Segurtasun Egiaztapena:** Pasahitz ahulak, berrerabiliak edo arriskuan daudenak identifikatzen ditu
+- **Larrialdi Sarbidea:** Izendatu konfiantzazko pertsona bat (IT kudeatzailea) larrialdi kontaktu gisa
+
+---
+
+## Eranskina D: MFA Izen-emate Argibideak
+
+### Microsoft Authenticator Konfigurazioa:
+1. Instalatu Microsoft Authenticator aplikazioa smartphonean:
    - iOS: App Store
    - Android: Google Play Store
-2. Open app, click "+" to add account
-3. Select "Work or school account"
-4. Scan QR code displayed during enrollment:
-   - Visit https://aka.ms/mfasetup
-   - Or navigate to Account Settings → Security Info → Add Method
-5. App displays 6-digit code (changes every 30 seconds)
-6. Enter code to verify setup
-7. Enable push notifications for easier login approval
-8. **IMPORTANT:** Save backup codes in password manager (for device loss)
+2. Ireki aplikazioa, klikatu "+" kontua gehitzeko
+3. Hautatu "Laneko edo eskolako kontua"
+4. Eskaneatu izen-ematean bistaratutako QR kodea:
+   - Bisitatu https://aka.ms/mfasetup
+   - Edo nabigatu Kontu Ezarpenak → Segurtasun Info → Gehitu Metodoa
+5. Aplikazioak 6 digituko kodea erakusten du (30 segundoro aldatzen da)
+6. Sartu kodea konfigurazioa egiaztatzeko
+7. Gaitu push jakinarazpenak saio-hasiera onarpen errazerako
+8. **GARRANTZITSUA:** Gorde babeskopia kodeak pasahitz kudeatzailean (gailua galtzen bada)
 
-### Backup Methods:
-- Enroll second device (tablet, second phone)
-- Add backup phone number for SMS (use only as last resort)
-- Print backup codes and store securely at home
-
----
-
-## Appendix E: Incident Response - Compromised Password
-
-**If you suspect your password is compromised:**
-
-1. **STOP using the account immediately**
-2. **CHANGE password immediately:**
-   - Self-service: https://password.zabalagailetak.com
-   - Or call IT helpdesk: +34 XXX XXX XXX
-3. **REPORT to security team:**
-   - Email: security@zabalagailetak.com
-   - Phone: +34 XXX XXX XXX (24/7)
-4. **PROVIDE details:**
-   - When did you suspect compromise?
-   - How did you discover it? (unusual account activity, phishing email, malware alert)
-   - What systems/accounts affected?
-   - What actions might attacker have taken?
-5. **COOPERATE with investigation:**
-   - Security team may ask for:
-     - Recent login history review
-     - Device forensic scan
-     - Access to related accounts
-   - Do not delete anything (evidence preservation)
-6. **FOLLOW-UP:**
-   - Change passwords on ALL accounts using same password (work and personal)
-   - Review account activity for unauthorized actions
-   - Enable MFA if not already enabled
-   - Enroll in password manager
-
-**Signs your password may be compromised:**
-- Unexplained account lockouts
-- Login notifications from unusual locations or times
-- Account activity you don't recognize (emails sent, files accessed)
-- Unusual system behavior
-- Received email saying "Your password was changed" (but you didn't change it)
-- Found username/password in data breach notification
+### Babeskopia Metodoak:
+- Eman izena bigarren gailu batean (tableta, bigarren telefonoa)
+- Gehitu babeskopia telefono zenbakia SMS bidez (azken aukera gisa bakarrik)
+- Inprimatu babeskopia kodeak eta gorde segurtasunez etxean
 
 ---
 
-**END OF PASSWORD POLICY**
+## Eranskina E: Intzidente Erantzuna - Arriskuan Dagoen Pasahitza
+
+**Zure pasahitza arriskuan dagoela susmatzen baduzu:**
+
+1. **GELDITU** kontua erabiltzea berehala
+2. **ALDATU** pasahitza berehala:
+   - Auto-zerbitzua: https://password.zabalagailetak.com
+   - Edo deitu IT helpdesk-ari: +34 XXX XXX XXX
+3. **JAKINARAZI** segurtasun taldeari:
+   - Emaila: security@zabalagailetak.com
+   - Telefonoa: +34 XXX XXX XXX (24/7)
+4. **EMAN** xehetasunak:
+   - Noiz susmatu zenuen arriskua?
+   - Nola aurkitu zenuen? (ezohiko kontu jarduera, phishing emaila, malware alerta)
+   - Zein sistema/kontu daude kaltetuta?
+   - Zer ekintza har zitzakeen erasotzaileak?
+5. **LAGUNDU** ikerketan:
+   - Segurtasun taldeak eska dezake:
+     - Azken saio-hasiera historia berrikustea
+     - Gailuaren forentse eskaneatzea
+     - Lotutako kontuetarako sarbidea
+   - Ez ezabatu ezer (ebidentzia gordetzea)
+6. **JARRAIPENA:**
+   - Aldatu pasahitzak kontu GUZTIETAN pasahitz bera erabiltzen bazenuen (lana eta pertsonala)
+   - Berrikusi kontu jarduera baimenik gabeko ekintzetarako
+   - Gaitu MFA oraindik gaituta ez badago
+   - Eman izena pasahitz kudeatzailean
+
+**Zure pasahitza arriskuan egon daitekeen seinaleak:**
+- Azalpenik gabeko kontu blokeoak
+- Saio-hasiera jakinarazpenak ezohiko kokapen edo orduetatik
+- Ezagutzen ez duzun kontu jarduera (bidalitako emailak, sartutako fitxategiak)
+- Ezohiko sistema portaera
+- "Zure pasahitza aldatu da" dioen emaila jasotzea (baina zuk ez duzu aldatu)
+- Erabiltzaile-izen/pasahitza datu-urraketa jakinarazpen batean aurkitzea
 
 ---
 
-**ACKNOWLEDGMENT**
+**PASAHITZ POLITIKAREN AMAIERA**
 
-I acknowledge that I have read and understood the Zabala Gailetak Password Policy (PWD-001). I agree to comply with all password requirements and understand that violations may result in disciplinary action.
+---
 
-**Employee Name:** ___________________________  
-**Employee ID:** ___________________________  
-**Signature:** ___________________________  
-**Date:** ___________________________
+**AITORTZA**
+
+Aitortzen dut Zabala Gailetak-en Pasahitz Politika (PWD-001) irakurri eta ulertu dudala. Pasahitz baldintza guztiak betetzea onartzen dut eta ulertzen dut urraketek diziplina ekintzak ekar ditzaketela.
+
+**Langilearen Izena:** ___________________________  
+**Langilearen IDa:** ___________________________  
+**Sinadura:** ___________________________  
+**Data:** ___________________________

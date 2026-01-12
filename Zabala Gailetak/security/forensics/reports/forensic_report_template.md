@@ -1,21 +1,22 @@
-# Forensic Investigation Report
+# Auzitegi Ikerketa Txostena
 
-**Case ID:** [CASE-YYYY-MMDD-XXX]  
-**Investigator:** [Name, Certification]  
-**Date:** [YYYY-MM-DD]  
+**Kasu IDa:** [KASU-UUUU-HHII-XXX]  
+**Ikertzailea:** [Izena, Ziurtagiria]  
+**Data:** [UUUU-HH-II]
 
-## 1. Executive Summary
-[Summary of incident and findings]
+## 1. Laburpen Exekutiboa
+[Intzidentearen eta aurkikuntzen laburpena]
 
-## 2. Scope of Investigation
-- Systems Examined: [List]
-- Time Period: [Dates]
-- Evidence Collected: [Count]
+## 2. Ikerketaren Esparrua
+- Aztertutako Sistemak: [Zerrenda]
+- Denbora Tartea: [Datak]
+- Bildutako Ebidentziak: [Kopurua]
 
-## 3. Chain of Custody
-[Table of evidence handling]
+## 3. Zaintza Katea
+[Ebidentzien kudeaketaren taula]
 
-## 4. Analysis Findings
-[Timeline, artifacts, attacker profile]
+## 4. Analisi Aurkikuntzak
+[Denbora-lerroa, artefaktuak, erasotzailearen profila]
 
-## 5. Conclusions and Recommendations
+## 5. Ondorioak eta Gomendioak
+[Azken ondorioak eta segurtasuna hobetzeko gomendioak]

@@ -1,77 +1,77 @@
-# Zabala Gailetak Mobile App Guide
+# Zabala Gailetak Mugikorrerako Aplikazioaren Gida
 
-**Platform:** iOS & Android  
-**Technology:** React Native  
-**Version:** 1.0  
-**Status:** Production Ready  
-
----
-
-## Table of Contents
-
-1. [Overview](#1-overview)
-2. [Features](#2-features)
-3. [Architecture](#3-architecture)
-4. [Development Setup](#4-development-setup)
-5. [Building & Deployment](#5-building--deployment)
-6. [Security Implementation](#6-security-implementation)
-7. [Testing](#7-testing)
-8. [Troubleshooting](#8-troubleshooting)
+**Plataforma:** iOS & Android  
+**Teknologia:** React Native  
+**Bertsioa:** 1.0  
+**Egoera:** Produkziorako Prest
 
 ---
 
-## 1. Overview
+## Aurkibidea
 
-### 1.1 Purpose
-
-Zabala Gailetak mobile application provides a secure, user-friendly platform for browsing products and placing orders from iOS and Android devices.
-
-### 1.2 Key Features
-
-- ✅ Secure authentication with MFA
-- ✅ Product catalog
-- ✅ Order placement
-- ✅ Biometric authentication (fingerprint/Face ID)
-- ✅ Offline support (future)
-- ✅ Push notifications (future)
-- ✅ Order tracking (future)
-
-### 1.3 Target Platforms
-
-| Platform | Minimum Version | Market Share |
-|----------|---------------|--------------|
-| Android | API Level 21 (5.0 Lollipop) | 99%+ |
-| iOS | iOS 13+ | 95%+ |
+1. [Orokorra](#1-orokorra)
+2. [Ezaugarriak](#2-ezaugarriak)
+3. [Arkitektura](#3-arkitektura)
+4. [Garapen Konfigurazioa](#4-garapen-konfigurazioa)
+5. [Eraikuntza eta Hedapena](#5-eraikuntza-eta-hedapena)
+6. [Segurtasun Inplementazioa](#6-segurtasun-inplementazioa)
+7. [Probak](#7-probak)
+8. [Arazoak Konpontzea](#8-arazoak-konpontzea)
 
 ---
 
-## 2. Features
+## 1. Orokorra
 
-### 2.1 Authentication
+### 1.1 Helburua
 
-#### 2.1.1 Login Flow
+Zabala Gailetak mugikorrerako aplikazioak plataforma seguru eta erabilerraza eskaintzen du produktuak arakatzeko eta iOS eta Android gailuetatik eskaerak egiteko.
+
+### 1.2 Ezaugarri Nagusiak
+
+- ✅ Autentifikazio segurua MFArekin
+- ✅ Produktu katalogoa
+- ✅ Eskaera egitea
+- ✅ Autentifikazio biometrikoa (hatz-marka/Face ID)
+- ✅ Lineaz kanpoko euskarria (etorkizunean)
+- ✅ Push jakinarazpenak (etorkizunean)
+- ✅ Eskaera jarraipena (etorkizunean)
+
+### 1.3 Helburu Plataformak
+
+| Plataforma | Gutxieneko Bertsioa | Merkatu Kuota |
+|------------|---------------------|---------------|
+| Android | API Level 21 (5.0 Lollipop) | %99+ |
+| iOS | iOS 13+ | %95+ |
+
+---
+
+## 2. Ezaugarriak
+
+### 2.1 Autentifikazioa
+
+#### 2.1.1 Saio-hasiera Fluxua
 
 ```
-1. User enters credentials
+1. Erabiltzaileak kredentzialak sartzen ditu
    ↓
-2. API validates username/password
+2. APIak erabiltzailea/pasahitza balidatzen du
    ↓
-3. If MFA enabled → MFA screen
+3. MFA gaituta badago → MFA pantaila
    ↓
-4. Enter TOTP code (6 digits)
+4. Sartu TOTP kodea (6 digitu)
    ↓
-5. Authentication complete
+5. Autentifikazioa osatuta
    ↓
-6. Navigate to Products
+6. Produktuetara nabigatu
 ```
 
-#### 2.1.2 Biometric Authentication
+#### 2.1.2 Autentifikazio Biometrikoa
 
-**Supported Methods:**
-- Android: Fingerprint
+**Onartutako Metodoak:**
+- Android: Hatz-marka
 - iOS: Touch ID / Face ID
 
-**Implementation:**
+**Inplementazioa:**
 ```javascript
 import TouchID from 'react-native-touch-id';
 
@@ -88,45 +88,45 @@ const authenticate = async () => {
 };
 ```
 
-### 2.2 Product Catalog
+### 2.2 Produktu Katalogoa
 
-**Features:**
-- Grid layout with product cards
-- Product images
-- Prices in EUR
-- Product descriptions
-- Category filtering (future)
+**Ezaugarriak:**
+- Sareta diseinua produktu txartelekin
+- Produktu irudiak
+- Prezioak EUR-tan
+- Produktu deskribapenak
+- Kategoria iragazketa (etorkizunean)
 
-### 2.3 Order Placement
+### 2.3 Eskaera Egitea
 
-**Order Form Fields:**
-- Quantity (1-10)
-- Customer name
-- Email address
-- Shipping address
+**Eskaera Formulario Eremuak:**
+- Kantitatea (1-10)
+- Bezeroaren izena
+- Posta elektronikoa
+- Bidalketa helbidea
 
-**Validation:**
-- Real-time validation
-- Error messages
-- Price calculation
-- Order confirmation
+**Balidazioa:**
+- Denbora errealeko balidazioa
+- Errore mezuak
+- Prezio kalkulua
+- Eskaera baieztapena
 
-### 2.4 User Dashboard
+### 2.4 Erabiltzaile Panela
 
-**Features:**
-- Statistics display
-- Quick actions
-- MFA management
-- Logout
+**Ezaugarriak:**
+- Estatistika bistaratzea
+- Ekintza azkarrak
+- MFA kudeaketa
+- Saioa itxi
 
 ---
 
-## 3. Architecture
+## 3. Arkitektura
 
-### 3.1 Component Structure
+### 3.1 Osagai Egitura
 
 ```
-App (Root)
+App (Erroa)
 ├── AuthProvider
 ├── NavigationContainer
 │   ├── Stack Navigator
@@ -137,108 +137,108 @@ App (Root)
 │   │   └── Dashboard Screen
 ```
 
-### 3.2 State Management
+### 3.2 Egoera Kudeaketa
 
-**Authentication Context:**
-- User state
-- Auth status
-- MFA status
-- Login/Logout functions
+**Autentifikazio Testuingurua (Context):**
+- Erabiltzaile egoera
+- Auth egoera
+- MFA egoera
+- Login/Logout funtzioak
 
-**Local State:**
-- Form inputs
-- Product list
-- Order data
-- Loading states
-- Error messages
+**Egoera Lokala:**
+- Formulario sarrerak
+- Produktu zerrenda
+- Eskaera datuak
+- Kargatzen egoerak
+- Errore mezuak
 
-### 3.3 Navigation
+### 3.3 Nabigazioa
 
-**Navigation Stack:**
+**Nabigazio Pila (Stack):**
 
-1. **Login** → (authenticated) → **Products**
-2. **Login** → (MFA required) → **MFA** → **Products**
-3. **Products** → **Order** (with product data)
-4. **Order** → (success) → **Products**
+1. **Login** → (autentifikatua) → **Products**
+2. **Login** → (MFA behar da) → **MFA** → **Products**
+3. **Products** → **Order** (produktu datuekin)
+4. **Order** → (arrakasta) → **Products**
 5. **Products** → **Dashboard**
 6. **Dashboard** → **Logout** → **Login**
 
 ---
 
-## 4. Development Setup
+## 4. Garapen Konfigurazioa
 
-### 4.1 Prerequisites
+### 4.1 Aurrebaldintzak
 
-#### 4.1.1 Software Requirements
+#### 4.1.1 Software Baldintzak
 
-| Software | Version | Purpose |
-|----------|---------|---------|
+| Softwarea | Bertsioa | Helburua |
+|-----------|----------|----------|
 | Node.js | 18+ | Runtime |
-| npm | 9+ | Package manager |
-| React Native CLI | 12+ | CLI tools |
-| Android Studio | Hedgehog | Android dev |
-| Xcode | 14+ | iOS dev (macOS only) |
+| npm | 9+ | Pakete kudeatzailea |
+| React Native CLI | 12+ | CLI tresnak |
+| Android Studio | Hedgehog | Android garapena |
+| Xcode | 14+ | iOS garapena (macOS soilik) |
 
-#### 4.1.2 Hardware Requirements
+#### 4.1.2 Hardware Baldintzak
 
-| Platform | CPU | RAM | Storage |
-|----------|-----|-----|---------|
-| Android | 4 cores | 8GB | 50GB |
-| iOS (macOS) | 4 cores | 8GB | 50GB |
+| Plataforma | CPU | RAM | Biltegiratzea |
+|------------|-----|-----|---------------|
+| Android | 4 nukleo | 8GB | 50GB |
+| iOS (macOS) | 4 nukleo | 8GB | 50GB |
 
-### 4.2 Installation Steps
+### 4.2 Instalazio Urratsak
 
-#### 4.2.1 Clone Repository
+#### 4.2.1 Errepositorioa Klonatu
 
 ```bash
 git clone <repository-url>
 cd erronkak/Zabala Gailetak/src/mobile
 ```
 
-#### 4.2.2 Install Dependencies
+#### 4.2.2 Dependentziak Instalatu
 
 ```bash
 npm install
 ```
 
-#### 4.2.3 iOS Setup (macOS only)
+#### 4.2.3 iOS Konfigurazioa (macOS soilik)
 
 ```bash
-# Install pods
+# Pods instalatu
 cd ios
 pod install
 cd ..
 
-# Open Xcode
+# Xcode ireki
 open ios/ZabalaGailetak.xcworkspace
 ```
 
-#### 4.2.4 Android Setup
+#### 4.2.4 Android Konfigurazioa
 
 ```bash
-# Create local.properties
+# local.properties sortu
 echo "sdk.dir=$HOME/Android/Sdk" > android/local.properties
 
-# Build and run
+# Eraiki eta exekutatu
 npx react-native run-android
 ```
 
-### 4.3 Configuration
+### 4.3 Konfigurazioa
 
-#### 4.3.1 Environment Variables
+#### 4.3.1 Ingurune Aldagaiak
 
-Create `.env` file:
+Sortu `.env` fitxategia:
 
 ```env
-# API Configuration
+# API Konfigurazioa
 API_URL=http://localhost:3000/api
 
-# Security
+# Segurtasuna
 ENABLE_MFA=true
 ENABLE_BIOMETRICS=true
 ```
 
-#### 4.3.2 App Configuration
+#### 4.3.2 Aplikazio Konfigurazioa
 
 **Android:** `android/app/build.gradle`
 
@@ -266,31 +266,31 @@ android {
 
 ---
 
-## 5. Building & Deployment
+## 5. Eraikuntza eta Hedapena
 
-### 5.1 Development Build
+### 5.1 Garapen Eraikuntza
 
-#### 5.1.1 Run on Android
+#### 5.1.1 Android-en exekutatu
 
 ```bash
 npm run android
 ```
 
-#### 5.1.2 Run on iOS
+#### 5.1.2 iOS-en exekutatu
 
 ```bash
 npm run ios
 ```
 
-#### 5.1.3 Run with Metro
+#### 5.1.3 Metro-rekin exekutatu
 
 ```bash
 npm start
-# In another terminal:
-npm run android  # or npm run ios
+# Beste terminal batean:
+npm run android  # edo npm run ios
 ```
 
-### 5.2 Production Build
+### 5.2 Produkzio Eraikuntza
 
 #### 5.2.1 Android APK
 
@@ -299,7 +299,7 @@ cd android
 ./gradlew assembleRelease
 ```
 
-Output: `android/app/build/outputs/apk/release/app-release.apk`
+Irteera: `android/app/build/outputs/apk/release/app-release.apk`
 
 #### 5.2.2 Android AAB (Google Play)
 
@@ -308,55 +308,55 @@ cd android
 ./gradlew bundleRelease
 ```
 
-Output: `android/app/build/outputs/bundle/release/app-release.aab`
+Irteera: `android/app/build/outputs/bundle/release/app-release.aab`
 
 #### 5.2.3 iOS IPA (App Store)
 
 ```bash
-# In Xcode:
-# 1. Select "Any iOS Device" as target
+# Xcode-n:
+# 1. Aukeratu "Any iOS Device" helburu gisa
 # 2. Product → Archive
 # 3. Distribute App
 ```
 
-### 5.3 App Store Deployment
+### 5.3 App Store Hedapena
 
 #### 5.3.1 Google Play Store
 
-**Steps:**
-1. Create app in Google Play Console
-2. Upload AAB file
-3. Fill store listing
-4. Provide screenshots
-5. Submit for review
+**Urratsak:**
+1. Sortu aplikazioa Google Play Console-n
+2. Igo AAB fitxategia
+3. Bete dendako fitxa
+4. Eman pantaila-argazkiak
+5. Bidali berrikuspetera
 
-**Required Assets:**
-- Icon: 512x512px
-- Feature graphic: 1024x500px
-- Screenshots: Various sizes
-- Banner: 180x120px
+**Beharrezko Aktiboak:**
+- Ikonoa: 512x512px
+- Ezaugarri grafikoa: 1024x500px
+- Pantaila-argazkiak: Hainbat tamaina
+- Bannerra: 180x120px
 
 #### 5.3.2 Apple App Store
 
-**Steps:**
-1. Create app in App Store Connect
-2. Upload IPA via Xcode or Transporter
-3. Fill app information
-4. Provide screenshots
-5. Submit for review
+**Urratsak:**
+1. Sortu aplikazioa App Store Connect-en
+2. Igo IPA Xcode edo Transporter bidez
+3. Bete aplikazioaren informazioa
+4. Eman pantaila-argazkiak
+5. Bidali berrikuspetera
 
-**Required Assets:**
-- Icon: 1024x1024px
-- Screenshots: Various sizes
-- App preview (optional)
+**Beharrezko Aktiboak:**
+- Ikonoa: 1024x1024px
+- Pantaila-argazkiak: Hainbat tamaina
+- Aplikazioaren aurrebista (aukerakoa)
 
 ---
 
-## 6. Security Implementation
+## 6. Segurtasun Inplementazioa
 
-### 6.1 Authentication Security
+### 6.1 Autentifikazio Segurtasuna
 
-#### 6.1.1 Secure Token Storage
+#### 6.1.1 Token Biltegiratze Segurua
 
 **Android:**
 
@@ -392,9 +392,9 @@ const storeCredentials = async (username, password) => {
 };
 ```
 
-#### 6.1.2 Network Security
+#### 6.1.2 Sare Segurtasuna
 
-**HTTPS Only:**
+**HTTPS Soilik:**
 
 ```javascript
 const apiClient = axios.create({
@@ -406,7 +406,7 @@ const apiClient = axios.create({
 });
 ```
 
-**Certificate Pinning (Optional):**
+**Ziurtagiri Pinning-a (Aukerakoa):**
 
 ```javascript
 import { Pinning } from 'react-native-ssl-pinning';
@@ -420,9 +420,9 @@ Pinning.enableCertificatePinning(
 );
 ```
 
-### 6.2 Data Security
+### 6.2 Datu Segurtasuna
 
-#### 6.2.1 Input Validation
+#### 6.2.1 Sarrera Balidazioa
 
 ```javascript
 const validateEmail = (email) => {
@@ -436,7 +436,7 @@ const validateQuantity = (qty) => {
 };
 ```
 
-#### 6.2.2 Output Encoding
+#### 6.2.2 Irteera Kodetzea
 
 ```javascript
 import DOMPurify from 'dompurify';
@@ -446,9 +446,9 @@ const sanitizeInput = (input) => {
 };
 ```
 
-### 6.3 Permissions
+### 6.3 Baimenak
 
-#### 6.3.1 Android Permissions
+#### 6.3.1 Android Baimenak
 
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
@@ -456,14 +456,14 @@ const sanitizeInput = (input) => {
 <uses-permission android:name="android.permission.USE_BIOMETRIC" />
 ```
 
-#### 6.3.2 iOS Permissions
+#### 6.3.2 iOS Baimenak
 
 ```xml
 <key>NSFaceIDUsageDescription</key>
 <string>Autentikazio biometrikoa erabiltzeko</string>
 ```
 
-### 6.4 Deep Link Security
+### 6.4 Deep Link Segurtasuna
 
 ```javascript
 const handleOpenURL = async (url) => {
@@ -488,11 +488,11 @@ const handleOpenURL = async (url) => {
 
 ---
 
-## 7. Testing
+## 7. Probak
 
-### 7.1 Unit Tests
+### 7.1 Unitate Probak
 
-**Setup:**
+**Konfigurazioa:**
 
 ```javascript
 import { render, fireEvent } from '@testing-library/react-native';
@@ -522,9 +522,9 @@ describe('Login Screen', () => {
 });
 ```
 
-### 7.2 E2E Tests
+### 7.2 E2E Probak
 
-**Setup (Detox):**
+**Konfigurazioa (Detox):**
 
 ```javascript
 describe('Login Flow', () => {
@@ -542,61 +542,61 @@ describe('Login Flow', () => {
 });
 ```
 
-### 7.3 Test Execution
+### 7.3 Proba Exekuzioa
 
 ```bash
-# Unit tests
+# Unitate probak
 npm test
 
-# E2E tests
+# E2E probak
 npm run test:e2e
 
-# Test coverage
+# Proba estaldura
 npm run test:coverage
 ```
 
 ---
 
-## 8. Troubleshooting
+## 8. Arazoak Konpontzea
 
-### 8.1 Common Issues
+### 8.1 Ohiko Arazoak
 
-#### 8.1.1 Build Errors
+#### 8.1.1 Eraikuntza Erroreak
 
-**Issue:** Gradle sync fails
+**Arazoa:** Gradle sync-ak huts egiten du
 
-**Solution:**
+**Irtenbidea:**
 ```bash
 cd android
 ./gradlew clean
 ./gradlew build
 ```
 
-#### 8.1.2 Metro Bundler Issues
+#### 8.1.2 Metro Bundler Arazoak
 
-**Issue:** Metro bundler not starting
+**Arazoa:** Metro bundler ez da hasten
 
-**Solution:**
+**Irtenbidea:**
 ```bash
 npm start -- --reset-cache
 ```
 
-#### 8.1.3 iOS Build Errors
+#### 8.1.3 iOS Eraikuntza Erroreak
 
-**Issue:** CocoaPods not working
+**Arazoa:** CocoaPods-ek ez du funtzionatzen
 
-**Solution:**
+**Irtenbidea:**
 ```bash
 cd ios
 pod deintegrate
 pod install
 ```
 
-### 8.2 Performance Issues
+### 8.2 Errendimendu Arazoak
 
-#### 8.2.1 Slow Navigation
+#### 8.2.1 Nabigazio Motela
 
-**Solution:** Use React Navigation's lazy loading
+**Irtenbidea:** Erabili React Navigation-en lazy loading
 
 ```javascript
 const Products = React.lazy(() =>
@@ -604,18 +604,18 @@ const Products = React.lazy(() =>
 );
 ```
 
-#### 8.2.2 Large Bundle Size
+#### 8.2.2 Bundle Tamaina Handia
 
-**Solution:**
-- Use code splitting
-- Optimize images
-- Remove unused dependencies
+**Irtenbidea:**
+- Erabili kode zatiketa
+- Optimizatu irudiak
+- Kendu erabiltzen ez diren dependentziak
 
-### 8.3 Security Issues
+### 8.3 Segurtasun Arazoak
 
-#### 8.3.1 Token Not Persisting
+#### 8.3.1 Tokena ez da gordetzen
 
-**Solution:** Check storage permissions
+**Irtenbidea:** Egiaztatu biltegiratze baimenak
 
 ```javascript
 // Android
@@ -627,37 +627,37 @@ Check Info.plist for proper keys
 
 ---
 
-## Appendix A: Quick Reference
+## Eranskina A: Erreferentzia Azkarra
 
-### A.1 Commands
+### A.1 Komandoak
 
-| Command | Description |
-|---------|-------------|
-| `npm start` | Start Metro bundler |
-| `npm run android` | Run on Android |
-| `npm run ios` | Run on iOS |
-| `npm test` | Run tests |
-| `npm run lint` | Lint code |
-| `npm run android:release` | Build Android release |
+| Komandoa | Deskribapena |
+|----------|--------------|
+| `npm start` | Hasi Metro bundler |
+| `npm run android` | Android-en exekutatu |
+| `npm run ios` | iOS-en exekutatu |
+| `npm test` | Probak exekutatu |
+| `npm run lint` | Kodea lint-eatu |
+| `npm run android:release` | Android release eraiki |
 
-### A.2 Environment Variables
+### A.2 Ingurune Aldagaiak
 
-| Variable | Description | Default |
-|----------|-------------|---------|
+| Aldagaia | Deskribapena | Lehenetsia |
+|----------|--------------|------------|
 | `API_URL` | API endpoint | http://localhost:3000/api |
-| `ENABLE_MFA` | Enable MFA | true |
-| `ENABLE_BIOMETRICS` | Enable biometrics | true |
-| `LOG_LEVEL` | Logging level | info |
+| `ENABLE_MFA` | MFA gaitu | true |
+| `ENABLE_BIOMETRICS` | Biometrikoa gaitu | true |
+| `LOG_LEVEL` | Erregistro maila | info |
 
-### A.3 Useful Links
+### A.3 Esteka Erabilgarriak
 
-- **React Native Docs:** https://reactnative.dev
+- **React Native Dokumentazioa:** https://reactnative.dev
 - **React Navigation:** https://reactnavigation.org
-- **Axios Docs:** https://axios-http.com
+- **Axios Dokumentazioa:** https://axios-http.com
 - **Detox:** https://wix.github.io/Detox/
 
 ---
 
-**Document Version:** 1.0  
-**Last Updated:** 2024-01-08  
-**Maintained By:** Zabala Gailetak Mobile Team
+**Dokumentu Bertsioa:** 1.0  
+**Azken Eguneratzea:** 2024-01-08  
+**Mantentzailea:** Zabala Gailetak Mobile Team

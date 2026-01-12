@@ -1,8 +1,8 @@
-# Mobil Aplikazio Segurtasun Finkapena - SOP
+# Mugikorrerako Aplikazioaren Segurtasuna Gogortzea - SOP
 
 ## Helburua
 
-Mobil aplikazioa (React Native) segurtasun estandarren arabera finkatzeko prozedura, OWASP Mobile Top 10 arauak kontuan hartuta.
+Mugikorrerako aplikazioa (React Native) segurtasun estandarren arabera gogortzeko prozedura, OWASP Mobile Top 10 arauak kontuan hartuta.
 
 ## Aurrebaldintzak
 
@@ -13,6 +13,8 @@ Mobil aplikazioa (React Native) segurtasun estandarren arabera finkatzeko prozed
 ## 1. Garapen Ingurune Segurua
 
 ### 1.1 Gradle Seguruak (Android)
+
+Ziurtatu Gradle konfigurazioak bertsio eta SDK seguruak erabiltzen dituela.
 
 ```gradle
 android {
@@ -28,15 +30,17 @@ android {
     
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled true // Kodea murriztea eta lausotzea gaitu
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            debuggable false
+            debuggable false // Arazketa desgaitu produkzioan
         }
     }
 }
 ```
 
 ### 1.2 Info.plist Segurua (iOS)
+
+Konfiguratu App Transport Security (ATS) HTTPS soilik baimentzeko, salbuespen zehatzekin bakarrik.
 
 ```xml
 <key>NSAppTransportSecurity</key>
@@ -60,13 +64,15 @@ android {
 
 ## 2. Datu Biltegiratze Segurua
 
-### 2.1 Sensitive Data Ez Gorde Local-ki
+### 2.1 Ez Gorde Datu Sentikorrak Lokalean
 
-- Pasahitzak ez gorde
-- API gakoak ez gorde kodean
-- Token seguruak erabili
+- Ez gorde pasahitzik testu lauan.
+- Ez gorde API gako sekreturik iturburu kodean.
+- Erabili iraupen laburreko token seguruak.
 
-### 2.2 AsyncStorage Encrypted Erabili
+### 2.2 AsyncStorage Enkriptatua Erabili
+
+Ez erabili `AsyncStorage` estandarra datu sentikorretarako. Erabili biltegiratze enkriptatua.
 
 ```javascript
 import EncryptedStorage from 'react-native-encrypted-storage';
@@ -90,6 +96,8 @@ const getToken = async () => {
 
 ### 2.3 Keychain Erabili (iOS)
 
+iOS-en, erabili Keychain zerbitzuak kredentzialak segurtasunez gordetzeko.
+
 ```javascript
 import * as Keychain from 'react-native-keychain';
 
@@ -106,6 +114,8 @@ const storeCredentials = async (username, password) => {
 
 ### 3.1 HTTPS Soilik Erabili
 
+Ziurtatu API dei guztiak HTTPS bidez egiten direla eta ziurtagiri baliogabeak baztertzen direla.
+
 ```javascript
 const apiClient = axios.create({
   baseURL: 'https://api.zabala-gailetak.com',
@@ -118,6 +128,8 @@ const apiClient = axios.create({
 
 ### 3.2 Certificate Pinning
 
+Inplementatu SSL Pinning-a Man-in-the-Middle (MitM) erasoak saihesteko.
+
 ```bash
 npm install react-native-ssl-pinning
 ```
@@ -126,13 +138,15 @@ npm install react-native-ssl-pinning
 import { Pinning } from 'react-native-ssl-pinning';
 
 Pinning.enableCertificatePinning('api.zabala-gailetak.com', ['cert1'], () => {
-  console.log('Certificate pinning enabled');
+  console.log('Certificate pinning gaituta');
 });
 ```
 
-## 4. Autentikazio Segurua
+## 4. Autentifikazio Segurua
 
-### 4.1 MFA Implementatu
+### 4.1 MFA Inplementatu
+
+Inplementatu Faktore Anitzeko Autentifikazioa (MFA) segurtasuna indartzeko.
 
 ```javascript
 const handleMFA = async (token) => {
@@ -145,25 +159,29 @@ const handleMFA = async (token) => {
 };
 ```
 
-### 4.2 Biometrikoak Erabili
+### 4.2 Biometria Erabili
+
+Erabili hatz-marka edo aurpegi-ezagutza sarbide azkar eta segururako.
 
 ```javascript
 import TouchID from 'react-native-touch-id';
 
 const authenticate = async () => {
   try {
-    const success = await TouchID.authenticate('Autentikazioa behar da');
+    const success = await TouchID.authenticate('Autentifikazioa behar da');
     return success;
   } catch (error) {
-    console.error('Biometrik autentikazioa huts egin du');
+    console.error('Autentifikazio biometrikoak huts egin du');
     return false;
   }
 };
 ```
 
-## 5. Sarrera Kontrola
+## 5. Sarbide Kontrola
 
-### 5.1 Permissions Balidatu
+### 5.1 Baimenak Balidatu (Permissions)
+
+Eskatu baimenak exekuzio-denboran eta kudeatu ezezkoak.
 
 ```javascript
 import { PermissionsAndroid, Platform } from 'react-native';
@@ -184,13 +202,15 @@ const requestCameraPermission = async () => {
 };
 ```
 
-### 5.2 Permissionak Manifest-ean Bakarrik
+### 5.2 Baimenak Manifest-ean Bakarrik
 
-AndroidManifest.xml eta Info.plist-ean soilik beharrezko permissionak erantsi
+`AndroidManifest.xml` eta `Info.plist` fitxategietan soilik aplikazioak benetan behar dituen baimenak zehaztu. Gutxieneko pribilegioen printzipioa jarraitu.
 
-## 6. HTTPS eta Certificate Pinning
+## 6. HTTPS eta Certificate Pinning Konfigurazioa (Android)
 
-### 6.1 Network Security Config (Android)
+### 6.1 Network Security Config
+
+Konfiguratu `network-security-config.xml` ziurtagiriak ainguratzeko.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -207,6 +227,8 @@ AndroidManifest.xml eta Info.plist-ean soilik beharrezko permissionak erantsi
 ## 7. Interceptor Seguruak
 
 ### 7.1 Axios Interceptor
+
+Erabili interzeptoreak tokenak automatikoki gehitzeko eta 401 erroreak kudeatzeko (saioa ixteko).
 
 ```javascript
 apiClient.interceptors.request.use(async (config) => {
@@ -234,8 +256,8 @@ apiClient.interceptors.response.use(
 
 ### 8.1 Universal Links (iOS) eta App Links (Android)
 
-- HTTPS soilik erabili deep link-etarako
-- Balidatu jatorria
+- Erabili HTTPS soilik deep link-etarako.
+- Balidatu URLaren jatorria datuak prozesatu aurretik.
 
 ```javascript
 import { Linking } from 'react-native';
@@ -244,7 +266,7 @@ const handleOpenURL = async (url) => {
   if (url.startsWith('https://zabala-gailetak.com/')) {
     // Prozesatu URL segurua
   } else {
-    Alert.alert('Abisua', 'Link ez da segurua');
+    Alert.alert('Abisua', 'Esteka ez da segurua');
   }
 };
 
@@ -253,40 +275,48 @@ Linking.addEventListener('url', (event) => {
 });
 ```
 
-## 9. Debug Mode Ez Produktuan
+## 9. Debug Modua Ezabatu Produkzioan
+
+Ziurtatu `console.log` eta garapeneko beste tresnak desgaituta daudela produkzio bertsioan.
 
 ```javascript
 if (__DEV__) {
-  console.log('Debug mode - ez erabili produktuan');
+  console.log('Debug mode - ez erabili produkzioan');
 } else {
+  // Produkzioan log-ak isilarazi
   console.log = () => {};
+  console.warn = () => {};
+  console.error = () => {};
 }
 ```
 
-## 10. Segurtasun Audit Tresnak
+## 10. Segurtasun Auditoretza Tresnak
 
 ### 10.1 MobSF Erabili
+
+Exekutatu analisi estatikoa eta dinamikoa MobSF erabiliz.
 
 ```bash
 docker run -it -p 8000:8000 opensecurity/mobile-security-framework-mobsf
 ```
 
-- Kargatu APK/IPA
-- Analizatu emaitzak
-- Konpondu detektatutako ahultasunak
+- Kargatu APK/IPA fitxategia.
+- Analizatu txostena.
+- Konpondu detektatutako ahultasunak (arrisku altukoak eta ertainak).
 
 ### 10.2 Frida Erabili
+
+Erabili Frida aplikazioaren portaera dinamikoa aztertzeko eta funtzioak hook egiteko (baimenik gabeko sarbideak simulatzeko).
 
 ```bash
 npm install -g frida
 ```
 
-- Aplikazioaren dinamika aztertu
-- Hook funtzioak
+## 11. Kodearen Lausotzea (Obfuscation)
 
-## 11. Kodearen Obfuskazioa
+### 11.1 ProGuard / R8 (Android)
 
-### 11.1 ProGuard (Android)
+Gaitu kodearen murrizketa eta lausotzea `build.gradle` fitxategian. Honek alderantzizko ingeniaritza zailtzen du.
 
 ```bash
 android {
@@ -302,20 +332,24 @@ android {
 
 ### 11.2 Hermes (JavaScript)
 
-```javascript
-// App.js
-import { enableHermes } from 'react-native/Libraries/Utilities/hermescfg';
+Erabili Hermes motorra JavaScript bytecode-a konpilatzeko, errendimendua hobetzeko eta iturburu kodea zuzenean ez erakusteko.
 
-enableHermes();
+```javascript
+// android/app/build.gradle
+project.ext.react = [
+    enableHermes: true,  // Garbitu eta berreraiki behar da
+]
 ```
 
-## 12. Test Case-ak
+## 12. Probak (Test Cases)
 
-### 12.1 Unit Tests
+### 12.1 Unitate Probak
+
+Egiaztatu segurtasun funtzioak (adibidez, pasahitzak ez direla testu lauan gordetzen).
 
 ```javascript
-describe('Security Tests', () => {
-  it('should not store password in plain text', () => {
+describe('Segurtasun Probak', () => {
+  it('ez luke pasahitza testu lauan gorde behar', () => {
     const password = 'Test123456';
     const storedPassword = storePassword(password);
     expect(storedPassword).not.toBe(password);
@@ -323,26 +357,28 @@ describe('Security Tests', () => {
 });
 ```
 
-### 12.2 E2E Tests
+### 12.2 E2E Probak
+
+Simulatu segurtasun eszenatokiak, hala nola tasa-mugatzea (rate limiting).
 
 ```javascript
-describe('Security E2E', () => {
-  it('should enforce rate limiting', async () => {
+describe('Segurtasun E2E', () => {
+  it('tasa-mugatzea behartu beharko luke', async () => {
     for (let i = 0; i < 20; i++) {
       await loginAttempt('test', 'wrong');
     }
     const response = await loginAttempt('test', 'wrong');
-    expect(response.status).toBe(429);
+    expect(response.status).toBe(429); // Too Many Requests
   });
 });
 ```
 
 ## 13. Berrikuspen eta Eguneratzeak
 
-- Bertsio bakoitzean segurtasun probak egin
-- Hilabetero MobSF scan-ak
-- dependentziak eguneratu
-- Segurtasun bulletins jarraitu
+- Egin segurtasun probak bertsio nagusi bakoitzean.
+- Exekutatu MobSF eskaneatzeak hilero.
+- Mantendu dependentziak eguneratuta (`npm audit`).
+- Jarraitu React Native eta plataformen segurtasun buletinak.
 
 ## Erreferentziak
 

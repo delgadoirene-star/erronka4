@@ -1,511 +1,504 @@
-# Cookie Policy
+# Cookie Politika
 ## Zabala Gailetak S.A.
 
-**Last Updated:** January 8, 2026  
-**Effective Date:** January 8, 2026
+**Azken Eguneratzea:** 2026ko Urtarrilaren 8a  
+**Indarrean Sartze Data:** 2026ko Urtarrilaren 8a
 
 ---
 
-## 1. Introduction
+## 1. Sarrera
 
-This Cookie Policy explains how Zabala Gailetak S.A. ("we," "us," or "our") uses cookies and similar tracking technologies on our website **www.zabalagailetak.com** (the "Website").
+Cookie Politika honek Zabala Gailetak S.A.-k ("gu", "gure" edo "guri") **www.zabalagailetak.com** webgunean ("Webgunea") cookieak eta antzeko jarraipen-teknologiak nola erabiltzen dituen azaltzen du.
 
-**What are Cookies?**
+**Zer dira Cookieak?**
 
-Cookies are small text files that are placed on your device (computer, smartphone, tablet) when you visit a website. Cookies allow the website to recognize your device and remember information about your visit, such as your preferred language, login status, or items in your shopping cart.
+Cookieak testu fitxategi txikiak dira, zure gailuan (ordenagailua, smartphonea, tableta) jartzen direnak webgune bat bisitatzen duzunean. Cookieek webguneari zure gailua ezagutzeko eta zure bisitari buruzko informazioa gogoratzeko aukera ematen diote, hala nola zure hizkuntza hobetsia, saio-egoera edo erosketa-saskiko elementuak.
 
-**Why We Use Cookies:**
+**Zergatik Erabiltzen Ditugu Cookieak:**
 
-We use cookies to:
-- Make our Website work properly (essential functions)
-- Improve your user experience (remember your preferences)
-- Understand how you use our Website (analytics)
-- Show you relevant content and advertisements (with your consent)
+Cookieak erabiltzen ditugu:
+- Gure Webgunea behar bezala funtzionarazteko (funtsezko funtzioak)
+- Zure erabiltzaile esperientzia hobetzeko (zure lehentasunak gogoratu)
+- Gure Webgunea nola erabiltzen duzun ulertzeko (analitika)
+- Eduki eta iragarki garrantzitsuak erakusteko (zure baimenarekin)
 
-**Your Control:**
+**Zure Kontrola:**
 
-You have control over which cookies you accept. When you first visit our Website, you will see a cookie consent banner allowing you to choose your preferences. You can change your choices at any time using our **Cookie Settings** tool (link in website footer) or through your browser settings.
+Cookieak onartzen dituzun ala ez kontrolatzeko aukera duzu. Gure Webgunea lehen aldiz bisitatzen duzunean, cookieen baimenaren bannerra ikusiko duzu, zure lehentasunak aukeratzeko aukera emanez. Zure aukerak edozein unetan alda ditzakezu gure **Cookie Ezarpenak** tresna erabiliz (webgunearen orri-oineko esteka) edo zure nabigatzailearen ezarpenen bidez.
 
 ---
 
-## 2. Types of Cookies We Use
+## 2. Erabiltzen Ditugun Cookie Motak
 
-### 2.1 Strictly Necessary Cookies
+### 2.1 Guztiz Beharrezko Cookieak
 
-**Purpose:** These cookies are essential for the Website to function properly. Without them, basic features like shopping carts, secure login, and checkout would not work.
+**Helburua:** Cookie hauek ezinbestekoak dira Webguneak behar bezala funtziona dezan. Horiek gabe, oinarrizko ezaugarriek (adibidez, erosketa-saskia, saio-hasiera segurua eta ordainketa) ez lukete funtzionatuko.
 
-**Legal Basis:** These cookies do not require consent as they are necessary for service delivery (GDPR Article 6(1)(b) - contract performance).
+**Oinarri Juridikoa:** Cookie hauek ez dute baimenik behar, zerbitzua emateko beharrezkoak baitira (GDPR 6(1)(b) artikulua - kontratuaren betetzea).
 
-**Can You Disable Them?** No. If you disable these cookies, you will not be able to use key features of the Website.
+**Desgaitu Ditzakezu?** Ez. Cookie hauek desgaitzen badituzu, ezingo duzu Webguneko funtsezko ezaugarriak erabili.
 
-| Cookie Name | Purpose | Duration | Data Collected |
-|-------------|---------|----------|----------------|
-| `session_id` | Maintains your session while browsing | Session (deleted when you close browser) | Random session identifier |
-| `cart_token` | Remembers items in your shopping cart | 7 days | Random cart identifier |
-| `csrf_token` | Security measure to prevent cross-site request forgery | Session | Random token |
-| `auth_token` | Keeps you logged in to your account | 30 days or until logout | Encrypted authentication token |
-| `cookie_consent` | Remembers your cookie preferences | 12 months | Your cookie consent choices (yes/no for each category) |
+| Cookie Izena | Helburua | Iraupena | Bildutako Datuak |
+|--------------|----------|----------|------------------|
+| `session_id` | Zure saioa mantentzen du nabigatzen duzun bitartean | Saioa (nabigatzailea ixtean ezabatzen da) | Ausazko saio identifikatzailea |
+| `cart_token` | Erosketa-saskian dauden elementuak gogoratzen ditu | 7 egun | Ausazko saski identifikatzailea |
+| `csrf_token` | Gune arteko eskaeren faltsutzea prebenitzeko segurtasun neurria | Saioa | Ausazko tokena |
+| `auth_token` | Zure kontuan saioa hasita mantentzen zaitu | 30 egun edo saioa itxi arte | Autentifikazio token enkriptatua |
+| `cookie_consent` | Zure cookie lehentasunak gogoratzen ditu | 12 hilabete | Zure cookie baimen aukerak (bai/ez kategoria bakoitzerako) |
 
-**Provider:** Zabala Gailetak S.A. (first-party cookies)
+**Hornitzailea:** Zabala Gailetak S.A. (lehenengo alderdiko cookieak)
 
-### 2.2 Performance and Analytics Cookies
+### 2.2 Errendimendu eta Analitika Cookieak
 
-**Purpose:** These cookies help us understand how visitors use our Website, which pages are most popular, and where we can improve the user experience.
+**Helburua:** Cookie hauek bisitariek gure Webgunea nola erabiltzen duten, zein orrialde diren ezagunenak eta erabiltzaile esperientzia non hobetu dezakegun ulertzen laguntzen digute.
 
-**Legal Basis:** Legitimate interests (GDPR Article 6(1)(f)) or Consent (depending on configuration and data collected).
+**Oinarri Juridikoa:** Interes legitimoak (GDPR 6(1)(f) artikulua) edo Baimena (konfigurazioaren eta bildutako datuen arabera).
 
-**Can You Disable Them?** Yes. You can opt out via our Cookie Settings or browser settings.
+**Desgaitu Ditzakezu?** Bai. Gure Cookie Ezarpenen edo nabigatzailearen ezarpenen bidez uko egin dezakezu.
 
-**What We Learn:**
-- How many people visit our Website
-- Which pages are visited most often
-- How long visitors spend on the Website
-- Where visitors come from (referral sources)
-- Technical information (browser type, device type, screen resolution)
-- Aggregated and anonymized usage patterns
+**Zer Ikasten Dugu:**
+- Zenbat jendek bisitatzen duen gure Webgunea
+- Zein orrialde bisitatzen diren maiztasun handienez
+- Bisitariek zenbat denbora ematen duten Webgunean
+- Bisitariak nondik datozen (erreferentzia iturriak)
+- Informazio teknikoa (nabigatzaile mota, gailu mota, pantaila bereizmena)
+- Erabilera eredu agregatuak eta anonimizatuak
 
-**Privacy-Friendly Configuration:**
-- IP addresses are anonymized (last octet masked)
-- No personally identifiable information (PII) is collected
-- Data is aggregated for statistical purposes
+**Pribatutasuna Errespetatzen Duen Konfigurazioa:**
+- IP helbideak anonimizatuta daude (azken oktetoa maskaratuta)
+- Ez da pertsonalki identifikagarria den informaziorik (PII) biltzen
+- Datuak helburu estatistikoetarako agregatzen dira
 
-| Cookie Name | Purpose | Duration | Provider | Data Collected |
-|-------------|---------|----------|----------|----------------|
-| `_ga` | Distinguishes unique visitors | 2 years | Google Analytics | Anonymized visitor ID, pages viewed, time on site |
-| `_gid` | Distinguishes unique visitors (short-term) | 24 hours | Google Analytics | Anonymized visitor ID |
-| `_gat` | Throttles request rate to analytics server | 1 minute | Google Analytics | Rate limiting flag |
+| Cookie Izena | Helburua | Iraupena | Hornitzailea | Bildutako Datuak |
+|--------------|----------|----------|--------------|------------------|
+| `_ga` | Bisitari bakarrak bereizten ditu | 2 urte | Google Analytics | Bisitari ID anonimizatua, ikusitako orriak, gunean emandako denbora |
+| `_gid` | Bisitari bakarrak bereizten ditu (epe laburrean) | 24 ordu | Google Analytics | Bisitari ID anonimizatua |
+| `_gat` | Analitika zerbitzarirako eskaera tasa mugatzen du | Minutu 1 | Google Analytics | Tasa mugatze bandera |
 
-**[Alternative if using privacy-friendly analytics:]**
+**Hirugarrenen Analitika:**
+- Google Analytics erabiltzen badugu, Datuak Tratatzeko Akordioa dugu indarrean
+- Google Analytics konfiguratu dugu IP helbideak anonimizatzeko
+- Ez diogu Googleri datuak bere helburuetarako erabiltzen uzten
+- Datuak Estatu Batuetara transferitu daitezke (Googlek EB-AEB Datu Pribatutasun Esparrua betetzen du)
 
-| Cookie Name | Purpose | Duration | Provider | Data Collected |
-|-------------|---------|----------|----------|----------------|
-| `matomo_session` | Tracks user session for analytics | Session | Matomo (self-hosted) | Anonymized visitor ID, pages viewed |
-| `matomo_id` | Recognizes returning visitors | 13 months | Matomo (self-hosted) | Anonymized visitor ID |
+**Uko Egitea:**
+- Erabili gure Cookie Ezarpenak analitika cookieak desgaitzeko
+- Instalatu nabigatzailearen luzapenak (adibidez, Google Analytics Opt-out Browser Add-on)
 
-**Third-Party Analytics:**
-- If we use Google Analytics, we have a Data Processing Agreement in place
-- We have configured Google Analytics to anonymize IP addresses
-- We do not allow Google to use the data for their own purposes
-- Data may be transferred to the United States (Google complies with EU-US Data Privacy Framework)
+### 2.3 Funtzionalitate Cookieak
 
-**Opt-Out:**
-- Use our Cookie Settings to disable analytics cookies
-- Install browser extensions (e.g., Google Analytics Opt-out Browser Add-on)
+**Helburua:** Cookie hauek zure aukerak eta lehentasunak gogoratzen dituzte ezaugarri hobetuak eta pertsonalizatuak eskaintzeko.
 
-### 2.3 Functionality Cookies
+**Oinarri Juridikoa:** Baimena (GDPR 6(1)(a) artikulua) edo Interes Legitimoak (GDPR 6(1)(f) artikulua).
 
-**Purpose:** These cookies remember your choices and preferences to provide enhanced, personalized features.
+**Desgaitu Ditzakezu?** Bai. Webguneak funtzionatuko du oraindik, baina ezaugarri pertsonalizatu batzuk agian ez dira erabilgarri egongo.
 
-**Legal Basis:** Consent (GDPR Article 6(1)(a)) or Legitimate Interests (GDPR Article 6(1)(f)).
+**Zer Gogoratzen Duten:**
+- Zure hizkuntza hobetsia
+- Eskualde edo herrialde hautaketa
+- Bistaratze lehentasunak (ikuspegi modua, ordenatze lehentasunak)
+- Jakinarazpen edo pop-up zehatz batzuk ikusi dituzun ala ez
 
-**Can You Disable Them?** Yes. The Website will still work, but some personalized features may not be available.
+| Cookie Izena | Helburua | Iraupena | Bildutako Datuak |
+|--------------|----------|------------------|
+| `preferred_language` | Zure hizkuntza aukera gogoratzen du (Gaztelania/Euskara/Ingelesa) | 12 hilabete | Hizkuntza kodea (es/eu/en) |
+| `region` | Tokiko edukirako zure eskualdea gogoratzen du | 12 hilabete | Eskualde kodea |
+| `display_prefs` | Bistaratze lehentasunak gogoratzen ditu (sareta/zerrenda ikuspegia) | 6 hilabete | Bistaratze lehentasuna |
+| `notification_dismissed` | Baztertutako jakinarazpenak gogoratzen ditu | 30 egun | Jakinarazpen IDak |
 
-**What They Remember:**
-- Your preferred language
-- Region or country selection
-- Display preferences (view mode, sorting preferences)
-- Whether you've seen certain notifications or pop-ups
+**Hornitzailea:** Zabala Gailetak S.A. (lehenengo alderdiko cookieak)
 
-| Cookie Name | Purpose | Duration | Data Collected |
-|-------------|---------|----------|----------------|
-| `preferred_language` | Remembers your language choice (Spanish/English) | 12 months | Language code (es/en) |
-| `region` | Remembers your region for local content | 12 months | Region code |
-| `display_prefs` | Remembers display preferences (grid/list view) | 6 months | Display preference (grid/list) |
-| `notification_dismissed` | Remembers dismissed notifications | 30 days | Notification IDs |
+### 2.4 Marketin eta Helburatze Cookieak
 
-**Provider:** Zabala Gailetak S.A. (first-party cookies)
+**Helburua:** Cookie hauek zure nabigazio jarduera jarraitzen dute webguneetan zehar, iragarki garrantzitsuak eskaintzeko eta publizitatearen eraginkortasuna neurtzeko.
 
-### 2.4 Marketing and Targeting Cookies
+**Oinarri Juridikoa:** Baimena (GDPR 6(1)(a) artikulua). Cookie hauek berariazko baimena behar dute ezarri aurretik.
 
-**Purpose:** These cookies track your browsing activity across websites to deliver relevant advertisements and measure advertising effectiveness.
+**Desgaitu Ditzakezu?** Bai. Gure Cookie Ezarpenen bidez uko egin dezakezu, eta ez dugu helburatutako publizitaterik zerbitzatuko.
 
-**Legal Basis:** Consent (GDPR Article 6(1)(a)). These cookies require explicit consent before being set.
+**Zer Egiten Duten:**
+- Gure Webgunean zein orrialde bisitatzen dituzun jarraitu
+- Beste webgune batzuetako bisitak jarraitu (hirugarrenen sareen bidez)
+- Zure interesen profila eraiki
+- Beste webgune batzuetan iragarki garrantzitsuak eskaini (retargeting)
+- Iragarki kanpainaren eraginkortasuna neurtu (bihurketak, klik-tasak)
+- Iragarkien maiztasuna mugatu (frequency capping)
 
-**Can You Disable Them?** Yes. You can opt out via our Cookie Settings, and we will not serve targeted advertising.
+**Baimenik Gabe:**
+- Ez dugu marketin cookie-rik ezarriko
+- Iragarkiak ikusiko dituzu oraindik, baina ez dira pertsonalizatuak izango
+- Testuinguruko iragarkiak erakutsi ditzakegu (uneko orrialdean oinarrituta, ez zure profilean)
 
-**What They Do:**
-- Track which pages you visit on our Website
-- Track visits to other websites (via third-party networks)
-- Build a profile of your interests
-- Deliver relevant advertisements on other websites (retargeting)
-- Measure ad campaign effectiveness (conversions, click-through rates)
-- Limit ad frequency (frequency capping)
+**Marketin Bazkideak (Adibideak):**
 
-**Without Consent:**
-- We will not set marketing cookies
-- You will still see advertisements, but they will not be personalized
-- We may show contextual ads (based on current page, not your profile)
+| Cookie Izena | Helburua | Iraupena | Hornitzailea | Bildutako Datuak |
+|--------------|----------|----------|--------------|------------------|
+| `_fbp` | Facebook Pixel - bihurketak jarraitzen ditu eta audientziak eraikitzen ditu | 3 hilabete | Meta (Facebook) | Gailu IDa, ikusitako orriak, egindako ekintzak |
+| `IDE` | Google Ads - iragarki garrantzitsuak eskaintzen ditu | 13 hilabete | Google | Gailu IDa, iragarki interakzioak, bihurketak |
+| `NID` | Google Ads - iragarkien eraginkortasuna neurtzen du | 6 hilabete | Google | Gailu IDa, iragarki lehentasunak |
+| `fr` | Facebook Ads - iragarkiak eskaini eta neurtzen ditu | 3 hilabete | Meta (Facebook) | Gailu IDa, iragarki interakzioak |
 
-**Marketing Partners (Examples):**
-
-| Cookie Name | Purpose | Duration | Provider | Data Collected |
-|-------------|---------|----------|----------|----------------|
-| `_fbp` | Facebook Pixel - tracks conversions and builds audiences | 3 months | Meta (Facebook) | Device ID, pages viewed, actions taken |
-| `IDE` | Google Ads - delivers relevant ads | 13 months | Google | Device ID, ad interactions, conversions |
-| `NID` | Google Ads - measures ad effectiveness | 6 months | Google | Device ID, ad preferences |
-| `fr` | Facebook Ads - delivers and measures ads | 3 months | Meta (Facebook) | Device ID, ad interactions |
-
-**Third-Party Advertising Networks:**
+**Hirugarrenen Publizitate Sareak:**
 - Meta (Facebook/Instagram)
 - Google Ads
-- [Other advertising platforms as applicable]
+- [Beste publizitate plataforma batzuk aplikagarria bada]
 
-**Data Processing Agreements:** We have Data Processing Agreements with all advertising partners.
+**Datuak Tratatzeko Akordioak:** Datuak Tratatzeko Akordioak ditugu publizitate bazkide guztiekin.
 
-**Opt-Out Options:**
-- Use our Cookie Settings to disable marketing cookies
-- Visit industry opt-out pages:
+**Uko Egiteko Aukerak:**
+- Erabili gure Cookie Ezarpenak marketin cookieak desgaitzeko
+- Bisitatu industriako uko egiteko orriak:
   - European Interactive Digital Advertising Alliance (EDAA): www.youronlinechoices.eu
   - Network Advertising Initiative (NAI): www.networkadvertising.org/choices
   - Digital Advertising Alliance (DAA): www.aboutads.info/choices
-- Adjust privacy settings on advertising platforms:
-  - Facebook Ad Preferences: www.facebook.com/settings?tab=ads
-  - Google Ad Settings: adssettings.google.com
+- Egokitu pribatutasun ezarpenak publizitate plataformetan:
+  - Facebook Iragarki Lehentasunak: www.facebook.com/settings?tab=ads
+  - Google Iragarki Ezarpenak: adssettings.google.com
 
-**Note:** Opting out of marketing cookies does not mean you will see fewer ads; it means the ads will be less relevant to your interests.
+**Oharra:** Marketin cookieei uko egiteak ez du esan nahi iragarki gutxiago ikusiko dituzunik; iragarkiak zure interesekiko garrantzi gutxiagokoak izango direla esan nahi du.
 
 ---
 
-## 3. Other Tracking Technologies
+## 3. Beste Jarraipen Teknologia Batzuk
 
-In addition to cookies, we may use similar tracking technologies:
+Cookieez gain, antzeko jarraipen-teknologiak erabil ditzakegu:
 
 ### 3.1 Web Beacons (Pixel Tags)
 
-**What They Are:** Tiny invisible images embedded in emails or web pages that track whether content has been viewed.
+**Zer Dira:** Irudi ikusezin txikiak, mezu elektronikoetan edo web orrietan txertatuak, edukia ikusi den jarraitzeko.
 
-**How We Use Them:**
-- Track email open rates (for marketing emails)
-- Measure effectiveness of email campaigns
-- Track conversions from advertising campaigns
+**Nola Erabiltzen Ditugu:**
+- Email irekiera tasak jarraitu (marketin mezuetarako)
+- Email kanpainenen eraginkortasuna neurtu
+- Publizitate kanpainetatik datozen bihurketak jarraitu
 
-**Consent:** If used for marketing purposes, requires consent (same as marketing cookies).
+**Baimena:** Marketin helburuetarako erabiltzen bada, baimena behar du (marketin cookieen antzera).
 
-**Opt-Out:** Disable images in your email client, or unsubscribe from marketing emails.
+**Uko Egitea:** Desgaitu irudiak zure posta bezeroan, edo kendu harpidetza marketin mezuetatik.
 
 ### 3.2 Local Storage
 
-**What It Is:** Browser technology that stores data locally on your device (similar to cookies but with larger storage capacity).
+**Zer Da:** Zure gailuan datuak lokalean gordetzen dituen nabigatzaile teknologia (cookieen antzekoa baina biltegiratze gaitasun handiagoarekin).
 
-**How We Use It:**
-- Store shopping cart contents
-- Cache resources for faster page loading
-- Store user preferences
+**Nola Erabiltzen Dugu:**
+- Erosketa-saskiaren edukia gorde
+- Baliabideak cachean gorde orriak azkarrago kargatzeko
+- Erabiltzaile lehentasunak gorde
 
-**Clearing:** Clear local storage through your browser settings (same as clearing cookies).
+**Garbitzea:** Garbitu tokiko biltegiratzea zure nabigatzailearen ezarpenen bidez (cookieak garbitzearen antzera).
 
 ### 3.3 Session Storage
 
-**What It Is:** Temporary storage that lasts only for the duration of your browsing session.
+**Zer Da:** Zure nabigazio saioak irauten duen bitartean soilik irauten duen aldi baterako biltegiratzea.
 
-**How We Use It:**
-- Maintain state during multi-step processes (checkout)
-- Store temporary form data
+**Nola Erabiltzen Dugu:**
+- Egoera mantendu urrats anitzeko prozesuetan (checkout)
+- Aldi baterako inprimaki datuak gorde
 
-**Clearing:** Automatically cleared when you close your browser.
+**Garbitzea:** Automatikoki garbitzen da nabigatzailea ixtean.
 
-### 3.4 Device Fingerprinting
+### 3.4 Gailu Fingerprinting-a
 
-**What It Is:** Technique to identify devices based on configuration and settings (browser type, screen resolution, installed fonts, etc.).
+**Zer Da:** Gailuak konfigurazio eta ezarpenen bidez identifikatzeko teknika (nabigatzaile mota, pantaila bereizmena, instalatutako letra-tipoak, etab.).
 
-**Our Policy:** We do not use invasive device fingerprinting techniques for tracking purposes. Basic technical information (browser, device type) is collected for analytics but is not used to uniquely identify individuals.
+**Gure Politika:** Ez dugu gailu fingerprinting teknika inbasiborik erabiltzen jarraipen helburuetarako. Oinarrizko informazio teknikoa (nabigatzailea, gailu mota) analitikarako biltzen da baina ez da gizabanakoak modu berezian identifikatzeko erabiltzen.
 
 ---
 
-## 4. How to Manage Cookies
+## 4. Nola Kudeatu Cookieak
 
-### 4.1 Cookie Consent Banner
+### 4.1 Cookie Baimen Bannerra
 
-When you first visit our Website, you will see a cookie consent banner with the following options:
+Gure Webgunea lehen aldiz bisitatzen duzunean, cookie baimenaren banner bat ikusiko duzu aukera hauekin:
 
-**Options:**
-- **Accept All:** Accept all cookie categories (essential, performance, functionality, marketing)
-- **Reject Non-Essential:** Accept only strictly necessary cookies
-- **Cookie Settings:** Customize your preferences by category
+**Aukerak:**
+- **Onartu Denak:** Onartu cookie kategoria guztiak (beharrezkoak, errendimendua, funtzionalitatea, marketina)
+- **Ukatu Beharrezkoak Ez Direnak:** Onartu soilik guztiz beharrezkoak diren cookieak
+- **Cookie Ezarpenak:** Pertsonalizatu zure lehentasunak kategoriaren arabera
 
-**Granular Consent:**
-You can choose to accept some categories and reject others:
-- ✅ Strictly Necessary (cannot be disabled)
-- ☑️ Performance/Analytics (optional)
-- ☑️ Functionality (optional)
-- ☑️ Marketing (optional)
+**Baimen Xehatua:**
+Kategoria batzuk onartzea eta beste batzuk baztertzea aukera dezakezu:
+- ✅ Guztiz Beharrezkoak (ezin dira desgaitu)
+- ☑️ Errendimendua/Analitika (aukerakoa)
+- ☑️ Funtzionalitatea (aukerakoa)
+- ☑️ Marketina (aukerakoa)
 
-Your choices are saved in the `cookie_consent` cookie for 12 months.
+Zure aukerak `cookie_consent` cookiean gordetzen dira 12 hilabetez.
 
-### 4.2 Cookie Settings Tool
+### 4.2 Cookie Ezarpenak Tresna
 
-**Access:** Click the "Cookie Settings" link in the website footer or privacy center.
+**Sarbidea:** Egin klik "Cookie Ezarpenak" estekan webgunearen orri-oinean edo pribatutasun zentroan.
 
-**Features:**
-- View all cookies currently set on your device
-- Change your consent preferences at any time
-- Clear all non-essential cookies immediately
-- Learn more about each cookie category
+**Ezaugarriak:**
+- Ikusi unean zure gailuan ezarritako cookie guztiak
+- Aldatu zure baimen lehentasunak edozein unetan
+- Garbitu funtsezkoak ez diren cookie guztiak berehala
+- Ikasi gehiago cookie kategoria bakoitzari buruz
 
-**Changing Your Mind:**
-You can change your cookie preferences at any time. Changes take effect immediately, and non-consented cookies will be deleted.
+**Iritzia Aldatzea:**
+Zure cookie lehentasunak edozein unetan alda ditzakezu. Aldaketak berehala sartzen dira indarrean, eta baimenik gabeko cookieak ezabatu egingo dira.
 
-### 4.3 Browser Settings
+### 4.3 Nabigatzaile Ezarpenak
 
-You can also control cookies through your browser settings. Most browsers allow you to:
-- Block all cookies
-- Block third-party cookies only
-- Delete existing cookies
-- Receive notifications before cookies are set
+Cookieak zure nabigatzailearen ezarpenen bidez ere kontrola ditzakezu. Nabigatzaile gehienek aukera ematen dizute:
+- Cookie guztiak blokeatu
+- Hirugarrenen cookieak soilik blokeatu
+- Dauden cookieak ezabatu
+- Cookieak ezarri aurretik jakinarazpenak jaso
 
-**Browser Cookie Controls:**
+**Nabigatzaile Cookie Kontrolak:**
 
 **Google Chrome:**
-1. Settings → Privacy and security → Cookies and other site data
-2. Choose your preferred setting
+1. Ezarpenak → Pribatutasuna eta segurtasuna → Cookieak eta guneetako beste datu batzuk
+2. Aukeratu zure lehentasuna
 
 **Mozilla Firefox:**
-1. Settings → Privacy & Security → Cookies and Site Data
-2. Choose your preferred setting
+1. Ezarpenak → Pribatutasuna eta Segurtasuna → Cookieak eta Gune Datuak
+2. Aukeratu zure lehentasuna
 
 **Safari (macOS/iOS):**
-1. Preferences → Privacy → Manage Website Data
-2. Block all cookies or remove specific cookies
+1. Hobespenak → Pribatutasuna → Kudeatu Webgune Datuak
+2. Blokeatu cookie guztiak edo kendu cookie zehatzak
 
 **Microsoft Edge:**
-1. Settings → Privacy, search, and services → Cookies and site permissions
-2. Choose your preferred setting
+1. Ezarpenak → Pribatutasuna, bilaketa eta zerbitzuak → Cookieak eta gune baimenak
+2. Aukeratu zure lehentasuna
 
-**Important:** Blocking all cookies may prevent you from using certain features of our Website (shopping cart, account login).
+**Garrantzitsua:** Cookie guztiak blokeatzeak gure Webguneko ezaugarri batzuk erabiltzea eragotzi dezake (erosketa-saskia, kontu saio-hasiera).
 
-**More Information:**
+**Informazio Gehiago:**
 - www.aboutcookies.org
 - www.allaboutcookies.org
 
-### 4.4 Mobile App Settings
+### 4.4 Mugikor Aplikazio Ezarpenak
 
 **iOS:**
-Settings → Safari → Block All Cookies
+Ezarpenak → Safari → Blokeatu Cookie Guztiak
 
 **Android:**
-Settings → Google → Ads → Opt out of Ads Personalization
+Ezarpenak → Google → Iragarkiak → Uko egin Iragarki Pertsonalizazioari
 
 ### 4.5 Do Not Track (DNT)
 
-**What It Is:** Browser setting that sends a signal to websites indicating you do not want to be tracked.
+**Zer Da:** Webguneei jarraituak izan nahi ez duzula adierazten dien seinalea bidaltzen duen nabigatzaile ezarpena.
 
-**Our Policy:** We respect Do Not Track (DNT) signals. If your browser sends a DNT signal, we will not set non-essential cookies without your explicit consent.
+**Gure Politika:** Do Not Track (DNT) seinaleak errespetatzen ditugu. Zure nabigatzaileak DNT seinalea bidaltzen badu, ez dugu funtsezkoak ez diren cookie-rik ezarriko zure berariazko baimenik gabe.
 
-**Limitations:** Not all websites respect DNT signals. This is a voluntary mechanism.
-
----
-
-## 5. Consent Requirements
-
-### 5.1 Legal Basis for Cookies
-
-Under the **ePrivacy Directive (2002/58/EC)** and **LOPDGDD (Spanish law)**, we must obtain your consent before setting non-essential cookies.
-
-**Consent Required:**
-- Marketing/advertising cookies
-- Some analytics cookies (depending on configuration)
-- Social media cookies
-- Third-party tracking cookies
-
-**Consent Not Required:**
-- Strictly necessary cookies (essential for service delivery)
-- Analytics cookies configured for privacy (anonymized, no PII)
-
-### 5.2 Valid Consent
-
-For consent to be valid under GDPR:
-- **Freely Given:** No negative consequences for refusing (you can still use the Website)
-- **Specific:** Separate consent for each cookie category
-- **Informed:** Clear information about what you're consenting to
-- **Unambiguous:** Opt-in (not pre-checked boxes)
-- **Easily Withdrawn:** Change your mind at any time via Cookie Settings
-
-**Cookie Walls Prohibited:** We do not prevent you from accessing our Website if you refuse non-essential cookies (except where cookies are strictly necessary for functionality you've explicitly requested).
-
-### 5.3 Consent Records
-
-We maintain records of your cookie consent choices:
-- Date and time of consent
-- Categories consented to
-- Consent method (banner interaction)
-- IP address (anonymized) and user agent
-
-This helps us demonstrate compliance with legal requirements.
+**Mugak:** Webgune guztiek ez dituzte DNT seinaleak errespetatzen. Hau borondatezko mekanismoa da.
 
 ---
 
-## 6. Third-Party Cookies
+## 5. Baimen Baldintzak
 
-### 6.1 What Are Third-Party Cookies?
+### 5.1 Cookieetarako Oinarri Juridikoa
 
-**First-Party Cookies:** Set by Zabala Gailetak (www.zabalagailetak.com domain)
+**ePrivacy Zuzentarauaren (2002/58/EE)** eta **DBLO-GDD (Espainiako legea)** arabera, zure baimena lortu behar dugu funtsezkoak ez diren cookieak ezarri aurretik.
 
-**Third-Party Cookies:** Set by external services and partners (different domains)
+**Baimena Beharrezkoa:**
+- Marketin/publizitate cookieak
+- Analitika cookie batzuk (konfigurazioaren arabera)
+- Sare sozialetako cookieak
+- Hirugarrenen jarraipen cookieak
 
-**Example:** When you visit our Website, Google Analytics (google.com) may set cookies on your device to track analytics data.
+**Baimena Ez Beharrezkoa:**
+- Guztiz beharrezkoak diren cookieak (zerbitzua emateko funtsezkoak)
+- Pribatutasunerako konfiguratutako analitika cookieak (anonimizatuak, PIIrik gabe)
 
-### 6.2 Third-Party Services We Use
+### 5.2 Baimen Baliozkoa
 
-| Service | Purpose | Cookies Set | Privacy Policy |
-|---------|---------|-------------|----------------|
-| Google Analytics | Website analytics | `_ga`, `_gid`, `_gat` | policies.google.com/privacy |
-| Google Ads | Advertising | `IDE`, `NID` | policies.google.com/privacy |
-| Meta (Facebook) Pixel | Advertising and analytics | `_fbp`, `fr` | www.facebook.com/privacy/policy |
-| Stripe | Payment processing | `__stripe_sid`, `__stripe_mid` | stripe.com/privacy |
-| YouTube (if embedded videos) | Video hosting | `VISITOR_INFO1_LIVE`, `YSC` | policies.google.com/privacy |
+GDPRren arabera baimena baliozkoa izateko:
+- **Aske Emandakoa:** Uko egiteagatik ondoriorik ez (oraindik Webgunea erabil dezakezu)
+- **Zehatza:** Baimen bereizia cookie kategoria bakoitzerako
+- **Informatua:** Zertarako baimena ematen ari zaren argi eta garbi azaltzea
+- **Zalantzarik Gabea:** Opt-in (ez aurrez markatutako laukiak)
+- **Erraz Kendu Daitekeena:** Iritzia edozein unetan aldatu Cookie Ezarpenen bidez
 
-**Control:** You can disable third-party cookies via our Cookie Settings or browser settings (block third-party cookies).
+**Cookie Hormak Debekatuta:** Ez dizugu Webgunera sartzea eragozten funtsezkoak ez diren cookieei uko egiten badiezu (berariaz eskatu duzun funtzionalitaterako cookieak guztiz beharrezkoak direnean izan ezik).
 
-### 6.3 Social Media Plugins
+### 5.3 Baimen Erregistroak
 
-If we include social media plugins (Facebook Like, Twitter Share, etc.), these services may set cookies even if you don't interact with them.
+Zure cookie baimen aukeren erregistroak mantentzen ditugu:
+- Baimenaren data eta ordua
+- Baimendutako kategoriak
+- Baimen metodoa (banner interakzioa)
+- IP helbidea (anonimizatua) eta user agent-a
 
-**Privacy-Friendly Approach:**
-- We use two-click solutions (social buttons only activate when you click "enable")
-- OR we link to social media profiles instead of embedding plugins
-
-**Alternative:** Share links that don't require cookies until you click them.
-
----
-
-## 7. International Data Transfers
-
-### 7.1 Third-Party Cookies and International Transfers
-
-Some third-party cookies (Google, Meta) may transfer data outside the EU/EEA.
-
-**Safeguards:**
-- **Google:** Complies with EU-US Data Privacy Framework (adequacy decision)
-- **Meta:** Uses Standard Contractual Clauses (SCCs)
-- **Data Processing Agreements:** In place with all third parties
-
-**Your Rights:** You can object to international transfers by disabling third-party cookies via Cookie Settings.
-
-**More Information:** See our Privacy Notice for details on international transfers.
+Honek lege baldintzak betetzen ditugula frogatzen laguntzen digu.
 
 ---
 
-## 8. Cookie Lifespan
+## 6. Hirugarrenen Cookieak
 
-Cookies have different lifespans:
+### 6.1 Zer Dira Hirugarrenen Cookieak?
 
-### 8.1 Session Cookies
+**Lehenengo Alderdiko Cookieak:** Zabala Gailetak-ek ezarriak (www.zabalagailetak.com domeinua)
 
-**Lifespan:** Deleted when you close your browser
+**Hirugarrenen Cookieak:** Kanpoko zerbitzuek eta bazkideek ezarriak (beste domeinu batzuk)
 
-**Purpose:** Temporary functions (shopping cart, navigation state)
+**Adibidea:** Gure Webgunea bisitatzen duzunean, Google Analytics-ek (google.com) cookieak ezar ditzake zure gailuan analitika datuak jarraitzeko.
 
-**Examples:** `session_id`, `csrf_token`
+### 6.2 Erabiltzen Ditugun Hirugarrenen Zerbitzuak
 
-### 8.2 Persistent Cookies
+| Zerbitzua | Helburua | Ezarritako Cookieak | Pribatutasun Politika |
+|-----------|----------|---------------------|-----------------------|
+| Google Analytics | Webgune analitika | `_ga`, `_gid`, `_gat` | policies.google.com/privacy |
+| Google Ads | Publizitatea | `IDE`, `NID` | policies.google.com/privacy |
+| Meta (Facebook) Pixel | Publizitatea eta analitika | `_fbp`, `fr` | www.facebook.com/privacy/policy |
+| Stripe | Ordainketa prozesatzea | `__stripe_sid`, `__stripe_mid` | stripe.com/privacy |
+| YouTube (txertatutako bideoak badaude) | Bideo ostalaritza | `VISITOR_INFO1_LIVE`, `YSC` | policies.google.com/privacy |
 
-**Lifespan:** Remain on your device for a set period (or until you delete them)
+**Kontrola:** Hirugarrenen cookieak desgaitu ditzakezu gure Cookie Ezarpenen edo nabigatzailearen ezarpenen bidez (blokeatu hirugarrenen cookieak).
 
-**Purpose:** Remember preferences, recognize returning visitors
+### 6.3 Sare Sozialen Pluginak
 
-**Examples:**
-- `auth_token` - 30 days
-- `cookie_consent` - 12 months
-- `_ga` (Google Analytics) - 2 years
-- `preferred_language` - 12 months
+Sare sozialen pluginak (Facebook Like, Twitter Share, etab.) sartzen baditugu, zerbitzu hauek cookieak ezar ditzakete haiekin elkarreragin ez baduzu ere.
 
-**Expiration:** Persistent cookies automatically expire after their set duration. You can delete them earlier via browser settings or our Cookie Settings tool.
+**Pribatutasuna Errespetatzen Duen Ikuspegia:**
+- Bi klikako irtenbideak erabiltzen ditugu (botoi sozialak "gaitu" sakatzen duzunean bakarrik aktibatzen dira)
+- EDO profil sozialetara estekatzen dugu pluginak txertatu beharrean
 
----
-
-## 9. Updates to This Cookie Policy
-
-We may update this Cookie Policy from time to time to reflect changes in:
-- Technologies we use
-- Legal requirements
-- Our cookie practices
-
-**Notification:**
-- **Material Changes:** We will notify you via website banner or email
-- **Minor Changes:** Updated policy posted with new "Last Updated" date
-
-**Consent Re-Request:**
-If we introduce new cookie categories or purposes, we may ask for your consent again.
-
-**Review Regularly:** We encourage you to review this Cookie Policy periodically.
+**Alternatiba:** Klikatu arte cookieak behar ez dituzten estekak partekatu.
 
 ---
 
-## 10. Contact Us
+## 7. Nazioarteko Datu Transferentziak
 
-If you have questions or concerns about our use of cookies, please contact us:
+### 7.1 Hirugarrenen Cookieak eta Nazioarteko Transferentziak
 
-**Data Protection Officer (DPO):**
-- **Email:** dpo@zabalagailetak.com
-- **Phone:** +34 XXX XXX XXX
-- **Mail:** Data Protection Officer, Zabala Gailetak S.A., [Address], [City, Postal Code], Spain
+Hirugarrenen cookie batzuek (Google, Meta) datuak EB/EEE kanpora transferitu ditzakete.
 
-**Cookie-Specific Questions:**
-- **Email:** privacy@zabalagailetak.com
-- **Web Form:** www.zabalagailetak.com/privacy/contact
+**Bermeak:**
+- **Google:** EB-AEB Datu Pribatutasun Esparrua betetzen du (egokitasun erabakia)
+- **Meta:** Klausula Kontraktual Estandarrak (SCCs) erabiltzen ditu
+- **Datuak Tratatzeko Akordioak:** Hirugarren guztiekin indarrean
 
-**Supervisory Authority:**
-If you are unhappy with our cookie practices, you can complain to:
+**Zure Eskubideak:** Nazioarteko transferentzien aurka egin dezakezu hirugarrenen cookieak desgaituz Cookie Ezarpenen bidez.
 
-**Spanish Data Protection Authority (AEPD):**
-- **Website:** www.aepd.es
-- **Phone:** +34 901 100 099
-- **Address:** C/ Jorge Juan, 6, 28001 Madrid, Spain
+**Informazio Gehiago:** Ikusi gure Pribatutasun Oharra nazioarteko transferentziei buruzko xehetasunetarako.
 
 ---
 
-## 11. Related Policies
+## 8. Cookie Bizitza-iraupena
 
-This Cookie Policy should be read together with:
-- **Privacy Notice:** www.zabalagailetak.com/privacy
-- **Terms and Conditions:** www.zabalagailetak.com/terms
-- **Data Subject Rights Procedures**
+Cookieek bizitza-iraupen desberdinak dituzte:
+
+### 8.1 Saio Cookieak
+
+**Bizitza-iraupena:** Nabigatzailea ixtean ezabatzen dira
+
+**Helburua:** Aldi baterako funtzioak (erosketa-saskia, nabigazio egoera)
+
+**Adibideak:** `session_id`, `csrf_token`
+
+### 8.2 Cookie Iraunkorrak
+
+**Bizitza-iraupena:** Zure gailuan geratzen dira epe zehatz batez (edo ezabatu arte)
+
+**Helburua:** Lehentasunak gogoratu, itzultzen diren bisitariak ezagutu
+
+**Adibideak:**
+- `auth_token` - 30 egun
+- `cookie_consent` - 12 hilabete
+- `_ga` (Google Analytics) - 2 urte
+- `preferred_language` - 12 hilabete
+
+**Iraungitzea:** Cookie iraunkorrak automatikoki iraungitzen dira beren iraupena amaitzean. Lehenago ezabatu ditzakezu nabigatzailearen ezarpenen edo gure Cookie Ezarpenak tresnaren bidez.
 
 ---
 
-## Cookie Summary Table
+## 9. Cookie Politika Honen Eguneraketak
 
-| Category | Purpose | Consent Required | Examples | Can Disable? |
-|----------|---------|------------------|----------|--------------|
-| **Strictly Necessary** | Essential website functions | ❌ No | Session, Cart, Login | ❌ No |
-| **Performance/Analytics** | Understand usage, improve experience | ⚠️ Depends on configuration | Google Analytics | ✅ Yes |
-| **Functionality** | Remember preferences | ⚠️ Depends on impact | Language, Region | ✅ Yes |
-| **Marketing/Targeting** | Personalized advertising | ✅ Yes | Facebook Pixel, Google Ads | ✅ Yes |
+Cookie Politika hau noizean behin eguneratu dezakegu aldaketak islatzeko:
+- Erabiltzen ditugun teknologietan
+- Lege betekizunetan
+- Gure cookie praktiketan
+
+**Jakinarazpena:**
+- **Aldaketa Materialak:** Webgunearen banner edo email bidez jakinaraziko dizugu
+- **Aldaketa Txikiak:** Eguneratutako politika argitaratuko da "Azken Eguneratzea" data berriarekin
+
+**Baimena Berriro Eskatzea:**
+Cookie kategoria edo helburu berriak sartzen baditugu, zure baimena berriro eskatu ahal izango dugu.
+
+**Aldizka Berrikusi:** Cookie Politika hau aldizka berrikustea gomendatzen dizugu.
 
 ---
 
-## Quick Reference: How to Disable Cookies
+## 10. Jarri Gurekin Harremanetan
 
-### Option 1: Our Cookie Settings Tool (Recommended)
-1. Click "Cookie Settings" link in website footer
-2. Toggle categories on/off
-3. Save your preferences
+Gure cookie erabilerari buruzko galdera edo kezkaren bat baduzu, jarri gurekin harremanetan:
 
-### Option 2: Browser Settings
+**Datuen Babeserako Ordezkaria (DBO/DPO):**
+- **Emaila:** dpo@zabalagailetak.com
+- **Telefonoa:** +34 XXX XXX XXX
+- **Posta:** Datuen Babeserako Ordezkaria, Zabala Gailetak S.A., [Helbidea], [Herria, Posta Kodea], Espainia
+
+**Cookie-ei lotutako Galderak:**
+- **Emaila:** privacy@zabalagailetak.com
+- **Web Inprimakia:** www.zabalagailetak.com/privacy/contact
+
+**Ikuskapen Agintaritza:**
+Gure cookie praktikekin pozik ez bazaude, kexa jar dezakezu hemen:
+
+**Datuen Babeserako Espainiako Bulegoa (AEPD):**
+- **Webgunea:** www.aepd.es
+- **Telefonoa:** +34 901 100 099
+- **Helbidea:** C/ Jorge Juan, 6, 28001 Madril, Espainia
+
+---
+
+## 11. Lotutako Politikak
+
+Cookie Politika hau honako hauekin batera irakurri behar da:
+- **Pribatutasun Oharra:** www.zabalagailetak.com/privacy
+- **Terminoak eta Baldintzak:** www.zabalagailetak.com/terms
+- **Datu Interesdunen Eskubideen Prozedurak**
+
+---
+
+## Cookie Laburpen Taula
+
+| Kategoria | Helburua | Baimena Beharrezkoa | Adibideak | Desgaitu Daiteke? |
+|-----------|----------|---------------------|-----------|-------------------|
+| **Guztiz Beharrezkoak** | Webgune funtzio ezinbestekoak | ❌ Ez | Session, Cart, Login | ❌ Ez |
+| **Errendimendua/Analitika** | Erabilera ulertu, esperientzia hobetu | ⚠️ Konfigurazioaren arabera | Google Analytics | ✅ Bai |
+| **Funtzionalitatea** | Lehentasunak gogoratu | ⚠️ Eraginaren arabera | Hizkuntza, Eskualdea | ✅ Bai |
+| **Marketina/Helburatzea** | Publizitate pertsonalizatua | ✅ Bai | Facebook Pixel, Google Ads | ✅ Bai |
+
+---
+
+## Erreferentzia Azkarra: Nola Desgaitu Cookieak
+
+### 1. Aukera: Gure Cookie Ezarpenak Tresna (Gomendatua)
+1. Klikatu "Cookie Ezarpenak" estekan webgunearen orri-oinean
+2. Aktibatu/Desaktibatu kategoriak
+3. Gorde zure lehentasunak
+
+### 2. Aukera: Nabigatzaile Ezarpenak
 **Chrome:**
-Settings → Privacy and security → Cookies and other site data → Block third-party cookies OR Block all cookies
+Ezarpenak → Pribatutasuna eta segurtasuna → Cookieak eta guneetako beste datu batzuk → Blokeatu hirugarrenen cookieak EDO Blokeatu cookie guztiak
 
 **Firefox:**
-Settings → Privacy & Security → Enhanced Tracking Protection → Strict (blocks most cookies)
+Ezarpenak → Pribatutasuna eta Segurtasuna → Jarraipen Babes Hobetua → Zorrotza (cookie gehienak blokeatzen ditu)
 
 **Safari:**
-Preferences → Privacy → Block all cookies
+Hobespenak → Pribatutasuna → Blokeatu cookie guztiak
 
 **Edge:**
-Settings → Privacy, search, and services → Tracking prevention → Strict
+Ezarpenak → Pribatutasuna, bilaketa eta zerbitzuak → Jarraipen prebentzioa → Zorrotza
 
-### Option 3: Opt-Out Tools
+### 3. Aukera: Uko Egiteko Tresnak
 - **Google Ads:** adssettings.google.com
 - **Facebook Ads:** www.facebook.com/settings?tab=ads
-- **Industry Opt-Out:** www.youronlinechoices.eu
+- **Industria Uko Egitea:** www.youronlinechoices.eu
 
 ---
 
-**Last Updated:** January 8, 2026  
-**Effective Date:** January 8, 2026
+**Azken Eguneratzea:** 2026ko Urtarrilaren 8a  
+**Indarrean Sartze Data:** 2026ko Urtarrilaren 8a
 
-**© 2026 Zabala Gailetak S.A. All rights reserved.**
+**© 2026 Zabala Gailetak S.A. Eskubide guztiak erreserbatuta.**
 
 ---
 
-**END OF COOKIE POLICY**
+**COOKIE POLITIKAREN AMAIERA**

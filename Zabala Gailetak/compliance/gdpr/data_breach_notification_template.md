@@ -1,1123 +1,1123 @@
-# Data Breach Notification Template
-## Zabala Gailetak S.A. - GDPR Compliance
+# Datu-urraketa Jakinarazpen Txantiloia
+## Zabala Gailetak S.A. - GDPR Betetzea
 
-**Document ID:** DBN-001  
-**Version:** 1.0  
-**Date:** January 8, 2026  
-**Classification:** Highly Confidential  
-**Owner:** Data Protection Officer (DPO)  
-**Review Frequency:** Annual  
-**Next Review Date:** January 8, 2027
-
----
-
-## 1. Document Control
-
-### 1.1 Version History
-
-| Version | Date | Author | Changes |
-|---------|------|--------|---------|
-| 1.0 | 2026-01-08 | DPO | Initial template creation |
-
-### 1.2 Purpose
-
-This template provides standardized procedures and notification forms for reporting personal data breaches in compliance with:
-- **GDPR Article 33:** Notification to supervisory authority (AEPD)
-- **GDPR Article 34:** Communication to data subjects
-- **LOPDGDD (Spanish Organic Law 3/2018):** Spanish data protection requirements
-
-### 1.3 Scope
-
-This template applies to all personal data breaches involving:
-- Customer data (names, emails, addresses, order history)
-- Employee data (HR records, payroll, performance reviews)
-- Supplier/partner data (contact information, contracts)
-- Any special category data (health data, biometric data, if applicable)
+**Dokumentuaren IDa:** DBN-001  
+**Bertsioa:** 1.0  
+**Data:** 2026ko Urtarrilaren 8a  
+**Sailkapena:** Oso Konfidentziala  
+**Jabea:** Datuen Babeserako Ordezkaria (DBO/DPO)  
+**Berrikuspen Maiztasuna:** Urterokoa  
+**Hurrengo Berrikuspen Data:** 2027ko Urtarrilaren 8a
 
 ---
 
-## 2. Legal Requirements Overview
+## 1. Dokumentuaren Kontrola
 
-### 2.1 GDPR Article 33 - Notification to Supervisory Authority
+### 1.1 Bertsio Historia
 
-**Timeline:** Within **72 hours** of becoming aware of the breach
+| Bertsioa | Data | Egilea | Aldaketak |
+|----------|------|--------|-----------|
+| 1.0 | 2026-01-08 | DPO | Hasierako txantiloiaren sorrera |
 
-**Threshold:** Notification required when breach is **likely to result in a risk** to the rights and freedoms of individuals
+### 1.2 Helburua
 
-**Content Required:**
-1. Nature of the personal data breach
-2. Categories and approximate number of data subjects affected
-3. Categories and approximate number of personal data records affected
-4. Contact details of DPO or other contact point
-5. Description of likely consequences
-6. Description of measures taken or proposed to address the breach
+Txantiloi honek datu pertsonalen urraketen berri emateko prozedura estandarizatuak eta jakinarazpen inprimakiak eskaintzen ditu, honako hauek betez:
+- **GDPR 33. artikulua:** Ikuskapen agintaritzari (AEPD) jakinaraztea
+- **GDPR 34. artikulua:** Datuen interesdunei jakinaraztea
+- **DBLO-GDD (Espainiako 3/2018 Lege Organikoa):** Espainiako datuen babeserako baldintzak
 
-**Authority:** Agencia Española de Protección de Datos (AEPD)
+### 1.3 Esparrua
 
-### 2.2 GDPR Article 34 - Communication to Data Subjects
-
-**Timeline:** **Without undue delay** after becoming aware of the breach
-
-**Threshold:** Notification required when breach is **likely to result in a high risk** to the rights and freedoms of individuals
-
-**Exceptions (notification not required):**
-- Appropriate technical and organizational protection measures applied (e.g., encryption)
-- Subsequent measures taken to ensure high risk no longer likely to materialize
-- Would involve disproportionate effort (public communication acceptable)
-
-**Content Required:**
-1. Nature of the personal data breach in clear and plain language
-2. Contact details of DPO or other contact point
-3. Description of likely consequences
-4. Description of measures taken or proposed to address the breach
-
-### 2.3 Key Definitions
-
-**Personal Data Breach:** A breach of security leading to:
-- Accidental or unlawful destruction
-- Loss, alteration
-- Unauthorized disclosure of, or access to
-- Personal data transmitted, stored, or otherwise processed
-
-**Becoming Aware:** When the organization has a reasonable degree of certainty that a security incident has occurred that has led to compromise of personal data
-
-**Risk Assessment:**
-- **Low Risk:** No notification required (document internally)
-- **Risk:** Notify AEPD within 72 hours
-- **High Risk:** Notify AEPD within 72 hours + notify data subjects
+Txantiloi hau honako hauei eragiten dien datu pertsonalen urraketa guztiei aplikatzen zaie:
+- Bezeroen datuak (izenak, emailak, helbideak, eskaera historia)
+- Langileen datuak (Giza Baliabideetako erregistroak, nominak, errendimendu berrikuspenak)
+- Hornitzaile/bazkideen datuak (harremanetarako informazioa, kontratuak)
+- Edozein kategoria bereziko datu (osasun datuak, datu biometrikoak, aplikagarria bada)
 
 ---
 
-## 3. Data Breach Response Process
+## 2. Lege Betekizunen Ikuspegi Orokorra
 
-### 3.1 Immediate Response (0-1 hour)
+### 2.1 GDPR 33. artikulua - Ikuskapen Agintaritzari Jakinaraztea
 
-**Step 1: Detection and Reporting**
-- Any employee discovering potential breach reports immediately to:
+**Epea:** Urraketaz jabetu eta **72 orduko epean**
+
+**Muga:** Jakinarazpena derrigorrezkoa da urraketak pertsonen eskubide eta askatasunetarako **arriskua eragitea litekeena** denean
+
+**Eskatutako Edukia:**
+1. Datu pertsonalen urraketaren izaera
+2. Kaltetutako interesdunen kategoriak eta gutxi gorabeherako kopurua
+3. Kaltetutako datu pertsonalen erregistroen kategoriak eta gutxi gorabeherako kopurua
+4. DPOren edo beste harremanetarako puntuaren datuak
+5. Litekeena den ondorioen deskribapena
+6. Urraketari aurre egiteko hartutako edo proposatutako neurrien deskribapena
+
+**Agintaritza:** Datuen Babeserako Espainiako Bulegoa (AEPD)
+
+### 2.2 GDPR 34. artikulua - Datuen Interesdunei Jakinaraztea
+
+**Epea:** Urraketaz jabetu ondoren **bidegabeko atzerapenik gabe**
+
+**Muga:** Jakinarazpena derrigorrezkoa da urraketak pertsonen eskubide eta askatasunetarako **arrisku handia eragitea litekeena** denean
+
+**Salbuespenak (jakinarazpena ez da beharrezkoa):**
+- Babes neurri tekniko eta antolakuntzako egokiak aplikatu dira (adibidez, enkriptatzea)
+- Ondorengo neurriak hartu dira arrisku handia gauzatzea litekeena ez dela ziurtatzeko
+- Ahalegin neurrigabea ekarriko luke (komunikazio publikoa onargarria da)
+
+**Eskatutako Edukia:**
+1. Datu pertsonalen urraketaren izaera hizkuntza argi eta errazean
+2. DPOren edo beste harremanetarako puntuaren datuak
+3. Litekeena den ondorioen deskribapena
+4. Urraketari aurre egiteko hartutako edo proposatutako neurrien deskribapena
+
+### 2.3 Definizio Gakoak
+
+**Datu Pertsonalen Urraketa:** Segurtasunaren urraketa, honako hauek eragiten dituena:
+- Ustekabeko edo legez kanpoko suntsipena
+- Galera, aldaketa
+- Baimenik gabeko ezagutaraztea edo sarbidea
+- Transmititutako, gordetako edo beste modu batean tratatutako datu pertsonalena
+
+**Jabetzea:** Erakundeak ziurtasun maila arrazoizkoa duenean segurtasun intzidente bat gertatu dela eta datu pertsonalak arriskuan jarri dituela
+
+**Arrisku Ebaluazioa:**
+- **Arrisku Baxua:** Ez da jakinarazpenik behar (barnean dokumentatu)
+- **Arriskua:** AEPDri jakinarazi 72 orduko epean
+- **Arrisku Handia:** AEPDri jakinarazi 72 orduko epean + interesdunei jakinarazi
+
+---
+
+## 3. Datu-urraketari Erantzuteko Prozesua
+
+### 3.1 Berehalako Erantzuna (0-1 ordu)
+
+**1. Urratsa: Detekzioa eta Jakinarazpena**
+- Balizko urraketa bat aurkitzen duen edozein langilek berehala jakinarazi behar dio:
   - **DPO:** dpo@zabalagailetak.com | +34 XXX XXX XXX
-  - **Security Team:** security@zabalagailetak.com | +34 XXX XXX XXX (24/7)
+  - **Segurtasun Taldea:** security@zabalagailetak.com | +34 XXX XXX XXX (24/7)
   - **CISO:** ciso@zabalagailetak.com | +34 XXX XXX XXX
 
-**Step 2: Initial Assessment**
-- DPO and CISO conduct rapid assessment:
-  - What happened?
-  - What data is affected?
-  - How many people affected?
-  - Is breach ongoing?
-  - Preliminary risk level?
+**2. Urratsa: Hasierako Ebaluazioa**
+- DPOk eta CISOk ebaluazio azkarra egiten dute:
+  - Zer gertatu da?
+  - Zein datu daude kaltetuta?
+  - Zenbat pertsona daude kaltetuta?
+  - Urraketa jarraitua al da?
+  - Aurretiazko arrisku maila?
 
-**Step 3: Activate Response Team**
-- Notify Data Breach Response Team:
-  - DPO (Lead)
+**3. Urratsa: Erantzun Taldea Aktibatu**
+- Datu-urraketa Erantzun Taldea jakinarazi:
+  - DPO (Burua)
   - CISO
-  - IT Manager
-  - Legal Counsel
-  - CEO (if high-risk breach)
-  - PR/Communications (if public notification needed)
+  - IT Kudeatzailea
+  - Aholkulari Juridikoa
+  - CEO (arrisku handiko urraketa bada)
+  - PR/Komunikazioa (jakinarazpen publikoa behar bada)
 
-### 3.2 Containment and Investigation (1-24 hours)
+### 3.2 Edukiera eta Ikerketa (1-24 ordu)
 
-**Step 4: Contain the Breach**
-- IT/Security team takes immediate containment actions:
-  - Isolate affected systems
-  - Revoke compromised credentials
-  - Block unauthorized access
-  - Preserve evidence (forensic images, logs)
+**4. Urratsa: Urraketari Eustea**
+- IT/Segurtasun taldeak berehalako euste neurriak hartzen ditu:
+  - Kaltetutako sistemak isolatu
+  - Arriskuan dauden kredentzialak baliogabetu
+  - Baimenik gabeko sarbidea blokeatu
+  - Ebidentzia gorde (irudi forentseak, log-ak)
 
-**Step 5: Detailed Investigation**
-- Determine full scope of breach:
-  - **What data:** Categories of personal data affected
-  - **How many:** Number of data subjects and records
-  - **When:** Date and time of breach (or estimated range)
-  - **How:** Attack vector or cause (hacking, malware, human error, physical theft)
-  - **Who:** Potential attackers or responsible parties
-  - **Why:** Motive (if determinable)
-  - **Exfiltration:** Was data copied/removed or just accessed?
+**5. Urratsa: Ikerketa Zehatza**
+- Urraketaren irismen osoa zehaztu:
+  - **Zein datu:** Kaltetutako datu pertsonalen kategoriak
+  - **Zenbat:** Interesdun eta erregistro kopurua
+  - **Noiz:** Urraketaren data eta ordua (edo estimatutako tartea)
+  - **Nola:** Eraso bektorea edo kausa (hacking, malware, giza akatsa, lapurreta fisikoa)
+  - **Nor:** Balizko erasotzaileak edo alderdi arduradunak
+  - **Zergatik:** Motiboa (zehaztu badaiteke)
+  - **Exfiltrazioa:** Datuak kopiatu/kendu dira edo soilik sartu dira?
 
-**Step 6: Risk Assessment**
-- Assess risk to individuals (use Risk Assessment Matrix - Section 4)
-- Consider:
-  - Type of data (PII, financial, health, credentials)
-  - Sensitivity and volume
-  - Ease of identification of individuals
-  - Consequences for individuals (identity theft, financial loss, discrimination, reputation damage)
-  - Special characteristics of data subjects (children, vulnerable groups)
-  - Number of affected individuals
-  - Existing security measures (encryption, pseudonymization)
+**6. Urratsa: Arrisku Ebaluazioa**
+- Norbanakoentzako arriskua ebaluatu (erabili Arrisku Ebaluazio Matrizea - 4. Atala)
+- Kontuan hartu:
+  - Datu mota (PII, finantzarioa, osasuna, kredentzialak)
+  - Sentikortasuna eta bolumena
+  - Pertsonak identifikatzeko erraztasuna
+  - Norbanakoentzako ondorioak (identitate lapurreta, finantza galera, diskriminazioa, ospe kaltea)
+  - Interesdunen ezaugarri bereziak (haurrak, talde zaurgarriak)
+  - Kaltetutako pertsona kopurua
+  - Dauden segurtasun neurriak (enkriptatzea, pseudonimizazioa)
 
-**Step 7: Documentation**
-- Document all findings in Breach Log (see Section 7)
-- Preserve all evidence
-- Create timeline of events
+**7. Urratsa: Dokumentazioa**
+- Aurkikuntza guztiak Urraketa Erregistroan dokumentatu (ikus 7. Atala)
+- Ebidentzia guztiak gorde
+- Gertaeren denbora-lerroa sortu
 
-### 3.3 Notification Decision (24-48 hours)
+### 3.3 Jakinarazpen Erabakia (24-48 ordu)
 
-**Step 8: Notification Decision**
+**8. Urratsa: Jakinarazpen Erabakia**
 
-DPO determines notification requirements:
+DPOk jakinarazpen baldintzak zehazten ditu:
 
-| Risk Level | AEPD Notification | Data Subject Notification | Timeline |
-|------------|-------------------|---------------------------|----------|
-| **Low Risk** | Not required | Not required | Document internally |
-| **Risk** | **Required** | Not required (unless specific circumstances) | Within 72 hours |
-| **High Risk** | **Required** | **Required** | Within 72 hours (AEPD) + without undue delay (subjects) |
+| Arrisku Maila | AEPD Jakinarazpena | Interesdunen Jakinarazpena | Epea |
+|---------------|--------------------|----------------------------|------|
+| **Arrisku Baxua** | Ez da beharrezkoa | Ez da beharrezkoa | Barnean dokumentatu |
+| **Arriskua** | **Beharrezkoa** | Ez da beharrezkoa (egoera zehatzetan izan ezik) | 72 orduko epean |
+| **Arrisku Handia** | **Beharrezkoa** | **Beharrezkoa** | 72 orduko epean (AEPD) + bidegabeko atzerapenik gabe (interesdunak) |
 
-**Step 9: Prepare Notifications**
-- Draft notification to AEPD (use Template A - Section 5.1)
-- Draft notification to data subjects if required (use Template B - Section 5.2)
-- Legal counsel reviews all notifications
-- CEO approves notifications (high-risk breaches)
+**9. Urratsa: Jakinarazpenak Prestatu**
+- AEPDri jakinarazpena idatzi (erabili A Txantiloia - 5.1 Atala)
+- Interesdunei jakinarazpena idatzi behar bada (erabili B Txantiloia - 5.2 Atala)
+- Aholkulari juridikoak jakinarazpen guztiak berrikusten ditu
+- CEOk jakinarazpenak onartzen ditu (arrisku handiko urraketak)
 
-**Step 10: Submit Notifications**
-- AEPD notification: Via AEPD online portal (https://sedeagpd.gob.es)
-- Data subject notification: Email, letter, or public communication (depending on circumstances)
-- Document submission date and time (for 72-hour compliance)
+**10. Urratsa: Jakinarazpenak Bidali**
+- AEPD jakinarazpena: AEPD online atariaren bidez (https://sedeagpd.gob.es)
+- Interesdunen jakinarazpena: Emaila, gutuna edo komunikazio publikoa (egoeraren arabera)
+- Bidalketa data eta ordua dokumentatu (72 orduko betetzerako)
 
-### 3.4 Remediation and Follow-up (Ongoing)
+### 3.4 Konponketa eta Jarraipena (Etengabea)
 
-**Step 11: Implement Corrective Actions**
-- Address root cause of breach
-- Implement additional security controls
-- Update policies and procedures
-- Provide additional training if needed
+**11. Urratsa: Ekintza Zuzentzaileak Inplementatu**
+- Urraketaren erroko kausa jorratu
+- Segurtasun kontrol gehigarriak inplementatu
+- Politika eta prozedurak eguneratu
+- Beharrezkoa bada prestakuntza osagarria eman
 
-**Step 12: Monitor and Update**
-- Monitor for further incidents
-- Respond to AEPD requests for additional information
-- Respond to data subject inquiries
-- Update AEPD and data subjects if new information discovered
+**12. Urratsa: Monitorizatu eta Eguneratu**
+- Intzidente gehiago monitorizatu
+- AEPDren informazio gehigarri eskaerei erantzun
+- Interesdunen kontsultei erantzun
+- AEPD eta interesdunak eguneratu informazio berria aurkitzen bada
 
-**Step 13: Post-Incident Review**
-- Conduct lessons learned session (within 30 days)
-- Update breach response procedures
-- Update risk assessment
-- Report to management
+**13. Urratsa: Intzidente Osteko Berrikuspena**
+- Ikasitako ikasgaien saioa egin (30 eguneko epean)
+- Urraketari erantzuteko prozedurak eguneratu
+- Arrisku ebaluazioa eguneratu
+- Zuzendaritzari txostena eman
 
 ---
 
-## 4. Risk Assessment Matrix
+## 4. Arrisku Ebaluazio Matrizea
 
-### 4.1 Risk Factors
+### 4.1 Arrisku Faktoreak
 
-| Factor | Low Risk | Medium Risk | High Risk |
-|--------|----------|-------------|-----------|
-| **Data Type** | Non-sensitive contact info | Email addresses, phone numbers, names | Passwords, financial data, health data, ID numbers, children's data |
-| **Volume** | <100 individuals | 100-1,000 individuals | >1,000 individuals |
-| **Encryption** | Encrypted (strong encryption, keys secure) | Weakly encrypted or partially encrypted | Unencrypted plaintext |
-| **Ease of Identification** | Pseudonymized, difficult to identify | Some identifiers present | Full name + other identifiers (address, DOB, ID number) |
-| **Likelihood of Misuse** | Low (accidental disclosure to trusted party) | Medium (potential for misuse) | High (known malicious actor, data exfiltrated) |
-| **Consequences** | Minor inconvenience | Moderate impact (spam, phishing risk) | Severe impact (identity theft, financial loss, discrimination, physical harm) |
-| **Vulnerable Groups** | General public | Employees | Children, minorities, vulnerable individuals |
-| **Duration** | Brief exposure, quickly contained | Hours to days | Extended exposure, ongoing |
+| Faktorea | Arrisku Baxua | Arrisku Ertaina | Arrisku Handia |
+|----------|---------------|-----------------|----------------|
+| **Datu Mota** | Harremanetarako info ez-sentikorra | Email helbideak, telefono zenbakiak, izenak | Pasahitzak, datu finantzarioak, osasun datuak, NAN zenbakiak, haurren datuak |
+| **Bolumena** | <100 pertsona | 100-1.000 pertsona | >1.000 pertsona |
+| **Enkriptatzea** | Enkriptatua (enkriptatze sendoa, gakoak seguru) | Ahulki enkriptatua edo partzialki enkriptatua | Testu laua enkriptatu gabea |
+| **Identifikatzeko Erraztasuna** | Pseudonimizatua, identifikatzeko zaila | Identifikatzaile batzuk presente | Izen osoa + beste identifikatzaile batzuk (helbidea, jaioteguna, NAN) |
+| **Erabilera Okerreko Probabilitatea** | Baxua (ustekabeko ezagutaraztea konfiantzazko alderdi bati) | Ertaina (erabilera okerreko potentziala) | Altua (aktore maltzur ezaguna, datuak exfiltratuta) |
+| **Ondorioak** | Eragozpen txikia | Eragin moderatua (spam, phishing arriskua) | Eragin larria (identitate lapurreta, finantza galera, diskriminazioa, kalte fisikoa) |
+| **Talde Zaurgarriak** | Publiko orokorra | Langileak | Haurrak, gutxiengoak, pertsona zaurgarriak |
+| **Iraupena** | Esposizio laburra, azkar kontrolatua | Orduak edo egunak | Esposizio luzea, jarraitua |
 
-### 4.2 Overall Risk Determination
+### 4.2 Arrisku Determinazio Orokorra
 
-**Low Risk Examples:**
-- Accidentally emailed internal document to wrong colleague
-- Lost encrypted laptop (strong encryption, no evidence of access)
-- Brief exposure of limited non-sensitive data
+**Arrisku Baxuko Adibideak:**
+- Barne dokumentu bat lankide oker bati ustekabean bidaltzea
+- Enkriptatutako ordenagailu eramangarri galdua (enkriptatze sendoa, sarbide ebidentziarik gabe)
+- Datu ez-sentikor mugatuen esposizio laburra
 
-**Medium Risk Examples:**
-- Unauthorized access to customer email addresses and names
-- Loss of unencrypted device with limited personal data
-- Accidental disclosure of employee contact information to external party
+**Arrisku Ertaineko Adibideak:**
+- Bezeroen email helbideetara eta izenetara baimenik gabeko sarbidea
+- Enkriptatu gabeko gailu baten galera datu pertsonal mugatuekin
+- Langileen harremanetarako informazioa kanpoko alderdi bati ustekabean ezagutaraztea
 
-**High Risk Examples:**
-- Database breach exposing passwords, financial data, or ID numbers
-- Ransomware with data exfiltration
-- Loss of unencrypted health data
-- Breach affecting children's data
-- Large-scale breach (>1,000 individuals)
-- Breach enabling identity theft or financial fraud
+**Arrisku Handiko Adibideak:**
+- Pasahitzak, datu finantzarioak edo NAN zenbakiak azaltzen dituen datu-base urraketa
+- Ransomware datu exfiltrazioarekin
+- Enkriptatu gabeko osasun datuen galera
+- Haurren datuei eragiten dien urraketa
+- Eskala handiko urraketa (>1.000 pertsona)
+- Identitate lapurreta edo iruzur finantzarioa ahalbidetzen duen urraketa
 
-### 4.3 Decision Tree
+### 4.3 Erabaki Zuhaitza
 
 ```
-START: Personal data breach detected
+HASIERA: Datu pertsonalen urraketa detektatu da
 │
-├─ Is personal data involved? 
-│  ├─ NO → Not a GDPR breach (may be security incident)
-│  └─ YES → Continue
+├─ Datu pertsonalak tartean al daude? 
+│  ├─ EZ → Ez da GDPR urraketa (segurtasun intzidentea izan daiteke)
+│  └─ BAI → Jarraitu
 │
-├─ Is data encrypted with secure keys?
-│  ├─ YES → Likely LOW risk (but assess further)
-│  └─ NO → Continue
+├─ Datuak gako seguruekin enkriptatuta al daude?
+│  ├─ BAI → Litekeena da Arrisku BAXUA (baina ebaluatu gehiago)
+│  └─ EZ → Jarraitu
 │
-├─ What type of data?
-│  ├─ Non-sensitive contact info only → Likely MEDIUM risk
-│  ├─ Passwords, financial, health, ID numbers → Likely HIGH risk
-│  └─ Special category data (Article 9) → Likely HIGH risk
+├─ Zer datu mota?
+│  ├─ Harremanetarako info ez-sentikorra soilik → Litekeena da Arrisku ERTAINA
+│  ├─ Pasahitzak, finantzarioa, osasuna, NAN zenbakiak → Litekeena da Arrisku HANDIA
+│  └─ Kategoria bereziko datuak (9. art.) → Litekeena da Arrisku HANDIA
 │
-├─ How many individuals affected?
-│  ├─ <100 → Risk level depends on data type
-│  ├─ 100-1,000 → Increases risk level
-│  └─ >1,000 → Likely HIGH risk
+├─ Zenbat pertsona daude kaltetuta?
+│  ├─ <100 → Arrisku maila datu motaren araberakoa da
+│  ├─ 100-1.000 → Arrisku maila handitzen du
+│  └─ >1.000 → Litekeena da Arrisku HANDIA
 │
-├─ Was data accessed by malicious actor?
-│  ├─ YES → HIGH risk
-│  ├─ UNKNOWN → Assume YES, HIGH risk
-│  └─ NO (accidental disclosure to trusted party) → May be MEDIUM risk
+├─ Datuak aktore maltzur batek eskuratu al ditu?
+│  ├─ BAI → Arrisku HANDIA
+│  ├─ EZEZAGUNA → Suposatu BAI, Arrisku HANDIA
+│  └─ EZ (ustekabeko ezagutaraztea konfiantzazko alderdi bati) → Arrisku ERTAINA izan daiteke
 │
-RESULT:
-├─ LOW Risk → Document internally (no notification)
-├─ MEDIUM Risk → Notify AEPD within 72 hours
-└─ HIGH Risk → Notify AEPD within 72 hours + Notify data subjects without undue delay
+EMAITZA:
+├─ Arrisku BAXUA → Barnean dokumentatu (ez jakinarazi)
+├─ Arrisku ERTAINA → AEPDri jakinarazi 72 orduko epean
+└─ Arrisku HANDIA → AEPDri jakinarazi 72 orduko epean + Interesdunei jakinarazi atzerapenik gabe
 ```
 
 ---
 
-## 5. Notification Templates
+## 5. Jakinarazpen Txantiloiak
 
-### 5.1 Template A: Notification to AEPD (Article 33)
+### 5.1 A Txantiloia: AEPDri Jakinarazpena (33. artikulua)
 
-**[TO BE SUBMITTED VIA AEPD ONLINE PORTAL: https://sedeagpd.gob.es]**
+**[AEPD ONLINE ATARIAREN BIDEZ BIDALI BEHARRA: https://sedeagpd.gob.es]**
 
 ---
 
-**NOTIFICATION OF PERSONAL DATA BREACH**  
-**GDPR Article 33 / LOPDGDD Article 33**
+**DATU PERTSONALEN URRAKETA JAKINARAZPENA**  
+**GDPR 33. art. / DBLO-GDD 33. art.**
 
-**Submitted by:**  
+**Bidaltzailea:**  
 Zabala Gailetak S.A.  
-[Company Address]  
-[City, Postal Code], Spain  
-CIF: [Tax ID]
+[Enpresa Helbidea]  
+[Herria, Posta Kodea], Espainia  
+IFK: [IFK Zenbakia]
 
-**Data Protection Officer Contact:**  
-Name: [DPO Name]  
-Email: dpo@zabalagailetak.com  
-Phone: +34 XXX XXX XXX
+**Datuen Babeserako Ordezkariaren Kontaktua:**  
+Izena: [DBO Izena]  
+Emaila: dpo@zabalagailetak.com  
+Telefonoa: +34 XXX XXX XXX
 
-**Date of Notification:** [Submission Date]  
-**Date Breach Discovered:** [Discovery Date]  
-**Breach Reference Number:** ZG-BREACH-[YYYY]-[NNN]
-
----
-
-### 1. DESCRIPTION OF THE BREACH
-
-**1.1 Nature of the Personal Data Breach**
-
-[Describe what happened in clear, factual terms. Examples:]
-
-- *"On [Date], unauthorized access to our customer database was detected. Investigation revealed that an attacker exploited a vulnerability in our web application to gain access to customer records stored in our database."*
-
-- *"On [Date], an employee laptop containing unencrypted customer data was stolen from [Location]. The laptop was not password-protected at the time of theft."*
-
-- *"On [Date], a phishing email was inadvertently sent to all customers, exposing the email addresses of 5,000 customers in the CC field instead of BCC."*
-
-**1.2 Date and Time of Breach**
-
-- **Breach Occurred:** [Date and time, or estimated range if unknown]
-- **Breach Discovered:** [Date and time]
-- **Breach Contained:** [Date and time, or "Ongoing"]
-
-**1.3 Categories of Data Subjects Affected**
-
-[Select all that apply and provide approximate numbers:]
-
-- [ ] Customers: Approximately _____ individuals
-- [ ] Employees: Approximately _____ individuals
-- [ ] Suppliers/Partners: Approximately _____ individuals
-- [ ] Website visitors: Approximately _____ individuals
-- [ ] Children (under 18): Approximately _____ individuals
-- [ ] Other: ___________________________
-
-**Total Approximate Number of Data Subjects Affected:** _____
-
-**1.4 Categories of Personal Data Affected**
-
-[Select all that apply and describe:]
-
-**Identification Data:**
-- [ ] Full names
-- [ ] Email addresses
-- [ ] Phone numbers
-- [ ] Physical addresses (street, city, postal code)
-- [ ] National ID numbers (DNI/NIE)
-- [ ] Date of birth
-
-**Financial Data:**
-- [ ] Credit/debit card numbers [If yes: Last 4 digits only or full numbers? _____]
-- [ ] Bank account numbers
-- [ ] Payment history / transaction records
-- [ ] Financial statements
-
-**Authentication Data:**
-- [ ] Usernames
-- [ ] Passwords [If yes: Hashed or plaintext? Hash algorithm: _____]
-- [ ] Security questions/answers
-
-**Usage Data:**
-- [ ] IP addresses
-- [ ] Browsing history / cookies
-- [ ] Purchase history / order details
-- [ ] Account activity logs
-
-**Special Category Data (Article 9 GDPR):**
-- [ ] Health data
-- [ ] Racial or ethnic origin
-- [ ] Political opinions
-- [ ] Religious or philosophical beliefs
-- [ ] Trade union membership
-- [ ] Genetic data
-- [ ] Biometric data
-- [ ] Sex life or sexual orientation
-
-**Other Data:**
-- [ ] Employment records
-- [ ] Educational records
-- [ ] Other: _____________________________
-
-**Approximate Number of Records Affected:** _____
-
-**1.5 How the Breach Occurred**
-
-[Describe the attack vector or cause:]
-
-- [ ] Cyberattack (specify type: ransomware, phishing, SQL injection, malware, DDoS, etc.)
-- [ ] Unauthorized access (internal or external)
-- [ ] Lost or stolen device (laptop, smartphone, USB drive, paper documents)
-- [ ] Human error (accidental disclosure, misconfiguration, sent to wrong recipient)
-- [ ] System malfunction or software bug
-- [ ] Physical security breach (break-in, theft)
-- [ ] Third-party/supplier breach
-- [ ] Other: _____________________________
-
-**Detailed Description:**
-
-[Provide technical details of how the breach occurred, including any vulnerabilities exploited, attack timeline, and evidence of data exfiltration or access.]
+**Jakinarazpen Data:** [Bidalketa Data]  
+**Urraketa Aurkitutako Data:** [Aurkikuntza Data]  
+**Urraketa Erreferentzia Zenbakia:** ZG-BREACH-[UUUU]-[NNN]
 
 ---
 
-### 2. LIKELY CONSEQUENCES OF THE BREACH
+### 1. URRAKETAREN DESKRIBAPENA
 
-**2.1 Potential Impact on Data Subjects**
+**1.1 Datu Pertsonalen Urraketaren Izaera**
 
-[Describe potential harm to individuals:]
+[Deskribatu gertatutakoa termino argi eta faktikoetan. Adibideak:]
 
-- [ ] Risk of identity theft or fraud
-- [ ] Financial loss
-- [ ] Unauthorized access to accounts
-- [ ] Spam, phishing, or other unwanted communications
-- [ ] Reputational damage
-- [ ] Discrimination
-- [ ] Emotional distress
-- [ ] Physical harm (if location data exposed)
-- [ ] Other: _____________________________
+- *" [Data]-n, gure bezeroen datu-basera baimenik gabeko sarbidea detektatu zen. Ikerketak agerian utzi zuen erasotzaile batek gure web aplikazioko ahultasun bat ustiatu zuela gure datu-basean gordetako bezeroen erregistroetara sartzeko."*
 
-**2.2 Severity Assessment**
+- *" [Data]-n, bezeroen datu enkriptatu gabeak zituen langile baten ordenagailu eramangarria lapurtu zuten [Kokapena]-tik. Ordenagailu eramangarria ez zegoen pasahitz bidez babestuta lapurreta unean."*
 
-- [ ] Low Risk: Minimal impact expected
-- [ ] Medium Risk: Some potential for harm, but mitigated by circumstances
-- [ ] High Risk: Significant potential for harm to individuals
+- *" [Data]-n, phishing email bat ustekabean bezero guztiei bidali zitzaien, 5.000 bezeroren email helbideak agerian utziz CC eremuan BCC beharrean."*
 
-**Justification for Risk Level:**
+**1.2 Urraketaren Data eta Ordua**
 
-[Explain why this risk level was assigned, considering factors such as data type, encryption status, number of individuals, likelihood of misuse, etc.]
+- **Urraketa Gertatu Zen:** [Data eta ordua, edo estimatutako tartea ezezaguna bada]
+- **Urraketa Aurkitu Zen:** [Data eta ordua]
+- **Urraketa Kontrolatu Zen:** [Data eta ordua, edo "Jarraitua"]
 
----
+**1.3 Kaltetutako Interesdunen Kategoriak**
 
-### 3. MEASURES TAKEN OR PROPOSED
+[Hautatu aplikagarriak direnak eta eman gutxi gorabeherako kopuruak:]
 
-**3.1 Immediate Containment Actions**
+- [ ] Bezeroak: Gutxi gorabehera _____ pertsona
+- [ ] Langileak: Gutxi gorabehera _____ pertsona
+- [ ] Hornitzaileak/Bazkideak: Gutxi gorabehera _____ pertsona
+- [ ] Webgune bisitariak: Gutxi gorabehera _____ pertsona
+- [ ] Haurrak (18 urtetik beherakoak): Gutxi gorabehera _____ pertsona
+- [ ] Beste batzuk: ___________________________
 
-[Describe actions taken to stop the breach:]
+**Kaltetutako Interesdunen Guztizko Kopurua (Gutxi gorabehera):** _____
 
-- Date/Time of containment: [Date and time]
-- Actions taken:
-  - [ ] Affected systems isolated or taken offline
-  - [ ] Compromised accounts disabled
-  - [ ] Unauthorized access blocked (IP addresses, accounts)
-  - [ ] Malware removed
-  - [ ] Vulnerabilities patched
-  - [ ] Credentials reset (passwords changed)
-  - [ ] Other: _____________________________
+**1.4 Kaltetutako Datu Pertsonalen Kategoriak**
 
-**3.2 Remediation Measures**
+[Hautatu aplikagarriak direnak eta deskribatu:]
 
-[Describe measures to address the breach and prevent recurrence:]
+**Identifikazio Datuak:**
+- [ ] Izen-abizenak
+- [ ] Email helbideak
+- [ ] Telefono zenbakiak
+- [ ] Helbide fisikoak (kalea, herria, posta kodea)
+- [ ] NAN zenbakiak (DNI/NIE)
+- [ ] Jaioteguna
 
-**Technical Measures:**
-- [ ] Security patches applied
-- [ ] Additional security controls implemented (firewalls, encryption, MFA, etc.)
-- [ ] System hardening and configuration review
-- [ ] Enhanced monitoring and logging
-- [ ] Penetration testing and vulnerability assessment
-- [ ] Other: _____________________________
+**Finantza Datuak:**
+- [ ] Kreditu/zordunketa txartel zenbakiak [Baiezkoa bada: Azken 4 digituak soilik edo zenbaki osoak? _____]
+- [ ] Banku kontu zenbakiak
+- [ ] Ordainketa historia / transakzio erregistroak
+- [ ] Finantza egoerak
 
-**Organizational Measures:**
-- [ ] Employee training and awareness
-- [ ] Policy and procedure updates
-- [ ] Access control review
-- [ ] Third-party security assessment
-- [ ] Incident response procedure improvements
-- [ ] Other: _____________________________
+**Autentifikazio Datuak:**
+- [ ] Erabiltzaile izenak
+- [ ] Pasahitzak [Baiezkoa bada: Hash-eatuak edo testu laua? Hash algoritmoa: _____]
+- [ ] Segurtasun galderak/erantzunak
 
-**3.3 Measures to Mitigate Impact on Data Subjects**
+**Erabilera Datuak:**
+- [ ] IP helbideak
+- [ ] Nabigazio historia / cookieak
+- [ ] Erosketa historia / eskaera xehetasunak
+- [ ] Kontu jarduera log-ak
 
-[Describe actions to minimize harm to individuals:]
+**Kategoria Bereziko Datuak (GDPR 9. art.):**
+- [ ] Osasun datuak
+- [ ] Jatorri arraza edo etnikoa
+- [ ] Iritzi politikoak
+- [ ] Sinesmen erlijioso edo filosofikoak
+- [ ] Sindikatu kidetza
+- [ ] Datu genetikoak
+- [ ] Datu biometrikoak
+- [ ] Sexu bizitza edo orientazio sexuala
 
-- [ ] Notification to data subjects with guidance on protective actions
-- [ ] Credit monitoring services offered (if financial data exposed)
-- [ ] Password reset enforcement
-- [ ] Enhanced account monitoring
-- [ ] Identity theft protection resources provided
-- [ ] Customer support hotline established
-- [ ] Other: _____________________________
+**Beste Datu Batzuk:**
+- [ ] Enplegu erregistroak
+- [ ] Hezkuntza erregistroak
+- [ ] Beste batzuk: _____________________________
 
-**3.4 Timeline for Remediation**
+**Kaltetutako Erregistroen Gutxi Gorabeherako Kopurua:** _____
 
-- Short-term actions (completed within 7 days): [List]
-- Medium-term actions (completed within 30 days): [List]
-- Long-term improvements (completed within 90 days): [List]
+**1.5 Nola Gertatu Zen Urraketa**
 
----
+[Deskribatu eraso bektorea edo kausa:]
 
-### 4. NOTIFICATION TO DATA SUBJECTS
+- [ ] Zibererasoa (zehaztu mota: ransomware, phishing, SQL injection, malware, DDoS, etab.)
+- [ ] Baimenik gabeko sarbidea (barnekoa edo kanpokoa)
+- [ ] Galdutako edo lapurtutako gailua (ordenagailua, smartphonea, USB, paperezko dokumentuak)
+- [ ] Giza akatsa (ustekabeko ezagutaraztea, konfigurazio okerra, hartzaile okerreari bidalia)
+- [ ] Sistema hutsegitea edo software akatsa
+- [ ] Segurtasun fisikoaren urraketa (lapurreta, indarrez sartzea)
+- [ ] Hirugarrenen/hornitzaileen urraketa
+- [ ] Beste batzuk: _____________________________
 
-**4.1 Will Data Subjects Be Notified?**
+**Deskribapen Xehatua:**
 
-- [ ] YES - High risk to individuals, notification required
-- [ ] NO - Risk does not meet high threshold, notification not required
-
-**If YES:**
-- **Notification Method:** [ ] Email [ ] Letter [ ] Phone [ ] Public Communication [ ] Other: _____
-- **Notification Date:** [Date sent or planned date]
-- **Number of Individuals Notified:** _____
-- **Content:** [Attach copy of notification or summarize key points]
-
-**If NO:**
-- **Reason notification not required:**
-  - [ ] Appropriate technical protection measures were in place (e.g., encryption)
-  - [ ] Subsequent measures taken to ensure high risk no longer materializes
-  - [ ] Would involve disproportionate effort (public communication alternative considered)
-  - [ ] Risk does not meet high threshold
-
-**Justification:**
-
-[Provide detailed explanation for decision not to notify data subjects, demonstrating compliance with Article 34 requirements.]
+[Eman urraketa nola gertatu denaren xehetasun teknikoak, ustiatutako ahultasunak, erasoaren denbora-lerroa eta datu exfiltrazioaren edo sarbidearen ebidentziak barne.]
 
 ---
 
-### 5. ADDITIONAL INFORMATION
+### 2. URRAKETAREN LITEKEENA DEN ONDORIOAK
 
-**5.1 Cross-Border Breach**
+**2.1 Interesdunentzako Balizko Eragina**
 
-- [ ] Breach affects data subjects in other EU member states
-  - Member states affected: _____________________________
-  - Lead supervisory authority (if applicable): _____________________________
+[Deskribatu norbanakoentzako kalte potentziala:]
 
-**5.2 Previous Breaches**
+- [ ] Identitate lapurreta edo iruzur arriskua
+- [ ] Finantza galera
+- [ ] Kontuetara baimenik gabeko sarbidea
+- [ ] Spam, phishing edo nahi ez diren beste komunikazio batzuk
+- [ ] Ospe kaltea
+- [ ] Diskriminazioa
+- [ ] Larritasun emozionala
+- [ ] Kalte fisikoa (kokapen datuak agerian geratu badira)
+- [ ] Beste batzuk: _____________________________
 
-- [ ] This is our first notifiable breach
-- [ ] We have reported previous breaches: [List dates and reference numbers of previous breaches in past 12 months]
+**2.2 Larritasun Ebaluazioa**
 
-**5.3 Third-Party Involvement**
+- [ ] Arrisku Baxua: Eragin minimoa espero da
+- [ ] Arrisku Ertaina: Kalte potentziala, baina egoerak arinduta
+- [ ] Arrisku Handia: Norbanakoentzako kalte potentzial esanguratsua
 
-- [ ] Breach involved a data processor or third-party service provider
-  - Provider name: _____________________________
-  - Provider has been notified: [ ] Yes [ ] No
-  - Provider's role in breach: _____________________________
+**Arrisku Mailaren Justifikazioa:**
 
-**5.4 Law Enforcement Notification**
-
-- [ ] Law enforcement has been notified (Police, Civil Guard, etc.)
-  - Date notified: _____
-  - Case/Report number: _____
-
-**5.5 Insurance Claim**
-
-- [ ] Cyber insurance claim filed
-  - Insurer: _____________________________
-  - Claim number: _____________________________
+[Azaldu zergatik esleitu den arrisku maila hau, datu mota, enkriptatze egoera, pertsona kopurua, erabilera okerreko probabilitatea, etab. kontuan hartuta.]
 
 ---
 
-### 6. DECLARATION
+### 3. HARTUTAKO EDO PROPOSATUTAKO NEURRIAK
 
-I, [DPO Name], Data Protection Officer of Zabala Gailetak S.A., declare that the information provided in this notification is accurate and complete to the best of my knowledge as of the date of this notification. We commit to providing updates to the AEPD as new information becomes available.
+**3.1 Berehalako Euste Neurriak**
 
-We understand that failure to notify a breach, or providing false or misleading information, may result in administrative fines and other sanctions under GDPR and LOPDGDD.
+[Deskribatu urraketa gelditzeko hartutako neurriak:]
 
-**Name:** [DPO Name]  
-**Position:** Data Protection Officer  
-**Signature:** _____________________________  
-**Date:** [Date]
+- Euste data/ordua: [Data eta ordua]
+- Hartutako neurriak:
+  - [ ] Kaltetutako sistemak isolatu edo deskonektatu
+  - [ ] Arriskuan dauden kontuak desgaitu
+  - [ ] Baimenik gabeko sarbidea blokeatu (IP helbideak, kontuak)
+  - [ ] Malwarea kendu
+  - [ ] Ahultasunak adabakitu
+  - [ ] Kredentzialak berrezarri (pasahitzak aldatu)
+  - [ ] Beste batzuk: _____________________________
 
----
+**3.2 Konponketa Neurriak**
 
-### 7. CONTACT INFORMATION
+[Deskribatu urraketari aurre egiteko eta errepikatzea prebenitzeko neurriak:]
 
-For questions or additional information regarding this breach notification:
+**Neurri Teknikoak:**
+- [ ] Segurtasun adabakiak aplikatu
+- [ ] Segurtasun kontrol gehigarriak inplementatu (suebakiak, enkriptatzea, MFA, etab.)
+- [ ] Sistema gogortzea eta konfigurazio berrikuspena
+- [ ] Monitorizazio eta erregistro hobetua
+- [ ] Penetrazio probak eta ahultasun ebaluazioa
+- [ ] Beste batzuk: _____________________________
 
-**Data Protection Officer:**  
-Name: [DPO Name]  
-Email: dpo@zabalagailetak.com  
-Phone: +34 XXX XXX XXX
+**Antolakuntza Neurriak:**
+- [ ] Langileen prestakuntza eta kontzientziazioa
+- [ ] Politika eta prozeduren eguneraketak
+- [ ] Sarbide kontrolaren berrikuspena
+- [ ] Hirugarrenen segurtasun ebaluazioa
+- [ ] Intzidente erantzun prozeduraren hobekuntzak
+- [ ] Beste batzuk: _____________________________
 
-**Company Representative:**  
-Name: [CEO or CISO Name]  
-Position: [Title]  
-Email: [Email]  
-Phone: +34 XXX XXX XXX
+**3.3 Interesdunengan Eragina Arintzeko Neurriak**
 
----
+[Deskribatu norbanakoentzako kaltea minimizatzeko ekintzak:]
 
-### 8. ATTACHMENTS
+- [ ] Interesdunei jakinarazpena babes ekintzei buruzko gidarekin
+- [ ] Kreditu monitorizazio zerbitzuak eskaini (finantza datuak agerian geratu badira)
+- [ ] Pasahitz berrezarpena behartu
+- [ ] Kontu monitorizazio hobetua
+- [ ] Identitate lapurreta babesteko baliabideak eman
+- [ ] Bezeroarentzako arreta telefonoa ezarri
+- [ ] Beste batzuk: _____________________________
 
-[List any attachments included with notification:]
+**3.4 Konponketa Denbora-lerroa**
 
-- [ ] Detailed timeline of breach events
-- [ ] Forensic investigation report (summary)
-- [ ] Copy of notification sent to data subjects
-- [ ] List of affected data fields (technical details)
-- [ ] Evidence of containment actions
-- [ ] Other: _____________________________
-
----
-
-**END OF AEPD NOTIFICATION**
-
-**Submission Date:** _____________________  
-**AEPD Confirmation Number:** _____________________ (filled after submission)
-
----
-
-### 5.2 Template B: Notification to Data Subjects (Article 34)
-
-**[TO BE SENT VIA EMAIL OR LETTER TO AFFECTED INDIVIDUALS]**
-
----
-
-**SUBJECT: Important Security Notice - Your Personal Data**
+- Epe laburreko ekintzak (7 egunetan osatuta): [Zerrenda]
+- Epe ertaineko ekintzak (30 egunetan osatuta): [Zerrenda]
+- Epe luzeko hobekuntzak (90 egunetan osatuta): [Zerrenda]
 
 ---
 
-Dear [Customer/Employee/Partner],
+### 4. INTERESDUNEI JAKINARAZPENA
 
-We are writing to inform you of a security incident that may have affected your personal data. At Zabala Gailetak, we take the security and privacy of your information very seriously, and we want to provide you with full transparency about what happened, what information may have been affected, and what steps we are taking.
+**4.1 Interesdunei Jakinaraziko Zaie?**
 
----
+- [ ] BAI - Arrisku handia norbanakoentzat, jakinarazpena beharrezkoa
+- [ ] EZ - Arriskuak ez du atalase altua betetzen, jakinarazpena ez da beharrezkoa
 
-### WHAT HAPPENED
+**BAI bada:**
+- **Jakinarazpen Metodoa:** [ ] Emaila [ ] Gutuna [ ] Telefonoa [ ] Komunikazio Publikoa [ ] Beste bat: _____
+- **Jakinarazpen Data:** [Bidalitako data edo aurreikusitako data]
+- **Jakinarazitako Pertsona Kopurua:** _____
+- **Edukia:** [Erantsi jakinarazpenaren kopia edo laburtu puntu nagusiak]
 
-On [Date], we discovered [brief, clear description of what happened in plain language].
+**EZ bada:**
+- **Jakinarazpena beharrezkoa ez izateko arrazoia:**
+  - [ ] Babes neurri tekniko egokiak zeuden (adibidez, enkriptatzea)
+  - [ ] Ondorengo neurriak hartu dira arrisku handia gauzatzea litekeena ez dela ziurtatzeko
+  - [ ] Ahalegin neurrigabea ekarriko luke (komunikazio publiko alternatiboa kontuan hartuta)
+  - [ ] Arriskuak ez du atalase altua betetzen
 
-[Example: "we discovered that an unauthorized person gained access to our customer database through a vulnerability in our website. We immediately took action to secure our systems and began an investigation."]
+**Justifikazioa:**
 
-We became aware of this incident on [Discovery Date] and took immediate steps to contain it and prevent further unauthorized access.
-
----
-
-### WHAT INFORMATION WAS AFFECTED
-
-Based on our investigation, the following information about you may have been accessed or disclosed:
-
-[List specific data types affected - be clear and specific:]
-
-- Your name
-- Your email address
-- Your mailing address
-- Your phone number
-- Your order history from [Date Range]
-- [Other specific data]
-
-[If passwords were affected:]
-Your account password was [stored in encrypted/hashed format using industry-standard security measures / stored in a way that may allow it to be decoded]. Out of an abundance of caution, we have [automatically reset your password / recommend you change your password immediately].
-
-[If payment card data was affected:]
-[Explain what payment data was exposed - full number or last 4 digits, whether CVV or expiration date was included, etc.]
-
-**What was NOT affected:**
-[List categories of data that were NOT exposed, if this provides reassurance. Example: "Your payment card information was NOT affected as we do not store full credit card numbers in our database."]
+[Eman azalpen zehatza interesdunei ez jakinarazteko erabakiari buruz, 34. artikuluko baldintzak betetzen direla frogatuz.]
 
 ---
 
-### WHAT WE ARE DOING
+### 5. INFORMAZIO GEHIGARRIA
 
-We have taken the following actions:
+**5.1 Mugaz Gaindiko Urraketa**
 
-**Immediate Actions:**
-- [Specific action 1, e.g., "Secured the vulnerability that allowed unauthorized access"]
-- [Specific action 2, e.g., "Reset all customer passwords"]
-- [Specific action 3, e.g., "Engaged a cybersecurity firm to conduct a thorough investigation"]
-- [Specific action 4, e.g., "Notified the Spanish Data Protection Authority (AEPD)"]
-- [Specific action 5, e.g., "Implemented enhanced security monitoring"]
+- [ ] Urraketak EBko beste estatu kide batzuetako interesdunei eragiten die
+  - Kaltetutako estatu kideak: _____________________________
+  - Ikuskapen agintaritza nagusia (aplikagarria bada): _____________________________
 
-**Long-term Improvements:**
-- [Actions to prevent future incidents, e.g., "Implementing additional security controls and encryption"]
-- [e.g., "Conducting a comprehensive security audit"]
-- [e.g., "Providing additional security training to our staff"]
+**5.2 Aurreko Urraketak**
 
----
+- [ ] Hau da gure lehen urraketa jakinarazgarria
+- [ ] Aurreko urraketak jakinarazi ditugu: [Zerrendatu azken 12 hilabeteetako aurreko urraketen datak eta erreferentzia zenbakiak]
 
-### WHAT YOU SHOULD DO
+**5.3 Hirugarrenen Inplikazioa**
 
-To protect yourself, we recommend you take the following steps:
+- [ ] Urraketak datu-eragile edo hirugarren zerbitzu hornitzaile bat inplikatu zuen
+  - Hornitzaile izena: _____________________________
+  - Hornitzailea jakinarazi da: [ ] Bai [ ] Ez
+  - Hornitzailearen rola urraketan: _____________________________
 
-**Immediate Actions:**
+**5.4 Legea Betearazteko Agentzien Jakinarazpena**
 
-1. **Change Your Password** (if applicable)
-   - If you have an account with us, please change your password immediately at [URL]
-   - If you used the same password for other websites, change those passwords as well
-   - Choose a strong, unique password (at least 12 characters with letters, numbers, and symbols)
+- [ ] Legea betearazteko agentziei jakinarazi zaie (Polizia, Guardia Zibila, etab.)
+  - Jakinarazpen data: _____
+  - Kasu/Txosten zenbakia: _____
 
-2. **Monitor Your Accounts**
-   - Regularly check your bank and credit card statements for unauthorized transactions
-   - Report any suspicious activity to your bank immediately
-   - Check your email for suspicious messages claiming to be from us
+**5.5 Aseguru Erreklamazioa**
 
-3. **Be Alert for Phishing**
-   - Be cautious of emails, phone calls, or texts asking for personal information
-   - We will never ask you for your password, credit card number, or other sensitive information via email or phone
-   - If you receive a suspicious communication claiming to be from us, contact us directly using the contact information below
-
-[If high-risk breach involving financial or ID data:]
-
-4. **Consider Credit Monitoring**
-   - You may wish to place a fraud alert on your credit file with credit bureaus (Equifax, Experian, TransUnion equivalent in Spain)
-   - Consider requesting a free credit report to check for suspicious activity
-   - [If offering services:] We are offering [12 months] of free credit monitoring services through [Provider]. To enroll, visit [URL] or call [Phone] and use reference code [Code].
-
-5. **Report Identity Theft** (if applicable)
-   - If you believe you are a victim of identity theft, report it to local police and contact the relevant authorities
+- [ ] Ziber-aseguru erreklamazioa aurkeztu da
+  - Aseguratzailea: _____________________________
+  - Erreklamazio zenbakia: _____________________________
 
 ---
 
-### MORE INFORMATION AND SUPPORT
+### 6. ADIERAZPENA
 
-We understand you may have questions or concerns. We are here to help.
+Nik, [DBO Izena], Zabala Gailetak S.A.-ko Datuen Babeserako Ordezkariak, adierazten dut jakinarazpen honetan emandako informazioa zehatza eta osoa dela nire ezagutzaren arabera jakinarazpen honen datan. AEPDri eguneraketak emateko konpromisoa hartzen dugu informazio berria eskuragarri egon ahala.
 
-**Dedicated Support:**
-- **Email:** [security-incident@zabalagailetak.com] or [dpo@zabalagailetak.com]
-- **Phone:** [+34 XXX XXX XXX] (Monday-Friday, 9:00-18:00 CET)
-- **Frequently Asked Questions:** [URL to FAQ page about the incident]
+Ulertzen dugu urraketa bat ez jakinarazteak, edo informazio faltsua edo engainagarria emateak, isun administratiboak eta beste zigor batzuk ekar ditzakeela GDPR eta DBLO-GDDren arabera.
 
-**Your Rights:**
-Under GDPR, you have the right to:
-- Access your personal data
-- Request correction of inaccurate data
-- Request deletion of your data
-- Object to processing of your data
-- Lodge a complaint with the supervisory authority (AEPD)
-
-To exercise these rights or for more information about how we process your personal data, please contact our Data Protection Officer:
-- Email: dpo@zabalagailetak.com
-- Phone: +34 XXX XXX XXX
-
-**Spanish Data Protection Authority (AEPD):**
-If you have concerns about how we have handled this incident, you have the right to lodge a complaint with the AEPD:
-- Website: www.aepd.es
-- Phone: +34 901 100 099
-- Address: C/ Jorge Juan, 6, 28001 Madrid, Spain
+**Izena:** [DBO Izena]  
+**Kargua:** Datuen Babeserako Ordezkaria  
+**Sinadura:** _____________________________  
+**Data:** [Data]
 
 ---
 
-### OUR COMMITMENT TO YOU
+### 7. HARREMANETARAKO INFORMAZIOA
 
-We sincerely apologize for this incident and any concern or inconvenience it may cause you. The security and privacy of your personal data is our highest priority. We are committed to:
+Urraketa jakinarazpen honi buruzko galderak edo informazio gehigarrirako:
 
-- Continuing to investigate this incident thoroughly
-- Implementing additional security measures to prevent future incidents
-- Keeping you informed if we learn any new information that affects you
-- Providing support and resources to help you protect yourself
+**Datuen Babeserako Ordezkaria:**  
+Izena: [DBO Izena]  
+Emaila: dpo@zabalagailetak.com  
+Telefonoa: +34 XXX XXX XXX
 
-We value your trust and are working diligently to ensure this does not happen again.
+**Enpresaren Ordezkaria:**  
+Izena: [CEO edo CISO Izena]  
+Kargua: [Titulua]  
+Emaila: [Emaila]  
+Telefonoa: +34 XXX XXX XXX
 
 ---
 
-**Sincerely,**
+### 8. ERANSKINAK
 
-[CEO Name]  
-Chief Executive Officer  
+[Zerrendatu jakinarazpenarekin batera sartutako eranskinak:]
+
+- [ ] Urraketa gertaeren denbora-lerro zehatza
+- [ ] Ikerketa forentsearen txostena (laburpena)
+- [ ] Interesdunei bidalitako jakinarazpenaren kopia
+- [ ] Kaltetutako datu eremuen zerrenda (xehetasun teknikoak)
+- [ ] Euste ekintzen ebidentzia
+- [ ] Beste batzuk: _____________________________
+
+---
+
+**AEPD JAKINARAZPENAREN AMAIERA**
+
+**Bidalketa Data:** _____________________  
+**AEPD Berrespen Zenbakia:** _____________________ (bidalketa ondoren bete)
+
+---
+
+### 5.2 B Txantiloia: Datuen Interesdunei Jakinarazpena (34. artikulua)
+
+**[EMAIL EDO GUTUN BIDEZ KALTETUTAKO NORBANAKOEI BIDALTZEKO]**
+
+---
+
+**GAIA: Segurtasun Ohar Garrantzitsua - Zure Datu Pertsonalak**
+
+---
+
+Agur [Bezero/Langile/Bazkide],
+
+Zure datu pertsonalei eragin diezaiekeen segurtasun intzidente baten berri emateko idazten dizugu. Zabala Gailetak-en, oso serio hartzen dugu zure informazioaren segurtasuna eta pribatutasuna, eta gardentasun osoa eskaini nahi dizugu gertatutakoari, eragin zezakeen informazioari eta hartzen ari garen urratsei buruz.
+
+---
+
+### ZER GERTATU DA
+
+[Data]-n, [gertatutakoaren deskribapen labur eta argia hizkuntza arruntean] aurkitu genuen.
+
+[Adibidea: "baimenik gabeko pertsona batek gure bezeroen datu-basera sarbidea lortu zuela aurkitu genuen gure webguneko ahultasun baten bidez. Berehala neurriak hartu genituen gure sistemak ziurtatzeko eta ikerketa bat hasi genuen."]
+
+Intzidente honetaz [Aurkikuntza Data]-n jabetu ginen eta berehala urratsak eman genituen hari eusteko eta baimenik gabeko sarbide gehiago prebenitzeko.
+
+---
+
+### ZEIN INFORMAZIO DAGO KALTETUTA
+
+Gure ikerketan oinarrituta, zuri buruzko honako informazio hau sartu edo ezagutarazi zitekeen:
+
+[Zerrendatu kaltetutako datu mota zehatzak - argia eta zehatza izan:]
+
+- Zure izena
+- Zure email helbidea
+- Zure posta helbidea
+- Zure telefono zenbakia
+- Zure eskaera historia [Data Tartea]-tik
+- [Beste datu zehatz batzuk]
+
+[Pasahitzak kaltetuta egon badira:]
+Zure kontuko pasahitza [formatu enkriptatuan/hash-eatuan gordeta zegoen industria estandarreko segurtasun neurriak erabiliz / deskodetu daitekeen modu batean gordeta zegoen]. Zuhurtzia handiz, [automatikoki zure pasahitza berrezarri dugu / gomendatzen dizugu zure pasahitza berehala aldatzea].
+
+[Ordainketa txartelaren datuak kaltetuta egon badira:]
+[Azaldu zein ordainketa datu agerian geratu ziren - zenbaki osoa edo azken 4 digituak, CVV edo iraungitze data sartu zen, etab.]
+
+**Zer EZ zen kaltetu:**
+[Zerrendatu agerian geratu EZ ziren datu kategoriak, honek lasaitasuna ematen badu. Adibidea: "Zure ordainketa txartelaren informazioa EZ zen kaltetu, ez baititugu kreditu txartel zenbaki osoak gure datu-basean gordetzen."]
+
+---
+
+### ZER EGITEN ARI GARA
+
+Honako ekintza hauek hartu ditugu:
+
+**Berehalako Ekintzak:**
+- [Ekintza zehatza 1, adib., "Baimenik gabeko sarbidea ahalbidetu zuen ahultasuna konpondu dugu"]
+- [Ekintza zehatza 2, adib., "Bezeroen pasahitz guztiak berrezarri ditugu"]
+- [Ekintza zehatza 3, adib., "Zibersegurtasun enpresa bat kontratatu dugu ikerketa sakona egiteko"]
+- [Ekintza zehatza 4, adib., "Datuen Babeserako Espainiako Bulegoari (AEPD) jakinarazi diogu"]
+- [Ekintza zehatza 5, adib., "Segurtasun monitorizazio hobetua ezarri dugu"]
+
+**Epe luzeko Hobekuntzak:**
+- [Etorkizuneko intzidenteak prebenitzeko ekintzak, adib., "Segurtasun kontrol gehigarriak eta enkriptatzea ezartzen"]
+- [adib., "Segurtasun auditoria osoa egiten"]
+- [adib., "Segurtasun prestakuntza osagarria ematen gure langileei"]
+
+---
+
+### ZER EGIN BEHARKO ZENUKE
+
+Zure burua babesteko, honako urrats hauek ematea gomendatzen dizugu:
+
+**Berehalako Ekintzak:**
+
+1. **Aldatu Zure Pasahitza** (aplikagarria bada)
+   - Gurekin kontu bat baduzu, mesedez aldatu zure pasahitza berehala hemen: [URL]
+   - Pasahitz bera beste webgune batzuetarako erabili baduzu, aldatu pasahitz horiek ere
+   - Aukeratu pasahitz sendo eta bakarra (gutxienez 12 karaktere letra, zenbaki eta sinboloekin)
+
+2. **Monitorizatu Zure Kontuak**
+   - Aldizka egiaztatu zure banku eta kreditu txartelaren laburpenak baimenik gabeko transakzioak bilatzeko
+   - Eman edozein jarduera susmagarriren berri zure bankuari berehala
+   - Egiaztatu zure emaila gugandik datozela dioten mezu susmagarriak bilatzeko
+
+3. **Adi egon Phishing-arekin**
+   - Kontuz ibili informazio pertsonala eskatzen duten email, telefono dei edo mezuekin
+   - Inoiz ez dizugu eskatuko zure pasahitza, kreditu txartel zenbakia edo beste informazio sentikorrik email edo telefono bidez
+   - Gugandik datorrela dioen komunikazio susmagarri bat jasotzen baduzu, jarri gurekin harremanetan zuzenean beheko harremanetarako informazioa erabiliz
+
+[Arrisku handiko urraketa bada finantza edo NAN datuekin:]
+
+4. **Kontuan hartu Kreditu Monitorizazioa**
+   - Iruzur alerta bat jarri nahi izatea zure kreditu fitxategian kreditu bulegoekin
+   - Kontuan hartu doako kreditu txosten bat eskatzea jarduera susmagarriak egiaztatzeko
+   - [Zerbitzuak eskaintzen badira:] [Provider]-en bidez [12 hilabete]-ko doako kreditu monitorizazio zerbitzuak eskaintzen ari gara. Izena emateko, bisitatu [URL] edo deitu [Telefonoa] eta erabili erreferentzia kode hau: [Kodea].
+
+5. **Salatu Identitate Lapurreta** (aplikagarria bada)
+   - Identitate lapurretaren biktima zarela uste baduzu, salatu tokiko poliziari eta jarri harremanetan agintari eskudunekin
+
+---
+
+### INFORMAZIO GEHIAGO ETA LAGUNTZA
+
+Ulertzen dugu galderak edo kezkak izan ditzakezula. Hemen gaude laguntzeko.
+
+**Laguntza Dedikatua:**
+- **Emaila:** [security-incident@zabalagailetak.com] edo [dpo@zabalagailetak.com]
+- **Telefonoa:** [+34 XXX XXX XXX] (Astelehenetik Ostiralera, 9:00-18:00 CET)
+- **Ohiko Galderak:** [URL intzidenteari buruzko FAQ orrira]
+
+**Zure Eskubideak:**
+GDPRren arabera, eskubidea duzu:
+- Zure datu pertsonaletara sartzeko
+- Datu okerrak zuzentzea eskatzeko
+- Zure datuak ezabatzea eskatzeko
+- Zure datuen tratamenduaren aurka egiteko
+- Ikuskapen agintaritzan (AEPD) kexa jartzeko
+
+Eskubide hauek erabiltzeko edo zure datu pertsonalak nola tratatzen ditugun buruzko informazio gehiagorako, mesedez jarri harremanetan gure Datuen Babeserako Ordezkariarekin:
+- Emaila: dpo@zabalagailetak.com
+- Telefonoa: +34 XXX XXX XXX
+
+**Datuen Babeserako Espainiako Bulegoa (AEPD):**
+Intzidente hau nola kudeatu dugunari buruzko kezkarik baduzu, AEPDn kexa jartzeko eskubidea duzu:
+- Webgunea: www.aepd.es
+- Telefonoa: +34 901 100 099
+- Helbidea: C/ Jorge Juan, 6, 28001 Madril, Espainia
+
+---
+
+### GURE KONPROMISOA ZUREKIN
+
+Zinez barkamena eskatzen dugu intzidente honegatik eta sor diezazukeen kezka edo eragozpenagatik. Zure datu pertsonalen segurtasuna eta pribatutasuna gure lehentasun nagusia da. Konpromisoa hartzen dugu:
+
+- Intzidente hau sakon ikertzen jarraitzeko
+- Etorkizuneko intzidenteak prebenitzeko segurtasun neurri osagarriak ezartzeko
+- Zuri eragiten dizun informazio berriren bat ezagutzen badugu jakinarazten jarraitzeko
+- Zure burua babesten laguntzeko laguntza eta baliabideak eskaintzeko
+
+Zure konfiantza baloratzen dugu eta gogor ari gara lanean hau berriro gerta ez dadin.
+
+---
+
+**Adeitasunez,**
+
+[CEO Izena]  
+Zuzendari Nagusia  
 Zabala Gailetak S.A.
 
-[DPO Name]  
-Data Protection Officer  
+[DBO Izena]  
+Datuen Babeserako Ordezkaria  
 Zabala Gailetak S.A.
 
 ---
 
-**Date:** [Date of notification]  
-**Reference Number:** ZG-BREACH-[YYYY]-[NNN]
+**Data:** [Jakinarazpen data]  
+**Erreferentzia Zenbakia:** ZG-BREACH-[UUUU]-[NNN]
 
 ---
 
 **Zabala Gailetak S.A.**  
-[Company Address]  
-[City, Postal Code], Spain  
-CIF: [Tax ID]  
-Email: info@zabalagailetak.com  
-Website: www.zabalagailetak.com
+[Enpresa Helbidea]  
+[Herria, Posta Kodea], Espainia  
+IFK: [IFK Zenbakia]  
+Emaila: info@zabalagailetak.com  
+Webgunea: www.zabalagailetak.com
 
 ---
 
-**[Optional: Include resources/links section with helpful information about password security, identity theft protection, etc.]**
+**[Aukerakoa: Sartu baliabideak/estekak pasahitz segurtasunari, identitate lapurreta babesari, etab. buruzko informazio lagungarriarekin]**
 
 ---
 
-## 6. Alternative Notification Methods
+## 6. Jakinarazpen Metodo Alternatiboak
 
-### 6.1 Public Communication (When Individual Notification is Disproportionate)
+### 6.1 Komunikazio Publikoa (Norbanakoen Jakinarazpena Neurrigabea Denean)
 
-**Subject to AEPD Approval**
+**AEPDren Onarpenaren Menpe**
 
-**Press Release Template:**
-
----
-
-**FOR IMMEDIATE RELEASE**
-
-**Data Security Incident Notice**
-
-**[City], [Date]** — Zabala Gailetak S.A. is issuing this public notice to inform individuals who may have been affected by a data security incident that occurred on [Date].
-
-**What Happened:**
-[Brief description of incident]
-
-**What Information Was Involved:**
-[Categories of data affected]
-
-**What We Are Doing:**
-[Summary of containment and remediation actions]
-
-**What You Should Do:**
-[Summary of recommended protective actions]
-
-**For More Information:**
-Individuals seeking more information should visit [dedicated webpage URL] or call our dedicated helpline at [Phone Number].
-
-We sincerely apologize for this incident and are committed to protecting the security of personal information.
-
-**Contact:**
-[DPO Name], Data Protection Officer
-Email: dpo@zabalagailetak.com
-Phone: +34 XXX XXX XXX
+**Prentsa Ohar Txantiloia:**
 
 ---
 
-**Additional Public Notification Channels:**
-- Company website prominent banner
-- Social media posts (Facebook, Twitter, LinkedIn)
-- Industry associations or trade groups
-- Local media outreach
-- Customer email to mailing list (if emails not compromised)
+**BEREHALA KALERATZEKO**
+
+**Datu Segurtasun Intzidente Oharra**
+
+**[Herria], [Data]** — Zabala Gailetak S.A.-k ohar publiko hau jaulkitzen du [Data]-n gertatutako datu segurtasun intzidente batek eragin dien norbanakoei informatzeko.
+
+**Zer Gertatu Zen:**
+[Intzidentearen deskribapen laburra]
+
+**Zein Informazio Egon Zen Tartean:**
+[Kaltetutako datu kategoriak]
+
+**Zer Egiten Ari Gara:**
+[Euste eta konponketa ekintzen laburpena]
+
+**Zer Egin Beharko Zenuke:**
+[Gomendatutako babes ekintzen laburpena]
+
+**Informazio Gehiagorako:**
+Informazio gehiago nahi duten norbanakoek [web orri dedikatuaren URL] bisitatu beharko lukete edo gure laguntza telefono dedikatura deitu [Telefono Zenbakia] zenbakian.
+
+Zinez barkamena eskatzen dugu intzidente honegatik eta informazio pertsonalaren segurtasuna babesteko konpromisoa dugu.
+
+**Kontaktua:**
+[DBO Izena], Datuen Babeserako Ordezkaria
+Emaila: dpo@zabalagailetak.com
+Telefonoa: +34 XXX XXX XXX
 
 ---
 
-## 7. Internal Documentation - Breach Log
-
-### 7.1 Breach Register Entry
-
-All breaches (including those not notified) must be documented in internal Breach Register:
-
----
-
-**BREACH REGISTER ENTRY**
-
-**Breach ID:** ZG-BREACH-[YYYY]-[NNN]
-
-**Discovery Date:** _____________________  
-**Discovery Method:** [ ] User Report [ ] Security Monitoring [ ] Audit [ ] External Notification [ ] Other: _____
-
-**Reported By:** _____________________  
-**DPO Notified:** _____________________ (Date/Time)
+**Jakinarazpen Publiko Kanal Gehigarriak:**
+- Enpresaren webguneko banner nabarmena
+- Sare sozialetako argitalpenak (Facebook, Twitter, LinkedIn)
+- Industria elkarteak edo merkataritza taldeak
+- Tokiko hedabideen dibulgazioa
+- Bezeroen emaila posta zerrendara (emailak konprometitu ez baziren)
 
 ---
 
-**BREACH DETAILS:**
+## 7. Barne Dokumentazioa - Urraketa Erregistroa
 
-**Date/Time of Breach:** _____________________ (or estimated range)
+### 7.1 Urraketa Erregistro Sarrera
 
-**Type of Breach:**
-- [ ] Confidentiality breach (unauthorized disclosure or access)
-- [ ] Integrity breach (unauthorized modification or alteration)
-- [ ] Availability breach (loss, destruction, or unavailability)
-
-**Cause:**
-- [ ] Cyberattack
-- [ ] Human error
-- [ ] System failure
-- [ ] Physical security breach
-- [ ] Third-party breach
-- [ ] Other: _____
-
-**Detailed Description:**
-
-[Comprehensive description of what happened, how it happened, and timeline of events]
+Urraketa guztiak (jakinarazi ez direnak barne) barne Urraketa Erregistroan dokumentatu behar dira:
 
 ---
 
-**DATA AFFECTED:**
+**URRAKETA ERREGISTRO SARRERA**
 
-**Categories of Data Subjects:**
-- Customers: _____ (approximate number)
-- Employees: _____ (approximate number)
-- Other: _____ (specify: _______________)
+**Urraketa ID:** ZG-BREACH-[UUUU]-[NNN]
 
-**Total Individuals Affected:** _____
+**Aurkikuntza Data:** _____________________  
+**Aurkikuntza Metodoa:** [ ] Erabiltzaile Txostena [ ] Segurtasun Monitorizazioa [ ] Auditoria [ ] Kanpo Jakinarazpena [ ] Beste bat: _____
 
-**Categories of Personal Data:**
-[List all categories of personal data affected with descriptions]
-
-**Special Category Data:** [ ] Yes [ ] No  
-If yes, specify: _____
+**Nork Jakinarazia:** _____________________  
+**DBO Jakinarazia:** _____________________ (Data/Ordua)
 
 ---
 
-**RISK ASSESSMENT:**
+**URRAKETA XEHETASUNAK:**
 
-**Risk Level:** [ ] Low [ ] Medium [ ] High
+**Urraketa Data/Ordua:** _____________________ (edo estimatutako tartea)
 
-**Risk to Individuals:**
-[Describe potential impact on data subjects]
+**Urraketa Mota:**
+- [ ] Konfidentzialtasun urraketa (baimenik gabeko ezagutaraztea edo sarbidea)
+- [ ] Osotasun urraketa (baimenik gabeko aldaketa edo alterazioa)
+- [ ] Eskuragarritasun urraketa (galera, suntsipena edo erabilgarritasun eza)
 
-**Factors Considered:**
-- Type and sensitivity of data: _____
-- Volume of data and number of individuals: _____
-- Ease of identification: _____
-- Severity of consequences: _____
-- Special characteristics of data subjects: _____
-- Existing security measures: _____
+**Kausa:**
+- [ ] Zibererasoa
+- [ ] Giza akatsa
+- [ ] Sistema hutsegitea
+- [ ] Segurtasun fisikoaren urraketa
+- [ ] Hirugarrenen urraketa
+- [ ] Beste bat: _____
 
----
+**Deskribapen Xehatua:**
 
-**NOTIFICATION DECISIONS:**
-
-**AEPD Notification:** [ ] Required [ ] Not Required  
-**Reason:** _____
-
-**If Required:**
-- Notification Date: _____
-- Within 72 hours: [ ] Yes [ ] No
-- If No, reason for delay: _____
-- AEPD Reference Number: _____
-
-**Data Subject Notification:** [ ] Required [ ] Not Required  
-**Reason:** _____
-
-**If Required:**
-- Notification Method: [ ] Email [ ] Letter [ ] Phone [ ] Public Communication
-- Notification Date: _____
-- Number of Individuals Notified: _____
+[Zer gertatu den, nola gertatu den eta gertaeren denbora-lerroaren deskribapen osoa]
 
 ---
 
-**ACTIONS TAKEN:**
+**KALTETUTAKO DATUAK:**
 
-**Containment:**
-[List immediate containment actions with dates]
+**Interesdunen Kategoriak:**
+- Bezeroak: _____ (gutxi gorabeherako kopurua)
+- Langileak: _____ (gutxi gorabeherako kopurua)
+- Beste bat: _____ (zehaztu: _______________)
 
-**Investigation:**
-[Summary of investigation findings]
+**Kaltetutako Norbanako Guztira:** _____
 
-**Remediation:**
-[List remediation actions with dates and responsible parties]
+**Datu Pertsonalen Kategoriak:**
+[Zerrendatu kaltetutako datu pertsonalen kategoria guztiak deskribapenekin]
 
----
-
-**FOLLOW-UP:**
-
-**Updates Provided to AEPD:** [ ] Yes [ ] No  
-Dates: _____
-
-**Updates Provided to Data Subjects:** [ ] Yes [ ] No  
-Dates: _____
-
-**Post-Incident Review Completed:** [ ] Yes [ ] No  
-Date: _____
-
-**Lessons Learned:**
-[Summary of key takeaways and improvements identified]
-
-**Policy/Procedure Updates:** [ ] Yes [ ] No  
-Description: _____
+**Kategoria Bereziko Datuak:** [ ] Bai [ ] Ez  
+Baiezkoa bada, zehaztu: _____
 
 ---
 
-**CLOSURE:**
+**ARRISKU EBALUAZIOA:**
 
-**Breach Closed:** [ ] Yes [ ] No  
-**Closure Date:** _____  
-**Closure Approved By:** _____________________ (DPO Signature)
+**Arrisku Maila:** [ ] Baxua [ ] Ertaina [ ] Handia
+
+**Norbanakoentzako Arriskua:**
+[Deskribatu interesdunentzako balizko eragina]
+
+**Kontuan Hartutako Faktoreak:**
+- Datu mota eta sentikortasuna: _____
+- Datu bolumena eta pertsona kopurua: _____
+- Identifikatzeko erraztasuna: _____
+- Ondorioen larritasuna: _____
+- Interesdunen ezaugarri bereziak: _____
+- Dauden segurtasun neurriak: _____
 
 ---
 
-## 8. AEPD Communication Log
+**JAKINARAZPEN ERABAKIAK:**
 
-### 8.1 Initial Notification
+**AEPD Jakinarazpena:** [ ] Beharrezkoa [ ] Ez Beharrezkoa  
+**Arrazoia:** _____
 
-**Date Submitted:** _____  
-**Submission Method:** [ ] Online Portal [ ] Email [ ] Mail  
-**AEPD Reference Number:** _____  
-**Submitted By:** _____
+**Beharrezkoa bada:**
+- Jakinarazpen Data: _____
+- 72 orduko epean: [ ] Bai [ ] Ez
+- Ez bada, atzerapenaren arrazoia: _____
+- AEPD Erreferentzia Zenbakia: _____
 
-### 8.2 Follow-up Communications
+**Interesdunen Jakinarazpena:** [ ] Beharrezkoa [ ] Ez Beharrezkoa  
+**Arrazoia:** _____
 
-| Date | Type | Content Summary | AEPD Response | Action Required |
-|------|------|-----------------|---------------|-----------------|
+**Beharrezkoa bada:**
+- Jakinarazpen Metodoa: [ ] Emaila [ ] Gutuna [ ] Telefonoa [ ] Komunikazio Publikoa
+- Jakinarazpen Data: _____
+- Jakinarazitako Pertsona Kopurua: _____
+
+---
+
+**HARTUTAKO EKINTZAK:**
+
+**Eustea:**
+[Zerrendatu berehalako euste ekintzak datekin]
+
+**Ikerketa:**
+[Ikerketa aurkikuntzen laburpena]
+
+**Konponketa:**
+[Zerrendatu konponketa ekintzak datekin eta alderdi arduradunekin]
+
+---
+
+**JARRAIPENA:**
+
+**Eguneraketak AEPDri Ematen:** [ ] Bai [ ] Ez  
+Datak: _____
+
+**Eguneraketak Interesdunei Ematen:** [ ] Bai [ ] Ez  
+Datak: _____
+
+**Intzidente Osteko Berrikuspena Osatua:** [ ] Bai [ ] Ez  
+Data: _____
+
+**Ikasitako Ikasgaiak:**
+[Gako ondorioen eta identifikatutako hobekuntzen laburpena]
+
+**Politika/Prozedura Eguneraketak:** [ ] Bai [ ] Ez  
+Deskribapena: _____
+
+---
+
+**ITXIERA:**
+
+**Urraketa Itxia:** [ ] Bai [ ] Ez  
+**Itxiera Data:** _____  
+**Itxiera Onartua:** _____________________ (DBO Sinadura)
+
+---
+
+## 8. AEPD Komunikazio Erregistroa
+
+### 8.1 Hasierako Jakinarazpena
+
+**Bidalketa Data:** _____  
+**Bidalketa Metodoa:** [ ] Online Ataria [ ] Emaila [ ] Posta  
+**AEPD Erreferentzia Zenbakia:** _____  
+**Nork Bidalita:** _____
+
+### 8.2 Jarraipen Komunikazioak
+
+| Data | Mota | Eduki Laburpena | AEPD Erantzuna | Beharrezko Ekintza |
+|------|------|-----------------|----------------|--------------------|
 | | | | | |
 | | | | | |
 
-### 8.3 AEPD Requests for Information
+### 8.3 AEPD Informazio Eskaerak
 
-| Date Received | Information Requested | Date Responded | Response Summary |
-|---------------|----------------------|----------------|------------------|
+| Jasotako Data | Eskatutako Informazioa | Erantzun Data | Erantzun Laburpena |
+|---------------|------------------------|---------------|--------------------|
 | | | | |
 | | | | |
 
-### 8.4 AEPD Decision/Outcome
+### 8.4 AEPD Erabakia/Emaitza
 
-**Investigation Outcome:** [ ] No Action [ ] Warning [ ] Corrective Measures [ ] Fine  
-**Date:** _____  
-**Details:** _____
+**Ikerketa Emaitza:** [ ] Ekintzarik Ez [ ] Abisua [ ] Neurri Zuzentzaileak [ ] Isuna  
+**Data:** _____  
+**Xehetasunak:** _____
 
-**Fine Amount (if applicable):** € _____  
-**Payment Status:** [ ] Paid [ ] Appealed [ ] Pending
-
----
-
-## 9. Data Subject Inquiry Log
-
-### 9.1 Inquiries Received
-
-| Date | Name | Contact | Question/Concern | Response | Resolved |
-|------|------|---------|------------------|----------|----------|
-| | | | | | [ ] Yes [ ] No |
-| | | | | | [ ] Yes [ ] No |
-
-### 9.2 Support Metrics
-
-**Total Inquiries Received:** _____  
-**Average Response Time:** _____  
-**Resolution Rate:** _____%  
-**Escalations:** _____
+**Isun Zenbatekoa (aplikagarria bada):** € _____  
+**Ordainketa Egoera:** [ ] Ordainduta [ ] Errekurritua [ ] Zain
 
 ---
 
-## 10. Lessons Learned and Corrective Actions
+## 9. Interesdunen Kontsulta Erregistroa
 
-### 10.1 Post-Incident Review Meeting
+### 9.1 Jasotako Kontsultak
 
-**Date:** _____  
-**Attendees:** DPO, CISO, CEO, IT Manager, Legal, [Others]
+| Data | Izena | Kontaktua | Galdera/Kezka | Erantzuna | Ebatzia |
+|------|-------|-----------|---------------|-----------|---------|
+| | | | | | [ ] Bai [ ] Ez |
+| | | | | | [ ] Bai [ ] Ez |
 
-### 10.2 Key Findings
+### 9.2 Laguntza Metrikak
 
-**What Went Well:**
+**Jasotako Kontsulta Guztira:** _____  
+**Batezbesteko Erantzun Denbora:** _____  
+**Ebazpen Tasa:** %_____  
+**Eskalazioak:** _____
+
+---
+
+## 10. Ikasitako Ikasgaiak eta Ekintza Zuzentzaileak
+
+### 10.1 Intzidente Osteko Berrikuspen Bilera
+
+**Data:** _____  
+**Bertaratuak:** DBO, CISO, CEO, IT Kudeatzailea, Legala, [Besteak]
+
+### 10.2 Funtsezko Aurkikuntzak
+
+**Zer joan zen ondo:**
 1. _____
 2. _____
 3. _____
 
-**What Needs Improvement:**
+**Zer hobetu behar da:**
 1. _____
 2. _____
 3. _____
 
-**Root Cause Analysis:**
-[Describe underlying causes of the breach]
+**Erroko Kausa Analisia:**
+[Deskribatu urraketaren azpiko kausak]
 
-### 10.3 Corrective Action Plan
+### 10.3 Ekintza Zuzentzaileen Plana
 
-| Action | Responsible | Target Date | Status | Completion Date |
-|--------|-------------|-------------|--------|-----------------|
-| | | | [ ] Pending [ ] In Progress [ ] Complete | |
-| | | | [ ] Pending [ ] In Progress [ ] Complete | |
-| | | | [ ] Pending [ ] In Progress [ ] Complete | |
-
----
-
-## 11. Training and Awareness
-
-### 11.1 Breach Response Training
-
-**All Employees:**
-- Annual GDPR training includes breach response procedures
-- Know how to report suspected breaches
-- Understand their role in containment
-
-**Breach Response Team:**
-- Detailed training on notification requirements
-- Practice drills (tabletop exercises)
-- Review of this template and procedures
-
-**Training Records:**
-- Date of last training: _____
-- Next training scheduled: _____
-- Attendance: _____%
-
-### 11.2 Awareness Campaign
-
-Following a breach, organization-wide awareness activities:
-- Email to all employees explaining what happened (appropriate detail level)
-- Reminder of security best practices
-- Lessons learned (anonymized if involving employee error)
-- Updated training materials
+| Ekintza | Arduraduna | Helburu Data | Egoera | Osatze Data |
+|---------|------------|--------------|--------|-------------|
+| | | | [ ] Zain [ ] Martxan [ ] Osatuta | |
+| | | | [ ] Zain [ ] Martxan [ ] Osatuta | |
+| | | | [ ] Zain [ ] Martxan [ ] Osatuta | |
 
 ---
 
-## 12. Related Documents
+## 11. Prestakuntza eta Kontzientziazioa
 
-- Information Security Policy (ISP-001)
-- Incident Response Procedure (IRP-001)
-- Data Subject Rights Procedures (DSR-001)
-- Privacy Notice (PN-001)
-- Data Protection Impact Assessment Template (DPIA-001)
-- Data Retention Schedule (DRS-001)
-- Asset Register (ASR-001)
-- Business Continuity Plan (BCP-001)
+### 11.1 Urraketa Erantzun Prestakuntza
+
+**Langile Guztiak:**
+- Urteroko GDPR prestakuntzak urraketa erantzun prozedurak barne hartzen ditu
+- Susmatutako urraketak nola jakinarazi jakin
+- Eustean duten rola ulertu
+
+**Urraketa Erantzun Taldea:**
+- Jakinarazpen baldintzei buruzko prestakuntza zehatza
+- Praktika simulazioak (tabletop ariketak)
+- Txantiloi eta prozedura honen berrikuspena
+
+**Prestakuntza Erregistroak:**
+- Azken prestakuntza data: _____
+- Programatutako hurrengo prestakuntza: _____
+- Bertaratzea: %_____
+
+### 11.2 Kontzientziazio Kanpaina
+
+Urraketa baten ondoren, erakunde osorako kontzientziazio jarduerak:
+- Langile guztiei emaila gertatutakoa azalduz (xehetasun maila egokiarekin)
+- Segurtasun jardunbide egokien oroigarria
+- Ikasitako ikasgaiak (anonimizatua langilearen akatsa inplikatzen badu)
+- Eguneratutako prestakuntza materialak
 
 ---
 
-## 13. Regulatory References
+## 12. Lotutako Dokumentuak
+
+- Informazioaren Segurtasun Politika (ISP-001)
+- Intzidente Erantzun Prozedura (IRP-001)
+- Datu Interesdunen Eskubideen Prozedurak (DSR-001)
+- Pribatutasun Oharra (PN-001)
+- Datuen Babesaren gaineko Eraginaren Ebaluazio Txantiloia (DPIA-001)
+- Datuen Atxikipen Egutegia (DRS-001)
+- Aktiboen Erregistroa (ASR-001)
+- Negozioaren Jarraitutasun Plana (BCP-001)
+
+---
+
+## 13. Arauzko Erreferentziak
 
 **GDPR:**
-- Article 4(12): Definition of personal data breach
-- Article 33: Notification of breach to supervisory authority
-- Article 34: Communication of breach to data subject
-- Article 83(4)(a): Fines for failure to notify breach (up to €10M or 2% global annual turnover)
-- Recitals 85-88: Additional context on breach notification
+- 4(12). artikulua: Datu pertsonalen urraketaren definizioa
+- 33. artikulua: Ikuskapen agintaritzari urraketaren jakinarazpena
+- 34. artikulua: Datuen interesdunari urraketaren komunikazioa
+- 83(4)(a). artikulua: Urraketa ez jakinarazteagatiko isunak (10M€ edo urteko fakturazio globalaren %2 arte)
+- 85-88. kontsiderandoak: Urraketa jakinarazpenari buruzko testuinguru gehigarria
 
-**LOPDGDD (Spanish Law):**
-- Article 33: Implementation of GDPR Article 33 in Spain
+**DBLO-GDD (Espainiako Legea):**
+- 33. artikulua: GDPR 33. artikuluaren inplementazioa Espainian
 
-**AEPD Guidelines:**
-- Guide on Security Breach Notification (available at www.aepd.es)
-- FAQs on breach notification
+**AEPD Jarraibideak:**
+- Segurtasun Urraketa Jakinarazpenari buruzko Gida (eskuragarri www.aepd.es webgunean)
+- Urraketa jakinarazpenari buruzko FAQak
 
-**WP29 Guidelines (now EDPB):**
-- Guidelines on Personal Data Breach Notification under Regulation 2016/679 (WP250)
+**WP29 Jarraibideak (orain EDPB):**
+- 2016/679 Erregelamenduaren araberako Datu Pertsonalen Urraketa Jakinarazpenari buruzko Gidalerroak (WP250)
 
 ---
 
-## 14. Contact Information
+## 14. Harremanetarako Informazioa
 
-**Data Protection Officer (DPO):**  
-Name: [DPO Name]  
-Email: dpo@zabalagailetak.com  
-Phone: +34 XXX XXX XXX
+**Datuen Babeserako Ordezkaria (DBO/DPO):**  
+Izena: [DBO Izena]  
+Emaila: dpo@zabalagailetak.com  
+Telefonoa: +34 XXX XXX XXX
 
 **CISO:**  
-Email: ciso@zabalagailetak.com  
-Phone: +34 XXX XXX XXX
+Emaila: ciso@zabalagailetak.com  
+Telefonoa: +34 XXX XXX XXX
 
-**Legal Counsel:**  
-Email: legal@zabalagailetak.com  
-Phone: +34 XXX XXX XXX
+**Aholkulari Juridikoa:**  
+Emaila: legal@zabalagailetak.com  
+Telefonoa: +34 XXX XXX XXX
 
-**AEPD (Spanish Data Protection Authority):**  
-Website: www.aepd.es  
-Breach Notification Portal: https://sedeagpd.gob.es  
-Phone: +34 901 100 099  
-Address: C/ Jorge Juan, 6, 28001 Madrid, Spain
-
----
-
-**END OF DATA BREACH NOTIFICATION TEMPLATE**
+**AEPD (Datuen Babeserako Espainiako Bulegoa):**  
+Webgunea: www.aepd.es  
+Urraketa Jakinarazpen Ataria: https://sedeagpd.gob.es  
+Telefonoa: +34 901 100 099  
+Helbidea: C/ Jorge Juan, 6, 28001 Madril, Espainia
 
 ---
 
-**Document Owner:** Data Protection Officer  
-**Last Reviewed:** January 8, 2026  
-**Next Review:** January 8, 2027
+**DATU-URRAKETA JAKINARAZPEN TXANTILOIAREN AMAIERA**
+
+---
+
+**Dokumentuaren Jabea:** Datuen Babeserako Ordezkaria  
+**Azken Berrikuspena:** 2026ko Urtarrilaren 8a  
+**Hurrengo Berrikuspena:** 2027ko Urtarrilaren 8a

@@ -3,23 +3,28 @@ const jwt = require('jsonwebtoken');
 const speakeasy = require('speakeasy');
 const QRCode = require('qrcode');
 
+// Erabiltzaileen biltegiratze sinplea (ekoizpenean datu-basea erabili beharko litzateke)
 const users = [];
 
+// JWT tokena sortzeko funtzioa
 const generateToken = (userId) => {
   return jwt.sign({ userId }, process.env.JWT_SECRET, {
     expiresIn: process.env.JWT_EXPIRES_IN || '1h'
   });
 };
 
+// Erabiltzailea erregistratzeko funtzioa
 const register = async (req, res) => {
   try {
     const { username, email, password } = req.body;
     
+    // Egiaztatu erabiltzailea jada existitzen den
     const existingUser = users.find(u => u.username === username || u.email === email);
     if (existingUser) {
       return res.status(400).json({ error: 'Erabiltzailea jada existitzen da' });
     }
 
+    // Pasahitza hash-eatu segurtasunerako
     const hashedPassword = await bcrypt.hash(password, 10);
     const user = {
       id: users.length + 1,
@@ -30,6 +35,7 @@ const register = async (req, res) => {
       mfaSecret: null
     };
 
+    // Erabiltzailea gorde eta tokena sortu
     users.push(user);
     const token = generateToken(user.id);
 
@@ -43,20 +49,24 @@ const register = async (req, res) => {
   }
 };
 
+// Saioa hasteko funtzioa
 const login = async (req, res) => {
   try {
     const { username, password } = req.body;
     
+    // Bilatu erabiltzailea
     const user = users.find(u => u.username === username);
     if (!user) {
       return res.status(401).json({ error: 'Erabiltzailea edo pasahitza okerra' });
     }
 
+    // Egiaztatu pasahitza
     const isValidPassword = await bcrypt.compare(password, user.password);
     if (!isValidPassword) {
       return res.status(401).json({ error: 'Erabiltzailea edo pasahitza okerra' });
     }
 
+    // MFA gaituta badago, kodea eskatu
     if (user.mfaEnabled) {
       return res.json({ 
         requiresMFA: true, 
@@ -65,6 +75,7 @@ const login = async (req, res) => {
       });
     }
 
+    // Tokena sortu eta itzuli
     const token = generateToken(user.id);
     res.json({ token, userId: user.id });
   } catch (error) {
@@ -72,6 +83,7 @@ const login = async (req, res) => {
   }
 };
 
+// MFA konfiguratzeko funtzioa
 const setupMFA = async (req, res) => {
   try {
     const { userId } = req;
@@ -85,6 +97,7 @@ const setupMFA = async (req, res) => {
       return res.status(400).json({ error: 'MFA jada gaituta dago' });
     }
 
+    // MFA sekretua sortu
     const secret = speakeasy.generateSecret({
       name: `ZabalaGailetak (${user.username})`,
       issuer: process.env.MFA_ISSUER || 'ZabalaGailetak'
@@ -92,6 +105,7 @@ const setupMFA = async (req, res) => {
 
     user.mfaSecret = secret.base32;
     
+    // QR kodea sortu erabiltzaileak eskaneatzeko
     const qrCodeUrl = await QRCode.toDataURL(secret.otpauth_url);
 
     res.json({
@@ -104,6 +118,7 @@ const setupMFA = async (req, res) => {
   }
 };
 
+// MFA egiaztatzeko funtzioa
 const verifyMFA = async (req, res) => {
   try {
     const { userId } = req;
@@ -114,6 +129,7 @@ const verifyMFA = async (req, res) => {
       return res.status(404).json({ error: 'MFA ez dago konfiguratuta' });
     }
 
+    // TOTP kodea egiaztatu
     const verified = speakeasy.totp.verify({
       secret: user.mfaSecret,
       encoding: 'base32',
@@ -121,6 +137,7 @@ const verifyMFA = async (req, res) => {
     });
 
     if (verified) {
+      // Lehen aldia bada, gaitu MFA
       if (!user.mfaEnabled) {
         user.mfaEnabled = true;
         return res.json({ 
@@ -129,6 +146,7 @@ const verifyMFA = async (req, res) => {
         });
       }
       
+      // Saio hasiera bada, tokena itzuli
       const authToken = generateToken(user.id);
       res.json({ token: authToken, message: 'MFA balidazioa arrakastatsua' });
     } else {
@@ -139,6 +157,7 @@ const verifyMFA = async (req, res) => {
   }
 };
 
+// MFA desgaitzeko funtzioa
 const disableMFA = async (req, res) => {
   try {
     const { userId } = req;
@@ -157,6 +176,7 @@ const disableMFA = async (req, res) => {
   }
 };
 
+// Autentifikazio middleware-a
 const authMiddleware = (req, res, next) => {
   const token = req.header('Authorization')?.replace('Bearer ', '');
   
@@ -165,6 +185,7 @@ const authMiddleware = (req, res, next) => {
   }
 
   try {
+    // Tokena egiaztatu
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
     req.userId = decoded.userId;
     next();

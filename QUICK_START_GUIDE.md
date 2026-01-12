@@ -1,39 +1,39 @@
-# Zabala Gailetak - Quick Start Guide
+# Zabala Gailetak - Hasierako Gida Azkarra
 
-**Get up and running in 15 minutes!**
-
----
-
-## 📋 Prerequisites Checklist
-
-Before you begin, ensure you have:
-
-- [ ] **Node.js** 18+ installed
-- [ ] **Docker** 20+ and Docker Compose 2.0+
-- [ ] **Git** installed
-- [ ] 4GB+ RAM available
-- [ ] 50GB+ disk space
-- [ ] Internet connection
+**Jarri martxan 15 minututan!**
 
 ---
 
-## 🚀 5-Minute Quick Start
+## 📋 Aurretiazko Baldintzen Zerrenda
 
-### 1. Clone Repository
+Hasi aurretik, ziurtatu hau daukazula:
+
+- [ ] **Node.js** 18+ instalatuta
+- [ ] **Docker** 20+ eta Docker Compose 2.0+
+- [ ] **Git** instalatuta
+- [ ] 4GB+ RAM eskuragarri
+- [ ] 50GB+ disko espazioa
+- [ ] Internet konexioa
+
+---
+
+## 🚀 5 Minutuko Hasiera Azkarra
+
+### 1. Errepositorioa Klonatu
 
 ```bash
 git clone <repository-url>
 cd erronkak
 ```
 
-### 2. Environment Setup
+### 2. Ingurunearen Konfigurazioa
 
 ```bash
 cd "Zabala Gailetak"
 cp .env.example .env
 ```
 
-Edit `.env` file with your settings:
+Editatu `.env` fitxategia zure ezarpenekin:
 
 ```env
 NODE_ENV=development
@@ -43,44 +43,44 @@ MONGODB_URI=mongodb://localhost:27017/zabala-gailetak
 ALLOWED_ORIGINS=http://localhost:3001,http://localhost:3000
 ```
 
-### 3. Start All Services
+### 3. Zerbitzu Guztiak Abiarazi
 
 ```bash
-# Build and start API, Database, Redis, Nginx
+# Eraiki eta abiarazi APIa, Datu-basea, Redis, Nginx
 docker-compose up -d
 
-# Check services are running
+# Egiaztatu zerbitzuak martxan daudela
 docker-compose ps
 ```
 
-### 4. Install Web App Dependencies
+### 4. Web Aplikazioaren Dependentziak Instalatu
 
 ```bash
 cd src/web/app
 npm install
 ```
 
-### 5. Start Applications
+### 5. Aplikazioak Abiarazi
 
-**Terminal 1 - API:**
+**1. Terminala - API:**
 ```bash
 cd "Zabala Gailetak"
 npm run dev
 ```
 
-**Terminal 2 - Web App:**
+**2. Terminala - Web App:**
 ```bash
 cd "Zabala Gailetak/src/web/app"
 npm start
 ```
 
-**Terminal 3 - Mobile App (Optional):**
+**3. Terminala - Mobile App (Aukerakoa):**
 ```bash
 cd "Zabala Gailetak/src/mobile"
 npm start
 ```
 
-### 6. Access Applications
+### 6. Aplikazioetara Sartu
 
 - **API:** http://localhost:3000
 - **Web App:** http://localhost:3001
@@ -89,52 +89,52 @@ npm start
 
 ---
 
-## 📱 Application Access
+## 📱 Aplikazioaren Sarbidea
 
-### Web Application
+### Web Aplikazioa
 
 **URL:** http://localhost:3001
 
-**Features:**
-- Login with username/password
-- MFA verification
-- Product catalog
-- Order placement
-- User dashboard
+**Ezaugarriak:**
+- Saio-hasiera erabiltzaile/pasahitzarekin
+- MFA egiaztapena
+- Produktuen katalogoa
+- Eskaerak egitea
+- Erabiltzailearen panela
 
-### Mobile Application
+### Mobile Aplikazioa
 
-**Setup (Android):**
+**Konfigurazioa (Android):**
 ```bash
 cd "Zabala Gailetak/src/mobile"
 npm install
 npm run android
 ```
 
-**Setup (iOS - macOS only):**
+**Konfigurazioa (iOS - macOS bakarrik):**
 ```bash
 cd "Zabala Gailetak/src/mobile"
 cd ios && pod install && cd ..
 npm run ios
 ```
 
-### API Endpoints
+### API Endpoint-ak
 
-**Base URL:** http://localhost:3000/api
+**Oinarrizko URL:** http://localhost:3000/api
 
-**Available Endpoints:**
-- `POST /auth/register` - Register user
-- `POST /auth/login` - Login
-- `POST /auth/mfa/verify` - Verify MFA
-- `GET /products` - Get products
-- `POST /orders` - Create order
-- `GET /health` - Health check
+**Eskuragarri dauden Endpoint-ak:**
+- `POST /auth/register` - Erabiltzailea erregistratu
+- `POST /auth/login` - Saioa hasi
+- `POST /auth/mfa/verify` - MFA egiaztatu
+- `GET /products` - Produktuak lortu
+- `POST /orders` - Eskaera sortu
+- `GET /health` - Osasun egiaztapena
 
 ---
 
-## 🔐 First Login
+## 🔐 Lehen Saio-hasiera
 
-### 1. Register New User
+### 1. Erabiltzaile Berria Erregistratu
 
 ```bash
 curl -X POST http://localhost:3000/api/auth/register \
@@ -146,7 +146,7 @@ curl -X POST http://localhost:3000/api/auth/register \
   }'
 ```
 
-**Response:**
+**Erantzuna:**
 ```json
 {
   "message": "Erabiltzailea ondo sortu da",
@@ -155,21 +155,21 @@ curl -X POST http://localhost:3000/api/auth/register \
 }
 ```
 
-### 2. Setup MFA (Optional)
+### 2. MFA Konfiguratu (Aukerakoa)
 
-**Via Web App:**
-1. Login to web app
-2. Go to Dashboard
-3. Click "MFA Gaitu"
-4. Scan QR code with Google Authenticator
+**Web App bidez:**
+1. Hasi saioa web aplikazioan
+2. Joan Panelera (Dashboard)
+3. Klikatu "MFA Gaitu" botoian
+4. Eskaneatu QR kodea Google Authenticator-ekin
 
-**Via API:**
+**API bidez:**
 ```bash
 curl -X POST http://localhost:3000/api/auth/mfa/setup \
   -H "Authorization: Bearer YOUR_TOKEN"
 ```
 
-### 3. Create Test Order
+### 3. Probako Eskaera Sortu
 
 ```bash
 curl -X POST http://localhost:3000/api/orders \
@@ -185,89 +185,89 @@ curl -X POST http://localhost:3000/api/orders \
 
 ---
 
-## 🛠️ Development Tools
+## 🛠️ Garapen Tresnak
 
-### API Development
+### API Garapena
 
 ```bash
 cd "Zabala Gailetak"
 
-# Start with auto-reload
+# Abiarazi auto-reload-ekin
 npm run dev
 
-# Run tests
+# Probak exekutatu
 npm test
 
-# Run tests in watch mode
+# Probak watch moduan exekutatu
 npm run test:watch
 
-# Lint code
+# Kodea aztertu (Lint)
 npm run lint
 
-# Security audit
+# Segurtasun auditoria
 npm run audit
 ```
 
-### Web App Development
+### Web App Garapena
 
 ```bash
 cd "Zabala Gailetak/src/web/app"
 
-# Start development server
+# Garapen zerbitzaria abiarazi
 npm start
 
-# Build for production
+# Produkziorako eraiki
 npm run build
 
-# Lint code
+# Kodea aztertu (Lint)
 npm run lint
 ```
 
-### Mobile App Development
+### Mobile App Garapena
 
 ```bash
 cd "Zabala Gailetak/src/mobile"
 
-# Run on Android
+# Android-en exekutatu
 npm run android
 
-# Run on iOS (macOS only)
+# iOS-en exekutatu (macOS bakarrik)
 npm run ios
 
-# Run tests
+# Probak exekutatu
 npm test
 ```
 
-### Docker Operations
+### Docker Eragiketak
 
 ```bash
-# Start all services
+# Zerbitzu guztiak abiarazi
 docker-compose up -d
 
-# Stop all services
+# Zerbitzu guztiak gelditu
 docker-compose down
 
-# View logs
+# Log-ak ikusi
 docker-compose logs -f
 
-# Restart services
+# Zerbitzuak berrabiarazi
 docker-compose restart
 
-# Rebuild services
+# Zerbitzuak berriro eraiki
 docker-compose build
 ```
 
 ---
 
-## 📊 Monitoring
+## 📊 Monitorizazioa
 
-### API Health Check
+### API Osasun Egiaztapena
 
 ```bash
 curl http://localhost:3000/api/health
 ```
 
-**Expected Response:**
+**Espero den Erantzuna:**
 ```json
 {
   "status": "healthy",
@@ -275,272 +275,272 @@ curl http://localhost:3000/api/health
 }
 ```
 
-### Database Status
+### Datu-basearen Egoera
 
 ```bash
-# Check MongoDB
+# Egiaztatu MongoDB
 docker exec -it zabala-gailetak-mongodb mongosh
 
-# In MongoDB shell
+# MongoDB shell-ean
 db.adminCommand("ping")
 ```
 
-### Redis Status
+### Redis Egoera
 
 ```bash
-# Check Redis
+# Egiaztatu Redis
 docker exec -it zabala-gailetak-redis redis-cli ping
 
-# Expected: PONG
+# Espero: PONG
 ```
 
 ### SIEM (Kibana)
 
 **URL:** http://localhost:5601
 
-**Login:**
-- Username: `elastic`
-- Password: Check `.env` file
+**Saioa:**
+- Erabiltzailea: `elastic`
+- Pasahitza: Egiaztatu `.env` fitxategia
 
 ---
 
-## 🧪 Testing
+## 🧪 Probak (Testing)
 
-### Run All Tests
+### Proba Guztiak Exekutatu
 
 ```bash
 cd "Zabala Gailetak"
 
-# API tests
+# API probak
 npm test
 
-# With coverage
+# Estaldurarekin (coverage)
 npm test -- --coverage
 ```
 
-### Test Coverage Report
+### Proba Estaldura Txostena
 
 ```bash
-# Generate coverage report
+# Estaldura txostena sortu
 npm test -- --coverage
 
-# View report
+# Txostena ikusi
 open coverage/lcov-report/index.html
 ```
 
-### Manual Testing
+### Eskuzko Probak
 
-**Test API:**
+**API Probatu:**
 ```bash
-# Get products
+# Produktuak lortu
 curl http://localhost:3000/api/products
 
-# Login
+# Saioa hasi
 curl -X POST http://localhost:3000/api/auth/login \
   -H "Content-Type: application/json" \
   -d '{"username":"admin","password":"Admin123!"}'
 ```
 
-**Test Web App:**
-1. Navigate to http://localhost:3001
-2. Login with credentials
-3. Browse products
-4. Create order
-5. Check dashboard
+**Web App Probatu:**
+1. Joan http://localhost:3001 helbidera
+2. Hasi saioa kredentzialekin
+3. Arakatu produktuak
+4. Sortu eskaera
+5. Egiaztatu panela
 
 ---
 
-## 🔧 Troubleshooting
+## 🔧 Arazoen Konponketa
 
-### Common Issues
+### Ohiko Arazoak
 
-#### Issue 1: Port Already in Use
+#### 1. Arazoa: Portua Erabiltzen ari da
 
-**Error:** `Error: listen EADDRINUSE: address already in use :::3000`
+**Errorea:** `Error: listen EADDRINUSE: address already in use :::3000`
 
-**Solution:**
+**Konponbidea:**
 ```bash
-# Find process using port 3000
+# Bilatu 3000 portua erabiltzen duen prozesua
 lsof -i :3000
 
-# Kill process
+# Hil prozesua
 kill -9 <PID>
 
-# Or change port in .env
+# Edo aldatu portua .env fitxategian
 PORT=3001
 ```
 
-#### Issue 2: MongoDB Connection Failed
+#### 2. Arazoa: MongoDB Konexioak Huts egin du
 
-**Error:** `MongoNetworkError: failed to connect to server`
+**Errorea:** `MongoNetworkError: failed to connect to server`
 
-**Solution:**
+**Konponbidea:**
 ```bash
-# Check MongoDB is running
+# Egiaztatu MongoDB martxan dagoela
 docker-compose ps
 
-# Restart MongoDB
+# Berrabiarazi MongoDB
 docker-compose restart mongodb
 
-# Check logs
+# Egiaztatu log-ak
 docker-compose logs mongodb
 ```
 
-#### Issue 3: Docker Build Fails
+#### 3. Arazoa: Docker Build-ek Huts egiten du
 
-**Error:** Build fails with dependency errors
+**Errorea:** Build-ak huts egiten du dependentzia erroreekin
 
-**Solution:**
+**Konponbidea:**
 ```bash
-# Clear Docker cache
+# Garbitu Docker cache-a
 docker system prune -a
 
-# Rebuild without cache
+# Berriro eraiki cache gabe
 docker-compose build --no-cache
 
-# Pull fresh images
+# Irudi berriak jaitsi
 docker-compose pull
 ```
 
-#### Issue 4: Web App Won't Start
+#### 4. Arazoa: Web App-a ez da Abiarazten
 
-**Error:** `Module not found` or similar
+**Errorea:** `Module not found` edo antzekoa
 
-**Solution:**
+**Konponbidea:**
 ```bash
 cd "Zabala Gailetak/src/web/app"
 
-# Clear node_modules
+# Garbitu node_modules
 rm -rf node_modules package-lock.json
 
-# Reinstall
+# Berriro instalatu
 npm install
 
-# Clear cache
+# Garbitu cache-a
 npm start -- --reset-cache
 ```
 
-### Getting Help
+### Laguntza Lortzea
 
-1. **Check Logs:**
+1. **Egiaztatu Log-ak:**
    ```bash
    docker-compose logs -f
    ```
 
-2. **Verify Services:**
+2. **Egiaztatu Zerbitzuak:**
    ```bash
    docker-compose ps
    ```
 
-3. **Check Documentation:**
-   - `PROJECT_DOCUMENTATION.md` - Complete documentation
-   - `API_DOCUMENTATION.md` - API reference
-   - `WEB_APP_GUIDE.md` - Web app guide
-   - `MOBILE_APP_GUIDE.md` - Mobile app guide
+3. **Egiaztatu Dokumentazioa:**
+   - `PROJECT_DOCUMENTATION.md` - Dokumentazio osoa
+   - `API_DOCUMENTATION.md` - API erreferentzia
+   - `WEB_APP_GUIDE.md` - Web app gida
+   - `MOBILE_APP_GUIDE.md` - Mobile app gida
 
-4. **Review SOPs:**
-   - Check security SOPs in `security/` directory
-   - Review deployment SOPs
+4. **Berrikusi SOP-ak:**
+   - Egiaztatu segurtasun SOP-ak `security/` direktorioan
+   - Berrikusi deployment SOP-ak
 
 ---
 
-## 📚 Next Steps
+## 📚 Hurrengo Urratsak
 
-### Learn More
+### Ikasi Gehiago
 
-1. **Read Documentation:**
-   - Start with `PROJECT_DOCUMENTATION.md`
-   - Review `API_DOCUMENTATION.md`
-   - Check app-specific guides
+1. **Irakurri Dokumentazioa:**
+   - Hasi `PROJECT_DOCUMENTATION.md` irakurtzen
+   - Berrikusi `API_DOCUMENTATION.md`
+   - Egiaztatu aplikazioen gidak
 
-2. **Explore Features:**
-   - Test MFA setup
-   - Create sample orders
-   - Review SIEM dashboard
-   - Test security features
+2. **Arakatu Ezaugarriak:**
+   - Probatu MFA konfigurazioa
+   - Sortu probako eskaerak
+   - Berrikusi SIEM panela
+   - Probatu segurtasun ezaugarriak
 
-3. **Customize:**
-   - Modify products
-   - Adjust security settings
-   - Configure rate limits
-   - Set up CI/CD
+3. **Pertsonalizatu:**
+   - Aldatu produktuak
+   - Doitu segurtasun ezarpenak
+   - Konfiguratu rate limits
+   - Ezarri CI/CD
 
-### Development Workflow
+### Garapen Lan-fluxua
 
 ```bash
-# 1. Create feature branch
-git checkout -b feature/my-feature
+# 1. Sortu feature adarra
+git checkout -b feature/nire-ezaugarria
 
-# 2. Make changes
-# Edit files...
+# 2. Aldaketak egin
+# Editatu fitxategiak...
 
-# 3. Test changes
+# 3. Probatu aldaketak
 npm test
 
-# 4. Commit changes
+# 4. Commit egin
 git add .
-git commit -m "feat: add my feature"
+git commit -m "feat: gehitu nire ezaugarria"
 
-# 5. Push to remote
-git push origin feature/my-feature
+# 5. Push egin remotera
+git push origin feature/nire-ezaugarria
 
-# 6. Create Pull Request
-# CI/CD will run automatically
+# 6. Sortu Pull Request-a
+# CI/CD automatikoki exekutatuko da
 ```
 
 ---
 
-## 🎯 Configuration Checklist
+## 🎯 Konfigurazio Zerrenda
 
-After initial setup, configure these for production:
+Hasierako konfigurazioaren ondoren, konfiguratu hauek produkziorako:
 
-### Security
+### Segurtasuna
 
-- [ ] Change JWT_SECRET
-- [ ] Update MONGODB_URI
-- [ ] Configure ALLOWED_ORIGINS
-- [ ] Setup SSL/TLS certificates
-- [ ] Enable MFA for all users
-- [ ] Configure rate limits
-- [ ] Setup SIEM alerts
+- [ ] Aldatu JWT_SECRET
+- [ ] Eguneratu MONGODB_URI
+- [ ] Konfiguratu ALLOWED_ORIGINS
+- [ ] Ezarri SSL/TLS ziurtagiriak
+- [ ] Gaitu MFA erabiltzaile guztientzat
+- [ ] Konfiguratu rate limits
+- [ ] Ezarri SIEM alertak
 
-### Performance
+### Errendimendua
 
-- [ ] Configure Redis caching
-- [ ] Setup CDN for static assets
-- [ ] Enable compression
-- [ ] Configure load balancing
-- [ ] Setup database indexes
+- [ ] Konfiguratu Redis caching-a
+- [ ] Ezarri CDN aktibo estatikoetarako
+- [ ] Gaitu konpresioa
+- [ ] Konfiguratu load balancing
+- [ ] Ezarri datu-basearen indizeak
 
-### Monitoring
+### Monitorizazioa
 
-- [ ] Configure health checks
-- [ ] Setup log aggregation
-- [ ] Configure alerts
-- [ ] Setup uptime monitoring
-- [ ] Configure backup notifications
+- [ ] Konfiguratu osasun egiaztapenak
+- [ ] Ezarri log agregazioa
+- [ ] Konfiguratu alertak
+- [ ] Ezarri uptime monitorizazioa
+- [ ] Konfiguratu backup jakinarazpenak
 
 ---
 
-## 📞 Support
+## 📞 Laguntza
 
-### Documentation
+### Dokumentazioa
 
-- **Project Docs:** `PROJECT_DOCUMENTATION.md`
-- **API Docs:** `API_DOCUMENTATION.md`
+- **Proiektuaren Dok:** `PROJECT_DOCUMENTATION.md`
+- **API Dok:** `API_DOCUMENTATION.md`
 - **Web App:** `WEB_APP_GUIDE.md`
 - **Mobile App:** `MOBILE_APP_GUIDE.md`
 - **Deployment:** `IMPLEMENTATION_SUMMARY.md`
 
-### SOPs
+### SOP-ak
 
-- **Web Security:** `security/web_hardening_sop.md`
-- **Mobile Security:** `security/mobile_security_sop.md`
-- **Network:** `infrastructure/network/network_segmentation_sop.md`
+- **Web Segurtasuna:** `security/web_hardening_sop.md`
+- **Mobile Segurtasuna:** `security/mobile_security_sop.md`
+- **Sarea:** `infrastructure/network/network_segmentation_sop.md`
 - **Honeypot:** `security/honeypot/honeypot_implementation_sop.md`
-- **Incident Response:** `security/incidents/sop_incident_response.md`
+- **Intzidenteen Erantzuna:** `security/incidents/sop_incident_response.md`
 
-### External Resources
+### Kanpo Baliabideak
 
 - **React Native:** https://reactnative.dev
 - **React:** https://react.dev
@@ -550,39 +550,39 @@ After initial setup, configure these for production:
 
 ---
 
-## ✅ Verification Checklist
+## ✅ Egiaztapen Zerrenda
 
-After setup, verify:
+Konfigurazioaren ondoren, egiaztatu:
 
-- [ ] API running on http://localhost:3000
-- [ ] Web app running on http://localhost:3001
-- [ ] MongoDB running and accessible
-- [ ] Redis running and accessible
-- [ ] Can register new user
-- [ ] Can login with credentials
-- [ ] Can view products
-- [ ] Can create order
-- [ ] API health check returns 200
-- [ ] Docker services all up
-- [ ] Kibana accessible at http://localhost:5601
-
----
-
-## 🚀 Ready to Go!
-
-You now have a fully functional Zabala Gailetak cybersecurity system running locally!
-
-**What's Next?**
-1. Explore the web app and mobile app
-2. Test the security features
-3. Review the SIEM dashboard
-4. Read the full documentation
-5. Start customizing for your needs
-
-**Happy Developing!** 🎉
+- [ ] API martxan dagoela http://localhost:3000 helbidean
+- [ ] Web app martxan dagoela http://localhost:3001 helbidean
+- [ ] MongoDB martxan eta eskuragarri
+- [ ] Redis martxan eta eskuragarri
+- [ ] Erabiltzaile berria erregistratu daitekeela
+- [ ] Kredentzialekin saioa hasi daitekeela
+- [ ] Produktuak ikusi daitezkeela
+- [ ] Eskaera sortu daitekeela
+- [ ] API health check-ek 200 itzultzen duela
+- [ ] Docker zerbitzu guztiak martxan daudela
+- [ ] Kibana eskuragarri http://localhost:5601 helbidean
 
 ---
 
-**Quick Start Guide Version:** 1.0  
-**Last Updated:** 2024-01-08  
-**For:** Zabala Gailetak Project Team
+## 🚀 Prest!
+
+Orain Zabala Gailetak zibersegurtasun sistema guztiz funtzionala duzu martxan lokalean!
+
+**Zer da Hurrengoa?**
+1. Arakatu web app-a eta mobile app-a
+2. Probatu segurtasun ezaugarriak
+3. Berrikusi SIEM panela
+4. Irakurri dokumentazio osoa
+5. Hasi zure beharretara egokitzen
+
+**Garapen On!** 🎉
+
+---
+
+**Gida Azkarraren Bertsioa:** 1.0  
+**Azken Eguneratzea:** 2024-01-08  
+**Norentzat:** Zabala Gailetak Proiektu Taldea

@@ -143,7 +143,7 @@ const Products = () => {
       const data = await getProducts();
       setProducts(data);
     } catch (err) {
-      setError('Produktuak lortzea errorea');
+      setError('Produktuak lortzean errorea gertatu da');
     } finally {
       setLoading(false);
     }

@@ -1,665 +1,665 @@
-# Information Security Policy
+# Informazioaren Segurtasun Politika
 ## Zabala Gailetak S.A.
 
-**Document ID:** ISP-001  
-**Version:** 1.0  
-**Date:** January 8, 2026  
-**Classification:** Internal Use  
-**Owner:** Chief Information Security Officer (CISO)  
-**Review Frequency:** Annual  
-**Next Review Date:** January 8, 2027
+**Dokumentuaren IDa:** ISP-001  
+**Bertsioa:** 1.0  
+**Data:** 2026ko Urtarrilaren 8a  
+**Sailkapena:** Barne Erabilera  
+**Jabea:** Informazioaren Segurtasuneko Arduradun Nagusia (CISO)  
+**Berrikuspen Maiztasuna:** Urterokoa  
+**Hurrengo Berrikuspen Data:** 2027ko Urtarrilaren 8a
 
 ---
 
-## 1. Document Control
+## 1. Dokumentuaren Kontrola
 
-### 1.1 Version History
+### 1.1 Bertsio Historia
 
-| Version | Date | Author | Changes |
+| Bertsioa | Data | Egilea | Aldaketak |
 |---------|------|--------|---------|
-| 1.0 | 2026-01-08 | CISO | Initial policy creation |
+| 1.0 | 2026-01-08 | CISO | Hasierako politikaren sorrera |
 
-### 1.2 Approval
+### 1.2 Onarpena
 
-| Role | Name | Signature | Date |
+| Rola | Izena | Sinadura | Data |
 |------|------|-----------|------|
-| Chief Executive Officer | [Name] | | |
-| Chief Information Security Officer | [Name] | | |
-| Legal Counsel | [Name] | | |
+| Zuzendari Nagusia (CEO) | [Izena] | | |
+| Informazioaren Segurtasuneko Arduradun Nagusia (CISO) | [Izena] | | |
+| Aholkulari Juridikoa | [Izena] | | |
 
-### 1.3 Distribution
+### 1.3 Banaketa
 
-This policy is distributed to:
-- All employees (permanent and temporary)
-- Contractors and consultants
-- Third-party service providers with system access
-- Board of Directors (executive summary)
-
----
-
-## 2. Purpose and Scope
-
-### 2.1 Purpose
-
-This Information Security Policy establishes the framework for protecting Zabala Gailetak's information assets, including IT systems, operational technology (OT), business data, customer information, and intellectual property. It ensures compliance with ISO/IEC 27001:2022, GDPR, and relevant Spanish legislation (LOPDGDD).
-
-### 2.2 Scope
-
-This policy applies to:
-- All information assets owned or controlled by Zabala Gailetak
-- All employees, contractors, consultants, and third parties accessing company information
-- All IT systems (web applications, databases, cloud services)
-- All OT systems (PLCs, SCADA, manufacturing equipment)
-- Physical facilities and paper-based information
-- Remote work environments and BYOD (Bring Your Own Device) scenarios
-
-### 2.3 Exclusions
-
-This policy does not cover:
-- Personal information systems not used for business purposes
-- Information systems owned by third parties where Zabala Gailetak is a client (covered under separate agreements)
+Politika hau honako hauei banatzen zaie:
+- Langile guztiak (egonkorrak eta aldi baterakoak)
+- Kontratistak eta aholkulariak
+- Sistemarako sarbidea duten hirugarrenen zerbitzu hornitzaileak
+- Administrazio Kontseilua (laburpen exekutiboa)
 
 ---
 
-## 3. Policy Statement
+## 2. Helburua eta Esparrua
 
-Zabala Gailetak is committed to protecting the confidentiality, integrity, and availability of its information assets. Information security is a business enabler, not a barrier, and is essential for maintaining customer trust, regulatory compliance, and competitive advantage in the cookie manufacturing industry.
+### 2.1 Helburua
 
-### 3.1 Management Commitment
+Informazioaren Segurtasun Politika honek Zabala Gailetak-en informazio-aktiboak babesteko esparrua ezartzen du, IT sistemak, teknologia operatiboa (OT), negozio-datuak, bezeroen informazioa eta jabetza intelektuala barne. ISO/IEC 27001:2022, GDPR eta Espainiako legedi garrantzitsua (DBLO-GDD) betetzen dela ziurtatzen du.
 
-The Executive Management commits to:
-- Provide adequate resources for information security
-- Ensure compliance with legal and regulatory requirements
-- Foster a security-aware culture throughout the organization
-- Regularly review and improve the Information Security Management System (ISMS)
-- Lead by example in following security policies and procedures
+### 2.2 Esparrua
 
-### 3.2 Information Security Objectives
+Politika hau honako hauei aplikatzen zaie:
+- Zabala Gailetak-en jabetzakoak edo kontrolpekoak diren informazio-aktibo guztiak
+- Konpainiaren informaziora sartzen diren langile, kontratista, aholkulari eta hirugarren guztiak
+- IT sistema guztiak (web aplikazioak, datu-baseak, hodeiko zerbitzuak)
+- OT sistema guztiak (PLCak, SCADA, fabrikazio-ekipamendua)
+- Instalazio fisikoak eta paperezko informazioa
+- Urruneko lan-inguruneak eta BYOD (Bring Your Own Device) eszenatokiak
 
-1. **Confidentiality:** Protect sensitive information from unauthorized disclosure
-2. **Integrity:** Ensure accuracy and completeness of information and systems
-3. **Availability:** Ensure authorized access to information when needed (99.5% uptime target)
-4. **Compliance:** Meet all legal, regulatory, and contractual obligations
-5. **Resilience:** Maintain business operations during and after security incidents
-6. **Continuous Improvement:** Regularly assess and enhance security posture
+### 2.3 Salbuespenak
 
----
-
-## 4. Roles and Responsibilities
-
-### 4.1 Chief Executive Officer (CEO)
-
-- Ultimate responsibility for information security
-- Approve information security policy and budget
-- Ensure business continuity and disaster recovery plans
-- Report security matters to the Board of Directors
-
-### 4.2 Chief Information Security Officer (CISO)
-
-- Develop, implement, and maintain the ISMS
-- Conduct risk assessments and security audits
-- Manage security incidents and coordinate response
-- Provide security awareness training
-- Report security metrics to executive management
-- Liaise with regulatory authorities and external auditors
-
-### 4.3 IT Manager
-
-- Implement technical security controls
-- Manage access control and authentication systems
-- Maintain system patches and updates
-- Perform regular backups and recovery testing
-- Monitor system logs and security events
-
-### 4.4 OT/Production Manager
-
-- Secure industrial control systems (PLCs, SCADA)
-- Implement network segmentation between IT and OT
-- Manage physical access to production areas
-- Coordinate OT security with IT security teams
-- Ensure safety and security in manufacturing processes
-
-### 4.5 Data Protection Officer (DPO)
-
-- Ensure GDPR compliance
-- Handle data subject rights requests
-- Maintain records of processing activities (ROPA)
-- Conduct Data Protection Impact Assessments (DPIA)
-- Report data breaches to AEPD (Spanish Data Protection Authority)
-
-### 4.6 Department Managers
-
-- Ensure employees follow security policies
-- Identify and classify departmental information assets
-- Report security incidents immediately
-- Participate in business continuity planning
-- Approve access requests for their team members
-
-### 4.7 All Employees
-
-- Comply with all information security policies and procedures
-- Complete mandatory security awareness training
-- Report security incidents and vulnerabilities
-- Protect passwords and authentication credentials
-- Use information assets only for authorized business purposes
-- Sign and adhere to the Acceptable Use Policy
-
-### 4.8 Third Parties and Contractors
-
-- Sign confidentiality agreements (NDA)
-- Comply with Zabala Gailetak security policies
-- Undergo security vetting before system access
-- Report any security concerns during engagement
-- Return all information assets upon contract termination
+Politika honek ez ditu estaltzen:
+- Negozio helburuetarako erabiltzen ez diren informazio pertsonaleko sistemak
+- Hirugarrenen jabetzakoak diren informazio-sistemak, non Zabala Gailetak bezeroa den (akordio bereizien pean estalita)
 
 ---
 
-## 5. Information Security Framework
+## 3. Politika Adierazpena
 
-### 5.1 Information Security Management System (ISMS)
+Zabala Gailetak konprometituta dago bere informazio-aktiboen konfidentzialtasuna, osotasuna eta eskuragarritasuna babestera. Informazioaren segurtasuna negozioaren erraztailea da, ez oztopo bat, eta ezinbestekoa da bezeroen konfiantza, araudiaren betetzea eta gaileta-fabrikazioaren industrian abantaila lehiakorra mantentzeko.
 
-Zabala Gailetak operates an ISMS based on ISO/IEC 27001:2022, implementing the Plan-Do-Check-Act (PDCA) cycle:
+### 3.1 Zuzendaritzaren Konpromisoa
 
-- **Plan:** Risk assessment, security objectives, treatment plans
-- **Do:** Implement controls, policies, procedures, training
-- **Check:** Internal audits, monitoring, metrics, management review
-- **Act:** Corrective actions, continuous improvement, lessons learned
+Zuzendaritza Exekutiboak honako konpromisoak hartzen ditu:
+- Informazioaren segurtasunerako baliabide egokiak eskaintzea
+- Lege eta arauzko baldintzak betetzen direla ziurtatzea
+- Erakunde osoan segurtasunaren inguruko kultura sustatzea
+- Informazioaren Segurtasuna Kudeatzeko Sistema (ISMS) aldizka berrikusi eta hobetzea
+- Segurtasun politika eta prozedurak jarraituz eredua ematea
 
-### 5.2 Risk Management
+### 3.2 Informazioaren Segurtasun Helburuak
 
-Risk assessment is conducted annually or when significant changes occur:
-
-1. **Asset Identification:** Inventory of information assets (see Asset Register)
-2. **Threat Assessment:** Identify potential threats (cyberattacks, natural disasters, human error)
-3. **Vulnerability Analysis:** Assess weaknesses in systems and processes
-4. **Risk Evaluation:** Calculate risk level (Likelihood × Impact)
-5. **Risk Treatment:** Accept, mitigate, transfer, or avoid risks
-6. **Residual Risk:** Document and approve remaining risks
-
-**Risk Appetite:** Zabala Gailetak accepts low and medium risks with appropriate controls. High risks require executive approval and mitigation plans.
-
-### 5.3 Security Controls
-
-Security controls are selected from ISO/IEC 27001:2022 Annex A (see Statement of Applicability). Controls are categorized as:
-
-- **Preventive:** Stop security incidents before they occur (firewalls, access control)
-- **Detective:** Identify security incidents when they occur (SIEM, IDS, audits)
-- **Corrective:** Minimize impact and recover from incidents (backups, incident response)
+1. **Konfidentzialtasuna:** Informazio sentikorra baimenik gabeko zabalkundetik babestea
+2. **Osotasuna:** Informazioaren eta sistemen zehaztasuna eta osotasuna ziurtatzea
+3. **Eskuragarritasuna:** Behar denean informaziorako baimendutako sarbidea ziurtatzea (%99.5eko uptime helburua)
+4. **Betetzea:** Lege, arauzko eta kontratuzko betebehar guztiak betetzea
+5. **Erresilientzia:** Negozio-eragiketak mantentzea segurtasun-intzidentzien bitartean eta ondoren
+6. **Etengabeko Hobekuntza:** Segurtasun-jarrera aldizka ebaluatu eta hobetzea
 
 ---
 
-## 6. Key Security Policies
+## 4. Rolak eta Erantzukizunak
 
-This overarching Information Security Policy is supported by specific policies and procedures:
+### 4.1 Zuzendari Nagusia (CEO)
 
-### 6.1 Access Control Policy
+- Informazioaren segurtasunaren azken erantzulea
+- Informazioaren segurtasun politika eta aurrekontua onartzea
+- Negozioaren jarraitutasuna eta hondamendien berreskuratze planak ziurtatzea
+- Segurtasun gaien berri ematea Administrazio Kontseiluari
 
-- **Principle of Least Privilege:** Users receive minimum access needed for job functions
-- **Segregation of Duties:** Critical functions require multiple persons
-- **User Account Management:** Provisioning, modification, deprovisioning procedures
-- **Password Policy:** See dedicated Password Policy document
-- **Multi-Factor Authentication (MFA):** Required for remote access and privileged accounts
-- **Access Review:** Quarterly review of user access rights
+### 4.2 Informazioaren Segurtasuneko Arduradun Nagusia (CISO)
 
-### 6.2 Acceptable Use Policy
+- ISMSa garatu, ezarri eta mantentzea
+- Arriskuen ebaluazioak eta segurtasun-auditoriak egitea
+- Segurtasun-intzidentziak kudeatu eta erantzuna koordinatzea
+- Segurtasun-kontzientziazio prestakuntza ematea
+- Segurtasun-metrikak zuzendaritza exekutiboari jakinaraztea
+- Arau-agintariekin eta kanpo-auditroeekin harremanetan jartzea
 
-- See dedicated Acceptable Use Policy document
-- Covers proper use of IT resources, email, internet, and mobile devices
-- Prohibits unauthorized software, illegal activities, and personal use beyond reasonable limits
+### 4.3 IT Arduraduna
 
-### 6.3 Data Classification and Handling
+- Segurtasun kontrol teknikoak ezartzea
+- Sarbide-kontrol eta autentifikazio-sistemak kudeatzea
+- Sistemaren adabakiak eta eguneraketak mantentzea
+- Ohiko segurtasun-kopiak eta berreskuratze-probak egitea
+- Sistema-erregistroak eta segurtasun-gertaerak monitorizatzea
 
-Information is classified into four levels:
+### 4.4 OT/Produkzio Arduraduna
 
-| Classification | Definition | Examples | Handling Requirements |
-|----------------|------------|----------|----------------------|
-| **Public** | Information intended for public disclosure | Marketing materials, press releases | No special restrictions |
-| **Internal** | Information for internal use only | Internal memos, meeting notes | Email encryption, internal networks only |
-| **Confidential** | Sensitive business information | Customer data, financial reports, recipes | Encryption at rest and in transit, access control |
-| **Highly Confidential** | Critical information causing severe damage if disclosed | Trade secrets, PII, payment card data | Strong encryption, MFA, audit logging, DLP |
+- Kontrol-sistema industrialak ziurtatzea (PLCak, SCADA)
+- IT eta OT sareen arteko segmentazioa ezartzea
+- Produkzio-eremuetako sarbide fisikoa kudeatzea
+- OT segurtasuna IT segurtasun taldeekin koordinatzea
+- Fabrikazio-prozesuetan segurtasuna eta babesa ziurtatzea
 
-**Handling Requirements:**
-- Label all documents with appropriate classification
-- Encrypt Confidential and Highly Confidential data
-- Use secure file transfer for external sharing
-- Shred physical documents containing sensitive data
-- Report data breaches within 1 hour of discovery
+### 4.5 Datuen Babeserako Ordezkaria (DPO)
 
-### 6.4 Data Protection and Privacy Policy
+- GDPR betetzea ziurtatzea
+- Datu-interesdunen eskubideen eskaerak kudeatzea
+- Tratamendu-jardueren erregistroa mantentzea (ROPA)
+- Datuen Babesaren gaineko Eraginaren Ebaluazioa (DPIA/EIPD) egitea
+- Datu-urraketak Datuak Babesteko Espainiako Bulegoari (AEPD) jakinaraztea
 
-- Compliance with GDPR (Regulation EU 2016/679) and LOPDGDD (Spanish Organic Law 3/2018)
-- Lawful basis for processing: consent, contract, legal obligation, legitimate interest
-- Data minimization: collect only necessary data
-- Purpose limitation: use data only for stated purposes
-- Data subject rights: access, rectification, erasure, portability, objection (see Data Subject Rights Procedures)
-- Data retention: see Data Retention Schedule
-- International transfers: use Standard Contractual Clauses (SCC) for non-EU transfers
-- Data breach notification: report to AEPD within 72 hours if risk to individuals
+### 4.6 Sailetako Kudeatzaileak
 
-### 6.5 Network Security Policy
+- Langileek segurtasun-politikak jarraitzen dituztela ziurtatzea
+- Saileko informazio-aktiboak identifikatu eta sailkatzea
+- Segurtasun-intzidentziak berehala jakinaraztea
+- Negozioaren jarraitutasun plangintzan parte hartzea
+- Bere taldekideen sarbide-eskaerak onartzea
 
-**IT Network:**
-- Firewall protection on all network perimeters
-- Network segmentation: production, office, guest WiFi, DMZ
-- Intrusion Detection/Prevention Systems (IDS/IPS)
-- VPN required for remote access (AES-256 encryption)
-- Disable unused network services and ports
-- Regular vulnerability scanning (monthly)
+### 4.7 Langile Guztiak
 
-**OT Network:**
-- Air-gap or strict firewall rules between IT and OT networks
-- No direct internet access for OT systems
-- Whitelisting approach for OT communications
-- Physical access control to OT network equipment
-- Change management for all OT network modifications
+- Informazioaren segurtasun politika eta prozedura guztiak betetzea
+- Derrigorrezko segurtasun-kontzientziazio prestakuntza osatzea
+- Segurtasun-intzidentziak eta ahultasunak jakinaraztea
+- Pasahitzak eta autentifikazio-kredentzialak babestea
+- Informazio-aktiboak baimendutako negozio-helburuetarako soilik erabiltzea
+- Erabilera Onargarriaren Politika sinatu eta atxikitzea
 
-**WiFi Security:**
-- WPA3 encryption for corporate WiFi
-- Separate guest WiFi with captive portal and internet-only access
-- MAC address filtering for OT wireless devices
-- Regular rogue access point scanning
+### 4.8 Hirugarrenak eta Kontratistak
 
-### 6.6 System Development and Maintenance Policy
-
-- Secure Software Development Lifecycle (SSDLC)
-- Development, testing, and production environments separated
-- Code review and static/dynamic security testing
-- Dependency scanning for vulnerabilities (OWASP Dependency-Check)
-- Change management process for all system modifications
-- Security testing before production deployment
-- Vendor security assessment for third-party software
-
-### 6.7 Backup and Recovery Policy
-
-- **Backup Frequency:**
-  - Critical systems: Daily incremental, weekly full
-  - Databases: Real-time replication + daily backups
-  - OT configurations: Before and after changes
-- **Backup Storage:** Encrypted, off-site storage (3-2-1 rule: 3 copies, 2 media types, 1 off-site)
-- **Retention:** 30 days online, 1 year archive
-- **Recovery Testing:** Quarterly recovery drills
-- **Recovery Time Objective (RTO):** 4 hours for critical systems
-- **Recovery Point Objective (RPO):** 1 hour data loss maximum
-
-### 6.8 Incident Management Policy
-
-- **Incident Definition:** Any event that threatens confidentiality, integrity, or availability
-- **Reporting:** All incidents reported within 1 hour via security@zabalagailetak.com or incident hotline
-- **Classification:** Critical, High, Medium, Low based on impact and urgency
-- **Response Team:** CISO, IT Manager, Legal, DPO, PR (for critical incidents)
-- **Response Process:**
-  1. Detection and reporting
-  2. Initial assessment and containment
-  3. Investigation and evidence collection
-  4. Eradication and recovery
-  5. Post-incident review and lessons learned
-- **Communication:** Notify affected parties, regulators (if required), and management
-- **Documentation:** Maintain incident log and forensic evidence (see Audit Log)
-
-### 6.9 Business Continuity and Disaster Recovery Policy
-
-- See dedicated Business Continuity Plan document
-- Business Impact Analysis (BIA) conducted annually
-- Maximum Tolerable Period of Disruption (MTPD): 24 hours for critical processes
-- Disaster recovery procedures for IT and OT systems
-- Alternative work arrangements (remote work, backup facilities)
-- Annual tabletop exercises and biennial full-scale drills
-
-### 6.10 Physical and Environmental Security Policy
-
-**Data Center and Server Room:**
-- Access control (badge + biometric)
-- 24/7 video surveillance (90-day retention)
-- Environmental monitoring (temperature, humidity)
-- Fire suppression system (FM-200 or equivalent)
-- Uninterruptible Power Supply (UPS) and backup generator
-
-**Production Facilities:**
-- Perimeter security (fencing, lighting, cameras)
-- Visitor management (sign-in, escorts)
-- Secure disposal of waste containing sensitive information
-- Clear desk and clear screen policy
-
-**Mobile Devices and Laptops:**
-- Full disk encryption (BitLocker, FileVault)
-- Mobile Device Management (MDM) for company devices
-- Remote wipe capability for lost/stolen devices
-- Automatic screen lock after 5 minutes
-
-### 6.11 Third-Party and Supplier Security Policy
-
-- Security assessment before engagement
-- Contractual security requirements in all agreements
-- Non-Disclosure Agreements (NDA) for access to Confidential data
-- Regular security reviews for critical suppliers
-- Right to audit supplier security controls
-- Termination procedures for access and data return
-
-### 6.12 Cryptographic Controls Policy
-
-- **Encryption Standards:**
-  - Data at rest: AES-256
-  - Data in transit: TLS 1.3 or higher
-  - VPN: AES-256 with IKEv2/IPsec
-- **Key Management:**
-  - Centralized key management system
-  - Key rotation every 12 months
-  - Secure key storage (HSM for critical keys)
-  - Key escrow for business continuity
-- **Digital Signatures:** RSA 2048-bit or ECDSA P-256
-- **Hashing:** SHA-256 or higher (no MD5 or SHA-1)
-- **Password Storage:** bcrypt with 12+ rounds or Argon2
-
-### 6.13 Security Monitoring and Logging Policy
-
-- **Logging Requirements:** Authentication, access control, system changes, security events
-- **Log Retention:** 1 year minimum (legal requirement), 3 years for critical systems
-- **SIEM (Security Information and Event Management):** Real-time log correlation and alerting
-- **Log Protection:** Tamper-proof, encrypted, access-controlled
-- **Review Frequency:** Real-time automated analysis, weekly manual review
-- **Alerts:** Critical alerts to security team 24/7
+- Konfidentzialtasun-hitzarmenak sinatzea (NDA)
+- Zabala Gailetak-en segurtasun-politikak betetzea
+- Sistemara sartu aurretik segurtasun-egiaztapena pasatzea
+- Konpromisoan zehar edozein segurtasun-kezka jakinaraztea
+- Kontratua amaitzean informazio-aktibo guztiak itzultzea
 
 ---
 
-## 7. Compliance and Legal Requirements
+## 5. Informazioaren Segurtasun Esparrua
 
-### 7.1 Regulatory Compliance
+### 5.1 Informazioaren Segurtasuna Kudeatzeko Sistema (ISMS)
 
-Zabala Gailetak complies with:
+Zabala Gailetak-ek ISO/IEC 27001:2022 arauan oinarritutako ISMS bat darabil, PDCA (Plan-Do-Check-Act) zikloa ezarriz:
 
-- **GDPR (EU 2016/679):** General Data Protection Regulation
-- **LOPDGDD (Spain Organic Law 3/2018):** Spanish data protection law
-- **ePrivacy Directive (2002/58/EC):** Electronic communications privacy
-- **PCI DSS:** Payment Card Industry Data Security Standard (if processing card payments)
-- **ISO/IEC 27001:2022:** Information Security Management certification target
-- **Spanish Penal Code (Article 197):** Unlawful disclosure of personal data
-- **Spanish Workers' Statute:** Employee privacy and monitoring
-- **Food Safety Regulations:** GMP, HACCP (indirectly affects data integrity)
+- **Plangintza (Plan):** Arriskuen ebaluazioa, segurtasun-helburuak, tratamendu-planak
+- **Egitea (Do):** Kontrolak, politikak, prozedurak, prestakuntza ezartzea
+- **Egiaztatzea (Check):** Barne-auditoriak, monitorizazioa, metrikak, kudeaketa-berrikuspena
+- **Jokatzea (Act):** Ekintza zuzentzaileak, etengabeko hobekuntza, ikasitako ikasgaiak
 
-### 7.2 Contractual Obligations
+### 5.2 Arriskuen Kudeaketa
 
-- Customer data protection clauses in sales agreements
-- Supplier security requirements in procurement contracts
-- Insurance policy compliance (cyber insurance requirements)
-- Bank and payment processor security standards
+Arriskuen ebaluazioa urtero egiten da edo aldaketa garrantzitsuak gertatzen direnean:
 
-### 7.3 Intellectual Property Protection
+1. **Aktiboen Identifikazioa:** Informazio-aktiboen inbentarioa (ikus Aktiboen Erregistroa)
+2. **Mehatxuen Ebaluazioa:** Mehatxu potentzialak identifikatu (zibererasoak, hondamendi naturalak, giza akatsak)
+3. **Ahultasunen Analisia:** Sistemen eta prozesuen ahuleziak ebaluatu
+4. **Arriskuen Ebaluazioa:** Arrisku maila kalkulatu (Probabilitatea × Eragina)
+5. **Arriskuen Tratamendua:** Arriskuak onartu, arindu, transferitu edo saihestu
+6. **Hondar Arriskua:** Geratzen diren arriskuak dokumentatu eta onartu
 
-- Trade secret protection for cookie recipes and manufacturing processes
-- Copyright protection for software, documentation, marketing materials
-- Trademark protection for Zabala Gailetak brand
-- Patent protection for innovative manufacturing techniques (if applicable)
+**Arriskuen Apetitoa:** Zabala Gailetak-ek arrisku baxuak eta ertainak onartzen ditu kontrol egokiekin. Arrisku altuek exekutiboen onarpena eta arintze-planak behar dituzte.
 
----
+### 5.3 Segurtasun Kontrolak
 
-## 8. Security Awareness and Training
+Segurtasun kontrolak ISO/IEC 27001:2022 Anexo A-tik hautatzen dira (ikus Aplikagarritasun Adierazpena). Kontrolak honela sailkatzen dira:
 
-### 8.1 Training Program
-
-All employees receive:
-
-- **New Hire Training:** Security basics within first week
-- **Annual Refresher Training:** Mandatory for all employees (2 hours)
-- **Role-Specific Training:**
-  - Developers: Secure coding, OWASP Top 10 (8 hours annually)
-  - System Administrators: Hardening, monitoring, incident response (16 hours annually)
-  - Management: Risk management, legal obligations (4 hours annually)
-  - Production Staff: OT security, physical security (4 hours annually)
-- **Phishing Simulations:** Quarterly simulated phishing campaigns
-- **Security Newsletter:** Monthly security tips and threat updates
-
-### 8.2 Training Topics
-
-- Password security and MFA
-- Phishing and social engineering
-- Data classification and handling
-- Acceptable use of IT resources
-- Incident reporting procedures
-- GDPR and data protection
-- Physical security and clean desk
-- Secure remote work practices
-
-### 8.3 Training Metrics
-
-- Training completion rate: 100% target
-- Phishing simulation click rate: <10% target
-- Incident reporting response time: <1 hour target
-- Training effectiveness assessment through quizzes and practical exercises
+- **Prebentiboak:** Segurtasun-intzidentziak gertatu aurretik geldiaraztea (suebakiak, sarbide-kontrola)
+- **Detektiboak:** Segurtasun-intzidentziak gertatzen direnean identifikatzea (SIEM, IDS, auditoriak)
+- **Zuzentzaileak:** Intzidentzien eragina minimizatu eta berreskuratzea (segurtasun-kopiak, intzidentzien erantzuna)
 
 ---
 
-## 9. Monitoring and Review
+## 6. Segurtasun Politika Gakoak
 
-### 9.1 Performance Measurement
+Informazioaren Segurtasun Politika orokor hau politika eta prozedura zehatzekin babesten da:
 
-Key Performance Indicators (KPIs):
+### 6.1 Sarbide Kontrolerako Politika
 
-| KPI | Target | Measurement Frequency |
-|-----|--------|----------------------|
-| System availability | 99.5% | Monthly |
-| Security incidents | <10 medium/year | Quarterly |
-| Patch compliance | 95% critical patches within 7 days | Monthly |
-| Access review completion | 100% quarterly | Quarterly |
-| Training completion | 100% annually | Annually |
-| Backup success rate | 99% | Daily |
-| Phishing simulation click rate | <10% | Quarterly |
-| Mean Time to Detect (MTTD) | <2 hours | Per incident |
-| Mean Time to Respond (MTTR) | <4 hours | Per incident |
+- **Pribilegio Txikienaren Printzipioa:** Erabiltzaileek lan-funtzioetarako beharrezkoa den gutxieneko sarbidea jasotzen dute
+- **Eginkizunen Bereizketa:** Funtzio kritikoek pertsona bat baino gehiago behar dute
+- **Erabiltzaile Kontuen Kudeaketa:** Hornikuntza, aldaketa eta baja prozedurak
+- **Pasahitz Politika:** Ikus Pasahitz Politika dokumentu espezifikoa
+- **Faktore Anitzeko Autentifikazioa (MFA):** Derrigorrezkoa urruneko sarbiderako eta pribilegiatutako kontuetarako
+- **Sarbide Berrikuspena:** Erabiltzaileen sarbide-eskubideen hiruhileko berrikuspena
 
-### 9.2 Internal Audits
+### 6.2 Erabilera Onargarriaren Politika
 
-- Annual internal audit of ISMS against ISO 27001
-- Quarterly technical vulnerability assessments
-- Biannual penetration testing by external auditors
-- Audit findings tracked and remediated within agreed timelines
+- Ikus Erabilera Onargarriaren Politika dokumentu espezifikoa
+- IT baliabideen, posta elektronikoaren, interneten eta gailu mugikorren erabilera egokia estaltzen du
+- Baimenik gabeko softwarea, legez kanpoko jarduerak eta arrazoizko mugatik gorako erabilera pertsonala debekatzen ditu
 
-### 9.3 Management Review
+### 6.3 Datuen Sailkapena eta Kudeaketa
 
-- Quarterly security metrics presented to executive management
-- Annual ISMS review by CEO and senior management
-- Review agenda:
-  - Audit results and corrective actions
-  - Security incidents and trends
-  - Performance against KPIs
-  - Risk assessment updates
-  - Changes in legal/regulatory requirements
-  - Resource requirements and budget
-  - Continuous improvement opportunities
+Informazioa lau mailatan sailkatzen da:
+
+| Sailkapena | Definizioa | Adibideak | Kudeaketa Baldintzak |
+|------------|------------|-----------|----------------------|
+| **Publikoa** | Zabalkunde publikorako informazioa | Marketing materialak, prentsa-oharrak | Ez dago murrizketa berezirik |
+| **Barnekoa** | Barne erabilerarako informazioa soilik | Barne oharrak, bilera-notak | Email enkriptatzea, barne sareak soilik |
+| **Konfidentziala** | Negozio-informazio sentikorra | Bezeroen datuak, finantza-txostenak, errezetak | Enkriptatzea geldirik eta trantsitoan, sarbide-kontrola |
+| **Oso Konfidentziala** | Zabaltzeak kalte larriak eragin ditzakeen informazio kritikoa | Merkataritza-sekretuak, PII, ordainketa-txartelen datuak | Enkriptatze sendoa, MFA, auditoretza erregistroa, DLP |
+
+**Kudeaketa Baldintzak:**
+- Dokumentu guztiak dagokien sailkapenarekin etiketatzea
+- Konfidentziala eta Oso Konfidentziala den datua enkriptatzea
+- Fitxategi-transferentzia segurua erabiltzea kanpoan partekatzeko
+- Datu sentikorrak dituzten dokumentu fisikoak txikitzea
+- Datu-urraketak aurkitu eta ordubeteko epean jakinaraztea
+
+### 6.4 Datuen Babes eta Pribatutasun Politika
+
+- GDPR (EB 2016/679 Erregelamendua) eta DBLO-GDD (Espainiako 3/2018 Lege Organikoa) betetzea
+- Tratamendurako oinarri juridikoa: baimena, kontratua, legezko betebeharra, interes legitimoa
+- Datuen minimizazioa: beharrezkoak diren datuak soilik biltzea
+- Helburuaren mugatzea: datuak adierazitako helburuetarako soilik erabiltzea
+- Datu-interesdunen eskubideak: sarbidea, zuzenketa, ezabaketa, eramangarritasuna, aurkaritza (ikus Datu-Interesdunen Eskubideen Prozedurak)
+- Datuen atxikipena: ikus Datuen Atxikipen Egutegia
+- Nazioarteko transferentziak: Klausula Kontratu Estandarrak (SCC) erabiltzea EBtik kanpoko transferentzietarako
+- Datu-urraketen jakinarazpena: AEPDri jakinaraztea 72 orduko epean pertsonentzat arriskua badago
+
+### 6.5 Sare Segurtasun Politika
+
+**IT Sarea:**
+- Suebaki bidezko babesa sareko perimetro guztietan
+- Sare segmentazioa: produkzioa, bulegoa, gonbidatuen WiFi-a, DMZ
+- Intrusioak Detektatzeko/Prebenitzeko Sistemak (IDS/IPS)
+- VPN beharrezkoa urruneko sarbiderako (AES-256 enkriptatzea)
+- Erabiltzen ez diren sare-zerbitzuak eta portuak desgaitzea
+- Aldizkako ahultasun eskaneatzea (hilero)
+
+**OT Sarea:**
+- Air-gap edo suebaki arau zorrotzak IT eta OT sareen artean
+- Interneteko sarbide zuzenik ez OT sistemetarako
+- Zerrenda zurien ikuspegia OT komunikazioetarako
+- Sarbide fisikoaren kontrola OT sareko ekipamendura
+- Aldaketa-kudeaketa OT sareko aldaketa guztietarako
+
+**WiFi Segurtasuna:**
+- WPA3 enkriptatzea WiFi korporatiborako
+- Gonbidatuen WiFi bereizia atari gatibuarekin eta interneterako sarbidea soilik
+- MAC helbideen iragazketa OT haririk gabeko gailuetarako
+- Rogue access point eskaneatzea aldizka
+
+### 6.6 Sistemen Garapen eta Mantentze Politika
+
+- Software Seguruaren Garapen Bizi-zikloa (SSDLC)
+- Garapena, probak eta produkzio inguruneak bereizita
+- Kode berrikuspena eta segurtasun proba estatikoak/dinamikoak
+- Dependentzien eskaneatzea ahultasunetarako (OWASP Dependency-Check)
+- Aldaketa-kudeaketa prozesua sistema aldaketa guztietarako
+- Segurtasun probak produkzioan hedatu aurretik
+- Hornitzaileen segurtasun ebaluazioa hirugarrenen softwarerako
+
+### 6.7 Segurtasun-kopia eta Berreskuratze Politika
+
+- **Segurtasun-kopien Maiztasuna:**
+  - Sistema kritikoak: Eguneroko inkrementala, asteko osoa
+  - Datu-baseak: Denbora errealeko erreplikazioa + eguneroko kopiak
+  - OT konfigurazioak: Aldaketen aurretik eta ondoren
+- **Biltegiratzea:** Enkriptatuta, gunetik kanpoko biltegiratzea (3-2-1 araua: 3 kopia, 2 euskarri mota, 1 gunetik kanpo)
+- **Atxikipena:** 30 egun linean, urtebeteko artxiboa
+- **Berreskuratze Probak:** Hiruhileko berreskuratze simulazioak
+- **Berreskuratze Denbora Helburua (RTO):** 4 ordu sistema kritikoetarako
+- **Berreskuratze Puntu Helburua (RPO):** Ordu bateko datu-galera gehienez
+
+### 6.8 Intzidentzien Kudeaketa Politika
+
+- **Intzidentzia Definizioa:** Konfidentzialtasuna, osotasuna edo eskuragarritasuna mehatxatzen duen edozein gertaera
+- **Jakinarazpena:** Intzidentzia guztiak ordubeteko epean jakinaraztea security@zabalagailetak.com bidez edo intzidentzia telefono bidez
+- **Sailkapena:** Kritikoa, Altua, Ertaina, Baxua eraginaren eta urgentziaren arabera
+- **Erantzun Taldea:** CISO, IT Arduraduna, Lege Saila, DPO, PR (intzidentzia kritikoetarako)
+- **Erantzun Prozesua:**
+  1. Detekzioa eta jakinarazpena
+  2. Hasierako ebaluazioa eta eustea
+  3. Ikerketa eta ebidentzia bilketa
+  4. Ezabapena eta berreskuratzea
+  5. Intzidentzia osteko berrikuspena eta ikasitako ikasgaiak
+- **Komunikazioa:** Kaltetutako alderdiei, erregulatzaileei (beharrezkoa bada) eta zuzendaritzari jakinaraztea
+- **Dokumentazioa:** Intzidentzia erregistroa eta auzitegi-ebidentzia mantentzea (ikus Audit Log)
+
+### 6.9 Negozioaren Jarraitutasuna eta Hondamendien Berreskuratze Politika
+
+- Ikus Negozioaren Jarraitutasun Plana dokumentu espezifikoa
+- Negozioaren Eraginaren Analisia (BIA) urtero egina
+- Etenaldi Jasangarriaren Gehieneko Epea (MTPD): 24 ordu prozesu kritikoetarako
+- Hondamendien berreskuratze prozedurak IT eta OT sistemetarako
+- Lan-antolamendu alternatiboak (urruneko lana, babeskopia instalazioak)
+- Urteroko mahai-gaineko ariketak eta bi urtean behingo simulazio osoak
+
+### 6.10 Segurtasun Fisiko eta Ingurumenekoa
+
+**Datu Zentroa eta Zerbitzari Gela:**
+- Sarbide kontrola (txartela + biometrikoa)
+- 24/7 bideo zaintza (90 eguneko atxikipena)
+- Ingurumenaren monitorizazioa (tenperatura, hezetasuna)
+- Suteak itzaltzeko sistema (FM-200 edo baliokidea)
+- Etenik Gabeko Elikatze Sistema (UPS) eta sorgailu laguntzailea
+
+**Produkzio Instalazioak:**
+- Perimetroko segurtasuna (hesia, argiztapena, kamerak)
+- Bisitarien kudeaketa (sinadura, laguntzaileak)
+- Informazio sentikorra duten hondakinen deuseztapen segurua
+- Mahai garbia eta pantaila garbia politika
+
+**Gailu Mugikorrak eta Ordenagailu Eramangarriak:**
+- Disko osoaren enkriptatzea (BitLocker, FileVault)
+- Gailu Mugikorren Kudeaketa (MDM) konpainiako gailuetarako
+- Galdutako/lapurtutako gailuak urrunetik garbitzeko gaitasuna
+- Pantaila blokeo automatikoa 5 minuturen ondoren
+
+### 6.11 Hirugarrenen eta Hornitzaileen Segurtasun Politika
+
+- Segurtasun ebaluazioa kontratatu aurretik
+- Kontratu-segurtasun baldintzak akordio guztietan
+- Konfidentzialtasun Hitzarmenak (NDA) datu Konfidentzialetarako sarbidea izateko
+- Segurtasun berrikuspen erregularrak hornitzaile kritikoentzat
+- Hornitzaileen segurtasun kontrolak auditatzeko eskubidea
+- Sarbidea eta datuak itzultzeko amaiera-prozedurak
+
+### 6.12 Kontrol Kriptografikoen Politika
+
+- **Enkriptatze Estandarrak:**
+  - Datuak geldirik: AES-256
+  - Datuak trantsitoan: TLS 1.3 edo altuagoa
+  - VPN: AES-256 IKEv2/IPsec-ekin
+- **Gakoen Kudeaketa:**
+  - Gakoen kudeaketa sistema zentralizatua
+  - Gakoen txandakatzea 12 hilabetero
+  - Gako biltegiratze segurua (HSM gako kritikoetarako)
+  - Negozioaren jarraitutasunerako gako fidantza (key escrow)
+- **Sinadura Digitalak:** RSA 2048-bit edo ECDSA P-256
+- **Hashing:** SHA-256 edo altuagoa (ez MD5 edo SHA-1)
+- **Pasahitz Biltegiratzea:** bcrypt 12+ errondarekin edo Argon2
+
+### 6.13 Segurtasun Monitorizazio eta Erregistro Politika
+
+- **Erregistro Baldintzak:** Autentifikazioa, sarbide-kontrola, sistema aldaketak, segurtasun gertaerak
+- **Erregistro Atxikipena:** Gutxienez urtebete (legezko betekizuna), 3 urte sistema kritikoetarako
+- **SIEM (Security Information and Event Management):** Denbora errealeko erregistro korrelazioa eta alertak
+- **Erregistro Babesa:** Manipulazioen aurkakoa, enkriptatua, sarbide-kontrolatua
+- **Berrikuspen Maiztasuna:** Denbora errealeko analisi automatizatua, asteko eskuzko berrikuspena
+- **Alertak:** Alerta kritikoak segurtasun taldeari 24/7
 
 ---
 
-## 10. Policy Enforcement
+## 7. Betetzea eta Lege Baldintzak
 
-### 10.1 Compliance Monitoring
+### 7.1 Araudi Betetzea
 
-- Security team monitors policy compliance through:
-  - Automated security tools (SIEM, DLP, endpoint protection)
-  - Access control logs and audit trails
-  - Regular access reviews
-  - Spot checks and inspections
-  - Employee reporting and whistleblowing mechanisms
+Zabala Gailetak-ek honako hauek betetzen ditu:
 
-### 10.2 Violations and Disciplinary Action
+- **GDPR (EB 2016/679):** Datuen Babeserako Erregelamendu Orokorra
+- **DBLO-GDD (Espainiako 3/2018 Lege Organikoa):** Espainiako datuen babeserako legea
+- **ePrivacy Zuzentaraua (2002/58/EE):** Komunikazio elektronikoen pribatutasuna
+- **PCI DSS:** Ordainketa Txartelen Industriaren Datuen Segurtasun Estandarra (txartel bidezko ordainketak prozesatzen badira)
+- **ISO/IEC 27001:2022:** Informazioaren Segurtasuna Kudeatzeko ziurtagiri helburua
+- **Espainiako Zigor Kodea (197. artikulua):** Datu pertsonalen legez kanpoko zabalkundea
+- **Langileen Estatutua:** Langileen pribatutasuna eta monitorizazioa
+- **Elikagaien Segurtasun Araudiak:** GMP, HACCP (zeharka datuen osotasunari eragiten dio)
 
-Violations of this policy may result in:
+### 7.2 Kontratuzko Betebeharrak
 
-1. **First Violation (Minor):** Verbal warning and retraining
-2. **Second Violation or Serious Violation:** Written warning and performance improvement plan
-3. **Severe or Repeated Violations:** Suspension, termination, or legal action
+- Bezeroen datuak babesteko klausulak salmenta-akordioetan
+- Hornitzaileen segurtasun baldintzak kontratazio-kontratuetan
+- Aseguru-polizen betetzea (ziber-aseguru baldintzak)
+- Banku eta ordainketa-prozesadoreen segurtasun estandarrak
 
-**Examples of Violations:**
-- Minor: Weak password, unattended unlocked workstation
-- Serious: Sharing passwords, unauthorized software installation, policy non-compliance after warning
-- Severe: Intentional data breach, malicious activity, fraud, theft of information
+### 7.3 Jabetza Intelektualaren Babesa
 
-All disciplinary actions comply with Spanish labor law and employment contracts.
-
-### 10.3 Exceptions and Waivers
-
-- Policy exceptions require written approval from CISO and relevant department manager
-- Exceptions are time-limited (maximum 6 months) and documented
-- Compensating controls must be implemented
-- Exceptions reviewed quarterly
+- Merkataritza-sekretuen babesa gaileta errezetetarako eta fabrikazio-prozesuetarako
+- Copyright babesa softwarerako, dokumentaziorako, marketing materialetarako
+- Zabala Gailetak markaren babesa
+- Patenteen babesa fabrikazio-teknika berritzaileetarako (badaagokio)
 
 ---
 
-## 11. Policy Maintenance
+## 8. Segurtasun Kontzientzia eta Prestakuntza
 
-### 11.1 Review and Updates
+### 8.1 Prestakuntza Programa
 
-- **Annual Review:** Policy reviewed every January
-- **Ad-hoc Updates:** When significant changes occur:
-  - New legal requirements
-  - Major security incidents
-  - Organizational changes
-  - Technology changes
-  - Audit findings requiring policy updates
+Langile guztiek jasotzen dute:
 
-### 11.2 Change Management
+- **Kontratazio Berrien Prestakuntza:** Segurtasun oinarriak lehen astean
+- **Urteroko Freskatze Prestakuntza:** Derrigorrezkoa langile guztientzat (2 ordu)
+- **Rol Espezifikoko Prestakuntza:**
+  - Garatzaileak: Kodeketa segurua, OWASP Top 10 (8 ordu urtero)
+  - Sistema Administratzaileak: Hardening, monitorizazioa, intzidentzien erantzuna (16 ordu urtero)
+  - Zuzendaritza: Arriskuen kudeaketa, legezko betebeharrak (4 ordu urtero)
+  - Produkzio Langileak: OT segurtasuna, segurtasun fisikoa (4 ordu urtero)
+- **Phishing Simulazioak:** Hiruhileko phishing kanpaina simulatuak
+- **Segurtasun Buletina:** Hilero segurtasun aholkuak eta mehatxuen eguneraketak
 
-Policy changes follow this process:
-1. Draft updates by CISO or policy owner
-2. Review by Legal, DPO, IT Manager
-3. Approval by CEO
-4. Communication to all employees
-5. Training updates if required
-6. Version control and archiving
+### 8.2 Prestakuntza Gaiak
 
-### 11.3 Document Storage
+- Pasahitz segurtasuna eta MFA
+- Phishing eta gizarte-ingeniaritza
+- Datuen sailkapena eta kudeaketa
+- IT baliabideen erabilera onargarria
+- Intzidentziak jakinarazteko prozedurak
+- GDPR eta datuen babesa
+- Segurtasun fisikoa eta mahai garbia
+- Urruneko lan-praktika seguruak
 
-- Master copy stored in ISMS document repository
-- Version-controlled and access-restricted
-- Archived versions retained for 10 years (legal requirement)
+### 8.3 Prestakuntza Metrikak
 
----
-
-## 12. Related Documents
-
-- Statement of Applicability (SOA) - Document ID: SOA-001
-- Acceptable Use Policy - Document ID: AUP-001
-- Password Policy - Document ID: PWD-001
-- Business Continuity Plan - Document ID: BCP-001
-- Asset Register - Document ID: ASR-001
-- Risk Assessment Report - Document ID: RAR-001
-- Incident Response Procedure - Document ID: IRP-001
-- Data Protection Impact Assessment Template - Document ID: DPIA-001
-- Data Breach Notification Template - Document ID: DBN-001
-- Data Subject Rights Procedures - Document ID: DSR-001
+- Prestakuntza osatze-tasa: %100 helburua
+- Phishing simulazioan klik tasa: <%10 helburua
+- Intzidentziak jakinarazteko erantzun-denbora: <1 ordu helburua
+- Prestakuntzaren eraginkortasunaren ebaluazioa galdetegi eta ariketa praktikoen bidez
 
 ---
 
-## 13. Contact Information
+## 9. Monitorizazioa eta Berrikuspena
 
-### 13.1 Security Team Contacts
+### 9.1 Errendimendu Neurketa
 
-**Chief Information Security Officer (CISO)**  
+Funtsezko Errendimendu Adierazleak (KPIak):
+
+| KPI | Helburua | Neurketa Maiztasuna |
+|-----|----------|---------------------|
+| Sistema eskuragarritasuna | %99.5 | Hilero |
+| Segurtasun intzidentziak | <10 ertain/urtean | Hiruhilero |
+| Adabaki betetzea | %95 adabaki kritiko 7 egunetan | Hilero |
+| Sarbide berrikuspen osatzea | %100 hiruhilero | Hiruhilero |
+| Prestakuntza osatzea | %100 urtero | Urtero |
+| Segurtasun-kopia arrakasta tasa | %99 | Egunero |
+| Phishing simulazio klik tasa | <%10 | Hiruhilero |
+| Detektatzeko Batezbesteko Denbora (MTTD) | <2 ordu | Intzidentziako |
+| Erantzuteko Batezbesteko Denbora (MTTR) | <4 ordu | Intzidentziako |
+
+### 9.2 Barne Auditoriak
+
+- Urteroko ISMS barne-auditoria ISO 27001 arauaren aurka
+- Hiruhileko ahultasun teknikoen ebaluazioak
+- Kanpo-auditoreek egindako urtean bitan penetrazio-probak
+- Auditoria-aurkikuntzak jarraitu eta adostutako epeetan konpondu
+
+### 9.3 Kudeaketa Berrikuspena
+
+- Hiruhileko segurtasun metrikak zuzendaritza exekutiboari aurkeztu
+- Urteroko ISMS berrikuspena CEO eta goi-zuzendaritzaren eskutik
+- Berrikuspen agenda:
+  - Auditoria emaitzak eta ekintza zuzentzaileak
+  - Segurtasun intzidentziak eta joerak
+  - KPIen aurkako errendimendua
+  - Arriskuen ebaluazio eguneraketak
+  - Lege/arau baldintzen aldaketak
+  - Baliabide beharrak eta aurrekontua
+  - Etengabeko hobekuntza aukerak
+
+---
+
+## 10. Politikaren Betearazpena
+
+### 10.1 Betetze Monitorizazioa
+
+- Segurtasun taldeak politikaren betetzea monitorizatzen du honakoen bidez:
+  - Segurtasun tresna automatizatuak (SIEM, DLP, endpoint babesa)
+  - Sarbide kontrol erregistroak eta auditoria arrastoak
+  - Ohiko sarbide berrikuspenak
+  - Ausazko egiaztapenak eta ikuskapenak
+  - Langileen jakinarazpenak eta salaketa mekanismoak
+
+### 10.2 Urratsak eta Diziplina Neurriak
+
+Politika hau urratzeak honakoak ekar ditzake:
+
+1. **Lehen Urraketa (Arina):** Ahozko ohartarazpena eta berriro prestatzea
+2. **Bigarren Urraketa edo Urraketa Larria:** Idatzizko ohartarazpena eta errendimendua hobetzeko plana
+3. **Urraketa Oso Larriak edo Errepikatuak:** Etenaldia, kaleratzea edo legezko ekintzak
+
+**Urraketa Adibideak:**
+- Arina: Pasahitz ahula, desblokeatutako lan-estazioa zaintzarik gabe
+- Larria: Pasahitzak partekatzea, baimenik gabeko software instalazioa, politika ez betetzea ohartarazpenaren ondoren
+- Oso Larria: Nahita egindako datu-urraketa, jarduera maltzurra, iruzurra, informazio lapurreta
+
+Diziplina-ekintza guztiak Espainiako lan-legearekin eta lan-kontratuekin bat datoz.
+
+### 10.3 Salbuespenak eta Uko Egiteak
+
+- Politika salbuespenek CISOren eta dagokion departamentuko arduradunaren idatzizko onarpena behar dute
+- Salbuespenak denbora mugatukoak dira (gehienez 6 hilabete) eta dokumentatuak
+- Konpentsazio-kontrolak ezarri behar dira
+- Salbuespenak hiruhilero berrikusten dira
+
+---
+
+## 11. Politikaren Mantentzea
+
+### 11.1 Berrikuspena eta Eguneraketak
+
+- **Urteroko Berrikuspena:** Politika Urtarrilero berrikusten da
+- **Ad-hoc Eguneraketak:** Aldaketa garrantzitsuak gertatzen direnean:
+  - Lege baldintza berriak
+  - Segurtasun intzidentzia nagusiak
+  - Erakunde aldaketak
+  - Teknologia aldaketak
+  - Politika eguneratzea eskatzen duten auditoria aurkikuntzak
+
+### 11.2 Aldaketa Kudeaketa
+
+Politika aldaketek prozesu hau jarraitzen dute:
+1. Eguneraketa zirriborroa CISO edo politika jabearen aldetik
+2. Lege, DPO, IT Arduradunaren berrikuspena
+3. CEOren onarpena
+4. Langile guztiei jakinaraztea
+5. Prestakuntza eguneraketak beharrezkoa bada
+6. Bertsio kontrola eta artxibatzea
+
+### 11.3 Dokumentu Biltegiratzea
+
+- Kopia maisua ISMS dokumentu biltegian gordeta
+- Bertsio-kontrolatua eta sarbide-mugatua
+- Artxibatutako bertsioak 10 urtez gordeta (legezko betekizuna)
+
+---
+
+## 12. Lotutako Dokumentuak
+
+- Aplikagarritasun Adierazpena (SOA) - Dokumentuaren IDa: SOA-001
+- Erabilera Onargarriaren Politika - Dokumentuaren IDa: AUP-001
+- Pasahitz Politika - Dokumentuaren IDa: PWD-001
+- Negozioaren Jarraitutasun Plana - Dokumentuaren IDa: BCP-001
+- Aktiboen Erregistroa - Dokumentuaren IDa: ASR-001
+- Arriskuen Ebaluazio Txostena - Dokumentuaren IDa: RAR-001
+- Intzidentzien Erantzun Prozedura - Dokumentuaren IDa: IRP-001
+- Datuen Babesaren gaineko Eraginaren Ebaluazio Txantiloia - Dokumentuaren IDa: DPIA-001
+- Datu Urraketa Jakinarazpen Txantiloia - Dokumentuaren IDa: DBN-001
+- Datu Interesdunen Eskubideen Prozedurak - Dokumentuaren IDa: DSR-001
+
+---
+
+## 13. Harremanetarako Informazioa
+
+### 13.1 Segurtasun Taldearen Kontaktuak
+
+**Informazioaren Segurtasuneko Arduradun Nagusia (CISO)**  
 Email: ciso@zabalagailetak.com  
-Phone: +34 XXX XXX XXX  
-Office: Building A, Room 201
+Telefonoa: +34 XXX XXX XXX  
+Bulegoa: A Eraikina, 201 Gela
 
-**IT Security Team**  
+**IT Segurtasun Taldea**  
 Email: security@zabalagailetak.com  
-Phone: +34 XXX XXX XXX (24/7 Security Hotline)
+Telefonoa: +34 XXX XXX XXX (24/7 Segurtasun Telefonoa)
 
-**Data Protection Officer (DPO)**  
+**Datuen Babeserako Ordezkaria (DPO)**  
 Email: dpo@zabalagailetak.com  
-Phone: +34 XXX XXX XXX
+Telefonoa: +34 XXX XXX XXX
 
-**Incident Reporting**  
+**Intzidentzia Jakinarazpena**  
 Email: incident@zabalagailetak.com  
-Phone: +34 XXX XXX XXX (24/7)  
-Internal Extension: 911
+Telefonoa: +34 XXX XXX XXX (24/7)  
+Barne Luzapena: 911
 
-### 13.2 External Contacts
+### 13.2 Kanpo Kontaktuak
 
-**Spanish Data Protection Authority (AEPD)**  
-Website: www.aepd.es  
-Phone: +34 901 100 099  
-Address: C/ Jorge Juan, 6, 28001 Madrid
+**Datuak Babesteko Espainiako Bulegoa (AEPD)**  
+Webgunea: www.aepd.es  
+Telefonoa: +34 901 100 099  
+Helbidea: C/ Jorge Juan, 6, 28001 Madrid
 
-**INCIBE (National Cybersecurity Institute)**  
-Phone: +34 017 (24/7 cybersecurity incidents)  
-Website: www.incibe.es
-
----
-
-## 14. Acknowledgment
-
-All employees must acknowledge receipt and understanding of this policy:
-
-**I acknowledge that I have received, read, and understood the Zabala Gailetak Information Security Policy. I agree to comply with all requirements and understand that violations may result in disciplinary action, up to and including termination of employment or contract.**
+**INCIBE (Zibersegurtasuneko Institutu Nazionala)**  
+Telefonoa: +34 017 (24/7 zibersegurtasun intzidentziak)  
+Webgunea: www.incibe.es
 
 ---
 
-**Employee Name:** ___________________________
+## 14. Aitortza
 
-**Employee ID:** ___________________________
+Langile guztiek politika hau jaso eta ulertu dutela aitortu behar dute:
 
-**Signature:** ___________________________
-
-**Date:** ___________________________
+**Aitortzen dut Zabala Gailetak-en Informazioaren Segurtasun Politika jaso, irakurri eta ulertu dudala. Baldintza guztiak betetzea onartzen dut eta ulertzen dut urraketek diziplina-ekintzak ekar ditzaketela, enplegu edo kontratuaren amaiera barne.**
 
 ---
 
-## Appendix A: Definitions and Acronyms
+**Langilearen Izena:** ___________________________
 
-**Information Asset:** Any data, system, or resource of value to the organization
+**Langilearen IDa:** ___________________________
 
-**Information Security:** Protection of information from unauthorized access, use, disclosure, disruption, modification, or destruction
+**Sinadura:** ___________________________
 
-**Confidentiality:** Ensuring information is accessible only to authorized individuals
+**Data:** ___________________________
 
-**Integrity:** Ensuring accuracy and completeness of information
+---
 
-**Availability:** Ensuring authorized access to information when needed
+## Eranskina A: Definizioak eta Akronimoak
 
-**CIA Triad:** Confidentiality, Integrity, Availability - the three pillars of information security
+**Informazio Aktiboa:** Erakundearentzat balioa duen edozein datu, sistema edo baliabide
 
-**ISMS:** Information Security Management System - systematic approach to managing information security
+**Informazioaren Segurtasuna:** Informazioa baimenik gabeko sarbide, erabilera, zabalkunde, eten, aldaketa edo suntsipenetik babestea
 
-**Risk:** Potential for loss or damage when a threat exploits a vulnerability
+**Konfidentzialtasuna:** Informazioa baimendutako pertsonek soilik eskura dezaketela ziurtatzea
 
-**Threat:** Potential cause of an unwanted incident
+**Osotasuna:** Informazioaren zehaztasuna eta osotasuna ziurtatzea
 
-**Vulnerability:** Weakness that can be exploited by a threat
+**Eskuragarritasuna:** Behar denean informaziorako baimendutako sarbidea ziurtatzea
 
-**Control:** Measure that modifies risk
+**CIA Hirukotea:** Konfidentzialtasuna, Osotasuna, Eskuragarritasuna - informazioaren segurtasunaren hiru zutabeak
 
-**PII:** Personally Identifiable Information
+**ISMS:** Information Security Management System - informazioaren segurtasuna kudeatzeko sistema sistematikoa
 
-**GDPR:** General Data Protection Regulation
+**Arriskua:** Mehatxu batek ahultasun bat ustiatzen duenean galera edo kaltea izateko potentziala
 
-**AEPD:** Agencia Española de Protección de Datos (Spanish Data Protection Authority)
+**Mehatxua:** Nahi ez den intzidentzia baten kausa potentziala
 
-**DPO:** Data Protection Officer
+**Ahultasuna:** Mehatxu batek ustiatu dezakeen ahulezia
+
+**Kontrola:** Arriskua aldatzen duen neurria
+
+**PII:** Personally Identifiable Information (Informazio Pertsonal Identifikagarria)
+
+**GDPR:** General Data Protection Regulation (Datuen Babeserako Erregelamendu Orokorra)
+
+**AEPD:** Datuak Babesteko Espainiako Bulegoa
+
+**DPO:** Data Protection Officer (Datuen Babeserako Ordezkaria)
 
 **SIEM:** Security Information and Event Management
 
 **IDS/IPS:** Intrusion Detection/Prevention System
 
-**MFA:** Multi-Factor Authentication
+**MFA:** Multi-Factor Authentication (Faktore Anitzeko Autentifikazioa)
 
-**VPN:** Virtual Private Network
+**VPN:** Virtual Private Network (Sare Pribatu Birtuala)
 
-**DMZ:** Demilitarized Zone (network segment)
+**DMZ:** Demilitarized Zone (sare segmentua)
 
-**OT:** Operational Technology (industrial control systems)
+**OT:** Operational Technology (teknologia operatiboa / kontrol sistema industrialak)
 
-**PLC:** Programmable Logic Controller
+**PLC:** Programmable Logic Controller (Kontrolatzaile Logiko Programagarria)
 
 **SCADA:** Supervisory Control and Data Acquisition
 
-**RTO:** Recovery Time Objective
+**RTO:** Recovery Time Objective (Berreskuratze Denbora Helburua)
 
-**RPO:** Recovery Point Objective
+**RPO:** Recovery Point Objective (Berreskuratze Puntu Helburua)
 
-**MTPD:** Maximum Tolerable Period of Disruption
+**MTPD:** Maximum Tolerable Period of Disruption (Etenaldi Jasangarriaren Gehieneko Epea)
 
-**BIA:** Business Impact Analysis
+**BIA:** Business Impact Analysis (Negozioaren Eraginaren Analisia)
 
-**DLP:** Data Loss Prevention
+**DLP:** Data Loss Prevention (Datu Galeraren Prebentzioa)
 
-**MDM:** Mobile Device Management
+**MDM:** Mobile Device Management (Gailu Mugikorren Kudeaketa)
 
 **HSM:** Hardware Security Module
 
@@ -669,4 +669,4 @@ All employees must acknowledge receipt and understanding of this policy:
 
 ---
 
-**END OF DOCUMENT**
+**DOKUMENTUAREN AMAIERA**

@@ -205,7 +205,7 @@ const Dashboard = () => {
       }
     } catch (error) {
       console.error('MFA toggle error:', error);
-      alert('Errorea MFA-a aldatzean');
+      alert('Errorea MFA egoera aldatzean');
     } finally {
       setMfaLoading(false);
     }
@@ -218,7 +218,7 @@ const Dashboard = () => {
   return (
     <Container>
       <Header>
-        <Title>Dashboard</Title>
+        <Title>Arbela (Dashboard)</Title>
         <UserSection>
           <UserInfo>Ongi etorri, {user?.username || 'Erabiltzailea'}</UserInfo>
           <LogoutButton onClick={logout}>Saioa Itxi</LogoutButton>
@@ -228,20 +228,20 @@ const Dashboard = () => {
       <Grid>
         <StatCard>
           <StatValue>{stats.products}</StatValue>
-          <StatLabel>Produktu Eskuragarriak</StatLabel>
+          <StatLabel>Eskuragarri Dauden Produktuak</StatLabel>
         </StatCard>
         <StatCard>
           <StatValue>{stats.orders}</StatValue>
-          <StatLabel>Eskaera Totalak</StatLabel>
+          <StatLabel>Eskaera Guztira</StatLabel>
         </StatCard>
         <StatCard>
           <StatValue>€{stats.revenue.toLocaleString()}</StatValue>
-          <StatLabel>Diru Sarrerak</StatLabel>
+          <StatLabel>Diru-sarrerak</StatLabel>
         </StatCard>
       </Grid>
 
       <Section>
-        <SectionTitle>Ekintza Bizkorrak</SectionTitle>
+        <SectionTitle>Ekintza Azkarrak</SectionTitle>
         <QuickActions>
           <ActionButton onClick={() => navigate('/products')}>
             🍪 Produktuak Ikusi
@@ -256,12 +256,12 @@ const Dashboard = () => {
 
         <MFAPanel enabled={mfaEnabled}>
           <MFATitle enabled={mfaEnabled}>
-            {mfaEnabled ? '✓ MFA Gaituta' : '⚠ MFA Ezgaituta'}
+            {mfaEnabled ? '✓ MFA Gaituta' : '⚠ MFA Desgaituta'}
           </MFATitle>
           <MFADescription>
             {mfaEnabled
-              ? 'Zure kontua bi faktoreko autentikazioarekin babestuta dago.'
-              : 'Gomendatzen dugu bi faktoreko autentikazioa gaitzea segurtasun hobetzeko.'}
+              ? 'Zure kontua faktore anitzeko autentifikazioarekin babestuta dago.'
+              : 'Segurtasuna hobetzeko faktore anitzeko autentifikazioa gaitzea gomendatzen dizugu.'}
           </MFADescription>
           <ActionButton onClick={handleToggleMFA} disabled={mfaLoading}>
             {mfaLoading ? 'Kargatzen...' : mfaEnabled ? 'MFA Desgaitu' : 'MFA Gaitu'}

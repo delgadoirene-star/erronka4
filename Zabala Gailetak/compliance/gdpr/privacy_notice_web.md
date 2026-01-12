@@ -1,646 +1,646 @@
-# Privacy Notice
-## Zabala Gailetak S.A. - Web Application
+# Pribatutasun Oharra
+## Zabala Gailetak S.A. - Web Aplikazioa
 
-**Last Updated:** January 8, 2026  
-**Effective Date:** January 8, 2026  
-**Version:** 1.0
-
----
-
-## 1. Introduction
-
-Welcome to Zabala Gailetak S.A. ("we," "us," or "our"). We are committed to protecting your privacy and personal data. This Privacy Notice explains how we collect, use, share, and protect your personal information when you use our website and services.
-
-**Who we are:**
-- **Company Name:** Zabala Gailetak S.A.
-- **Business:** Cookie manufacturing and online sales
-- **Address:** [Company Address], [City, Postal Code], Spain
-- **Tax ID (CIF):** [Tax ID]
-- **Website:** www.zabalagailetak.com
-- **Email:** info@zabalagailetak.com
-- **Phone:** +34 XXX XXX XXX
-
-**Data Protection Officer (DPO):**
-- **Name:** [DPO Name]
-- **Email:** dpo@zabalagailetak.com
-- **Phone:** +34 XXX XXX XXX
-
-This Privacy Notice applies to:
-- Our website (www.zabalagailetak.com)
-- Our online store
-- Our customer accounts
-- Our marketing communications
-- Any related services
-
-**Your Rights:** You have important rights regarding your personal data, including the right to access, correct, delete, or restrict its use. See Section 9 for details.
+**Azken Eguneratzea:** 2026ko Urtarrilaren 8a  
+**Indarrean Sartze Data:** 2026ko Urtarrilaren 8a  
+**Bertsioa:** 1.0
 
 ---
 
-## 2. Information We Collect
+## 1. Sarrera
 
-### 2.1 Information You Provide to Us
+Ongi etorri Zabala Gailetak S.A.-ra ("gu", "gure" edo "guri"). Zure pribatutasuna eta datu pertsonalak babesteko konpromisoa dugu. Pribatutasun Ohar honek gure webgunea eta zerbitzuak erabiltzen dituzunean zure informazio pertsonala nola biltzen, erabiltzen, partekatzen eta babesten dugun azaltzen du.
 
-**Account Information:**
-When you create an account, we collect:
-- Full name
-- Email address
-- Password (encrypted)
-- Phone number
-- Billing address
-- Shipping address
+**Nor gara:**
+- **Enpresa Izena:** Zabala Gailetak S.A.
+- **Jarduera:** Gaileta ekoizpena eta online salmenta
+- **Helbidea:** [Enpresa Helbidea], [Herria, Posta Kodea], Espainia
+- **IFK (CIF):** [IFK Zenbakia]
+- **Webgunea:** www.zabalagailetak.com
+- **Emaila:** info@zabalagailetak.com
+- **Telefonoa:** +34 XXX XXX XXX
 
-**Order Information:**
-When you place an order, we collect:
-- Billing and shipping addresses
-- Payment information (processed securely by our payment provider)
-- Order details (products, quantities, preferences)
-- Delivery instructions
+**Datuen Babeserako Ordezkaria (DBO/DPO):**
+- **Izena:** [DBO Izena]
+- **Emaila:** dpo@zabalagailetak.com
+- **Telefonoa:** +34 XXX XXX XXX
 
-**Communication Information:**
-When you contact us, we collect:
-- Name and contact details
-- Content of your message
-- Any information you choose to provide
+Pribatutasun Ohar hau honako hauei aplikatzen zaie:
+- Gure webgunea (www.zabalagailetak.com)
+- Gure online denda
+- Gure bezeroen kontuak
+- Gure marketin komunikazioak
+- Lotutako edozein zerbitzu
 
-**Marketing Preferences:**
-If you opt in to marketing:
-- Email address
-- Communication preferences
-- Areas of interest
-
-### 2.2 Information We Collect Automatically
-
-**Technical Information:**
-When you visit our website, we automatically collect:
-- IP address
-- Browser type and version
-- Device type and operating system
-- Referring website
-- Pages viewed and time spent
-- Date and time of visit
-- Clickstream data
-
-**Cookies and Similar Technologies:**
-We use cookies and similar tracking technologies. See our Cookie Policy for details.
-
-**Usage Information:**
-We collect information about how you interact with our website:
-- Products viewed
-- Items added to cart
-- Search queries
-- Account activity
-- Preferences and settings
-
-### 2.3 Information from Third Parties
-
-We may receive information from:
-- **Payment Processors:** Payment confirmation, fraud screening results
-- **Delivery Providers:** Delivery status, tracking information
-- **Social Media:** If you connect your social media accounts (name, profile picture, email)
-- **Analytics Providers:** Aggregated usage statistics
-- **Marketing Partners:** Campaign performance data
-
-We do not purchase personal data from data brokers.
+**Zure Eskubideak:** Zure datu pertsonalei buruzko eskubide garrantzitsuak dituzu, sartzeko, zuzentzeko, ezabatzeko edo erabilera mugatzeko eskubidea barne. Ikusi 9. atala xehetasunetarako.
 
 ---
 
-## 3. How We Use Your Information
+## 2. Biltzen Dugun Informazioa
 
-We use your personal data for the following purposes:
+### 2.1 Zuk Ematen Diguzun Informazioa
 
-### 3.1 Order Processing and Service Delivery (Legal Basis: Contract)
+**Kontu Informazioa:**
+Kontu bat sortzen duzunean, hau biltzen dugu:
+- Izen-abizenak
+- Email helbidea
+- Pasahitza (enkriptatuta)
+- Telefono zenbakia
+- Fakturazio helbidea
+- Bidalketa helbidea
 
-- Process and fulfill your orders
-- Manage payments and transactions
-- Communicate about your orders (confirmations, shipping updates)
-- Provide customer support
-- Handle returns and refunds
+**Eskaera Informazioa:**
+Eskaera bat egiten duzunean, hau biltzen dugu:
+- Fakturazio eta bidalketa helbideak
+- Ordainketa informazioa (gure ordainketa hornitzaileak segurtasunez prozesatuta)
+- Eskaera xehetasunak (produktuak, kantitateak, lehentasunak)
+- Bidalketa argibideak
 
-### 3.2 Account Management (Legal Basis: Contract)
+**Komunikazio Informazioa:**
+Gurekin harremanetan jartzen zarenean, hau biltzen dugu:
+- Izena eta harremanetarako datuak
+- Zure mezuaren edukia
+- Ematen duzun beste edozein informazio
 
-- Create and manage your account
-- Authenticate your identity
-- Enable account features (order history, saved addresses)
-- Notify you of account-related updates
+**Marketin Lehentasunak:**
+Marketina jasotzea aukeratzen baduzu:
+- Email helbidea
+- Komunikazio lehentasunak
+- Intereseko arloak
 
-### 3.3 Communication (Legal Basis: Contract, Consent, or Legitimate Interests)
+### 2.2 Automatikoki Biltzen Dugun Informazioa
 
-- Respond to your inquiries and requests
-- Send transactional communications (order confirmations, shipping notifications)
-- Send service announcements (policy updates, website maintenance)
-- Send marketing communications **with your consent** (promotional offers, new products, newsletters)
+**Informazio Teknikoa:**
+Gure webgunea bisitatzen duzunean, automatikoki biltzen dugu:
+- IP helbidea
+- Nabigatzaile mota eta bertsioa
+- Gailu mota eta sistema eragilea
+- Erreferentziazko webgunea
+- Ikusitako orriak eta igarotako denbora
+- Bisita data eta ordua
+- Clickstream datuak
 
-### 3.4 Website Improvement (Legal Basis: Legitimate Interests)
+**Cookieak eta Antzeko Teknologiak:**
+Cookieak eta antzeko jarraipen teknologiak erabiltzen ditugu. Ikusi gure Cookie Politika xehetasunetarako.
 
-- Analyze website usage and performance
-- Improve user experience and website functionality
-- Test new features and designs
-- Conduct research and analysis
+**Erabilera Informazioa:**
+Gure webgunearekin nola elkarreragiten duzun biltzen dugu:
+- Ikusitako produktuak
+- Saskira gehitutako elementuak
+- Bilaketa kontsultak
+- Kontu jarduera
+- Lehentasunak eta ezarpenak
 
-### 3.5 Security and Fraud Prevention (Legal Basis: Legitimate Interests, Legal Obligation)
+### 2.3 Hirugarrenengandik Jasotako Informazioa
 
-- Detect and prevent fraud, unauthorized access, and security threats
-- Monitor for suspicious activity
-- Investigate security incidents
-- Comply with security and legal obligations
+Informazioa jaso dezakegu hemendik:
+- **Ordainketa Prozesatzaileak:** Ordainketa berrespena, iruzurren baheketa emaitzak
+- **Bidalketa Hornitzaileak:** Bidalketa egoera, jarraipen informazioa
+- **Sare Sozialak:** Zure sare sozialetako kontuak konektatzen badituzu (izena, profil argazkia, emaila)
+- **Analitika Hornitzaileak:** Erabilera estatistika agregatuak
+- **Marketin Bazkideak:** Kanpaina errendimendu datuak
 
-### 3.6 Legal Compliance (Legal Basis: Legal Obligation)
-
-- Comply with Spanish and EU laws (tax, accounting, consumer protection)
-- Respond to legal requests (court orders, regulatory inquiries)
-- Maintain records for legal and regulatory purposes
-- Protect legal rights and interests
-
-### 3.7 Marketing and Personalization (Legal Basis: Consent or Legitimate Interests)
-
-- Send marketing emails **with your consent**
-- Display personalized product recommendations
-- Conduct market research and surveys
-- Improve marketing effectiveness
-
-**You can opt out of marketing at any time** (see Section 9.8).
-
----
-
-## 4. Legal Basis for Processing
-
-Under GDPR, we must have a legal basis for processing your personal data. We rely on the following:
-
-| Purpose | Legal Basis |
-|---------|-------------|
-| Order processing and delivery | **Contract** - Necessary to fulfill your order |
-| Account management | **Contract** - Necessary to provide account services |
-| Payment processing | **Contract** - Necessary for payment completion |
-| Customer support | **Contract** or **Legitimate Interests** - Providing assistance |
-| Marketing communications | **Consent** - You opted in to receive marketing |
-| Website analytics and improvement | **Legitimate Interests** - Improving our service |
-| Security and fraud prevention | **Legitimate Interests** - Protecting our business and customers |
-| Legal compliance (accounting, tax) | **Legal Obligation** - Required by Spanish law |
-| Handling legal claims | **Legitimate Interests** - Protecting our legal rights |
-
-**Legitimate Interests:** Where we rely on legitimate interests, we have balanced our interests against your rights and freedoms. You have the right to object (see Section 9.6).
+Ez dugu datu pertsonalik erosten datu-artekariengandik (data brokers).
 
 ---
 
-## 5. How We Share Your Information
+## 3. Zure Informazioa Nola Erabiltzen Dugun
 
-We do not sell your personal data to third parties. We share your data only as described below:
+Zure datu pertsonalak honako helburu hauetarako erabiltzen ditugu:
 
-### 5.1 Service Providers (Data Processors)
+### 3.1 Eskaera Prozesatzea eta Zerbitzu Ematea (Oinarri Juridikoa: Kontratua)
 
-We share data with trusted service providers who process data on our behalf:
+- Zure eskaerak prozesatu eta bete
+- Ordainketak eta transakzioak kudeatu
+- Zure eskaerei buruz komunikatu (berrespenak, bidalketa eguneraketak)
+- Bezeroarentzako arreta eskaini
+- Itzuketak eta diru-itzuketak kudeatu
 
-**Payment Processors:**
-- **Who:** [Payment Processor Name - e.g., Stripe, PayPal]
-- **Purpose:** Process payments securely
-- **Data Shared:** Payment card details, billing address, transaction amount
-- **Location:** EU/EEA
-- **Safeguards:** PCI DSS compliant, Data Processing Agreement in place
+### 3.2 Kontu Kudeaketa (Oinarri Juridikoa: Kontratua)
 
-**Shipping and Delivery:**
-- **Who:** [Shipping Provider Name - e.g., Correos, SEUR, DHL]
-- **Purpose:** Deliver your orders
-- **Data Shared:** Name, shipping address, phone number, order details
-- **Location:** Spain/EU
-- **Safeguards:** Data Processing Agreement in place
+- Zure kontua sortu eta kudeatu
+- Zure identitatea autentikatu
+- Kontuaren ezaugarriak gaitu (eskaera historia, gordetako helbideak)
+- Kontuarekin lotutako eguneraketen berri eman
 
-**Email and Communication:**
-- **Who:** [Email Provider - e.g., Microsoft 365, SendGrid]
-- **Purpose:** Send transactional and marketing emails
-- **Data Shared:** Email address, name, communication preferences
-- **Location:** EU
-- **Safeguards:** Data Processing Agreement in place
+### 3.3 Komunikazioa (Oinarri Juridikoa: Kontratua, Baimena edo Interes Legitimoak)
 
-**Website Hosting and Infrastructure:**
-- **Who:** Amazon Web Services (AWS)
-- **Purpose:** Host our website and databases
-- **Data Shared:** All data stored on our platform
-- **Location:** EU (Ireland - eu-west-1)
-- **Safeguards:** AWS GDPR compliance, Data Processing Agreement
+- Zure kontsultei eta eskaerei erantzun
+- Transakzio komunikazioak bidali (eskaera berrespenak, bidalketa jakinarazpenak)
+- Zerbitzu iragarkiak bidali (politika eguneraketak, webgune mantentzea)
+- Marketin komunikazioak bidali **zure baimenarekin** (promozio eskaintzak, produktu berriak, buletinak)
 
-**Analytics:**
-- **Who:** [Analytics Provider - e.g., Google Analytics, self-hosted analytics]
-- **Purpose:** Understand website usage and improve experience
-- **Data Shared:** IP address (anonymized), usage data, device information
-- **Location:** [Location]
-- **Safeguards:** [IP anonymization, Data Processing Agreement]
+### 3.4 Webgunearen Hobekuntza (Oinarri Juridikoa: Interes Legitimoak)
 
-All service providers are:
-- Contractually obligated to protect your data
-- Bound by Data Processing Agreements per GDPR Article 28
-- Prohibited from using your data for their own purposes
-- Subject to our oversight and auditing rights
+- Webgunearen erabilera eta errendimendua aztertu
+- Erabiltzaile esperientzia eta webgune funtzionalitatea hobetu
+- Ezaugarri eta diseinu berriak probatu
+- Ikerketa eta analisia egin
 
-### 5.2 Legal Requirements
+### 3.5 Segurtasuna eta Iruzurren Prebentzioa (Oinarri Juridikoa: Interes Legitimoak, Lege Obligazioa)
 
-We may disclose your data when required by law:
-- To comply with legal process (court orders, subpoenas)
-- To government authorities (tax authorities, regulators)
-- To law enforcement (if required for investigation)
-- To protect our rights, property, or safety
-- To enforce our terms and conditions
+- Iruzurra, baimenik gabeko sarbidea eta segurtasun mehatxuak detektatu eta prebenitu
+- Jarduera susmagarriak monitorizatu
+- Segurtasun intzidenteak ikertu
+- Segurtasun eta lege obligazioak bete
 
-### 5.3 Business Transfers
+### 3.6 Lege Betetzea (Oinarri Juridikoa: Lege Obligazioa)
 
-If we are involved in a merger, acquisition, or sale of assets, your data may be transferred to the new owner. You will be notified of any such change and your options.
+- Espainiako eta EBko legeak bete (zerga, kontabilitate, kontsumitzaileen babesa)
+- Lege eskaerei erantzun (epaitegi aginduak, erregulatzaileen kontsultak)
+- Lege eta erregulazio helburuetarako erregistroak mantendu
+- Lege eskubideak eta interesak babestu
 
-### 5.4 With Your Consent
+### 3.7 Marketina eta Pertsonalizazioa (Oinarri Juridikoa: Baimena edo Interes Legitimoak)
 
-We may share your data with other third parties when you have given explicit consent.
+- Marketin emailak bidali **zure baimenarekin**
+- Produktu gomendio pertsonalizatuak erakutsi
+- Merkatu ikerketa eta inkestak egin
+- Marketin eraginkortasuna hobetu
+
+**Marketina jasotzeari uko egin diezaiokezu edozein unetan** (ikusi 9.8 atala).
 
 ---
 
-## 6. International Data Transfers
+## 4. Tratamenduaren Oinarri Juridikoa
 
-We primarily store and process your data within the European Union (EU/EEA). If we transfer your data outside the EU/EEA, we ensure adequate protection:
+GDPRren arabera, oinarri juridiko bat izan behar dugu zure datu pertsonalak tratatzeko. Honako hauetan oinarritzen gara:
 
-**Current International Transfers:**
+| Helburua | Oinarri Juridikoa |
+|----------|-------------------|
+| Eskaera prozesatzea eta bidalketa | **Kontratua** - Zure eskaera betetzeko beharrezkoa |
+| Kontu kudeaketa | **Kontratua** - Kontu zerbitzuak emateko beharrezkoa |
+| Ordainketa prozesatzea | **Kontratua** - Ordainketa burutzeko beharrezkoa |
+| Bezeroarentzako arreta | **Kontratua** edo **Interes Legitimoak** - Laguntza ematea |
+| Marketin komunikazioak | **Baimena** - Marketina jasotzea onartu zenuen |
+| Webgune analitika eta hobekuntza | **Interes Legitimoak** - Gure zerbitzua hobetzea |
+| Segurtasuna eta iruzur prebentzioa | **Interes Legitimoak** - Gure negozioa eta bezeroak babestea |
+| Lege betetzea (kontabilitatea, zergak) | **Lege Obligazioa** - Espainiako legeak eskatuta |
+| Lege erreklamazioak kudeatzea | **Interes Legitimoak** - Gure lege eskubideak babestea |
 
-[If applicable:]
-
-**Amazon Web Services (AWS) - United States:**
-- **Safeguard:** Standard Contractual Clauses (EU Commission approved)
-- **Additional Measures:** Encryption in transit and at rest, access controls
-- **Transfer Impact Assessment:** Conducted per Schrems II requirements
-
-[Or if no international transfers:]
-
-**No International Transfers:**
-Currently, all your personal data is stored and processed within the EU (specifically, Ireland and Spain). We do not transfer data outside the EU/EEA.
-
-If we need to transfer data internationally in the future, we will:
-- Use appropriate safeguards (Standard Contractual Clauses, Adequacy Decisions)
-- Conduct Transfer Impact Assessments
-- Update this Privacy Notice
+**Interes Legitimoak:** Interes legitimoetan oinarritzen garenean, gure interesak zure eskubide eta askatasunen aurka orekatu ditugu. Aurka egiteko eskubidea duzu (ikusi 9.6 atala).
 
 ---
 
-## 7. Data Security
+## 5. Zure Informazioa Nola Partekatzen Dugun
 
-We take security seriously and implement appropriate technical and organizational measures to protect your personal data:
+Ez diegu zure datu pertsonalik saltzen hirugarrenei. Zure datuak behean deskribatzen den moduan soilik partekatzen ditugu:
 
-**Technical Measures:**
-- **Encryption:** Data encrypted in transit (TLS 1.3) and at rest (AES-256)
-- **Access Control:** Role-based access, least privilege principle
-- **Authentication:** Passwords hashed using bcrypt (12 rounds), multi-factor authentication for admin accounts
-- **Firewalls:** Network segmentation and perimeter protection
-- **Monitoring:** 24/7 security monitoring and incident detection (SIEM)
-- **Regular Testing:** Vulnerability scanning and penetration testing
+### 5.1 Zerbitzu Hornitzaileak (Datuen Erantzuleak)
 
-**Organizational Measures:**
-- **Policies:** Comprehensive information security policies
-- **Training:** Regular security awareness training for staff
-- **Access Management:** Strict controls on who can access personal data
-- **Incident Response:** Data breach notification procedures (within 72 hours to authorities if required)
-- **Vendor Management:** Security requirements for all third-party processors
+Datuak gure izenean prozesatzen dituzten konfiantzazko zerbitzu hornitzaileekin partekatzen ditugu:
 
-**Your Security:**
-- Choose a strong, unique password for your account
-- Do not share your password with anyone
-- Enable multi-factor authentication (if available)
-- Log out when using shared or public devices
-- Report suspicious activity immediately to security@zabalagailetak.com
+**Ordainketa Prozesatzaileak:**
+- **Nor:** [Ordainketa Prozesatzaile Izena - adib., Stripe, PayPal]
+- **Helburua:** Ordainketak segurtasunez prozesatzea
+- **Partekatutako Datuak:** Txartelaren xehetasunak, fakturazio helbidea, transakzio zenbatekoa
+- **Kokapena:** EB/EEE
+- **Bermeak:** PCI DSS betetzea, Datuen Tratamendurako Kontratua indarrean
 
-**No System is 100% Secure:** While we implement industry-standard security measures, no system can guarantee absolute security. If we discover a data breach that affects you, we will notify you as required by law.
+**Bidalketa eta Banaketa:**
+- **Nor:** [Bidalketa Hornitzaile Izena - adib., Correos, SEUR, DHL]
+- **Helburua:** Zure eskaerak entregatzea
+- **Partekatutako Datuak:** Izena, bidalketa helbidea, telefono zenbakia, eskaera xehetasunak
+- **Kokapena:** Espainia/EB
+- **Bermeak:** Datuen Tratamendurako Kontratua indarrean
 
----
+**Email eta Komunikazioa:**
+- **Nor:** [Email Hornitzailea - adib., Microsoft 365, SendGrid]
+- **Helburua:** Transakzio eta marketin emailak bidaltzea
+- **Partekatutako Datuak:** Email helbidea, izena, komunikazio lehentasunak
+- **Kokapena:** EB
+- **Bermeak:** Datuen Tratamendurako Kontratua indarrean
 
-## 8. Data Retention
+**Webgune Ostalaritza eta Azpiegitura:**
+- **Nor:** Amazon Web Services (AWS)
+- **Helburua:** Gure webgunea eta datu-baseak ostatatzea
+- **Partekatutako Datuak:** Gure plataforman gordetako datu guztiak
+- **Kokapena:** EB (Irlanda - eu-west-1)
+- **Bermeak:** AWS GDPR betetzea, Datuen Tratamendurako Kontratua
 
-We retain your personal data only as long as necessary for the purposes outlined in this Privacy Notice or as required by law.
+**Analitika:**
+- **Nor:** [Analitika Hornitzailea - adib., Google Analytics]
+- **Helburua:** Webgunearen erabilera ulertzea eta esperientzia hobetzea
+- **Partekatutako Datuak:** IP helbidea (anonimizatua), erabilera datuak, gailu informazioa
+- **Kokapena:** [Kokapena]
+- **Bermeak:** [IP anonimizazioa, Datuen Tratamendurako Kontratua]
 
-### 8.1 Retention Periods
+Zerbitzu hornitzaile guztiak:
+- Kontratuz behartuta daude zure datuak babestera
+- GDPR 28. artikuluaren araberako Datuen Tratamendurako Kontratuek lotuta daude
+- Debekatuta daukate zure datuak beren helburuetarako erabiltzea
+- Gure gainbegiratze eta auditoria eskubideen menpe daude
 
-| Data Category | Retention Period | Reason |
-|---------------|------------------|--------|
-| **Account Information** | Until account deletion requested or 2 years of inactivity | Service provision, customer relationship |
-| **Order and Transaction Records** | **7 years** | Legal obligation (Spanish tax and accounting law) |
-| **Payment Information** | Not stored (handled by payment processor) | Security best practice |
-| **Marketing Communications** | Until consent withdrawn or 2 years of inactivity | Consent-based processing |
-| **Customer Support Records** | 3 years | Customer service, quality improvement |
-| **Website Analytics** | 26 months (aggregated and anonymized after) | Website improvement, analytics |
-| **Security Logs** | 1 year (3 years for critical security events) | Security monitoring, incident investigation |
-| **Cookies** | See Cookie Policy | Varies by cookie type |
+### 5.2 Lege Betekizunak
 
-**After Retention Period:**
-- Data is securely deleted or anonymized
-- Anonymized data (which cannot identify you) may be retained indefinitely for statistical purposes
+Legeak eskatzen duenean zure datuak ezagutarazi ditzakegu:
+- Lege prozesuak betetzeko (epaitegi aginduak, zitazioak)
+- Gobernu agintariei (zerga agintariak, erregulatzaileak)
+- Legea betearazteko agentziei (ikerketarako beharrezkoa bada)
+- Gure eskubideak, jabetza edo segurtasuna babesteko
+- Gure baldintzak eta terminoak betearazteko
 
-**Legal Holds:**
-If data is subject to legal proceedings or regulatory investigation, we may retain it beyond the standard retention period.
+### 5.3 Negozio Transferentziak
 
-**See our Data Retention Schedule for comprehensive details.**
+Bat-egite, erosketa edo aktiboen salmenta batean parte hartzen badugu, zure datuak jabe berriari transferitu ahal izango zaizkio. Edozein aldaketa eta zure aukeren berri emango zaizu.
 
----
+### 5.4 Zure Baimenarekin
 
-## 9. Your Rights
-
-Under GDPR, you have the following rights regarding your personal data:
-
-### 9.1 Right of Access (Article 15)
-
-You have the right to:
-- Know if we are processing your data
-- Receive a copy of your personal data
-- Receive information about how we use your data
-
-**How to Exercise:** Email dpo@zabalagailetak.com or use our online form at www.zabalagailetak.com/privacy/data-request
-
-**Response Time:** Within 1 month (may be extended to 3 months for complex requests)
-
-**Cost:** Free (first copy)
-
-### 9.2 Right to Rectification (Article 16)
-
-You have the right to correct inaccurate or incomplete personal data.
-
-**How to Exercise:**
-- Log in to your account and update your information
-- Email dpo@zabalagailetak.com
-- Contact customer support
-
-**Response Time:** Within 1 month
-
-### 9.3 Right to Erasure / "Right to be Forgotten" (Article 17)
-
-You have the right to request deletion of your personal data when:
-- Data is no longer necessary for the original purpose
-- You withdraw consent (where consent is the legal basis)
-- You object to processing and there are no overriding legitimate grounds
-- Data was processed unlawfully
-- Legal obligation requires deletion
-
-**Exceptions:** We may refuse erasure if we need the data for:
-- Legal obligations (e.g., 7-year accounting record retention)
-- Legal claims (e.g., warranty or contract disputes)
-- Other legal reasons
-
-**How to Exercise:**
-- Email dpo@zabalagailetak.com with your erasure request
-- Specify what data you want deleted
-- We will inform you of any data we must retain and why
-
-**Response Time:** Within 1 month
-
-### 9.4 Right to Restriction of Processing (Article 18)
-
-You have the right to limit how we use your data when:
-- You contest the accuracy of the data
-- Processing is unlawful but you don't want erasure
-- We no longer need the data but you need it for legal claims
-- You object to processing while we verify our legitimate grounds
-
-**Effect:** We will store the data but not use it (except with your consent or for legal claims).
-
-**How to Exercise:** Email dpo@zabalagailetak.com
-
-**Response Time:** Within 1 month
-
-### 9.5 Right to Data Portability (Article 20)
-
-You have the right to receive your data in a structured, machine-readable format (e.g., JSON, CSV) and transfer it to another service.
-
-**Conditions:** This right applies when:
-- Processing is based on consent or contract
-- Processing is automated
-
-**How to Exercise:** Email dpo@zabalagailetak.com requesting data portability
-
-**Response Time:** Within 1 month
-
-**Format:** JSON or CSV (you can specify preference)
-
-### 9.6 Right to Object (Article 21)
-
-**Object to Marketing (Absolute Right):**
-- You can object to marketing communications at any time
-- **How:** Click "unsubscribe" in any marketing email, or email dpo@zabalagailetak.com
-- **Effect:** We will stop marketing immediately
-
-**Object to Other Processing (Based on Legitimate Interests):**
-- You can object to processing based on our legitimate interests (e.g., analytics, fraud prevention)
-- **How:** Email dpo@zabalagailetak.com explaining your particular situation
-- **Effect:** We will assess your objection against our legitimate grounds and respond within 1 month
-
-### 9.7 Rights Related to Automated Decision-Making (Article 22)
-
-You have the right not to be subject to decisions based solely on automated processing with legal or significant effects.
-
-**Our Use:** We do not currently use automated decision-making with legal or significant effects. Order processing and fraud detection involve human review.
-
-If this changes, we will update this notice and provide appropriate safeguards (human intervention, explanation, ability to contest).
-
-### 9.8 Right to Withdraw Consent
-
-Where we process your data based on consent, you can withdraw consent at any time.
-
-**How to Withdraw:**
-- **Marketing Emails:** Click "unsubscribe" in any email
-- **Account Settings:** Update preferences in your account dashboard
-- **Email:** dpo@zabalagailetak.com
-
-**Effect:** Withdrawal does not affect the lawfulness of processing before withdrawal.
-
-### 9.9 Right to Lodge a Complaint
-
-If you are unhappy with how we handle your data, you have the right to complain to a supervisory authority:
-
-**Spanish Data Protection Authority (AEPD):**
-- **Website:** www.aepd.es
-- **Phone:** +34 901 100 099
-- **Address:** C/ Jorge Juan, 6, 28001 Madrid, Spain
-- **Online Complaint:** https://sedeagpd.gob.es
-
-We encourage you to contact us first (dpo@zabalagailetak.com) so we can try to resolve your concern.
-
-### 9.10 How to Exercise Your Rights
-
-**Contact Methods:**
-- **Email:** dpo@zabalagailetak.com (preferred)
-- **Web Form:** www.zabalagailetak.com/privacy/data-request
-- **Mail:** Data Protection Officer, Zabala Gailetak S.A., [Address], [City, Postal Code], Spain
-- **Phone:** +34 XXX XXX XXX
-
-**What to Include:**
-- Your full name
-- Account email address (if applicable)
-- Specific right you wish to exercise
-- Details of your request
-
-**Identity Verification:**
-For your security, we may ask you to verify your identity before fulfilling requests.
-
-**Response Time:**
-- Standard: Within 1 month
-- Extended (complex requests): Within 3 months (we will notify you if extension is needed)
-
-**Cost:**
-- Free (in most cases)
-- We may charge a reasonable fee for manifestly unfounded or excessive requests
+Zure berariazko baimena eman duzunean zure datuak beste hirugarren batzuekin partekatu ditzakegu.
 
 ---
 
-## 10. Children's Privacy
+## 6. Nazioarteko Datu Transferentziak
 
-Our website and services are not intended for children under 16 years of age.
+Nagusiki Europar Batasunean (EB/EEE) gordetzen eta prozesatzen ditugu zure datuak. Zure datuak EB/EEE kanpora transferitzen baditugu, babes egokia bermatzen dugu:
 
-**We do not knowingly collect personal data from children under 16.**
+**Uneko Nazioarteko Transferentziak:**
 
-If you are under 16, please do not:
-- Create an account
-- Place orders
-- Provide personal information
+[Aplikagarria bada:]
 
-**Parental Consent:**
-If we discover we have collected data from a child under 16 without parental consent, we will delete it immediately.
+**Amazon Web Services (AWS) - Estatu Batuak:**
+- **Bermea:** Klausula Kontraktual Estandarrak (EBko Batzordeak onartuak)
+- **Neurri Gehigarriak:** Enkriptatzea garraioan eta geldirik, sarbide kontrolak
+- **Transferentzia Inpaktu Ebaluazioa:** Schrems II eskakizunen arabera egina
 
-**Parents/Guardians:**
-If you believe your child has provided personal data to us, please contact us at dpo@zabalagailetak.com and we will delete it.
+[Edo nazioarteko transferentziarik ez badago:]
 
----
+**Nazioarteko Transferentziarik Ez:**
+Une honetan, zure datu pertsonal guztiak EBn gordetzen eta prozesatzen dira (zehazki, Irlandan eta Espainian). Ez dugu daturik transferitzen EB/EEE kanpora.
 
-## 11. Cookies and Tracking Technologies
-
-We use cookies and similar technologies to improve your experience and understand website usage.
-
-**Types of Cookies:**
-- **Strictly Necessary:** Essential for website functionality (cannot be disabled)
-- **Performance/Analytics:** Help us understand usage and improve the website
-- **Functional:** Remember your preferences
-- **Marketing/Targeting:** Deliver relevant advertising (requires consent)
-
-**Your Choices:**
-- **Cookie Consent Banner:** Manage your preferences when you first visit
-- **Cookie Settings:** Update preferences at any time via our Cookie Settings link (footer)
-- **Browser Settings:** Disable cookies in your browser (may affect website functionality)
-
-**For detailed information, see our Cookie Policy.**
+Etorkizunean datuak nazioartean transferitu behar baditugu:
+- Berme egokiak erabiliko ditugu (Klausula Kontraktual Estandarrak, Egokitasun Erabakiak)
+- Transferentzia Inpaktu Ebaluazioak egingo ditugu
+- Pribatutasun Ohar hau eguneratuko dugu
 
 ---
 
-## 12. Third-Party Links
+## 7. Datuen Segurtasuna
 
-Our website may contain links to third-party websites (social media, partners, payment processors).
+Segurtasuna serio hartzen dugu eta neurri tekniko eta antolakuntzako egokiak inplementatzen ditugu zure datu pertsonalak babesteko:
 
-**Important:**
-- We are not responsible for the privacy practices of third-party websites
-- Third-party sites have their own privacy policies
-- We encourage you to read their privacy policies before providing personal data
+**Neurri Teknikoak:**
+- **Enkriptatzea:** Datuak enkriptatuta garraioan (TLS 1.3) eta geldirik (AES-256)
+- **Sarbide Kontrola:** Rol-etan oinarritutako sarbidea, pribilegio gutxieneko printzipioa
+- **Autentikazioa:** Pasahitzak bcrypt erabiliz hash-eatuak (12 erronda), faktore anitzeko autentikazioa admin kontuentzako
+- **Firewalls:** Sare segmentazioa eta perimetro babesa
+- **Monitorizazioa:** 24/7 segurtasun monitorizazioa eta intzidente detekzioa (SIEM)
+- **Ohiko Probak:** Ahultasun eskaneatzea eta intrusio probak
 
-**When you click a third-party link, you are leaving our website.**
+**Antolakuntza Neurriak:**
+- **Politikak:** Informazio segurtasuneko politika integralak
+- **Prestakuntza:** Langileentzako ohiko segurtasun kontzientziazio prestakuntza
+- **Sarbide Kudeaketa:** Datu pertsonaletara nork sarbidea duen kontrol zorrotzak
+- **Intzidente Erantzuna:** Datu-urraketa jakinarazpen prozedurak (72 orduko epean agintariei beharrezkoa bada)
+- **Hornitzaile Kudeaketa:** Segurtasun eskakizunak hirugarren prozesatzaile guztientzat
 
----
+**Zure Segurtasuna:**
+- Aukeratu pasahitz sendo eta bakarra zure konturako
+- Ez partekatu zure pasahitza inorekin
+- Gaitu faktore anitzeko autentikazioa (eskuragarri badago)
+- Itxi saioa gailu partekatu edo publikoak erabiltzean
+- Eman jarduera susmagarrien berri berehala security@zabalagailetak.com helbidera
 
-## 13. Changes to This Privacy Notice
-
-We may update this Privacy Notice from time to time to reflect changes in our practices, technology, legal requirements, or other factors.
-
-**Notification of Changes:**
-- **Material Changes:** We will notify you via email or prominent website notice
-- **Minor Changes:** Updated Privacy Notice posted with new "Last Updated" date
-
-**Your Continued Use:**
-Continued use of our website after changes constitutes acceptance of the updated Privacy Notice.
-
-**Review Regularly:**
-We encourage you to review this Privacy Notice periodically.
-
-**Previous Versions:**
-Available upon request from dpo@zabalagailetak.com.
+**Sistemarik Ez Da %100 Segurua:** Industriako estandarren araberako segurtasun neurriak inplementatzen baditugu ere, sistemarik ezin da bermatu segurtasun absolutua. Zuri eragiten dizun datu-urraketa bat aurkitzen badugu, legeak agintzen duen moduan jakinaraziko dizugu.
 
 ---
 
-## 14. Contact Us
+## 8. Datuen Atxikipena
 
-If you have any questions, concerns, or requests regarding this Privacy Notice or our data practices, please contact us:
+Zure datu pertsonalak Pribatutasun Ohar honetan azaldutako helburuetarako edo legeak eskatzen duen denboran bakarrik gordetzen ditugu.
 
-**Data Protection Officer (DPO):**
-- **Email:** dpo@zabalagailetak.com
-- **Phone:** +34 XXX XXX XXX
-- **Mail:** Data Protection Officer, Zabala Gailetak S.A., [Address], [City, Postal Code], Spain
+### 8.1 Atxikipen Epeak
 
-**General Inquiries:**
-- **Email:** info@zabalagailetak.com
-- **Phone:** +34 XXX XXX XXX
-- **Website:** www.zabalagailetak.com
+| Datu Kategoria | Atxikipen Epea | Arrazoia |
+|----------------|----------------|----------|
+| **Kontu Informazioa** | Kontua ezabatzeko eskatu arte edo 2 urteko jarduerarik eza | Zerbitzu ematea, bezero harremana |
+| **Eskaera eta Transakzio Erregistroak** | **7 urte** | Lege obligazioa (Espainiako zerga eta kontabilitate legea) |
+| **Ordainketa Informazioa** | Ez da gordetzen (ordainketa prozesatzaileak kudeatzen du) | Segurtasun jardunbide egokia |
+| **Marketin Komunikazioak** | Baimena kendu arte edo 2 urteko jarduerarik eza | Baimenean oinarritutako tratamendua |
+| **Bezero Arreta Erregistroak** | 3 urte | Bezeroarentzako zerbitzua, kalitate hobekuntza |
+| **Webgune Analitika** | 26 hilabete (ondoren agregatu eta anonimizatu) | Webgune hobekuntza, analitika |
+| **Segurtasun Log-ak** | Urte 1 (3 urte segurtasun gertaera kritikoetarako) | Segurtasun monitorizazioa, intzidente ikerketa |
+| **Cookieak** | Ikusi Cookie Politika | Cookie motaren arabera aldatzen da |
 
-**Customer Support:**
-- **Email:** support@zabalagailetak.com
-- **Phone:** +34 XXX XXX XXX
-- **Hours:** Monday-Friday, 9:00-18:00 CET
+**Atxikipen Epearen Ondoren:**
+- Datuak segurtasunez ezabatzen edo anonimizatzen dira
+- Datu anonimizatuak (zuek identifikatu ezin zaituztenak) estatistika helburuetarako mugarik gabe gorde daitezke
 
-**Security Concerns:**
-- **Email:** security@zabalagailetak.com
-- **Phone:** +34 XXX XXX XXX (24/7 for urgent security matters)
+**Lege Atxikipenak:**
+Datuak prozedura legalen edo erregulazio ikerketaren menpe badaude, atxikipen epe estandarretik haratago gorde ditzakegu.
 
----
-
-## 15. Language
-
-This Privacy Notice is provided in English and Spanish. In case of any inconsistency or conflict between versions, the Spanish version shall prevail (as required by Spanish law).
-
-[Note: Spanish translation should be provided and available via language selector.]
+**Ikusi gure Datu Atxikipen Egutegia xehetasun osoetarako.**
 
 ---
 
-## 16. Definitions
+## 9. Zure Eskubideak
 
-**Personal Data:** Any information relating to an identified or identifiable person (e.g., name, email, IP address).
+GDPRren arabera, honako eskubide hauek dituzu zure datu pertsonalei dagokienez:
 
-**Processing:** Any operation performed on personal data (collection, storage, use, disclosure, deletion).
+### 9.1 Sartzeko Eskubidea (15. artikulua)
 
-**Controller:** The entity determining the purposes and means of processing (Zabala Gailetak S.A.).
+Eskubidea duzu:
+- Zure datuak tratatzen ari garen jakiteko
+- Zure datu pertsonalen kopia bat jasotzeko
+- Zure datuak nola erabiltzen ditugun jakiteko informazioa jasotzeko
 
-**Processor:** An entity processing personal data on behalf of the controller (our service providers).
+**Nola Erabili:** Bidali emaila dpo@zabalagailetak.com helbidera edo erabili gure online inprimakia hemen: www.zabalagailetak.com/privacy/data-request
 
-**Data Subject:** An individual whose personal data is processed (you).
+**Erantzun Denbora:** Hilabete 1eko epean (3 hilabetera luza daiteke eskaera konplexuetarako)
 
-**Consent:** Freely given, specific, informed, and unambiguous indication of agreement to processing.
+**Kostua:** Doan (lehen kopia)
 
-**GDPR:** General Data Protection Regulation (EU 2016/679).
+### 9.2 Zuzentzeko Eskubidea (16. artikulua)
 
-**LOPDGDD:** Spanish Organic Law 3/2018 on Data Protection and Digital Rights.
+Datu pertsonal okerrak edo osatu gabeak zuzentzeko eskubidea duzu.
 
-**AEPD:** Agencia Española de Protección de Datos (Spanish Data Protection Authority).
+**Nola Erabili:**
+- Hasi saioa zure kontuan eta eguneratu zure informazioa
+- Bidali emaila dpo@zabalagailetak.com helbidera
+- Jarri harremanetan bezeroarentzako arretarekin
+
+**Erantzun Denbora:** Hilabete 1eko epean
+
+### 9.3 Ezabatzeko Eskubidea / "Ahaztua Izateko Eskubidea" (17. artikulua)
+
+Zure datu pertsonalak ezabatzeko eskatzeko eskubidea duzu honako kasuetan:
+- Datuak jada ez dira beharrezkoak jatorrizko helbururako
+- Baimena kentzen duzunean (baimena oinarri juridikoa denean)
+- Tratamenduaren aurka egiten duzunean eta ez dagoenean interes legitimo nagusirik
+- Datuak legez kanpo tratatu direnean
+- Lege obligazioak ezabatzea eskatzen duenean
+
+**Salbuespenak:** Ezabatzea ukatu dezakegu datuak behar baditugu honakoetarako:
+- Lege obligazioak (adib., 7 urteko kontabilitate erregistro atxikipena)
+- Lege erreklamazioak (adib., berme edo kontratu gatazkak)
+- Beste lege arrazoi batzuk
+
+**Nola Erabili:**
+- Bidali emaila dpo@zabalagailetak.com helbidera zure ezabatze eskaerarekin
+- Zehaztu zein datu ezabatu nahi dituzun
+- Jakinaraziko dizugu zein datu gorde behar dugun eta zergatik
+
+**Erantzun Denbora:** Hilabete 1eko epean
+
+### 9.4 Tratamendua Mugatzeko Eskubidea (18. artikulua)
+
+Zure datuak nola erabiltzen ditugun mugatzeko eskubidea duzu honako kasuetan:
+- Datuen zehaztasuna aurkaratzen duzunean
+- Tratamendua legez kanpokoa da baina ez duzu ezabatzea nahi
+- Guk jada ez ditugu datuak behar baina zuk behar dituzu lege erreklamazioetarako
+- Tratamenduaren aurka egiten duzunean gure oinarri legitimoak egiaztatzen ditugun bitartean
+
+**Eragina:** Datuak gordeko ditugu baina ez ditugu erabiliko (zure baimenarekin edo lege erreklamazioetarako izan ezik).
+
+**Nola Erabili:** Bidali emaila dpo@zabalagailetak.com helbidera
+
+**Erantzun Denbora:** Hilabete 1eko epean
+
+### 9.5 Datuen Eramangarritasunerako Eskubidea (20. artikulua)
+
+Zure datuak formatu egituratu, erabilera arrunteko eta irakurgarrian (adib., JSON, CSV) jasotzeko eta beste zerbitzu batera transferitzeko eskubidea duzu.
+
+**Baldintzak:** Eskubide hau aplikatzen da:
+- Tratamendua baimenean edo kontratuan oinarritzen denean
+- Tratamendua automatizatua denean
+
+**Nola Erabili:** Bidali emaila dpo@zabalagailetak.com helbidera datu eramangarritasuna eskatuz
+
+**Erantzun Denbora:** Hilabete 1eko epean
+
+**Formatua:** JSON edo CSV (lehentasuna zehaztu dezakezu)
+
+### 9.6 Aurka Egiteko Eskubidea (21. artikulua)
+
+**Marketinaren Aurka Egin (Eskubide Absolutua):**
+- Marketin komunikazioen aurka egin dezakezu edozein unetan
+- **Nola:** Klikatu "harpidetza kendu" (unsubscribe) edozein marketin email-etan, edo bidali emaila dpo@zabalagailetak.com helbidera
+- **Eragina:** Berehala utziko dugu marketina bidaltzeari
+
+**Beste Tratamendu Batzuen Aurka Egin (Interes Legitimoetan Oinarrituta):**
+- Gure interes legitimoetan oinarritutako tratamenduaren aurka egin dezakezu (adib., analitika, iruzur prebentzioa)
+- **Nola:** Bidali emaila dpo@zabalagailetak.com helbidera zure egoera zehatza azalduz
+- **Eragina:** Zure aurka egitea gure oinarri legitimoen aurka ebaluatuko dugu eta hilabete 1eko epean erantzungo dugu
+
+### 9.7 Erabaki Automatizatuekin Lotutako Eskubideak (22. artikulua)
+
+Eskubidea duzu tratamendu automatizatuan soilik oinarritutako erabakien menpe ez egoteko, ondorio juridikoak edo esanguratsuak badituzte.
+
+**Gure Erabilera:** Une honetan ez dugu erabaki automatizaturik erabiltzen ondorio juridiko edo esanguratsuekin. Eskaera prozesatzeak eta iruzur detekzioak giza berrikuspena dakarte.
+
+Hau aldatzen bada, ohar hau eguneratuko dugu eta berme egokiak emango ditugu (giza esku-hartzea, azalpena, aurkaratzeko gaitasuna).
+
+### 9.8 Baimena Kentzeko Eskubidea
+
+Zure datuak baimenean oinarrituta tratatzen ditugunean, baimena edozein unetan kendu dezakezu.
+
+**Nola Kendu:**
+- **Marketin Emailak:** Klikatu "harpidetza kendu" edozein email-etan
+- **Kontu Ezarpenak:** Eguneratu lehentasunak zure kontu panelean
+- **Emaila:** dpo@zabalagailetak.com
+
+**Eragina:** Baimena kentzeak ez du eragiten kendu aurreko tratamenduaren zilegitasunean.
+
+### 9.9 Erreklamazioa Jartzeko Eskubidea
+
+Zure datuak nola kudeatzen ditugun ez bazaude pozik, ikuskapen agintaritza baten aurrean kexa jartzeko eskubidea duzu:
+
+**Datuen Babeserako Espainiako Bulegoa (AEPD):**
+- **Webgunea:** www.aepd.es
+- **Telefonoa:** +34 901 100 099
+- **Helbidea:** C/ Jorge Juan, 6, 28001 Madril, Espainia
+- **Online Kexa:** https://sedeagpd.gob.es
+
+Gurekin harremanetan jartzea gomendatzen dizugu lehenik (dpo@zabalagailetak.com) zure kezka konpontzen saiatzeko.
+
+### 9.10 Nola Erabili Zure Eskubideak
+
+**Harremanetarako Metodoak:**
+- **Emaila:** dpo@zabalagailetak.com (lehentasunezkoa)
+- **Web Inprimakia:** www.zabalagailetak.com/privacy/data-request
+- **Posta:** Datuen Babeserako Ordezkaria, Zabala Gailetak S.A., [Helbidea], [Herria, Posta Kodea], Espainia
+- **Telefonoa:** +34 XXX XXX XXX
+
+**Zer Sartu:**
+- Zure izen-abizenak
+- Kontuaren email helbidea (aplikagarria bada)
+- Erabili nahi duzun eskubide zehatza
+- Zure eskaeraren xehetasunak
+
+**Identitate Egiaztapena:**
+Zure segurtasunerako, zure identitatea egiaztatzeko eska diezazukegu eskaerak bete aurretik.
+
+**Erantzun Denbora:**
+- Estandarra: Hilabete 1eko epean
+- Luzatua (eskaera konplexuak): 3 hilabeteko epean (luzapena beharrezkoa bada jakinaraziko dizugu)
+
+**Kostua:**
+- Doan (kasu gehienetan)
+- Arrazoizko tarifa bat kobratu dezakegu nabarmenki oinarrigabeak edo gehiegizkoak diren eskaerengatik
 
 ---
 
-## Quick Reference Card
+## 10. Haurren Pribatutasuna
 
-### How We Use Your Data
-✅ Process your orders  
-✅ Manage your account  
-✅ Send order updates  
-✅ Improve our website  
-✅ Prevent fraud and ensure security  
-✅ Send marketing (with your consent only)  
-✅ Comply with legal obligations  
+Gure webgunea eta zerbitzuak ez daude 16 urtetik beherako haurrentzat zuzenduta.
 
-### Your Key Rights
-📋 **Access** - Get a copy of your data  
-✏️ **Rectify** - Correct inaccurate data  
-🗑️ **Erase** - Delete your data (with exceptions)  
-⏸️ **Restrict** - Limit how we use your data  
-📤 **Portability** - Receive data in portable format  
-⛔ **Object** - Object to certain processing  
-✉️ **Opt-Out** - Unsubscribe from marketing anytime  
+**Ez dugu jakinaren gainean 16 urtetik beherako haurren datu pertsonalik biltzen.**
 
-### Contact for Privacy Matters
-**Email:** dpo@zabalagailetak.com  
-**Phone:** +34 XXX XXX XXX  
-**Web Form:** www.zabalagailetak.com/privacy/data-request
+16 urte baino gutxiago badituzu, mesedez ez:
+- Sortu konturik
+- Egin eskaerarik
+- Eman informazio pertsonalik
 
-### Complaint Authority
+**Gurasoen Baimena:**
+Gurasoen baimenik gabe 16 urtetik beherako haur baten datuak bildu ditugula aurkitzen badugu, berehala ezabatuko ditugu.
+
+**Gurasoak/Tutoreak:**
+Zure seme-alabak datu pertsonalak eman dizkigula uste baduzu, jarri gurekin harremanetan dpo@zabalagailetak.com helbidean eta ezabatu egingo ditugu.
+
+---
+
+## 11. Cookieak eta Jarraipen Teknologiak
+
+Cookieak eta antzeko teknologiak erabiltzen ditugu zure esperientzia hobetzeko eta webgunearen erabilera ulertzeko.
+
+**Cookie Motak:**
+- **Guztiz Beharrezkoak:** Webgunearen funtzionalitaterako ezinbestekoak (ezin dira desgaitu)
+- **Errendimendua/Analitika:** Erabilera ulertzen eta webgunea hobetzen laguntzen digute
+- **Funtzionalak:** Zure lehentasunak gogoratzen dituzte
+- **Marketina/Publizitatea:** Iragarki garrantzitsuak eskaintzen dituzte (baimena behar dute)
+
+**Zure Aukerak:**
+- **Cookie Baimen Bannerra:** Kudeatu zure lehentasunak lehen aldiz bisitatzean
+- **Cookie Ezarpenak:** Eguneratu lehentasunak edozein unetan gure Cookie Ezarpenak estekaren bidez (orri-oinean)
+- **Nabigatzaile Ezarpenak:** Desgaitu cookieak zure nabigatzailean (webgunearen funtzionalitatean eragina izan dezake)
+
+**Informazio zehatzerako, ikusi gure Cookie Politika.**
+
+---
+
+## 12. Hirugarrenen Estekak
+
+Gure webguneak hirugarrenen webguneetarako estekak izan ditzake (sare sozialak, bazkideak, ordainketa prozesatzaileak).
+
+**Garrantzitsua:**
+- Ez gara hirugarrenen webguneen pribatutasun praktiken erantzule
+- Hirugarrenen guneek beren pribatutasun politikak dituzte
+- Beren pribatutasun politikak irakurtzea gomendatzen dizugu datu pertsonalak eman aurretik
+
+**Hirugarrenen esteka batean klik egitean, gure webgunea uzten ari zara.**
+
+---
+
+## 13. Pribatutasun Ohar honen Aldaketak
+
+Pribatutasun Ohar hau noizean behin eguneratu dezakegu gure praktiketan, teknologian, lege betekizunetan edo beste faktore batzuetan izandako aldaketak islatzeko.
+
+**Aldaketen Jakinarazpena:**
+- **Aldaketa Materialak:** Email bidez edo webguneko ohar nabarmen baten bidez jakinaraziko dizugu
+- **Aldaketa Txikiak:** Eguneratutako Pribatutasun Oharra argitaratuko da "Azken Eguneratzea" data berriarekin
+
+**Zure Etengabeko Erabilera:**
+Aldaketen ondoren gure webgunea erabiltzen jarraitzeak eguneratutako Pribatutasun Oharra onartzea dakar.
+
+**Berrikusi Aldizka:**
+Pribatutasun Ohar hau aldizka berrikustea gomendatzen dizugu.
+
+**Aurreko Bertsioak:**
+Eskuragarri dpo@zabalagailetak.com helbidean eskatuta.
+
+---
+
+## 14. Jarri Gurekin Harremanetan
+
+Pribatutasun Ohar honi edo gure datu praktikei buruzko galdera, kezka edo eskaerarik baduzu, jarri gurekin harremanetan:
+
+**Datuen Babeserako Ordezkaria (DBO/DPO):**
+- **Emaila:** dpo@zabalagailetak.com
+- **Telefonoa:** +34 XXX XXX XXX
+- **Posta:** Datuen Babeserako Ordezkaria, Zabala Gailetak S.A., [Helbidea], [Herria, Posta Kodea], Espainia
+
+**Kontsulta Orokorrak:**
+- **Emaila:** info@zabalagailetak.com
+- **Telefonoa:** +34 XXX XXX XXX
+- **Webgunea:** www.zabalagailetak.com
+
+**Bezeroarentzako Arreta:**
+- **Emaila:** support@zabalagailetak.com
+- **Telefonoa:** +34 XXX XXX XXX
+- **Ordutegia:** Astelehenetik Ostiralera, 9:00-18:00 CET
+
+**Segurtasun Kezkak:**
+- **Emaila:** security@zabalagailetak.com
+- **Telefonoa:** +34 XXX XXX XXX (24/7 segurtasun gai urgenteetarako)
+
+---
+
+## 15. Hizkuntza
+
+Pribatutasun Ohar hau Ingelesez eta Gaztelaniaz (eta Euskaraz) ematen da. Bertsioen arteko edozein inkoherentzia edo gatazka egonez gero, Gaztelaniazko bertsioa nagusituko da (Espainiako legeak eskatuta).
+
+[Oharra: Euskarazko itzulpena eman da.]
+
+---
+
+## 16. Definizioak
+
+**Datu Pertsonalak:** Identifikatutako edo identifikatu daitekeen pertsona bati buruzko edozein informazio (adib., izena, emaila, IP helbidea).
+
+**Tratamendua:** Datu pertsonaletan egindako edozein eragiketa (bilketa, biltegiratzea, erabilera, ezagutaraztea, ezabatzea).
+
+**Arduraduna (Controller):** Tratamenduaren helburuak eta bitartekoak zehazten dituen erakundea (Zabala Gailetak S.A.).
+
+**Eragilea (Processor):** Arduradunaren izenean datu pertsonalak prozesatzen dituen erakundea (gure zerbitzu hornitzaileak).
+
+**Datuen Interesduna (Data Subject):** Bere datu pertsonalak tratatzen diren norbanakoa (zu).
+
+**Baimena:** Tratamendua onartzeko adierazpen aske, zehatz, informatu eta zalantzarik gabea.
+
+**GDPR:** Datuak Babesteko Erregelamendu Orokorra (EB 2016/679).
+
+**LOPDGDD:** Datu Pertsonalak Babesteko eta Eskubide Digitalak Bermatzeko 3/2018 Lege Organikoa.
+
+**AEPD:** Datuen Babeserako Espainiako Bulegoa (Agencia Española de Protección de Datos).
+
+---
+
+## Erreferentzia Txartel Azkarra
+
+### Nola Erabiltzen Ditugun Zure Datuak
+✅ Zure eskaerak prozesatu  
+✅ Zure kontua kudeatu  
+✅ Eskaera eguneraketak bidali  
+✅ Gure webgunea hobetu  
+✅ Iruzurra prebenitu eta segurtasuna bermatu  
+✅ Marketina bidali (zure baimenarekin soilik)  
+✅ Lege obligazioak bete  
+
+### Zure Funtsezko Eskubideak
+📋 **Sarbidea** - Zure datuen kopia lortu  
+✏️ **Zuzenketa** - Datu okerrak zuzendu  
+🗑️ **Ezabatzea** - Zure datuak ezabatu (salbuespenekin)  
+⏸️ **Mugatu** - Zure datuak nola erabiltzen ditugun mugatu  
+📤 **Eramangarritasuna** - Datuak formatu eramangarrian jaso  
+⛔ **Aurka Egin** - Tratamendu jakin batzuen aurka egin  
+✉️ **Uko Egin** - Marketina jasotzeari uko egin edozein unetan  
+
+### Pribatutasun Gaietarako Kontaktua
+**Emaila:** dpo@zabalagailetak.com  
+**Telefonoa:** +34 XXX XXX XXX  
+**Web Inprimakia:** www.zabalagailetak.com/privacy/data-request
+
+### Kexa Agintaritza
 **AEPD:** www.aepd.es | +34 901 100 099
 
 ---
 
-**Last Updated:** January 8, 2026  
-**Effective Date:** January 8, 2026  
-**Version:** 1.0
+**Azken Eguneratzea:** 2026ko Urtarrilaren 8a  
+**Indarrean Sartze Data:** 2026ko Urtarrilaren 8a  
+**Bertsioa:** 1.0
 
-**© 2026 Zabala Gailetak S.A. All rights reserved.**
+**© 2026 Zabala Gailetak S.A. Eskubide guztiak erreserbatuta.**
 
 ---
 
-**END OF PRIVACY NOTICE**
+**PRIBATUTASUN OHARRAREN AMAIERA**

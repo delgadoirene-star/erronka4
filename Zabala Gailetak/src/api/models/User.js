@@ -4,26 +4,26 @@ const bcrypt = require('bcrypt');
 const userSchema = new mongoose.Schema({
   username: {
     type: String,
-    required: [true, 'Username is required'],
+    required: [true, 'Erabiltzaile-izena beharrezkoa da'],
     unique: true,
     trim: true,
-    minlength: [3, 'Username must be at least 3 characters'],
-    maxlength: [30, 'Username cannot exceed 30 characters'],
+    minlength: [3, 'Erabiltzaile-izenak gutxienez 3 karaktere izan behar ditu'],
+    maxlength: [30, 'Erabiltzaile-izenak ezin ditu 30 karaktere baino gehiago izan'],
     index: true
   },
   email: {
     type: String,
-    required: [true, 'Email is required'],
+    required: [true, 'Emaila beharrezkoa da'],
     unique: true,
     lowercase: true,
     trim: true,
-    match: [/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/, 'Please provide a valid email']
+    match: [/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/, 'Mesedez, eman baliozko email bat']
   },
   password: {
     type: String,
-    required: [true, 'Password is required'],
-    minlength: [8, 'Password must be at least 8 characters'],
-    select: false // Don't return password by default
+    required: [true, 'Pasahitza beharrezkoa da'],
+    minlength: [8, 'Pasahitzak gutxienez 8 karaktere izan behar ditu'],
+    select: false // Ez itzuli pasahitza lehenespenez
   },
   role: {
     type: String,
@@ -36,7 +36,7 @@ const userSchema = new mongoose.Schema({
   },
   mfaSecret: {
     type: String,
-    select: false // Don't return MFA secret by default
+    select: false // Ez itzuli MFA sekretua lehenespenez
   },
   failedLoginAttempts: {
     type: Number,
@@ -67,22 +67,22 @@ const userSchema = new mongoose.Schema({
   timestamps: true
 });
 
-// Index for efficient queries
+// Indizea kontsulta eraginkorretarako
 userSchema.index({ email: 1 });
 userSchema.index({ accountLocked: 1, lockUntil: 1 });
 
-// Hash password before saving
+// Pasahitza hash-eatu gorde aurretik
 userSchema.pre('save', async function(next) {
-  // Only hash password if it has been modified
+  // Pasahitza aldatu bada bakarrik hash-eatu
   if (!this.isModified('password')) return next();
   
   try {
     const salt = await bcrypt.genSalt(12);
     this.password = await bcrypt.hash(this.password, salt);
     
-    // Set password changed timestamp
+    // Ezarri pasahitz aldaketa denbora-marka
     if (!this.isNew) {
-      this.passwordChangedAt = Date.now() - 1000; // Subtract 1 second to ensure JWT is issued after password change
+      this.passwordChangedAt = Date.now() - 1000; // Segundo 1 kendu JWT pasahitz aldaketaren ondoren jaulki dela ziurtatzeko
     }
     
     next();
@@ -91,20 +91,20 @@ userSchema.pre('save', async function(next) {
   }
 });
 
-// Method to compare password
+// Pasahitza konparatzeko metodoa
 userSchema.methods.comparePassword = async function(candidatePassword) {
   return await bcrypt.compare(candidatePassword, this.password);
 };
 
-// Method to check if account is locked
+// Kontua blokeatuta dagoen egiaztatzeko metodoa
 userSchema.methods.isLocked = function() {
-  // Check if account is locked and lock hasn't expired
+  // Egiaztatu kontua blokeatuta dagoen eta blokeoa ez den iraungi
   return !!(this.accountLocked && this.lockUntil && this.lockUntil > Date.now());
 };
 
-// Method to increment failed login attempts
+// Huts egindako saio-hasiera saiakerak handitzeko metodoa
 userSchema.methods.incrementLoginAttempts = async function() {
-  // Reset attempts if lock has expired
+  // Berrezarri saiakerak blokeoa iraungi bada
   if (this.lockUntil && this.lockUntil < Date.now()) {
     return await this.updateOne({
       $set: {
@@ -115,12 +115,12 @@ userSchema.methods.incrementLoginAttempts = async function() {
     });
   }
   
-  // Increment attempts
+  // Handitu saiakerak
   const updates = { $inc: { failedLoginAttempts: 1 } };
   
-  // Lock account after 5 failed attempts (30 minutes)
+  // Blokeatu kontua 5 saiakera okerren ondoren (30 minutu)
   const maxAttempts = 5;
-  const lockTime = 30 * 60 * 1000; // 30 minutes
+  const lockTime = 30 * 60 * 1000; // 30 minutu
   
   if (this.failedLoginAttempts + 1 >= maxAttempts && !this.accountLocked) {
     updates.$set = {
@@ -132,7 +132,7 @@ userSchema.methods.incrementLoginAttempts = async function() {
   return await this.updateOne(updates);
 };
 
-// Method to reset login attempts
+// Saio-hasiera saiakerak berrezartzeko metodoa
 userSchema.methods.resetLoginAttempts = async function() {
   return await this.updateOne({
     $set: {
@@ -144,7 +144,7 @@ userSchema.methods.resetLoginAttempts = async function() {
   });
 };
 
-// Virtual for checking if password was changed after JWT was issued
+// Birtuala pasahitza JWT jaulki ondoren aldatu den egiaztatzeko
 userSchema.methods.changedPasswordAfter = function(JWTTimestamp) {
   if (this.passwordChangedAt) {
     const changedTimestamp = parseInt(this.passwordChangedAt.getTime() / 1000, 10);

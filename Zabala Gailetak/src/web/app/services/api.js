@@ -12,6 +12,7 @@ const apiClient = axios.create({
   }
 });
 
+// Eskaera interceptor-a: Tokena eta CSRF tokena gehitzeko
 apiClient.interceptors.request.use((config) => {
   const token = localStorage.getItem('auth_token') || document.cookie.match(/auth_token=([^;]+)/)?.[1];
   if (token) {
@@ -25,6 +26,7 @@ apiClient.interceptors.request.use((config) => {
   return Promise.reject(error);
 });
 
+// Erantzun interceptor-a: 401 erroreak kudeatzeko (saioa itxi)
 apiClient.interceptors.response.use(
   (response) => response,
   async (error) => {
@@ -37,11 +39,13 @@ apiClient.interceptors.response.use(
   }
 );
 
+// CSRF tokena lortzeko funtzioa
 const getCsrfToken = () => {
   const token = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content');
   return token || '';
 };
 
+// Sarrera sanitizatzeko funtzioa (XSS prebentzioa)
 const sanitizeInput = (data) => {
   if (typeof data === 'string') {
     return DOMPurify.sanitize(data.trim());
@@ -56,6 +60,7 @@ const sanitizeInput = (data) => {
   return data;
 };
 
+// Saioa hasteko funtzioa
 const login = async (username, password) => {
   try {
     const response = await apiClient.post('/auth/login', { 
@@ -64,10 +69,11 @@ const login = async (username, password) => {
     });
     return response.data;
   } catch (error) {
-    throw new Error(error.response?.data?.error || 'Login errorea');
+    throw new Error(error.response?.data?.error || 'Saioa hasteko errorea');
   }
 };
 
+// MFA egiaztatzeko funtzioa
 const verifyMFA = async (token) => {
   try {
     const response = await apiClient.post('/auth/mfa/verify', { 
@@ -79,6 +85,7 @@ const verifyMFA = async (token) => {
   }
 };
 
+// Produktuak lortzeko funtzioa
 const getProducts = async () => {
   try {
     const response = await apiClient.get('/products');
@@ -88,6 +95,7 @@ const getProducts = async () => {
   }
 };
 
+// Eskaera sortzeko funtzioa
 const createOrder = async (orderData) => {
   try {
     const sanitizedOrder = sanitizeInput(orderData);
@@ -98,6 +106,7 @@ const createOrder = async (orderData) => {
   }
 };
 
+// MFA konfiguratzeko funtzioa
 const setupMFA = async () => {
   try {
     const response = await apiClient.post('/auth/mfa/setup');
@@ -107,6 +116,7 @@ const setupMFA = async () => {
   }
 };
 
+// MFA desgaitzeko funtzioa
 const disableMFA = async () => {
   try {
     const response = await apiClient.post('/auth/mfa/disable');
@@ -116,6 +126,7 @@ const disableMFA = async () => {
   }
 };
 
+// Autentifikazio tokena ezartzeko funtzioa
 const setAuthToken = (token) => {
   if (token) {
     localStorage.setItem('auth_token', token);

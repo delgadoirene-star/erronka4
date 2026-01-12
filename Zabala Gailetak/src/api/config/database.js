@@ -2,42 +2,42 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 /**
- * Database Configuration for Zabala Gailetak
+ * Zabala Gailetak Datu-base Konfigurazioa
  * 
- * Implements secure MongoDB connection with:
- * - Connection pooling
- * - Automatic reconnection
- * - Error handling
- * - Connection monitoring
- * - Security best practices
+ * MongoDB konexio segurua inplementatzen du:
+ * - Konexio multzoa (Connection pooling)
+ * - Berriro konexio automatikoa
+ * - Errore kudeaketa
+ * - Konexio monitorizazioa
+ * - Segurtasun jardunbide egokiak
  */
 
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/zabala-gailetak';
 const NODE_ENV = process.env.NODE_ENV || 'development';
 
-// Connection options
+// Konexio aukerak
 const options = {
-  // Connection pool settings
+  // Konexio multzo ezarpenak
   maxPoolSize: parseInt(process.env.MONGODB_POOL_SIZE) || 10,
   minPoolSize: 2,
   
-  // Timeout settings
-  serverSelectionTimeoutMS: 5000, // 5 seconds
-  socketTimeoutMS: 45000, // 45 seconds
+  // Denbora-muga ezarpenak
+  serverSelectionTimeoutMS: 5000, // 5 segundo
+  socketTimeoutMS: 45000, // 45 segundo
   
-  // Automatic reconnection
+  // Berriro konexio automatikoa
   retryWrites: true,
   retryReads: true,
   
-  // Application name for monitoring
+  // Aplikazio izena monitorizaziorako
   appName: 'zabala-gailetak-api',
   
-  // Use new URL parser
+  // Erabili URL parser berria
   useNewUrlParser: true,
   useUnifiedTopology: true
 };
 
-// Add authentication if credentials are provided
+// Autentifikazioa gehitu kredentzialak ematen badira
 if (process.env.MONGODB_USER && process.env.MONGODB_PASSWORD) {
   options.auth = {
     username: process.env.MONGODB_USER,
@@ -46,39 +46,39 @@ if (process.env.MONGODB_USER && process.env.MONGODB_PASSWORD) {
   options.authSource = process.env.MONGODB_AUTH_SOURCE || 'admin';
 }
 
-// Enable debug mode in development
+// Arazketa modua gaitu garapenean
 if (NODE_ENV === 'development') {
   mongoose.set('debug', true);
 }
 
 /**
- * Connect to MongoDB
+ * MongoDB-ra konektatu
  */
 const connectDatabase = async () => {
   try {
-    console.log(`[Database] Connecting to MongoDB...`);
-    console.log(`[Database] Environment: ${NODE_ENV}`);
+    console.log(`[Datu-basea] MongoDB-ra konektatzen...`);
+    console.log(`[Datu-basea] Ingurunea: ${NODE_ENV}`);
     
     await mongoose.connect(MONGODB_URI, options);
     
-    console.log(`[Database] ✓ Successfully connected to MongoDB`);
-    console.log(`[Database] Database: ${mongoose.connection.name}`);
-    console.log(`[Database] Host: ${mongoose.connection.host}`);
+    console.log(`[Datu-basea] ✓ MongoDB-ra arrakastaz konektatuta`);
+    console.log(`[Datu-basea] Datu-basea: ${mongoose.connection.name}`);
+    console.log(`[Datu-basea] Ostalaria: ${mongoose.connection.host}`);
     
-    // Set up event listeners
+    // Gertaera entzuleak konfiguratu
     setupEventListeners();
     
     return mongoose.connection;
   } catch (error) {
-    console.error('[Database] ✗ Failed to connect to MongoDB:', error.message);
+    console.error('[Datu-basea] ✗ MongoDB-ra konektatzeak huts egin du:', error.message);
     
     if (error.name === 'MongoServerError' && error.code === 18) {
-      console.error('[Database] Authentication failed. Please check MONGODB_USER and MONGODB_PASSWORD');
+      console.error('[Datu-basea] Autentifikazioak huts egin du. Mesedez, egiaztatu MONGODB_USER eta MONGODB_PASSWORD');
     }
     
-    // In production, exit the process if we can't connect to the database
+    // Produkzioan, prozesua irten datu-basera konektatu ezin bada
     if (NODE_ENV === 'production') {
-      console.error('[Database] Exiting process due to database connection failure');
+      console.error('[Datu-basea] Prozesua irteten datu-base konexio hutsegiteagatik');
       process.exit(1);
     }
     
@@ -87,48 +87,48 @@ const connectDatabase = async () => {
 };
 
 /**
- * Disconnect from MongoDB
+ * MongoDB-tik deskonektatu
  */
 const disconnectDatabase = async () => {
   try {
     await mongoose.disconnect();
-    console.log('[Database] ✓ Disconnected from MongoDB');
+    console.log('[Datu-basea] ✓ MongoDB-tik deskonektatuta');
   } catch (error) {
-    console.error('[Database] ✗ Error disconnecting from MongoDB:', error.message);
+    console.error('[Datu-basea] ✗ Errorea MongoDB-tik deskonektatzean:', error.message);
     throw error;
   }
 };
 
 /**
- * Set up event listeners for connection monitoring
+ * Konexio monitorizaziorako gertaera entzuleak konfiguratu
  */
 const setupEventListeners = () => {
   const db = mongoose.connection;
   
   db.on('error', (error) => {
-    console.error('[Database] Connection error:', error.message);
+    console.error('[Datu-basea] Konexio errorea:', error.message);
   });
   
   db.on('disconnected', () => {
-    console.warn('[Database] Disconnected from MongoDB');
+    console.warn('[Datu-basea] MongoDB-tik deskonektatuta');
     
-    // Attempt to reconnect in development
+    // Berriro konektatzen saiatu garapenean
     if (NODE_ENV === 'development') {
-      console.log('[Database] Attempting to reconnect...');
+      console.log('[Datu-basea] Berriro konektatzen saiatzen...');
     }
   });
   
   db.on('reconnected', () => {
-    console.log('[Database] ✓ Reconnected to MongoDB');
+    console.log('[Datu-basea] ✓ MongoDB-ra berriro konektatuta');
   });
   
   db.on('close', () => {
-    console.log('[Database] Connection closed');
+    console.log('[Datu-basea] Konexioa itxita');
   });
 };
 
 /**
- * Check database connection health
+ * Datu-base konexio osasuna egiaztatu
  */
 const checkConnection = () => {
   const state = mongoose.connection.readyState;
@@ -148,12 +148,12 @@ const checkConnection = () => {
 };
 
 /**
- * Get database statistics
+ * Datu-base estatistikak lortu
  */
 const getDatabaseStats = async () => {
   try {
     if (mongoose.connection.readyState !== 1) {
-      return { error: 'Not connected to database' };
+      return { error: 'Ez dago datu-basera konektatuta' };
     }
     
     const admin = mongoose.connection.db.admin();
@@ -169,79 +169,79 @@ const getDatabaseStats = async () => {
       documents: dbStats.objects
     };
   } catch (error) {
-    console.error('[Database] Error getting stats:', error.message);
+    console.error('[Datu-basea] Errorea estatistikak lortzean:', error.message);
     return { error: error.message };
   }
 };
 
 /**
- * Create initial indexes for all models
+ * Hasierako indizeak sortu eredu guztietarako
  */
 const createIndexes = async () => {
   try {
-    console.log('[Database] Creating indexes...');
+    console.log('[Datu-basea] Indizeak sortzen...');
     
     const models = mongoose.modelNames();
     for (const modelName of models) {
       const model = mongoose.model(modelName);
       await model.createIndexes();
-      console.log(`[Database] ✓ Created indexes for ${modelName}`);
+      console.log(`[Datu-basea] ✓ Indizeak sortuta ${modelName}-rentzat`);
     }
     
-    console.log('[Database] ✓ All indexes created successfully');
+    console.log('[Datu-basea] ✓ Indize guztiak arrakastaz sortu dira');
   } catch (error) {
-    console.error('[Database] ✗ Error creating indexes:', error.message);
+    console.error('[Datu-basea] ✗ Errorea indizeak sortzean:', error.message);
     throw error;
   }
 };
 
 /**
- * Drop database (use with caution - only for development)
+ * Datu-basea ezabatu (kontuz erabili - garapenerako soilik)
  */
 const dropDatabase = async () => {
   if (NODE_ENV === 'production') {
-    throw new Error('Cannot drop database in production environment');
+    throw new Error('Ezin da datu-basea ezabatu produkzio ingurunean');
   }
   
   try {
-    console.warn('[Database] WARNING: Dropping database...');
+    console.warn('[Datu-basea] ABISUA: Datu-basea ezabatzen...');
     await mongoose.connection.dropDatabase();
-    console.log('[Database] ✓ Database dropped');
+    console.log('[Datu-basea] ✓ Datu-basea ezabatuta');
   } catch (error) {
-    console.error('[Database] ✗ Error dropping database:', error.message);
+    console.error('[Datu-basea] ✗ Errorea datu-basea ezabatzean:', error.message);
     throw error;
   }
 };
 
 /**
- * Graceful shutdown handler
+ * Itzaltze dotorea kudeatzailea
  */
 const gracefulShutdown = async (signal) => {
-  console.log(`[Database] ${signal} received. Closing database connection...`);
+  console.log(`[Datu-basea] ${signal} jasota. Datu-base konexioa ixten...`);
   
   try {
     await disconnectDatabase();
-    console.log('[Database] ✓ Database connection closed gracefully');
+    console.log('[Datu-basea] ✓ Datu-base konexioa dotoreki itxita');
     process.exit(0);
   } catch (error) {
-    console.error('[Database] ✗ Error during graceful shutdown:', error.message);
+    console.error('[Datu-basea] ✗ Errorea itzaltze dotorean:', error.message);
     process.exit(1);
   }
 };
 
-// Handle process termination signals
+// Prozesu amaiera seinaleak kudeatu
 process.on('SIGINT', () => gracefulShutdown('SIGINT'));
 process.on('SIGTERM', () => gracefulShutdown('SIGTERM'));
 
-// Handle uncaught exceptions
+// Kudeatu gabeko salbuespenak kudeatu
 process.on('uncaughtException', (error) => {
-  console.error('[Database] Uncaught exception:', error);
+  console.error('[Datu-basea] Kudeatu gabeko salbuespena:', error);
   gracefulShutdown('UNCAUGHT_EXCEPTION');
 });
 
-// Handle unhandled promise rejections
+// Kudeatu gabeko promesa errefusak kudeatu
 process.on('unhandledRejection', (reason, promise) => {
-  console.error('[Database] Unhandled rejection at:', promise, 'reason:', reason);
+  console.error('[Datu-basea] Kudeatu gabeko errefusa hemen:', promise, 'arrazoia:', reason);
   gracefulShutdown('UNHANDLED_REJECTION');
 });
 

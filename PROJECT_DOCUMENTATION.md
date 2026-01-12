@@ -1,30 +1,30 @@
-# Zabala Gailetak - Project Documentation
+# Zabala Gailetak - Proiektuaren Dokumentazioa
 
-**Version:** 1.0  
-**Date:** January 2026  
-**Project:** Segurtasun Sistema Aurreratua  
-**Status:** Implementation Complete  
-
----
-
-## Document Index
-
-1. [Executive Summary](#1-executive-summary)
-2. [Project Overview](#2-project-overview)
-3. [Technical Architecture](#3-technical-architecture)
-4. [Security Implementation](#4-security-implementation)
-5. [Applications Overview](#5-applications-overview)
-6. [Deployment Guide](#6-deployment-guide)
-7. [Operations & Maintenance](#7-operations--maintenance)
-8. [Compliance & Standards](#8-compliance--standards)
-9. [Development Guidelines](#9-development-guidelines)
-10. [Support & Contact](#10-support--contact)
+**Bertsioa:** 1.0  
+**Data:** 2026ko Urtarrila  
+**Proiektua:** Segurtasun Sistema Aurreratua  
+**Egoera:** Inplementazioa Osatuta
 
 ---
 
-## 1. Executive Summary
+## Dokumentuaren Aurkibidea
 
-### 1.1 Project Objectives
+1. [Laburpen Exekutiboa](#1-laburpen-exekutiboa)
+2. [Proiektuaren Orokorra](#2-proiektuaren-orokorra)
+3. [Arkitektura Teknikoa](#3-arkitektura-teknikoa)
+4. [Segurtasun Inplementazioa](#4-segurtasun-inplementazioa)
+5. [Aplikazioen Orokorra](#5-aplikazioen-orokorra)
+6. [Hedapen Gida](#6-hedapen-gida)
+7. [Eragiketak eta Mantentzea](#7-eragiketak-eta-mantentzea)
+8. [Betetzea eta Estandarrak](#8-betetzea-eta-estandarrak)
+9. [Garapen Gidalerroak](#9-garapen-gidalerroak)
+10. [Laguntza eta Kontaktua](#10-laguntza-eta-kontaktua)
+
+---
+
+## 1. Laburpen Exekutiboa
+
+### 1.1 Proiektuaren Helburuak
 
 Zabala Gailetak proiektuaren helburua enpresaren azpiegitura informatikoa modernizatzea eta segurtasuna indartzea da. Proiektu honek hurrengo osagaiak biltzen ditu:
 
@@ -35,29 +35,29 @@ Zabala Gailetak proiektuaren helburua enpresaren azpiegitura informatikoa modern
 - **SIEM Sistema**: Monitorizazio eta alerting
 - **Network Segmentation**: IT eta OT sareen segurtasuna
 
-### 1.2 Business Benefits
+### 1.2 Negozio Onurak
 
 - **Segurtasun Hobea**: MFA, Rate Limiting, Input Validation
 - **Automatizazioa**: CI/CD pipeline-ak, testing automatikoa
 - **Monitorizazioa**: SIEM sistema, real-time alert-ak
-- **Skalabilitatea**: Docker containerization, microservices
-- **Compliance**: OWASP, ISO 27001, IEC 62443 estandarrak
+- **Eskalagarritasuna**: Docker containerization, microservices
+- **Betetzea (Compliance)**: OWASP, ISO 27001, IEC 62443 estandarrak
 
-### 1.3 Key Metrics
+### 1.3 Metrika Gakoak
 
-| Metric | Target | Current |
-|--------|--------|---------|
-| Security Scans Pass Rate | 95%+ | 100% |
-| Test Coverage | 80%+ | 85% |
-| Deployment Frequency | Weekly | Weekly |
-| Mean Time to Detection (MTTD) | < 15min | < 10min |
-| Mean Time to Response (MTTR) | < 30min | < 20min |
+| Metrika | Helburua | Unekoa |
+|---------|----------|--------|
+| Security Scans Gainditze-tasa | 95%+ | 100% |
+| Test Coverage (Estaldura) | 80%+ | 85% |
+| Deployment Maiztasuna | Astero | Astero |
+| Detekzio Denbora (MTTD) | < 15min | < 10min |
+| Erantzun Denbora (MTTR) | < 30min | < 20min |
 
 ---
 
-## 2. Project Overview
+## 2. Proiektuaren Orokorra
 
-### 2.1 Company Profile
+### 2.1 Enpresaren Profila
 
 **Zabala Gailetak** Euskal Herrian kokatuta dagoen enpresa bat da, gaileta eta txokolate ekoizpen, salmenta eta banaketa egiten duena.
 
@@ -68,89 +68,89 @@ Zabala Gailetak proiektuaren helburua enpresaren azpiegitura informatikoa modern
 - Kokapena: Euskal Herria
 - Merkatua: Nazionala eta nazioartekoa
 
-### 2.2 Project Scope
+### 2.2 Proiektuaren Irismena
 
-Proiektu honek hurrengo areaak hartzen ditu:
+Proiektu honek hurrengo eremuak hartzen ditu:
 
 #### 2.2.1 Web Aplikazioa
 - Produktu katalogoa
 - Eskaera sistema
 - Erabiltzaileen autentikazioa
 - MFA bi faktoreko autentikazioa
-- Order management
+- Eskaeren kudeaketa
 
 #### 2.2.2 Mobile Aplikazioa
-- Product browsing
-- Order placement
-- Secure authentication
-- MFA support
-- Biometric authentication
+- Produktuak arakatzea
+- Eskaerak egitea
+- Autentikazio segurua
+- MFA laguntza
+- Autentikazio biometrikoa
 
 #### 2.2.3 Backend API
 - RESTful API
 - JWT autentikazioa
-- Rate limiting
-- Input validation
-- Error handling
+- Rate limiting (tasa mugatzea)
+- Input validation (sarrera balidazioa)
+- Error handling (errore kudeaketa)
 
-#### 2.2.4 Security Infrastructure
+#### 2.2.4 Segurtasun Azpiegitura
 - SIEM sistema (ELK Stack)
-- Honeypot deployment
-- Network segmentation
-- Firewall rules
+- Honeypot hedapena
+- Sare segmentazioa
+- Firewall arauak
 - IDS/IPS
 
 #### 2.2.5 DevOps
 - CI/CD pipeline
 - Docker containerization
-- Automated testing
+- Testing automatizatua
 - Security scanning
-- Deployment automation
+- Deployment automatizazioa
 
-### 2.3 Technology Stack
+### 2.3 Teknologia Stack-a
 
 #### Backend
 - **Runtime**: Node.js 18+
 - **Framework**: Express.js 4.18+
-- **Authentication**: JWT, Speakeasy (TOTP)
-- **Security**: Helmet, CORS, rate-limit
+- **Autentikazioa**: JWT, Speakeasy (TOTP)
+- **Segurtasuna**: Helmet, CORS, rate-limit
 - **Testing**: Jest, Supertest
 
 #### Frontend (Web)
 - **Framework**: React 18
 - **Routing**: React Router 6
-- **Styling**: Styled Components
-- **HTTP Client**: Axios
-- **Security**: DOMPurify, js-cookie
+- **Estiloak**: Styled Components
+- **HTTP Bezeroa**: Axios
+- **Segurtasuna**: DOMPurify, js-cookie
 
 #### Frontend (Mobile)
 - **Framework**: React Native
-- **Navigation**: React Navigation
-- **Security**: react-native-keychain
-- **Storage**: EncryptedStorage
+- **Nabigazioa**: React Navigation
+- **Segurtasuna**: react-native-keychain
+- **Biltegiratzea**: EncryptedStorage
 
-#### Infrastructure
-- **Containers**: Docker, Docker Compose
+#### Azpiegitura
+- **Edukiontziak**: Docker, Docker Compose
 - **Proxy**: Nginx
-- **Database**: MongoDB 7
+- **Datu-basea**: MongoDB 7
 - **Cache**: Redis 7
 - **SIEM**: ELK Stack 8.11
 
 #### DevOps
 - **CI/CD**: GitHub Actions
-- **Code Quality**: ESLint, SonarQube
-- **Security Scanning**: OWASP ZAP, Dependency Check
-- **Monitoring**: SIEM, Health checks
+- **Kode Kalitatea**: ESLint, SonarQube
+- **Segurtasun Eskaneatzea**: OWASP ZAP, Dependency Check
+- **Monitorizazioa**: SIEM, Health checks
 
 ---
 
-## 3. Technical Architecture
+## 3. Arkitektura Teknikoa
 
-### 3.1 System Architecture
+### 3.1 Sistema Arkitektura
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                      External Users                       │
+│                    Kanpoko Erabiltzaileak                   │
 └──────────────────┬──────────────────┬────────────────────┘
                    │                  │
             ┌──────▼──────┐    ┌─────▼─────┐
@@ -177,7 +177,7 @@ Proiektu honek hurrengo areaak hartzen ditu:
        └──────────┘  └───────┘  └────────┘
 ```
 
-### 3.2 Network Architecture
+### 3.2 Sare Arkitektura
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -189,40 +189,40 @@ Proiektu honek hurrengo areaak hartzen ditu:
            │                 │
            │  ┌──────────┐  │
            │  │   Web    │  │
-           │  │  Server  │  │
+           │  │ Zerbitz. │  │
            │  └──────────┘  │
            └───────┬─────────┘
                    │
            ┌───────▼─────────┐
-           │   User Network  │ 192.168.10.0/24
+           │ Erabiltz. Sarea │ 192.168.10.0/24
            │                 │
            │  ┌──────────┐  │
-           │  │  Users   │  │
-           │  │  Workstations │  │
+           │  │Erabiltzai│  │
+           │  │ Lan-est. │  │
            │  └──────────┘  │
            └───────┬─────────┘
                    │
            ┌───────▼─────────┐
-           │  Server Network  │ 192.168.20.0/24
+           │ Zerbitz. Sarea  │ 192.168.20.0/24
            │                 │
            │  ┌──────────┐  │
            │  │   API    │  │
-           │  │  Server  │  │
+           │  │ Zerbitz. │  │
            │  └──────────┘  │
            │  ┌──────────┐  │
-           │  │ Database │  │
-           │  │  Server  │  │
+           │  │ Datu-base│  │
+           │  │ Zerbitz. │  │
            │  └──────────┘  │
            └───────┬─────────┘
                    │
            ┌───────▼─────────┐
-           │  Management     │ 192.168.200.0/24
-           │  Network        │
+           │  Kudeaketa      │ 192.168.200.0/24
+           │  Sarea          │
            └───────┬─────────┘
                    │
            ┌───────▼─────────┐
-           │   OT Network    │ 192.168.50.0/24
-           │  (Isolated)    │
+           │   OT Sarea      │ 192.168.50.0/24
+           │  (Isolatua)     │
            │                 │
            │  ┌──────────┐  │
            │  │   PLC    │  │
@@ -231,108 +231,108 @@ Proiektu honek hurrengo areaak hartzen ditu:
            └────────────────┘
 ```
 
-### 3.3 Data Flow
+### 3.3 Datu Fluxua
 
-#### 3.3.1 Authentication Flow
+#### 3.3.1 Autentikazio Fluxua
 
 ```
-User → Login Form
+Erabiltzailea → Login Inprimakia
     ↓
 POST /api/auth/login (username, password)
     ↓
-Server validates credentials
+Zerbitzariak kredentzialak balidatzen ditu
     ↓
-Generate JWT token
+JWT tokena sortu
     ↓
-If MFA enabled: redirect to /mfa
+MFA gaituta badago: /mfa helbidera bideratu
     ↓
-POST /api/auth/mfa/verify (totp code)
+POST /api/auth/mfa/verify (totp kodea)
     ↓
-Server verifies TOTP
+Zerbitzariak TOTP egiaztatzen du
     ↓
-Return JWT token
+JWT tokena itzuli
     ↓
-Client stores token (HttpOnly cookie)
+Bezeroak tokena gordetzen du (HttpOnly cookie)
 ```
 
-#### 3.3.2 Order Flow
+#### 3.3.2 Eskaera Fluxua
 
 ```
-User browses products
+Erabiltzaileak produktuak arakatzen ditu
     ↓
 GET /api/products
     ↓
-Server returns product list
+Zerbitzariak produktu zerrenda itzultzen du
     ↓
-User selects product
+Erabiltzaileak produktua aukeratzen du
     ↓
-POST /api/orders (order data)
+POST /api/orders (eskaera datuak)
     ↓
-Server validates input
+Zerbitzariak sarrera balidatzen du
     ↓
-Create order in database
+Eskaera sortu datu-basean
     ↓
-Return order confirmation
+Eskaera berrespena itzuli
     ↓
-SIEM logs event
+SIEM log gertaera
 ```
 
-### 3.4 Security Architecture
+### 3.4 Segurtasun Arkitektura
 
-#### 3.4.1 Defense in Depth
+#### 3.4.1 Defentsa Sakoneran (Defense in Depth)
 
 ```
-Layer 1: Network Security
-├── Firewall rules
-├── Network segmentation
-├── DMZ isolation
-└── VPN access
+1. Geruza: Sare Segurtasuna
+├── Firewall arauak
+├── Sare segmentazioa
+├── DMZ isolamendua
+└── VPN sarbidea
 
-Layer 2: Application Security
-├── Input validation
-├── Output encoding
-├── Authentication (MFA)
-└── Authorization
+2. Geruza: Aplikazio Segurtasuna
+├── Input validation (Sarrera balidazioa)
+├── Output encoding (Irteera kodetzea)
+├── Autentikazioa (MFA)
+└── Baimenak (Authorization)
 
-Layer 3: Data Security
-├── Encryption at rest
-├── Encryption in transit
-├── Secure storage
-└── Backup security
+3. Geruza: Datu Segurtasuna
+├── Enkriptatzea geldirik (at rest)
+├── Enkriptatzea garraioan (in transit)
+├── Biltegiratze segurua
+└── Backup segurtasuna
 
-Layer 4: Monitoring & Response
+4. Geruza: Monitorizazioa eta Erantzuna
 ├── SIEM
 ├── IDS/IPS
 ├── Honeypots
-└── Incident response
+└── Intzidenteen erantzuna
 ```
 
-#### 3.4.2 Threat Model
+#### 3.4.2 Mehatxu Modeloa (Threat Model)
 
-| Threat Type | Prevention | Detection | Response |
+| Mehatxu Mota | Prebentzioa | Detekzioa | Erantzuna |
 |-------------|------------|------------|----------|
-| SQL Injection | Input validation, Parameterized queries | SIEM patterns | Block IP, Patch |
-| XSS | Output encoding, CSP | WAF alerts | Sanitize input |
-| CSRF | CSRF tokens, SameSite cookies | SIEM alerts | Rotate tokens |
-| Brute Force | Rate limiting, MFA | Failed login alerts | Account lockout |
-| MITM | HTTPS, Certificate pinning | TLS anomalies | Certificate revocation |
-| Data Breach | Encryption, Access controls | Data access logs | Incident response |
+| SQL Injection | Input validation, Parameterized queries | SIEM patroiak | IP blokeatu, Adabakia jarri |
+| XSS | Output encoding, CSP | WAF alertak | Input garbitu |
+| CSRF | CSRF tokens, SameSite cookies | SIEM alertak | Tokenak aldatu |
+| Brute Force | Rate limiting, MFA | Saio-hasiera hutsegite alertak | Kontua blokeatu |
+| MITM | HTTPS, Certificate pinning | TLS anomaliak | Ziurtagiria ezeztatu |
+| Datu Lapurreta | Enkriptatzea, Sarbide kontrolak | Datu sarbide log-ak | Intzidente erantzuna |
 
 ---
 
-## 4. Security Implementation
+## 4. Segurtasun Inplementazioa
 
-### 4.1 Authentication & Authorization
+### 4.1 Autentikazioa eta Baimenak
 
-#### 4.1.1 Multi-Factor Authentication (MFA)
+#### 4.1.1 Faktore Anitzeko Autentikazioa (MFA)
 
-**Implementation:**
-- **Protocol**: TOTP (Time-based One-Time Password)
-- **Library**: Speakeasy
-- **Backup**: Recovery codes (not implemented yet)
-- **Enforcement**: Optional for users, mandatory for admins
+**Inplementazioa:**
+- **Protokoloa**: TOTP (Time-based One-Time Password)
+- **Liburutegia**: Speakeasy
+- **Babeskopia**: Berreskurapen kodeak (oraindik ez inplementatuta)
+- **Betearaztea**: Aukerakoa erabiltzaileentzat, derrigorrezkoa administratzaileentzat
 
-**Configuration:**
+**Konfigurazioa:**
 ```javascript
 {
   secret: user.mfaSecret,
@@ -344,7 +344,7 @@ Layer 4: Monitoring & Response
 }
 ```
 
-#### 4.1.2 JWT Tokens
+#### 4.1.2 JWT Tokenak
 
 **Claims:**
 ```json
@@ -357,17 +357,17 @@ Layer 4: Monitoring & Response
 }
 ```
 
-**Security Measures:**
-- Strong secret keys (>256 bits)
-- Short expiration (1 hour)
-- Refresh token rotation
-- Token revocation support
+**Segurtasun Neurriak:**
+- Gako sekretu sendoak (>256 bits)
+- Iraungitze laburra (1 ordu)
+- Refresh token errotazioa
+- Token ezeztapen euskarria
 
-### 4.2 Input Validation
+### 4.2 Sarrera Balidazioa (Input Validation)
 
-#### 4.2.1 API Validation
+#### 4.2.1 API Balidazioa
 
-**Using express-validator:**
+**express-validator erabiliz:**
 ```javascript
 {
   username: {
@@ -384,9 +384,9 @@ Layer 4: Monitoring & Response
 }
 ```
 
-#### 4.2.2 XSS Prevention
+#### 4.2.2 XSS Prebentzioa
 
-**Sanitization:**
+**Sanitizazioa:**
 ```javascript
 // Server-side
 const sanitized = DOMPurify.sanitize(userInput);
@@ -395,40 +395,40 @@ const sanitized = DOMPurify.sanitize(userInput);
 const safeHTML = DOMPurify.sanitize(HTMLContent);
 ```
 
-### 4.3 Rate Limiting
+### 4.3 Tasa Mugatzea (Rate Limiting)
 
-**Configuration:**
+**Konfigurazioa:**
 ```javascript
 {
-  windowMs: 15 * 60 * 1000,  // 15 minutes
-  max: 100,                    // 100 requests
+  windowMs: 15 * 60 * 1000,  // 15 minutu
+  max: 100,                    // 100 eskaera
   message: 'Too many requests'
 }
 ```
 
-**Endpoints with Custom Limits:**
-- Login: 5 attempts / 15 minutes
-- MFA: 10 attempts / 15 minutes
-- Orders: 50 requests / 15 minutes
-- Others: 100 requests / 15 minutes
+**Muga Pertsonalizatuak dituzten Endpoint-ak:**
+- Login: 5 saiakera / 15 minutu
+- MFA: 10 saiakera / 15 minutu
+- Eskaerak: 50 eskaera / 15 minutu
+- Besteak: 100 eskaera / 15 minutu
 
-### 4.4 Encryption
+### 4.4 Enkriptatzea
 
-#### 4.4.1 Encryption at Rest
+#### 4.4.1 Enkriptatzea Geldirik (At Rest)
 
-- **Passwords**: bcrypt (cost factor: 10)
-- **Sensitive Data**: AES-256-GCM
-- **Database**: MongoDB WiredTiger encryption
+- **Pasahitzak**: bcrypt (cost factor: 10)
+- **Datu Sentikorrak**: AES-256-GCM
+- **Datu-basea**: MongoDB WiredTiger encryption
 
-#### 4.4.2 Encryption in Transit
+#### 4.4.2 Enkriptatzea Garraioan (In Transit)
 
-- **Protocol**: TLS 1.2 / TLS 1.3
-- **Ciphers**: HIGH security cipher suites
-- **Certificates**: Let's Encrypt (auto-renewal)
+- **Protokoloa**: TLS 1.2 / TLS 1.3
+- **Zifratzeak**: HIGH security cipher suites
+- **Ziurtagiriak**: Let's Encrypt (auto-berritzea)
 
-### 4.5 Security Headers
+### 4.5 Segurtasun Goiburuak (Headers)
 
-**Implemented Headers:**
+**Inplementatutako Goiburuak:**
 ```http
 X-Frame-Options: SAMEORIGIN
 X-Content-Type-Options: nosniff
@@ -441,153 +441,153 @@ Permissions-Policy: geolocation=(), microphone=()
 
 ---
 
-## 5. Applications Overview
+## 5. Aplikazioen Orokorra
 
-### 5.1 Web Application
+### 5.1 Web Aplikazioa
 
-#### 5.1.1 Features
+#### 5.1.1 Ezaugarriak
 
-**Authentication:**
-- Login with username/password
-- MFA verification
-- Session management
-- Auto-logout on token expiration
+**Autentikazioa:**
+- Saio-hasiera erabiltzaile/pasahitzarekin
+- MFA egiaztapena
+- Saio kudeaketa
+- Auto-logout tokena iraungitzean
 
-**Products:**
-- Product catalog
-- Search functionality (future)
-- Filter by category (future)
-- Product details
+**Produktuak:**
+- Produktu katalogoa
+- Bilaketa funtzionalitatea (etorkizunean)
+- Kategoriaren arabera iragazi (etorkizunean)
+- Produktuaren xehetasunak
 
-**Orders:**
-- Create new orders
-- Order history (future)
-- Order status tracking (future)
-- Email notifications
+**Eskaerak:**
+- Eskaera berriak sortu
+- Eskaera historia (etorkizunean)
+- Eskaera egoeraren jarraipena (etorkizunean)
+- Email jakinarazpenak
 
-**User Management:**
-- User profile
-- MFA enable/disable
-- Password change (future)
-- Account settings (future)
+**Erabiltzaile Kudeaketa:**
+- Erabiltzaile profila
+- MFA gaitu/desgaitu
+- Pasahitza aldatu (etorkizunean)
+- Kontu ezarpenak (etorkizunean)
 
-#### 5.1.2 Technology
+#### 5.1.2 Teknologia
 
-| Component | Technology | Version |
-|-----------|------------|---------|
+| Osagaia | Teknologia | Bertsioa |
+|---------|------------|----------|
 | Framework | React | 18.2.0 |
 | Routing | React Router | 6.20.1 |
 | State | Context API | - |
 | Styling | Styled Components | 6.1.1 |
-| HTTP Client | Axios | 1.6.2 |
-| Security | DOMPurify, js-cookie | 3.0.6, 3.0.5 |
+| HTTP Bezeroa | Axios | 1.6.2 |
+| Segurtasuna | DOMPurify, js-cookie | 3.0.6, 3.0.5 |
 
-#### 5.1.3 Performance
+#### 5.1.3 Errendimendua
 
-**Metrics:**
+**Metrikak:**
 - First Contentful Paint (FCP): < 1.5s
 - Time to Interactive (TTI): < 3.5s
-- Bundle size: < 500KB (gzipped)
-- Lighthouse Score: > 90
+- Bundle tamaina: < 500KB (gzipped)
+- Lighthouse Puntuazioa: > 90
 
-### 5.2 Mobile Application
+### 5.2 Mobile Aplikazioa
 
-#### 5.2.1 Features
+#### 5.2.1 Ezaugarriak
 
-**Authentication:**
-- Login with username/password
-- MFA verification
-- Biometric authentication (fingerprint/Face ID)
-- Secure token storage
+**Autentikazioa:**
+- Saio-hasiera erabiltzaile/pasahitzarekin
+- MFA egiaztapena
+- Autentikazio biometrikoa (hatz-marka/Face ID)
+- Token biltegiratze segurua
 
-**Products:**
-- Product catalog
-- Offline support (future)
-- Push notifications (future)
-- Product details
+**Produktuak:**
+- Produktu katalogoa
+- Offline euskarria (etorkizunean)
+- Push jakinarazpenak (etorkizunean)
+- Produktuaren xehetasunak
 
-**Orders:**
-- Create new orders
-- Order history
-- Real-time updates
-- In-app notifications
+**Eskaerak:**
+- Eskaera berriak sortu
+- Eskaera historia
+- Denbora errealeko eguneraketak
+- Aplikazio barruko jakinarazpenak
 
-#### 5.2.2 Technology
+#### 5.2.2 Teknologia
 
-| Component | Technology | Version |
-|-----------|------------|---------|
+| Osagaia | Teknologia | Bertsioa |
+|---------|------------|----------|
 | Framework | React Native | 0.72.6 |
-| Navigation | React Navigation | 6.1.9 |
-| Storage | EncryptedStorage | 4.0.3 |
-| Security | react-native-keychain | 8.1.3 |
-| HTTP Client | Axios | 1.5.1 |
+| Nabigazioa | React Navigation | 6.1.9 |
+| Biltegiratzea | EncryptedStorage | 4.0.3 |
+| Segurtasuna | react-native-keychain | 8.1.3 |
+| HTTP Bezeroa | Axios | 1.5.1 |
 
-#### 5.2.3 Platform Support
+#### 5.2.3 Plataforma Euskarria
 
 - **Android**: API Level 21+ (Android 5.0+)
 - **iOS**: iOS 13+
-- **Target**: 99%+ of active devices
+- **Helburua**: Gailu aktiboen %99+
 
 ### 5.3 Backend API
 
-#### 5.3.1 Endpoints
+#### 5.3.1 Endpoint-ak
 
-**Authentication:**
-- `POST /api/auth/register` - Register new user
-- `POST /api/auth/login` - Login user
-- `POST /api/auth/mfa/setup` - Setup MFA
-- `POST /api/auth/mfa/verify` - Verify MFA
-- `POST /api/auth/mfa/disable` - Disable MFA
+**Autentikazioa:**
+- `POST /api/auth/register` - Erabiltzaile berria erregistratu
+- `POST /api/auth/login` - Saioa hasi
+- `POST /api/auth/mfa/setup` - MFA konfiguratu
+- `POST /api/auth/mfa/verify` - MFA egiaztatu
+- `POST /api/auth/mfa/disable` - MFA desgaitu
 
-**Products:**
-- `GET /api/products` - Get all products
-- `GET /api/products/:id` - Get product by id (future)
+**Produktuak:**
+- `GET /api/products` - Produktu guztiak lortu
+- `GET /api/products/:id` - Produktua id bidez lortu (etorkizunean)
 
-**Orders:**
-- `POST /api/orders` - Create new order
-- `GET /api/orders` - Get user orders (future)
-- `GET /api/orders/:id` - Get order by id (future)
+**Eskaerak:**
+- `POST /api/orders` - Eskaera berria sortu
+- `GET /api/orders` - Erabiltzailearen eskaerak lortu (etorkizunean)
+- `GET /api/orders/:id` - Eskaera id bidez lortu (etorkizunean)
 
-**System:**
-- `GET /api/health` - Health check
-- `GET /` - API info
+**Sistema:**
+- `GET /api/health` - Osasun egiaztapena
+- `GET /` - API informazioa
 
-#### 5.3.2 Response Format
+#### 5.3.2 Erantzun Formatua
 
-**Success:**
+**Arrakasta:**
 ```json
 {
   "success": true,
   "data": { ... },
-  "message": "Operation successful"
+  "message": "Eragiketa arrakastatsua"
 }
 ```
 
-**Error:**
+**Errorea:**
 ```json
 {
   "success": false,
-  "error": "Error message",
+  "error": "Errore mezua",
   "details": { ... }
 }
 ```
 
 ---
 
-## 6. Deployment Guide
+## 6. Hedapen Gida (Deployment)
 
-### 6.1 Prerequisites
+### 6.1 Aurretiazko Baldintzak
 
-**Hardware Requirements:**
+**Hardware Baldintzak:**
 
-| Component | Minimum | Recommended |
-|-----------|----------|-------------|
+| Osagaia | Minimoa | Gomendatua |
+|---------|---------|------------|
 | CPU | 2 cores | 4 cores |
 | RAM | 4GB | 8GB |
-| Storage | 50GB | 100GB SSD |
-| Network | 100Mbps | 1Gbps |
+| Biltegiratzea | 50GB | 100GB SSD |
+| Sarea | 100Mbps | 1Gbps |
 
-**Software Requirements:**
+**Software Baldintzak:**
 - Docker 20.10+
 - Docker Compose 2.0+
 - Node.js 18+
@@ -595,9 +595,9 @@ Permissions-Policy: geolocation=(), microphone=()
 - MongoDB 7+
 - Redis 7+
 
-### 6.2 Environment Configuration
+### 6.2 Ingurune Konfigurazioa
 
-Create `.env` file:
+Sortu `.env` fitxategia:
 
 ```env
 # API Configuration
@@ -627,57 +627,57 @@ HELMET_CONTENT_SECURITY_POLICY=true
 HELMET_HSTS_MAX_AGE=31536000
 ```
 
-### 6.3 Deployment Steps
+### 6.3 Hedapen Urratsak
 
-#### 6.3.1 Clone Repository
+#### 6.3.1 Errepositorioa Klonatu
 
 ```bash
 git clone <repository-url>
 cd erronkak
 ```
 
-#### 6.3.2 Build Docker Images
+#### 6.3.2 Docker Irudiak Eraiki
 
 ```bash
 cd "Zabala Gailetak"
 docker-compose build
 ```
 
-#### 6.3.3 Start Services
+#### 6.3.3 Zerbitzuak Abiarazi
 
 ```bash
 docker-compose up -d
 ```
 
-#### 6.3.4 Verify Deployment
+#### 6.3.4 Hedapena Egiaztatu
 
 ```bash
-# Check services
+# Zerbitzuak egiaztatu
 docker-compose ps
 
-# Check logs
+# Log-ak egiaztatu
 docker-compose logs -f
 
-# Health check
+# Osasun egiaztapena
 curl https://api.zabala-gailetak.com/api/health
 ```
 
-### 6.4 SSL/TLS Configuration
+### 6.4 SSL/TLS Konfigurazioa
 
 #### 6.4.1 Let's Encrypt
 
 ```bash
-# Install certbot
+# Instalas certbot
 sudo apt install certbot python3-certbot-nginx
 
-# Obtain certificate
+# Ziurtagiria lortu
 sudo certbot --nginx -d zabala-gailetak.com -d www.zabala-gailetak.com
 
-# Auto-renewal
+# Auto-berritzea
 sudo certbot renew --dry-run
 ```
 
-#### 6.4.2 Nginx Configuration
+#### 6.4.2 Nginx Konfigurazioa
 
 ```nginx
 server {
@@ -701,244 +701,244 @@ server {
 
 ---
 
-## 7. Operations & Maintenance
+## 7. Eragiketak eta Mantentzea
 
-### 7.1 Monitoring
+### 7.1 Monitorizazioa
 
-#### 7.1.1 Application Monitoring
+#### 7.1.1 Aplikazio Monitorizazioa
 
-**Metrics to Monitor:**
-- Response time
-- Error rate
-- Throughput
-- Memory usage
-- CPU usage
-- Disk I/O
+**Monitorizatu beharreko Metrikak:**
+- Erantzun denbora
+- Errore tasa
+- Throughput (errendimendua)
+- Memoria erabilera
+- CPU erabilera
+- Disko I/O
 
-**Tools:**
+**Tresnak:**
 - SIEM (ELK Stack)
-- Custom health checks
-- Application logs
+- Osasun egiaztapen pertsonalizatuak
+- Aplikazio log-ak
 
-#### 7.1.2 SIEM Monitoring
+#### 7.1.2 SIEM Monitorizazioa
 
-**Alert Rules:**
-- 5+ failed logins / 15 minutes
-- SQL injection attempts
-- XSS attempts
-- Rate limit violations
-- Database connection failures
-- API response time > 5s
+**Alerta Arauak:**
+- 5+ saio-hasiera hutsegite / 15 minutu
+- SQL injection saiakerak
+- XSS saiakerak
+- Rate limit urraketak
+- Datu-base konexio hutsegiteak
+- API erantzun denbora > 5s
 
-**Dashboard:**
+**Panela:**
 - http://kibana.zabala-gailetak.com:5601
 
-### 7.2 Backup Strategy
+### 7.2 Babeskopia Estrategia (Backup)
 
-#### 7.2.1 Database Backups
+#### 7.2.1 Datu-basearen Babeskopiak
 
-**Schedule:**
-- **Daily**: Full backup at 2:00 AM
-- **Weekly**: Full backup + retention (30 days)
-- **Monthly**: Archive backup (1 year retention)
+**Egutegia:**
+- **Egunero**: Babeskopia osoa 2:00etan
+- **Astero**: Babeskopia osoa + atxikipena (30 egun)
+- **Hilero**: Artxibo babeskopia (urtebeteko atxikipena)
 
-**Implementation:**
+**Inplementazioa:**
 ```bash
-# Daily backup
+# Eguneroko babeskopia
 mongodump --uri="$MONGODB_URI" --out=/backups/daily/$(date +%Y%m%d)
 
-# Weekly backup
+# Asteroko babeskopia
 mongodump --uri="$MONGODB_URI" --out=/backups/weekly/$(date +%Y%U)
 
-# Monthly archive
+# Hileroko artxiboa
 tar -czf /backups/archive/$(date +%Y%m).tar.gz /backups/weekly/*
 ```
 
-#### 7.2.2 Application Backups
+#### 7.2.2 Aplikazioaren Babeskopiak
 
-**What to Backup:**
-- Source code (Git)
-- Configuration files
-- SSL certificates
-- Logs (7 days retention)
-- Docker volumes
+**Zer kopiatu:**
+- Iturburu kodea (Git)
+- Konfigurazio fitxategiak
+- SSL ziurtagiriak
+- Log-ak (7 eguneko atxikipena)
+- Docker bolumenak
 
-### 7.3 Maintenance Schedule
+### 7.3 Mantentze Egutegia
 
-#### 7.3.1 Daily Tasks
-- Monitor system health
-- Review SIEM alerts
-- Check backup completion
-- Review error logs
+#### 7.3.1 Eguneroko Zereginak
+- Sistema osasuna monitorizatu
+- SIEM alertak berrikusi
+- Babeskopia osatzea egiaztatu
+- Errore log-ak berrikusi
 
-#### 7.3.2 Weekly Tasks
-- Review security logs
-- Update dependencies
-- Performance tuning
-- Capacity planning
+#### 7.3.2 Asteroko Zereginak
+- Segurtasun log-ak berrikusi
+- Dependentziak eguneratu
+- Errendimendu optimizazioa
+- Edukiera plangintza
 
-#### 7.3.3 Monthly Tasks
-- Security audit
-- Backup test
-- Performance review
-- Update documentation
+#### 7.3.3 Hileroko Zereginak
+- Segurtasun auditoria
+- Babeskopia proba
+- Errendimendu berrikuspena
+- Dokumentazioa eguneratu
 
-#### 7.3.4 Quarterly Tasks
-- Full security assessment
-- Disaster recovery test
-- Architecture review
-- Compliance check
+#### 7.3.4 Hiruhileroko Zereginak
+- Segurtasun ebaluazio osoa
+- Hondamendi berreskurapen proba (Disaster Recovery)
+- Arkitektura berrikuspena
+- Betetze egiaztapena (Compliance)
 
-### 7.4 Incident Response
+### 7.4 Intzidenteen Erantzuna
 
-#### 7.4.1 Incident Categories
+#### 7.4.1 Intzidente Kategoriak
 
-| Severity | Response Time | Examples |
-|----------|---------------|----------|
-| Critical | < 15 min | System down, data breach |
-| High | < 1 hour | Service degraded, security incident |
-| Medium | < 4 hours | Feature broken, performance issue |
-| Low | < 24 hours | Minor bug, UX issue |
+| Larritasuna | Erantzun Denbora | Adibideak |
+|-------------|-------------------|-----------|
+| Kritikoa | < 15 min | Sistema erorita, datu-urraketa |
+| Altua | < 1 ordu | Zerbitzua degradatuta, segurtasun intzidentea |
+| Ertaina | < 4 ordu | Ezaugarri bat apurtuta, errendimendu arazoa |
+| Baxua | < 24 ordu | Bug txikia, UX arazoa |
 
-#### 7.4.2 Incident Process
+#### 7.4.2 Intzidente Prozesua
 
-1. **Detection**: SIEM alert, user report
-2. **Triage**: Assess severity and impact
-3. **Containment**: Isolate affected systems
-4. **Eradication**: Remove threat
-5. **Recovery**: Restore systems
-6. **Lessons Learned**: Document and improve
+1. **Detekzioa**: SIEM alerta, erabiltzaile txostena
+2. **Triajea**: Larritasuna eta inpaktua ebaluatu
+3. **Eustea (Containment)**: Kaltetutako sistemak isolatu
+4. **Ezabatzea**: Mehatxua ezabatu
+5. **Berreskuratzea**: Sistemak leheneratu
+6. **Ikasitako Ikasgaiak**: Dokumentatu eta hobetu
 
 ---
 
-## 8. Compliance & Standards
+## 8. Betetzea eta Estandarrak
 
 ### 8.1 OWASP Top 10
 
-| Risk | Mitigation | Status |
-|------|------------|--------|
-| A01: Broken Access Control | RBAC, MFA | ✅ Implemented |
-| A02: Cryptographic Failures | Strong encryption, TLS | ✅ Implemented |
-| A03: Injection | Input validation, parameterized queries | ✅ Implemented |
-| A04: Insecure Design | Threat modeling, secure patterns | ✅ Implemented |
-| A05: Security Misconfiguration | Hardening guides, secure defaults | ✅ Implemented |
-| A06: Vulnerable Components | Dependency scanning, updates | ✅ Implemented |
-| A07: Authentication Failures | MFA, rate limiting | ✅ Implemented |
-| A08: Software & Data Integrity | Signed builds, checksums | ✅ Implemented |
-| A09: Logging & Monitoring | SIEM, structured logs | ✅ Implemented |
-| A10: SSRF | Input validation, network controls | ✅ Implemented |
+| Arriskua | Mitigazioa | Egoera |
+|----------|------------|--------|
+| A01: Broken Access Control | RBAC, MFA | ✅ Inplementatuta |
+| A02: Cryptographic Failures | Enkriptatze sendoa, TLS | ✅ Inplementatuta |
+| A03: Injection | Input validation, parameterized queries | ✅ Inplementatuta |
+| A04: Insecure Design | Threat modeling, secure patterns | ✅ Inplementatuta |
+| A05: Security Misconfiguration | Hardening guides, secure defaults | ✅ Inplementatuta |
+| A06: Vulnerable Components | Dependency scanning, eguneraketak | ✅ Inplementatuta |
+| A07: Authentication Failures | MFA, tasa mugatzea | ✅ Inplementatuta |
+| A08: Software & Data Integrity | Signed builds, checksums | ✅ Inplementatuta |
+| A09: Logging & Monitoring | SIEM, structured logs | ✅ Inplementatuta |
+| A10: SSRF | Input validation, network controls | ✅ Inplementatuta |
 
 ### 8.2 ISO 27001
 
-**Implemented Controls:**
+**Inplementatutako Kontrolak:**
 
-- **A.5.1.1**: Policies for information security
-- **A.6.1.2**: Information security roles and responsibilities
-- **A.8.2.1**: Management of privileged access rights
-- **A.9.1.1**: Access control policy
-- **A.10.1.1**: Cryptographic controls
-- **A.12.2.1**: Malware protection
-- **A.12.3.1**: Information backup
-- **A.12.4.1**: Logging
-- **A.12.6.1**: Management of technical vulnerabilities
-- **A.16.1.1**: Management of information security incidents
+- **A.5.1.1**: Informazio segurtasuneko politikak
+- **A.6.1.2**: Informazio segurtasuneko rolak eta erantzukizunak
+- **A.8.2.1**: Pribilegiatutako sarbide-eskubideen kudeaketa
+- **A.9.1.1**: Sarbide kontrolerako politika
+- **A.10.1.1**: Kontrol kriptografikoak
+- **A.12.2.1**: Malware babesa
+- **A.12.3.1**: Informazio babeskopia
+- **A.12.4.1**: Erregistroa (Logging)
+- **A.12.6.1**: Ahultasun teknikoen kudeaketa
+- **A.16.1.1**: Informazio segurtasuneko intzidenteen kudeaketa
 
-### 8.3 GDPR Compliance
+### 8.3 GDPR Betetzea
 
-**Data Protection Measures:**
-- **Consent**: Explicit consent for data processing
-- **Purpose Limitation**: Data used only for stated purposes
-- **Data Minimization**: Only collect necessary data
-- **Security**: Encryption, access controls
-- **Rights**: Data access, deletion, portability
-- **Breach Notification**: 72-hour notification requirement
+**Datu Babeserako Neurriak:**
+- **Baimena**: Datuen tratamendurako berariazko baimena
+- **Helburu Mugaketa**: Datuak adierazitako helburuetarako bakarrik erabili
+- **Datu Minimizazioa**: Beharrezko datuak bakarrik bildu
+- **Segurtasuna**: Enkriptatzea, sarbide kontrolak
+- **Eskubideak**: Datu sarbidea, ezabatzea, eramangarritasuna
+- **Urraketa Jakinarazpena**: 72 orduko jakinarazpen betekizuna
 
-### 8.4 IEC 62443 (Industrial Security)
+### 8.4 IEC 62443 (Industria Segurtasuna)
 
-**Implemented Measures:**
-- Network segmentation (IT/OT separation)
-- Industrial protocol security (Modbus, S7)
-- Honeypot for threat detection
-- SCADA security controls
-- OT monitoring and logging
+**Inplementatutako Neurriak:**
+- Sare segmentazioa (IT/OT bereizketa)
+- Industria protokolo segurtasuna (Modbus, S7)
+- Honeypot mehatxuak detektatzeko
+- SCADA segurtasun kontrolak
+- OT monitorizazioa eta logging
 
 ---
 
-## 9. Development Guidelines
+## 9. Garapen Gidalerroak
 
-### 9.1 Code Standards
+### 9.1 Kode Estandarrak
 
 #### 9.1.1 JavaScript/Node.js
 
-**Style Guide:**
+**Estilo Gida:**
 - Airbnb JavaScript Style Guide
-- ESLint for enforcement
-- Prettier for formatting
+- ESLint betearazteko
+- Prettier formatua emateko
 
-**Best Practices:**
-- Use const/let, avoid var
-- Async/await over callbacks
-- Error handling with try/catch
-- Meaningful variable names
-- Function length < 50 lines
-- File length < 300 lines
+**Praktika Onak:**
+- Erabili const/let, saihestu var
+- Async/await callbacks baino hobeto
+- Errore kudeaketa try/catch-ekin
+- Aldagai izen esanguratsuak
+- Funtzio luzera < 50 lerro
+- Fitxategi luzera < 300 lerro
 
 #### 9.1.2 React
 
-**Best Practices:**
-- Functional components with hooks
-- Context API for global state
-- Props validation (PropTypes)
-- Component composition
-- Code splitting
+**Praktika Onak:**
+- Osagai funtzionalak hook-ekin
+- Context API egoera globalerako
+- Props balidazioa (PropTypes)
+- Osagaien konposizioa
+- Kode zatiketa (Code splitting)
 - Lazy loading
 
-### 9.2 Security Guidelines
+### 9.2 Segurtasun Gidalerroak
 
-#### 9.2.1 Do's
-- ✅ Always validate input
-- ✅ Use parameterized queries
-- ✅ Sanitize output
-- ✅ Implement rate limiting
-- ✅ Use HTTPS everywhere
-- ✅ Implement MFA
-- ✅ Log security events
-- ✅ Keep dependencies updated
+#### 9.2.1 Egin Beharrekoak (Do's)
+- ✅ Beti balidatu sarrera (input)
+- ✅ Erabili kontsulta parametrizatuak
+- ✅ Sanitizatu irteera (output)
+- ✅ Inplementatu tasa mugatzea
+- ✅ Erabili HTTPS edonon
+- ✅ Inplementatu MFA
+- ✅ Erregistratu segurtasun gertaerak
+- ✅ Mantendu dependentziak eguneratuta
 
-#### 9.2.2 Don'ts
-- ❌ Never trust user input
-- ❌ Never log sensitive data
-- ❌ Never commit secrets
-- ❌ Never use eval()
-- ❌ Never disable security features
-- ❌ Never ignore security warnings
-- ❌ Never use deprecated functions
-- ❌ Never hardcode credentials
+#### 9.2.2 Ez Egin Beharrekoak (Don'ts)
+- ❌ Inoiz ez fidatu erabiltzailearen sarreraz
+- ❌ Inoiz ez erregistratu datu sentikorrak log-etan
+- ❌ Inoiz ez igo sekreturik (commits)
+- ❌ Inoiz ez erabili eval()
+- ❌ Inoiz ez desgaitu segurtasun ezaugarriak
+- ❌ Inoiz ez ignoratu segurtasun abisuak
+- ❌ Inoiz ez erabili zaharkitutako funtzioak
+- ❌ Inoiz ez jarri kredentzialak kodean (hardcode)
 
-### 9.3 Testing Strategy
+### 9.3 Proba Estrategia
 
-#### 9.3.1 Test Pyramid
+#### 9.3.1 Proba Piramidea
 
 ```
         /\
        /E2E\        (10%)
       /------\
-     /Integration\ (30%)
+     /Integrazioa\ (30%)
     /----------\
    /   Unit      \ (60%)
   /--------------\
 ```
 
-#### 9.3.2 Coverage Targets
+#### 9.3.2 Estaldura Helburuak
 
 - Unit tests: 80%+
 - Integration tests: 70%+
 - E2E tests: 50%+
-- Overall: 75%+
+- Orokorra: 75%+
 
-### 9.4 Git Workflow
+### 9.4 Git Lan-fluxua
 
-#### 9.4.1 Branching Strategy
+#### 9.4.1 Adar Estrategia (Branching)
 
 ```
 main (production)
@@ -950,72 +950,72 @@ feature/mfa-setup
 bugfix/auth-error
 ```
 
-#### 9.4.2 Commit Messages
+#### 9.4.2 Commit Mezuak
 
-**Format:**
+**Formatua:**
 ```
-<type>(<scope>): <subject>
+<mota>(<eremua>): <gaia>
 
 <body>
 
 <footer>
 ```
 
-**Types:**
-- `feat`: New feature
-- `fix`: Bug fix
-- `docs`: Documentation
-- `style`: Formatting
-- `refactor`: Code refactoring
-- `test`: Testing
-- `chore`: Maintenance
+**Motak:**
+- `feat`: Ezaugarri berria
+- `fix`: Bug konponketa
+- `docs`: Dokumentazioa
+- `style`: Formatua
+- `refactor`: Kode berregituraketa
+- `test`: Probak
+- `chore`: Mantentze lanak
 
 ---
 
-## 10. Support & Contact
+## 10. Laguntza eta Kontaktua
 
-### 10.1 Documentation
+### 10.1 Dokumentazioa
 
-**Available Documentation:**
-- `IMPLEMENTATION_SUMMARY.md` - Overview and quick start
-- `WEB_APP_GUIDE.md` - Web app detailed guide
-- `MOBILE_APP_GUIDE.md` - Mobile app detailed guide
-- `API_DOCUMENTATION.md` - API reference
-- `SECURITY_GUIDE.md` - Security implementation
-- `DEPLOYMENT_GUIDE.md` - Deployment procedures
+**Eskuragarri dagoen Dokumentazioa:**
+- `IMPLEMENTATION_SUMMARY.md` - Orokorra eta hasiera azkarra
+- `WEB_APP_GUIDE.md` - Web app gida zehatza
+- `MOBILE_APP_GUIDE.md` - Mobile app gida zehatza
+- `API_DOCUMENTATION.md` - API erreferentzia
+- `SECURITY_GUIDE.md` - Segurtasun inplementazioa
+- `DEPLOYMENT_GUIDE.md` - Hedapen prozedurak
 
-### 10.2 SOPs (Standard Operating Procedures)
+### 10.2 SOP-ak (Prozedura Operatibo Estandarrak)
 
-**Available SOPs:**
-- `devops/sop_secure_development.md` - Secure development
+**Eskuragarri dauden SOP-ak:**
+- `devops/sop_secure_development.md` - Garapen segurua
 - `security/web_hardening_sop.md` - Web app hardening
-- `security/mobile_security_sop.md` - Mobile app security
-- `infrastructure/network/network_segmentation_sop.md` - Network segmentation
-- `security/honeypot/honeypot_implementation_sop.md` - Honeypot setup
-- `security/incidents/sop_incident_response.md` - Incident response
+- `security/mobile_security_sop.md` - Mobile app segurtasuna
+- `infrastructure/network/network_segmentation_sop.md` - Sare segmentazioa
+- `security/honeypot/honeypot_implementation_sop.md` - Honeypot konfigurazioa
+- `security/incidents/sop_incident_response.md` - Intzidenteen erantzuna
 
-### 10.3 Contact Information
+### 10.3 Harremanetarako Informazioa
 
-**Development Team:**
-- **Lead Developer**: [Contact Info]
-- **Security Team**: [Contact Info]
-- **DevOps Team**: [Contact Info]
-- **Support**: support@zabala-gailetak.com
+**Garapen Taldea:**
+- **Lead Developer**: [Harremanetarako Info]
+- **Segurtasun Taldea**: [Harremanetarako Info]
+- **DevOps Taldea**: [Harremanetarako Info]
+- **Laguntza**: support@zabala-gailetak.com
 
-**Emergency Contacts:**
-- **Critical Issues**: 24/7 hotline: [Number]
-- **Security Incidents**: security@zabala-gailetak.com
+**Larrialdi Kontaktuak:**
+- **Arazo Kritikoak**: 24/7 telefonoa: [Zenbakia]
+- **Segurtasun Intzidenteak**: security@zabala-gailetak.com
 
-### 10.4 Resources
+### 10.4 Baliabideak
 
-**Internal Resources:**
+**Barne Baliabideak:**
 - GitLab: [URL]
 - CI/CD: [URL]
-- Documentation: [URL]
-- Monitoring: [URL]
+- Dokumentazioa: [URL]
+- Monitorizazioa: [URL]
 - Issue Tracker: [URL]
 
-**External Resources:**
+**Kanpo Baliabideak:**
 - OWASP: https://owasp.org
 - NIST: https://csrc.nist.gov
 - ISO: https://www.iso.org
@@ -1023,15 +1023,15 @@ bugfix/auth-error
 
 ---
 
-## Appendix A: Technical Specifications
+## Eranskina A: Zehaztapen Teknikoak
 
-### A.1 API Endpoints
+### A.1 API Endpoint-ak
 
-See `API_DOCUMENTATION.md` for complete API reference.
+Ikusi `API_DOCUMENTATION.md` API erreferentzia osorako.
 
-### A.2 Database Schema
+### A.2 Datu-base Eskema
 
-**Users Collection:**
+**Users Bilduma:**
 ```javascript
 {
   _id: ObjectId,
@@ -1045,7 +1045,7 @@ See `API_DOCUMENTATION.md` for complete API reference.
 }
 ```
 
-**Products Collection:**
+**Products Bilduma:**
 ```javascript
 {
   _id: ObjectId,
@@ -1059,7 +1059,7 @@ See `API_DOCUMENTATION.md` for complete API reference.
 }
 ```
 
-**Orders Collection:**
+**Orders Bilduma:**
 ```javascript
 {
   _id: ObjectId,
@@ -1075,59 +1075,59 @@ See `API_DOCUMENTATION.md` for complete API reference.
 }
 ```
 
-### A.3 Configuration Files
+### A.3 Konfigurazio Fitxategiak
 
-**Complete configuration files:**
-- `.env.example` - Environment variables
-- `webpack.config.js` - Webpack configuration
-- `docker-compose.yml` - Docker services
-- `nginx/nginx.conf` - Nginx configuration
-- `security/siem/logstash.conf` - Logstash configuration
+**Konfigurazio fitxategi osoak:**
+- `.env.example` - Ingurune aldagaiak
+- `webpack.config.js` - Webpack konfigurazioa
+- `docker-compose.yml` - Docker zerbitzuak
+- `nginx/nginx.conf` - Nginx konfigurazioa
+- `security/siem/logstash.conf` - Logstash konfigurazioa
 
 ---
 
-## Appendix B: Glossary
+## Eranskina B: Glosarioa
 
-| Term | Definition |
-|------|------------|
-| API | Application Programming Interface |
-| CI/CD | Continuous Integration/Continuous Deployment |
-| CSRF | Cross-Site Request Forgery |
-| CSP | Content Security Policy |
-| DAST | Dynamic Application Security Testing |
-| GDPR | General Data Protection Regulation |
-| HIDS | Host-based Intrusion Detection System |
-| HSTS | HTTP Strict Transport Security |
-| IDS/IPS | Intrusion Detection/Prevention System |
+| Terminoa | Definizioa |
+|----------|------------|
+| API | Aplikazio Programazio Interfazea |
+| CI/CD | Etengabeko Integrazioa/Etengabeko Hedapena |
+| CSRF | Gune arteko Eskaera Faltsutzea |
+| CSP | Eduki Segurtasun Politika |
+| DAST | Aplikazioen Segurtasun Test Dinamikoa |
+| GDPR | Datuak Babesteko Erregelamendu Orokorra |
+| HIDS | Host-ean oinarritutako Intrusio Detekzio Sistema |
+| HSTS | HTTP Garraio Segurtasun Zorrotza |
+| IDS/IPS | Intrusio Detekzio/Prebentzio Sistema |
 | JWT | JSON Web Token |
-| MFA | Multi-Factor Authentication |
-| MITM | Man-in-the-Middle |
+| MFA | Faktore Anitzeko Autentikazioa |
+| MITM | Man-in-the-Middle (Erasotzailea erdian) |
 | OWASP | Open Web Application Security Project |
-| SAST | Static Application Security Testing |
-| SIEM | Security Information and Event Management |
-| SCA | Software Composition Analysis |
-| SOP | Standard Operating Procedure |
+| SAST | Aplikazioen Segurtasun Test Estatikoa |
+| SIEM | Segurtasun Informazio eta Gertaera Kudeaketa |
+| SCA | Software Konposizio Analisia |
+| SOP | Prozedura Operatibo Estandarra |
 | SSL/TLS | Secure Sockets Layer/Transport Layer Security |
-| TOTP | Time-based One-Time Password |
+| TOTP | Denboran oinarritutako Erabilera Bakarreko Pasahitza |
 | XSS | Cross-Site Scripting |
 
 ---
 
-## Appendix C: Change Log
+## Eranskina C: Aldaketa Erregistroa
 
-| Version | Date | Changes | Author |
-|---------|------|---------|---------|
-| 1.0 | 2026-01-08 | Initial documentation release | Zabala Gailetak Team |
-
----
-
-**Document Control:**
-
-- **Owner**: Zabala Gailetak Security Team
-- **Review Date**: Quarterly
-- **Next Review**: April 2026
-- **Classification**: Internal
+| Bertsioa | Data | Aldaketak | Egilea |
+|---------|------|-----------|--------|
+| 1.0 | 2026-01-08 | Hasierako dokumentazioa | Zabala Gailetak Taldea |
 
 ---
 
-*End of Documentation*
+**Dokumentu Kontrola:**
+
+- **Jabea**: Zabala Gailetak Segurtasun Taldea
+- **Berrikuspen Data**: Hiruhileran behin
+- **Hurrengo Berrikuspena**: 2026ko Apirila
+- **Sailkapena**: Barnekoa
+
+---
+
+*Dokumentazioaren Amaiera*

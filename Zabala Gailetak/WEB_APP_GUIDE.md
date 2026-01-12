@@ -1,157 +1,157 @@
-# Web Application Implementation - Complete Guide
+# Web Aplikazioaren Inplementazioa - Gida Osoa
 
-## Overview
+## Orokorra
 
-Zabala Gailetak web application is a modern, secure React-based e-commerce platform built with the same security standards as the mobile app.
+Zabala Gailetak web aplikazioa React-en oinarritutako merkataritza elektroniko plataforma moderno eta segurua da, mugikorrerako aplikazioaren segurtasun estandar berberekin eraikia.
 
-## Architecture
+## Arkitektura
 
 ```
-Web App (React)
+Web Aplikazioa (React)
     ↓ HTTPS + JWT + MFA
 Backend API (Express)
     ↓
-Database (MongoDB)
+Datu-basea (MongoDB)
     ↓
 SIEM (ELK Stack)
 ```
 
-## Features Implemented
+## Inplementatutako Ezaugarriak
 
-### 1. Authentication & Security
-- Login with username/password
-- MFA (TOTP) support using Speakeasy
-- JWT token-based authentication
-- Secure cookie handling (HttpOnly, SameSite=Strict)
-- CSRF protection
-- XSS prevention with DOMPurify
-- Input sanitization
+### 1. Autentifikazioa eta Segurtasuna
+- Saio-hasiera erabiltzaile/pasahitzarekin
+- MFA (TOTP) euskarria Speakeasy erabiliz
+- JWT token bidezko autentifikazioa
+- Cookie kudeaketa segurua (HttpOnly, SameSite=Strict)
+- CSRF babesa
+- XSS prebentzioa DOMPurify-rekin
+- Sarrera sanitizazioa
 
-### 2. Core Functionality
-- Product catalog with pricing
-- Order creation with validation
-- User dashboard with statistics
-- MFA enable/disable functionality
-- Responsive design (mobile-friendly)
+### 2. Oinarrizko Funtzionalitatea
+- Produktu katalogoa prezioekin
+- Eskaera sorrera balidazioarekin
+- Erabiltzaile panela estatistikekin
+- MFA gaitu/desgaitu funtzionalitatea
+- Diseinu moldagarria (mugikorretarako egokia)
 
-### 3. Security Features
+### 3. Segurtasun Ezaugarriak
 - Content Security Policy (CSP)
-- Helmet.js security headers
-- Rate limiting on API
-- Input validation (express-validator)
-- SQL injection prevention
-- XSS protection
-- CORS configuration
-- HTTPS enforcement
+- Helmet.js segurtasun goiburuak
+- Tasa mugatzea APIan
+- Sarrera balidazioa (express-validator)
+- SQL injection prebentzioa
+- XSS babesa
+- CORS konfigurazioa
+- HTTPS behartzea
 
-## Project Structure
+## Proiektuaren Egitura
 
 ```
 src/web/
 ├── app/
 │   ├── pages/
-│   │   ├── Login.js           # Login page with gradient design
-│   │   ├── MFA.js            # MFA verification page
-│   │   ├── Products.js        # Product catalog
-│   │   ├── Order.js          # Order creation
-│   │   └── Dashboard.js      # User dashboard
+│   │   ├── Login.js           # Saio-hasiera orria diseinu gradientearekin
+│   │   ├── MFA.js            # MFA egiaztapen orria
+│   │   ├── Products.js        # Produktu katalogoa
+│   │   ├── Order.js          # Eskaera sorrera
+│   │   └── Dashboard.js      # Erabiltzaile panela
 │   ├── context/
-│   │   └── AuthContext.js    # Authentication state management
+│   │   └── AuthContext.js    # Autentifikazio egoera kudeaketa
 │   ├── services/
-│   │   └── api.js           # API client with interceptors
+│   │   └── api.js           # API bezeroa interzeptoreekin
 │   ├── styles/
-│   │   └── global.css       # Global styles
-│   ├── index.js             # App entry point
-│   └── package.json         # Web app dependencies
-└── index.html              # HTML template
+│   │   └── global.css       # Estilo globalak
+│   ├── index.js             # Aplikazioaren sarrera puntua
+│   └── package.json         # Web aplikazioaren dependentziak
+└── index.html              # HTML txantiloia
 ```
 
-## Installation
+## Instalazioa
 
-### 1. Install Dependencies
+### 1. Dependentziak Instalatu
 
 ```bash
 cd "Zabala Gailetak/src/web/app"
 npm install
 ```
 
-Or install from root:
+Edo errotik instalatu:
 
 ```bash
 cd "Zabala Gailetak"
 npm install
 ```
 
-### 2. Environment Configuration
+### 2. Ingurune Konfigurazioa
 
-Create `.env` file in the root:
+Sortu `.env` fitxategia erroan:
 
 ```env
 REACT_APP_API_URL=http://localhost:3000/api
 REACT_APP_MFA_ENABLED=true
 ```
 
-### 3. Development Server
+### 3. Garapen Zerbitzaria
 
 ```bash
 npm run web:start
 ```
 
-The app will be available at `http://localhost:3001`
+Aplikazioa `http://localhost:3001` helbidean egongo da eskuragarri.
 
-### 4. Production Build
+### 4. Produkzio Eraikuntza
 
 ```bash
 npm run web:build
 ```
 
-Output: `dist/web/bundle.[hash].js`
+Irteera: `dist/web/bundle.[hash].js`
 
-## Usage Guide
+## Erabilera Gida
 
-### Login Flow
+### Saio-hasiera Fluxua
 
-1. Navigate to `/login`
-2. Enter username and password
-3. If MFA is enabled, redirected to `/mfa`
-4. Enter 6-digit TOTP code
-5. Redirected to dashboard
+1. Joan `/login` helbidera
+2. Sartu erabiltzailea eta pasahitza
+3. MFA gaituta badago, `/mfa` helbidera birbideratuko da
+4. Sartu 6 digituko TOTP kodea
+5. Panelera birbideratuko da
 
-### Product Browsing
+### Produktuak Arakatu
 
-1. Navigate to `/products` after login
-2. Browse available products
-3. View pricing and descriptions
-4. Click "Eskaera Egin" to order
+1. Joan `/products` helbidera saioa hasi ondoren
+2. Arakatu eskuragarri dauden produktuak
+3. Ikusi prezioak eta deskribapenak
+4. Sakatu "Eskaera Egin" eskatzeko
 
-### Creating Orders
+### Eskaerak Sortu
 
-1. Select a product from catalog
-2. Fill in order form:
-   - Quantity (1-10)
-   - Full name
-   - Email address
-   - Shipping address
-3. Review total price
-4. Submit order
-5. Receive order confirmation
+1. Aukeratu produktu bat katalogotik
+2. Bete eskaera formularioa:
+   - Kantitatea (1-10)
+   - Izen-abizenak
+   - Posta elektronikoa
+   - Bidalketa helbidea
+3. Berrikusi guztizko prezioa
+4. Bidali eskaera
+5. Jaso eskaera baieztapena
 
-### Dashboard Features
+### Panelaren Ezaugarriak
 
-- View statistics (products, orders, revenue)
-- Quick actions (products, orders, profile)
-- MFA management (enable/disable)
-- User information
+- Ikusi estatistikak (produktuak, eskaerak, diru-sarrerak)
+- Ekintza azkarrak (produktuak, eskaerak, profila)
+- MFA kudeaketa (gaitu/desgaitu)
+- Erabiltzaile informazioa
 
-## Security Implementation
+## Segurtasun Inplementazioa
 
-### 1. API Client Security
+### 1. API Bezeroaren Segurtasuna
 
 ```javascript
-// Auto-injects JWT token
-// Handles 401 errors
-// CSRF token injection
-// Input sanitization
+// JWT tokena automatikoki txertatzen du
+// 401 erroreak kudeatzen ditu
+// CSRF token txertaketa
+// Sarrera sanitizazioa
 
 apiClient.interceptors.request.use((config) => {
   const token = localStorage.getItem('auth_token');
@@ -163,28 +163,28 @@ apiClient.interceptors.request.use((config) => {
 });
 ```
 
-### 2. Input Sanitization
+### 2. Sarrera Sanitizazioa
 
 ```javascript
-// DOMPurify for XSS prevention
-// Strips malicious code
-// Preserves safe HTML
+// DOMPurify XSS prebentziorako
+// Kode maltzurra kentzen du
+// HTML segurua mantentzen du
 
 const sanitizeInput = (data) => {
   if (typeof data === 'string') {
     return DOMPurify.sanitize(data.trim());
   }
-  // ... object handling
+  // ... objektu kudeaketa
 };
 ```
 
-### 3. Auth Context Security
+### 3. Auth Context Segurtasuna
 
 ```javascript
-// Secure token storage
-// Auto-logout on 401
-// Cookie management
-// Token expiration handling
+// Token biltegiratze segurua
+// Saio-amaiera automatikoa 401 errorea jasotzean
+// Cookie kudeaketa
+// Token iraungitze kudeaketa
 
 const login = async (username, password) => {
   const response = await apiService.login(username, password);
@@ -198,15 +198,15 @@ const login = async (username, password) => {
 };
 ```
 
-## Styling Architecture
+## Estilo Arkitektura
 
 ### Styled Components
 
 ```javascript
-// Component-scoped styles
-// Theme variables
-// Responsive design
-// Hover states
+// Osagai-mailako estiloak
+// Gai aldagaiak
+// Diseinu moldagarria
+// Hover egoerak
 
 const Button = styled.button`
   padding: 12px;
@@ -226,52 +226,52 @@ const Button = styled.button`
 `;
 ```
 
-## Webpack Configuration
+## Webpack Konfigurazioa
 
-### Production Optimizations
+### Produkzio Optimizazioak
 
-- Code splitting (vendors, common chunks)
-- Minification
+- Kode zatiketa (saltzaileak, zati komunak)
+- Minifikazioa
 - Source maps
-- Bundle analysis
-- CSP injection
-- Compression
+- Bundle analisia
+- CSP txertaketa
+- Konpresioa
 
-### Development Features
+### Garapen Ezaugarriak
 
 - Hot Module Replacement (HMR)
 - Source maps
-- CORS headers
+- CORS goiburuak
 - History API fallback
-- Fast refresh
+- Freskatze azkarra
 
-## Testing
+## Probak
 
-### Unit Tests
+### Unitate Probak
 
 ```bash
 cd src/web/app
 npm test
 ```
 
-### E2E Tests
+### E2E Probak
 
 ```bash
-# Requires Cypress or Playwright setup
+# Cypress edo Playwright konfigurazioa behar du
 npm run test:e2e
 ```
 
-## Deployment
+## Hedapena
 
-### 1. Build for Production
+### 1. Produkziorako Eraiki
 
 ```bash
 npm run web:build
 ```
 
-### 2. Serve Static Files
+### 2. Fitxategi Estatikoak Zerbitzatu
 
-With Nginx:
+Nginx-ekin:
 
 ```nginx
 server {
@@ -294,7 +294,7 @@ server {
 }
 ```
 
-### 3. Docker Deployment
+### 3. Docker Hedapena
 
 ```dockerfile
 FROM node:18-alpine AS builder
@@ -311,51 +311,51 @@ EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 ```
 
-## Performance Optimization
+## Errendimendu Optimizazioa
 
-### 1. Bundle Size
+### 1. Bundle Tamaina
 
-- Code splitting by route
+- Kode zatiketa ibilbidearen arabera
 - Tree shaking
-- Dead code elimination
-- Vendor chunking
+- Hildako kodea ezabatzea
+- Saltzaile zatiketa
 
-### 2. Caching
+### 2. Cache-a
 
-- Browser caching (Cache-Control headers)
-- Service Worker (PWA support)
-- CDN distribution
-- Static asset optimization
+- Nabigatzaile cache-a (Cache-Control goiburuak)
+- Service Worker (PWA euskarria)
+- CDN banaketa
+- Aktibo estatikoen optimizazioa
 
-### 3. Loading Performance
+### 3. Kargatze Errendimendua
 
-- Lazy loading routes
-- Image optimization
-- Font optimization
-- Minification
+- Ibilbideen karga alferra (Lazy loading)
+- Irudi optimizazioa
+- Letra-tipo optimizazioa
+- Minifikazioa
 
-## Browser Compatibility
+## Nabigatzaile Bateragarritasuna
 
 - Chrome 90+
 - Firefox 88+
 - Safari 14+
 - Edge 90+
-- Mobile browsers (iOS Safari, Chrome Mobile)
+- Mugikorretako nabigatzaileak (iOS Safari, Chrome Mobile)
 
-## Accessibility
+## Irisgarritasuna
 
-- ARIA labels
-- Keyboard navigation
-- Screen reader support
-- Color contrast compliance (WCAG AA)
-- Focus indicators
+- ARIA etiketak
+- Teklatu bidezko nabigazioa
+- Pantaila irakurle euskarria
+- Kolore kontraste betetzea (WCAG AA)
+- Foku adierazleak
 
-## Monitoring & Analytics
+## Monitorizazioa eta Analitika
 
-### 1. Error Tracking
+### 1. Errore Jarraipena
 
 ```javascript
-// Log errors to API
+// Erroreak APIan erregistratu
 window.addEventListener('error', (event) => {
   apiService.logError({
     message: event.message,
@@ -365,81 +365,81 @@ window.addEventListener('error', (event) => {
 });
 ```
 
-### 2. Performance Monitoring
+### 2. Errendimendu Monitorizazioa
 
 ```javascript
-// Page load times
-// API response times
-// User interaction tracking
+// Orri karga denborak
+// API erantzun denborak
+// Erabiltzaile interakzio jarraipena
 ```
 
-## Maintenance
+## Mantentze-lanak
 
-### Regular Updates
+### Aldizkako Eguneraketak
 
-- Weekly dependency checks
-- Monthly security patches
-- Quarterly feature updates
-- Annual major version upgrades
+- Asteko dependentzia egiaztapenak
+- Hileko segurtasun adabakiak
+- Hiruhileko ezaugarri eguneraketak
+- Urteroko bertsio nagusien berritzeak
 
-### Backup & Recovery
+### Segurtasun-kopia eta Berreskuratzea
 
-- Database backups (daily)
-- Application backups (weekly)
-- Disaster recovery testing (monthly)
+- Datu-basearen segurtasun-kopiak (egunero)
+- Aplikazioaren segurtasun-kopiak (astero)
+- Hondamendi berreskuratze probak (hilero)
 
-## Troubleshooting
+## Arazoak Konpontzea
 
-### Common Issues
+### Ohiko Arazoak
 
-1. **Login fails**: Check API connection, verify JWT secret
-2. **MFA not working**: Verify time sync, check TOTP app
-3. **Build fails**: Clear node_modules, reinstall dependencies
-4. **Styles not loading**: Check webpack configuration, verify CSS loaders
+1. **Saio-hasierak huts egiten du**: Egiaztatu API konexioa, egiaztatu JWT sekretua
+2. **MFAk ez du funtzionatzen**: Egiaztatu ordu sinkronizazioa, egiaztatu TOTP aplikazioa
+3. **Eraikuntzak huts egiten du**: Garbitu node_modules, berrinstalatu dependentziak
+4. **Estiloak ez dira kargatzen**: Egiaztatu webpack konfigurazioa, egiaztatu CSS kargatzaileak
 
-### Debug Mode
+### Arazketa Modua
 
 ```javascript
-// Enable debug logging
+// Arazketa erregistroa gaitu
 localStorage.setItem('debug', 'zabala-gailetak:*');
 ```
 
-## Security Checklist
+## Segurtasun Kontrol Zerrenda
 
-- [x] HTTPS enabled
-- [x] CSP headers configured
-- [x] XSS protection (DOMPurify)
-- [x] CSRF tokens
-- [x] Secure cookies
-- [x] Input validation
-- [x] Rate limiting
-- [x] MFA implemented
-- [x] JWT authentication
-- [x] Password hashing
-- [x] Error handling
-- [x] Logging
+- [x] HTTPS gaituta
+- [x] CSP goiburuak konfiguratuta
+- [x] XSS babesa (DOMPurify)
+- [x] CSRF tokenak
+- [x] Cookie seguruak
+- [x] Sarrera balidazioa
+- [x] Tasa mugatzea
+- [x] MFA inplementatuta
+- [x] JWT autentifikazioa
+- [x] Pasahitz hashing-a
+- [x] Errore kudeaketa
+- [x] Erregistroa (Logging)
 
-## Future Enhancements
+## Etorkizuneko Hobekuntzak
 
 - PWA (Progressive Web App)
-- WebSocket real-time updates
-- Payment gateway integration
-- Advanced search & filtering
-- User reviews & ratings
-- Order tracking
-- Wishlist functionality
-- Multi-language support
-- Dark mode theme
-- Analytics dashboard
+- WebSocket denbora errealeko eguneraketak
+- Ordainketa pasabide integrazioa
+- Bilaketa eta iragazketa aurreratua
+- Erabiltzaile iritziak eta balorazioak
+- Eskaera jarraipena
+- Desio zerrenda funtzionalitatea
+- Hizkuntza anitzeko euskarria
+- Modu iluna gaia
+- Analitika panela
 
-## Support
+## Laguntza
 
-For issues or questions:
-- Documentation: `IMPLEMENTATION_SUMMARY.md`
-- API Docs: `src/api/middleware/auth.js`
-- Security SOP: `security/web_hardening_sop.md`
+Arazo edo galderetarako:
+- Dokumentazioa: `IMPLEMENTATION_SUMMARY.md`
+- API Dokumentazioa: `src/api/middleware/auth.js`
+- Segurtasun SOP: `security/web_hardening_sop.md`
 - CI/CD: `.github/workflows/ci-cd.yml`
 
-## License
+## Lizentzia
 
 ISC
