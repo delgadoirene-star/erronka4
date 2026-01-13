@@ -1,4 +1,5 @@
 # 💰 Análisis de Costes, Recursos y Salarios - Zabala Gailetak
+
 ## Plataforma de E-commerce Segura con SIEM, OT/PLC e Infraestructura de Honeypots
 
 **Versión**: 1.0  
@@ -10,6 +11,7 @@
 ## 📊 RESUMEN EJECUTIVO
 
 Este documento detalla los costes completos de implementación del sistema Zabala Gailetak, incluyendo:
+
 - Infraestructura hardware/cloud
 - Licencias de software
 - Recursos humanos (salarios)
@@ -77,7 +79,8 @@ Este documento detalla los costes completos de implementación del sistema Zabal
 
 **Subtotal Instalación**: **€20,500**
 
-### **TOTAL OPCIÓN A (On-Premise)**: 
+### **TOTAL OPCIÓN A (On-Premise)**
+
 - **CAPEX inicial**: €170,800
 - **OPEX anual**: €2,400 (cloud backup)
 - **Licencias anuales** (tras 3 años): €23,600/año
@@ -120,7 +123,8 @@ Este documento detalla los costes completos de implementación del sistema Zabal
 
 **Subtotal Managed Services**: **+€3,500/mes** (€42,000/año)
 
-### **TOTAL OPCIÓN B (AWS Cloud)**:
+### **TOTAL OPCIÓN B (AWS Cloud)**
+
 - **Infraestructura Self-Managed**: €69,060/año
 - **Infraestructura Managed Services**: €111,060/año
 - **Sin CAPEX inicial** (solo migration ~€5,000)
@@ -137,7 +141,8 @@ Este documento detalla los costes completos de implementación del sistema Zabal
 | Backup/DR | AWS S3 + Glacier | €4,800/año |
 | Conectividad AWS Direct Connect | 1Gbps | €3,600/año |
 
-### **TOTAL OPCIÓN C (Híbrido)**:
+### **TOTAL OPCIÓN C (Híbrido)**
+
 - **CAPEX inicial**: €48,000
 - **OPEX anual**: €37,200
 
@@ -225,7 +230,8 @@ Este documento detalla los costes completos de implementación del sistema Zabal
 | **Seguro ciberseguridad** | €15,000 | €15,000 | €15,000 |
 | **Renovación certificados/compliance** | €5,000 | €5,000 | €5,000 |
 
-**Subtotal OPEX Infraestructura**: 
+**Subtotal OPEX Infraestructura**:
+
 - **Opción A**: €125,100/año
 - **Opción B**: €133,060/año
 - **Opción C**: €131,800/año
@@ -274,6 +280,7 @@ Este documento detalla los costes completos de implementación del sistema Zabal
 #### Paquete 1: BÁSICO (Opción B - AWS Cloud)
 
 **Incluye:**
+
 - ✅ Plataforma e-commerce completa (API + Web + Mobile)
 - ✅ SIEM centralizado (ELK Stack en AWS)
 - ✅ Honeypot para threat intelligence
@@ -286,6 +293,7 @@ Este documento detalla los costes completos de implementación del sistema Zabal
 **Precio**: **€425,000** (una vez)
 
 **Soporte Anual (opcional)**: **€120,000/año**
+
 - Mantenimiento 8x5
 - Actualizaciones de seguridad
 - Monitoreo SIEM (horario laboral)
@@ -296,6 +304,7 @@ Este documento detalla los costes completos de implementación del sistema Zabal
 #### Paquete 2: PROFESIONAL (Opción C - Híbrido)
 
 **Incluye todo lo del Básico +**
+
 - ✅ Servidores on-premise para producción (alta disponibilidad)
 - ✅ SIEM avanzado con respuesta automatizada
 - ✅ Honeypot multi-capa (T-Pot completo)
@@ -307,6 +316,7 @@ Este documento detalla los costes completos de implementación del sistema Zabal
 **Precio**: **€575,000** (una vez)
 
 **Soporte Anual (obligatorio)**: **€180,000/año**
+
 - Mantenimiento 24x7
 - SOC gestionado (horario extendido)
 - Incident response (4h SLA)
@@ -317,6 +327,7 @@ Este documento detalla los costes completos de implementación del sistema Zabal
 #### Paquete 3: ENTERPRISE (Opción A - On-Premise Total)
 
 **Incluye todo lo del Profesional +**
+
 - ✅ Infraestructura on-premise completa (cliente posee hardware)
 - ✅ Alta disponibilidad en todos los componentes
 - ✅ SOC 24x7 gestionado por Zabala Gailetak
@@ -330,6 +341,7 @@ Este documento detalla los costes completos de implementación del sistema Zabal
 **Precio**: **€850,000** (una vez)
 
 **Soporte Anual (incluido año 1, renovable)**: **€240,000/año**
+
 - SOC 24x7x365 con equipo dedicado
 - Threat hunting proactivo
 - Incident response ilimitado (1h SLA crítico)
@@ -347,6 +359,7 @@ Este documento detalla los costes completos de implementación del sistema Zabal
 | **Soporte Año 1** | €861,983 | €180,000 | **-€681,983** ⚠️ |
 
 **Nota sobre el margen de soporte**: El margen negativo del primer año se explica porque:
+
 1. El cliente **no paga el equipo completo** de 8 FTE; nosotros amortizamos el equipo entre **múltiples clientes**
 2. Con **5 clientes simultáneos**, el coste de personal se reparte:
    - Coste real por cliente: €861,983 / 5 = **€172,397/año**
@@ -394,7 +407,8 @@ Si el cliente quiere seleccionar componentes:
 
 ### Escenario Corregido: Infraestructura Multi-Tenant
 
-**Hipótesis realista**: 
+**Hipótesis realista**:
+
 - 1 infraestructura cloud AWS **compartida** para 5 clientes (aislamiento por VPC/tenant)
 - Escalado según uso
 - Costes infraestructura **únicos**, no x5
@@ -448,6 +462,7 @@ Con modelo multi-tenant:
 **Precio Promocional Total (Año 0 + Año 1)**: **€625,000** (vs €755,000 normal)
 
 **Condiciones**:
+
 - Válido hasta 31/03/2026
 - Compromiso mínimo de 3 años de soporte
 - Cliente actúa como caso de éxito (testimonial + logo)
@@ -478,6 +493,7 @@ Con modelo multi-tenant:
 | **P4 - Bajo** | Consultas, mejoras | 24 horas | 10 días |
 
 **Penalizaciones por incumplimiento SLA**:
+
 - P1: Crédito del 5% cuota mensual por cada hora de retraso
 - P2: Crédito del 2% cuota mensual por cada 4 horas de retraso
 - Máximo penalización mensual: 25% de la cuota
@@ -496,14 +512,16 @@ Con modelo multi-tenant:
 ### Opción Recomendada según Perfil
 
 #### Cliente Pequeño (50-200 empleados, <€10M facturación)
+
 - **Recomendación**: Paquete BÁSICO (AWS Cloud)
-- **Justificación**: 
+- **Justificación**:
   - Bajo CAPEX inicial
   - Escalabilidad elástica
   - Sin necesidad de equipo IT interno grande
 - **Inversión Año 1**: €425,000 + €120,000 = **€545,000**
 
 #### Cliente Mediano (200-1000 empleados, €10-50M facturación)
+
 - **Recomendación**: Paquete PROFESIONAL (Híbrido)
 - **Justificación**:
   - Balance coste/control
@@ -513,6 +531,7 @@ Con modelo multi-tenant:
 - **Inversión Año 1**: €575,000 + €180,000 = **€755,000**
 
 #### Cliente Enterprise (>1000 empleados, >€50M facturación)
+
 - **Recomendación**: Paquete ENTERPRISE (On-Premise Total)
 - **Justificación**:
   - Control total de datos
@@ -533,19 +552,22 @@ Polígono Industrial Garaia, Nave 12
 País Vasco, España
 
 **Contactos**:
-- **Ventas**: ventas@zabalagailetak.eus | +34 943 XXX XXX
-- **Soporte**: soporte@zabalagailetak.eus | +34 943 XXX XXX
+
+- **Ventas**: <ventas@zabalagailetak.eus> | +34 943 XXX XXX
+- **Soporte**: <soporte@zabalagailetak.eus> | +34 943 XXX XXX
 - **Emergencias 24/7**: +34 600 XXX XXX
 
-**Web**: https://www.zabalagailetak.eus
+**Web**: <https://www.zabalagailetak.eus>
 
 **Certificaciones**:
+
 - ISO 27001 (Gestión de Seguridad de la Información)
 - ISO 22301 (Continuidad de Negocio)
 - ENS Alto (Esquema Nacional de Seguridad)
 - IEC 62443 (Seguridad OT/ICS)
 
 **Partners**:
+
 - AWS Advanced Consulting Partner
 - MongoDB Enterprise Partner
 - Elastic Gold Partner
@@ -569,16 +591,19 @@ País Vasco, España
 **Cliente ejemplo**: Empresa industrial 500 empleados, facturación €30M/año
 
 **Antes de Zabala Gailetak**:
+
 - 3 brechas de seguridad en 2 años (coste medio: €500K cada una)
 - Downtime no planificado: 120 horas/año (€5K/hora pérdidas)
 - **Coste total incidentes**: €2.1M en 2 años
 
 **Después de Zabala Gailetak** (Año 1-2):
+
 - 0 brechas de seguridad exitosas (35 intentos bloqueados)
 - Downtime reducido a 12 horas/año
 - **Ahorro**: €1.95M en 2 años
 
-**ROI**: 
+**ROI**:
+
 - Inversión: €755K (año 1) + €180K (año 2) = €935K
 - Ahorro: €1.95M
 - **ROI neto: +€1.015M (108%)**

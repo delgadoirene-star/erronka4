@@ -68,10 +68,12 @@ Zabala Gailetak mugikorrerako aplikazioak plataforma seguru eta erabilerraza esk
 #### 2.1.2 Autentifikazio Biometrikoa
 
 **Onartutako Metodoak:**
+
 - Android: Hatz-marka
 - iOS: Touch ID / Face ID
 
 **Inplementazioa:**
+
 ```javascript
 import TouchID from 'react-native-touch-id';
 
@@ -91,6 +93,7 @@ const authenticate = async () => {
 ### 2.2 Produktu Katalogoa
 
 **Ezaugarriak:**
+
 - Sareta diseinua produktu txartelekin
 - Produktu irudiak
 - Prezioak EUR-tan
@@ -100,12 +103,14 @@ const authenticate = async () => {
 ### 2.3 Eskaera Egitea
 
 **Eskaera Formulario Eremuak:**
+
 - Kantitatea (1-10)
 - Bezeroaren izena
 - Posta elektronikoa
 - Bidalketa helbidea
 
 **Balidazioa:**
+
 - Denbora errealeko balidazioa
 - Errore mezuak
 - Prezio kalkulua
@@ -114,6 +119,7 @@ const authenticate = async () => {
 ### 2.4 Erabiltzaile Panela
 
 **Ezaugarriak:**
+
 - Estatistika bistaratzea
 - Ekintza azkarrak
 - MFA kudeaketa
@@ -140,12 +146,14 @@ App (Erroa)
 ### 3.2 Egoera Kudeaketa
 
 **Autentifikazio Testuingurua (Context):**
+
 - Erabiltzaile egoera
 - Auth egoera
 - MFA egoera
 - Login/Logout funtzioak
 
 **Egoera Lokala:**
+
 - Formulario sarrerak
 - Produktu zerrenda
 - Eskaera datuak
@@ -324,6 +332,7 @@ Irteera: `android/app/build/outputs/bundle/release/app-release.aab`
 #### 5.3.1 Google Play Store
 
 **Urratsak:**
+
 1. Sortu aplikazioa Google Play Console-n
 2. Igo AAB fitxategia
 3. Bete dendako fitxa
@@ -331,6 +340,7 @@ Irteera: `android/app/build/outputs/bundle/release/app-release.aab`
 5. Bidali berrikuspetera
 
 **Beharrezko Aktiboak:**
+
 - Ikonoa: 512x512px
 - Ezaugarri grafikoa: 1024x500px
 - Pantaila-argazkiak: Hainbat tamaina
@@ -339,6 +349,7 @@ Irteera: `android/app/build/outputs/bundle/release/app-release.aab`
 #### 5.3.2 Apple App Store
 
 **Urratsak:**
+
 1. Sortu aplikazioa App Store Connect-en
 2. Igo IPA Xcode edo Transporter bidez
 3. Bete aplikazioaren informazioa
@@ -346,6 +357,7 @@ Irteera: `android/app/build/outputs/bundle/release/app-release.aab`
 5. Bidali berrikuspetera
 
 **Beharrezko Aktiboak:**
+
 - Ikonoa: 1024x1024px
 - Pantaila-argazkiak: Hainbat tamaina
 - Aplikazioaren aurrebista (aukerakoa)
@@ -566,6 +578,7 @@ npm run test:coverage
 **Arazoa:** Gradle sync-ak huts egiten du
 
 **Irtenbidea:**
+
 ```bash
 cd android
 ./gradlew clean
@@ -577,6 +590,7 @@ cd android
 **Arazoa:** Metro bundler ez da hasten
 
 **Irtenbidea:**
+
 ```bash
 npm start -- --reset-cache
 ```
@@ -586,6 +600,7 @@ npm start -- --reset-cache
 **Arazoa:** CocoaPods-ek ez du funtzionatzen
 
 **Irtenbidea:**
+
 ```bash
 cd ios
 pod deintegrate
@@ -607,6 +622,7 @@ const Products = React.lazy(() =>
 #### 8.2.2 Bundle Tamaina Handia
 
 **Irtenbidea:**
+
 - Erabili kode zatiketa
 - Optimizatu irudiak
 - Kendu erabiltzen ez diren dependentziak
@@ -644,17 +660,17 @@ Check Info.plist for proper keys
 
 | Aldagaia | Deskribapena | Lehenetsia |
 |----------|--------------|------------|
-| `API_URL` | API endpoint | http://localhost:3000/api |
+| `API_URL` | API endpoint | <http://localhost:3000/api> |
 | `ENABLE_MFA` | MFA gaitu | true |
 | `ENABLE_BIOMETRICS` | Biometrikoa gaitu | true |
 | `LOG_LEVEL` | Erregistro maila | info |
 
 ### A.3 Esteka Erabilgarriak
 
-- **React Native Dokumentazioa:** https://reactnative.dev
-- **React Navigation:** https://reactnavigation.org
-- **Axios Dokumentazioa:** https://axios-http.com
-- **Detox:** https://wix.github.io/Detox/
+- **React Native Dokumentazioa:** <https://reactnative.dev>
+- **React Navigation:** <https://reactnavigation.org>
+- **Axios Dokumentazioa:** <https://axios-http.com>
+- **Detox:** <https://wix.github.io/Detox/>
 
 ---
 

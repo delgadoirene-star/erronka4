@@ -7,6 +7,7 @@ Based on my thorough analysis of the ER4.md requirements and the complete projec
 ## EXECUTIVE SUMMARY
 
 **Current Status:** The project is **75% complete** with excellent foundations in application security, documentation, and architecture design. The main gaps are in:
+
 1. **DevOps automation** (CI/CD pipelines)
 2. **Production deployment infrastructure** (Docker orchestration, IaC)
 3. **Database implementation** (currently using in-memory storage)
@@ -21,11 +22,13 @@ Based on my thorough analysis of the ER4.md requirements and the complete projec
 ### 🔴 CRITICAL PRIORITY - Must Implement
 
 #### 1. Database Implementation & Data Persistence
+
 **Current State:** Using in-memory arrays for users, products, orders  
 **Impact:** Data lost on server restart, not production-viable  
 **ER4 Requirement:** RA5-RA6 (Secure data storage)
 
 **Implementation Plan:**
+
 ```javascript
 // File: src/api/models/User.js
 const mongoose = require('mongoose');
@@ -48,6 +51,7 @@ const userSchema = new mongoose.Schema({
 ```
 
 **Files to Create:**
+
 - `src/api/models/User.js` (70 lines)
 - `src/api/models/Product.js` (50 lines)
 - `src/api/models/Order.js` (80 lines)
@@ -60,6 +64,7 @@ const userSchema = new mongoose.Schema({
 ---
 
 #### 2. CI/CD Pipeline Implementation
+
 **Current State:** `devops/ci-cd/` directory is empty  
 **Impact:** No automated testing, security scanning, or deployment  
 **ER4 Requirement:** RA8 (Etengabeko integrazioa eta banaketa)
@@ -67,6 +72,7 @@ const userSchema = new mongoose.Schema({
 **Implementation Plan:**
 
 **File: `.github/workflows/ci-cd.yml`** (300 lines)
+
 ```yaml
 name: CI/CD Pipeline
 
@@ -132,6 +138,7 @@ jobs:
 ```
 
 **Additional Files Needed:**
+
 - `.github/workflows/security-scan.yml` (150 lines)
 - `.github/workflows/deploy-staging.yml` (100 lines)
 - `devops/ci-cd/sonarqube-config.xml` (80 lines)
@@ -142,6 +149,7 @@ jobs:
 ---
 
 #### 3. Docker Compose for Full Application Stack
+
 **Current State:** Only SIEM has docker-compose, no orchestration for app  
 **Impact:** Manual deployment, inconsistent environments  
 **ER4 Requirement:** RA8 (Softwarea hedatzeko sistema seguruak)
@@ -149,6 +157,7 @@ jobs:
 **Implementation Plan:**
 
 **File: `docker-compose.yml`** (250 lines)
+
 ```yaml
 version: '3.8'
 
@@ -249,6 +258,7 @@ volumes:
 ```
 
 **Additional Files:**
+
 - `Dockerfile` (multi-stage for API) (80 lines)
 - `src/web/Dockerfile` (for React app) (60 lines)
 - `nginx/nginx.conf` (150 lines)
@@ -260,6 +270,7 @@ volumes:
 ---
 
 #### 4. SIEM Complete Configuration
+
 **Current State:** Docker Compose exists, but missing Logstash config and alert rules  
 **Impact:** No automated log processing or security alerts  
 **ER4 Requirement:** RA8 (Log-ak prozesatu eta bistaratzeko sistema)
@@ -267,6 +278,7 @@ volumes:
 **Implementation Plan:**
 
 **File: `security/siem/logstash/logstash.conf`** (200 lines)
+
 ```ruby
 input {
   # Application logs from API
@@ -347,6 +359,7 @@ output {
 ```
 
 **File: `security/siem/elasticsearch/alert-rules.json`** (150 lines)
+
 ```json
 {
   "alerts": [
@@ -373,6 +386,7 @@ output {
 ```
 
 **Additional Files:**
+
 - `security/siem/kibana/dashboards/security-dashboard.ndjson` (500 lines)
 - `security/siem/filebeat/filebeat.yml` (100 lines)
 - `security/siem/elasticsearch/index-template.json` (150 lines)
@@ -385,6 +399,7 @@ output {
 ### 🟡 HIGH PRIORITY - Should Implement
 
 #### 5. Honeypot Actual Deployment
+
 **Current State:** Strategy documented, not implemented  
 **Impact:** No threat intelligence gathering  
 **ER4 Requirement:** RA8 (Honeypot bat konfiguratu du)
@@ -392,6 +407,7 @@ output {
 **Implementation Plan:**
 
 **File: `security/honeypot/docker-compose.honeypot.yml`** (180 lines)
+
 ```yaml
 version: '3.8'
 
@@ -472,6 +488,7 @@ volumes:
 ```
 
 **File: `security/honeypot/setup-honeypot.sh`** (80 lines)
+
 ```bash
 #!/bin/bash
 # Automated honeypot deployment script
@@ -500,6 +517,7 @@ echo "[!] Credentials: admin / (check .env file)"
 ```
 
 **Additional Files:**
+
 - `security/honeypot/conpot/modbus-template.xml` (120 lines)
 - `security/honeypot/analysis/analyze-attacks.py` (200 lines)
 - `security/honeypot/integration/honeypot-to-siem.py` (150 lines)
@@ -509,11 +527,13 @@ echo "[!] Credentials: admin / (check .env file)"
 ---
 
 #### 6. Webpack Configuration for Web App
+
 **Current State:** Missing webpack.config.js  
 **Impact:** Cannot build production web app  
 **ER4 Requirement:** RA8 (Build automation)
 
 **File: `src/web/webpack.config.js`** (180 lines)
+
 ```javascript
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -612,6 +632,7 @@ module.exports = {
 ```
 
 **Additional Files:**
+
 - `src/web/.babelrc` (30 lines)
 - `src/web/webpack.dev.js` (50 lines)
 - `src/web/webpack.prod.js` (60 lines)
@@ -621,6 +642,7 @@ module.exports = {
 ---
 
 #### 7. Complete ISO 27001 Documentation
+
 **Current State:** Risk assessment done, missing SOA and policies  
 **Impact:** Incomplete SGSI implementation  
 **ER4 Requirement:** RA1-RA2 (Araudia betetzeko sistemak)
@@ -628,6 +650,7 @@ module.exports = {
 **Files to Create:**
 
 **File: `compliance/sgsi/statement_of_applicability.md`** (400 lines)
+
 ```markdown
 # Statement of Applicability (SOA)
 # Zabala Gailetak - ISO 27001:2022
@@ -652,6 +675,7 @@ module.exports = {
 ```
 
 **File: `compliance/sgsi/information_security_policy.md`** (250 lines)
+
 ```markdown
 # Information Security Policy
 # Zabala Gailetak
@@ -677,6 +701,7 @@ All IT systems, OT systems, data, and personnel...
 ```
 
 **File: `compliance/sgsi/business_continuity_plan.md`** (350 lines)
+
 ```markdown
 # Business Continuity Plan (BCP)
 # Zabala Gailetak
@@ -703,6 +728,7 @@ All IT systems, OT systems, data, and personnel...
 ```
 
 **Additional Files:**
+
 - `compliance/sgsi/asset_register.md` (200 lines)
 - `compliance/sgsi/acceptable_use_policy.md` (150 lines)
 - `compliance/sgsi/password_policy.md` (100 lines)
@@ -712,6 +738,7 @@ All IT systems, OT systems, data, and personnel...
 ---
 
 #### 8. Complete GDPR Documentation
+
 **Current State:** Data processing register exists, missing templates  
 **Impact:** Incomplete data protection compliance  
 **ER4 Requirement:** RA4 (Datu pertsonalen babesaren legedia)
@@ -719,6 +746,7 @@ All IT systems, OT systems, data, and personnel...
 **Files to Create:**
 
 **File: `compliance/gdpr/data_breach_notification_template.md`** (120 lines)
+
 ```markdown
 # Data Breach Notification Template
 # Zabala Gailetak - GDPR Article 33/34
@@ -763,6 +791,7 @@ All IT systems, OT systems, data, and personnel...
 ```
 
 **File: `compliance/gdpr/dpia_template.md`** (300 lines)
+
 ```markdown
 # Data Protection Impact Assessment (DPIA)
 # Zabala Gailetak
@@ -805,6 +834,7 @@ After mitigation measures:
 ```
 
 **File: `compliance/gdpr/data_subject_rights_procedures.md`** (250 lines)
+
 ```markdown
 # Data Subject Rights Procedures
 # Zabala Gailetak - GDPR Articles 15-22
@@ -840,6 +870,7 @@ After mitigation measures:
 ```
 
 **Additional Files:**
+
 - `compliance/gdpr/privacy_notice_web.md` (180 lines)
 - `compliance/gdpr/privacy_notice_mobile.md` (160 lines)
 - `compliance/gdpr/cookie_policy.md` (120 lines)
@@ -852,6 +883,7 @@ After mitigation measures:
 ### 🟢 MEDIUM PRIORITY - Nice to Have
 
 #### 9. End-to-End Testing
+
 **Current State:** Only unit and integration tests  
 **Impact:** No automated user journey testing  
 **ER4 Requirement:** RA8 (Testing automation)
@@ -859,6 +891,7 @@ After mitigation measures:
 **Implementation Plan:**
 
 **File: `tests/e2e/web/auth.spec.js`** (150 lines)
+
 ```javascript
 // Using Playwright
 const { test, expect } = require('@playwright/test');
@@ -893,6 +926,7 @@ test.describe('Authentication Flow', () => {
 ```
 
 **Additional Files:**
+
 - `tests/e2e/web/products.spec.js` (120 lines)
 - `tests/e2e/web/orders.spec.js` (180 lines)
 - `tests/e2e/mobile/auth.spec.js` (using Detox) (200 lines)
@@ -903,11 +937,13 @@ test.describe('Authentication Flow', () => {
 ---
 
 #### 10. Load Testing & Performance
+
 **Current State:** No performance testing  
 **Impact:** Unknown system limits  
 **ER4 Requirement:** Best practice for production systems
 
 **File: `tests/load/api-load-test.js`** (120 lines)
+
 ```javascript
 // Using k6
 import http from 'k6/http';
@@ -959,6 +995,7 @@ export default function () {
 ---
 
 #### 11. OT Practical Implementation
+
 **Current State:** Documented but not implemented  
 **Impact:** No hands-on OT security demonstration  
 **ER4 Requirement:** RA10 (IT/OT integration)
@@ -966,6 +1003,7 @@ export default function () {
 **Implementation Plan:**
 
 **File: `infrastructure/ot/openplc/plc_program.st`** (100 lines)
+
 ```
 // Structured Text program for OpenPLC
 // Simulating cookie production line
@@ -1014,6 +1052,7 @@ END_PROGRAM
 ```
 
 **File: `infrastructure/ot/docker-compose.ot.yml`** (150 lines)
+
 ```yaml
 version: '3.8'
 
@@ -1073,6 +1112,7 @@ volumes:
 ```
 
 **File: `infrastructure/ot/node-red/ot-monitoring-flow.json`** (300 lines)
+
 ```json
 {
   "flows": [
@@ -1107,6 +1147,7 @@ volumes:
 ---
 
 #### 12. Forensics Toolkit & VM
+
 **Current State:** SOPs exist, no practical tools  
 **Impact:** Cannot perform actual forensic investigations  
 **ER4 Requirement:** RA2 (Auzitegi-analisiak egiten ditu)
@@ -1114,6 +1155,7 @@ volumes:
 **Implementation Plan:**
 
 **File: `security/forensics/toolkit/install-tools.sh`** (150 lines)
+
 ```bash
 #!/bin/bash
 # Forensics toolkit installation for Ubuntu/Debian
@@ -1156,6 +1198,7 @@ echo "[✓] Forensics toolkit installation complete"
 ```
 
 **File: `security/forensics/procedures/memory-dump.sh`** (80 lines)
+
 ```bash
 #!/bin/bash
 # Memory dump procedure
@@ -1186,6 +1229,7 @@ echo "[✓] Memory dump complete: $OUTPUT_DIR"
 ```
 
 **File: `security/forensics/reports/forensic_report_template.md`** (400 lines)
+
 ```markdown
 # Forensic Investigation Report
 # Zabala Gailetak
@@ -1268,9 +1312,11 @@ echo "[✓] Memory dump complete: $OUTPUT_DIR"
 The following SOPs should be created for areas that are documented but need detailed procedures:
 
 ### 13. Backup & Recovery SOP
+
 **File: `infrastructure/systems/sop_backup_recovery.md`** (250 lines)
 
 **Contents:**
+
 - Backup schedule (daily, weekly, monthly)
 - Backup verification procedures
 - Restoration testing procedures
@@ -1284,9 +1330,11 @@ The following SOPs should be created for areas that are documented but need deta
 ---
 
 ### 14. Patch Management SOP
+
 **File: `infrastructure/systems/sop_patch_management.md`** (200 lines)
 
 **Contents:**
+
 - Vulnerability scanning schedule
 - Patch prioritization (critical, high, medium, low)
 - Testing procedures (dev → staging → prod)
@@ -1299,9 +1347,11 @@ The following SOPs should be created for areas that are documented but need deta
 ---
 
 ### 15. User Access Management SOP
+
 **File: `infrastructure/systems/sop_user_access.md`** (180 lines)
 
 **Contents:**
+
 - User provisioning process
 - Role-based access control (RBAC) matrix
 - Access review procedures (quarterly)
@@ -1314,9 +1364,11 @@ The following SOPs should be created for areas that are documented but need deta
 ---
 
 ### 16. Password Management Policy
+
 **File: `compliance/sgsi/password_policy.md`** (120 lines)
 
 **Contents:**
+
 - Password complexity requirements
   - Minimum 12 characters
   - Upper/lowercase + numbers + symbols
@@ -1331,9 +1383,11 @@ The following SOPs should be created for areas that are documented but need deta
 ---
 
 ### 17. Vendor Management SOP
+
 **File: `compliance/sgsi/sop_vendor_management.md`** (200 lines)
 
 **Contents:**
+
 - Vendor security assessment questionnaire
 - Data processing agreements (DPAs)
 - Vendor risk classification
@@ -1346,9 +1400,11 @@ The following SOPs should be created for areas that are documented but need deta
 ---
 
 ### 18. Change Management SOP
+
 **File: `infrastructure/systems/sop_change_management.md`** (220 lines)
 
 **Contents:**
+
 - Change request process
 - Change advisory board (CAB)
 - Emergency change procedures
@@ -1361,9 +1417,11 @@ The following SOPs should be created for areas that are documented but need deta
 ---
 
 ### 19. Security Awareness Training SOP
+
 **File: `security/sop_security_awareness.md`** (150 lines)
 
 **Contents:**
+
 - Annual mandatory training
 - Phishing simulation program
 - Security tips newsletter
@@ -1376,9 +1434,11 @@ The following SOPs should be created for areas that are documented but need deta
 ---
 
 ### 20. Vulnerability Management SOP
+
 **File: `security/sop_vulnerability_management.md`** (200 lines)
 
 **Contents:**
+
 - Vulnerability scanning schedule
 - Severity classification (CVSS scores)
 - Remediation timelines
@@ -1411,12 +1471,14 @@ The following SOPs should be created for areas that are documented but need deta
 | **Backup Server** | - | - | 4 vCPU, 8GB RAM, 2TB HDD |
 
 **Total Production Environment:**
+
 - **vCPUs:** 46
 - **RAM:** 108 GB
 - **Storage:** 4.05 TB (includes backup)
 
 **Cloud Provider Recommendations:**
-1. **AWS:** 
+
+1. **AWS:**
    - EC2 instances (t3.medium to t3.xlarge)
    - RDS for MongoDB
    - ElastiCache for Redis
@@ -1442,10 +1504,12 @@ The following SOPs should be created for areas that are documented but need deta
 #### Network Requirements
 
 **Bandwidth:**
+
 - **Internet:** 1 Gbps symmetric fiber (minimum 100 Mbps)
 - **Internal:** 10 Gbps backbone
 
 **Network Equipment:**
+
 - **Firewall:** FortiGate 100F or pfSense (2x for HA)
 - **Switches:** Managed Layer 3 switches with VLAN support
   - Core switch: 48-port 10Gbps
@@ -1454,6 +1518,7 @@ The following SOPs should be created for areas that are documented but need deta
 - **IDS/IPS:** Suricata or Snort (can run on existing servers)
 
 **Network Segmentation (Required VLANs):**
+
 1. VLAN 10: User Network (192.168.10.0/24)
 2. VLAN 20: Server Network (192.168.20.0/24)
 3. VLAN 50: OT Network (192.168.50.0/24) - Isolated
@@ -1571,6 +1636,7 @@ The following SOPs should be created for areas that are documented but need deta
 #### Recommendation for Zabala Gailetak
 
 **Hybrid Approach:**
+
 - **Core applications:** On-premises (better control for OT security)
 - **SIEM & Backup:** Cloud (scalability, disaster recovery)
 - **Software:** Open source (cost-effective, customizable)
@@ -1582,36 +1648,42 @@ The following SOPs should be created for areas that are documented but need deta
 ### 🚀 Deployment Timeline
 
 #### Phase 1: Foundation (Weeks 1-4)
+
 - ✅ Week 1: Infrastructure procurement
 - ✅ Week 2: Network setup (VLANs, firewall rules)
 - ✅ Week 3: Server installation (OS, Docker)
 - ✅ Week 4: Database setup (MongoDB, Redis)
 
 #### Phase 2: Core Applications (Weeks 5-8)
+
 - ✅ Week 5: Backend API deployment
 - ✅ Week 6: Web application deployment
 - ✅ Week 7: Mobile app testing
 - ✅ Week 8: Integration testing
 
 #### Phase 3: Security Infrastructure (Weeks 9-12)
+
 - 🔴 Week 9: SIEM deployment & configuration
 - 🔴 Week 10: Honeypot deployment
 - 🔴 Week 11: IDS/IPS configuration
 - ✅ Week 12: Security testing & hardening
 
 #### Phase 4: Automation (Weeks 13-16)
+
 - 🔴 Week 13: CI/CD pipeline setup
 - 🔴 Week 14: Automated testing implementation
 - 🔴 Week 15: Monitoring & alerting
 - 🔴 Week 16: Documentation & training
 
 #### Phase 5: Production Readiness (Weeks 17-20)
+
 - Week 17: Load testing & performance tuning
 - Week 18: Disaster recovery testing
 - Week 19: Security audit & penetration testing
 - Week 20: Go-live preparation
 
 #### Phase 6: Production & Stabilization (Weeks 21-24)
+
 - Week 21: Production deployment
 - Week 22: Monitoring & bug fixes
 - Week 23: User training
@@ -1624,6 +1696,7 @@ The following SOPs should be created for areas that are documented but need deta
 ### 📋 Pre-Deployment Checklist
 
 #### Infrastructure
+
 - [ ] Servers provisioned (on-prem or cloud)
 - [ ] Network equipment installed
 - [ ] VLANs configured
@@ -1632,6 +1705,7 @@ The following SOPs should be created for areas that are documented but need deta
 - [ ] Backup storage configured
 
 #### Software
+
 - [ ] Operating systems installed & hardened
 - [ ] Docker & Docker Compose installed
 - [ ] MongoDB cluster configured
@@ -1640,6 +1714,7 @@ The following SOPs should be created for areas that are documented but need deta
 - [ ] DNS records configured
 
 #### Security
+
 - [ ] Firewall penetration tested
 - [ ] Network segmentation verified
 - [ ] IDS/IPS rules configured
@@ -1648,6 +1723,7 @@ The following SOPs should be created for areas that are documented but need deta
 - [ ] Backup & recovery tested
 
 #### Compliance
+
 - [ ] GDPR data processing register updated
 - [ ] ISO 27001 risk assessment completed
 - [ ] Incident response plan documented
@@ -1655,6 +1731,7 @@ The following SOPs should be created for areas that are documented but need deta
 - [ ] User privacy notices published
 
 #### Development
+
 - [ ] CI/CD pipeline functional
 - [ ] Automated tests passing (85%+ coverage)
 - [ ] Security scans passing (no critical issues)
@@ -1662,6 +1739,7 @@ The following SOPs should be created for areas that are documented but need deta
 - [ ] Documentation complete
 
 #### Operations
+
 - [ ] Monitoring dashboards configured
 - [ ] Alerting rules tested
 - [ ] On-call rotation established
@@ -1691,6 +1769,7 @@ The following SOPs should be created for areas that are documented but need deta
 | 13-20 | Additional SOPs | 🟢 Medium | 26h | Low | Planned | Operational procedures |
 
 **Total Estimated Effort:**
+
 - **Critical:** 44 hours (≈ 1 week full-time)
 - **High:** 42 hours (≈ 1 week full-time)
 - **Medium:** 64 hours (≈ 1.5 weeks full-time)
@@ -1723,12 +1802,12 @@ The following SOPs should be created for areas that are documented but need deta
 
 ### For Sprint 2 (Weeks 3-4)
 
-4. **CI/CD Pipeline** (Priority #2)
+1. **CI/CD Pipeline** (Priority #2)
    - Impact: Automated testing & deployment (RA8)
    - Effort: 12 hours
    - Deliverable: GitHub Actions workflows
 
-5. **SIEM Configuration** (Priority #4)
+2. **SIEM Configuration** (Priority #4)
    - Impact: Complete security monitoring
    - Effort: 14 hours
    - Deliverable: Logstash config + alert rules
@@ -1739,12 +1818,12 @@ The following SOPs should be created for areas that are documented but need deta
 
 ### For Sprint 3 (Weeks 5-6)
 
-6. **ISO 27001 Documentation** (Priority #7)
+1. **ISO 27001 Documentation** (Priority #7)
    - Impact: Compliance readiness
    - Effort: 16 hours
    - Deliverable: SOA, policies, BCP
 
-7. **GDPR Templates** (Priority #8)
+2. **GDPR Templates** (Priority #8)
    - Impact: Data protection compliance
    - Effort: 12 hours
    - Deliverable: Breach notification, DPIA, rights procedures
@@ -1755,15 +1834,15 @@ The following SOPs should be created for areas that are documented but need deta
 
 ### Optional/Future Enhancements
 
-8. **Honeypot Deployment** (Priority #5)
+1. **Honeypot Deployment** (Priority #5)
    - When: After core security infrastructure
    - Effort: 10 hours
 
-9. **E2E & Load Testing** (Priorities #9-10)
+2. **E2E & Load Testing** (Priorities #9-10)
    - When: Before production launch
    - Effort: 16 hours combined
 
-10. **OT Practical Setup** (Priority #11)
+3. **OT Practical Setup** (Priority #11)
     - When: For demos or specific OT requirement
     - Effort: 14 hours
 

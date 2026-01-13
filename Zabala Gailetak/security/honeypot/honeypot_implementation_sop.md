@@ -14,16 +14,19 @@ Honeypot bat ezartzeko eta kudeatzeko prozedura, erasoen detekzioa eta analisia 
 ## 1. Honeypot Mota Aukeraketa
 
 ### 1.1 Low Interaction Honeypot-ak
+
 - **Honeyd**: TCP/IP protokoloak simulatzen ditu
 - **Dionaea**: Malware eta exploit-ak harrapatzen ditu
 - **Cowrie**: SSH eta FTP honeypot
 
 ### 1.2 Medium/High Interaction Honeypot-ak
+
 - **Conpot**: ICS/SCADA honeypot (Siemens S7, Modbus, etab.)
 - **Kippo**: SSH honeypot
 - **Glastopf**: Web application honeypot
 
 ### 1.3 Industrial Honeypot-ak
+
 - **Conpot**: ICS protokoloak simulatzen ditu
 - **SCADA-Honeynet**: SCADA sistemak simulatzen ditu
 
@@ -383,8 +386,8 @@ docker stats conpot cowrie dionaea
 
 ## Erreferentziak
 
-- Honeynet Project: https://www.honeynet.org/
-- Conpot Documentation: https://conpot.readthedocs.io/
-- Cowrie Documentation: https://cowrie.readthedocs.io/
-- Dionaea Documentation: https://dionaea.readthedocs.io/
-- MISP Project: https://www.misp-project.org/
+- Honeynet Project: <https://www.honeynet.org/>
+- Conpot Documentation: <https://conpot.readthedocs.io/>
+- Cowrie Documentation: <https://cowrie.readthedocs.io/>
+- Dionaea Documentation: <https://dionaea.readthedocs.io/>
+- MISP Project: <https://www.misp-project.org/>

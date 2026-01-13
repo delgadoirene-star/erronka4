@@ -1,4 +1,5 @@
 # Datu Interesdunen Eskubideen Prozedurak
+
 ## Zabala Gailetak S.A. - GDPR 15-22 Artikuluak
 
 **Dokumentuaren IDa:** DSR-001  
@@ -65,8 +66,9 @@ Prozedura hauek beren GDPR eskubideak erabiltzen dituzten datu interesdunen (bez
 **Eskaera Kanalak:**
 
 Datu interesdunek eskaerak honela aurkez ditzakete:
-- **Emaila:** dpo@zabalagailetak.com (lehentasunezkoa)
-- **Web Inprimakia:** https://www.zabalagailetak.com/privacy/data-request
+
+- **Emaila:** <dpo@zabalagailetak.com> (lehentasunezkoa)
+- **Web Inprimakia:** <https://www.zabalagailetak.com/privacy/data-request>
 - **Posta:** Datuen Babeserako Ordezkaria, Zabala Gailetak S.A., [Helbidea], [Herria, Posta Kodea], Espainia
 - **Aurrez Aurre:** Gure bulegoetan negozio orduetan
 - **Telefonoa:** +34 XXX XXX XXX (deitzaileari idatziz berresteko eskatuko diogu)
@@ -74,10 +76,12 @@ Datu interesdunek eskaerak honela aurkez ditzakete:
 **Nork Jaso Ditzake Eskaerak:**
 
 Datu interesdunen eskubideen eskaera bat jasotzen duen edozein langilek berehala birbidali behar dio:
-- **Lehentasuna:** DBOri dpo@zabalagailetak.com helbidean
+
+- **Lehentasuna:** DBOri <dpo@zabalagailetak.com> helbidean
 - **CC:** CISO eta Aholkulari Juridikoa
 
 **Ez egin:**
+
 - Eskaerak alde batera utzi edo atzeratu
 - DBOren koordinaziorik gabe erantzuten saiatu
 - Datu interesdunari beharrezkoa ez den informazioa eskatu
@@ -109,11 +113,13 @@ Epemuga: [Jasotzen denetik hilabete 1]
 **Edozein eskaera bete aurretik, egiaztatu datu interesdunaren identitatea:**
 
 **Egiaztapen Estandarra (Arrisku Baxuko Eskaerak):**
+
 - Berrespen emaila eskatu erregistratutako email helbidera
 - Segurtasun galderei erantzun (kontua badago)
 - Azken eskaera zenbakia edo kontu informazioa eman
 
 **Egiaztapen Hobetua (Arrisku Handiko Eskaerak - adib., ezabaketa, eramangarritasuna):**
+
 - Gobernuak emandako NANaren kopia (DNI, NIE, pasaportea)
 - Bideo dei bidezko egiaztapena
 - Baimen notariala (ordezkarientzat)
@@ -129,6 +135,7 @@ Epemuga: [Jasotzen denetik hilabete 1]
 **Hirugarrenen Eskaerak:**
 
 Datu interesduna ez den beste norbaitek eskaera egiten badu (legezko ordezkaria, adingabe baten gurasoa, hildakoaren betearazlea):
+
 - Agintaritza froga eskatu (ahalorde, tutoretza agiriak, heriotza ziurtagiria + testamentua)
 - Ordezkariaren eta datu interesdunaren identitatea egiaztatu
 - Baimena dokumentatu eskaera erregistroan
@@ -136,6 +143,7 @@ Datu interesduna ez den beste norbaitek eskaera egiten badu (legezko ordezkaria,
 ### 3.4 Erantzun Epearen Kudeaketa
 
 **Epe Estandarra:**
+
 - **0 Eguna:** Eskaera jaso eta erregistratu
 - **1. Eguna:** Identitate egiaztapena hasi
 - **3-7. Egunak:** Identitatea baieztatuta, eskaera prozesatzen hasi
@@ -147,12 +155,14 @@ Datu interesduna ez den beste norbaitek eskaera egiten badu (legezko ordezkaria,
 **3 Hilabetera Luzatzea:**
 
 Konplexutasun edo bolumenagatik luzapena behar bada:
+
 1. Jakinarazi datu interesdunari jasotzen denetik hilabete 1eko epean
 2. Azaldu luzapenaren arrazoia
 3. Eman espero den osatze data berria
 4. Eguneratu eskaera erregistroa luzapen justifikazioarekin
 
 **Luzapen Irizpideak:**
+
 - Eskaerak datu bolumen handia hartzen du
 - Konplexutasun teknikoa (datuak sistema anitzetan)
 - Hirugarrenekin kontsultatu beharra
@@ -163,16 +173,19 @@ Konplexutasun edo bolumenagatik luzapena behar bada:
 **Doakoa:** Lehenetsia
 
 **Tasa Kobratu Daiteke:**
+
 - Eskaera nabarmenki oinarrigabea bada (erreklamaziorako oinarririk gabe)
 - Eskaera gehiegizkoa bada (errepikakorra, arrazoigabea)
 
 **Tasa Kalkulua:**
+
 - Administrazio kostuetan oinarrituta
 - Arrazoizkoa eta dokumentatua izan behar da
 - Eman kostuen banakapena datu interesdunari
 - Lortu Aholkulari Juridikoaren eta DBOren onarpena kobratu aurretik
 
 **Ezezkoa:**
+
 - Eskaera nabarmenki oinarrigabea edo gehiegizkoa bada, ukatu egin daiteke kobratu beharrean
 - Justifikazioa eman behar zaio datu interesdunari
 - AEPDri kexa jartzeko eta erremedio judiziala bilatzeko eskubideaz informatu
@@ -180,12 +193,14 @@ Konplexutasun edo bolumenagatik luzapena behar bada:
 ### 3.6 Erantzun Bidalketa
 
 **Formatua:**
+
 - Eskaeraren bide bera (email erantzuna email eskaerari, gutuna posta eskaerari)
 - Hizkuntza argi eta erraza (saihestu jargon legala)
 - Egituratua eta ulerterraza (erabili taulak, zerrendak, izenburuak)
 - Datu zabalak badira, kontuan hartu deskarga esteka segurua (pasahitz bidez babestua)
 
 **Edukia:**
+
 - Jatorrizko eskaeraren erreferentzia
 - Hartutako ekintzaren baieztapena EDO ezezkoaren azalpena
 - Aplikagarria bada, emandako informazioa edo entregatutako datuak
@@ -193,6 +208,7 @@ Konplexutasun edo bolumenagatik luzapena behar bada:
 - Erremedio judiziala bilatzeko eskubideaz informatu
 
 **Segurtasuna:**
+
 - Ez bidali datu sentikorrik enkriptatu gabeko email bidez
 - Erabili transferentzia metodo seguruak (enkriptatutako emaila, atari segurua, posta ziurtatua)
 - Egiaztatu bidalketa (irakurketa agiria, jarraipena)
@@ -204,6 +220,7 @@ Konplexutasun edo bolumenagatik luzapena behar bada:
 ### 4.1 Datu Interesdunek Eskatu Dezaketena
 
 Datu interesdunek eskubidea dute:
+
 1. **Baieztapena:** Haien datuak tratatzen ari al dira?
 2. **Datuen Kopia:** Tratatzen ari diren datu pertsonalen doako kopia
 3. **Informazio Gehigarria:**
@@ -222,6 +239,7 @@ Datu interesdunek eskubidea dute:
 **1. Urratsa: Datuak Bilatu**
 
 Identifikatu datu interesdunaren datu pertsonalak dituzten sistema eta datu-base guztiak:
+
 - **Bezero Datuak:** CRM, eskaera datu-basea, web aplikazio datu-basea
 - **Langile Datuak:** Giza Baliabideetako sistema, nominak, emaila, langile fitxategiak
 - **Hornitzaile Datuak:** Kontratazio sistema, kontratuen datu-basea
@@ -322,6 +340,7 @@ Data: [Data]
 **Datu Eranskinaren Formatua:**
 
 Eman datuak formatu argi eta ulergarrian:
+
 - **PDF:** Egituratutako taulak etiketa argiekin
 - **CSV/Excel:** Datu egituratuetarako (eskaerak, transakzioak)
 - **JSON:** Eskatzen bada edo erabiltzaile teknikoentzat
@@ -362,11 +381,13 @@ Lehentasunak: Interesa: Produktu Berriak, Eskaintza Bereziak
 ### 4.3 Mugak eta Salbuespenak
 
 **Ukatu edo zentsuratu daiteke baldin eta:**
+
 - Eskaerak besteen eskubideei eragiten badie (zentsuratu beste norbanakoen izenak/datuak)
 - Pribilegio profesional legala aplikatzen bada
 - Ahalegin neurrigabea behar bada (eskatu datu interesdunari esparrua zehazteko)
 
 **Ezin da ukatu oinarrituta:**
+
 - Gure negozio informazioaren konfidentzialtasun komertzialean (merkataritza sekretuak zentsuratu daitezke baina ez datu pertsonalak)
 - Kostuan edo eragozpenean (nabarmenki gehiegizkoa ez bada)
 
@@ -383,6 +404,7 @@ Lehentasunak: Interesa: Produktu Berriak, Eskaintza Bereziak
 ### 5.1 Datu Interesdunek Eskatu Dezaketena
 
 Datu interesdunek eska dezakete:
+
 - Datu pertsonal okerrak zuzentzea
 - Osatu gabeko datu pertsonalak osatzea (adierazpen osagarri bat barne)
 
@@ -397,6 +419,7 @@ Datu interesdunek eska dezakete:
 **2. Urratsa: Datuak Eguneratu**
 
 Eskaera baliozkoa bada:
+
 - Eguneratu datuak sistema garrantzitsu guztietan (CRM, datu-basea, marketina, etab.)
 - Aldaketak dokumentatu (audit log-a balio zaharra, balio berria, data, nork baimendua erakutsiz)
 - Egiaztatu eguneraketak sistema guztietan
@@ -404,6 +427,7 @@ Eskaera baliozkoa bada:
 **3. Urratsa: Hirugarrenak Jakinarazi**
 
 Datuak hirugarrenei ezagutarazi bazitzaizkien (prozesatzaileak, hartzaileak):
+
 - Jakinarazi zuzenketaz
 - Eskatu beren erregistroak ere eguneratzeko
 - Jakinarazpenak dokumentatu
@@ -450,6 +474,7 @@ Data: [Data]
 ### 5.3 Zuzenketa Ukatzea
 
 **Ukatu daiteke baldin eta:**
+
 - Datuak zehatzak direla froga badaiteke (eman ebidentzia)
 - Eskaera ez bada nahiko zehatza (eskatu argibidea)
 
@@ -488,6 +513,7 @@ Data: [Data]
 ### 6.1 Noiz den Ezabaketa Beharrezkoa
 
 Datu interesdunak ezabaketa eska dezake honako kasuetan:
+
 1. Datuak jada ez dira beharrezkoak jatorrizko helbururako
 2. Datu interesdunak baimena kentzen du (eta ez dago beste oinarri juridikorik)
 3. Datu interesdunak aurka egiten du eta ez dago gainditzen duen oinarri legitimorik
@@ -498,6 +524,7 @@ Datu interesdunak ezabaketa eska dezake honako kasuetan:
 ### 6.2 Salbuespenak (Noiz Ezin den Ezabaketa Eman)
 
 Ezabaketa ukatu behar da tratamendua beharrezkoa bada honakoetarako:
+
 1. **Adierazpen eta informazio askatasuna**
 2. **Lege obligazioa** (adib., zerga erregistroak, kontabilitatea)
 3. **Osasun publikoa** interes publikoan
@@ -525,6 +552,7 @@ Ezabaketa ukatu behar da tratamendua beharrezkoa bada honakoetarako:
 **2. Urratsa: Ezabaketa Onartzen Bada**
 
 **Ezabatu beharreko Sistemak:**
+
 - Produkzio datu-baseak
 - Marketin plataformak
 - Email zerrendak
@@ -534,11 +562,13 @@ Ezabaketa ukatu behar da tratamendua beharrezkoa bada honakoetarako:
 - Babeskopia sistemak (ezabatzeko markatu hurrengo babeskopia zikloan; azaldu hau datu interesdunari)
 
 **Ezabaketa Metodoak:**
+
 - **Hard Delete:** Datuak betirako kendu (lehentasunezkoa)
 - **Pseudonimizazioa:** Hard delete teknikoki bideragarria ez bada (azaldu datu interesdunari)
 - **Artxibo Bereizketa:** Lege obligazioak atxikipena eskatzen badu (datuak isolatu, sarbidea mugatu)
 
 **Ezabaketa Egiaztapena:**
+
 - Bilaketa exekutatu sistema guztietan ezabaketa baieztatzeko
 - Ezabaketa data eta metodoa dokumentatu
 - Ezabaketa eskaera dokumentazioa gorde (baina ez datu pertsonalak beraiek)
@@ -546,6 +576,7 @@ Ezabaketa ukatu behar da tratamendua beharrezkoa bada honakoetarako:
 **3. Urratsa: Hirugarrenak Jakinarazi**
 
 Datuak hirugarrenei ezagutarazi bazitzaizkien:
+
 - Jakinarazi hartzaile guztiei ezabaketa eskaeraz
 - Eskatu beraiek ere datuak ezabatzeko
 - Jakinarazpenak dokumentatu
@@ -647,11 +678,13 @@ Data: [Data]
 ### 6.4 Gogoeta Bereziak
 
 **Hildako Pertsonak:**
+
 - GDPR ez zaie hildako pertsonei aplikatzen
 - Espainiako DBLO-GDD 3. artikuluak eskubide batzuk ematen dizkie senideei
 - Ebaluatu familiako kideen eskaerak kasuan-kasu aholkulari juridikoarekin
 
 **Haurren Datuak:**
+
 - Azterketa zorrotzagoa haurrengandik bildutako datuekin lotutako ezabaketa eskaerentzat
 - Atalase baxuagoa ezabaketa onartzeko
 
@@ -662,6 +695,7 @@ Data: [Data]
 ### 7.1 Noiz Eskatu Daitekeen Mugatzea
 
 Datu interesdunak mugatzea eska dezake honako kasuetan:
+
 1. **Zehaztasuna aurkaratzen da** (mugatu zehaztasuna egiaztatzen den bitartean)
 2. **Tratamendua legez kanpokoa da** (datu interesdunak mugatzea nahiago du ezabatzea baino)
 3. **Arduradunak jada ez du behar** baina datu interesdunak behar du lege erreklamazioetarako
@@ -670,6 +704,7 @@ Datu interesdunak mugatzea eska dezake honako kasuetan:
 ### 7.2 Zer Esan Nahi Du Mugatzeak
 
 Tratamendua mugatzen denean:
+
 - **Ahal da:** Datuak gorde
 - **Ahal da:** Tratatu datu interesdunaren baimenarekin
 - **Ahal da:** Tratatu lege erreklamazioetarako
@@ -687,18 +722,21 @@ Tratamendua mugatzen denean:
 **2. Urratsa: Mugatzea Inplementatu**
 
 **Metodo Teknikoak:**
+
 - Datuak "mugatuta" gisa markatu datu-basean
 - Datuak biltegiratze mugatu bereizira mugitu
 - Erabilera prebenitzen duten sarbide kontrolak ezarri
 - Mugatze data eta arrazoia dokumentatu
 
 **Mugatu Beharreko Sistemak:**
+
 - Datu mugatuak tratatzen dituzten sistema guztiak
 - Hirugarrenen sistemak (jakinarazi prozesatzaileei)
 
 **3. Urratsa: Hirugarrenak Jakinarazi**
 
 Datuak hirugarrenei ezagutarazi bazitzaizkien:
+
 - Jakinarazi hartzaile guztiei mugatzeaz
 - Eskatu beraiek ere tratamendua mugatzeko
 
@@ -754,6 +792,7 @@ Data: [Data]
 **5. Urratsa: Ebatzi eta Mugatzea Kendu**
 
 Azpiko arazoa ebatzi ondoren (zehaztasuna egiaztatuta, objekzioa ebaluatuta):
+
 1. Jakinarazi datu interesdunari mugatzea kendu **aurretik**
 2. Hartu ekintza egokia (zuzendu, ezabatu edo tratamendua berrekin)
 3. Eguneratu sistemak mugatze marka kentzeko
@@ -766,6 +805,7 @@ Azpiko arazoa ebatzi ondoren (zehaztasuna egiaztatuta, objekzioa ebaluatuta):
 ### 8.1 Noiz Aplikatzen den Eramangarritasuna
 
 Datuen eramangarritasuna baldintza hauek **GUZTIAK** betetzen direnean aplikatzen da:
+
 1. **Oinarri juridikoa baimena edo kontratua da** (ez lege obligazioa, ez interes legitimoak)
 2. **Tratamendua automatizatua da** (ez paperezko erregistroak)
 3. **Eskaera teknikoki bideragarria da**
@@ -773,10 +813,12 @@ Datuen eramangarritasuna baldintza hauek **GUZTIAK** betetzen direnean aplikatze
 ### 8.2 Zein Datu Dira Eramangarriak
 
 **Datu Eramangarriak:**
+
 - Datu interesdunak **emandako** datuak (kontu info, eskaerak, lehentasunak)
 - Datu interesdunaren jarduerak **sortutako** datuak (erabilera log-ak, erosketa historia)
 
 **Ez Eramangarriak:**
+
 - Ondorioztatutako edo eratorritako datuak (analitika, profilatze emaitzak)
 - Besteei buruzko datuak (ezin dira besteen eskubideak urratu)
 
@@ -791,11 +833,13 @@ Datuen eramangarritasuna baldintza hauek **GUZTIAK** betetzen direnean aplikatze
 **2. Urratsa: Datu Esportazioa Prestatu**
 
 **Formatua:**
+
 - **Egituratua:** CSV, JSON, XML
 - **Erabilera arruntekoa:** Industria estandarreko formatuak
 - **Irakurgarria makinaz:** Beste kontrolatzaile batek erraz inporta dezakeena
 
 **Lehentasunezko Formatuak:**
+
 - **Bezero datuak:** JSON edo CSV
 - **Transakzio historia:** CSV zutabe goiburu argiekin
 - **Komunikazioak:** mbox formatua (emailentzat) edo testu laua
@@ -803,6 +847,7 @@ Datuen eramangarritasuna baldintza hauek **GUZTIAK** betetzen direnean aplikatze
 **3. Urratsa: Datuak Entregatu**
 
 **Entregatze Metodoak:**
+
 - **Email eranskina:** Datu multzo txikietarako (<10 MB)
 - **Deskarga esteka segurua:** Datu multzo handiagoetarako (pasahitz bidez babestua, denbora mugatua)
 - **Zuzeneko transmisioa beste kontrolatzaile bati:** Eskatzen bada eta teknikoki bideragarria bada
@@ -855,11 +900,13 @@ Data: [Data]
 ### 9.1 Objekzio Motak
 
 **Tratamenduaren Aurka Egitea (Orokorra):**
+
 - Tratamendua **interes legitimoetan** (6(1)(f) Art.) edo **zeregin publikoan** (6(1)(e) Art.) oinarritzen denean aplikatzen da
 - "Egoera zehatzari lotutako arrazoiak" frogatu behar dira
 - Arduradunak jarrai dezake **oinarri legitimo sinesgarriek objekzioa gainditzen badute**
 
 **Zuzeneko Marketinaren Aurka Egitea:**
+
 - **Eskubide absolutua** - ez da justifikaziorik behar
 - Berehala gelditu behar da tratamendua
 - Marketinarekin lotutako profilatzea barne hartzen du
@@ -869,6 +916,7 @@ Data: [Data]
 **Zuzeneko Marketin Objekzioetarako:**
 
 **1. Urratsa: Berehala Gelditu Tratamendua**
+
 - Kendu marketin zerrendetatik (emaila, SMS, telefonoa)
 - Marketin plataformetan ezabatu (berriro gehitzea ekidin)
 - Eguneratu lehentasunak CRM-n
@@ -908,10 +956,12 @@ Data: [Data]
 **Tratamendu Orokorraren Aurka Egiteko (Interes Legitimoak):**
 
 **1. Urratsa: Objekzioa Ebaluatu**
+
 - Berrikusi datu interesdunaren arrazoiak (egoera zehatza)
 - Oreka proba egin: Gure oinarri legitimoek objekzioa gainditzen al dute?
 
 **Oreka Proba Faktoreak:**
+
 - **Gure Interesak:** Iruzur prebentzioa, sare segurtasuna, ikerketa, etab.
 - **Datu Interesdunaren Interesak:** Pribatutasuna, askatasuna, egoera bereziak
 - **Beharrezkotasuna:** Tratamendua beharrezkoa al da gure intereserako?
@@ -921,11 +971,13 @@ Data: [Data]
 **2. Urratsa: Erabakia**
 
 **Objekzioa Onartzen Bada (Gure Interesek Ez Dute Gainditzen):**
+
 - Gelditu tratamendua helburu horretarako
 - Beste helburu batzuetarako tratamenduarekin jarrai daiteke beste oinarri juridiko batekin
 - Erantzun datu interesdunari
 
 **Objekzioa Ukatzen Bada (Gure Interesek Gainditzen Dute):**
+
 - Eman justifikazio zehatza
 - Azaldu oinarri legitimo sinesgarriak
 - Erantzun datu interesdunari
@@ -937,6 +989,7 @@ Data: [Data]
 ### 10.1 Noiz Aplikatzen den 22. Artikulua
 
 Datu interesdunek eskubidea dute **lege edo antzeko ondorio esanguratsuak** dituzten erabaki automatizatuen menpe **ez egoteko** SALBU ETA:
+
 1. **Kontraturako beharrezkoa bada** (eta babes neurri egokiak badaude)
 2. **Legeak baimentzen badu** (neurri egokiekin)
 3. **Berariazko baimenean oinarrituta** (neurri egokiekin)
@@ -944,6 +997,7 @@ Datu interesdunek eskubidea dute **lege edo antzeko ondorio esanguratsuak** ditu
 ### 10.2 Eskatutako Bermeak
 
 Erabaki automatizatuak erabiltzen badira:
+
 - **Giza esku-hartzea:** Giza berrikuspena lortzeko eskubidea
 - **Azalpena:** Erabakiaren eta logikaren azalpena lortzeko eskubidea
 - **Erabakia aurkaratu:** Iritzia emateko eta erabakia inpugnatzeko eskubidea
@@ -954,11 +1008,13 @@ Erabaki automatizatuak erabiltzen badira:
 **1. Urratsa: Erabaki Automatizatuak Identifikatu**
 
 Berrikusi gure tratamendua:
+
 - Erabaki automatizatuak hartzen al ditugu?
 - Lege edo ondorio esanguratsuak al dituzte?
 - Zein berme daude indarrean?
 
 **Uneko Ebaluazioa (Zabala Gailetak):**
+
 - **Ez dago ondorio esanguratsuko erabaki automatizaturik une honetan erabiltzen**
 - Eskaera prozesatzea automatizatua da baina giza berrikuspenaren menpe dago
 - Iruzur detekzioa automatizatua da baina giza berrikuspena abiarazten du (ez ukazio automatikoa)
@@ -1000,6 +1056,7 @@ Data: [Data]
 ### 11.1 Noiz Aplikatzen den Kentzea
 
 Tratamendua baimenean oinarritzen bada:
+
 - Datu interesdunak baimena edozein unetan kendu dezake
 - Baimena kentzea ematea bezain erraza izan behar da
 - Zerbitzua ezin da baimenaren menpe jarri (baimena zerbitzurako beharrezkoa ez denean)
@@ -1007,9 +1064,10 @@ Tratamendua baimenean oinarritzen bada:
 ### 11.2 Kentzeko Mekanismoak
 
 **Kentzeko Metodo Errazak:**
+
 - **Harpidetza kentzeko esteka** marketin email guztietan
 - **Kontu ezarpenak** orria (baimena aktibatu/desaktibatu)
-- **Emaila DBOri:** dpo@zabalagailetak.com
+- **Emaila DBOri:** <dpo@zabalagailetak.com>
 - **Web inprimakia:** Pribatutasun lehentasun zentroa
 
 **Erantzun Epea:** Berehalakoa (bereziki marketinerako)
@@ -1017,10 +1075,12 @@ Tratamendua baimenean oinarritzen bada:
 ### 11.3 Baimen Kentzeak Prozesatzea
 
 **1. Urratsa: Tratamendua Gelditu**
+
 - Berehala gelditu kendutako baimenean oinarritutako tratamendua
 - Oharra: Kendu aurreko tratamendua legezkoa izaten jarraitzen du
 
 **2. Urratsa: Ordezko Oinarri Juridikoa Egiaztatu**
+
 - Jarrai al dezakegu tratamenduarekin beste oinarri juridiko batekin? (kontratua, lege obligazioa, interes legitimoak)
 - Bai bada, jakinarazi datu interesdunari
 - Ez bada, ezabatu datuak (beste salbuespenik aplikatzen ez bada)
@@ -1034,6 +1094,7 @@ Tratamendua baimenean oinarritzen bada:
 ### 12.1 Kexak Kudeatzea
 
 Datu interesduna gure erantzunarekin pozik ez badago:
+
 1. **Kexa onartu** berehala
 2. **Erabakia berrikusi** ikuspegi berri batekin (idealki beste pertsona bat)
 3. **Datu interesdunarekin harremanetan jarri** - kezkak ulertu
@@ -1060,12 +1121,13 @@ Erremedio judiziala bilatzeko eskubidea ere baduzu.
 
 **Datuen Babeserako Ordezkaria (DBO/DPO):**  
 Izena: [DBO Izena]  
-Emaila: dpo@zabalagailetak.com  
+Emaila: <dpo@zabalagailetak.com>  
 Telefonoa: +34 XXX XXX XXX
 
 **Datu Interesdunen Eskubideen Eskaeretarako:**  
-- **Lehentasunezkoa:** Emaila dpo@zabalagailetak.com
-- **Web Inprimakia:** https://www.zabalagailetak.com/privacy/data-request
+
+- **Lehentasunezkoa:** Emaila <dpo@zabalagailetak.com>
+- **Web Inprimakia:** <https://www.zabalagailetak.com/privacy/data-request>
 - **Posta:** Datuen Babeserako Ordezkaria, Zabala Gailetak S.A., [Helbidea], [Herria, Posta Kodea], Espainia
 
 ---

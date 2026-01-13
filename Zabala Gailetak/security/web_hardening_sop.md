@@ -285,6 +285,6 @@ docker run -t owasp/zap2docker-stable zap-baseline.py -t https://zabala-gailetak
 
 ## Erreferentziak
 
-- OWASP Top 10: https://owasp.org/www-project-top-ten/
-- OWASP ASVS: https://owasp.org/www-project-application-security-verification-standard/
-- OWASP Testing Guide: https://owasp.org/www-project-web-security-testing-guide/
+- OWASP Top 10: <https://owasp.org/www-project-top-ten/>
+- OWASP ASVS: <https://owasp.org/www-project-application-security-verification-standard/>
+- OWASP Testing Guide: <https://owasp.org/www-project-web-security-testing-guide/>

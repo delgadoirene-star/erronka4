@@ -1,4 +1,5 @@
 # ER4 Compliance Report - Zabala Gailetak
+
 **Date:** January 9, 2026  
 **Project:** Advanced Security Systems (Erronka 4)  
 **Company:** Zabala Gailetak S.A.
@@ -18,6 +19,7 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 **Status:** COMPLETE
 
 **Evidence:**
+
 - `infrastructure/network/network_segmentation_sop.md` - Complete network segmentation implementation
 - `security/siem/siem_strategy.md` - SIEM strategy and alert rules
 - `security/honeypot/honeypot_plan.md` - Honeypot implementation for attack analysis
@@ -25,6 +27,7 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 - `compliance/sgsi/asset_register.md` - Complete asset inventory
 
 **Key Achievements:**
+
 - Network segmentation with 5 zones (DMZ, User, Server, OT, Management)
 - VLAN configuration (10, 20, 50, 100, 200)
 - Firewall rules preventing DMZ→Internal and User→Database direct access
@@ -36,12 +39,14 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 **Status:** COMPLETE
 
 **Evidence:**
+
 - `infrastructure/network/network_segmentation_sop.md` - Firewall rules and ACLs
 - `security/siem/docker-compose.siem.yml` - SIEM deployment configuration
 - `security/siem/alert-rules.json` - IDS/IPS alert rules
 - `security/honeypot/docker-compose.honeypot.yml` - Honeypot deployment
 
 **Key Achievements:**
+
 - DMZ configuration with web servers and reverse proxy
 - Firewall policies (deny-by-default, explicit allow rules)
 - IDS/IPS with Snort rules for SQL injection, OT traffic anomalies
@@ -53,12 +58,14 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 **Status:** COMPLETE
 
 **Evidence:**
+
 - `infrastructure/systems/sop_server_hardening.md` - Server hardening procedures
 - `infrastructure/systems/sop_backup_recovery.md` - Backup strategy (3-2-1 rule)
 - `security/honeypot/honeypot_implementation_sop.md` - Honeypot implementation
 - `security/siem/filebeat.yml` - Log processing configuration
 
 **Key Achievements:**
+
 - BIOS/UEFI security configuration
 - Full disk encryption (LUKS/BitLocker)
 - Filesystem partitioning for security
@@ -70,6 +77,7 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 **Status:** COMPLETE
 
 **Evidence:**
+
 - `infrastructure/ot/sop_ot_security.md` - OT security procedures
 - `infrastructure/ot/docker-compose.ot.yml` - OT environment (OpenPLC, ScadaBR)
 - `infrastructure/ot/openplc/programs/cookie_production.st` - PLC program (Structured Text)
@@ -77,6 +85,7 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 - `infrastructure/network/network_segmentation_sop.md` - Purdue Model implementation
 
 **Key Achievements:**
+
 - OT network segmentation (192.168.50.0/24)
 - IT/OT isolation with Data Diode (unidirectional communication)
 - PLC programming for cookie production (mixing, baking, conveyor control)
@@ -93,6 +102,7 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 **Status:** COMPLETE
 
 **Evidence:**
+
 - `security/incidents/sop_incident_response.md` - NIST-based incident response procedures
 - `security/incidents/incident_log_template.md` - Incident logging template
 - `security/incidents/ot_incident_simulation_report.md` - OT incident simulation
@@ -100,6 +110,7 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 - `compliance/sgsi/business_continuity_plan.md` - 981-line comprehensive BCP
 
 **Key Achievements:**
+
 - 6-phase incident response (Preparation, Detection, Containment, Eradication, Recovery, Lessons Learned)
 - CSIRT team defined (roles, responsibilities, authority)
 - 72-hour GDPR breach notification procedure
@@ -116,6 +127,7 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 **Status:** COMPLETE
 
 **Evidence:**
+
 - `src/api/models/User.js` - User model with OOP principles
 - `src/api/models/Product.js` - Product model
 - `src/api/models/Order.js` - Order model with relationships
@@ -123,6 +135,7 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 - `src/web/app/context/AuthContext.js` - React context (state management)
 
 **Key Achievements:**
+
 - Class-based models with Mongoose/Sequelize
 - Inheritance and composition patterns
 - Static methods for utilities
@@ -134,6 +147,7 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 **Status:** COMPLETE
 
 **Evidence:**
+
 - `security/web_hardening_sop.md` - Web security hardening procedures
 - `src/api/middleware/auth.js` - Authentication with bcrypt, JWT, MFA
 - `src/api/app.js` - Helmet security headers, CSP, HSTS
@@ -141,6 +155,7 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 - `tests/load/api-load-test.js` - Load testing with K6
 
 **Key Achievements:**
+
 - Input validation (express-validator)
 - SQL injection prevention (parameterized queries, ORM)
 - XSS prevention (CSP headers, output encoding)
@@ -156,12 +171,14 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 **Status:** COMPLETE
 
 **Evidence:**
+
 - `src/api/middleware/auth.js` - TOTP MFA with Speakeasy
 - `src/web/app/pages/MFA.js` - MFA enrollment page with QR code
 - `src/web/mfa_design.md` - MFA design documentation
 - `src/mobile/screens/MFAScreen.js` - Mobile MFA implementation
 
 **Key Achievements:**
+
 - TOTP-based MFA (Time-based One-Time Password)
 - QR code generation for authenticator apps
 - MFA enrollment and verification flows
@@ -173,12 +190,14 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 **Status:** COMPLETE
 
 **Evidence:**
+
 - `security/mobile_security_sop.md` - Mobile security procedures
 - `src/mobile/App.js` - React Native mobile app
 - `src/mobile/services/authService.js` - Secure authentication service
 - `MOBILE_APP_GUIDE.md` - Mobile security implementation guide
 
 **Key Achievements:**
+
 - Platform permission models (iOS/Android)
 - Secure local storage (encrypted AsyncStorage)
 - Certificate pinning for API communication
@@ -191,6 +210,7 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 **Status:** COMPLETE
 
 **Evidence:**
+
 - `.github/workflows/` - CI/CD pipelines (if applicable)
 - `docker-compose.yml` - Production deployment configuration
 - `docker-compose.dev.yml` - Development environment
@@ -199,6 +219,7 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 - `scripts/deploy.sh` - Automated deployment scripts
 
 **Key Achievements:**
+
 - Version control (Git) with branching strategy
 - Automated testing in CI pipeline
 - Continuous integration with security scanning
@@ -215,12 +236,14 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 **Status:** COMPLETE
 
 **Evidence:**
+
 - `security/forensics/sop_evidence_collection.md` - Evidence collection procedures
 - `security/forensics/toolkit/install-tools.sh` - Forensics toolkit installation
 - `security/forensics/toolkit/memory-dump.sh` - Memory acquisition script
 - `security/forensics/reports/forensic_report_template.md` - Forensic report template
 
 **Key Achievements:**
+
 - Forensics toolkit (Sleuthkit, Autopsy, Volatility3, Foremost)
 - Disk forensics procedures
 - Memory forensics (RAM analysis)
@@ -235,10 +258,12 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 **Status:** COMPLETE
 
 **Evidence:**
+
 - `security/mobile_security_sop.md` - Mobile forensics procedures (included)
 - Evidence extraction procedures documented
 
 **Key Achievements:**
+
 - Mobile evidence acquisition procedures
 - Data extraction and decoding
 - Chain of custody maintenance
@@ -249,10 +274,12 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 **Status:** COMPLETE
 
 **Evidence:**
+
 - `security/forensics/sop_evidence_collection.md` - Cloud forensics section
 - Cloud deployment configurations in docker-compose files
 
 **Key Achievements:**
+
 - Cloud forensics strategy
 - AWS/Azure evidence collection
 - Elasticity and volatility considerations
@@ -264,11 +291,13 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 **Status:** COMPLETE
 
 **Evidence:**
+
 - `security/forensics/sop_evidence_collection.md` - IoT device procedures
 - `security/forensics/reports/forensic_report_template.md` - Standardized reporting
 - `infrastructure/ot/machinery_inventory.md` - IoT/OT device inventory
 
 **Key Achievements:**
+
 - IoT device identification
 - Evidence extraction mechanisms
 - Authenticity and integrity verification
@@ -284,10 +313,12 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 **Status:** COMPLETE
 
 **Evidence:**
+
 - `security/audits/sop_ethical_hacking.md` - Ethical hacking procedures
 - Network segmentation includes wireless (VLAN 10)
 
 **Key Achievements:**
+
 - Wireless card configuration (monitor mode)
 - WPA/WPA2/WPA3 encryption analysis
 - Wireless network detection
@@ -300,10 +331,12 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 **Status:** COMPLETE
 
 **Evidence:**
+
 - `security/audits/sop_ethical_hacking.md` - Network penetration testing procedures
 - `tests/api.test.js` - Security testing
 
 **Key Achievements:**
+
 - Passive reconnaissance techniques
 - Active scanning (Nmap, vulnerability scanners)
 - Network traffic interception
@@ -316,9 +349,11 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 **Status:** COMPLETE
 
 **Evidence:**
+
 - `security/audits/sop_ethical_hacking.md` - Post-exploitation procedures
 
 **Key Achievements:**
+
 - Remote administration via command line
 - Password cracking (dictionary, rainbow tables, brute-force)
 - Lateral movement techniques
@@ -329,10 +364,12 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 **Status:** COMPLETE
 
 **Evidence:**
+
 - `security/web_hardening_sop.md` - Web security testing procedures
 - `tests/e2e/web/auth.spec.js` - E2E security tests (Playwright)
 
 **Key Achievements:**
+
 - Web authentication system testing
 - Automated vulnerability scanning (OWASP ZAP integration ready)
 - Manual web vulnerability testing
@@ -343,10 +380,12 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 **Status:** COMPLETE
 
 **Evidence:**
+
 - `security/mobile_security_sop.md` - Mobile app security testing
 - Mobile app implementation with security controls
 
 **Key Achievements:**
+
 - Static analysis (client-side)
 - Network communication analysis
 - Dynamic behavior analysis
@@ -361,11 +400,13 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 **Status:** COMPLETE
 
 **Evidence:**
+
 - `compliance/sgsi/information_security_policy.md` - ISMS policy
 - `compliance/sgsi/statement_of_applicability.md` - ISO 27001 SoA
 - Organizational compliance structure documented
 
 **Key Achievements:**
+
 - Compliance foundations identified
 - Good governance principles
 - Compliance culture policies
@@ -377,10 +418,12 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 **Status:** COMPLETE
 
 **Evidence:**
+
 - `compliance/sgsi/` - Complete SGSI documentation (9 files)
 - ISO 27001 alignment documented
 
 **Key Achievements:**
+
 - ISO 19600 compliance recommendations
 - ISO 31000 risk management
 - Compliance system documentation
@@ -391,6 +434,7 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 **Status:** COMPLETE
 
 **Evidence:**
+
 - `compliance/gdpr/` - Complete GDPR documentation (7 files)
   - `privacy_notice_web.md` - Privacy notice
   - `data_processing_register.md` - Processing activities record
@@ -401,6 +445,7 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
   - `cookie_policy.md` - Cookie consent
 
 **Key Achievements:**
+
 - GDPR principles applied
 - Privacy by Design implemented
 - Data protection risk assessment
@@ -414,6 +459,7 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 **Status:** COMPLETE
 
 **Evidence:**
+
 - `compliance/sgsi/information_security_policy.md` - ISMS policy
 - `compliance/sgsi/statement_of_applicability.md` - ISO 27001 controls
 - `compliance/sgsi/risk_assessment.md` - Risk management
@@ -421,6 +467,7 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 - `infrastructure/network/network_segmentation_sop.md` - IEC 62443 for OT
 
 **Key Achievements:**
+
 - ISO 27001 ISMS implementation
 - ISO 27002 security controls (138 controls evaluated)
 - IEC 62443 for OT security (zones, conduits, Purdue Model)
@@ -437,10 +484,12 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 **Status:** COMPLETE
 
 **Evidence:**
+
 - `tests/load/api-load-test.js` - K6 API load test (100-200 concurrent users)
 - `tests/load/websocket-load-test.js` - K6 WebSocket load test
 
 **Key Achievements:**
+
 - Performance thresholds (p95 < 500ms, failure rate < 1%)
 - Staged load profile (2min ramp, 5min sustain)
 - Authentication and API endpoint testing
@@ -450,10 +499,12 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 **Status:** COMPLETE
 
 **Evidence:**
+
 - `tests/e2e/web/auth.spec.js` - Playwright E2E tests
 - `playwright.config.js` - Multi-browser testing (Chromium, Firefox)
 
 **Key Achievements:**
+
 - Authentication flow testing (including MFA)
 - Product browsing tests
 - Order placement tests
@@ -463,6 +514,7 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 **Status:** COMPLETE
 
 **Evidence:**
+
 - 15+ SOPs covering all operational areas:
   - Network segmentation
   - Server hardening
@@ -488,6 +540,7 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 **Status:** COMPLETE
 
 **Evidence:**
+
 - `API_DOCUMENTATION.md` - Complete API reference
 - `PROJECT_DOCUMENTATION.md` - Project architecture
 - `DOCUMENTATION_INDEX.md` - Documentation index
@@ -499,6 +552,7 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 - `README.md` - Project README
 
 **Key Achievements:**
+
 - Comprehensive technical documentation
 - API endpoint documentation
 - Architecture diagrams
@@ -510,10 +564,12 @@ This document verifies that the Zabala Gailetak cybersecurity project meets all 
 **Status:** COMPLETE
 
 **Evidence:**
+
 - `docs/network_diagrams/network_topology.md` - Network topology
 - Network segmentation documented in SOP
 
 **Key Achievements:**
+
 - Complete network topology diagram
 - VLAN and subnet documentation
 - Security zone visualization

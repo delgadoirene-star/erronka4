@@ -13,7 +13,7 @@
 3. [Eskaerak](#3-eskaerak)
 4. [Sistema](#4-sistema)
 5. [Errore Kodeak](#5-errore-kodeak)
-6. [Tasa Mugatzea](#6-tasa-mugatzea)
+6. [Tasa Mugatzea](#6-tasa-mugatzea-rate-limiting)
 7. [Segurtasuna](#7-segurtasuna)
 
 ---
@@ -641,18 +641,22 @@ Referrer-Policy: strict-origin-when-cross-origin
 ### 7.3 CORS
 
 **Baimendutako Jatorriak (Origins):**
+
 - `https://zabala-gailetak.com`
 - `https://www.zabala-gailetak.com`
 
 **Baimendutako Metodoak:**
+
 - GET, POST, PUT, DELETE, OPTIONS
 
 **Baimendutako Goiburuak:**
+
 - Content-Type, Authorization, X-Requested-With
 
 ### 7.4 Sarrera Balidazioa
 
 Sarrera guztiak balidatu eta sanitizatzen dira:
+
 - SQL injection prebentzioa
 - XSS prebentzioa
 - CSRF babesa
@@ -750,6 +754,7 @@ const createOrder = async (orderData) => {
 ## Eranskina C: Aldaketa Erregistroa
 
 ### 1.0 Bertsioa (2024-01-08)
+
 - Hasierako API argitalpena
 - Autentikazio endpoint-ak
 - Produktu endpoint-ak

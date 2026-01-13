@@ -1,4 +1,5 @@
 # Datuen Babesaren gaineko Eraginaren Ebaluazio (DPIA/EIPD) Txantiloia
+
 ## Zabala Gailetak S.A. - GDPR 35. Artikulua
 
 **Dokumentuaren IDa:** DPIA-001  
@@ -25,11 +26,13 @@ Datuen Babesaren gaineko Eraginaren Ebaluazio (DPIA) txantiloi hau datuen babese
 ### 1.3 Noiz da Derrigorrezkoa DPIA bat?
 
 **DPIA DERRIGORREZKOA da tratamenduak honako hauek dakarzkionean:**
+
 1. **Tratamendu automatizatu sistematiko eta zabala**, ondorio juridikoak edo antzeko ondorio esanguratsuak dituen profilatzea barne
 2. **Kategoria bereziko datuen eskala handiko tratamendua** (9. Artikulua) edo zigor penalekin lotutako datuak (10. Artikulua)
 3. **Eremu publikoen eskala handiko behaketa sistematikoa** (adib., CCTV zabala)
 
 **DPIA GOMENDAGARRIA da tratamenduak honako hauek dakarzkionean (WP29/EDPB irizpideak):**
+
 - Ebaluazioa edo puntuazioa (kreditu puntuazioa, iruzur detekzioa, profilatzea)
 - Erabaki automatizatuak ondorio juridiko edo esanguratsuekin
 - Behaketa sistematikoa
@@ -65,7 +68,7 @@ Emaila: _____________________________
 
 **Datuen Babeserako Ordezkaria:**  
 Izena: [DBO Izena]  
-Emaila: dpo@zabalagailetak.com  
+Emaila: <dpo@zabalagailetak.com>  
 Telefonoa: +34 XXX XXX XXX
 
 **Proiektu Taldekideak:**
@@ -110,6 +113,7 @@ Data: _____________________________
 **Zer da proiektua/tratamendu jarduera?**
 
 [Eman tratamendu jardueraren deskribapen osoa, helburua, esparrua eta testuingurua barne. Adibideak:
+
 - "Bezeroen harremanak kudeatzeko (CRM) sistema berri baten inplementazioa bezeroen interakzioak, salmentak eta marketin kanpainak kudeatzeko"
 - "Produkzio instalazioetan CCTV kamerak jartzea segurtasun eta segurtasun monitoreorako"
 - "Fidelizazio programa bat abiaraztea bezeroen erosketak eta lehentasunak jarraituz eskaintza pertsonalizatuak emateko"]
@@ -424,16 +428,19 @@ _____________________________
 ## 8. Segurtasun Neurriak
 
 **Konfidentzialtasuna:**
+
 - [ ] Sarbide kontrola (roletan oinarritua)
 - [ ] Enkriptatzea (garraioan eta geldirik)
 - [ ] Sare segmentazioa
 
 **Osotasuna:**
+
 - [ ] Sarrera balidazioa
 - [ ] Audit log-ak
 - [ ] Aldaketa kudeaketa
 
 **Eskuragarritasuna:**
+
 - [ ] Babeskopiak
 - [ ] Hondamendi berreskuratze plana
 
@@ -456,6 +463,7 @@ _____________________________
 ## 10. Arrisku Arintze Neurriak
 
 **R1 Arriskua Arintzea:**
+
 - Uneko kontrolak: _____________________________
 - Neurri gehigarriak: _____________________________
 - Hondar Arriskua: [ ] Baxua [ ] Ertaina [ ] Handia

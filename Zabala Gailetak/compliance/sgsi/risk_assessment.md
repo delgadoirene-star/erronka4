@@ -1,4 +1,5 @@
 # Arriskuen Ebaluazioa eta Kudeaketa
+
 ## Zabala Gailetak S.A. - Informazioaren Segurtasuna Kudeatzeko Sistema (SGSI)
 
 **Dokumentuaren IDa:** RA-001  
@@ -33,6 +34,7 @@
 ### 1.3 Banaketa eta Sarbidea
 
 **Baimendutako Langileak:**
+
 - Zuzendaritza Exekutiboko Taldea
 - Arriskuen Kudeaketa Komitea
 - Informazioaren Segurtasun Taldea
@@ -61,6 +63,7 @@ Arriskuen Ebaluazio eta Kudeaketa dokumentu honek Zabala Gailetak-en informazioa
 | **GUZTIRA** | **20** | **100%** |
 
 **Arrisku Kritiko Nagusiak:**
+
 1. **Ransomware Erasoa** (Arrisku Maila: 20)
 2. **Datu Pertsonalen Urraketa** (Arrisku Maila: 20)
 3. **OT Sistemen Konpromisoa** (Arrisku Maila: 20)
@@ -74,6 +77,7 @@ Arriskuen Ebaluazio eta Kudeaketa dokumentu honek Zabala Gailetak-en informazioa
 ### 3.1 Helburua
 
 Arriskuen Ebaluazio honek helburu hauek ditu:
+
 1. **Identifikatu** informazioaren segurtasunerako mehatxuak eta ahultasunak
 2. **Ebaluatu** arrisku bakoitzaren probabilitatea eta inpaktua
 3. **Priorartu** arriskuak inpaktua eta probabilitatearen arabera
@@ -86,11 +90,13 @@ Arriskuen Ebaluazio honek helburu hauek ditu:
 Arriskuen Ebaluazio honek hartzen ditu barne:
 
 **Informazio Aktiboak:**
+
 - Datu-baseak (MongoDB bezero datuak, MongoDB erabiltzaile datuak)
 - Fitxategiak (dokumentuak, babeskopiak, log-ak)
 - Jabetza Intelektuala (kodea, diseinuak, prozedura operatiboak)
 
 **IT Sistemak:**
+
 - Web aplikazioa (Node.js/Express, React)
 - Mugikor aplikazioa (React Native)
 - Zerbitzariak (Web, datu-baseak, babeskopia, SIEM)
@@ -98,22 +104,26 @@ Arriskuen Ebaluazio honek hartzen ditu barne:
 - Hodeiko zerbitzuak (AWS, hosting hornitzaileak)
 
 **OT Sistemak:**
+
 - SCADA sistema (produkzio monitorizazioa)
 - PLCak (OpenPLC, Siemens S7)
 - HMI pantailak
 - Industria ekipamendua (CNC, Roboten kontrolagailuak)
 
 **Giza Faktoreak:**
+
 - Langileak (120 pertsona)
 - Kontratistak eta aholkulariak
 - Administrazio pribilegio duten erabiltzaileak
 
 **Instalazioak:**
+
 - Produkzio instalazio nagusia (Donostia)
 - Bulego gunea
 - Datu Zentroa
 
 **Prozesuetak:**
+
 - Eskaera prozesamentu digitala
 - Produkzio kudeaketa
 - Bezero arreta
@@ -152,6 +162,7 @@ Arriskua (R) = Probabilitatea (P) × Inpaktua (I)
 | **Oso Altua** | 5 | Ia segurua da gertatzea, dokumentatua sektorean | Egunero |
 
 **Probabilitatea kalkulatzeko faktoreak:**
+
 - Mehatxuaren motibazioa eta gaitasuna
 - Ahultasunaren betetzea zailtasuna
 - Kontrol existenteak (prebentzio neurriak)
@@ -268,17 +279,20 @@ Inpaktu Orokorra hartzen da dimensio bakoitzean gehieneko balioa edo batezbestek
 Erasotzaileek malware bat sartu zerbitzari edo lan-estazioetan datuak zifratzeko eta erreskate bat eskatzeko. Datu galerak, produkzio geldialdiak eta erreputazio kalteak sor ditzake.
 
 **Aktibo Kaltetuak:**
+
 - Zerbitzariak (SRV-001, SRV-002, SRV-003, SRV-006)
 - Lan-estazioak (WRK-001-070)
 - Datu-baseak (MongoDB)
 - Babeskopiak (baldin zifraketagarria bada)
 
 **Mehatxu Iturria:**  
+
 - Ziberdelitu taldeak (ekonomikoki motibatuak)
 - Nazio-estatu erasoak
 - Hasiberri hacker-ak (ransomware-as-a-service)
 
 **Ahultasuna Asoziatua:**
+
 - Patch kudeaketa txarra (zaurgarritasun ez-zuzenduak)
 - Phishing-en arrakasta (langileek email txarrak irekitzen)
 - RDP sarbidea baimenik gabeko portuekin
@@ -301,6 +315,7 @@ Erasotzaileek malware bat sartu zerbitzari edo lan-estazioetan datuak zifratzeko
 **Arrisku Maila:** P (4) × I (5) = **20 (Kritikoa)** 🔴
 
 **Kontrol Existenteak:**
+
 - ✅ Babeskopia 3-2-1 estrategia (offline babeskopiak)
 - ✅ Endpoint Detection & Response (EDR) - Microsoft Defender
 - ✅ Email antiph ishing filtroa (Proofpoint)
@@ -313,6 +328,7 @@ Erasotzaileek malware bat sartu zerbitzari edo lan-estazioetan datuak zifratzeko
 **Tratamendu Estrategia:** **Arindu**
 
 **Neurri Osagarriak Proposatu:**
+
 1. **MFA Zabaltzea:** Garatu guzti sistemetara (prioritate: email, VPN, administrazio sarbideak) - Kostua: 5.000 € - Epemuga: 3 hilabete
 2. **Sare Mikrosegmentazioa:** VLAN-ak ezarri kritikal sistemak isolatzeko - Kostua: 25.000 € - Epemuga: 6 hilabete
 3. **Phishing Simulazio Kanpainak:** Langileak entrenatu hilean behin - Kostua: 8.000 €/urte - Epemuga: Jarraitua
@@ -334,16 +350,19 @@ Erasotzaileek malware bat sartu zerbitzari edo lan-estazioetan datuak zifratzeko
 Erasotzaileek web zerbitzaria gainezka jartzea trafiko bolumen handien bidez, zerbitzua erabilgarri ez egiteko bezeroei.
 
 **Aktibo Kaltetuak:**
+
 - Web Aplikazio Zerbitzaria (SRV-001)
 - API Zerbitzaria
 - Firewall-ak (NET-002, NET-003)
 
 **Mehatxu Iturria:**
+
 - Lehiakideen eraso ekonomikoak
 - Hacktivismo taldeak
 - Extortsio zibernetikoaren saiakerak
 
 **Ahultasuna Asoziatua:**
+
 - Ez dago CDN (Content Delivery Network) edo DDoS babesik
 - Ancho de banda mugatua (1 Gbps)
 - Rate limiting ez egokia aplikazioan
@@ -364,6 +383,7 @@ Erasotzaileek web zerbitzaria gainezka jartzea trafiko bolumen handien bidez, ze
 **Arrisku Maila:** P (3) × I (4) = **12 (Ertaina)** 🟡
 
 **Kontrol Existenteak:**
+
 - ✅ Firewall-ak DDoS detekzio oinarrizkoarekin
 - ❌ Ez dago CDN erabiltzen
 - ❌ Ez dago Anti-DDoS zerbitzu espezializaturik
@@ -374,6 +394,7 @@ Erasotzaileek web zerbitzaria gainezka jartzea trafiko bolumen handien bidez, ze
 **Tratamendu Estrategia:** **Arindu**
 
 **Neurri Osagarriak:**
+
 1. **Cloudflare edo AWS Shield kontratatu** - Anti-DDoS + CDN - Kostua: 12.000 €/urte - Epemuga: 1 hilabete
 2. **WAF (Web Application Firewall) konfiguratu** - Kostua: Cloudflare-n inklusiva - Epemuga: 1 hilabete
 3. **Ancho de banda handitu** backup ISP-rekin - Kostua: 6.000 €/urte - Epemuga: 3 hilabete
@@ -393,16 +414,19 @@ Erasotzaileek web zerbitzaria gainezka jartzea trafiko bolumen handien bidez, ze
 Baimenik gabeko sarbidea bezero edo langileen datu pertsonaletara (izenak, emailak, helbideak, NAN, ordainketa datuak). GDPR urraketa, isun altua eta erreputazio kaltea.
 
 **Aktibo Kaltetuak:**
+
 - Datu-base Zerbitzaria (SRV-002, SRV-003)
 - MongoDB datu-basea (5000 bezero erregistro)
 - Fitxategi Zerbitzaria (dokumentuak NAN-ekin)
 
 **Mehatxu Iturria:**
+
 - Kanpoko hacker-ak (SQL injection, datu-base zaurgarritasunak)
 - Barne langileak (pribilegio abusu, lapurreta intentzionala)
 - Hirugarren hornitzaileak (sarbide ez-egokia)
 
 **Ahultasuna Asoziatua:**
+
 - Datu-basea ez da guztiz zifratuta rest-ean
 - Sarbide kontrola ez oso zorrotza (pribilegio gehiegizkoak)
 - Ez dago DLP (Data Loss Prevention)
@@ -425,6 +449,7 @@ Baimenik gabeko sarbidea bezero edo langileen datu pertsonaletara (izenak, email
 **Arrisku Maila:** P (4) × I (5) = **20 (Kritikoa)** 🔴
 
 **Kontrol Existenteak:**
+
 - ✅ HTTPS web aplikazioan
 - ⚠️ MongoDB enkripzio rest-ean (ez guztiz konfiguratua)
 - ✅ Sarbide kontrola RBAC (baina ez oso zorrotza)
@@ -437,6 +462,7 @@ Baimenik gabeko sarbidea bezero edo langileen datu pertsonaletara (izenak, email
 **Tratamendu Estrategia:** **Arindu**
 
 **Neurri Osagarriak:**
+
 1. **Datu-base Enkripzio Osoa (TDE)** - MongoDB Enterprise enkripzioa - Kostua: 15.000 € - Epemuga: 2 hilabete
 2. **Sarbide Kontrol Zorrotzagoa** - Least Privilege printzipioa, berrikuspen hilabete karratu - Kostua: 0 € (barneko) - Epemuga: 1 hilabete
 3. **DLP Sistema Inplementatu** - Symantec DLP edo antzekoa - Kostua: 30.000 € - Epemuga: 6 hilabete
@@ -463,18 +489,21 @@ Baimenik gabeko sarbidea bezero edo langileen datu pertsonaletara (izenak, email
 Erasotzaileek sarbide baimenik gabea lortzen dute SCADA, PLCak edo produkzio ekipamenduetara, produkzioa gelditzeko, kaltetzeko edo manipulatzeko.
 
 **Aktibo Kaltetuak:**
+
 - SCADA Zerbitzaria (SRV-005)
 - PLCak (OpenPLC, Siemens S7)
 - HMI Pantailak
 - CNC eta Robot kontrolagailuak
 
 **Mehatxu Iturria:**
+
 - Nazio-estatu erasoak (ziber-gerra)
 - Industria espioitza lehiakideetatik
 - Haserretutako langileak (barnetik)
 - Ransomware talde espezializatuak (industrial ransomware)
 
 **Ahultasuna Asoziatua:**
+
 - OT/IT sare segmentazioa ez guztiz zabarra
 - PLC pasahitz lehenetsiak edo ahulak
 - HMI software zaurgarritasun ez-zuzenuak (legacy sistemak)
@@ -497,6 +526,7 @@ Erasotzaileek sarbide baimenik gabea lortzen dute SCADA, PLCak edo produkzio eki
 **Arrisku Maila:** P (4) × I (5) = **20 (Kritikoa)** 🔴
 
 **Kontrol Existenteak:**
+
 - ✅ OT Firewall (NET-010) IT/OT bereizita
 - ⚠️ Segmentazio ez guztiz zorrotza (administrazioak bi saretara sarbidea)
 - ❌ Ez dago OT IDS/IPS
@@ -509,6 +539,7 @@ Erasotzaileek sarbide baimenik gabea lortzen dute SCADA, PLCak edo produkzio eki
 **Tratamendu Estrategia:** **Arindu + Saihestea (konexio zuzena internetetik)**
 
 **Neurri Osagarriak:**
+
 1. **Sare Segmentazio Zorrotza** - OT DMZ sortu, firewall bi norabidetan - Kostua: 20.000 € - Epemuga: 4 hilabete
 2. **OT IDS Inplementatu** - Nozomi Networks edo Dragos edo Claroty - Kostua: 40.000 € - Epemuga: 6 hilabete
 3. **PLC Pasahitz Berrikusketa** - Guzti PLCak pasahitz berriak, komplexuak - Kostua: 0 € (barneko) - Epemuga: 1 hilabete
@@ -621,6 +652,7 @@ Kolore Legenda:
 ### 7.4 Jarraipena eta Erantzunkizuna
 
 **Arriskuen Kudeaketa Komitea:**
+
 - **Lehendakaria:** CEO
 - **Kideak:** CISO, CFO, IT Kudeatzailea, OT Kudeatzailea, HR Kudeatzailea, Aholkulari Juridikoa
 - **Bilera:** Hiruhilekoa (edo behar izanez gero)

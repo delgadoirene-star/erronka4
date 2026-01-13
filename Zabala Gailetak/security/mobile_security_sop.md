@@ -382,6 +382,6 @@ describe('Segurtasun E2E', () => {
 
 ## Erreferentziak
 
-- OWASP Mobile Top 10: https://owasp.org/www-project-mobile-top-10/
-- OWASP Mobile Security Testing Guide: https://owasp.org/www-project-mobile-security-testing-guide/
-- React Native Security: https://reactnative.dev/docs/security
+- OWASP Mobile Top 10: <https://owasp.org/www-project-mobile-top-10/>
+- OWASP Mobile Security Testing Guide: <https://owasp.org/www-project-mobile-security-testing-guide/>
+- React Native Security: <https://reactnative.dev/docs/security>

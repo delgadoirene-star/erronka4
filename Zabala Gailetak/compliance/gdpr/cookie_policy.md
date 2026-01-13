@@ -1,5 +1,6 @@
 # Cookie Politika
-## Zabala Gailetak S.A.
+
+## Zabala Gailetak S.A
 
 **Azken Eguneratzea:** 2026ko Urtarrilaren 8a  
 **Indarrean Sartze Data:** 2026ko Urtarrilaren 8a
@@ -8,7 +9,7 @@
 
 ## 1. Sarrera
 
-Cookie Politika honek Zabala Gailetak S.A.-k ("gu", "gure" edo "guri") **www.zabalagailetak.com** webgunean ("Webgunea") cookieak eta antzeko jarraipen-teknologiak nola erabiltzen dituen azaltzen du.
+Cookie Politika honek Zabala Gailetak S.A.-k ("gu", "gure" edo "guri") **<www.zabalagailetak.com>** webgunean ("Webgunea") cookieak eta antzeko jarraipen-teknologiak nola erabiltzen dituen azaltzen du.
 
 **Zer dira Cookieak?**
 
@@ -17,6 +18,7 @@ Cookieak testu fitxategi txikiak dira, zure gailuan (ordenagailua, smartphonea, 
 **Zergatik Erabiltzen Ditugu Cookieak:**
 
 Cookieak erabiltzen ditugu:
+
 - Gure Webgunea behar bezala funtzionarazteko (funtsezko funtzioak)
 - Zure erabiltzaile esperientzia hobetzeko (zure lehentasunak gogoratu)
 - Gure Webgunea nola erabiltzen duzun ulertzeko (analitika)
@@ -57,6 +59,7 @@ Cookieak onartzen dituzun ala ez kontrolatzeko aukera duzu. Gure Webgunea lehen 
 **Desgaitu Ditzakezu?** Bai. Gure Cookie Ezarpenen edo nabigatzailearen ezarpenen bidez uko egin dezakezu.
 
 **Zer Ikasten Dugu:**
+
 - Zenbat jendek bisitatzen duen gure Webgunea
 - Zein orrialde bisitatzen diren maiztasun handienez
 - Bisitariek zenbat denbora ematen duten Webgunean
@@ -65,6 +68,7 @@ Cookieak onartzen dituzun ala ez kontrolatzeko aukera duzu. Gure Webgunea lehen 
 - Erabilera eredu agregatuak eta anonimizatuak
 
 **Pribatutasuna Errespetatzen Duen Konfigurazioa:**
+
 - IP helbideak anonimizatuta daude (azken oktetoa maskaratuta)
 - Ez da pertsonalki identifikagarria den informaziorik (PII) biltzen
 - Datuak helburu estatistikoetarako agregatzen dira
@@ -76,12 +80,14 @@ Cookieak onartzen dituzun ala ez kontrolatzeko aukera duzu. Gure Webgunea lehen 
 | `_gat` | Analitika zerbitzarirako eskaera tasa mugatzen du | Minutu 1 | Google Analytics | Tasa mugatze bandera |
 
 **Hirugarrenen Analitika:**
+
 - Google Analytics erabiltzen badugu, Datuak Tratatzeko Akordioa dugu indarrean
 - Google Analytics konfiguratu dugu IP helbideak anonimizatzeko
 - Ez diogu Googleri datuak bere helburuetarako erabiltzen uzten
 - Datuak Estatu Batuetara transferitu daitezke (Googlek EB-AEB Datu Pribatutasun Esparrua betetzen du)
 
 **Uko Egitea:**
+
 - Erabili gure Cookie Ezarpenak analitika cookieak desgaitzeko
 - Instalatu nabigatzailearen luzapenak (adibidez, Google Analytics Opt-out Browser Add-on)
 
@@ -94,6 +100,7 @@ Cookieak onartzen dituzun ala ez kontrolatzeko aukera duzu. Gure Webgunea lehen 
 **Desgaitu Ditzakezu?** Bai. Webguneak funtzionatuko du oraindik, baina ezaugarri pertsonalizatu batzuk agian ez dira erabilgarri egongo.
 
 **Zer Gogoratzen Duten:**
+
 - Zure hizkuntza hobetsia
 - Eskualde edo herrialde hautaketa
 - Bistaratze lehentasunak (ikuspegi modua, ordenatze lehentasunak)
@@ -117,6 +124,7 @@ Cookieak onartzen dituzun ala ez kontrolatzeko aukera duzu. Gure Webgunea lehen 
 **Desgaitu Ditzakezu?** Bai. Gure Cookie Ezarpenen bidez uko egin dezakezu, eta ez dugu helburatutako publizitaterik zerbitzatuko.
 
 **Zer Egiten Duten:**
+
 - Gure Webgunean zein orrialde bisitatzen dituzun jarraitu
 - Beste webgune batzuetako bisitak jarraitu (hirugarrenen sareen bidez)
 - Zure interesen profila eraiki
@@ -125,6 +133,7 @@ Cookieak onartzen dituzun ala ez kontrolatzeko aukera duzu. Gure Webgunea lehen 
 - Iragarkien maiztasuna mugatu (frequency capping)
 
 **Baimenik Gabe:**
+
 - Ez dugu marketin cookie-rik ezarriko
 - Iragarkiak ikusiko dituzu oraindik, baina ez dira pertsonalizatuak izango
 - Testuinguruko iragarkiak erakutsi ditzakegu (uneko orrialdean oinarrituta, ez zure profilean)
@@ -139,6 +148,7 @@ Cookieak onartzen dituzun ala ez kontrolatzeko aukera duzu. Gure Webgunea lehen 
 | `fr` | Facebook Ads - iragarkiak eskaini eta neurtzen ditu | 3 hilabete | Meta (Facebook) | Gailu IDa, iragarki interakzioak |
 
 **Hirugarrenen Publizitate Sareak:**
+
 - Meta (Facebook/Instagram)
 - Google Ads
 - [Beste publizitate plataforma batzuk aplikagarria bada]
@@ -146,13 +156,14 @@ Cookieak onartzen dituzun ala ez kontrolatzeko aukera duzu. Gure Webgunea lehen 
 **Datuak Tratatzeko Akordioak:** Datuak Tratatzeko Akordioak ditugu publizitate bazkide guztiekin.
 
 **Uko Egiteko Aukerak:**
+
 - Erabili gure Cookie Ezarpenak marketin cookieak desgaitzeko
 - Bisitatu industriako uko egiteko orriak:
-  - European Interactive Digital Advertising Alliance (EDAA): www.youronlinechoices.eu
-  - Network Advertising Initiative (NAI): www.networkadvertising.org/choices
-  - Digital Advertising Alliance (DAA): www.aboutads.info/choices
+  - European Interactive Digital Advertising Alliance (EDAA): <www.youronlinechoices.eu>
+  - Network Advertising Initiative (NAI): <www.networkadvertising.org/choices>
+  - Digital Advertising Alliance (DAA): <www.aboutads.info/choices>
 - Egokitu pribatutasun ezarpenak publizitate plataformetan:
-  - Facebook Iragarki Lehentasunak: www.facebook.com/settings?tab=ads
+  - Facebook Iragarki Lehentasunak: <www.facebook.com/settings?tab=ads>
   - Google Iragarki Ezarpenak: adssettings.google.com
 
 **Oharra:** Marketin cookieei uko egiteak ez du esan nahi iragarki gutxiago ikusiko dituzunik; iragarkiak zure interesekiko garrantzi gutxiagokoak izango direla esan nahi du.
@@ -168,6 +179,7 @@ Cookieez gain, antzeko jarraipen-teknologiak erabil ditzakegu:
 **Zer Dira:** Irudi ikusezin txikiak, mezu elektronikoetan edo web orrietan txertatuak, edukia ikusi den jarraitzeko.
 
 **Nola Erabiltzen Ditugu:**
+
 - Email irekiera tasak jarraitu (marketin mezuetarako)
 - Email kanpainenen eraginkortasuna neurtu
 - Publizitate kanpainetatik datozen bihurketak jarraitu
@@ -181,6 +193,7 @@ Cookieez gain, antzeko jarraipen-teknologiak erabil ditzakegu:
 **Zer Da:** Zure gailuan datuak lokalean gordetzen dituen nabigatzaile teknologia (cookieen antzekoa baina biltegiratze gaitasun handiagoarekin).
 
 **Nola Erabiltzen Dugu:**
+
 - Erosketa-saskiaren edukia gorde
 - Baliabideak cachean gorde orriak azkarrago kargatzeko
 - Erabiltzaile lehentasunak gorde
@@ -192,6 +205,7 @@ Cookieez gain, antzeko jarraipen-teknologiak erabil ditzakegu:
 **Zer Da:** Zure nabigazio saioak irauten duen bitartean soilik irauten duen aldi baterako biltegiratzea.
 
 **Nola Erabiltzen Dugu:**
+
 - Egoera mantendu urrats anitzeko prozesuetan (checkout)
 - Aldi baterako inprimaki datuak gorde
 
@@ -212,12 +226,14 @@ Cookieez gain, antzeko jarraipen-teknologiak erabil ditzakegu:
 Gure Webgunea lehen aldiz bisitatzen duzunean, cookie baimenaren banner bat ikusiko duzu aukera hauekin:
 
 **Aukerak:**
+
 - **Onartu Denak:** Onartu cookie kategoria guztiak (beharrezkoak, errendimendua, funtzionalitatea, marketina)
 - **Ukatu Beharrezkoak Ez Direnak:** Onartu soilik guztiz beharrezkoak diren cookieak
 - **Cookie Ezarpenak:** Pertsonalizatu zure lehentasunak kategoriaren arabera
 
 **Baimen Xehatua:**
 Kategoria batzuk onartzea eta beste batzuk baztertzea aukera dezakezu:
+
 - ✅ Guztiz Beharrezkoak (ezin dira desgaitu)
 - ☑️ Errendimendua/Analitika (aukerakoa)
 - ☑️ Funtzionalitatea (aukerakoa)
@@ -230,6 +246,7 @@ Zure aukerak `cookie_consent` cookiean gordetzen dira 12 hilabetez.
 **Sarbidea:** Egin klik "Cookie Ezarpenak" estekan webgunearen orri-oinean edo pribatutasun zentroan.
 
 **Ezaugarriak:**
+
 - Ikusi unean zure gailuan ezarritako cookie guztiak
 - Aldatu zure baimen lehentasunak edozein unetan
 - Garbitu funtsezkoak ez diren cookie guztiak berehala
@@ -241,6 +258,7 @@ Zure cookie lehentasunak edozein unetan alda ditzakezu. Aldaketak berehala sartz
 ### 4.3 Nabigatzaile Ezarpenak
 
 Cookieak zure nabigatzailearen ezarpenen bidez ere kontrola ditzakezu. Nabigatzaile gehienek aukera ematen dizute:
+
 - Cookie guztiak blokeatu
 - Hirugarrenen cookieak soilik blokeatu
 - Dauden cookieak ezabatu
@@ -249,26 +267,31 @@ Cookieak zure nabigatzailearen ezarpenen bidez ere kontrola ditzakezu. Nabigatza
 **Nabigatzaile Cookie Kontrolak:**
 
 **Google Chrome:**
+
 1. Ezarpenak → Pribatutasuna eta segurtasuna → Cookieak eta guneetako beste datu batzuk
 2. Aukeratu zure lehentasuna
 
 **Mozilla Firefox:**
+
 1. Ezarpenak → Pribatutasuna eta Segurtasuna → Cookieak eta Gune Datuak
 2. Aukeratu zure lehentasuna
 
 **Safari (macOS/iOS):**
+
 1. Hobespenak → Pribatutasuna → Kudeatu Webgune Datuak
 2. Blokeatu cookie guztiak edo kendu cookie zehatzak
 
 **Microsoft Edge:**
+
 1. Ezarpenak → Pribatutasuna, bilaketa eta zerbitzuak → Cookieak eta gune baimenak
 2. Aukeratu zure lehentasuna
 
 **Garrantzitsua:** Cookie guztiak blokeatzeak gure Webguneko ezaugarri batzuk erabiltzea eragotzi dezake (erosketa-saskia, kontu saio-hasiera).
 
 **Informazio Gehiago:**
-- www.aboutcookies.org
-- www.allaboutcookies.org
+
+- <www.aboutcookies.org>
+- <www.allaboutcookies.org>
 
 ### 4.4 Mugikor Aplikazio Ezarpenak
 
@@ -295,18 +318,21 @@ Ezarpenak → Google → Iragarkiak → Uko egin Iragarki Pertsonalizazioari
 **ePrivacy Zuzentarauaren (2002/58/EE)** eta **DBLO-GDD (Espainiako legea)** arabera, zure baimena lortu behar dugu funtsezkoak ez diren cookieak ezarri aurretik.
 
 **Baimena Beharrezkoa:**
+
 - Marketin/publizitate cookieak
 - Analitika cookie batzuk (konfigurazioaren arabera)
 - Sare sozialetako cookieak
 - Hirugarrenen jarraipen cookieak
 
 **Baimena Ez Beharrezkoa:**
+
 - Guztiz beharrezkoak diren cookieak (zerbitzua emateko funtsezkoak)
 - Pribatutasunerako konfiguratutako analitika cookieak (anonimizatuak, PIIrik gabe)
 
 ### 5.2 Baimen Baliozkoa
 
 GDPRren arabera baimena baliozkoa izateko:
+
 - **Aske Emandakoa:** Uko egiteagatik ondoriorik ez (oraindik Webgunea erabil dezakezu)
 - **Zehatza:** Baimen bereizia cookie kategoria bakoitzerako
 - **Informatua:** Zertarako baimena ematen ari zaren argi eta garbi azaltzea
@@ -318,6 +344,7 @@ GDPRren arabera baimena baliozkoa izateko:
 ### 5.3 Baimen Erregistroak
 
 Zure cookie baimen aukeren erregistroak mantentzen ditugu:
+
 - Baimenaren data eta ordua
 - Baimendutako kategoriak
 - Baimen metodoa (banner interakzioa)
@@ -331,7 +358,7 @@ Honek lege baldintzak betetzen ditugula frogatzen laguntzen digu.
 
 ### 6.1 Zer Dira Hirugarrenen Cookieak?
 
-**Lehenengo Alderdiko Cookieak:** Zabala Gailetak-ek ezarriak (www.zabalagailetak.com domeinua)
+**Lehenengo Alderdiko Cookieak:** Zabala Gailetak-ek ezarriak (<www.zabalagailetak.com> domeinua)
 
 **Hirugarrenen Cookieak:** Kanpoko zerbitzuek eta bazkideek ezarriak (beste domeinu batzuk)
 
@@ -343,7 +370,7 @@ Honek lege baldintzak betetzen ditugula frogatzen laguntzen digu.
 |-----------|----------|---------------------|-----------------------|
 | Google Analytics | Webgune analitika | `_ga`, `_gid`, `_gat` | policies.google.com/privacy |
 | Google Ads | Publizitatea | `IDE`, `NID` | policies.google.com/privacy |
-| Meta (Facebook) Pixel | Publizitatea eta analitika | `_fbp`, `fr` | www.facebook.com/privacy/policy |
+| Meta (Facebook) Pixel | Publizitatea eta analitika | `_fbp`, `fr` | <www.facebook.com/privacy/policy> |
 | Stripe | Ordainketa prozesatzea | `__stripe_sid`, `__stripe_mid` | stripe.com/privacy |
 | YouTube (txertatutako bideoak badaude) | Bideo ostalaritza | `VISITOR_INFO1_LIVE`, `YSC` | policies.google.com/privacy |
 
@@ -354,6 +381,7 @@ Honek lege baldintzak betetzen ditugula frogatzen laguntzen digu.
 Sare sozialen pluginak (Facebook Like, Twitter Share, etab.) sartzen baditugu, zerbitzu hauek cookieak ezar ditzakete haiekin elkarreragin ez baduzu ere.
 
 **Pribatutasuna Errespetatzen Duen Ikuspegia:**
+
 - Bi klikako irtenbideak erabiltzen ditugu (botoi sozialak "gaitu" sakatzen duzunean bakarrik aktibatzen dira)
 - EDO profil sozialetara estekatzen dugu pluginak txertatu beharrean
 
@@ -368,6 +396,7 @@ Sare sozialen pluginak (Facebook Like, Twitter Share, etab.) sartzen baditugu, z
 Hirugarrenen cookie batzuek (Google, Meta) datuak EB/EEE kanpora transferitu ditzakete.
 
 **Bermeak:**
+
 - **Google:** EB-AEB Datu Pribatutasun Esparrua betetzen du (egokitasun erabakia)
 - **Meta:** Klausula Kontraktual Estandarrak (SCCs) erabiltzen ditu
 - **Datuak Tratatzeko Akordioak:** Hirugarren guztiekin indarrean
@@ -397,6 +426,7 @@ Cookieek bizitza-iraupen desberdinak dituzte:
 **Helburua:** Lehentasunak gogoratu, itzultzen diren bisitariak ezagutu
 
 **Adibideak:**
+
 - `auth_token` - 30 egun
 - `cookie_consent` - 12 hilabete
 - `_ga` (Google Analytics) - 2 urte
@@ -409,11 +439,13 @@ Cookieek bizitza-iraupen desberdinak dituzte:
 ## 9. Cookie Politika Honen Eguneraketak
 
 Cookie Politika hau noizean behin eguneratu dezakegu aldaketak islatzeko:
+
 - Erabiltzen ditugun teknologietan
 - Lege betekizunetan
 - Gure cookie praktiketan
 
 **Jakinarazpena:**
+
 - **Aldaketa Materialak:** Webgunearen banner edo email bidez jakinaraziko dizugu
 - **Aldaketa Txikiak:** Eguneratutako politika argitaratuko da "Azken Eguneratzea" data berriarekin
 
@@ -429,19 +461,22 @@ Cookie kategoria edo helburu berriak sartzen baditugu, zure baimena berriro eska
 Gure cookie erabilerari buruzko galdera edo kezkaren bat baduzu, jarri gurekin harremanetan:
 
 **Datuen Babeserako Ordezkaria (DBO/DPO):**
-- **Emaila:** dpo@zabalagailetak.com
+
+- **Emaila:** <dpo@zabalagailetak.com>
 - **Telefonoa:** +34 XXX XXX XXX
 - **Posta:** Datuen Babeserako Ordezkaria, Zabala Gailetak S.A., [Helbidea], [Herria, Posta Kodea], Espainia
 
 **Cookie-ei lotutako Galderak:**
-- **Emaila:** privacy@zabalagailetak.com
-- **Web Inprimakia:** www.zabalagailetak.com/privacy/contact
+
+- **Emaila:** <privacy@zabalagailetak.com>
+- **Web Inprimakia:** <www.zabalagailetak.com/privacy/contact>
 
 **Ikuskapen Agintaritza:**
 Gure cookie praktikekin pozik ez bazaude, kexa jar dezakezu hemen:
 
 **Datuen Babeserako Espainiako Bulegoa (AEPD):**
-- **Webgunea:** www.aepd.es
+
+- **Webgunea:** <www.aepd.es>
 - **Telefonoa:** +34 901 100 099
 - **Helbidea:** C/ Jorge Juan, 6, 28001 Madril, Espainia
 
@@ -450,8 +485,9 @@ Gure cookie praktikekin pozik ez bazaude, kexa jar dezakezu hemen:
 ## 11. Lotutako Politikak
 
 Cookie Politika hau honako hauekin batera irakurri behar da:
-- **Pribatutasun Oharra:** www.zabalagailetak.com/privacy
-- **Terminoak eta Baldintzak:** www.zabalagailetak.com/terms
+
+- **Pribatutasun Oharra:** <www.zabalagailetak.com/privacy>
+- **Terminoak eta Baldintzak:** <www.zabalagailetak.com/terms>
 - **Datu Interesdunen Eskubideen Prozedurak**
 
 ---
@@ -470,11 +506,13 @@ Cookie Politika hau honako hauekin batera irakurri behar da:
 ## Erreferentzia Azkarra: Nola Desgaitu Cookieak
 
 ### 1. Aukera: Gure Cookie Ezarpenak Tresna (Gomendatua)
+
 1. Klikatu "Cookie Ezarpenak" estekan webgunearen orri-oinean
 2. Aktibatu/Desaktibatu kategoriak
 3. Gorde zure lehentasunak
 
 ### 2. Aukera: Nabigatzaile Ezarpenak
+
 **Chrome:**
 Ezarpenak → Pribatutasuna eta segurtasuna → Cookieak eta guneetako beste datu batzuk → Blokeatu hirugarrenen cookieak EDO Blokeatu cookie guztiak
 
@@ -488,9 +526,10 @@ Hobespenak → Pribatutasuna → Blokeatu cookie guztiak
 Ezarpenak → Pribatutasuna, bilaketa eta zerbitzuak → Jarraipen prebentzioa → Zorrotza
 
 ### 3. Aukera: Uko Egiteko Tresnak
+
 - **Google Ads:** adssettings.google.com
-- **Facebook Ads:** www.facebook.com/settings?tab=ads
-- **Industria Uko Egitea:** www.youronlinechoices.eu
+- **Facebook Ads:** <www.facebook.com/settings?tab=ads>
+- **Industria Uko Egitea:** <www.youronlinechoices.eu>
 
 ---
 

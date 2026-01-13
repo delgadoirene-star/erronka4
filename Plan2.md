@@ -10,6 +10,7 @@
 ## 1. LOAD TESTING IMPLEMENTATION
 
 ### File: `tests/load/api-load-test.js`
+
 ```javascript
 import http from 'k6/http';
 import { check, sleep } from 'k6';
@@ -54,6 +55,7 @@ export default function () {
 ```
 
 ### File: `tests/load/websocket-load-test.js`
+
 ```javascript
 import ws from 'k6/ws';
 import { check } from 'k6';
@@ -84,6 +86,7 @@ export default function () {
 ## 2. END-TO-END TESTING (Playwright)
 
 ### File: `tests/e2e/web/auth.spec.js`
+
 ```javascript
 const { test, expect } = require('@playwright/test');
 
@@ -120,6 +123,7 @@ test.describe('Order Flow', () => {
 ```
 
 ### File: `playwright.config.js`
+
 ```javascript
 module.exports = {
   testDir: './tests/e2e',
@@ -142,6 +146,7 @@ module.exports = {
 ## 3. OT PRACTICAL IMPLEMENTATION
 
 ### File: `infrastructure/ot/docker-compose.ot.yml`
+
 ```yaml
 version: '3.8'
 
@@ -184,6 +189,7 @@ volumes:
 ```
 
 ### File: `infrastructure/ot/openplc/programs/cookie_production.st`
+
 ```structured-text
 PROGRAM CookieProduction
   VAR
@@ -225,6 +231,7 @@ END_PROGRAM
 ## 4. MISSING SOPs
 
 ### File: `infrastructure/systems/sop_backup_recovery.md`
+
 ```markdown
 # Backup & Recovery SOP - Zabala Gailetak
 
@@ -256,6 +263,7 @@ END_PROGRAM
 ```
 
 ### File: `infrastructure/systems/sop_patch_management.md`
+
 ```markdown
 # Patch Management SOP - Zabala Gailetak
 
@@ -280,6 +288,7 @@ END_PROGRAM
 ```
 
 ### File: `infrastructure/systems/sop_user_access.md`
+
 ```markdown
 # User Access Management SOP - Zabala Gailetak
 
@@ -305,6 +314,7 @@ END_PROGRAM
 ```
 
 ### File: `infrastructure/systems/sop_change_management.md`
+
 ```markdown
 # Change Management SOP - Zabala Gailetak
 
@@ -322,6 +332,7 @@ END_PROGRAM
 ```
 
 ### File: `security/sop_security_awareness.md`
+
 ```markdown
 # Security Awareness Training SOP - Zabala Gailetak
 
@@ -349,6 +360,7 @@ END_PROGRAM
 ## 5. FORENSICS TOOLKIT
 
 ### File: `security/forensics/toolkit/install-tools.sh`
+
 ```bash
 #!/bin/bash
 set -e
@@ -375,6 +387,7 @@ echo "[✓] Forensics toolkit installation complete"
 ```
 
 ### File: `security/forensics/toolkit/memory-dump.sh`
+
 ```bash
 #!/bin/bash
 CASE_ID=$1
@@ -389,6 +402,7 @@ echo "[✓] Memory dump complete: $OUTPUT_DIR"
 ```
 
 ### File: `security/forensics/reports/forensic_report_template.md`
+
 ```markdown
 # Forensic Investigation Report
 

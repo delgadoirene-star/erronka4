@@ -11,11 +11,13 @@ Segurtasun intzidentzia baten aurrean barneko eta kanpoko komunikazio eraginkorr
 #### 2.1.1. Hasierako Detekzioa eta Jakinarazpena
 
 **Detektatzailea** (edozein langile edo sistema automatizatua):
-1. **Lehentasunezko bideratze kanal reserbatua:** helpdesk@zabalagailetak.eus edo **segurtasuna@zabalagailetak.eus**
+
+1. **Lehentasunezko bideratze kanal reserbatua:** <helpdesk@zabalagailetak.eus> edo **<segurtasuna@zabalagailetak.eus>**
 2. **Telefono larrialdietarako:** +34 XXX XXX XXX (24/7 zaintza)
 3. **Txat sistema barnekoa:** Slack #segurtasun-alertak kanalean jakinarazi
 
 **Lehen erantzulea** (Helpdesk edo IT zaintzailea):
+
 - Intzidentziaren hasierako sailkapena egiten du (Larritasun Matrizearen arabera: Baxua, Ertaina, Altua, Kritikoa)
 - **15 minutu barruan** IT Arduradunari eta CISO-ri jakinarazi behar du
 - Intzidentziaren erregistro txartela irekitzen du (Ticket ID sortu)
@@ -23,12 +25,14 @@ Segurtasun intzidentzia baten aurrean barneko eta kanpoko komunikazio eraginkorr
 #### 2.1.2. Eskalada Prozesua Kudeaketa Mailaren Arabera
 
 **MAILA 1 - Larritasun Baxua/Ertaina:**
+
 - **Jakinarazpena:** IT Arduraduna + CISO
 - **Erantzun epea:** 2 ordu
 - **Erabakiak:** Segurtasun taldeak hartzen ditu
 - **Eguneratze maiztasuna:** 8 orduro
 
 **MAILA 2 - Larritasun Altua:**
+
 - **Jakinarazpena:** CISO → Zuzendari Nagusia (CEO) + DPO + Aholkularitza Legala
 - **Erantzun epea:** 30 minutu
 - **Erabakiak:** Krisiaren Kudeaketa Taldea (CMT) aktibatzen da
@@ -36,6 +40,7 @@ Segurtasun intzidentzia baten aurrean barneko eta kanpoko komunikazio eraginkorr
 - **Komunikazio formatua:** Laburpen exekutiboa email + deialdia CMT bilerara
 
 **MAILA 3 - Larritasun Kritikoa:**
+
 - **Jakinarazpena:** CMT osoa + Kontseiluko kideak + Prentsa arduraduna
 - **Erantzun epea:** Berehalakoa (15 minutu)
 - **Erabakiak:** CMT osoak berehala biltzen da (fisikoki edo bideo deiaz)
@@ -49,7 +54,7 @@ Segurtasun intzidentzia baten aurrean barneko eta kanpoko komunikazio eraginkorr
 **Erabaki Organoa Larritasun Mailaren Arabera:**
 
 | Larritasuna | Erabaki Organoa | Parte-hartzaileak | Erabaki Denbora |
-|-------------|----------------|-------------------|------------------|
+| --- | --- | --- | --- |
 | Baxua | IT Arduraduna | Teknikariak | 2 ordu |
 | Ertaina | CISO + IT | Segurtasun taldea | 1 ordu |
 | Altua | CMT | CISO, CEO, DPO, Legala | 30 minutu |
@@ -58,12 +63,14 @@ Segurtasun intzidentzia baten aurrean barneko eta kanpoko komunikazio eraginkorr
 #### 2.2.2. Eguneratzeen Partekatzea
 
 **Komunikazio Tresnak:**
+
 1. **Incidentziaren Kudeaketa Sistema (IMS):** Ticket-ak eta egoera eguneratzeak
 2. **Slack/Teams Kanal Pribatua:** #incident-[ID] kanala sortzen da intzidentzia bakoitzeko
 3. **Posta Elektronikoa:** Eguneratze formalak goi-mailako arduradunentzat
 4. **War Room (krisi egoeretan):** Espazio fisiko/birtuala erabaki bizkorretarako
 
 **Eguneratzeen Edukia (Estandarizatua):**
+
 - **Intzidentzia ID eta Izenburua**
 - **Egoera Oraingoa:** Ebazpenean, Gelditu, Konponduta, Itxita
 - **Eragina:** Zer zerbitzu/datu/sistema kaltetuta
@@ -73,7 +80,8 @@ Segurtasun intzidentzia baten aurrean barneko eta kanpoko komunikazio eraginkorr
 - **Arriskuak eta Oztopoak**
 
 **Eguneratzeen Template-a (Laburpena):**
-```
+
+```text
 INTZIDENTZIA ID: INC-2026-001
 DATA/ORDUA: 2026-01-12 14:30
 EGOERA: Ebazpenean (60% konponduta)
@@ -92,27 +100,28 @@ ECD: 16:00
 #### 2.3.1. Krisiaren Kudeaketa Taldea (CMT)
 
 | Rola | Izena | Telefonoa | Email | Ardura |
-|------|-------|-----------|-------|--------|
-| **Krisi Koordinatzailea (CISO)** | [Izena] | +34 XXX XXX XXX | ciso@zabalagailetak.eus | Erabaki teknikoak, erantzun plana |
-| **Erabaki Exekutiboa (CEO)** | [Izena] | +34 XXX XXX XXX | ceo@zabalagailetak.eus | Negozio erabakiak, baliabideak |
-| **Datuen Babesa (DPO)** | [Izena] | +34 XXX XXX XXX | dpo@zabalagailetak.eus | GDPR konpromisoa, jakinarazpenak |
-| **Aholkularitza Legala** | [Izena] | +34 XXX XXX XXX | legal@zabalagailetak.eus | Lege ondorioak, agintariak |
-| **Komunikazio Bozeramailea** | [Izena] | +34 XXX XXX XXX | press@zabalagailetak.eus | Prentsa, kanpo mezularitza |
-| **IT Arduraduna** | [Izena] | +34 XXX XXX XXX | it@zabalagailetak.eus | Ekintza teknikoak, konponketa |
+| --- | --- | --- | --- | --- |
+| **CISO** | [Izena] | [Telefonoa] | <ciso@zabalagailetak.eus> | Erantzun plana |
+| **CEO** | [Izena] | [Telefonoa] | <ceo@zabalagailetak.eus> | Baliabideak |
+| **DPO** | [Izena] | [Telefonoa] | <dpo@zabalagailetak.eus> | GDPR |
+| **Legala** | [Izena] | [Telefonoa] | <legal@zabalagailetak.eus> | Agintariak |
+| **Bozeramailea** | [Izena] | [Telefonoa] | <press@zabalagailetak.eus> | Prentsa |
+| **IT Lead** | [Izena] | [Telefonoa] | <it@zabalagailetak.eus> | Konponketa |
 
 #### 2.3.2. Erantzun Talde Teknikoa
 
 | Rola | Kontaktua | Lehen Erantzuna |
-|------|-----------|------------------|
-| Sare Administratzailea | netadmin@zabalagailetak.eus | Firewall, Trafikoa |
-| Sistema Administratzailea | sysadmin@zabalagailetak.eus | Zerbitzariak, VM-ak |
-| Datu Baseko Arduraduna | dba@zabalagailetak.eus | MongoDB, Redis |
-| Garatzaile Senior | dev-lead@zabalagailetak.eus | Aplikazioen kodea |
-| Segurtasun Analistak | soc@zabalagailetak.eus | Forentsikoa, Analisia |
+| --- | --- | --- |
+| Sare Administratzailea | <netadmin@zabalagailetak.eus> | Firewall, Trafikoa |
+| Sistema Administratzailea | <sysadmin@zabalagailetak.eus> | Zerbitzariak, VM-ak |
+| Datu Baseko Arduraduna | <dba@zabalagailetak.eus> | MongoDB, Redis |
+| Garatzaile Senior | <dev-lead@zabalagailetak.eus> | Aplikazioen kodea |
+| Segurtasun Analistak | <soc@zabalagailetak.eus> | Forentsikoa, Analisia |
 
 #### 2.3.3. Ordezkapen Katena (Eskuraezintasuna)
 
 Rol bakoitzak ordezko bat izan behar du:
+
 - **CISO ordezko:** IT Arduraduna
 - **CEO ordezko:** CFO edo COO
 - **DPO ordezko:** Aholkularitza Legala
@@ -123,19 +132,20 @@ Rol bakoitzak ordezko bat izan behar du:
 
 #### 3.1.1. Jakinarazpen Denbora Mugak
 
-| Egoera | Jakinarazpen Epea | Bidea | Edukia |
-|--------|-------------------|-------|--------|
-| **Zerbitzu Etena (Handia)** | 30 minutu | Email + Web Banner + SMS | Zerbitzua ez dago erabilgarri, konponketa denbora |
-| **Zerbitzu Etena (Txikia)** | 2 ordu | Email + Web Banner | Arazoak detektatu dira, lanean |
-| **Datu Urraketa (Suspektua)** | 24 ordu | Email Pertsonalizatua | Aurreikuspena, kontu segurtasun gomendioak |
-| **Datu Urraketa (Baieztatua)** | 72 ordu (GDPR)* | Email Legal + Gutuna Formalki | Urraketa xehetasunak, erabiltzaile bakoitzarentzako eragina |
-| **Konponduta** | Berehalakoa | Email + Web Mezu Positiboa | Zerbitzua normaltasunean, esker onak |
+| Egoera | Epea | Bidea | Edukia |
+| --- | --- | --- | --- |
+| **Etena (Handia)** | 30 min | Email+Banner+SMS | Zerbitzu etena, konponketa plana |
+| **Etena (Txikia)** | 2 ordu | Email+Banner | Arazoak, konponketa bidean |
+| **Urraketa (Susmoa)** | 24 ordu | Emaila | Aurreikuspena, segurtasun gomendioak |
+| **Urraketa (Baiaz)** | 72h (GDPR) | Email+Gutuna | Urraketa xehetasunak, eragina |
+| **Konponduta** | Berehala | Email+Web | Zerbitzua OK, esker onak |
 
 *GDPR-ren arabera, 72 orduko gehienezko epea agintariei; bezeroei ahalik eta azkarren.
 
 #### 3.1.2. Mezularitza Estandarizatua Bezeroei
 
 **ZER EMAN:**
+
 - ✅ Intzidentziaren deskribapen orokorra (ez teknikoa)
 - ✅ Zer zerbitzuk kaltetuta
 - ✅ Estimatutako konponketa denbora
@@ -144,6 +154,7 @@ Rol bakoitzak ordezko bat izan behar du:
 - ✅ Zer egiten ari garen konpontzeko
 
 **ZER EZ EMAN:**
+
 - ❌ Xehetasun teknikoak (zaurgarritasun espezifikoak)
 - ❌ Zergatiak ezagutzen ez baditugu oraindik
 - ❌ Errudun edo arduradunei buruzko aipamenak
@@ -152,6 +163,7 @@ Rol bakoitzak ordezko bat izan behar du:
 - ❌ Kalteak minimizatzeko saiakerak ("ez da larria" - eztabaidagarria)
 
 **Eguneratze Maiztasuna:**
+
 - **Krisi egoera aktiboa:** 4-6 orduro
 - **Ebazpen prozesua:** Egunero
 - **Post-mortem:** 7 egun ostean, txosten osoagoa
@@ -161,6 +173,7 @@ Rol bakoitzak ordezko bat izan behar du:
 #### 3.2.1. Jakinarazpen Kasuak
 
 **Hornitzaileak jakinarazi behar zaizkie kasu hauetan:**
+
 1. Haien zerbitzua intzidentziaren iturria den ala
 2. Haien sistemak ere kaltetuta egon daitezkeela susmatzen da
 3. Lankidetza teknikoa behar da intzidentzia ebazteko
@@ -171,6 +184,7 @@ Rol bakoitzak ordezko bat izan behar du:
 **Mota:** Email formala edo telefono deia + email berrespena
 **Hartzaileak:** Hornitzailearen segurtasun kontaktua (SOC/CSIRT)
 **Edukia:**
+
 - Enpresaren identifikazioa
 - Intzidentziaren laburpena (haien zerbitzuaren partaidetzarekin)
 - Beharrezko laguntza edo informazioa
@@ -183,17 +197,18 @@ Rol bakoitzak ordezko bat izan behar du:
 #### 3.3.1. Agintari Zerrenda eta Kasu Motak
 
 | Agintaria | Noiz Jakinarazi | Epea | Bidea | Arduraduna |
-|-----------|-----------------|------|-------|------------|
-| **AEPD / Datuak Babesteko Euskal Bulegoa** | Datu pertsonalen urraketa (arriskua pertsonentzat) | **72 ordu** | Formulariu elektronikoa [web plataformaren bidez] | DPO |
-| **Zibersegurtasun Euskal Zentroa (BCSC)** | Zibersegurtasun intzidentzia larriak (azpiegitura kritikoa, eraso koordinatuak) | Ahalik eta azkarren | Email: incident@bcsc.eus + Telefono hotline | CISO |
-| **INCIBE-CERT** | Zibersegurtasun intzidentzia nazioak mailan | Gomendatua, ez nahitaezkoa | https://www.incibe.es/incibe-cert | CISO |
-| **Ertzaintza / Polizia Nazionala** | Ziberdelituak (hacking-a, sabotajea, datu lapurreta penala) | Berehalakoa delitua susmatzen denean | Salaketa ofizial fiska | CEO + Aholkularitza Legala |
-| **Euskal Autonomia Erkidegoko Jarduera Ikuskaritza** | OT sistemetan eragina baldin badago (industria segurtasuna) | 24 ordu | Telefono: XXX XXX XXX | CEO |
+| --- | --- | --- | --- | --- |
+| **AEPD / Bulegoa** | Datu pertsonalen urraketa (arriskua) | **72 ordu** | Formularioa [web bidez] | DPO |
+| **BCSC** | Zibersegurtasun intzidente larriak (azpiegitura kritikoa) | Azkarren | <incident@bcsc.eus> | CISO |
+| **INCIBE-CERT** | Zibersegurtasun intzidente nazionalak | Gomendatua | <https://www.incibe.es/incibe-cert> | CISO |
+| **Ertzaintza/Polizia** | Ziberdelituak (hacking, sabotajea, lapurreta) | Berehala | Salaketa ofiziala | CEO + Legala |
+| **EAERoad Ikuskaritza** | OT sistemetan eragina (industria segurtasuna) | 24 ordu | Tel: XXX XXX XXX | CEO |
 
 #### 3.3.2. AEPD-rako Jakinarazpen Prozedura (GDPR)
 
 **1. Hasierako Jakinarazpena (72 ordu):**
-- DPO-k aurrez betetako formularioa betetzen du: https://www.aepd.es
+
+- DPO-k aurrez betetako formularioa betetzen du: <https://www.aepd.es>
 - **Gutxieneko Edukia:**
   - Urraketa mota eta egoera
   - Datu kategoriak eta erabiltzaile kopurua kaltetuta
@@ -202,14 +217,17 @@ Rol bakoitzak ordezko bat izan behar du:
   - Erabiltzaileak jakinarazteko asmoa
 
 **2. Eguneratze Txostena:**
+
 - Informazio gehiago eskuragarri denean, eguneratu
 
 **3. Erabiltzaileei Jakinaraztea:**
+
 - Arriskua "handia" bada pertsonentzat, zuzenean jakinarazi behar zaie (email/gutuna)
 
 #### 3.3.3. Delituaren Salaketa (Polizia/Ertzaintza)
 
 **Prozedura:**
+
 1. **Erabakia:** CEO + Aholkularitza Legalak erabakitzen dute salaketa jartzea
 2. **Frogak Prestatu:** Forentsiko taldeak kopia bat prestatzen du (ISO kopia, log-ak, pantaila-argazkiak)
 3. **Salaketa Jartzea:** Legelariak lagunduta, Ertzaintzan edo Polizian
@@ -220,6 +238,7 @@ Rol bakoitzak ordezko bat izan behar du:
 #### 3.4.1. Noiz Prentsarekin Komunikatu
 
 **Kasu hauetan bakarrik:**
+
 - Intzidentzia publikoki ezaguna denean (sare sozialetan, albisteak)
 - Bezero andana bat kaltetuta dago eta erreputazioa kudeatu behar da
 - Agintariek edo lege betekizunek eskatzen dutenean
@@ -230,12 +249,14 @@ Rol bakoitzak ordezko bat izan behar du:
 **Arduraduna:** Komunikazio Bozeramailea (CMT-k onartuta)
 
 **Pausuak:**
+
 1. CMT-k prentsa oharraren edukia onartzen du
 2. Aholkularitza legalak berrikusten du
 3. CEO-k azken onarpena ematen du
 4. Bozeramaileak publikatzen du enpresaren webgunean + email hedapenetan
 
 **Prentsa Oharraren Egitura:**
+
 - Izenburua: Laburra eta argia
 - Sarrera: Zer gertatu da (faktikoa)
 - Gorputza: Hartutako neurriak, egoera oraingoa
@@ -243,6 +264,7 @@ Rol bakoitzak ordezko bat izan behar du:
 - Oharrak: Informazio teknikoa gehiago nahi izanez gero (DPO/CISO-ren kontaktua prentsakoei)
 
 **Ez onartuak:**
+
 - Langileek banakako deklarazioak egitea prentsara (bakarrik Bozeramaileak)
 - Sare sozialetan ez-ofizialki argitaratzeak
 
@@ -252,9 +274,9 @@ Rol bakoitzak ordezko bat izan behar du:
 
 #### 4.1.1. Email Eguneratzea (Intzidentzia Aktiboa)
 
-**Gaia:** [URGENT] Intzidentzia INC-[ID] - Eguneratzea #[zenbakia]
+#### Gaia: [URGENT] Intzidentzia INC-[ID] - Eguneratzea #[zenbakia]
 
-```
+```text
 Langile Maiteok,
 
 Intzidentzia INC-[ID]-ri buruzko eguneratze berria partekatu nahi dizuegu:
@@ -286,7 +308,7 @@ Zabala Gailetak
 
 #### 4.1.2. Telefono Alerta Script-a (Krisi Kritikoa)
 
-```
+```text
 Kaixo [Izena], [Zure Izena] naiz Zabala Gailetak-etik.
 
 Segurtasun intzidentzia kritiko bat detektatu dugu eta zure parte-hartzea behar dugu.
@@ -305,7 +327,7 @@ Eskerrik asko.
 
 #### 4.1.3. Slack/Teams Ohar Azkarra
 
-```
+```text
 🚨 INTZIDENTZIA ALERTA 🚨
 
 ID: INC-2026-XXX
@@ -324,9 +346,9 @@ cc: @ciso @it-lead @ceo
 
 #### 4.2.1. Email Template-a: Zerbitzu Etena (Hasiera)
 
-**Gaia:** [Zabala Gailetak] Mantendu lanetan - Eragina zure zerbitzuan
+#### Gaia: [Zabala Gailetak] Mantendu lanetan - Eragina zure zerbitzuan
 
-```
+```text
 Bezeroa Maite,
 
 Jakinarazi nahi dizugu gaur, [Data], [HH:MM]-etan arazo tekniko bat detektatu dugula gure [zerbitzu izena] -en.
@@ -335,7 +357,7 @@ Jakinarazi nahi dizugu gaur, [Data], [HH:MM]-etan arazo tekniko bat detektatu du
 [Deskribapen sinple eta argia, teknikoa ez]
 
 🛠️ ZER EGITEN ARI GARA:
-Gure talde teknikoa ahalegintzen ari da arazoa ahalik eta azkarren konpontzen. [Ekintza espezifikoak eman, adib: "zerbitzariak berrezarri", "datu basea leheneratu"].
+Gure talde teknikoa konpontzen ari da. [Adib: "zerbitzariak berrezarri", "datu basea leheneratu"].
 
 ⏱️ ESTIMATUTAKO KONPONKETA:
 [Denbora aproximatua edo "ahalik eta azkarren eguneratuko dizugu"].
@@ -353,20 +375,20 @@ Zabala Gailetak Taldea
 
 #### 4.2.2. Email Template-a: Datu Urraketa (GDPR Jakinarazpena)
 
-**Gaia:** [GARRANTZITSUA] Zure datuak - Segurtasun jakinarazpena
+#### Gaia: [GARRANTZITSUA] Zure datuak - Segurtasun jakinarazpena
 
-```
+```text
 Bezeroa Estimatua,
 
 Idazten dizugu gure sistemetako segurtasun intzidentziaren baten inguruan informatzeko, zeinek zure datu pertsonalak kaltetuta jarri ditzakeen.
 
 🔴 ZER GERTATU DA:
-[UUUU-HH-EE] -n, detektatu genuen [deskribapen orokorra, adib: "sarbide ez-baimendua gure datu basera"].
+[UUUU-HH-EE] -n, detektatu genuen [adib: "sarbide ez-baimendua datu basera"].
 
 📋 ZER DATU KALTETUTA:
 - [Datu motak, adib: "Izena, Emaila, Telefonoa"]
 - Zenbat erabiltzaile: [Kopurua edo "zuk barne"]
-- Ez ziren kaltetuta: [Datu sentikorragoak babestu badira, adib: "kreditu txartelen zenbakiak"]
+- Ez ziren kaltetuta: [Adib: "kreditu txartelak"]
 
 🛡️ HARTUTAKO NEURRIAK:
 - Sistemak segurtatu, zaurgarritasuna konpondu
@@ -405,9 +427,9 @@ Zabala Gailetak
 
 **Edukia (laburpena):**
 
-```
+```text
 1. URRAKETA DESKRIBAPENA:
-   - Mota: [Konfidentzialtasun urraketa / Sarbide ez-baimendua / Galera / Suntsitzea]
+   - Mota: [Sarbide ez-baimendua / Galera / Suntsitzea]
    - Data detektatua: [UUUU-HH-EE]
    - Data gertatu zen (susmatua): [UUUU-HH-EE]
 
@@ -432,7 +454,7 @@ Zabala Gailetak
 
 #### 4.3.2. Ertzaintzarako Salaketa Script-a
 
-```
+```text
 Salaketa Informala / Aurretiazko Deia:
 
 "Kaixo, Zabala Gailetak enpresatik deitzen dut. Zibersegurtasun delitu bat salatu nahi dugu.
@@ -494,13 +516,14 @@ Zabala Gailetak-ek jakinarazi du [UUUU-HH-EE] -n [intzidentzia mota] bat detekta
 
 **Noiz deitu:** Intzidentzia "Altua" edo "Kritikoa" denean
 
-**Deia nola:** 
+**Deia nola:**
+
 - Email + Telefono deia guzti kideei
 - Slack #crisis-management kanalean ping @all
 
 **Agenda (30 minutuko bilera):**
 
-```
+```text
 1. [5 min] Egoera azalpena (CISO)
    - Zer gertatu da
    - Zer eragin du
@@ -529,7 +552,7 @@ Zabala Gailetak-ek jakinarazi du [UUUU-HH-EE] -n [intzidentzia mota] bat detekta
 
 #### 4.5.2. Bilera Oharren Template-a
 
-```
+```text
 INTZIDENTZIA KUDEAKETA BILERA - AKTA
 
 Data: [UUUU-HH-EE]
@@ -571,22 +594,24 @@ Akta onartua: [Arduradunaren sinadura]
 **Osaera:**
 
 | Rola | Arduraduna | Funtzioa |
-|------|------------|----------|
+| --- | --- | --- |
 | **Komite Lehendakaria** | CEO | Erabaki estrategiko guziak onartzea |
 | **Krisi Koordinatzailea** | CISO | Intzidentziaren kudeaketa teknikoa |
-| **Komunikazio Zuzendaria / Bozeramailea** | Marketing/PR Director | Kanpo mezularitza guztiak kudeatu |
-| **Lege Aholkularia** | Aholkularitza Legala | Lege konformitatea, jakinarazpenak |
-| **DPO (Datuen Babesa)** | DPO | GDPR betebeharrak, datu babeseko kudeaketa |
-| **HR Ordezkaria** | Giza Baliabideak | Langileen komunikazioa eta ongizatea |
+| **Bozeramailea** | Marketing/PR | Kanpo mezularitza kudeatu |
+| **Lege Aholkularia** | Legala | Lege konformitatea |
+| **DPO** | DPO | GDPR betebeharrak |
+| **HR Ordezkaria** | HR | Langileen komunikazioa |
 
 ### 5.2. Bozeramailearen Rola eta Ardurak
 
 **Identifikazioa:**
+
 - Izena: [Bozeramaile Izena]
 - Kargua: [Adib: Komunikazio Zuzendaria]
-- Kontaktua: press@zabalagailetak.eus / +34 XXX XXX XXX
+- Kontaktua: <press@zabalagailetak.eus> / +34 XXX XXX XXX
 
 **Ardura Nagusiak:**
+
 1. **Mezularitza Bateratua:** Kanpo mezu guztiak kontrolatu (bakar bat hitz-emailea)
 2. **Prentsa Kudeaketa:** Komunikabideen eskaerak erantzun
 3. **Sare Sozialak:** Enpresaren sare sozialetan komunikatu (Twitter, LinkedIn, etc.)
@@ -594,12 +619,14 @@ Akta onartua: [Arduradunaren sinadura]
 5. **Entrenamendu:** Gainerako langileei prestatu "ez-komentatu" politika jarraitzeko
 
 **Ez da bere ardura:**
+
 - Erabaki teknikoak hartzea (CISO-ren ardura)
 - Lege interpretazioa (Aholkularitza Legalaren ardura)
 
 ### 5.3. Bozeramailearen Entrenamendu Gakoak
 
 **Komunikazio Printzipioak:**
+
 1. **Honestasuna:** Ez gezurretan, baina ez ere gehiegi argitaratu
 2. **Garbitasuna:** Hizkuntza teknikotik ihes egin, hizkuntza argi eta orokorra erabili
 3. **Enpatia:** Erakutsi kezka bezero eta kaltedunekiko
@@ -607,6 +634,7 @@ Akta onartua: [Arduradunaren sinadura]
 5. **"Ez dakit" onartua:** Hobea da onartzea informazio bat ez dakigula, ez asmatu
 
 **Frasa Gomendatuak:**
+
 - ✅ "Gure lehentasuna da bezeroaren segurtasuna bermatzea."
 - ✅ "Dagoeneko neurriak hartu ditugu."
 - ✅ "Agintariekin lankidetzan lanean ari gara."
@@ -621,6 +649,7 @@ Akta onartua: [Arduradunaren sinadura]
 #### 6.1.1. Erregistro Sistema
 
 **Zer erregistratu:**
+
 - ✅ Komunikazio elektroniko guztiak (emailak, Slack, Teams)
 - ✅ Telefono deien laburpenak (data, ordua, parte-hartzaileak, gaiak)
 - ✅ Bilera aktak (CMT bilerak, erabakiak)
@@ -628,17 +657,19 @@ Akta onartua: [Arduradunaren sinadura]
 - ✅ Eguneratze denbora-lerroak (timeline)
 
 **Non gordetzea:**
+
 - **Intzidentziaren Kudeaketa Sistema (IMS):** Ticket barruan dokumentu guztiak erantsi
 - **SharePoint / Dokumentu Kudeatzailea:** Karpeta pribatua `Incidents/INC-[ID]/Communications/`
 - **SIEM (Wazuh):** Log-ak automatikoki ingestatu komunikazio sistemetatik
 
 **Erretentzioa:**
+
 - Gutxienez **3 urte** GDPR-ren arabera
 - **7 urte** lege kasu potentzialekin
 
 #### 6.1.2. Erregistro Template-a
 
-```
+```text
 KOMUNIKAZIO ERREGISTROA
 
 Intzidentzia ID: INC-[ID]
@@ -665,20 +696,20 @@ Jarraipena egina: [UUUU-HH-EE] - [Nork]
 **Erantzun Denborak:**
 
 | Metrika | Helburua | Neurtzeko Modua |
-|---------|----------|------------------|
-| **Lehen jakinarazpen denbora** | < 15 minutu | Detekziotik IT/CISO-ra |
-| **Barne eguneratzeen maiztasuna** | 4-8h | Eguneratze kopurua / Intzidentzia iraupena |
-| **Bezeroei lehen mezu denbora** | < 30 min (kritikoetan) | Intzidentziotik lehen email-a bezeroei |
-| **AEPD jakinarazpen betetzea** | < 72 ordu | Data detekziotik jakinarazpena arte |
-| **Konponketa komunikazio denbora** | < 2 ordu konponketa ostean | Konpontzea-tik "Konponduta" mezua arte |
+| --- | --- | --- |
+| **Lehen jakinarazpena** | < 15 min | Detekziotik IT/CISO-ra |
+| **Barne maiztasuna** | 4-8h | Eguneratze kopurua |
+| **Bezeroei lehen mezu** | < 30 min | Intzidentziotik emaila |
+| **AEPD epea** | < 72 ordu | Detekziotik jakinarazpenera |
+| **Konponketa mezua** | < 2 ordu | Konponketa osteko mezua |
 
 **Kalitate Metrikak:**
 
 | Metrika | Helburua | Neurketa |
-|---------|----------|----------|
-| **Mezu eduki zehaztasuna** | > 90% | Inkesta bezeroei: informazioa argi izan da? |
-| **Langile ohar-hartzea** | > 95% | Konfirmazio emailen ehunekoa |
-| **Prentsa mezu bat-etortzea** | 100% | Mezu desberdinak prentsak jaso (desiragarria: 0) |
+| --- | --- | --- |
+| **Zehaztasuna** | > 90% | Inkesta bezeroei |
+| **Ohar-hartzea** | > 95% | Konfirmazio emailak |
+| **Prentsa bat-etortze** | 100% | Mezu desberdinak (0) |
 
 #### 6.2.2. Post-Incident Review (PIR) - Komunikazio Atala
 
@@ -714,6 +745,7 @@ Jarraipena egina: [UUUU-HH-EE] - [Nork]
 **Metodoa:** Inkesta anonimoa langileei (SurveyMonkey, Google Forms)
 
 **Galdera Adibideak:**
+
 1. Informazio nahikoa jaso al zenuen intzidentziaren inguruan? (1-5)
 2. Komunikazioa argi eta ulergarria izan zen? (1-5)
 3. Eguneratzeen maiztasuna egokia izan zen? (Oso maiz / Egokia / Gutxiegi)
@@ -724,6 +756,7 @@ Jarraipena egina: [UUUU-HH-EE] - [Nork]
 **Metodoa 1:** Email inkesta intzidentzia konponduta 48h ostean
 
 **Galdera Adibideak:**
+
 1. Zenbateraino gustura geratu zara gure komunikazioarekin? (1-5)
 2. Informazio nahikoa eman genizun? (Bai / Ez / Neurriz gain)
 3. Zer hobetu behar genuke?
@@ -739,6 +772,7 @@ Jarraipena egina: [UUUU-HH-EE] - [Nork]
 ```markdown
 # LESSONS LEARNED - Komunikazioa - INC-[ID]
 
+```text
 Data PIR: [UUUU-HH-EE]
 Parte-hartzaileak: [Izenak]
 
@@ -753,9 +787,9 @@ Parte-hartzaileak: [Izenak]
 ## 3. HOBEKUNTZA EKINTZAK
 
 | Ekintza | Arduraduna | Epemuga | Egoera |
-|---------|------------|---------|--------|
-| [Ekintza 1, adib: "Bozeramailea prestakuntza eman"] | [Izena] | [UUUU-HH-EE] | Pendiente |
-| [Ekintza 2, adib: "Template-ak eguneratu bezeroei"] | [Izena] | [UUUU-HH-EE] | Eginda |
+| --- | --- | --- | --- |
+| [Prestakuntza eman] | [Izena] | [Data] | Pendiente |
+| [Template-ak eguneratu] | [Izena] | [Data] | Eginda |
 
 ## 4. PLANEN EGUNERATZEA
 
@@ -775,7 +809,7 @@ Dokumentua onartu: [CEO Izena] - [Data]
 
 #### 6.4.2. Hobekuntza Zikloa (PDCA)
 
-```
+```text
 1. PLAN (Planifikatu):
    - PIR ostean, hobekuntza ekintzak identifikatu
    - Ekintza Plan bat prestatu (arduradun, epemuga)
@@ -806,11 +840,11 @@ Dokumentua onartu: [CEO Izena] - [Data]
 ## ERANSKINA: Larritasun Matrizea Komunikaziorako
 
 | Larritasuna | Barne Jakinarazpena | Kanpo Jakinarazpena | Agintariak | Prentsa |
-|-------------|---------------------|---------------------|------------|--------|
+| --- | --- | --- | --- | --- |
 | **Baxua** | IT + CISO | Ez beharrezkoa | Ez | Ez |
-| **Ertaina** | IT + CISO + Kudeaketa | Bezeroei (eragina badago) | Ez normalean | Ez |
-| **Altua** | CMT | Bezeroei + Hornitzaileei | BCSC (gomendatua) | Erabakigarria (CMT) |
-| **Kritikoa** | CMT + Langileen osoa | Bezeroei + Agintariak + Prentsa | AEPD + BCSC + Polizia | Bai (nahitaezkoa) |
+| **Ertaina** | IT + CISO + Kudeaketa | Bezeroei | Ez normalean | Ez |
+| **Altua** | CMT | Bezeroei | BCSC | Erabakigarria |
+| **Kritikoa** | CMT + Langileak | Bezeroei + Agintariak | AEPD+BCSC+Polizia | Bai |
 
 ---
 

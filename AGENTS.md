@@ -7,6 +7,7 @@ This file provides essential information for AI coding agents working on the Zab
 ## Project Overview
 
 **Zabala Gailetak** is a cybersecurity-focused e-commerce platform with:
+
 - **Backend API**: Node.js/Express with comprehensive security features
 - **Web App**: React 18 with styled-components and Webpack
 - **Mobile App**: React Native for iOS/Android
@@ -17,7 +18,7 @@ This file provides essential information for AI coding agents working on the Zab
 
 ## 🏗️ Project Structure
 
-```
+```text
 Zabala Gailetak/
 ├── src/
 │   ├── api/               # Express.js backend API

@@ -63,18 +63,21 @@ npm install
 ### 5. Aplikazioak Abiarazi
 
 **1. Terminala - API:**
+
 ```bash
 cd "Zabala Gailetak"
 npm run dev
 ```
 
 **2. Terminala - Web App:**
+
 ```bash
 cd "Zabala Gailetak/src/web/app"
 npm start
 ```
 
 **3. Terminala - Mobile App (Aukerakoa):**
+
 ```bash
 cd "Zabala Gailetak/src/mobile"
 npm start
@@ -82,10 +85,10 @@ npm start
 
 ### 6. Aplikazioetara Sartu
 
-- **API:** http://localhost:3000
-- **Web App:** http://localhost:3001
-- **Kibana (SIEM):** http://localhost:5601
-- **API Health:** http://localhost:3000/api/health
+- **API:** <http://localhost:3000>
+- **Web App:** <http://localhost:3001>
+- **Kibana (SIEM):** <http://localhost:5601>
+- **API Health:** <http://localhost:3000/api/health>
 
 ---
 
@@ -93,9 +96,10 @@ npm start
 
 ### Web Aplikazioa
 
-**URL:** http://localhost:3001
+**URL:** <http://localhost:3001>
 
 **Ezaugarriak:**
+
 - Saio-hasiera erabiltzaile/pasahitzarekin
 - MFA egiaztapena
 - Produktuen katalogoa
@@ -105,6 +109,7 @@ npm start
 ### Mobile Aplikazioa
 
 **Konfigurazioa (Android):**
+
 ```bash
 cd "Zabala Gailetak/src/mobile"
 npm install
@@ -112,6 +117,7 @@ npm run android
 ```
 
 **Konfigurazioa (iOS - macOS bakarrik):**
+
 ```bash
 cd "Zabala Gailetak/src/mobile"
 cd ios && pod install && cd ..
@@ -120,9 +126,10 @@ npm run ios
 
 ### API Endpoint-ak
 
-**Oinarrizko URL:** http://localhost:3000/api
+**Oinarrizko URL:** <http://localhost:3000/api>
 
 **Eskuragarri dauden Endpoint-ak:**
+
 - `POST /auth/register` - Erabiltzailea erregistratu
 - `POST /auth/login` - Saioa hasi
 - `POST /auth/mfa/verify` - MFA egiaztatu
@@ -147,6 +154,7 @@ curl -X POST http://localhost:3000/api/auth/register \
 ```
 
 **Erantzuna:**
+
 ```json
 {
   "message": "Erabiltzailea ondo sortu da",
@@ -158,12 +166,14 @@ curl -X POST http://localhost:3000/api/auth/register \
 ### 2. MFA Konfiguratu (Aukerakoa)
 
 **Web App bidez:**
+
 1. Hasi saioa web aplikazioan
 2. Joan Panelera (Dashboard)
 3. Klikatu "MFA Gaitu" botoian
 4. Eskaneatu QR kodea Google Authenticator-ekin
 
 **API bidez:**
+
 ```bash
 curl -X POST http://localhost:3000/api/auth/mfa/setup \
   -H "Authorization: Bearer YOUR_TOKEN"
@@ -268,6 +278,7 @@ curl http://localhost:3000/api/health
 ```
 
 **Espero den Erantzuna:**
+
 ```json
 {
   "status": "healthy",
@@ -296,9 +307,10 @@ docker exec -it zabala-gailetak-redis redis-cli ping
 
 ### SIEM (Kibana)
 
-**URL:** http://localhost:5601
+**URL:** <http://localhost:5601>
 
 **Saioa:**
+
 - Erabiltzailea: `elastic`
 - Pasahitza: Egiaztatu `.env` fitxategia
 
@@ -331,6 +343,7 @@ open coverage/lcov-report/index.html
 ### Eskuzko Probak
 
 **API Probatu:**
+
 ```bash
 # Produktuak lortu
 curl http://localhost:3000/api/products
@@ -342,7 +355,8 @@ curl -X POST http://localhost:3000/api/auth/login \
 ```
 
 **Web App Probatu:**
-1. Joan http://localhost:3001 helbidera
+
+1. Joan <http://localhost:3001> helbidera
 2. Hasi saioa kredentzialekin
 3. Arakatu produktuak
 4. Sortu eskaera
@@ -359,6 +373,7 @@ curl -X POST http://localhost:3000/api/auth/login \
 **Errorea:** `Error: listen EADDRINUSE: address already in use :::3000`
 
 **Konponbidea:**
+
 ```bash
 # Bilatu 3000 portua erabiltzen duen prozesua
 lsof -i :3000
@@ -375,6 +390,7 @@ PORT=3001
 **Errorea:** `MongoNetworkError: failed to connect to server`
 
 **Konponbidea:**
+
 ```bash
 # Egiaztatu MongoDB martxan dagoela
 docker-compose ps
@@ -391,6 +407,7 @@ docker-compose logs mongodb
 **Errorea:** Build-ak huts egiten du dependentzia erroreekin
 
 **Konponbidea:**
+
 ```bash
 # Garbitu Docker cache-a
 docker system prune -a
@@ -407,6 +424,7 @@ docker-compose pull
 **Errorea:** `Module not found` edo antzekoa
 
 **Konponbidea:**
+
 ```bash
 cd "Zabala Gailetak/src/web/app"
 
@@ -423,11 +441,13 @@ npm start -- --reset-cache
 ### Laguntza Lortzea
 
 1. **Egiaztatu Log-ak:**
+
    ```bash
    docker-compose logs -f
    ```
 
 2. **Egiaztatu Zerbitzuak:**
+
    ```bash
    docker-compose ps
    ```
@@ -542,11 +562,11 @@ Hasierako konfigurazioaren ondoren, konfiguratu hauek produkziorako:
 
 ### Kanpo Baliabideak
 
-- **React Native:** https://reactnative.dev
-- **React:** https://react.dev
-- **Express.js:** https://expressjs.com
-- **MongoDB:** https://www.mongodb.com/docs
-- **OWASP:** https://owasp.org
+- **React Native:** <https://reactnative.dev>
+- **React:** <https://react.dev>
+- **Express.js:** <https://expressjs.com>
+- **MongoDB:** <https://www.mongodb.com/docs>
+- **OWASP:** <https://owasp.org>
 
 ---
 
@@ -554,8 +574,8 @@ Hasierako konfigurazioaren ondoren, konfiguratu hauek produkziorako:
 
 Konfigurazioaren ondoren, egiaztatu:
 
-- [ ] API martxan dagoela http://localhost:3000 helbidean
-- [ ] Web app martxan dagoela http://localhost:3001 helbidean
+- [ ] API martxan dagoela <http://localhost:3000> helbidean
+- [ ] Web app martxan dagoela <http://localhost:3001> helbidean
 - [ ] MongoDB martxan eta eskuragarri
 - [ ] Redis martxan eta eskuragarri
 - [ ] Erabiltzaile berria erregistratu daitekeela
@@ -564,15 +584,16 @@ Konfigurazioaren ondoren, egiaztatu:
 - [ ] Eskaera sortu daitekeela
 - [ ] API health check-ek 200 itzultzen duela
 - [ ] Docker zerbitzu guztiak martxan daudela
-- [ ] Kibana eskuragarri http://localhost:5601 helbidean
+- [ ] Kibana eskuragarri <http://localhost:5601> helbidean
 
 ---
 
-## 🚀 Prest!
+## 🚀 Prest
 
 Orain Zabala Gailetak zibersegurtasun sistema guztiz funtzionala duzu martxan lokalean!
 
 **Zer da Hurrengoa?**
+
 1. Arakatu web app-a eta mobile app-a
 2. Probatu segurtasun ezaugarriak
 3. Berrikusi SIEM panela

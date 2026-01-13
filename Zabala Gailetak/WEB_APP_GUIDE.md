@@ -19,6 +19,7 @@ SIEM (ELK Stack)
 ## Inplementatutako Ezaugarriak
 
 ### 1. Autentifikazioa eta Segurtasuna
+
 - Saio-hasiera erabiltzaile/pasahitzarekin
 - MFA (TOTP) euskarria Speakeasy erabiliz
 - JWT token bidezko autentifikazioa
@@ -28,6 +29,7 @@ SIEM (ELK Stack)
 - Sarrera sanitizazioa
 
 ### 2. Oinarrizko Funtzionalitatea
+
 - Produktu katalogoa prezioekin
 - Eskaera sorrera balidazioarekin
 - Erabiltzaile panela estatistikekin
@@ -35,6 +37,7 @@ SIEM (ELK Stack)
 - Diseinu moldagarria (mugikorretarako egokia)
 
 ### 3. Segurtasun Ezaugarriak
+
 - Content Security Policy (CSP)
 - Helmet.js segurtasun goiburuak
 - Tasa mugatzea APIan
@@ -435,6 +438,7 @@ localStorage.setItem('debug', 'zabala-gailetak:*');
 ## Laguntza
 
 Arazo edo galderetarako:
+
 - Dokumentazioa: `IMPLEMENTATION_SUMMARY.md`
 - API Dokumentazioa: `src/api/middleware/auth.js`
 - Segurtasun SOP: `security/web_hardening_sop.md`

@@ -1,5 +1,6 @@
 # Pasahitz Politika
-## Zabala Gailetak S.A.
+
+## Zabala Gailetak S.A
 
 **Dokumentuaren IDa:** PWD-001  
 **Bertsioa:** 1.0  
@@ -34,6 +35,7 @@
 ### 2.1 Helburua
 
 Pasahitz Politika honek Zabala Gailetak-en informazio-sistemetara sartzeko erabiltzen diren pasahitzak sortzeko, kudeatzeko eta babesteko baldintzak ezartzen ditu. Pasahitz praktika sendoak kritikoak dira honakoetarako:
+
 - Baimenik gabeko sarbideak prebenitzea sistemetara eta datuetara
 - Bezeroen eta langileen informazioa babestea
 - ISO/IEC 27001:2022 eta GDPR betetzen direla ziurtatzea
@@ -43,6 +45,7 @@ Pasahitz Politika honek Zabala Gailetak-en informazio-sistemetara sartzeko erabi
 ### 2.2 Esparrua
 
 Politika hau honako hauei aplikatzen zaie:
+
 - **Erabiltzaile Guztiak:** Langileak, kontratistak, aholkulariak, aldi baterako langileak eta hirugarrenak
 - **Sistema Guztiak:** IT sistemak (lan-estazioak, zerbitzariak, aplikazioak, hodeiko zerbitzuak) eta OT sistemak (PLCak, SCADA, HMI)
 - **Sarbide Metodo Guztiak:** Tokiko saio-hasiera, urruneko sarbidea (VPN), web aplikazioak, gailu mugikorrak, administrazio interfazeak
@@ -51,6 +54,7 @@ Politika hau honako hauei aplikatzen zaie:
 ### 2.3 Betetzea
 
 Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
+
 - Kontua etetea
 - Pasahitza berrezartzea behartzea
 - Diziplina ekintzak (Erabilera Onargarriaren Politikaren arabera)
@@ -63,6 +67,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 ### 3.1 Erabiltzaile Kontu Estandarrak
 
 **Gutxieneko Baldintzak:**
+
 - **Luzera:** Gutxienez 12 karaktere
 - **Konplexutasuna:** Honako lau kategorietatik gutxienez hiru eduki behar ditu:
   - Letra larriak (A-Z)
@@ -75,12 +80,14 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 - **Aldaketa Baldintzak:** Aurreko pasahitzetik nabarmen desberdina izan behar du (ez zenbakiak gehitzea bakarrik)
 
 **Pasahitz Sendoen Adibideak:**
+
 - `Kafea&Gailetak2026!`
 - `Zabala$Gailetak#456`
 - `NireTxakurrak!MaiteDituGailetak`
 - `Donostia2026@Uda`
 
 **Gomendatua:** Erabili pasaesaldiak (4+ ausazko hitz):
+
 - `zaldi-zuzena-bateria-grapagailua`
 - `ElefanteUrdina!DantzanSalsa77`
 - `Pizza$Labea#Okina$2026`
@@ -88,6 +95,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 ### 3.2 Kontu Pribilegiatuak eta Administratiboak
 
 **Baldintza Handituak:**
+
 - **Luzera:** Gutxienez 14 karaktere
 - **Konplexutasuna:** Lau karaktere kategoriak eduki behar ditu (larria, xehea, zenbakia, berezia)
 - **Iraungitzea:** 60 egun (90 egun MFA gaituta badago)
@@ -97,6 +105,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 - **Saio Amaiera:** Saio-amaiera automatikoa 15 minutu inaktibitate ondoren
 
 **Esparrua:**
+
 - Domeinu Administratzaileak
 - Zerbitzari administratzaileak (root, Administrator kontuak)
 - Datu-base administratzaileak
@@ -108,6 +117,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 ### 3.3 Zerbitzu Kontuak
 
 **Baldintzak:**
+
 - **Luzera:** Gutxienez 20 karaktere (ausaz sortua)
 - **Konplexutasuna:** Ausazkotasun maximoa (karaktere mota guztiak)
 - **Iraungitzea:** 365 egun edo inoiz ez (zerbitzuei eragiten badie)
@@ -117,6 +127,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 - **Pribilegio Gutxienekoa:** Baimenak eskakizun zehatzetara mugatuta
 
 **Adibideak:**
+
 - Datu-base zerbitzu kontua aplikazio konexioetarako
 - Babeskopia zerbitzu kontua
 - Monitorizazio agente kontuak
@@ -127,12 +138,14 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 **Politika:** Partekatutako kontuak **debekatuta** daude teknikoki saihestezina den kasuetan izan ezik.
 
 **Salbuespenek Behar Dute:**
+
 - CISOren onarpena negozio justifikazioarekin
 - Erregistro hobetua (jarraitu zein norbanakok erabili duen kontu partekatua)
 - Pasahitz aldaketa baimendutako erabiltzaile bakoitzaren sarbidea amaitzean
 - Aldizkako sarbide berrikuspenak (hilero)
 
 **Ohiko Salbuespenak:**
+
 - Larrialdi "kristala apurtu" administratzaile kontua (gutun-azal zigilatua kutxa gotorrean)
 - Tokiko kontsola bakarra duten industria ekipamendu espezifikoak (banakako urruneko sarbidearekin osatua)
 - Erabiltzaile anitzeko euskarririk gabeko sistema zaharrak (ordezkatzeko programatuta)
@@ -140,6 +153,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 ### 3.5 Aldi Baterako eta Gonbidatu Kontuak
 
 **Baldintzak:**
+
 - **Pasahitz Lehenetsia:** Ausaz sortua (gutxienez 12 karaktere)
 - **Aldaketa Behartu:** Pasahitza aldatu behar da lehen saio-hasieran
 - **Iraungitzea:** Kontua automatikoki iraungitzen da epe zehatz baten ondoren (lehenetsia: 30 egun)
@@ -147,6 +161,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 - **Monitorizazioa:** Jarduera erregistratu eta berrikusten da
 
 **Erabilera Kasuak:**
+
 - Kontratistak eta aholkulariak (epe laburreko proiektuak)
 - Aldi baterako langileak
 - Auditoreak
@@ -159,6 +174,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 ### 4.1 Pasahitz Sendoen Ezaugarriak
 
 **EGIN Pasahitzak Honelakoak:**
+
 - Luzeak dira (12+ karaktere erabiltzaileentzat, 14+ adminentzat)
 - Karaktere mota nahasketa erabiltzen dute (larria, xehea, zenbakia, berezia)
 - Zuretzat gogoratzen errazak dira baina besteentzat asmatzen zailak
@@ -166,6 +182,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 - Pasaesaldiak erabiltzen dituzte (ausazko hitz anitz)
 
 **Pasahitz Sendo Gogangarriak Sortzeko Teknikak:**
+
 1. **Pasaesaldi Metodoa:** Ausazko hitz kateak
    - Adibidea: `Elefante!Morea$Dantzan#Tangoa`
 2. **Esaldi Metodoa:** Esaldi baten lehen letrak + aldaketak
@@ -178,6 +195,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 ### 4.2 Debekatutako Pasahitz Praktikak
 
 **EZ EGIN Pasahitzik:**
+
 - Hiztegi hitzak dituztenak (hitz bakarrak erraz pitzatzen dira)
 - Informazio pertsonala dutenak:
   - Zure izena, erabiltzaile-izena, langile IDa
@@ -199,6 +217,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
   - Pasahitz zaharrari `!` edo `1` gehitzea soilik
 
 **Pasahitz AHULEN Adibideak (Inoiz Ez Erabili):**
+
 - `Zabala2026` (enpresa izena + urtea)
 - `Pasahitza123!` (hitz arrunta + eredua)
 - `Gailetak!` (enpresa izena + karaktere berezia)
@@ -215,6 +234,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 ### 5.1 Pasahitz Babesa
 
 **INOIZ EZ:**
+
 - Partekatu zure pasahitza inorekin (kudeatzaileak, IT langileak, lankideak barne)
 - Idatzi pasahitzak paperean (post-it oharrak, koadernoak, arbelak)
 - Gorde pasahitzak enkriptatu gabeko fitxategietan (Word dokumentuak, Excel orriak, testu fitxategiak)
@@ -224,6 +244,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 - Erabili pasahitz bera laneko eta kontu pertsonaletarako
 
 **BETI:**
+
 - Mantendu pasahitzak konfidentzial
 - Aldatu pasahitza berehala arriskua susmatzen bada
 - Erabili pasahitz desberdinak sistema desberdinetarako
@@ -233,12 +254,14 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 ### 5.2 Pasahitz Kudeatzaileak (Onartuak)
 
 **Erakundeak Onartutako Pasahitz Kudeatzaileak:**
+
 - **1Password Business** (gomendio nagusia)
 - **LastPass Enterprise**
 - **Dashlane Business**
 - **KeePass** (kode irekia, erabilera kasu zehatzetarako)
 
 **Abantailak:**
+
 - Pasahitz sendoak eta ausazkoak sortu
 - Pasahitzak enkriptatuta gorde
 - Kredentzialak automatikoki bete (idazteko erroreak murriztu, phishing erresistentzia)
@@ -247,6 +270,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 - Auditoretza arrastoa eta txostenak
 
 **Erabilera Baldintzak:**
+
 - Erabili pasahitz maisu sendoa (gutxienez 16 karaktere)
 - Gaitu Faktore Anitzeko Autentifikazioa pasahitz kudeatzailean
 - Ez partekatu pasahitz maisua
@@ -254,6 +278,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 - Kendu kredentzial zaharrak/erabili gabeak
 
 **Debekatuta:**
+
 - Nabigatzailean integratutako pasahitz kudeatzaileak (Chrome, Firefox "Gorde Pasahitza") laneko kontuetarako
 - Pasahitz kudeatzaile pertsonalak/kontsumo mailakoak laneko pasahitzetarako
 - Enkriptatu gabeko pasahitz biltegiratzea (testu fitxategiak, kalkulu orriak)
@@ -261,12 +286,14 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 ### 5.3 Pasahitz Aldaketak
 
 **Errutina Aldaketak:**
+
 - Erabiltzaile estandarrak: 90 egunero (iraungitze automatikoa)
 - Administratzaileak: 60 egunero
 - Zerbitzu kontuak: 365 egunero (edo bideragarria denean)
 - MFA duten erabiltzaileak: 180 egunero (luzatua MFA babesagatik)
 
 **Behartutako Aldaketak Beharrezkoak Dira:**
+
 - Hasierako/aldi baterako pasahitza (lehen saio-hasiera)
 - IT-k pasahitza berrezartzea
 - Arriskua susmatzen edo baieztatzen denean
@@ -275,6 +302,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 - Baimen luze baten ondoren (>90 egun)
 
 **Aldaketa Prozesua:**
+
 - Erabiltzaileei jakinarazten zaie iraungitze data baino 14 egun lehenago (eguneroko oroigarriak azken 3 egunetan)
 - Auto-zerbitzu pasahitz aldaketa atariaren bidez edo Ctrl+Alt+Del → Aldatu Pasahitza
 - Helpdesk laguntza eskuragarri arazoetarako
@@ -283,14 +311,16 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 ### 5.4 Pasahitz Berrezartzeak
 
 **Auto-Zerbitzu Berrezarpena:**
-- Eskuragarri hemen: https://password.zabalagailetak.com
+
+- Eskuragarri hemen: <https://password.zabalagailetak.com>
 - Faktore anitzeko autentifikazioa behar du:
   - Segurtasun galderak (kontu sorreran ezarriak)
   - Email egiaztapena (erregistratutako emailera)
   - SMS kodea (erregistratutako mugikorrera)
 
 **Helpdesk Berrezarpena:**
-- Kontaktatu IT helpdesk: helpdesk@zabalagailetak.com | +34 XXX XXX XXX
+
+- Kontaktatu IT helpdesk: <helpdesk@zabalagailetak.com> | +34 XXX XXX XXX
 - Identitate egiaztapena beharrezkoa:
   - Langile IDa
   - Informazio pertsonalaren egiaztapena
@@ -299,6 +329,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 - Berrezarpena erregistratu eta monitorizatzen da
 
 **Segurtasun Neurriak:**
+
 - Pasahitz berrezartze estekak ordu 1 igaro ondoren iraungitzen dira
 - Berrezartze esteka erabilera bakarrekoa da
 - Kontu blokeoaren berrezarpenak onarpena behar du (errepikatutako saio-hasiera okerren ondoren)
@@ -311,6 +342,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 ### 6.1 MFA Baldintzak
 
 **MFA Derrigorrezkoa da:**
+
 - Urruneko sarbiderako (VPN)
 - Administrazio eta pribilegiatutako kontuetarako
 - Oso Konfidentziala den datuak dituzten sistemetarako sarbidea:
@@ -324,11 +356,13 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 - Barne sistemetarako kanpo sarbidea
 
 **MFA Gomendagarria da:**
+
 - Erabiltzaile kontu guztietarako (lan-estazio estandarrak)
 - Enpresako emailerako gailu mugikorren sarbidea
 - Bezero edo langile PIIra sartzen den edozein sistema
 
 **MFA Abantailak:**
+
 - Pasahitzak bakarrik zaurgarriak dira (phishing, lapurreta, asmatzea)
 - MFAk bigarren egiaztapen faktorea gehitzen du (duzun zerbait)
 - Kontu arriskua %99,9 murrizten du
@@ -363,6 +397,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
    - Ez onartua administrazio kontuetarako
 
 **Debekatutako MFA Metodoak:**
+
 - Email bidezko kodeak (autentifikazio nagusiaren kanal berean)
 - Ahots deiak (gizarte ingeniaritza arriskua)
 - Egiaztatu gabeko mugikor aplikazioak
@@ -370,17 +405,20 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 ### 6.3 MFA Konfigurazioa eta Babeskopia
 
 **Hasierako Konfigurazioa:**
+
 - Erabiltzaile guztiek MFAn izena eman behar dute kontua sortu eta 7 eguneko epean
 - IT-k konfigurazio argibideak eta laguntza ematen ditu
 - Probatu MFA saio-hasiera ordezko sarbidea desgaitu aurretik
 
 **Babeskopia Metodoak:**
+
 - Eman izena gutxienez bi MFA gailutan (nagusia eta babeskopia)
 - Adibideak: Autentifikatzaile aplikazioa telefonoan + YubiKey
 - Gorde babeskopia kodeak leku seguruan (pasahitz kudeatzailea)
 - Erregistratu babeskopia telefono zenbakia
 
 **Galdutako edo Lapurtutako MFA Gailua:**
+
 - Jakinarazi berehala IT helpdesk-ari
 - Erabili babeskopia MFA metodoa kontuetara sartzeko
 - IT-k aldi baterako MFA desgaitu dezake kontua berreskuratzeko (egiaztapenarekin)
@@ -393,21 +431,25 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 ### 7.1 Kontu Blokeo Politika
 
 **Kontu Estandarrak:**
+
 - **Huts Egindako Saio-hasiera Muga:** 5 saiakera oker
 - **Blokeo Iraupena:** 30 minutu (desblokeo automatikoa)
 - **Eskuzko Desblokeoa:** IT helpdesk (identitate egiaztapenarekin)
 
 **Administrazio Kontuak:**
+
 - **Huts Egindako Saio-hasiera Muga:** 3 saiakera oker
 - **Blokeo Iraupena:** 1 ordu (desblokeo automatikoa)
 - **Eskuzko Desblokeoa:** CISOren onarpena beharrezkoa
 
 **Arrazoibidea:**
+
 - Indar gordin bidezko pasahitz asmatzea prebenitzen du
 - Segurtasuna eta erabilgarritasuna orekatzen ditu
 - Blokeo gertaera guztiak erregistratzen ditu monitorizaziorako
 
 **Blokeatuta Bada:**
+
 1. Itxaron desblokeo automatikoa (30 edo 60 minutu)
 2. EDO jarri harremanetan IT helpdesk-arekin identitate egiaztapenerako eta eskuzko desblokeorako
 3. Egiaztatu erabiltzaile-izen eta pasahitz zuzena erabiltzen ari zarela
@@ -417,6 +459,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 ### 7.2 Pasahitz Erasoak eta Detekzioa
 
 **Ohiko Pasahitz Eraso Motak:**
+
 - **Indar Gordina (Brute Force):** Konbinazio posible guztiak probatzea (konplexutasuna + blokeoa bidez arinduta)
 - **Hiztegi Erasoa:** Hitz eta pasahitz arruntak probatzea (konplexutasuna bidez arinduta)
 - **Kredentzial Stuffing-a:** Beste urraketa batzuetatik filtratutako pasahitzak erabiltzea (pasahitz bakarrak + MFA bidez arinduta)
@@ -425,6 +468,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 - **Gizarte Ingeniaritza:** Erabiltzaileak manipulatzea pasahitzak parteka ditzaten (prestakuntza + "inoiz ez partekatu" politika bidez arinduta)
 
 **Detekzioa eta Erantzuna:**
+
 - SIEM-ek honako hauek monitorizatzen ditu:
   - Huts egindako saio-hasiera saiakera anitz
   - Ezinezko bidaia (distantzia luzeko kokapenetatik denbora laburrean saioa hastea)
@@ -442,11 +486,13 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 ### 8.1 OT Sistemak (PLCak, SCADA, HMI)
 
 **Erronkak:**
+
 - Pasahitz gaitasun mugatuak dituzten sistema zaharrak
 - Erraz berrabiarazi ezin diren sistemak (produkzio eragina)
 - Tokiko kontsola sarbidea soilik (sare autentifikaziorik ez)
 
 **Baldintzak:**
+
 - **Gutxieneko Luzera:** 12 karaktere (sistemak onartzen badu)
 - **Konplexutasuna:** Ahalik eta handiena sistemaren mugen barruan
 - **Aldaketa Maiztasuna:** 180 egun (edo saltzailearen gomendioen arabera)
@@ -456,6 +502,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 - **Monitorizazioa:** OT autentifikazio guztiak erregistratuta
 
 **Prozedura:**
+
 - OT pasahitz aldaketak mantentze leihoekin koordinatuta
 - Bi langile baimendu aldaketetarako (kontrol bikoitza)
 - Probatu autentifikazioa aldaketen aurretik eta ondoren
@@ -465,10 +512,12 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 ### 8.2 Larrialdi Sarbidea ("Kristala Apurtu")
 
 **Helburua:**
+
 - Larrialdiko administratzaile sarbidea autentifikazio nagusia erabilgarri ez dagoenean
 - Azken aukera hondamendi berreskuratze edo intzidente larri batean
 
 **Kontrolak:**
+
 - Pasahitza gutun-azal batean zigilatuta, kutxa gotor fisiko batean gordeta
 - Kutxa gotorrak bi giltza behar ditu (CEO eta CISO)
 - Gutun-azalaren zigilua dokumentatutako larrialdian bakarrik hausten da
@@ -477,6 +526,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 - Intzidente txostena beharrezkoa da erabilera azaltzeko
 
 **"Kristala Apurtu" Eszenatokiak:**
+
 - Autentifikazio sistema nagusiaren hutsegitea (Active Directory erorita)
 - Administratzaile kontu blokeoa intzidente kritikoan zehar
 - Hondamendi berreskuratzea (administratzaile guztiak ez daude eskuragarri)
@@ -485,6 +535,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 ### 8.3 API Gakoak eta Aplikazio Sekretuak
 
 **Ez Dira Pasahitz Tradizionalak Baina Antzeko Babesa Behar Dute:**
+
 - **API Gakoak:** Aplikazioen arteko komunikaziorako kredentzialak
 - **Datu-base Konexio Kateak:** Erabiltzaile-izena/pasahitza barne
 - **Enkriptatze Gakoak:** Enkriptatutako datuak babesteko
@@ -492,6 +543,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 - **Ziurtagiriak eta Gako Pribatuak:** TLS/SSL ziurtagiriak
 
 **Baldintzak:**
+
 - **Sorkuntza:** Kriptografikoki ausazkoa (gutxienez 32 karaktere API gakoetarako)
 - **Biltegiratzea:** Kutxa enkriptatua edo sekretuen kudeaketa sistema (HashiCorp Vault, AWS Secrets Manager, Azure Key Vault)
 - **Transmisioa:** Kanal enkriptatuak soilik (TLS, SSH)
@@ -501,6 +553,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 - **Baliogabetzea:** Berehala baliogabetu arriskuan badaude
 
 **Debekatuta:**
+
 - Sekretuak iturburu kodean hardcodeatzea
 - Sekretuak bertsio kontrolean gordetzea (Git biltegiak)
 - Sekretuak posta elektronikoz edo txat bidez bidaltzea
@@ -513,6 +566,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 ### 9.1 Kontrol Teknikoak
 
 **Active Directory / LDAP:**
+
 - Pasahitz konplexutasuna Talde Politikaren bidez behartuta
 - Pasahitz historia (azken 12 pasahitzak)
 - Gutxieneko/gehieneko pasahitz adina
@@ -520,6 +574,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 - Fine-Grained Pasahitz Politika kontu pribilegiatuetarako
 
 **Web Aplikazioak:**
+
 - Pasahitz indar neurgailua (ikusizko iritzia sortzean)
 - Konplexutasun balidazioa (frontend eta backend)
 - Pasahitz urraketa egiaztapena (ezagunak diren urratutako pasahitzen datu-basearen aurka konparatu - Have I Been Pwned API)
@@ -527,6 +582,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 - MFA betearaztea ekintza sentikorretarako
 
 **Pasahitz Hashing-a:**
+
 - Pasahitzak inoiz ez dira testu lauan gordetzen
 - Hashing algoritmoak:
   - **Hobetsia:** bcrypt (kostu faktorea 12+), Argon2id
@@ -536,6 +592,7 @@ Politika hau betetzea derrigorrezkoa da. Urraketek honakoak ekar ditzakete:
 - Piperra (sekretu globala) babes gehigarrirako
 
 **Inplementazio Erreferentzia:**
+
 ```javascript
 // User ereduaren adibidea (ikus src/api/models/User.js)
 const bcrypt = require('bcryptjs');
@@ -557,6 +614,7 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
 ### 9.2 Monitorizazioa eta Auditoretza
 
 **Pasahitzekin Lotutako Gertaerak Erregistratuta:**
+
 - Pasahitz aldaketak (arrakastatsuak eta huts egindakoak)
 - Pasahitz berrezartzeak (auto-zerbitzua eta helpdesk)
 - Huts egindako saio-hasiera saiakerak
@@ -566,6 +624,7 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
 - Pasahitz politika urraketak
 
 **SIEM Alertak:**
+
 - Huts egindako saio-hasiera anitz (balizko indar gordina)
 - Kontu blokeo anitz (balizko pasahitz spray erasoa)
 - Ezohiko kokapen edo gailutik saioa hastea
@@ -574,6 +633,7 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
 - Erabiltzaile anitz aldi berean blokeatuta (balizko erasoa)
 
 **Ohiko Berrikuspenak:**
+
 - Hiruhileko sarbide berrikuspena (egiaztatu erabiltzaileek oraindik sarbidea behar duten)
 - Hileroko kontu pribilegiatuen berrikuspena (egiaztatu admin sarbidea oraindik beharrezkoa den)
 - Berehalako berrikuspena segurtasun intzidenteen ondoren
@@ -586,6 +646,7 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
 ### 10.1 Prestakuntza
 
 **Langile Berriak:**
+
 - Pasahitz politikaren ikuspegi orokorra onboarding-ean (30 minutu)
 - Pasahitz sendoak nola sortu
 - Pasahitz kudeatzailearen konfigurazioa eta erabilera
@@ -593,12 +654,14 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
 - Phishing kontzientziazioa (pasahitz lapurreta)
 
 **Langile Guztiak (Urteroko Freskatzea):**
+
 - Pasahitz jardunbide egokien oroigarria
 - Azken mehatxuak (kredentzial stuffing-a, phishing joerak)
 - MFA garrantzia
 - Intzidente kasu azterketak (anonimizatuak)
 
 **Prestakuntza Espezializatua:**
+
 - Administratzaileak: Pribilegiatutako sarbide kudeaketa, kristala apurtu prozedurak
 - Garatzaileak: Sekretuen kudeaketa, pasahitz biltegiratze segurua
 - Kudeatzaileak: Betearazpen erantzukizunak, jarduera susmagarrien ezagutza
@@ -606,6 +669,7 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
 ### 10.2 Kontzientziazio Materialak
 
 **Eskuragarri dauden Baliabideak:**
+
 - Pasahitz politika erreferentzia azkarreko gida (orrialde bateko PDF)
 - Pasahitz sendoak sortzeko gida
 - Pasahitz kudeatzailearen konfigurazio bideoak
@@ -614,6 +678,7 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
 - Segurtasun kontzientziazio kartelak (atseden gelak, lan-estazioetatik gertu)
 
 **Komunikazio Kanalak:**
+
 - Hileroko segurtasun buletina
 - Intranet segurtasun orria
 - Email oroigarriak pasahitza iraungitze aurretik
@@ -627,12 +692,14 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
 ### 11.1 Salbuespen Prozesua
 
 **Noiz Eman Daitezkeen Salbuespenak:**
+
 - Sistema zaharren muga teknikoak
 - Saltzaileak eskatutako pasahitz formatuak
 - Betetze baldintza zehatzak
 - Larrialdiko negozio beharra
 
 **Salbuespen Eskaera:**
+
 1. Bidali idatzizko eskaera CISOri
 2. Sartu:
    - Kaltetutako sistema/kontua
@@ -646,6 +713,7 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
 5. Onartzen bada: Konpentsazio kontrolak inplementatu, berrikuspena programatu
 
 **Konpentsazio Kontrolak:**
+
 - Monitorizazio hobetua
 - Sarbide mugatua (IP zerrenda zuria, sare segmentazioa)
 - Autentifikazio faktore gehigarria
@@ -654,6 +722,7 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
 - Aldizkako auditoriak
 
 **Adibidezko Salbuespenak:**
+
 - Gehienez 8 karaktereko pasahitzak onartzen dituen OT sistema → Konpentsatu sarbide fisiko kontrolatua + sare isolatuarekin
 - Pasahitz estatikoa behar duen zerbitzu kontua → Konpentsatu sekretuen kutxarekin + erregistro hobetuarekin
 - MFA euskarririk gabeko aplikazio zaharra → Konpentsatu IP zerrenda zuriarekin + maizko pasahitz aldaketekin
@@ -675,17 +744,20 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
 ### 12.1 Ohiko Urraketak
 
 **Larritasuna: Baxua (Abisua)**
+
 - Pasahitz ahula konplexutasuna betetzen ez duena (sistemak detektatua)
 - Pasahitza idaztea (leku seguruan ez)
 - Pasahitz bera erabiltzea barne eta kanpo kontuetarako (urraketa monitorizazio bidez detektatua)
 
 **Larritasuna: Ertaina (Idatzizko Ohartarazpena, Berriro Prestatzea)**
+
 - Pasahitza lankidearekin partekatzea (nahiz eta asmo onekin izan)
 - Pasahitz zaharrak berrerabiltzea (historia saihestu nahian)
 - Pasahitza ez aldatzea ustezko konpromisoaren ondoren
 - Pasahitzak enkriptatu gabeko fitxategian gordetzea
 
 **Larritasuna: Handia (Etenaldia, Kaleratze Posiblea)**
+
 - Administrazio pasahitza partekatzea
 - Nahita pasahitz ahula erabiltzea erosotasunagatik abisu anitzen ondoren
 - Ezaguna den konpromisoa ez jakinaraztea
@@ -694,6 +766,7 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
 ### 12.2 Konponketa
 
 **Berehalako Ekintzak:**
+
 - Pasahitza berrezartzea behartu
 - Arriskuan dagoen kontua eten
 - Kontu jarduera berrikusi (baimenik gabeko ekintzak identifikatu)
@@ -701,6 +774,7 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
 - Diziplina prozesua HR politikaren arabera
 
 **Jarraipena:**
+
 - Derrigorrezko berriro prestatzea
 - Monitorizazio hobetua (90 egun)
 - Zuzendaritzari txostena
@@ -711,12 +785,14 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
 ## 13. Lotutako Politikak eta Estandarrak
 
 **Barne Dokumentuak:**
+
 - Informazioaren Segurtasun Politika (ISP-001)
 - Erabilera Onargarriaren Politika (AUP-001)
 - Sarbide Kontrol Politika
 - Intzidente Erantzun Prozedura
 
 **Kanpo Estandarrak:**
+
 - ISO/IEC 27001:2022 - A Eranskina 5.17 (Autentifikazio Informazioa)
 - NIST SP 800-63B - Identitate Digitalaren Gidalerroak (Autentifikazioa eta Bizi-zikloaren Kudeaketa)
 - CIS Controls v8 - 6. Kontrola (Sarbide Kontrol Kudeaketa)
@@ -727,6 +803,7 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
 ## 14. Politika Berrikuspena eta Eguneraketak
 
 **Berrikuspen Maiztasuna:** Urtero edo honakoek eraginda:
+
 - Pasahitzekin lotutako segurtasun intzidenteak
 - Mehatxu paisaian aldaketak
 - Teknologia eguneraketak (autentifikazio metodo berriak)
@@ -734,6 +811,7 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
 - Erabiltzaile iritzia eta erabilgarritasun kezkak
 
 **Eguneratze Prozesua:**
+
 1. CISO berrikuspena hasten du
 2. IT, segurtasun talde eta erabiltzaileekin kontsulta
 3. Eguneraketa zirriborroa
@@ -748,16 +826,18 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
 ## 15. Harremanetarako Informazioa
 
 **Galderak edo Arazoak:**
-- **IT Helpdesk:** helpdesk@zabalagailetak.com | +34 XXX XXX XXX
-- **Pasahitz Berrezartzeak:** https://password.zabalagailetak.com
-- **CISO:** ciso@zabalagailetak.com | +34 XXX XXX XXX
-- **Segurtasun Intzidenteak:** security@zabalagailetak.com | +34 XXX XXX XXX (24/7)
+
+- **IT Helpdesk:** <helpdesk@zabalagailetak.com> | +34 XXX XXX XXX
+- **Pasahitz Berrezartzeak:** <https://password.zabalagailetak.com>
+- **CISO:** <ciso@zabalagailetak.com> | +34 XXX XXX XXX
+- **Segurtasun Intzidenteak:** <security@zabalagailetak.com> | +34 XXX XXX XXX (24/7)
 
 ---
 
 ## Eranskina A: Pasahitz Politika Erreferentzia Azkarra
 
-### Erabiltzaile Estandarrentzat:
+### Erabiltzaile Estandarrentzat
+
 - ✅ **Gutxienez 12 karaktere** (luzeagoa hobe!)
 - ✅ **Maiuskula, minuskula, zenbaki eta karaktere berezien nahasketa**
 - ✅ **Pasahitz bakarra sistema bakoitzerako**
@@ -769,7 +849,8 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
 - ❌ **Inoiz ez berrerabili pasahitz zaharrak**
 - ❌ **Inoiz ez erabili informazio pertsonala (izena, jaioteguna)**
 
-### Administratzaileentzat:
+### Administratzaileentzat
+
 - ✅ **Gutxienez 14 karaktere**
 - ✅ **Karaktere mota guztiak beharrezkoak**
 - ✅ **Administrazio kontu bereizia**
@@ -797,7 +878,8 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
 
 ## Eranskina C: Pasahitz Kudeatzailea Konfiguratzeko Gida
 
-### 1Password Konfigurazioa (Gomendatua):
+### 1Password Konfigurazioa (Gomendatua)
+
 1. IT administratzaileak 1Password Business kontua sortzen du zuretzat
 2. Gonbidapen emaila jasotzen duzu
 3. Klikatu estekan eta sortu Pasahitz Maisua:
@@ -813,7 +895,8 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
 6. Gorde pasahitz pertsonalak "Pertsonala" kutxan (pribatua)
 7. Sortu pasahitz sendo berriak laneko pasahitzak aldatzean
 
-### 1Password Erabiliz:
+### 1Password Erabiliz
+
 - **Auto-betetzea:** Nabigatzaile luzapenak saio-hasiera orriak detektatzen ditu, kredentzialak betetzea eskaintzen du
 - **Sortu:** Klikatu "Sortu Pasahitza" kontu berriak sortzean
 - **Segurtasun Egiaztapena:** Pasahitz ahulak, berrerabiliak edo arriskuan daudenak identifikatzen ditu
@@ -823,21 +906,23 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
 
 ## Eranskina D: MFA Izen-emate Argibideak
 
-### Microsoft Authenticator Konfigurazioa:
+### Microsoft Authenticator Konfigurazioa
+
 1. Instalatu Microsoft Authenticator aplikazioa smartphonean:
    - iOS: App Store
    - Android: Google Play Store
 2. Ireki aplikazioa, klikatu "+" kontua gehitzeko
 3. Hautatu "Laneko edo eskolako kontua"
 4. Eskaneatu izen-ematean bistaratutako QR kodea:
-   - Bisitatu https://aka.ms/mfasetup
+   - Bisitatu <https://aka.ms/mfasetup>
    - Edo nabigatu Kontu Ezarpenak → Segurtasun Info → Gehitu Metodoa
 5. Aplikazioak 6 digituko kodea erakusten du (30 segundoro aldatzen da)
 6. Sartu kodea konfigurazioa egiaztatzeko
 7. Gaitu push jakinarazpenak saio-hasiera onarpen errazerako
 8. **GARRANTZITSUA:** Gorde babeskopia kodeak pasahitz kudeatzailean (gailua galtzen bada)
 
-### Babeskopia Metodoak:
+### Babeskopia Metodoak
+
 - Eman izena bigarren gailu batean (tableta, bigarren telefonoa)
 - Gehitu babeskopia telefono zenbakia SMS bidez (azken aukera gisa bakarrik)
 - Inprimatu babeskopia kodeak eta gorde segurtasunez etxean
@@ -850,10 +935,10 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
 
 1. **GELDITU** kontua erabiltzea berehala
 2. **ALDATU** pasahitza berehala:
-   - Auto-zerbitzua: https://password.zabalagailetak.com
+   - Auto-zerbitzua: <https://password.zabalagailetak.com>
    - Edo deitu IT helpdesk-ari: +34 XXX XXX XXX
 3. **JAKINARAZI** segurtasun taldeari:
-   - Emaila: security@zabalagailetak.com
+   - Emaila: <security@zabalagailetak.com>
    - Telefonoa: +34 XXX XXX XXX (24/7)
 4. **EMAN** xehetasunak:
    - Noiz susmatu zenuen arriskua?
@@ -873,6 +958,7 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
    - Eman izena pasahitz kudeatzailean
 
 **Zure pasahitza arriskuan egon daitekeen seinaleak:**
+
 - Azalpenik gabeko kontu blokeoak
 - Saio-hasiera jakinarazpenak ezohiko kokapen edo orduetatik
 - Ezagutzen ez duzun kontu jarduera (bidalitako emailak, sartutako fitxategiak)

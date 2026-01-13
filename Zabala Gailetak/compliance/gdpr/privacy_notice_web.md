@@ -1,4 +1,5 @@
 # Pribatutasun Oharra
+
 ## Zabala Gailetak S.A. - Web Aplikazioa
 
 **Azken Eguneratzea:** 2026ko Urtarrilaren 8a  
@@ -12,21 +13,24 @@
 Ongi etorri Zabala Gailetak S.A.-ra ("gu", "gure" edo "guri"). Zure pribatutasuna eta datu pertsonalak babesteko konpromisoa dugu. Pribatutasun Ohar honek gure webgunea eta zerbitzuak erabiltzen dituzunean zure informazio pertsonala nola biltzen, erabiltzen, partekatzen eta babesten dugun azaltzen du.
 
 **Nor gara:**
+
 - **Enpresa Izena:** Zabala Gailetak S.A.
 - **Jarduera:** Gaileta ekoizpena eta online salmenta
 - **Helbidea:** [Enpresa Helbidea], [Herria, Posta Kodea], Espainia
 - **IFK (CIF):** [IFK Zenbakia]
-- **Webgunea:** www.zabalagailetak.com
-- **Emaila:** info@zabalagailetak.com
+- **Webgunea:** <www.zabalagailetak.com>
+- **Emaila:** <info@zabalagailetak.com>
 - **Telefonoa:** +34 XXX XXX XXX
 
 **Datuen Babeserako Ordezkaria (DBO/DPO):**
+
 - **Izena:** [DBO Izena]
-- **Emaila:** dpo@zabalagailetak.com
+- **Emaila:** <dpo@zabalagailetak.com>
 - **Telefonoa:** +34 XXX XXX XXX
 
 Pribatutasun Ohar hau honako hauei aplikatzen zaie:
-- Gure webgunea (www.zabalagailetak.com)
+
+- Gure webgunea (<www.zabalagailetak.com>)
 - Gure online denda
 - Gure bezeroen kontuak
 - Gure marketin komunikazioak
@@ -42,6 +46,7 @@ Pribatutasun Ohar hau honako hauei aplikatzen zaie:
 
 **Kontu Informazioa:**
 Kontu bat sortzen duzunean, hau biltzen dugu:
+
 - Izen-abizenak
 - Email helbidea
 - Pasahitza (enkriptatuta)
@@ -51,6 +56,7 @@ Kontu bat sortzen duzunean, hau biltzen dugu:
 
 **Eskaera Informazioa:**
 Eskaera bat egiten duzunean, hau biltzen dugu:
+
 - Fakturazio eta bidalketa helbideak
 - Ordainketa informazioa (gure ordainketa hornitzaileak segurtasunez prozesatuta)
 - Eskaera xehetasunak (produktuak, kantitateak, lehentasunak)
@@ -58,12 +64,14 @@ Eskaera bat egiten duzunean, hau biltzen dugu:
 
 **Komunikazio Informazioa:**
 Gurekin harremanetan jartzen zarenean, hau biltzen dugu:
+
 - Izena eta harremanetarako datuak
 - Zure mezuaren edukia
 - Ematen duzun beste edozein informazio
 
 **Marketin Lehentasunak:**
 Marketina jasotzea aukeratzen baduzu:
+
 - Email helbidea
 - Komunikazio lehentasunak
 - Intereseko arloak
@@ -72,6 +80,7 @@ Marketina jasotzea aukeratzen baduzu:
 
 **Informazio Teknikoa:**
 Gure webgunea bisitatzen duzunean, automatikoki biltzen dugu:
+
 - IP helbidea
 - Nabigatzaile mota eta bertsioa
 - Gailu mota eta sistema eragilea
@@ -85,6 +94,7 @@ Cookieak eta antzeko jarraipen teknologiak erabiltzen ditugu. Ikusi gure Cookie 
 
 **Erabilera Informazioa:**
 Gure webgunearekin nola elkarreragiten duzun biltzen dugu:
+
 - Ikusitako produktuak
 - Saskira gehitutako elementuak
 - Bilaketa kontsultak
@@ -94,6 +104,7 @@ Gure webgunearekin nola elkarreragiten duzun biltzen dugu:
 ### 2.3 Hirugarrenengandik Jasotako Informazioa
 
 Informazioa jaso dezakegu hemendik:
+
 - **Ordainketa Prozesatzaileak:** Ordainketa berrespena, iruzurren baheketa emaitzak
 - **Bidalketa Hornitzaileak:** Bidalketa egoera, jarraipen informazioa
 - **Sare Sozialak:** Zure sare sozialetako kontuak konektatzen badituzu (izena, profil argazkia, emaila)
@@ -191,6 +202,7 @@ Ez diegu zure datu pertsonalik saltzen hirugarrenei. Zure datuak behean deskriba
 Datuak gure izenean prozesatzen dituzten konfiantzazko zerbitzu hornitzaileekin partekatzen ditugu:
 
 **Ordainketa Prozesatzaileak:**
+
 - **Nor:** [Ordainketa Prozesatzaile Izena - adib., Stripe, PayPal]
 - **Helburua:** Ordainketak segurtasunez prozesatzea
 - **Partekatutako Datuak:** Txartelaren xehetasunak, fakturazio helbidea, transakzio zenbatekoa
@@ -198,6 +210,7 @@ Datuak gure izenean prozesatzen dituzten konfiantzazko zerbitzu hornitzaileekin 
 - **Bermeak:** PCI DSS betetzea, Datuen Tratamendurako Kontratua indarrean
 
 **Bidalketa eta Banaketa:**
+
 - **Nor:** [Bidalketa Hornitzaile Izena - adib., Correos, SEUR, DHL]
 - **Helburua:** Zure eskaerak entregatzea
 - **Partekatutako Datuak:** Izena, bidalketa helbidea, telefono zenbakia, eskaera xehetasunak
@@ -205,6 +218,7 @@ Datuak gure izenean prozesatzen dituzten konfiantzazko zerbitzu hornitzaileekin 
 - **Bermeak:** Datuen Tratamendurako Kontratua indarrean
 
 **Email eta Komunikazioa:**
+
 - **Nor:** [Email Hornitzailea - adib., Microsoft 365, SendGrid]
 - **Helburua:** Transakzio eta marketin emailak bidaltzea
 - **Partekatutako Datuak:** Email helbidea, izena, komunikazio lehentasunak
@@ -212,6 +226,7 @@ Datuak gure izenean prozesatzen dituzten konfiantzazko zerbitzu hornitzaileekin 
 - **Bermeak:** Datuen Tratamendurako Kontratua indarrean
 
 **Webgune Ostalaritza eta Azpiegitura:**
+
 - **Nor:** Amazon Web Services (AWS)
 - **Helburua:** Gure webgunea eta datu-baseak ostatatzea
 - **Partekatutako Datuak:** Gure plataforman gordetako datu guztiak
@@ -219,6 +234,7 @@ Datuak gure izenean prozesatzen dituzten konfiantzazko zerbitzu hornitzaileekin 
 - **Bermeak:** AWS GDPR betetzea, Datuen Tratamendurako Kontratua
 
 **Analitika:**
+
 - **Nor:** [Analitika Hornitzailea - adib., Google Analytics]
 - **Helburua:** Webgunearen erabilera ulertzea eta esperientzia hobetzea
 - **Partekatutako Datuak:** IP helbidea (anonimizatua), erabilera datuak, gailu informazioa
@@ -226,6 +242,7 @@ Datuak gure izenean prozesatzen dituzten konfiantzazko zerbitzu hornitzaileekin 
 - **Bermeak:** [IP anonimizazioa, Datuen Tratamendurako Kontratua]
 
 Zerbitzu hornitzaile guztiak:
+
 - Kontratuz behartuta daude zure datuak babestera
 - GDPR 28. artikuluaren araberako Datuen Tratamendurako Kontratuek lotuta daude
 - Debekatuta daukate zure datuak beren helburuetarako erabiltzea
@@ -234,6 +251,7 @@ Zerbitzu hornitzaile guztiak:
 ### 5.2 Lege Betekizunak
 
 Legeak eskatzen duenean zure datuak ezagutarazi ditzakegu:
+
 - Lege prozesuak betetzeko (epaitegi aginduak, zitazioak)
 - Gobernu agintariei (zerga agintariak, erregulatzaileak)
 - Legea betearazteko agentziei (ikerketarako beharrezkoa bada)
@@ -259,6 +277,7 @@ Nagusiki Europar Batasunean (EB/EEE) gordetzen eta prozesatzen ditugu zure datua
 [Aplikagarria bada:]
 
 **Amazon Web Services (AWS) - Estatu Batuak:**
+
 - **Bermea:** Klausula Kontraktual Estandarrak (EBko Batzordeak onartuak)
 - **Neurri Gehigarriak:** Enkriptatzea garraioan eta geldirik, sarbide kontrolak
 - **Transferentzia Inpaktu Ebaluazioa:** Schrems II eskakizunen arabera egina
@@ -269,6 +288,7 @@ Nagusiki Europar Batasunean (EB/EEE) gordetzen eta prozesatzen ditugu zure datua
 Une honetan, zure datu pertsonal guztiak EBn gordetzen eta prozesatzen dira (zehazki, Irlandan eta Espainian). Ez dugu daturik transferitzen EB/EEE kanpora.
 
 Etorkizunean datuak nazioartean transferitu behar baditugu:
+
 - Berme egokiak erabiliko ditugu (Klausula Kontraktual Estandarrak, Egokitasun Erabakiak)
 - Transferentzia Inpaktu Ebaluazioak egingo ditugu
 - Pribatutasun Ohar hau eguneratuko dugu
@@ -280,6 +300,7 @@ Etorkizunean datuak nazioartean transferitu behar baditugu:
 Segurtasuna serio hartzen dugu eta neurri tekniko eta antolakuntzako egokiak inplementatzen ditugu zure datu pertsonalak babesteko:
 
 **Neurri Teknikoak:**
+
 - **Enkriptatzea:** Datuak enkriptatuta garraioan (TLS 1.3) eta geldirik (AES-256)
 - **Sarbide Kontrola:** Rol-etan oinarritutako sarbidea, pribilegio gutxieneko printzipioa
 - **Autentikazioa:** Pasahitzak bcrypt erabiliz hash-eatuak (12 erronda), faktore anitzeko autentikazioa admin kontuentzako
@@ -288,6 +309,7 @@ Segurtasuna serio hartzen dugu eta neurri tekniko eta antolakuntzako egokiak inp
 - **Ohiko Probak:** Ahultasun eskaneatzea eta intrusio probak
 
 **Antolakuntza Neurriak:**
+
 - **Politikak:** Informazio segurtasuneko politika integralak
 - **Prestakuntza:** Langileentzako ohiko segurtasun kontzientziazio prestakuntza
 - **Sarbide Kudeaketa:** Datu pertsonaletara nork sarbidea duen kontrol zorrotzak
@@ -295,11 +317,12 @@ Segurtasuna serio hartzen dugu eta neurri tekniko eta antolakuntzako egokiak inp
 - **Hornitzaile Kudeaketa:** Segurtasun eskakizunak hirugarren prozesatzaile guztientzat
 
 **Zure Segurtasuna:**
+
 - Aukeratu pasahitz sendo eta bakarra zure konturako
 - Ez partekatu zure pasahitza inorekin
 - Gaitu faktore anitzeko autentikazioa (eskuragarri badago)
 - Itxi saioa gailu partekatu edo publikoak erabiltzean
-- Eman jarduera susmagarrien berri berehala security@zabalagailetak.com helbidera
+- Eman jarduera susmagarrien berri berehala <security@zabalagailetak.com> helbidera
 
 **Sistemarik Ez Da %100 Segurua:** Industriako estandarren araberako segurtasun neurriak inplementatzen baditugu ere, sistemarik ezin da bermatu segurtasun absolutua. Zuri eragiten dizun datu-urraketa bat aurkitzen badugu, legeak agintzen duen moduan jakinaraziko dizugu.
 
@@ -323,6 +346,7 @@ Zure datu pertsonalak Pribatutasun Ohar honetan azaldutako helburuetarako edo le
 | **Cookieak** | Ikusi Cookie Politika | Cookie motaren arabera aldatzen da |
 
 **Atxikipen Epearen Ondoren:**
+
 - Datuak segurtasunez ezabatzen edo anonimizatzen dira
 - Datu anonimizatuak (zuek identifikatu ezin zaituztenak) estatistika helburuetarako mugarik gabe gorde daitezke
 
@@ -340,11 +364,12 @@ GDPRren arabera, honako eskubide hauek dituzu zure datu pertsonalei dagokienez:
 ### 9.1 Sartzeko Eskubidea (15. artikulua)
 
 Eskubidea duzu:
+
 - Zure datuak tratatzen ari garen jakiteko
 - Zure datu pertsonalen kopia bat jasotzeko
 - Zure datuak nola erabiltzen ditugun jakiteko informazioa jasotzeko
 
-**Nola Erabili:** Bidali emaila dpo@zabalagailetak.com helbidera edo erabili gure online inprimakia hemen: www.zabalagailetak.com/privacy/data-request
+**Nola Erabili:** Bidali emaila <dpo@zabalagailetak.com> helbidera edo erabili gure online inprimakia hemen: <www.zabalagailetak.com/privacy/data-request>
 
 **Erantzun Denbora:** Hilabete 1eko epean (3 hilabetera luza daiteke eskaera konplexuetarako)
 
@@ -355,8 +380,9 @@ Eskubidea duzu:
 Datu pertsonal okerrak edo osatu gabeak zuzentzeko eskubidea duzu.
 
 **Nola Erabili:**
+
 - Hasi saioa zure kontuan eta eguneratu zure informazioa
-- Bidali emaila dpo@zabalagailetak.com helbidera
+- Bidali emaila <dpo@zabalagailetak.com> helbidera
 - Jarri harremanetan bezeroarentzako arretarekin
 
 **Erantzun Denbora:** Hilabete 1eko epean
@@ -364,6 +390,7 @@ Datu pertsonal okerrak edo osatu gabeak zuzentzeko eskubidea duzu.
 ### 9.3 Ezabatzeko Eskubidea / "Ahaztua Izateko Eskubidea" (17. artikulua)
 
 Zure datu pertsonalak ezabatzeko eskatzeko eskubidea duzu honako kasuetan:
+
 - Datuak jada ez dira beharrezkoak jatorrizko helbururako
 - Baimena kentzen duzunean (baimena oinarri juridikoa denean)
 - Tratamenduaren aurka egiten duzunean eta ez dagoenean interes legitimo nagusirik
@@ -371,12 +398,14 @@ Zure datu pertsonalak ezabatzeko eskatzeko eskubidea duzu honako kasuetan:
 - Lege obligazioak ezabatzea eskatzen duenean
 
 **Salbuespenak:** Ezabatzea ukatu dezakegu datuak behar baditugu honakoetarako:
+
 - Lege obligazioak (adib., 7 urteko kontabilitate erregistro atxikipena)
 - Lege erreklamazioak (adib., berme edo kontratu gatazkak)
 - Beste lege arrazoi batzuk
 
 **Nola Erabili:**
-- Bidali emaila dpo@zabalagailetak.com helbidera zure ezabatze eskaerarekin
+
+- Bidali emaila <dpo@zabalagailetak.com> helbidera zure ezabatze eskaerarekin
 - Zehaztu zein datu ezabatu nahi dituzun
 - Jakinaraziko dizugu zein datu gorde behar dugun eta zergatik
 
@@ -385,6 +414,7 @@ Zure datu pertsonalak ezabatzeko eskatzeko eskubidea duzu honako kasuetan:
 ### 9.4 Tratamendua Mugatzeko Eskubidea (18. artikulua)
 
 Zure datuak nola erabiltzen ditugun mugatzeko eskubidea duzu honako kasuetan:
+
 - Datuen zehaztasuna aurkaratzen duzunean
 - Tratamendua legez kanpokoa da baina ez duzu ezabatzea nahi
 - Guk jada ez ditugu datuak behar baina zuk behar dituzu lege erreklamazioetarako
@@ -392,7 +422,7 @@ Zure datuak nola erabiltzen ditugun mugatzeko eskubidea duzu honako kasuetan:
 
 **Eragina:** Datuak gordeko ditugu baina ez ditugu erabiliko (zure baimenarekin edo lege erreklamazioetarako izan ezik).
 
-**Nola Erabili:** Bidali emaila dpo@zabalagailetak.com helbidera
+**Nola Erabili:** Bidali emaila <dpo@zabalagailetak.com> helbidera
 
 **Erantzun Denbora:** Hilabete 1eko epean
 
@@ -401,10 +431,11 @@ Zure datuak nola erabiltzen ditugun mugatzeko eskubidea duzu honako kasuetan:
 Zure datuak formatu egituratu, erabilera arrunteko eta irakurgarrian (adib., JSON, CSV) jasotzeko eta beste zerbitzu batera transferitzeko eskubidea duzu.
 
 **Baldintzak:** Eskubide hau aplikatzen da:
+
 - Tratamendua baimenean edo kontratuan oinarritzen denean
 - Tratamendua automatizatua denean
 
-**Nola Erabili:** Bidali emaila dpo@zabalagailetak.com helbidera datu eramangarritasuna eskatuz
+**Nola Erabili:** Bidali emaila <dpo@zabalagailetak.com> helbidera datu eramangarritasuna eskatuz
 
 **Erantzun Denbora:** Hilabete 1eko epean
 
@@ -413,13 +444,15 @@ Zure datuak formatu egituratu, erabilera arrunteko eta irakurgarrian (adib., JSO
 ### 9.6 Aurka Egiteko Eskubidea (21. artikulua)
 
 **Marketinaren Aurka Egin (Eskubide Absolutua):**
+
 - Marketin komunikazioen aurka egin dezakezu edozein unetan
-- **Nola:** Klikatu "harpidetza kendu" (unsubscribe) edozein marketin email-etan, edo bidali emaila dpo@zabalagailetak.com helbidera
+- **Nola:** Klikatu "harpidetza kendu" (unsubscribe) edozein marketin email-etan, edo bidali emaila <dpo@zabalagailetak.com> helbidera
 - **Eragina:** Berehala utziko dugu marketina bidaltzeari
 
 **Beste Tratamendu Batzuen Aurka Egin (Interes Legitimoetan Oinarrituta):**
+
 - Gure interes legitimoetan oinarritutako tratamenduaren aurka egin dezakezu (adib., analitika, iruzur prebentzioa)
-- **Nola:** Bidali emaila dpo@zabalagailetak.com helbidera zure egoera zehatza azalduz
+- **Nola:** Bidali emaila <dpo@zabalagailetak.com> helbidera zure egoera zehatza azalduz
 - **Eragina:** Zure aurka egitea gure oinarri legitimoen aurka ebaluatuko dugu eta hilabete 1eko epean erantzungo dugu
 
 ### 9.7 Erabaki Automatizatuekin Lotutako Eskubideak (22. artikulua)
@@ -435,9 +468,10 @@ Hau aldatzen bada, ohar hau eguneratuko dugu eta berme egokiak emango ditugu (gi
 Zure datuak baimenean oinarrituta tratatzen ditugunean, baimena edozein unetan kendu dezakezu.
 
 **Nola Kendu:**
+
 - **Marketin Emailak:** Klikatu "harpidetza kendu" edozein email-etan
 - **Kontu Ezarpenak:** Eguneratu lehentasunak zure kontu panelean
-- **Emaila:** dpo@zabalagailetak.com
+- **Emaila:** <dpo@zabalagailetak.com>
 
 **Eragina:** Baimena kentzeak ez du eragiten kendu aurreko tratamenduaren zilegitasunean.
 
@@ -446,22 +480,25 @@ Zure datuak baimenean oinarrituta tratatzen ditugunean, baimena edozein unetan k
 Zure datuak nola kudeatzen ditugun ez bazaude pozik, ikuskapen agintaritza baten aurrean kexa jartzeko eskubidea duzu:
 
 **Datuen Babeserako Espainiako Bulegoa (AEPD):**
-- **Webgunea:** www.aepd.es
+
+- **Webgunea:** <www.aepd.es>
 - **Telefonoa:** +34 901 100 099
 - **Helbidea:** C/ Jorge Juan, 6, 28001 Madril, Espainia
-- **Online Kexa:** https://sedeagpd.gob.es
+- **Online Kexa:** <https://sedeagpd.gob.es>
 
-Gurekin harremanetan jartzea gomendatzen dizugu lehenik (dpo@zabalagailetak.com) zure kezka konpontzen saiatzeko.
+Gurekin harremanetan jartzea gomendatzen dizugu lehenik (<dpo@zabalagailetak.com>) zure kezka konpontzen saiatzeko.
 
 ### 9.10 Nola Erabili Zure Eskubideak
 
 **Harremanetarako Metodoak:**
-- **Emaila:** dpo@zabalagailetak.com (lehentasunezkoa)
-- **Web Inprimakia:** www.zabalagailetak.com/privacy/data-request
+
+- **Emaila:** <dpo@zabalagailetak.com> (lehentasunezkoa)
+- **Web Inprimakia:** <www.zabalagailetak.com/privacy/data-request>
 - **Posta:** Datuen Babeserako Ordezkaria, Zabala Gailetak S.A., [Helbidea], [Herria, Posta Kodea], Espainia
 - **Telefonoa:** +34 XXX XXX XXX
 
 **Zer Sartu:**
+
 - Zure izen-abizenak
 - Kontuaren email helbidea (aplikagarria bada)
 - Erabili nahi duzun eskubide zehatza
@@ -471,10 +508,12 @@ Gurekin harremanetan jartzea gomendatzen dizugu lehenik (dpo@zabalagailetak.com)
 Zure segurtasunerako, zure identitatea egiaztatzeko eska diezazukegu eskaerak bete aurretik.
 
 **Erantzun Denbora:**
+
 - Estandarra: Hilabete 1eko epean
 - Luzatua (eskaera konplexuak): 3 hilabeteko epean (luzapena beharrezkoa bada jakinaraziko dizugu)
 
 **Kostua:**
+
 - Doan (kasu gehienetan)
 - Arrazoizko tarifa bat kobratu dezakegu nabarmenki oinarrigabeak edo gehiegizkoak diren eskaerengatik
 
@@ -487,6 +526,7 @@ Gure webgunea eta zerbitzuak ez daude 16 urtetik beherako haurrentzat zuzenduta.
 **Ez dugu jakinaren gainean 16 urtetik beherako haurren datu pertsonalik biltzen.**
 
 16 urte baino gutxiago badituzu, mesedez ez:
+
 - Sortu konturik
 - Egin eskaerarik
 - Eman informazio pertsonalik
@@ -495,7 +535,7 @@ Gure webgunea eta zerbitzuak ez daude 16 urtetik beherako haurrentzat zuzenduta.
 Gurasoen baimenik gabe 16 urtetik beherako haur baten datuak bildu ditugula aurkitzen badugu, berehala ezabatuko ditugu.
 
 **Gurasoak/Tutoreak:**
-Zure seme-alabak datu pertsonalak eman dizkigula uste baduzu, jarri gurekin harremanetan dpo@zabalagailetak.com helbidean eta ezabatu egingo ditugu.
+Zure seme-alabak datu pertsonalak eman dizkigula uste baduzu, jarri gurekin harremanetan <dpo@zabalagailetak.com> helbidean eta ezabatu egingo ditugu.
 
 ---
 
@@ -504,12 +544,14 @@ Zure seme-alabak datu pertsonalak eman dizkigula uste baduzu, jarri gurekin harr
 Cookieak eta antzeko teknologiak erabiltzen ditugu zure esperientzia hobetzeko eta webgunearen erabilera ulertzeko.
 
 **Cookie Motak:**
+
 - **Guztiz Beharrezkoak:** Webgunearen funtzionalitaterako ezinbestekoak (ezin dira desgaitu)
 - **Errendimendua/Analitika:** Erabilera ulertzen eta webgunea hobetzen laguntzen digute
 - **Funtzionalak:** Zure lehentasunak gogoratzen dituzte
 - **Marketina/Publizitatea:** Iragarki garrantzitsuak eskaintzen dituzte (baimena behar dute)
 
 **Zure Aukerak:**
+
 - **Cookie Baimen Bannerra:** Kudeatu zure lehentasunak lehen aldiz bisitatzean
 - **Cookie Ezarpenak:** Eguneratu lehentasunak edozein unetan gure Cookie Ezarpenak estekaren bidez (orri-oinean)
 - **Nabigatzaile Ezarpenak:** Desgaitu cookieak zure nabigatzailean (webgunearen funtzionalitatean eragina izan dezake)
@@ -523,6 +565,7 @@ Cookieak eta antzeko teknologiak erabiltzen ditugu zure esperientzia hobetzeko e
 Gure webguneak hirugarrenen webguneetarako estekak izan ditzake (sare sozialak, bazkideak, ordainketa prozesatzaileak).
 
 **Garrantzitsua:**
+
 - Ez gara hirugarrenen webguneen pribatutasun praktiken erantzule
 - Hirugarrenen guneek beren pribatutasun politikak dituzte
 - Beren pribatutasun politikak irakurtzea gomendatzen dizugu datu pertsonalak eman aurretik
@@ -536,6 +579,7 @@ Gure webguneak hirugarrenen webguneetarako estekak izan ditzake (sare sozialak, 
 Pribatutasun Ohar hau noizean behin eguneratu dezakegu gure praktiketan, teknologian, lege betekizunetan edo beste faktore batzuetan izandako aldaketak islatzeko.
 
 **Aldaketen Jakinarazpena:**
+
 - **Aldaketa Materialak:** Email bidez edo webguneko ohar nabarmen baten bidez jakinaraziko dizugu
 - **Aldaketa Txikiak:** Eguneratutako Pribatutasun Oharra argitaratuko da "Azken Eguneratzea" data berriarekin
 
@@ -546,7 +590,7 @@ Aldaketen ondoren gure webgunea erabiltzen jarraitzeak eguneratutako Pribatutasu
 Pribatutasun Ohar hau aldizka berrikustea gomendatzen dizugu.
 
 **Aurreko Bertsioak:**
-Eskuragarri dpo@zabalagailetak.com helbidean eskatuta.
+Eskuragarri <dpo@zabalagailetak.com> helbidean eskatuta.
 
 ---
 
@@ -555,22 +599,26 @@ Eskuragarri dpo@zabalagailetak.com helbidean eskatuta.
 Pribatutasun Ohar honi edo gure datu praktikei buruzko galdera, kezka edo eskaerarik baduzu, jarri gurekin harremanetan:
 
 **Datuen Babeserako Ordezkaria (DBO/DPO):**
-- **Emaila:** dpo@zabalagailetak.com
+
+- **Emaila:** <dpo@zabalagailetak.com>
 - **Telefonoa:** +34 XXX XXX XXX
 - **Posta:** Datuen Babeserako Ordezkaria, Zabala Gailetak S.A., [Helbidea], [Herria, Posta Kodea], Espainia
 
 **Kontsulta Orokorrak:**
-- **Emaila:** info@zabalagailetak.com
+
+- **Emaila:** <info@zabalagailetak.com>
 - **Telefonoa:** +34 XXX XXX XXX
-- **Webgunea:** www.zabalagailetak.com
+- **Webgunea:** <www.zabalagailetak.com>
 
 **Bezeroarentzako Arreta:**
-- **Emaila:** support@zabalagailetak.com
+
+- **Emaila:** <support@zabalagailetak.com>
 - **Telefonoa:** +34 XXX XXX XXX
 - **Ordutegia:** Astelehenetik Ostiralera, 9:00-18:00 CET
 
 **Segurtasun Kezkak:**
-- **Emaila:** security@zabalagailetak.com
+
+- **Emaila:** <security@zabalagailetak.com>
 - **Telefonoa:** +34 XXX XXX XXX (24/7 segurtasun gai urgenteetarako)
 
 ---
@@ -608,6 +656,7 @@ Pribatutasun Ohar hau Ingelesez eta Gaztelaniaz (eta Euskaraz) ematen da. Bertsi
 ## Erreferentzia Txartel Azkarra
 
 ### Nola Erabiltzen Ditugun Zure Datuak
+
 ✅ Zure eskaerak prozesatu  
 ✅ Zure kontua kudeatu  
 ✅ Eskaera eguneraketak bidali  
@@ -617,6 +666,7 @@ Pribatutasun Ohar hau Ingelesez eta Gaztelaniaz (eta Euskaraz) ematen da. Bertsi
 ✅ Lege obligazioak bete  
 
 ### Zure Funtsezko Eskubideak
+
 📋 **Sarbidea** - Zure datuen kopia lortu  
 ✏️ **Zuzenketa** - Datu okerrak zuzendu  
 🗑️ **Ezabatzea** - Zure datuak ezabatu (salbuespenekin)  
@@ -626,12 +676,14 @@ Pribatutasun Ohar hau Ingelesez eta Gaztelaniaz (eta Euskaraz) ematen da. Bertsi
 ✉️ **Uko Egin** - Marketina jasotzeari uko egin edozein unetan  
 
 ### Pribatutasun Gaietarako Kontaktua
-**Emaila:** dpo@zabalagailetak.com  
+
+**Emaila:** <dpo@zabalagailetak.com>  
 **Telefonoa:** +34 XXX XXX XXX  
-**Web Inprimakia:** www.zabalagailetak.com/privacy/data-request
+**Web Inprimakia:** <www.zabalagailetak.com/privacy/data-request>
 
 ### Kexa Agintaritza
-**AEPD:** www.aepd.es | +34 901 100 099
+
+**AEPD:** <www.aepd.es> | +34 901 100 099
 
 ---
 

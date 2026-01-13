@@ -1,5 +1,6 @@
 # Negozioaren Jarraitutasun Plana (BCP)
-## Zabala Gailetak S.A.
+
+## Zabala Gailetak S.A
 
 **Dokumentuaren IDa:** BCP-001  
 **Bertsioa:** 1.0  
@@ -32,12 +33,14 @@
 ### 1.3 Banaketa eta Sarbidea
 
 **Baimendutako Langileak:**
+
 - Zuzendaritza Exekutiboko Taldea
 - Negozioaren Jarraitutasun Taldeko kideak
 - Departamentu Buruak
 - Larrialdi Erantzun Taldea
 
 **Biltegiratze Kokapenak:**
+
 - Lehen mailakoa: Dokumentu kudeaketa sistema segurua (enkriptatua, sarbide kontrolatua)
 - Babeskopia: Inprimatutako kopiak instalazio bakoitzeko larrialdi-kitetan
 - Gunetik kanpo: Hodei biltegiratzea, instalazioa erabilgarri ez dagoenean eskuragarria
@@ -50,6 +53,7 @@
 Negozioaren Jarraitutasun Plan (BCP) honek Zabala Gailetak-i aukera ematen dio negozio funtzio kritikoei eusteko gertaera disruptiboetan eta ondoren. Planak IT eta OT sistemak jorratzen ditu, gaileta produkzioa, bezeroarentzako arreta eta ezinbesteko eragiketak definitutako epeetan berrekin daitezkeela ziurtatuz.
 
 **Helburu Nagusiak:**
+
 - Langileen segurtasuna babestea
 - Bezeroarentzako zerbitzua eta produkzio gaitasuna mantentzea
 - Finantza eta ospe kalteak minimizatzea
@@ -57,6 +61,7 @@ Negozioaren Jarraitutasun Plan (BCP) honek Zabala Gailetak-i aukera ematen dio n
 - Eragiketa normalak berrezartzea 24-72 orduko epean etenaldiaren larritasunaren arabera
 
 **Arrakasta Faktore Kritikoak:**
+
 - Etenaldi Jasangarriaren Gehieneko Epea (MTPD): 24 ordu prozesu kritikoetarako
 - Berreskuratze Denbora Helburua (RTO): 4 ordu IT sistemetarako, 8 ordu produkziorako
 - Berreskuratze Puntu Helburua (RPO): Ordu 1 datu galerarako
@@ -69,6 +74,7 @@ Negozioaren Jarraitutasun Plan (BCP) honek Zabala Gailetak-i aukera ematen dio n
 ### 3.1 Esparrua
 
 BCP honek honako hauek hartzen ditu barne:
+
 - **Negozio Prozesu Kritikoak:** Gaileta produkzioa, eskaera betetzea, bezeroarentzako arreta, kalitate kontrola
 - **IT Sistemak:** Web aplikazioa, datu-baseak, posta elektronikoa, sare azpiegitura
 - **OT Sistemak:** PLCak, SCADA, produkzio ekipamendua, enbalatze lineak
@@ -78,6 +84,7 @@ BCP honek honako hauek hartzen ditu barne:
 ### 3.2 Etenaldi Eszenatokiak
 
 Plan honek honako hauek jorratzen ditu:
+
 1. **Ziber Intzidenteak:** Ransomware, DDoS erasoak, datu-urraketak
 2. **IT/OT Sistema Hutsegiteak:** Hardware hutsegitea, software ustelkeria, sare etena
 3. **Hondamendi Naturalak:** Sutea, uholdea, lurrikara, eguraldi larria
@@ -121,6 +128,7 @@ Plan honek honako hauek jorratzen ditu:
 ### 4.2 Baliabide Kritikoak
 
 **IT Sistemak (1. Lehentasuna):**
+
 - Web aplikazio zerbitzaria (eskaera kudeaketa)
 - Datu-base zerbitzaria (PostgreSQL/MongoDB)
 - Posta elektroniko zerbitzaria
@@ -129,18 +137,21 @@ Plan honek honako hauek jorratzen ditu:
 - VPN sarbidea urruneko lanerako
 
 **OT Sistemak (1. Lehentasuna):**
+
 - Produkzio PLCak (nahasketa, labeketa, enbalatze lineak)
 - SCADA sistema
 - Tenperatura eta hezetasun kontrol sistemak
 - Kalitate kontrol laborategiko ekipamendua
 
 **Instalazioak (1. Lehentasuna):**
+
 - Produkzio instalazio nagusia
 - Energia hornidura (elektrizitate trifasikoa)
 - Ur hornidura (produkzioa eta saneamendua)
 - Hozte/HVAC sistemak
 
 **Langileak (1. Lehentasuna):**
+
 - Produkzio Kudeatzailea eta txanda begiraleak
 - Mantentze teknikariak
 - Kalitate kontrol kudeatzailea
@@ -148,6 +159,7 @@ Plan honek honako hauek jorratzen ditu:
 - CEO eta CFO
 
 **Hornitzaileak (1. Lehentasuna):**
+
 - Irina hornitzailea (2 saltzaile nagusi)
 - Enbalatze material hornitzailea
 - Utilitateak (elektrizitatea, ura, gasa)
@@ -181,6 +193,7 @@ Zabala Gailetak-ek maila anitzeko jarraitutasun estrategia erabiltzen du:
 ### 5.2 IT Sistemen Jarraitutasun Estrategia
 
 **Azpiegitura Erredundantzia:**
+
 - Hodeian ostatatutako sistema kritikoak (AWS/Azure eskualde anitz)
 - Lokalean babeskopia zerbitzariak (hot standby sistema kritikoentzat)
 - Internet konexio erredundanteak (2 ISP, zuntza + 4G failover)
@@ -188,12 +201,14 @@ Zabala Gailetak-ek maila anitzeko jarraitutasun estrategia erabiltzen du:
 - Eguneroko babeskopia automatizatuak (ikus Babeskopia Estrategia atala)
 
 **Hondamendi Berreskuratze Gunea (DR Site):**
+
 - Hodeian oinarritutako DR azpiegitura (IaaS)
 - RTO: 4 ordu (sistema kritikoak martxan jarri)
 - RPO: 1 ordu (gehieneko datu galera)
 - Probak: Hiruhileko DR simulazioak
 
 **Urruneko Lan Gaitasuna:**
+
 - VPN sarbidea bulegoko langile guztientzat (AnyConnect edo OpenVPN)
 - Hodeian oinarritutako kolaborazio tresnak (Microsoft 365 edo Google Workspace)
 - Enpresako ordenagailu eramangarriak disko enkriptatze osoarekin
@@ -202,18 +217,21 @@ Zabala Gailetak-ek maila anitzeko jarraitutasun estrategia erabiltzen du:
 ### 5.3 OT Sistemen Jarraitutasun Estrategia
 
 **Ekipamendu Erredundantzia:**
+
 - Ordezko pieza kritikoen inbentarioa (PLCak, sentsoreak, eragingailuak)
 - Backup PLC konfigurazioak gunetik kanpo segurtasunez gordeta
 - Eskuzko eragiketa prozedurak ekipamendu kritikoentzat
 - Mantentze prebentibo programa hutsegiteak murrizteko
 
 **Ordezko Produkzioa:**
+
 - Larrialdi produkziorako akordioak 2 bazkide fabrikatzailerekin (MOU sinatuta)
 - Gaitasuna: Produkzio normalaren %40 24 orduko epean
 - Kalitate estandarrak egiaztatuta eta onartuta
 - Konfidentzialtasun eta segurtasun baldintzak kontratuetan
 
 **Produkzio Berreskuratze Fasekatua:**
+
 1. **1. Fasea (0-4h):** Ebaluazioa, segurtasun egiaztapenak, kalte kontrola
 2. **2. Fasea (4-8h):** Utilitateak berrezarri, ekipamendu kritikoen konponketa, eskuzko eragiketak beharrezkoa bada
 3. **3. Fasea (8-24h):** Produkzio automatizatua berrekin %60ko gaitasunean
@@ -222,11 +240,13 @@ Zabala Gailetak-ek maila anitzeko jarraitutasun estrategia erabiltzen du:
 ### 5.4 Instalazioen Jarraitutasun Estrategia
 
 **Ordezko Lan Kokapenak:**
+
 - Bulegoko langileak: Etxetik urruneko lana (guztiz gaituta)
 - Produkzio langileak: Bazkide fabrikazio instalazioak (akordioak indarrean)
 - Larrialdi komando zentroa: Tokiko hotel bateko konferentzia gela (aurrez antolatuta)
 
 **Instalazio Babesa:**
+
 - Sute itzaltze sistema (FM-200 ITrentzat, ihinztagailuak produkziorako)
 - Ur ihes detekzioa eta itzaltze balbula automatikoak
 - Babeskopia sorgailua (diesela, 1000 kVA, 72 orduko erregai gaitasuna)
@@ -235,12 +255,14 @@ Zabala Gailetak-ek maila anitzeko jarraitutasun estrategia erabiltzen du:
 ### 5.5 Hornidura Katearen Jarraitutasun Estrategia
 
 **Hornitzaile Dibertsifikazioa:**
+
 - Gutxienez 2 hornitzaile lehengai kritikoetarako
 - 30 eguneko inbentario bufferra funtsezko osagaientzat
 - Hornitzaileen BCP baldintzak kontratuetan
 - Aldizkako hornitzaile arrisku ebaluazioak
 
 **Logistika Alternatibak:**
+
 - 3 garraio hornitzaile kontratupean
 - Biltegi gaitasuna hirugarren logistika hornitzailean
 - Cross-docking gaitasuna bidalketa azkarrerako
@@ -248,12 +270,14 @@ Zabala Gailetak-ek maila anitzeko jarraitutasun estrategia erabiltzen du:
 ### 5.6 Komunikazio Estrategia
 
 **Barne Komunikazioa:**
+
 - Larrialdi jakinarazpen sistema (SMS/email masiboa langile guztiei)
 - Babeskopia kontaktu zerrenda (sakelako telefono pertsonalak)
 - Intranet egoera orria eguneraketetarako
 - Eguneroko informazio saioak intzidentean zehar (aurrez aurre edo birtualki)
 
 **Kanpo Komunikazioa:**
+
 - Bezero jakinarazpena etenaldi esanguratsua gertatu eta 2 orduko epean
 - Hornitzaile eta bazkide jakinarazpena beharrezkoa denean
 - Hedabideekiko harremanak (CEO edo izendatutako bozeramailea soilik)
@@ -266,6 +290,7 @@ Zabala Gailetak-ek maila anitzeko jarraitutasun estrategia erabiltzen du:
 ### 6.1 Negozioaren Jarraitutasun Taldea
 
 **BCP Koordinatzailea (CISO):**
+
 - BCP mantentze eta proba orokorrak
 - BCP aktibatu etenaldia gertatzen denean
 - Erantzun taldeen arteko koordinazioa
@@ -289,16 +314,19 @@ Zabala Gailetak-ek maila anitzeko jarraitutasun estrategia erabiltzen du:
 ### 6.2 Agintaritza eta Erabakiak Hartzea
 
 **Erabaki Hierarkia:**
+
 1. **Intzidente Komandantea (CEO):** Erabaki nagusi guztien azken agintaritza
 2. **BCP Koordinatzailea (CISO):** Prozedurak aktibatzeko agintaritza operatiboa
 3. **Funtzio Buruak:** Agintaritza beren eremuan (IT, OT, Eragiketak)
 
 **Larrialdi Baimena:**
+
 - 50.000 € arte: BCP Koordinatzailearen onarpena
 - 50.000 € - 200.000 €: Intzidente Komandantearen onarpena
 - >200.000 €: Intzidente Komandantea + CFO onarpena
 
 **Orduz Kanpoko Kontaktua:**
+
 - Larrialdi telefono zuhaitza (nagusia eta ordezko kontaktuak)
 - 24/7 segurtasun telefonoa: +34 XXX XXX XXX
 - Intzidente Komandantea 30 minutuko epean eskuragarri
@@ -310,6 +338,7 @@ Zabala Gailetak-ek maila anitzeko jarraitutasun estrategia erabiltzen du:
 ### 7.1 Aktibazio Irizpideak
 
 BCP aktibatzen da honako kasuetan:
+
 - Sistema kritikoaren hutsegitea >30 minutu
 - Instalazioa ez dago erabilgarri edo ez da segurua
 - Ziber intzidentea sistema kritikoei eragiten
@@ -320,15 +349,17 @@ BCP aktibatzen da honako kasuetan:
 
 ### 7.2 Aktibazio Prozesua
 
-**1. Urratsa: Detekzioa eta Jakinarazpena (0-15 minutu)**
+#### 1. Urratsa: Detekzioa eta Jakinarazpena (0-15 minutu)
+
 1. Etenaldia detektatzen duen edozein langilek jakinarazi behar dio:
    - Zuzeneko kudeatzaileari
    - Segurtasun telefonoari: +34 XXX XXX XXX
-   - Emaila: emergency@zabalagailetak.com
+   - Emaila: <emergency@zabalagailetak.com>
 2. Segurtasun/IT taldeak larritasuna ebaluatzen du
 3. Aktibazio irizpideak betetzen baditu, BCP Koordinatzailea jakinarazi
 
-**2. Urratsa: Hasierako Ebaluazioa (15-30 minutu)**
+#### 2. Urratsa: Hasierako Ebaluazioa (15-30 minutu)
+
 1. BCP Koordinatzaileak aktibazio erabakia berresten du
 2. Intzidente Komandantea (CEO) jakinarazi
 3. Larrialdi Erantzun Taldea bildu (fisikoki edo birtualki)
@@ -338,7 +369,8 @@ BCP aktibatzen da honako kasuetan:
    - Segurtasun kezkak?
    - Zein funtzio kritiko daude kaltetuta?
 
-**3. Urratsa: BCP Aktibazio Adierazpena (30-60 minutu)**
+#### 3. Urratsa: BCP Aktibazio Adierazpena (30-60 minutu)
+
 1. Intzidente Komandanteak formalki BCP aktibazioa deklaratzen du
 2. Komando Zentroa ezarri:
    - Nagusia: Bulego nagusiko konferentzia gela
@@ -351,7 +383,8 @@ BCP aktibatzen da honako kasuetan:
    - Hasierako lehentasunak eta ekintzak
    - Komunikazio protokoloak
 
-**4. Urratsa: Berreskuratze Prozedurak Exekutatu (1+ ordu)**
+#### 4. Urratsa: Berreskuratze Prozedurak Exekutatu (1+ ordu)
+
 - Funtzio buruek berreskuratze prozedurak exekutatzen dituzte (ikus 8. Atala)
 - Ohiko egoera eguneraketak Intzidente Komandanteari (hasieran orduro)
 - Estrategia egokitu egoeraren arabera
@@ -362,7 +395,8 @@ BCP aktibatzen da honako kasuetan:
 
 ### 8.1 IT Sistema Berreskuratzea
 
-**Sistema Kritikoen Lehentasun Ordena:**
+#### Sistema Kritikoen Lehentasun Ordena
+
 1. Sare azpiegitura eta suebakiak
 2. Autentifikazio sistemak (Active Directory/LDAP)
 3. Datu-base zerbitzariak
@@ -371,20 +405,24 @@ BCP aktibatzen da honako kasuetan:
 6. Fitxategi zerbitzaria
 7. VPN urruneko sarbiderako
 
-**Berreskuratze Urratsak:**
+#### Berreskuratze Urratsak
 
-**Hodeian Ostatatutako Sistemetarako (AWS/Azure):**
+#### Hodeian Ostatatutako Sistemetarako (AWS/Azure)
+
 1. Egiaztatu hodei hornitzailearen egoera (AWS/Azure egoera orria)
 2. Eskualdeko hutsegitea bada, failover bigarren eskualdera:
+
    ```bash
    aws route53 change-resource-record-sets --hosted-zone-id ZXXXXX --change-batch file://failover-dns.json
    ```
+
 3. Egiaztatu datu-base erreplikazio egoera
 4. Probatu aplikazioaren konektibitatea eta funtzionalitatea
 5. Eguneratu DNS DR ingurunera seinalatzeko (TTL: 300s)
 6. Monitorizatu errendimendua eta erroreak
 
-**Lokaleko Sistemetarako:**
+#### Lokaleko Sistemetarako
+
 1. Kaltea ebaluatu:
    - Hardware hutsegitea? (ordeztu edo failover babeskopia zerbitzarira)
    - Software ustelkeria? (berreskuratu babeskopiatik)
@@ -398,34 +436,45 @@ BCP aktibatzen da honako kasuetan:
    - Berreskuratu babeskopiak hodeiko instantzietara
    - Birkonfiguratu aplikazioak hodeiko sarerako
 
-**Babeskopia Berreskuratze Prozedura:**
+#### Babeskopia Berreskuratze Prozedura
+
 1. Identifikatu azken babeskopia garbia (egiaztatu babeskopia log-ak):
+
    ```bash
    ls -lh /backup/mongodb/ | grep $(date +%Y-%m-%d)
    ```
+
 2. Egiaztatu babeskopia osotasuna (checksum):
+
    ```bash
    sha256sum -c backup-20260108.tar.gz.sha256
    ```
+
 3. Berreskuratu datu-basea:
+
    ```bash
    mongorestore --host localhost --port 27017 --gzip --archive=/backup/mongodb/backup-20260108.tar.gz
    ```
+
 4. Berreskuratu aplikazio fitxategiak:
+
    ```bash
    rsync -avz /backup/application/ /var/www/zabalagailetak/
    ```
+
 5. Egiaztatu datu osotasuna (azken eskaeren, erabiltzaile kontuen ausazko egiaztapenak)
 6. Probatu funtzio kritikoak (saioa hasi, eskaera sorrera, txostenak)
 
-**Estimatutako Berreskuratze Denborak:**
+#### Estimatutako Berreskuratze Denborak
+
 - Hodei failover: 30-60 minutu
 - Babeskopia berreskuratzea: 2-4 ordu
 - DR gune aktibazio osoa: 4-6 ordu
 
 ### 8.2 OT Sistema Berreskuratzea
 
-**OT Sistema Kritikoen Lehentasun Ordena:**
+#### OT Sistema Kritikoen Lehentasun Ordena
+
 1. Segurtasun (Safety) sistemak (larrialdi gelditzeak, sute itzaltzea)
 2. Produkzio PLC nagusia (nahasketa eta labeketa)
 3. Enbalatze linea PLC
@@ -433,9 +482,10 @@ BCP aktibatzen da honako kasuetan:
 5. Tenperatura/hezetasun kontrola
 6. Inbentario jarraipena
 
-**Berreskuratze Urratsak:**
+#### Berreskuratze Urratsak
 
-**PLC Hutsegiterako:**
+#### PLC Hutsegiterako
+
 1. **Segurtasuna Lehenik:**
    - Ziurtatu produkzio linea guztiak segurtasunez gelditu direla
    - Lock out/tag out hornidura elektrikoa
@@ -463,20 +513,23 @@ BCP aktibatzen da honako kasuetan:
    - Produkzio tasa: Normalaren %30
    - Kalitate monitoreo hobetua (15 minuturo)
 
-**SCADA Sistema Hutsegiterako:**
+#### SCADA Sistema Hutsegiterako
+
 1. Egiaztatu PLC kontrola oraindik funtzionala dela (produkzioak SCADA monitoreorik gabe jarraitu dezake)
 2. Berreskuratu SCADA zerbitzaria babeskopiatik edo failover hot standby-ra
 3. Aldi baterako monitorizazioa: PLC interfaze zuzena kontrol paneletan
 4. Berrekin SCADA eragiketa normalak berreskuratu ondoren
 
-**Instalazio Osoa Galtzen Bada:**
+#### Instalazio Osoa Galtzen Bada
+
 1. Aktibatu bazkide fabrikazio akordioak
 2. Transferitu produkzio errezetak eta zehaztapenak (USB unitate enkriptatuak larrialdi-kitetan)
 3. Hedatu kalitate kontrol kudeatzailea bazkide instalaziora
 4. Koordinatu lehengaien entrega bazkide instalaziora
 5. Estimatutako denbora-lerroa: 24 ordu lehen produkziora bazkide instalazioan
 
-**Estimatutako Berreskuratze Denborak:**
+#### Estimatutako Berreskuratze Denborak
+
 - PLC berrabiarazte/birkonfigurazioa: 1-2 ordu
 - PLC ordezkapena: 4-6 ordu
 - SCADA berreskuratzea: 2-4 ordu
@@ -485,9 +538,10 @@ BCP aktibatzen da honako kasuetan:
 
 ### 8.3 Produkzio Eragiketen Berreskuratzea
 
-**1. Fasea: Berehalako Erantzuna (0-4 ordu)**
+#### 1. Fasea: Berehalako Erantzuna (0-4 ordu)
 
-**Ekintzak:**
+#### Ekintzak
+
 1. **Langileen Segurtasuna:**
    - Langile guztiak zenbatu (larrialdi biltze puntuak)
    - Eman lehen sorospenak beharrezkoa bada
@@ -505,9 +559,10 @@ BCP aktibatzen da honako kasuetan:
    - Eman estimatutako berreskuratze denbora-lerroa
    - Eskaini alternatibak eskuragarri badaude
 
-**2. Fasea: Egonkortzea (4-8 ordu)**
+#### 2. Fasea: Egonkortzea (4-8 ordu)
 
-**Ekintzak:**
+#### Ekintzak
+
 1. **Utilitateak Berrezartzea:**
    - Koordinatu utilitate hornitzaileekin
    - Aktibatu babeskopia sorgailua argindarra ez badago
@@ -525,9 +580,10 @@ BCP aktibatzen da honako kasuetan:
    - Berprogramatu entregak beharrezkoa bada
    - Bizkortu osagai kritikoak agortu badira
 
-**3. Fasea: Produkzioa Berrekitea (8-24 ordu)**
+#### 3. Fasea: Produkzioa Berrekitea (8-24 ordu)
 
-**Ekintzak:**
+#### Ekintzak
+
 1. **Produkzio Partziala Hasi:**
    - Produkzio linea bakarra hasieran (bolumen handieneko produktua)
    - Kalitate egiaztapen hobetuak (maiztasun bikoitza)
@@ -541,9 +597,10 @@ BCP aktibatzen da honako kasuetan:
    - Barne egoera informazio saioak (txanda hasiera eta amaiera)
    - Jakinarazi hornitzaileei berrikusitako beharrez
 
-**4. Fasea: Berrezarpen Osoa (24-72 ordu)**
+#### 4. Fasea: Berrezarpen Osoa (24-72 ordu)
 
-**Ekintzak:**
+#### Ekintzak
+
 1. **Produkzioa Eskalatu:**
    - Aktibatu produkzio linea gehigarriak
    - Txanda luzeak edo aparteko orduak beharrezkoa bada
@@ -559,9 +616,10 @@ BCP aktibatzen da honako kasuetan:
 
 ### 8.4 Instalazio Berreskuratzea (Etenaldi Luzea)
 
-**Lehen Mailako Instalazioa >72 ordu Ez Bada Erabilgarri:**
+#### Lehen Mailako Instalazioa >72 ordu Ez Bada Erabilgarri
 
-**Berehalako Ekintzak (0-24 ordu):**
+#### Berehalako Ekintzak (0-24 ordu)
+
 1. Aktibatu bazkide fabrikazio akordioak (ikus 8.2 Atala)
 2. Ezarri aldi baterako bulego espazioa:
    - Urruneko lana bulegoko langile guztientzat
@@ -569,13 +627,15 @@ BCP aktibatzen da honako kasuetan:
    - Larrialdi dokumentuak hodeiko biltegiratze bidez eskuragarri
 3. Jakinarazi interesdun guztiei (bezeroak, hornitzaileak, langileak, asegurua)
 
-**Epe Laburreko Berreskuratzea (1-4 aste):**
+#### Epe Laburreko Berreskuratzea (1-4 aste)
+
 1. Alokatu aldi baterako produkzio espazioa bazkide gaitasuna nahikoa ez bada
 2. Birlekutu funtsezko ekipamendua salbagarria bada
 3. Berreraiki azpiegitura kritikoa lehenik (IT, bulegoa, QC laborategia)
 4. Kontratatu aldi baterako langileak beharrezkoa bada
 
-**Epe Luzeko Berreskuratzea (1-6 hilabete):**
+#### Epe Luzeko Berreskuratzea (1-6 hilabete)
+
 1. Instalazioaren berreraikuntza osoa edo birkokapena
 2. Berritu sistemak ikasitako ikasgaietan oinarrituta
 3. Pixkanaka itzuli lehen mailako instalaziora
@@ -588,9 +648,11 @@ BCP aktibatzen da honako kasuetan:
 ### 9.1 Barne Komunikazioa
 
 **Larrialdi Jakinarazpen Sistema:**
+
 - Nagusia: SMS/email automatizatua langile guztiei
 - Babeskopia: Telefono zuhaitza (kudeatzaileek beren taldeei deitzen diete)
 - Mezu txantiloia:
+
   ```
   ZABALA GAILETAK LARRIALDI ALERTA
   Data/Ordua: [AUTO]
@@ -601,17 +663,20 @@ BCP aktibatzen da honako kasuetan:
   ```
 
 **Egoera Eguneraketak:**
+
 - Intzidentean zehar: Gutxienez 2 orduro
 - Ebazpenaren ondoren: Eguneroko eguneraketak eragiketa normaletara arte
 - Kanala: Emaila + intranet egoera orria + SMS eguneraketa kritikoetarako
 
 **Langile Informazio Saioak:**
+
 - Eguneroko bilera presentzialak edo birtualak intzidentean zehar
 - Funtsezko informazioa: egoera laburpena, segurtasun argibideak, lan itxaropenak, hurrengo urratsak
 
 ### 9.2 Kanpo Komunikazioa
 
 **Bezero Komunikazioa:**
+
 - **Jakinarazpen Muga:** Eskaerei >4 ordu eragiten dien edozein etenaldi
 - **Denbora:** Intzidentetik 2 orduko epean
 - **Metodoa:** Emaila kontu kontaktuei, telefono deiak bezero nagusiei
@@ -624,22 +689,26 @@ BCP aktibatzen da honako kasuetan:
 - **Jarraipena:** Eguneroko eguneraketak eskaerak bete arte
 
 **Hornitzaile Komunikazioa:**
+
 - Jakinarazi aldatutako entrega egutegiez edo kantitateez
 - Eskatu bidalketa bizkortua berreskuratzeko beharrezkoa bada
 - Koordinatu ordezko entrega kokapenak instalazioa erabilgarri ez badago
 
 **Arau Komunikazioa:**
+
 - **AEPD (Datuak Babesteko Agintaritza):** 72 orduko epean datu pertsonalen urraketetarako
 - **Elikagai Segurtasun Agintaritza:** Berehala produktu segurtasuna kaltetuta badago
 - **Lan Agintaritza:** Lan istripua edo kaleratze handia badago
 
 **Hedabideekiko Harremanak:**
+
 - **Bozeramailea:** CEO bakarrik (ordezkoa: CFO)
 - **Komentariorik Ez Politika:** Langileek hedabideen kontsulta guztiak CEOri bideratzen dizkiote
 - **Prestatutako Adierazpena:** Zirriborroa intzidente handiaren 4 orduko epean
 - **Proaktiboa vs. Erreaktiboa:** Kontuan hartu prentsa ohar proaktiboa intzidente handietarako narratiba kontrolatzeko
 
 **Aseguru Komunikazioa:**
+
 - Jakinarazi aseguru artekariari 24 orduko epean
 - Dokumentatu kalte guztiak argazki, bideo, inbentario zerrendekin
 - Jarraitu erreklamaziorako gastu guztiak (gorde ordainagiriak)
@@ -663,18 +732,22 @@ BCP aktibatzen da honako kasuetan:
 ### 10.2 Mahai-gaineko Ariketa Eszenatokiak
 
 **1. Eszenatokia: Ransomware Erasoa**
+
 - Egoera: Astelehen goiza, zerbitzari guztiak enkriptatuta, 10 BTC eskatzen dituen erreskate oharra
 - Eztabaida Puntuak: Infekzioa isolatu, babeskopietatik berreskuratu, legea betearazteko jakinarazpena, bezero komunikazioa, prebentzio hobekuntzak
 
 **2. Eszenatokia: Instalazio Sutea**
+
 - Egoera: Ostiral gaua sutea produkzio eremuan, ihinztagailuak aktibatuta, estimatutako 2 asteko geldialdia
 - Eztabaida Puntuak: Langileen segurtasuna, kalte ebaluazioa, bazkide fabrikazio aktibazioa, aseguru erreklamazioa, bezero eragina
 
 **3. Eszenatokia: Funtsezko Langileak Ez Egotea**
+
 - Egoera: IT Kudeatzailea eta ordezkoa biak ez daude eskuragarri (auto istripua), sistema kritikoaren hutsegitea haien ausentzian
 - Eztabaida Puntuak: Ondorengotza plangintza, dokumentazio eskuragarritasuna, larrialdi kontratista inplikazioa, zeharkako prestakuntza beharrak
 
 **4. Eszenatokia: Hornidura Kate Etenaldia**
+
 - Egoera: Lehen mailako irina hornitzailea porrot eginda, bidalketak berehala eten dira, 10 eguneko inbentarioa eskura
 - Eztabaida Puntuak: Aktibatu bigarren mailako hornitzailea, erosketa bizkortua, errezeta doikuntzak, produkzio lehentasuna
 
@@ -683,6 +756,7 @@ BCP aktibatzen da honako kasuetan:
 **Urteroko Ariketa (Adibidea: Azaroa):**
 
 **Prestaketa (Hilabete 1 lehenago):**
+
 - Hautatu eszenatokia (adib., lurrikarak instalazioa kaltetzea)
 - Garatu ariketa gidoia eta injekzioak
 - Jakinarazi parte-hartzaileei (ezusteko simulaziorik ez segurtasun arrazoiengatik)
@@ -690,6 +764,7 @@ BCP aktibatzen da honako kasuetan:
 - Prestatu ariketa materialak (mapak, egoera taulak, atrezzoa)
 
 **Exekuzioa (Ariketa Eguna):**
+
 1. **Hasiera (0900):** Eszenarioari eta segurtasun arauei buruzko informazio saioa
 2. **1. Injekzioa (0915):** Lurrikara jakinarazi da, eraikin ikuskapena beharrezkoa
 3. **2. Injekzioa (0945):** Egitura kalteak aurkitu dira, instalazio ebakuazioa agindu da
@@ -699,6 +774,7 @@ BCP aktibatzen da honako kasuetan:
 7. **Amaiera (1300):** Hot wash (berehalako iritzia), ariketa amaiera
 
 **Ebaluazio Irizpideak:**
+
 - Larrialdi Erantzun Taldea biltzeko denbora
 - Erabakiak hartzeko abiadura eta kalitatea
 - Komunikazio eraginkortasuna
@@ -707,6 +783,7 @@ BCP aktibatzen da honako kasuetan:
 - Plan hutsuneen identifikazioa
 
 **Ariketa Ostekoa (2 asteren buruan):**
+
 - Ekintza Osteko Txostena dokumentatzen:
   - Zer joan zen ondo
   - Zer hobetu behar den
@@ -718,6 +795,7 @@ BCP aktibatzen da honako kasuetan:
 ### 10.4 Plan Mantentzea
 
 **Eguneratze Abiarazleak:**
+
 - Urteroko programatutako berrikuspena
 - BCP aktibazio baten ondoren (benetako intzidentea)
 - Probak hutsuneak identifikatu ondoren
@@ -726,6 +804,7 @@ BCP aktibatzen da honako kasuetan:
 - Hornitzaile edo bezero nagusi aldaketak
 
 **Berrikuspen Prozesua:**
+
 1. BCP Koordinatzaileak plan osoa berrikusten du
 2. Atal jabeek beren eremuak berrikusten dituzte (IT, OT, Eragiketak, etab.)
 3. Eguneratu kontaktu zerrendak (egiaztatu zehaztasuna hilero)
@@ -737,6 +816,7 @@ BCP aktibatzen da honako kasuetan:
 9. Aldaketen berri eman hurrengo talde bileran
 
 **Aldaketa Kudeaketa:**
+
 - Bertsio kontrola: Gehitu bertsio zenbakia aldaketetarako
 - Jarraitu aldaketak: Dokumentatu bertsio historia taulan
 - Zahartutako bertsioak: Artxibatu 5 urteko atxikipenarekin
@@ -762,6 +842,7 @@ BCP aktibatzen da honako kasuetan:
 ### 11.2 Arrakasta Irizpideak
 
 **Berehalako Arrakasta (0-4 ordu):**
+
 - Langile guztiak kontuan hartuta eta seguru
 - Larrialdi Erantzun Taldea bilduta
 - Kalteak ebaluatuta eta dokumentatuta
@@ -769,6 +850,7 @@ BCP aktibatzen da honako kasuetan:
 - Sistema kritikoak isolatuta edo ziurtatuta
 
 **Epe Laburreko Arrakasta (4-24 ordu):**
+
 - IT sistema kritikoak berrezarrita
 - Produkzioa berrekin (gutxienez %60ko gaitasuna)
 - Ordezko moldaketak aktibatuta beharrezkoa bada
@@ -776,6 +858,7 @@ BCP aktibatzen da honako kasuetan:
 - Finantza eraginaren ebaluazioa osatuta
 
 **Epe Luzeko Arrakasta (1-7 egun):**
+
 - Produkzio gaitasun osoa berrezarrita
 - Atzeratutako eskaera guztiak beteta
 - Negozio eragiketa normalak berrezarrita
@@ -785,6 +868,7 @@ BCP aktibatzen da honako kasuetan:
 ### 11.3 Finantza Metrikak
 
 **Kostuen Jarraipena Intzidentean Zehar:**
+
 - Larrialdi erosketak
 - Aparteko orduak
 - Ekipamendu alokairua edo ordezkapena
@@ -795,6 +879,7 @@ BCP aktibatzen da honako kasuetan:
 - Aseguru frankizia
 
 **Aseguru Erreklamazio Dokumentazioa:**
+
 - Galera inbentario zehatza
 - Kalteen argazkiak eta bideoak
 - Kontratisten konponketa aurrekontuak
@@ -812,11 +897,11 @@ BCP aktibatzen da honako kasuetan:
 
 | Izena | Rola | Mugikorra | Emaila | Etxeko Telefonoa | Ordezko Kontaktua |
 |-------|------|-----------|-------|------------------|-------------------|
-| [CEO Izena] | Intzidente Komandantea | +34 XXX XXX XXX | ceo@zabalagailetak.com | +34 XXX XXX XXX | Ezkontidea: +34 XXX |
-| [CISO Izena] | BCP Koordinatzailea | +34 XXX XXX XXX | ciso@zabalagailetak.com | +34 XXX XXX XXX | Ezkontidea: +34 XXX |
-| [CFO Izena] | Finantza Burua | +34 XXX XXX XXX | cfo@zabalagailetak.com | +34 XXX XXX XXX | Ezkontidea: +34 XXX |
-| [IT Kudeatzailea] | IT Berreskuratze Burua | +34 XXX XXX XXX | it@zabalagailetak.com | +34 XXX XXX XXX | Ezkontidea: +34 XXX |
-| [Eragiketa Kudeatzailea] | Eragiketa Burua | +34 XXX XXX XXX | ops@zabalagailetak.com | +34 XXX XXX XXX | Ezkontidea: +34 XXX |
+| [CEO Izena] | Intzidente Komandantea | +34 XXX XXX XXX | <ceo@zabalagailetak.com> | +34 XXX XXX XXX | Ezkontidea: +34 XXX |
+| [CISO Izena] | BCP Koordinatzailea | +34 XXX XXX XXX | <ciso@zabalagailetak.com> | +34 XXX XXX XXX | Ezkontidea: +34 XXX |
+| [CFO Izena] | Finantza Burua | +34 XXX XXX XXX | <cfo@zabalagailetak.com> | +34 XXX XXX XXX | Ezkontidea: +34 XXX |
+| [IT Kudeatzailea] | IT Berreskuratze Burua | +34 XXX XXX XXX | <it@zabalagailetak.com> | +34 XXX XXX XXX | Ezkontidea: +34 XXX |
+| [Eragiketa Kudeatzailea] | Eragiketa Burua | +34 XXX XXX XXX | <ops@zabalagailetak.com> | +34 XXX XXX XXX | Ezkontidea: +34 XXX |
 
 **Kanpo Larrialdi Zerbitzuak**
 
@@ -841,14 +926,14 @@ BCP aktibatzen da honako kasuetan:
 | [ISP B] | Internet (babeskopia) | [Laguntza] | Larrialdia: 24/7 | +34 XXX |
 | [AWS/Azure] | Hodei ostalaritza | [Kontu Kudeatzailea] | Laguntza Ataria | +34 XXX |
 
-**Bazkide Fabrikatzaileak**
+#### Bazkide Fabrikatzaileak
 
 | Enpresa | Gaitasuna | Kontaktua | Telefonoa | Akordio Egoera |
 |---------|-----------|-----------|-----------|----------------|
 | [Bazkidea A] | Gure bolumenaren %40 | [Kontaktua] | +34 XXX | MOU sinatua 2025-06 |
 | [Bazkidea B] | Gure bolumenaren %30 | [Kontaktua] | +34 XXX | MOU sinatua 2025-08 |
 
-**Asegurua eta Legala**
+#### Asegurua eta Legala
 
 | Zerbitzua | Enpresa | Kontaktua | Telefonoa | Poliza # |
 |-----------|---------|-----------|-----------|----------|
@@ -871,14 +956,16 @@ BCP aktibatzen da honako kasuetan:
 
 ### Eranskina C: Eskuzko Eragiketa Prozedurak
 
-**Produkzio Linearen Eskuzko Eragiketa (PLC Hutsegitea)**
+#### Produkzio Linearen Eskuzko Eragiketa (PLC Hutsegitea)
 
 **Segurtasun Aurrebaldintzak:**
+
 - Larrialdi gelditze sistema funtzionala (PLCtik independentea)
 - Langile guztiak eskuzko prozeduretan trebatuta
 - Begirada hobetua (2 langile gutxienez)
 
 **Prozedura:**
+
 1. Aldatu kontrol panela "Eskuzko" modura
 2. Eskuz hasi nahasgailua (egiaztatu abiadura takometroarekin)
 3. Kargatu osagaiak errezetaren arabera (erabili balantzak, ez dosifikazio automatizatua)
@@ -891,6 +978,7 @@ BCP aktibatzen da honako kasuetan:
 10. Kalitate egiaztapena lote bakoitzean (derrigorrezkoa)
 
 **Mugak:**
+
 - Produkzio tasa: Gaitasun normalaren %30
 - Kalitate monitoreo hobetua beharrezkoa
 - Gehieneko etengabeko eragiketa: 4 ordu (langileen nekea)
@@ -913,14 +1001,14 @@ BCP aktibatzen da honako kasuetan:
 
 ### Eranskina E: Intzidente Log Txantiloia
 
-**Negozio Jarraitutasun Intzidente Log-a**
+#### Negozio Jarraitutasun Intzidente Log-a
 
 | Intzidente IDa: | BCP-20XX-XXX | Data/Ordua: | [Hasiera ordua] |
 |-----------------|--------------|-------------|-----------------|
 | **Intzidente Komandantea** | [Izena] | **BCP Koordinatzailea** | [Izena] |
-| **Intzidente Mota** | [ ] Ziber [ ] IT Hutsegitea [ ] OT Hutsegitea [ ] Instalazioa [ ] Hondamendi Naturala [ ] Beste bat: _____ |
-| **Kaltetutako Sistemak** | |
-| **Eragin Ebaluazioa** | [ ] Kritikoa [ ] Altua [ ] Ertaina [ ] Baxua |
+| **Intzidente Mota** | [ ] Ziber [ ] IT Hutsegitea [ ] OT Hutsegitea [ ] Instalazioa [ ] Hondamendi Naturala [ ] Beste bat: _____ | | | | |
+| **Kaltetutako Sistemak** | | | |
+| **Eragin Ebaluazioa** | [ ] Kritikoa [ ] Altua [ ] Ertaina [ ] Baxua | | |
 
 **Denbora-lerroa:**
 
@@ -936,6 +1024,7 @@ BCP aktibatzen da honako kasuetan:
 | | | | |
 
 **Jaulkitako Komunikazioak:**
+
 - [ ] Barne langile jakinarazpena (Ordua: ____)
 - [ ] Bezero jakinarazpena (Ordua: ____)
 - [ ] Hornitzaile jakinarazpena (Ordua: ____)
@@ -943,6 +1032,7 @@ BCP aktibatzen da honako kasuetan:
 - [ ] Hedabide adierazpena (Ordua: ____)
 
 **Berreskuratze Egoera:**
+
 - [ ] BCP aktibatua (Ordua: ____)
 - [ ] Larrialdi Erantzun Taldea bilduta (Ordua: ____)
 - [ ] IT sistemak berrezarrita (Ordua: ____)
@@ -952,6 +1042,7 @@ BCP aktibatzen da honako kasuetan:
 - [ ] BCP desaktibatua (Ordua: ____)
 
 **Intzidente Ostekoa:**
+
 - [ ] Intzidente osteko berrikuspena programatuta (Data: ____)
 - [ ] Ekintza osteko txostena osatuta (Data: ____)
 - [ ] BCP eguneraketak identifikatuta
@@ -959,13 +1050,14 @@ BCP aktibatzen da honako kasuetan:
 
 ---
 
-**NEGOZIOAREN JARRAITUTASUN PLANAREN AMAIERA**
+#### NEGOZIOAREN JARRAITUTASUN PLANAREN AMAIERA
 
 ---
 
 **Dokumentu Banaketa:**
 
 Inprimatutako kopiak larrialdi-kitetan gordeta hemen:
+
 1. CEO bulegoa (A Eraikina, 301 Gela)
 2. CISO bulegoa (A Eraikina, 201 Gela)
 3. Produkzio begiralearen bulegoa (B Eraikina, 1. Solairua)
@@ -973,6 +1065,7 @@ Inprimatutako kopiak larrialdi-kitetan gordeta hemen:
 5. Gunetik kanpo: [Zehaztu kokapen segurua, adib., CEOren etxeko kutxa gotorra]
 
 Kopia digitalak eskuragarri honela:
+
 - ISMS dokumentu biltegia (sarbide kontrolatua)
 - Hodei biltegiratzea: [URL] (MFA beharrezkoa)
 - Larrialdi Erantzun Taldeko kideen enpresako ordenagailu eramangarriak (enkriptatuak)

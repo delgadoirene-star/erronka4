@@ -1,10 +1,12 @@
 # Patch Management SOP - Zabala Gailetak
 
 ## 1. Vulnerability Scanning
+
 - Weekly scans using OpenVAS
 - Critical findings reported immediately
 
 ## 2. Patch Classification
+
 | Severity | CVSS | Response Time |
 |----------|------|---------------|
 | Critical | 9.0-10.0 | 72 hours |
@@ -13,6 +15,7 @@
 | Low | 0.1-3.9 | 90 days |
 
 ## 3. Deployment Process
+
 1. Test patches in development
 2. Deploy to staging
 3. Monitor for issues

@@ -1,4 +1,5 @@
 # Datu-urraketa Jakinarazpen Txantiloia
+
 ## Zabala Gailetak S.A. - GDPR Betetzea
 
 **Dokumentuaren IDa:** DBN-001  
@@ -22,6 +23,7 @@
 ### 1.2 Helburua
 
 Txantiloi honek datu pertsonalen urraketen berri emateko prozedura estandarizatuak eta jakinarazpen inprimakiak eskaintzen ditu, honako hauek betez:
+
 - **GDPR 33. artikulua:** Ikuskapen agintaritzari (AEPD) jakinaraztea
 - **GDPR 34. artikulua:** Datuen interesdunei jakinaraztea
 - **DBLO-GDD (Espainiako 3/2018 Lege Organikoa):** Espainiako datuen babeserako baldintzak
@@ -29,6 +31,7 @@ Txantiloi honek datu pertsonalen urraketen berri emateko prozedura estandarizatu
 ### 1.3 Esparrua
 
 Txantiloi hau honako hauei eragiten dien datu pertsonalen urraketa guztiei aplikatzen zaie:
+
 - Bezeroen datuak (izenak, emailak, helbideak, eskaera historia)
 - Langileen datuak (Giza Baliabideetako erregistroak, nominak, errendimendu berrikuspenak)
 - Hornitzaile/bazkideen datuak (harremanetarako informazioa, kontratuak)
@@ -45,6 +48,7 @@ Txantiloi hau honako hauei eragiten dien datu pertsonalen urraketa guztiei aplik
 **Muga:** Jakinarazpena derrigorrezkoa da urraketak pertsonen eskubide eta askatasunetarako **arriskua eragitea litekeena** denean
 
 **Eskatutako Edukia:**
+
 1. Datu pertsonalen urraketaren izaera
 2. Kaltetutako interesdunen kategoriak eta gutxi gorabeherako kopurua
 3. Kaltetutako datu pertsonalen erregistroen kategoriak eta gutxi gorabeherako kopurua
@@ -61,11 +65,13 @@ Txantiloi hau honako hauei eragiten dien datu pertsonalen urraketa guztiei aplik
 **Muga:** Jakinarazpena derrigorrezkoa da urraketak pertsonen eskubide eta askatasunetarako **arrisku handia eragitea litekeena** denean
 
 **Salbuespenak (jakinarazpena ez da beharrezkoa):**
+
 - Babes neurri tekniko eta antolakuntzako egokiak aplikatu dira (adibidez, enkriptatzea)
 - Ondorengo neurriak hartu dira arrisku handia gauzatzea litekeena ez dela ziurtatzeko
 - Ahalegin neurrigabea ekarriko luke (komunikazio publikoa onargarria da)
 
 **Eskatutako Edukia:**
+
 1. Datu pertsonalen urraketaren izaera hizkuntza argi eta errazean
 2. DPOren edo beste harremanetarako puntuaren datuak
 3. Litekeena den ondorioen deskribapena
@@ -74,6 +80,7 @@ Txantiloi hau honako hauei eragiten dien datu pertsonalen urraketa guztiei aplik
 ### 2.3 Definizio Gakoak
 
 **Datu Pertsonalen Urraketa:** Segurtasunaren urraketa, honako hauek eragiten dituena:
+
 - Ustekabeko edo legez kanpoko suntsipena
 - Galera, aldaketa
 - Baimenik gabeko ezagutaraztea edo sarbidea
@@ -82,6 +89,7 @@ Txantiloi hau honako hauei eragiten dien datu pertsonalen urraketa guztiei aplik
 **Jabetzea:** Erakundeak ziurtasun maila arrazoizkoa duenean segurtasun intzidente bat gertatu dela eta datu pertsonalak arriskuan jarri dituela
 
 **Arrisku Ebaluazioa:**
+
 - **Arrisku Baxua:** Ez da jakinarazpenik behar (barnean dokumentatu)
 - **Arriskua:** AEPDri jakinarazi 72 orduko epean
 - **Arrisku Handia:** AEPDri jakinarazi 72 orduko epean + interesdunei jakinarazi
@@ -93,12 +101,14 @@ Txantiloi hau honako hauei eragiten dien datu pertsonalen urraketa guztiei aplik
 ### 3.1 Berehalako Erantzuna (0-1 ordu)
 
 **1. Urratsa: Detekzioa eta Jakinarazpena**
+
 - Balizko urraketa bat aurkitzen duen edozein langilek berehala jakinarazi behar dio:
-  - **DPO:** dpo@zabalagailetak.com | +34 XXX XXX XXX
-  - **Segurtasun Taldea:** security@zabalagailetak.com | +34 XXX XXX XXX (24/7)
-  - **CISO:** ciso@zabalagailetak.com | +34 XXX XXX XXX
+  - **DPO:** <dpo@zabalagailetak.com> | +34 XXX XXX XXX
+  - **Segurtasun Taldea:** <security@zabalagailetak.com> | +34 XXX XXX XXX (24/7)
+  - **CISO:** <ciso@zabalagailetak.com> | +34 XXX XXX XXX
 
 **2. Urratsa: Hasierako Ebaluazioa**
+
 - DPOk eta CISOk ebaluazio azkarra egiten dute:
   - Zer gertatu da?
   - Zein datu daude kaltetuta?
@@ -107,6 +117,7 @@ Txantiloi hau honako hauei eragiten dien datu pertsonalen urraketa guztiei aplik
   - Aurretiazko arrisku maila?
 
 **3. Urratsa: Erantzun Taldea Aktibatu**
+
 - Datu-urraketa Erantzun Taldea jakinarazi:
   - DPO (Burua)
   - CISO
@@ -118,6 +129,7 @@ Txantiloi hau honako hauei eragiten dien datu pertsonalen urraketa guztiei aplik
 ### 3.2 Edukiera eta Ikerketa (1-24 ordu)
 
 **4. Urratsa: Urraketari Eustea**
+
 - IT/Segurtasun taldeak berehalako euste neurriak hartzen ditu:
   - Kaltetutako sistemak isolatu
   - Arriskuan dauden kredentzialak baliogabetu
@@ -125,6 +137,7 @@ Txantiloi hau honako hauei eragiten dien datu pertsonalen urraketa guztiei aplik
   - Ebidentzia gorde (irudi forentseak, log-ak)
 
 **5. Urratsa: Ikerketa Zehatza**
+
 - Urraketaren irismen osoa zehaztu:
   - **Zein datu:** Kaltetutako datu pertsonalen kategoriak
   - **Zenbat:** Interesdun eta erregistro kopurua
@@ -135,6 +148,7 @@ Txantiloi hau honako hauei eragiten dien datu pertsonalen urraketa guztiei aplik
   - **Exfiltrazioa:** Datuak kopiatu/kendu dira edo soilik sartu dira?
 
 **6. Urratsa: Arrisku Ebaluazioa**
+
 - Norbanakoentzako arriskua ebaluatu (erabili Arrisku Ebaluazio Matrizea - 4. Atala)
 - Kontuan hartu:
   - Datu mota (PII, finantzarioa, osasuna, kredentzialak)
@@ -146,6 +160,7 @@ Txantiloi hau honako hauei eragiten dien datu pertsonalen urraketa guztiei aplik
   - Dauden segurtasun neurriak (enkriptatzea, pseudonimizazioa)
 
 **7. Urratsa: Dokumentazioa**
+
 - Aurkikuntza guztiak Urraketa Erregistroan dokumentatu (ikus 7. Atala)
 - Ebidentzia guztiak gorde
 - Gertaeren denbora-lerroa sortu
@@ -163,31 +178,36 @@ DPOk jakinarazpen baldintzak zehazten ditu:
 | **Arrisku Handia** | **Beharrezkoa** | **Beharrezkoa** | 72 orduko epean (AEPD) + bidegabeko atzerapenik gabe (interesdunak) |
 
 **9. Urratsa: Jakinarazpenak Prestatu**
+
 - AEPDri jakinarazpena idatzi (erabili A Txantiloia - 5.1 Atala)
 - Interesdunei jakinarazpena idatzi behar bada (erabili B Txantiloia - 5.2 Atala)
 - Aholkulari juridikoak jakinarazpen guztiak berrikusten ditu
 - CEOk jakinarazpenak onartzen ditu (arrisku handiko urraketak)
 
 **10. Urratsa: Jakinarazpenak Bidali**
-- AEPD jakinarazpena: AEPD online atariaren bidez (https://sedeagpd.gob.es)
+
+- AEPD jakinarazpena: AEPD online atariaren bidez (<https://sedeagpd.gob.es>)
 - Interesdunen jakinarazpena: Emaila, gutuna edo komunikazio publikoa (egoeraren arabera)
 - Bidalketa data eta ordua dokumentatu (72 orduko betetzerako)
 
 ### 3.4 Konponketa eta Jarraipena (Etengabea)
 
 **11. Urratsa: Ekintza Zuzentzaileak Inplementatu**
+
 - Urraketaren erroko kausa jorratu
 - Segurtasun kontrol gehigarriak inplementatu
 - Politika eta prozedurak eguneratu
 - Beharrezkoa bada prestakuntza osagarria eman
 
 **12. Urratsa: Monitorizatu eta Eguneratu**
+
 - Intzidente gehiago monitorizatu
 - AEPDren informazio gehigarri eskaerei erantzun
 - Interesdunen kontsultei erantzun
 - AEPD eta interesdunak eguneratu informazio berria aurkitzen bada
 
 **13. Urratsa: Intzidente Osteko Berrikuspena**
+
 - Ikasitako ikasgaien saioa egin (30 eguneko epean)
 - Urraketari erantzuteko prozedurak eguneratu
 - Arrisku ebaluazioa eguneratu
@@ -213,16 +233,19 @@ DPOk jakinarazpen baldintzak zehazten ditu:
 ### 4.2 Arrisku Determinazio Orokorra
 
 **Arrisku Baxuko Adibideak:**
+
 - Barne dokumentu bat lankide oker bati ustekabean bidaltzea
 - Enkriptatutako ordenagailu eramangarri galdua (enkriptatze sendoa, sarbide ebidentziarik gabe)
 - Datu ez-sentikor mugatuen esposizio laburra
 
 **Arrisku Ertaineko Adibideak:**
+
 - Bezeroen email helbideetara eta izenetara baimenik gabeko sarbidea
 - Enkriptatu gabeko gailu baten galera datu pertsonal mugatuekin
 - Langileen harremanetarako informazioa kanpoko alderdi bati ustekabean ezagutaraztea
 
 **Arrisku Handiko Adibideak:**
+
 - Pasahitzak, datu finantzarioak edo NAN zenbakiak azaltzen dituen datu-base urraketa
 - Ransomware datu exfiltrazioarekin
 - Enkriptatu gabeko osasun datuen galera
@@ -285,7 +308,7 @@ IFK: [IFK Zenbakia]
 
 **Datuen Babeserako Ordezkariaren Kontaktua:**  
 Izena: [DBO Izena]  
-Emaila: dpo@zabalagailetak.com  
+Emaila: <dpo@zabalagailetak.com>  
 Telefonoa: +34 XXX XXX XXX
 
 **Jakinarazpen Data:** [Bidalketa Data]  
@@ -330,6 +353,7 @@ Telefonoa: +34 XXX XXX XXX
 [Hautatu aplikagarriak direnak eta deskribatu:]
 
 **Identifikazio Datuak:**
+
 - [ ] Izen-abizenak
 - [ ] Email helbideak
 - [ ] Telefono zenbakiak
@@ -338,23 +362,27 @@ Telefonoa: +34 XXX XXX XXX
 - [ ] Jaioteguna
 
 **Finantza Datuak:**
+
 - [ ] Kreditu/zordunketa txartel zenbakiak [Baiezkoa bada: Azken 4 digituak soilik edo zenbaki osoak? _____]
 - [ ] Banku kontu zenbakiak
 - [ ] Ordainketa historia / transakzio erregistroak
 - [ ] Finantza egoerak
 
 **Autentifikazio Datuak:**
+
 - [ ] Erabiltzaile izenak
 - [ ] Pasahitzak [Baiezkoa bada: Hash-eatuak edo testu laua? Hash algoritmoa: _____]
 - [ ] Segurtasun galderak/erantzunak
 
 **Erabilera Datuak:**
+
 - [ ] IP helbideak
 - [ ] Nabigazio historia / cookieak
 - [ ] Erosketa historia / eskaera xehetasunak
 - [ ] Kontu jarduera log-ak
 
 **Kategoria Bereziko Datuak (GDPR 9. art.):**
+
 - [ ] Osasun datuak
 - [ ] Jatorri arraza edo etnikoa
 - [ ] Iritzi politikoak
@@ -365,6 +393,7 @@ Telefonoa: +34 XXX XXX XXX
 - [ ] Sexu bizitza edo orientazio sexuala
 
 **Beste Datu Batzuk:**
+
 - [ ] Enplegu erregistroak
 - [ ] Hezkuntza erregistroak
 - [ ] Beste batzuk: _____________________________
@@ -439,6 +468,7 @@ Telefonoa: +34 XXX XXX XXX
 [Deskribatu urraketari aurre egiteko eta errepikatzea prebenitzeko neurriak:]
 
 **Neurri Teknikoak:**
+
 - [ ] Segurtasun adabakiak aplikatu
 - [ ] Segurtasun kontrol gehigarriak inplementatu (suebakiak, enkriptatzea, MFA, etab.)
 - [ ] Sistema gogortzea eta konfigurazio berrikuspena
@@ -447,6 +477,7 @@ Telefonoa: +34 XXX XXX XXX
 - [ ] Beste batzuk: _____________________________
 
 **Antolakuntza Neurriak:**
+
 - [ ] Langileen prestakuntza eta kontzientziazioa
 - [ ] Politika eta prozeduren eguneraketak
 - [ ] Sarbide kontrolaren berrikuspena
@@ -482,12 +513,14 @@ Telefonoa: +34 XXX XXX XXX
 - [ ] EZ - Arriskuak ez du atalase altua betetzen, jakinarazpena ez da beharrezkoa
 
 **BAI bada:**
+
 - **Jakinarazpen Metodoa:** [ ] Emaila [ ] Gutuna [ ] Telefonoa [ ] Komunikazio Publikoa [ ] Beste bat: _____
 - **Jakinarazpen Data:** [Bidalitako data edo aurreikusitako data]
 - **Jakinarazitako Pertsona Kopurua:** _____
 - **Edukia:** [Erantsi jakinarazpenaren kopia edo laburtu puntu nagusiak]
 
 **EZ bada:**
+
 - **Jakinarazpena beharrezkoa ez izateko arrazoia:**
   - [ ] Babes neurri tekniko egokiak zeuden (adibidez, enkriptatzea)
   - [ ] Ondorengo neurriak hartu dira arrisku handia gauzatzea litekeena ez dela ziurtatzeko
@@ -553,7 +586,7 @@ Urraketa jakinarazpen honi buruzko galderak edo informazio gehigarrirako:
 
 **Datuen Babeserako Ordezkaria:**  
 Izena: [DBO Izena]  
-Emaila: dpo@zabalagailetak.com  
+Emaila: <dpo@zabalagailetak.com>  
 Telefonoa: +34 XXX XXX XXX
 
 **Enpresaren Ordezkaria:**  
@@ -639,6 +672,7 @@ Zure kontuko pasahitza [formatu enkriptatuan/hash-eatuan gordeta zegoen industri
 Honako ekintza hauek hartu ditugu:
 
 **Berehalako Ekintzak:**
+
 - [Ekintza zehatza 1, adib., "Baimenik gabeko sarbidea ahalbidetu zuen ahultasuna konpondu dugu"]
 - [Ekintza zehatza 2, adib., "Bezeroen pasahitz guztiak berrezarri ditugu"]
 - [Ekintza zehatza 3, adib., "Zibersegurtasun enpresa bat kontratatu dugu ikerketa sakona egiteko"]
@@ -646,6 +680,7 @@ Honako ekintza hauek hartu ditugu:
 - [Ekintza zehatza 5, adib., "Segurtasun monitorizazio hobetua ezarri dugu"]
 
 **Epe luzeko Hobekuntzak:**
+
 - [Etorkizuneko intzidenteak prebenitzeko ekintzak, adib., "Segurtasun kontrol gehigarriak eta enkriptatzea ezartzen"]
 - [adib., "Segurtasun auditoria osoa egiten"]
 - [adib., "Segurtasun prestakuntza osagarria ematen gure langileei"]
@@ -675,12 +710,12 @@ Zure burua babesteko, honako urrats hauek ematea gomendatzen dizugu:
 
 [Arrisku handiko urraketa bada finantza edo NAN datuekin:]
 
-4. **Kontuan hartu Kreditu Monitorizazioa**
+1. **Kontuan hartu Kreditu Monitorizazioa**
    - Iruzur alerta bat jarri nahi izatea zure kreditu fitxategian kreditu bulegoekin
    - Kontuan hartu doako kreditu txosten bat eskatzea jarduera susmagarriak egiaztatzeko
    - [Zerbitzuak eskaintzen badira:] [Provider]-en bidez [12 hilabete]-ko doako kreditu monitorizazio zerbitzuak eskaintzen ari gara. Izena emateko, bisitatu [URL] edo deitu [Telefonoa] eta erabili erreferentzia kode hau: [Kodea].
 
-5. **Salatu Identitate Lapurreta** (aplikagarria bada)
+2. **Salatu Identitate Lapurreta** (aplikagarria bada)
    - Identitate lapurretaren biktima zarela uste baduzu, salatu tokiko poliziari eta jarri harremanetan agintari eskudunekin
 
 ---
@@ -690,12 +725,14 @@ Zure burua babesteko, honako urrats hauek ematea gomendatzen dizugu:
 Ulertzen dugu galderak edo kezkak izan ditzakezula. Hemen gaude laguntzeko.
 
 **Laguntza Dedikatua:**
+
 - **Emaila:** [security-incident@zabalagailetak.com] edo [dpo@zabalagailetak.com]
 - **Telefonoa:** [+34 XXX XXX XXX] (Astelehenetik Ostiralera, 9:00-18:00 CET)
 - **Ohiko Galderak:** [URL intzidenteari buruzko FAQ orrira]
 
 **Zure Eskubideak:**
 GDPRren arabera, eskubidea duzu:
+
 - Zure datu pertsonaletara sartzeko
 - Datu okerrak zuzentzea eskatzeko
 - Zure datuak ezabatzea eskatzeko
@@ -703,12 +740,14 @@ GDPRren arabera, eskubidea duzu:
 - Ikuskapen agintaritzan (AEPD) kexa jartzeko
 
 Eskubide hauek erabiltzeko edo zure datu pertsonalak nola tratatzen ditugun buruzko informazio gehiagorako, mesedez jarri harremanetan gure Datuen Babeserako Ordezkariarekin:
-- Emaila: dpo@zabalagailetak.com
+
+- Emaila: <dpo@zabalagailetak.com>
 - Telefonoa: +34 XXX XXX XXX
 
 **Datuen Babeserako Espainiako Bulegoa (AEPD):**
 Intzidente hau nola kudeatu dugunari buruzko kezkarik baduzu, AEPDn kexa jartzeko eskubidea duzu:
-- Webgunea: www.aepd.es
+
+- Webgunea: <www.aepd.es>
 - Telefonoa: +34 901 100 099
 - Helbidea: C/ Jorge Juan, 6, 28001 Madril, Espainia
 
@@ -748,8 +787,8 @@ Zabala Gailetak S.A.
 [Enpresa Helbidea]  
 [Herria, Posta Kodea], Espainia  
 IFK: [IFK Zenbakia]  
-Emaila: info@zabalagailetak.com  
-Webgunea: www.zabalagailetak.com
+Emaila: <info@zabalagailetak.com>  
+Webgunea: <www.zabalagailetak.com>
 
 ---
 
@@ -792,12 +831,13 @@ Zinez barkamena eskatzen dugu intzidente honegatik eta informazio pertsonalaren 
 
 **Kontaktua:**
 [DBO Izena], Datuen Babeserako Ordezkaria
-Emaila: dpo@zabalagailetak.com
+Emaila: <dpo@zabalagailetak.com>
 Telefonoa: +34 XXX XXX XXX
 
 ---
 
 **Jakinarazpen Publiko Kanal Gehigarriak:**
+
 - Enpresaren webguneko banner nabarmena
 - Sare sozialetako argitalpenak (Facebook, Twitter, LinkedIn)
 - Industria elkarteak edo merkataritza taldeak
@@ -831,11 +871,13 @@ Urraketa guztiak (jakinarazi ez direnak barne) barne Urraketa Erregistroan dokum
 **Urraketa Data/Ordua:** _____________________ (edo estimatutako tartea)
 
 **Urraketa Mota:**
+
 - [ ] Konfidentzialtasun urraketa (baimenik gabeko ezagutaraztea edo sarbidea)
 - [ ] Osotasun urraketa (baimenik gabeko aldaketa edo alterazioa)
 - [ ] Eskuragarritasun urraketa (galera, suntsipena edo erabilgarritasun eza)
 
 **Kausa:**
+
 - [ ] Zibererasoa
 - [ ] Giza akatsa
 - [ ] Sistema hutsegitea
@@ -852,6 +894,7 @@ Urraketa guztiak (jakinarazi ez direnak barne) barne Urraketa Erregistroan dokum
 **KALTETUTAKO DATUAK:**
 
 **Interesdunen Kategoriak:**
+
 - Bezeroak: _____ (gutxi gorabeherako kopurua)
 - Langileak: _____ (gutxi gorabeherako kopurua)
 - Beste bat: _____ (zehaztu: _______________)
@@ -874,6 +917,7 @@ Baiezkoa bada, zehaztu: _____
 [Deskribatu interesdunentzako balizko eragina]
 
 **Kontuan Hartutako Faktoreak:**
+
 - Datu mota eta sentikortasuna: _____
 - Datu bolumena eta pertsona kopurua: _____
 - Identifikatzeko erraztasuna: _____
@@ -889,6 +933,7 @@ Baiezkoa bada, zehaztu: _____
 **Arrazoia:** _____
 
 **Beharrezkoa bada:**
+
 - Jakinarazpen Data: _____
 - 72 orduko epean: [ ] Bai [ ] Ez
 - Ez bada, atzerapenaren arrazoia: _____
@@ -898,6 +943,7 @@ Baiezkoa bada, zehaztu: _____
 **Arrazoia:** _____
 
 **Beharrezkoa bada:**
+
 - Jakinarazpen Metodoa: [ ] Emaila [ ] Gutuna [ ] Telefonoa [ ] Komunikazio Publikoa
 - Jakinarazpen Data: _____
 - Jakinarazitako Pertsona Kopurua: _____
@@ -1006,11 +1052,13 @@ Deskribapena: _____
 ### 10.2 Funtsezko Aurkikuntzak
 
 **Zer joan zen ondo:**
+
 1. _____
 2. _____
 3. _____
 
 **Zer hobetu behar da:**
+
 1. _____
 2. _____
 3. _____
@@ -1033,16 +1081,19 @@ Deskribapena: _____
 ### 11.1 Urraketa Erantzun Prestakuntza
 
 **Langile Guztiak:**
+
 - Urteroko GDPR prestakuntzak urraketa erantzun prozedurak barne hartzen ditu
 - Susmatutako urraketak nola jakinarazi jakin
 - Eustean duten rola ulertu
 
 **Urraketa Erantzun Taldea:**
+
 - Jakinarazpen baldintzei buruzko prestakuntza zehatza
 - Praktika simulazioak (tabletop ariketak)
 - Txantiloi eta prozedura honen berrikuspena
 
 **Prestakuntza Erregistroak:**
+
 - Azken prestakuntza data: _____
 - Programatutako hurrengo prestakuntza: _____
 - Bertaratzea: %_____
@@ -1050,6 +1101,7 @@ Deskribapena: _____
 ### 11.2 Kontzientziazio Kanpaina
 
 Urraketa baten ondoren, erakunde osorako kontzientziazio jarduerak:
+
 - Langile guztiei emaila gertatutakoa azalduz (xehetasun maila egokiarekin)
 - Segurtasun jardunbide egokien oroigarria
 - Ikasitako ikasgaiak (anonimizatua langilearen akatsa inplikatzen badu)
@@ -1073,20 +1125,24 @@ Urraketa baten ondoren, erakunde osorako kontzientziazio jarduerak:
 ## 13. Arauzko Erreferentziak
 
 **GDPR:**
+
 - 4(12). artikulua: Datu pertsonalen urraketaren definizioa
-- 33. artikulua: Ikuskapen agintaritzari urraketaren jakinarazpena
-- 34. artikulua: Datuen interesdunari urraketaren komunikazioa
+- 1. artikulua: Ikuskapen agintaritzari urraketaren jakinarazpena
+- 1. artikulua: Datuen interesdunari urraketaren komunikazioa
 - 83(4)(a). artikulua: Urraketa ez jakinarazteagatiko isunak (10M€ edo urteko fakturazio globalaren %2 arte)
 - 85-88. kontsiderandoak: Urraketa jakinarazpenari buruzko testuinguru gehigarria
 
 **DBLO-GDD (Espainiako Legea):**
-- 33. artikulua: GDPR 33. artikuluaren inplementazioa Espainian
+
+- 33\. artikulua: GDPR 33. artikuluaren inplementazioa Espainian
 
 **AEPD Jarraibideak:**
-- Segurtasun Urraketa Jakinarazpenari buruzko Gida (eskuragarri www.aepd.es webgunean)
+
+- Segurtasun Urraketa Jakinarazpenari buruzko Gida (eskuragarri <www.aepd.es> webgunean)
 - Urraketa jakinarazpenari buruzko FAQak
 
 **WP29 Jarraibideak (orain EDPB):**
+
 - 2016/679 Erregelamenduaren araberako Datu Pertsonalen Urraketa Jakinarazpenari buruzko Gidalerroak (WP250)
 
 ---
@@ -1095,20 +1151,20 @@ Urraketa baten ondoren, erakunde osorako kontzientziazio jarduerak:
 
 **Datuen Babeserako Ordezkaria (DBO/DPO):**  
 Izena: [DBO Izena]  
-Emaila: dpo@zabalagailetak.com  
+Emaila: <dpo@zabalagailetak.com>  
 Telefonoa: +34 XXX XXX XXX
 
 **CISO:**  
-Emaila: ciso@zabalagailetak.com  
+Emaila: <ciso@zabalagailetak.com>  
 Telefonoa: +34 XXX XXX XXX
 
 **Aholkulari Juridikoa:**  
-Emaila: legal@zabalagailetak.com  
+Emaila: <legal@zabalagailetak.com>  
 Telefonoa: +34 XXX XXX XXX
 
 **AEPD (Datuen Babeserako Espainiako Bulegoa):**  
-Webgunea: www.aepd.es  
-Urraketa Jakinarazpen Ataria: https://sedeagpd.gob.es  
+Webgunea: <www.aepd.es>  
+Urraketa Jakinarazpen Ataria: <https://sedeagpd.gob.es>  
 Telefonoa: +34 901 100 099  
 Helbidea: C/ Jorge Juan, 6, 28001 Madril, Espainia
 

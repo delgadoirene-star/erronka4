@@ -1,5 +1,6 @@
 # Informazioaren Segurtasun Politika
-## Zabala Gailetak S.A.
+
+## Zabala Gailetak S.A
 
 **Dokumentuaren IDa:** ISP-001  
 **Bertsioa:** 1.0  
@@ -30,6 +31,7 @@
 ### 1.3 Banaketa
 
 Politika hau honako hauei banatzen zaie:
+
 - Langile guztiak (egonkorrak eta aldi baterakoak)
 - Kontratistak eta aholkulariak
 - Sistemarako sarbidea duten hirugarrenen zerbitzu hornitzaileak
@@ -46,6 +48,7 @@ Informazioaren Segurtasun Politika honek Zabala Gailetak-en informazio-aktiboak 
 ### 2.2 Esparrua
 
 Politika hau honako hauei aplikatzen zaie:
+
 - Zabala Gailetak-en jabetzakoak edo kontrolpekoak diren informazio-aktibo guztiak
 - Konpainiaren informaziora sartzen diren langile, kontratista, aholkulari eta hirugarren guztiak
 - IT sistema guztiak (web aplikazioak, datu-baseak, hodeiko zerbitzuak)
@@ -56,6 +59,7 @@ Politika hau honako hauei aplikatzen zaie:
 ### 2.3 Salbuespenak
 
 Politika honek ez ditu estaltzen:
+
 - Negozio helburuetarako erabiltzen ez diren informazio pertsonaleko sistemak
 - Hirugarrenen jabetzakoak diren informazio-sistemak, non Zabala Gailetak bezeroa den (akordio bereizien pean estalita)
 
@@ -68,6 +72,7 @@ Zabala Gailetak konprometituta dago bere informazio-aktiboen konfidentzialtasuna
 ### 3.1 Zuzendaritzaren Konpromisoa
 
 Zuzendaritza Exekutiboak honako konpromisoak hartzen ditu:
+
 - Informazioaren segurtasunerako baliabide egokiak eskaintzea
 - Lege eta arauzko baldintzak betetzen direla ziurtatzea
 - Erakunde osoan segurtasunaren inguruko kultura sustatzea
@@ -219,6 +224,7 @@ Informazioa lau mailatan sailkatzen da:
 | **Oso Konfidentziala** | Zabaltzeak kalte larriak eragin ditzakeen informazio kritikoa | Merkataritza-sekretuak, PII, ordainketa-txartelen datuak | Enkriptatze sendoa, MFA, auditoretza erregistroa, DLP |
 
 **Kudeaketa Baldintzak:**
+
 - Dokumentu guztiak dagokien sailkapenarekin etiketatzea
 - Konfidentziala eta Oso Konfidentziala den datua enkriptatzea
 - Fitxategi-transferentzia segurua erabiltzea kanpoan partekatzeko
@@ -239,6 +245,7 @@ Informazioa lau mailatan sailkatzen da:
 ### 6.5 Sare Segurtasun Politika
 
 **IT Sarea:**
+
 - Suebaki bidezko babesa sareko perimetro guztietan
 - Sare segmentazioa: produkzioa, bulegoa, gonbidatuen WiFi-a, DMZ
 - Intrusioak Detektatzeko/Prebenitzeko Sistemak (IDS/IPS)
@@ -247,6 +254,7 @@ Informazioa lau mailatan sailkatzen da:
 - Aldizkako ahultasun eskaneatzea (hilero)
 
 **OT Sarea:**
+
 - Air-gap edo suebaki arau zorrotzak IT eta OT sareen artean
 - Interneteko sarbide zuzenik ez OT sistemetarako
 - Zerrenda zurien ikuspegia OT komunikazioetarako
@@ -254,6 +262,7 @@ Informazioa lau mailatan sailkatzen da:
 - Aldaketa-kudeaketa OT sareko aldaketa guztietarako
 
 **WiFi Segurtasuna:**
+
 - WPA3 enkriptatzea WiFi korporatiborako
 - Gonbidatuen WiFi bereizia atari gatibuarekin eta interneterako sarbidea soilik
 - MAC helbideen iragazketa OT haririk gabeko gailuetarako
@@ -284,7 +293,7 @@ Informazioa lau mailatan sailkatzen da:
 ### 6.8 Intzidentzien Kudeaketa Politika
 
 - **Intzidentzia Definizioa:** Konfidentzialtasuna, osotasuna edo eskuragarritasuna mehatxatzen duen edozein gertaera
-- **Jakinarazpena:** Intzidentzia guztiak ordubeteko epean jakinaraztea security@zabalagailetak.com bidez edo intzidentzia telefono bidez
+- **Jakinarazpena:** Intzidentzia guztiak ordubeteko epean jakinaraztea <security@zabalagailetak.com> bidez edo intzidentzia telefono bidez
 - **Sailkapena:** Kritikoa, Altua, Ertaina, Baxua eraginaren eta urgentziaren arabera
 - **Erantzun Taldea:** CISO, IT Arduraduna, Lege Saila, DPO, PR (intzidentzia kritikoetarako)
 - **Erantzun Prozesua:**
@@ -308,6 +317,7 @@ Informazioa lau mailatan sailkatzen da:
 ### 6.10 Segurtasun Fisiko eta Ingurumenekoa
 
 **Datu Zentroa eta Zerbitzari Gela:**
+
 - Sarbide kontrola (txartela + biometrikoa)
 - 24/7 bideo zaintza (90 eguneko atxikipena)
 - Ingurumenaren monitorizazioa (tenperatura, hezetasuna)
@@ -315,12 +325,14 @@ Informazioa lau mailatan sailkatzen da:
 - Etenik Gabeko Elikatze Sistema (UPS) eta sorgailu laguntzailea
 
 **Produkzio Instalazioak:**
+
 - Perimetroko segurtasuna (hesia, argiztapena, kamerak)
 - Bisitarien kudeaketa (sinadura, laguntzaileak)
 - Informazio sentikorra duten hondakinen deuseztapen segurua
 - Mahai garbia eta pantaila garbia politika
 
 **Gailu Mugikorrak eta Ordenagailu Eramangarriak:**
+
 - Disko osoaren enkriptatzea (BitLocker, FileVault)
 - Gailu Mugikorren Kudeaketa (MDM) konpainiako gailuetarako
 - Galdutako/lapurtutako gailuak urrunetik garbitzeko gaitasuna
@@ -488,6 +500,7 @@ Politika hau urratzeak honakoak ekar ditzake:
 3. **Urraketa Oso Larriak edo Errepikatuak:** Etenaldia, kaleratzea edo legezko ekintzak
 
 **Urraketa Adibideak:**
+
 - Arina: Pasahitz ahula, desblokeatutako lan-estazioa zaintzarik gabe
 - Larria: Pasahitzak partekatzea, baimenik gabeko software instalazioa, politika ez betetzea ohartarazpenaren ondoren
 - Oso Larria: Nahita egindako datu-urraketa, jarduera maltzurra, iruzurra, informazio lapurreta
@@ -518,6 +531,7 @@ Diziplina-ekintza guztiak Espainiako lan-legearekin eta lan-kontratuekin bat dat
 ### 11.2 Aldaketa Kudeaketa
 
 Politika aldaketek prozesu hau jarraitzen dute:
+
 1. Eguneraketa zirriborroa CISO edo politika jabearen aldetik
 2. Lege, DPO, IT Arduradunaren berrikuspena
 3. CEOren onarpena
@@ -553,33 +567,33 @@ Politika aldaketek prozesu hau jarraitzen dute:
 ### 13.1 Segurtasun Taldearen Kontaktuak
 
 **Informazioaren Segurtasuneko Arduradun Nagusia (CISO)**  
-Email: ciso@zabalagailetak.com  
+Email: <ciso@zabalagailetak.com>  
 Telefonoa: +34 XXX XXX XXX  
 Bulegoa: A Eraikina, 201 Gela
 
 **IT Segurtasun Taldea**  
-Email: security@zabalagailetak.com  
+Email: <security@zabalagailetak.com>  
 Telefonoa: +34 XXX XXX XXX (24/7 Segurtasun Telefonoa)
 
 **Datuen Babeserako Ordezkaria (DPO)**  
-Email: dpo@zabalagailetak.com  
+Email: <dpo@zabalagailetak.com>  
 Telefonoa: +34 XXX XXX XXX
 
 **Intzidentzia Jakinarazpena**  
-Email: incident@zabalagailetak.com  
+Email: <incident@zabalagailetak.com>  
 Telefonoa: +34 XXX XXX XXX (24/7)  
 Barne Luzapena: 911
 
 ### 13.2 Kanpo Kontaktuak
 
 **Datuak Babesteko Espainiako Bulegoa (AEPD)**  
-Webgunea: www.aepd.es  
+Webgunea: <www.aepd.es>  
 Telefonoa: +34 901 100 099  
 Helbidea: C/ Jorge Juan, 6, 28001 Madrid
 
 **INCIBE (Zibersegurtasuneko Institutu Nazionala)**  
 Telefonoa: +34 017 (24/7 zibersegurtasun intzidentziak)  
-Webgunea: www.incibe.es
+Webgunea: <www.incibe.es>
 
 ---
 

@@ -13,19 +13,23 @@ Aurkibide honek Zabala Gailetak zibersegurtasun proiekturako eskuragarri dagoen 
 ## 🎯 Sarbide Azkarra
 
 ### Interesduntzat (Stakeholders)
+
 - **[PROJECT_DOCUMENTATION.md](./PROJECT_DOCUMENTATION.md)** - Proiektuaren ikuspegi osoa (Hasi hemen!)
 - **[QUICK_START_GUIDE.md](./QUICK_START_GUIDE.md)** - Hasi 15 minututan
 
 ### Garatzaileentzat
+
 - **[API_DOCUMENTATION.md](./API_DOCUMENTATION.md)** - API erreferentzia eta endpoint-ak
 - **[WEB_APP_GUIDE.md](./Zabala%20Gailetak/WEB_APP_GUIDE.md)** - Web aplikazioaren garapen gida
 - **[MOBILE_APP_GUIDE.md](./Zabala%20Gailetak/MOBILE_APP_GUIDE.md)** - Mugikorrerako aplikazioaren garapen gida
 
 ### DevOps/IT-rentzat
+
 - **[IMPLEMENTATION_SUMMARY.md](./IMPLEMENTATION_SUMMARY.md)** - Inplementazio teknikoaren xehetasunak
 - **Docker & CI/CD** - Edukiontzi eta automatizazio konfigurazioa
 
 ### Segurtasun Taldeentzat
+
 - **Security SOPs** - Eragiketa Prozedura Estandarrak
 - **Network Security** - Segmentazioa eta suebaki arauak
 - **Honeypot Setup** - Mehatxu detekzio sistema
@@ -41,6 +45,7 @@ Aurkibide honek Zabala Gailetak zibersegurtasun proiekturako eskuragarri dagoen 
 **Luzera:** Integrala (100+ orrialde)
 
 **Edukiak:**
+
 - Laburpen Exekutiboa
 - Proiektuaren Ikuspegi Orokorra
 - Arkitektura Teknikoa
@@ -53,6 +58,7 @@ Aurkibide honek Zabala Gailetak zibersegurtasun proiekturako eskuragarri dagoen 
 - Laguntza eta Kontaktua
 
 **Noiz erabili:**
+
 - Proiektuaren aurkezpenetan
 - Interesdunen berrikuspenetan
 - Taldekide berrien onboarding-ean
@@ -67,6 +73,7 @@ Aurkibide honek Zabala Gailetak zibersegurtasun proiekturako eskuragarri dagoen 
 **Luzera:** Ertaina (15 orrialde)
 
 **Edukiak:**
+
 - Aurrebaldintzen kontrol-zerrenda
 - 5 minutuko hasiera azkarra
 - Aplikazio sarbidea
@@ -77,6 +84,7 @@ Aurkibide honek Zabala Gailetak zibersegurtasun proiekturako eskuragarri dagoen 
 - Konfigurazio kontrol-zerrenda
 
 **Noiz erabili:**
+
 - Proiektuaren hasierako konfigurazioan
 - Garapen ingurunea sortzean
 - Demo prestaketan
@@ -91,6 +99,7 @@ Aurkibide honek Zabala Gailetak zibersegurtasun proiekturako eskuragarri dagoen 
 **Luzera:** Ertaina (30 orrialde)
 
 **Edukiak:**
+
 - Autentifikazio endpoint-ak
 - Produktu endpoint-ak
 - Eskaera endpoint-ak
@@ -102,6 +111,7 @@ Aurkibide honek Zabala Gailetak zibersegurtasun proiekturako eskuragarri dagoen 
 - SDK adibideak
 
 **Noiz erabili:**
+
 - API integrazioan
 - Frontend garapenean
 - APIak probatzean
@@ -116,6 +126,7 @@ Aurkibide honek Zabala Gailetak zibersegurtasun proiekturako eskuragarri dagoen 
 **Luzera:** Ertaina (25 orrialde)
 
 **Edukiak:**
+
 - Ezaugarrien ikuspegi orokorra
 - Autentifikazio fluxua
 - Produktu katalogoa
@@ -127,6 +138,7 @@ Aurkibide honek Zabala Gailetak zibersegurtasun proiekturako eskuragarri dagoen 
 - Errendimendu optimizazioa
 
 **Noiz erabili:**
+
 - Web aplikazioaren garapenean
 - Ezaugarrien inplementazioan
 - Web aplikazioa araztean
@@ -141,6 +153,7 @@ Aurkibide honek Zabala Gailetak zibersegurtasun proiekturako eskuragarri dagoen 
 **Luzera:** Ertaina (25 orrialde)
 
 **Edukiak:**
+
 - Plataforma euskarria
 - Ezaugarrien ikuspegi orokorra
 - Arkitektura xehetasunak
@@ -152,6 +165,7 @@ Aurkibide honek Zabala Gailetak zibersegurtasun proiekturako eskuragarri dagoen 
 - Arazoak konpontzea
 
 **Noiz erabili:**
+
 - Mugikor aplikazioaren garapenean
 - iOS/Android eraikuntzetan
 - App store bidalketan
@@ -166,6 +180,7 @@ Aurkibide honek Zabala Gailetak zibersegurtasun proiekturako eskuragarri dagoen 
 **Luzera:** Laburra (10 orrialde)
 
 **Edukiak:**
+
 - Inplementatutako osagaiak
 - Proiektuaren egitura
 - API endpoint-ak
@@ -177,6 +192,7 @@ Aurkibide honek Zabala Gailetak zibersegurtasun proiekturako eskuragarri dagoen 
 - Mantentze lanak
 
 **Noiz erabili:**
+
 - Berrikuspen teknikoetan
 - Inplementazio egiaztapenean
 - Arkitektura eztabaidetan
@@ -189,26 +205,32 @@ Aurkibide honek Zabala Gailetak zibersegurtasun proiekturako eskuragarri dagoen 
 ### Eragiketa Prozedura Estandarrak (SOPs)
 
 #### Web Segurtasuna
+
 - **Fitxategia:** `Zabala Gailetak/security/web_hardening_sop.md`
 - **Edukiak:** Web aplikazioaren gogortzea, OWASP betetzea, segurtasun goiburuak
 
 #### Mugikor Segurtasuna
+
 - **Fitxategia:** `Zabala Gailetak/security/mobile_security_sop.md`
 - **Edukiak:** Mugikor aplikazioaren segurtasuna, biometria, biltegiratze segurua
 
 #### Sare Segurtasuna
+
 - **Fitxategia:** `Zabala Gailetak/infrastructure/network/network_segmentation_sop.md`
 - **Edukiak:** Sare segmentazioa, suebaki arauak, VLAN konfigurazioa
 
 #### Honeypot Inplementazioa
+
 - **Fitxategia:** `Zabala Gailetak/security/honeypot/honeypot_implementation_sop.md`
 - **Edukiak:** Honeypot konfigurazioa, monitorizazioa
 
 #### Intzidentzien Erantzuna
+
 - **Fitxategia:** `Zabala Gailetak/security/incidents/sop_incident_response.md`
 - **Edukiak:** Intzidentzien erantzun prozesua, eustea, berreskuratzea
 
 #### Garapen Segurua
+
 - **Fitxategia:** `Zabala Gailetak/devops/sop_secure_development.md`
 - **Edukiak:** SSDLC, kodeketa seguru praktikak, probak
 
@@ -238,7 +260,8 @@ Aurkibide honek Zabala Gailetak zibersegurtasun proiekturako eskuragarri dagoen 
 ## 📊 Arkitektura Diagramak
 
 ### Sistema Arkitektura
-```
+
+```text
 ┌─────────────────────────────────────────────────────┐
 │                  Erabiltzaileak                     │
 └──────────┬──────────────────┬────────────────────┘
@@ -265,7 +288,8 @@ Aurkibide honek Zabala Gailetak zibersegurtasun proiekturako eskuragarri dagoen 
 ```
 
 ### Sare Segmentazioa
-```
+
+```text
 Internet
     ↓
 DMZ (192.168.100.0/24)
@@ -350,10 +374,10 @@ npm run build
 
 ### Sarbide URLak
 
-- **API:** http://localhost:3000
-- **Web App:** http://localhost:3001
-- **Kibana:** http://localhost:5601
-- **API Osasuna:** http://localhost:3000/api/health
+- **API:** <http://localhost:3000>
+- **Web App:** <http://localhost:3001>
+- **Kibana:** <http://localhost:5601>
+- **API Osasuna:** <http://localhost:3000/api/health>
 
 ### Fitxategi Gakoak
 
@@ -367,25 +391,29 @@ npm run build
 ## 📞 Laguntza Baliabideak
 
 ### Dokumentazioa
+
 - Gida Osoa: `PROJECT_DOCUMENTATION.md`
 - Hasiera Azkarra: `QUICK_START_GUIDE.md`
 - API Erreferentzia: `API_DOCUMENTATION.md`
 
 ### Aplikazio Gidak
+
 - Web App: `Zabala Gailetak/WEB_APP_GUIDE.md`
 - Mugikor App: `Zabala Gailetak/MOBILE_APP_GUIDE.md`
 
 ### Segurtasun SOPak
+
 - Web Segurtasuna: `security/web_hardening_sop.md`
 - Mugikor Segurtasuna: `security/mobile_security_sop.md`
 - Sare Segurtasuna: `infrastructure/network/network_segmentation_sop.md`
 - Honeypot: `security/honeypot/honeypot_implementation_sop.md`
 
 ### Kanpo Baliabideak
-- OWASP: https://owasp.org
-- NIST: https://csrc.nist.gov
-- React Native: https://reactnative.dev
-- React: https://react.dev
+
+- OWASP: <https://owasp.org>
+- NIST: <https://csrc.nist.gov>
+- React Native: <https://reactnative.dev>
+- React: <https://react.dev>
 
 ---
 
@@ -405,6 +433,7 @@ npm run build
 ### Aldaketa Erregistroa
 
 **v1.0 (2024-01-08)**
+
 - Hasierako dokumentazio argitalpena
 - Proiektuaren ikuspegi osoa
 - API dokumentazioa
@@ -478,7 +507,7 @@ npm run build
 - [x] MOBILE_APP_GUIDE.md
 - [x] IMPLEMENTATION_SUMMARY.md
 
-### Segurtasun SOPak
+### Segurtasun SOPak (Zerrenda)
 
 - [x] Web gogortze SOP
 - [x] Mugikor segurtasun SOP
@@ -500,17 +529,19 @@ npm run build
 
 ---
 
-## 🎉 Aurkezteko Prest!
+## 🎉 Aurkezteko Prest
 
 Orain dokumentazio pakete osoa duzu prest interesdunen aurkezpenetarako, berrikuspen teknikoetarako edo onboarding-erako.
 
 **Gomendatutako Irakurketa Ordena:**
+
 1. Hasi hemen: `DOCUMENTATION_INDEX.md`
 2. Ikuspegi azkarra: `PROJECT_DOCUMENTATION.md` (Laburpen Exekutiboa)
 3. Hasi: `QUICK_START_GUIDE.md`
 4. Sakonketa: Irakurri gida espezifikoak beharren arabera
 
 **Aurkezpenetarako:**
+
 - Erabili `PROJECT_DOCUMENTATION.md` erreferentzia nagusi gisa
 - Erreferentziatu `QUICK_START_GUIDE.md` demoetarako
 - Sartu dagozkion SOPak segurtasun eztabaidetarako

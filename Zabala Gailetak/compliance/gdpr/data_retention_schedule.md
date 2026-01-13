@@ -1,4 +1,5 @@
 # Datuen Atxikipen Egutegia
+
 ## Zabala Gailetak S.A. - GDPR Betetzea
 
 **Dokumentuaren IDa:** DRS-001  
@@ -22,6 +23,7 @@
 ### 1.2 Helburua
 
 Datuen Atxikipen Egutegi honek Zabala Gailetak-ek datu pertsonalen kategoria desberdinak zenbat denboran gordetzen dituen eta atxikipen epeak zehazteko irizpideak ezartzen ditu. Honako hauek betetzen direla ziurtatzen du:
+
 - **GDPR 5(1)(e) artikulua:** Biltegiratze mugaren printzipioa (datuak behar baino denbora gehiago ez gordetzea)
 - **GDPR 5(2) artikulua:** Erantzukizun proaktiboaren printzipioa (betetzea frogatzea)
 - **DBLO-GDD:** Espainiako datuen babeserako baldintzak
@@ -30,6 +32,7 @@ Datuen Atxikipen Egutegi honek Zabala Gailetak-ek datu pertsonalen kategoria des
 ### 1.3 Esparrua
 
 Egutegi hau Zabala Gailetak-ek tratatzen dituen datu pertsonal guztiei aplikatzen zaie, barne:
+
 - Bezeroen datuak
 - Langileen datuak
 - Hornitzaile eta bazkideen datuak
@@ -46,6 +49,7 @@ Egutegi hau Zabala Gailetak-ek tratatzen dituen datu pertsonal guztiei aplikatze
 Datu pertsonalak datuen interesdunak identifikatzea ahalbidetzen duen moduan gorde behar dira, datu pertsonalak tratatzen diren helburuetarako beharrezkoa dena baino denbora luzeagoan ez.
 
 **Salbuespenak:**
+
 - Interes publikoko artxibatzea, ikerketa zientifiko edo historikoa, edo helburu estatistikoak (babes neurri egokiekin)
 - Legeak eskatzen duenean atxikipen luzeagoa
 
@@ -61,6 +65,7 @@ Atxikipen epeak honako hauetan oinarrituta zehazten dira:
 6. **Datuen Sentikortasuna:** Datu sentikorragoek justifikazio sendoagoa behar dute atxikipen luzerako
 
 **Oreka Faktoreak:**
+
 - Atxikipen epe laburragoak datu sentikor edo arrisku handikoetarako
 - Gutxieneko atxikipena lege obligazioak betetzeko
 - Ezabaketa prozedura argiak atxikipen epea amaitzean
@@ -68,6 +73,7 @@ Atxikipen epeak honako hauetan oinarrituta zehazten dira:
 ### 2.3 Atxikipen Epe Abiarazleak
 
 **Gertaeran Oinarritutako Abiarazleak:**
+
 - Kontratu amaiera
 - Kontu itxiera
 - Enplegu amaiera
@@ -76,6 +82,7 @@ Atxikipen epeak honako hauetan oinarrituta zehazten dira:
 - Zerbitzu amaiera
 
 **Denboran Oinarritutako Abiarazleak:**
+
 - Datu bilketatik epe finkoa
 - Azken jardueratik epe finkoa
 - Gertaera abiarazletik epe finkoa
@@ -85,6 +92,7 @@ Atxikipen epeak honako hauetan oinarrituta zehazten dira:
 **Baliogabetzea:** Datuak prozedura legalen, erregulazio ikerketaren edo auditoriaren menpe badaude, atxikipen epea eten egiten da gaia ebatzi arte (lege atxikipena).
 
 **Prozesua:**
+
 1. Aholkulari juridikoak lege atxikipenaren menpeko datuak identifikatzen ditu
 2. ITk atxikipen teknikoa ezartzen du (datuak markatu, ezabaketa desgaitu)
 3. Kaltetutako datu jabeak jakinarazten dira
@@ -188,12 +196,12 @@ Atxikipen epeak honako hauetan oinarrituta zehazten dira:
 | Datu Kategoria | Atxikipen Epea | Oinarri Juridikoa | Ezabaketa Metodoa |
 |----------------|----------------|-------------------|-------------------|
 | **Langile Fitxategia** (eskaera, CV, eskaintza gutuna, kontratua) | Enplegu iraupena + 4 urte | Lege Obligazioa, Lege Erreklamazioak | Segurtasunez txikituta (papera), ezabatuta (elektronikoa) |
-| **Nomina Erregistroak** | Enplegu iraupena + **7 urte** | Lege Obligazioa | Espainiako Lan Legea, Zerga Legea | Artxibatuta |
-| **Denbora eta Asistentzia** | Enplegu iraupena + 4 urte | Lege Obligazioa | Espainiako Lan Legea | Artxibatuta, gero ezabatuta |
-| **Errendimendu Berrikuspenak** | Enplegu iraupena + 4 urte | Lege Erreklamazioak | Lan gatazkak | Ezabatuta |
-| **Diziplina Erregistroak** | Enplegu iraupena + 4 urte | Lege Erreklamazioak | Lan gatazkak | Ezabatuta |
-| **Prestakuntza Erregistroak** | Enplegu iraupena + 4 urte | Interes Legitimoak | Gaitasun egiaztapena | Ezabatuta |
-| **Osasun eta Segurtasun Erregistroak** | Enplegu iraupena + **40 urte** | Lege Obligazioa | Espainiako osasun eta segurtasun araudiak (latentzia luzeko laneko gaixotasunak) | Epe luzera artxibatuta |
+| **Nomina Erregistroak** | Enplegu iraupena + **7 urte** | Lege Obligazioa (Lan eta Zerga Legea) | Artxibatuta |
+| **Denbora eta Asistentzia** | Enplegu iraupena + 4 urte | Lege Obligazioa (Espainiako Lan Legea) | Artxibatuta, gero ezabatuta |
+| **Errendimendu Berrikuspenak** | Enplegu iraupena + 4 urte | Lege Erreklamazioak (Lan gatazkak) | Ezabatuta |
+| **Diziplina Erregistroak** | Enplegu iraupena + 4 urte | Lege Erreklamazioak (Lan gatazkak) | Ezabatuta |
+| **Prestakuntza Erregistroak** | Enplegu iraupena + 4 urte | Interes Legitimoak (Gaitasun egiaztapena) | Ezabatuta |
+| **Osasun eta Segurtasun Erregistroak** | Enplegu iraupena + **40 urte** | Lege Obligazioa (Espainiako araudia) | Epe luzera artxibatuta |
 
 **Arrazoibidea:** Espainiako lan legeak enplegu erregistroak 4 urtez gordetzea eskatzen du amaitu ondoren, balizko lan gatazketarako. Nomina erregistroak 7 urtez gordetzen dira zerga legearen arabera. Osasun/segurtasun erregistroak 40 urtez gordetzen dira laneko gaixotasunen latentzia epe luzeak direla eta.
 
@@ -276,11 +284,13 @@ Atxikipen epeak honako hauetan oinarrituta zehazten dira:
 ### 8.1 Babeskopia Estrategia
 
 **Babeskopia Motak:**
+
 - **Eguneroko Inkrementala:** Azken babeskopiatik izandako aldaketak
 - **Asteko Osoa:** Datuen argazki osoa
 - **Hileko Artxiboa:** Epe luzeko biltegiratzea
 
 **Atxikipena:**
+
 - **Eguneroko Babeskopiak:** 30 egun
 - **Asteko Babeskopiak:** 12 aste (3 hilabete)
 - **Hileko Babeskopiak:** 12 hilabete
@@ -291,6 +301,7 @@ Atxikipen epeak honako hauetan oinarrituta zehazten dira:
 **Erronka:** Babeskopiek atxikipen egutegiaren arabera ezabatu beharko liratekeen datu pertsonalak izan ditzakete, baina babeskopiak editatzea ez da praktikoa.
 
 **Ikuspegia:**
+
 1. **Produkzio Ezabaketa:** Produkzio sistemetatik datuak ezabatu atxikipen egutegiaren arabera
 2. **Babeskopia Atxikipena:** Datuak babeskopietan mantentzen dira babeskopia atxikipen epean (30-90 egun)
 3. **Babeskopia Txandakatzea:** Babeskopia zaharrak automatikoki ezabatzen dira, datu zaharkituak kenduz
@@ -309,11 +320,13 @@ Atxikipen epeak honako hauetan oinarrituta zehazten dira:
 **Definizioa:** Datuak prozesatzea norbanakoak identifikatu ezin izateko moduan (itzulezina).
 
 **Erabilera Kasuak:**
+
 - Analitika eta txostenak atxikipen epetik haratago
 - Ikerketa eta estatistikak
 - Erregistro historikoak
 
 **Teknikak:**
+
 - Agregazioa (adib., "100 eskaera eginda" banakako eskaera xehetasunen ordez)
 - Datu maskaratzea (identifikatzaile zuzenak kenduz)
 - Orokortzea (adib., adin tarteak adin zehatzaren ordez)
@@ -325,6 +338,7 @@ Atxikipen epeak honako hauetan oinarrituta zehazten dira:
 **Definizioa:** Datuak prozesatzea norbanakoak identifikatu ezin izateko informazio gehigarririk gabe, zeina bereizita gordetzen den (itzulgarria gakoarekin).
 
 **Erabilera Kasuak:**
+
 - Analitika norbanakoekin lotzeko gaitasunarekin behar denean (adib., bezero IDa izenaren ordez)
 - Probak eta garapen inguruneak
 - Ikerketa non berriro identifikatzea beharrezkoa izan daitekeen
@@ -340,6 +354,7 @@ Atxikipen epeak honako hauetan oinarrituta zehazten dira:
 ### 10.1 Ezabaketa Metodoak
 
 **Ezabaketa Seguruaren Estandarrak:**
+
 - NIST SP 800-88 jarraibideak jarraitu euskarrien saneamendurako
 - Metodo egokia biltegiratze motaren eta sentikortasunaren arabera
 
@@ -353,12 +368,14 @@ Atxikipen epeak honako hauetan oinarrituta zehazten dira:
 | **Hodei Biltegiratzea** | Hornitzaile ezabaketa + egiaztapena | Hodei hornitzaile estandarrak |
 
 **Soft Delete vs. Hard Delete:**
+
 - **Soft Delete:** Erregistroa ezabatuta bezala markatu baina datuak mantendu (EZ da nahikoa GDPR betetzeko)
 - **Hard Delete:** Datuak datu-basetik betirako kendu (beharrezkoa atxikipen egutegia betetzeko)
 
 ### 10.2 Ezabaketa Egiaztapena
 
 **Prozesua:**
+
 1. **Ezabaketa Eskaera:** Atxikipen epea iraungitzeak, datu interesdunaren eskaerak edo eskuzko berrikuspenak eraginda
 2. **Onarpena:** Lege atxikipenik edo salbuespenik ez dagoela egiaztatu
 3. **Exekuzioa:** Ezabaketa script/prozedura exekutatu
@@ -371,12 +388,14 @@ Atxikipen epeak honako hauetan oinarrituta zehazten dira:
 ### 10.3 Ezabaketa Automatizatua
 
 **Prozesu Automatizatuak:**
+
 - Bezero kontu inaktiboak: Scripta hilero exekutatzen da, 2+ urteko jarduerarik gabeko kontuak ezabatzen ditu
 - Iraungitako cookieak: Nabigatzailearen ezabaketa automatikoa
 - Babeskopia zaharrak: Txandakatze automatizatuak atxikipen epea baino zaharragoak diren babeskopiak ezabatzen ditu
 - Segurtasun log-ak: Urtebetera ezabaketa automatizatua
 
 **Eskuzko Berrikuspena Beharrezkoa:**
+
 - Langileen datuak (lege atxikipenik ez dagoela egiaztatu)
 - Datu interesdunen ezabatze eskaerak (identitate egiaztapena, lege oinarriaren egiaztapena)
 - Etengabeko kontratuei edo lege erreklamazioei lotutako datuak
@@ -390,6 +409,7 @@ Atxikipen epeak honako hauetan oinarrituta zehazten dira:
 **Abiarazlea:** Prozedura legalak, erregulazio ikerketa, auditoria edo balizko auziak
 
 **Prozesua:**
+
 1. Aholkulari juridikoak atxikipenaren menpeko datuak identifikatzen ditu
 2. ITk atxikipen teknikoa ezartzen du (ezabaketa desgaitu)
 3. Datu jabeak jakinarazten dira
@@ -402,6 +422,7 @@ Atxikipen epeak honako hauetan oinarrituta zehazten dira:
 ### 11.2 Atxikipen Luzapenak
 
 **Luzapenerako Arrazoiak:**
+
 - Lege betebehar berriak atxikipen luzeagoa eskatzen du
 - Etengabeko lege erreklamazioak edo gatazkak
 - Erregulazio ikerketa
@@ -415,12 +436,14 @@ Atxikipen epeak honako hauetan oinarrituta zehazten dira:
 ### 11.3 Atxikipen Laburtua (Datu Interesdunan Eskaera)
 
 **Datu Interesdunen Eskubideak:**
+
 - Ezabatzeko eskubideak (17. Art.) ezabaketa eska dezake atxikipen epea amaitu baino lehen
 - Mugatzeko eskubideak (18. Art.) tratamendua mugatu dezake atxikipen epean
 
 **Ebaluazioa:** Ezabatze eskaera ebaluatu salbuespenen aurka (lege obligazioa, lege erreklamazioak, etab.).
 
 **Emaitza:**
+
 - **Onartua:** Datuak ezabatu atxikipen epe estandarra baino lehen
 - **Ukatua:** Azaldu atxikipen jarraitua eskatzen duen lege obligazioa edo salbuespena
 
@@ -431,11 +454,13 @@ Atxikipen epeak honako hauetan oinarrituta zehazten dira:
 ### 12.1 Atxikipen Egutegi Berrikuspenak
 
 **Urteroko Berrikuspena:**
+
 - DPOk atxikipen egutegi osoa berrikusten du
 - Datu mota berrien, lege aldaketen, negozio aldaketen eguneraketa
 - Ezabaketa prozesuak behar bezala funtzionatzen dutela egiaztatu
 
 **Ad-Hoc Berrikuspen Abiarazleak:**
+
 - Lege baldintza berriak
 - Datu tratamendu jarduera berriak
 - Datu-urraketak edo intzidenteak
@@ -445,12 +470,14 @@ Atxikipen epeak honako hauetan oinarrituta zehazten dira:
 ### 12.2 Betetze Auditoriak
 
 **Barne Auditoriak:**
+
 - Hiruhileko ezabaketa prozesuen ausazko egiaztapenak
 - Lagin egiaztapena (adib., datuak egutegiaren arabera ezabatu diren egiaztatu)
 - Ezabaketa log-en berrikuspena
 - Ezabaketa script automatizatuak probatu
 
 **Kanpo Auditoriak:**
+
 - ISO 27001 auditoriek informazio segurtasun kontrolak egiaztatzen dituzte
 - GDPR betetze auditoriek datu atxikipen praktikak egiaztatzen dituzte
 - Arau auditoriak (AEPD) ikerketa menpe badaude
@@ -458,6 +485,7 @@ Atxikipen epeak honako hauetan oinarrituta zehazten dira:
 ### 12.3 Metrikak eta Txostenak
 
 **Jarraitu:**
+
 - Kategoria bakoitzeko ezabatutako erregistro kopurua (hilero)
 - Betetze tasa (garaiz ezabatutako datuen %)
 - Salbuespenak eta lege atxikipenak (zenbaketa aktiboa)
@@ -465,6 +493,7 @@ Atxikipen epeak honako hauetan oinarrituta zehazten dira:
 - Ezabaketa erroreak edo hutsegiteak
 
 **Txostenak:**
+
 - Hiruhileko txostena zuzendaritzari
 - Urteroko txostena Administrazio Kontseiluari (aplikagarria bada)
 - DPO txostena Tratamendu Jardueren Erregistroetarako (ROPA)
@@ -476,16 +505,19 @@ Atxikipen epeak honako hauetan oinarrituta zehazten dira:
 ### 13.1 Langileen Prestakuntza
 
 **Langile Guztiak:**
+
 - Oinarrizko kontzientziazioa: Ez gorde datu pertsonalak behar baino denbora gehiagoan
 - Nola identifikatu atxikipen egutegiaren menpeko datuak
 - Datuen ezabaketa nola eskatu
 
 **Datu Jabeak eta Prozesatzaileak:**
+
 - Beren datu kategorietarako atxikipen egutegiari buruzko prestakuntza zehatza
 - Ezabaketa prozedurak nola inplementatu
 - Lege atxikipenak nola kudeatu
 
 **IT eta Segurtasun Langileak:**
+
 - Ezabaketa metodo teknikoak
 - Ezabaketa script automatizatuen kudeaketa
 - Babeskopia txandakatzea eta datuen bizi-zikloa
@@ -495,6 +527,7 @@ Atxikipen epeak honako hauetan oinarrituta zehazten dira:
 ### 13.2 Baliabideak
 
 **Langileentzat Eskuragarri:**
+
 - Atxikipen egutegiaren laburpena (erreferentzia azkarra)
 - Ezabaketa eskaera inprimakiak
 - Lege atxikipen jakinarazpen txantiloiak
@@ -518,16 +551,19 @@ Atxikipen epeak honako hauetan oinarrituta zehazten dira:
 ### 15.1 Espainiako Lege Atxikipen Baldintzak
 
 **Zerga eta Kontabilitatea:**
+
 - **Zerga Lege Orokorra (Ley General Tributaria - Ley 58/2003):** 7 urteko atxikipena zerga erregistroetarako
 - **Merkataritza Kodea (Código de Comercio - 30. Art.):** 6 urteko atxikipena kontabilitate liburu eta erregistroetarako (7 urte estandar seguruagoa da)
 - **BEZ Legea:** 7 urte BEZari lotutako erregistroetarako
 
 **Lan eta Enplegua:**
+
 - **Langileen Estatutua:** 4 urte lanarekin lotutako dokumentuetarako
 - **Gizarte Segurantza Legea:** 4 urte gizarte segurantza erregistroetarako
 - **Osasuna eta Segurtasuna:** 40 urte esposizio erregistroetarako (latentzia luzeko laneko gaixotasunak)
 
 **Beste batzuk:**
+
 - **Kode Zibila:** 5 urte kontratu erreklamazioetarako preskripzio epe orokorra
 - **Kontsumitzaileen Babesa:** 3-5 urte kontsumo gatazka erregistroetarako
 
@@ -544,18 +580,19 @@ Atxikipen epeak honako hauetan oinarrituta zehazten dira:
 
 **Datuen Babeserako Ordezkaria (DBO/DPO):**  
 Izena: [DBO Izena]  
-Emaila: dpo@zabalagailetak.com  
+Emaila: <dpo@zabalagailetak.com>  
 Telefonoa: +34 XXX XXX XXX
 
 **Atxikipenari Buruzko Galderak:**
-- Atxikipen epeak: dpo@zabalagailetak.com
-- Ezabaketa eskaerak: dpo@zabalagailetak.com
-- Lege atxikipenak: legal@zabalagailetak.com
-- Ezabaketa teknikoa: it@zabalagailetak.com
+
+- Atxikipen epeak: <dpo@zabalagailetak.com>
+- Ezabaketa eskaerak: <dpo@zabalagailetak.com>
+- Lege atxikipenak: <legal@zabalagailetak.com>
+- Ezabaketa teknikoa: <it@zabalagailetak.com>
 
 **Ikuskapen Agintaritza:**  
 Datuen Babeserako Espainiako Bulegoa (AEPD)  
-Webgunea: www.aepd.es  
+Webgunea: <www.aepd.es>  
 Telefonoa: +34 901 100 099
 
 ---

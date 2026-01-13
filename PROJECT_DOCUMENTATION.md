@@ -14,7 +14,7 @@
 3. [Arkitektura Teknikoa](#3-arkitektura-teknikoa)
 4. [Segurtasun Inplementazioa](#4-segurtasun-inplementazioa)
 5. [Aplikazioen Orokorra](#5-aplikazioen-orokorra)
-6. [Hedapen Gida](#6-hedapen-gida)
+6. [Hedapen Gida](#6-hedapen-gida-deployment)
 7. [Eragiketak eta Mantentzea](#7-eragiketak-eta-mantentzea)
 8. [Betetzea eta Estandarrak](#8-betetzea-eta-estandarrak)
 9. [Garapen Gidalerroak](#9-garapen-gidalerroak)
@@ -62,6 +62,7 @@ Zabala Gailetak proiektuaren helburua enpresaren azpiegitura informatikoa modern
 **Zabala Gailetak** Euskal Herrian kokatuta dagoen enpresa bat da, gaileta eta txokolate ekoizpen, salmenta eta banaketa egiten duena.
 
 **Datuak:**
+
 - Langileak: 120
 - Produkzioa: 120 langile (gaileta produkzioa)
 - IKT Departamentua: 5 langile
@@ -73,6 +74,7 @@ Zabala Gailetak proiektuaren helburua enpresaren azpiegitura informatikoa modern
 Proiektu honek hurrengo eremuak hartzen ditu:
 
 #### 2.2.1 Web Aplikazioa
+
 - Produktu katalogoa
 - Eskaera sistema
 - Erabiltzaileen autentikazioa
@@ -80,6 +82,7 @@ Proiektu honek hurrengo eremuak hartzen ditu:
 - Eskaeren kudeaketa
 
 #### 2.2.2 Mobile Aplikazioa
+
 - Produktuak arakatzea
 - Eskaerak egitea
 - Autentikazio segurua
@@ -87,6 +90,7 @@ Proiektu honek hurrengo eremuak hartzen ditu:
 - Autentikazio biometrikoa
 
 #### 2.2.3 Backend API
+
 - RESTful API
 - JWT autentikazioa
 - Rate limiting (tasa mugatzea)
@@ -94,6 +98,7 @@ Proiektu honek hurrengo eremuak hartzen ditu:
 - Error handling (errore kudeaketa)
 
 #### 2.2.4 Segurtasun Azpiegitura
+
 - SIEM sistema (ELK Stack)
 - Honeypot hedapena
 - Sare segmentazioa
@@ -101,6 +106,7 @@ Proiektu honek hurrengo eremuak hartzen ditu:
 - IDS/IPS
 
 #### 2.2.5 DevOps
+
 - CI/CD pipeline
 - Docker containerization
 - Testing automatizatua
@@ -110,6 +116,7 @@ Proiektu honek hurrengo eremuak hartzen ditu:
 ### 2.3 Teknologia Stack-a
 
 #### Backend
+
 - **Runtime**: Node.js 18+
 - **Framework**: Express.js 4.18+
 - **Autentikazioa**: JWT, Speakeasy (TOTP)
@@ -117,6 +124,7 @@ Proiektu honek hurrengo eremuak hartzen ditu:
 - **Testing**: Jest, Supertest
 
 #### Frontend (Web)
+
 - **Framework**: React 18
 - **Routing**: React Router 6
 - **Estiloak**: Styled Components
@@ -124,12 +132,14 @@ Proiektu honek hurrengo eremuak hartzen ditu:
 - **Segurtasuna**: DOMPurify, js-cookie
 
 #### Frontend (Mobile)
+
 - **Framework**: React Native
 - **Nabigazioa**: React Navigation
 - **Segurtasuna**: react-native-keychain
 - **Biltegiratzea**: EncryptedStorage
 
 #### Azpiegitura
+
 - **Edukiontziak**: Docker, Docker Compose
 - **Proxy**: Nginx
 - **Datu-basea**: MongoDB 7
@@ -137,6 +147,7 @@ Proiektu honek hurrengo eremuak hartzen ditu:
 - **SIEM**: ELK Stack 8.11
 
 #### DevOps
+
 - **CI/CD**: GitHub Actions
 - **Kode Kalitatea**: ESLint, SonarQube
 - **Segurtasun Eskaneatzea**: OWASP ZAP, Dependency Check
@@ -327,12 +338,14 @@ SIEM log gertaera
 #### 4.1.1 Faktore Anitzeko Autentikazioa (MFA)
 
 **Inplementazioa:**
+
 - **Protokoloa**: TOTP (Time-based One-Time Password)
 - **Liburutegia**: Speakeasy
 - **Babeskopia**: Berreskurapen kodeak (oraindik ez inplementatuta)
 - **Betearaztea**: Aukerakoa erabiltzaileentzat, derrigorrezkoa administratzaileentzat
 
 **Konfigurazioa:**
+
 ```javascript
 {
   secret: user.mfaSecret,
@@ -347,6 +360,7 @@ SIEM log gertaera
 #### 4.1.2 JWT Tokenak
 
 **Claims:**
+
 ```json
 {
   "userId": "12345",
@@ -358,6 +372,7 @@ SIEM log gertaera
 ```
 
 **Segurtasun Neurriak:**
+
 - Gako sekretu sendoak (>256 bits)
 - Iraungitze laburra (1 ordu)
 - Refresh token errotazioa
@@ -368,6 +383,7 @@ SIEM log gertaera
 #### 4.2.1 API Balidazioa
 
 **express-validator erabiliz:**
+
 ```javascript
 {
   username: {
@@ -387,6 +403,7 @@ SIEM log gertaera
 #### 4.2.2 XSS Prebentzioa
 
 **Sanitizazioa:**
+
 ```javascript
 // Server-side
 const sanitized = DOMPurify.sanitize(userInput);
@@ -398,6 +415,7 @@ const safeHTML = DOMPurify.sanitize(HTMLContent);
 ### 4.3 Tasa Mugatzea (Rate Limiting)
 
 **Konfigurazioa:**
+
 ```javascript
 {
   windowMs: 15 * 60 * 1000,  // 15 minutu
@@ -407,6 +425,7 @@ const safeHTML = DOMPurify.sanitize(HTMLContent);
 ```
 
 **Muga Pertsonalizatuak dituzten Endpoint-ak:**
+
 - Login: 5 saiakera / 15 minutu
 - MFA: 10 saiakera / 15 minutu
 - Eskaerak: 50 eskaera / 15 minutu
@@ -429,6 +448,7 @@ const safeHTML = DOMPurify.sanitize(HTMLContent);
 ### 4.5 Segurtasun Goiburuak (Headers)
 
 **Inplementatutako Goiburuak:**
+
 ```http
 X-Frame-Options: SAMEORIGIN
 X-Content-Type-Options: nosniff
@@ -448,24 +468,28 @@ Permissions-Policy: geolocation=(), microphone=()
 #### 5.1.1 Ezaugarriak
 
 **Autentikazioa:**
+
 - Saio-hasiera erabiltzaile/pasahitzarekin
 - MFA egiaztapena
 - Saio kudeaketa
 - Auto-logout tokena iraungitzean
 
 **Produktuak:**
+
 - Produktu katalogoa
 - Bilaketa funtzionalitatea (etorkizunean)
 - Kategoriaren arabera iragazi (etorkizunean)
 - Produktuaren xehetasunak
 
 **Eskaerak:**
+
 - Eskaera berriak sortu
 - Eskaera historia (etorkizunean)
 - Eskaera egoeraren jarraipena (etorkizunean)
 - Email jakinarazpenak
 
 **Erabiltzaile Kudeaketa:**
+
 - Erabiltzaile profila
 - MFA gaitu/desgaitu
 - Pasahitza aldatu (etorkizunean)
@@ -485,6 +509,7 @@ Permissions-Policy: geolocation=(), microphone=()
 #### 5.1.3 Errendimendua
 
 **Metrikak:**
+
 - First Contentful Paint (FCP): < 1.5s
 - Time to Interactive (TTI): < 3.5s
 - Bundle tamaina: < 500KB (gzipped)
@@ -495,18 +520,21 @@ Permissions-Policy: geolocation=(), microphone=()
 #### 5.2.1 Ezaugarriak
 
 **Autentikazioa:**
+
 - Saio-hasiera erabiltzaile/pasahitzarekin
 - MFA egiaztapena
 - Autentikazio biometrikoa (hatz-marka/Face ID)
 - Token biltegiratze segurua
 
 **Produktuak:**
+
 - Produktu katalogoa
 - Offline euskarria (etorkizunean)
 - Push jakinarazpenak (etorkizunean)
 - Produktuaren xehetasunak
 
 **Eskaerak:**
+
 - Eskaera berriak sortu
 - Eskaera historia
 - Denbora errealeko eguneraketak
@@ -533,6 +561,7 @@ Permissions-Policy: geolocation=(), microphone=()
 #### 5.3.1 Endpoint-ak
 
 **Autentikazioa:**
+
 - `POST /api/auth/register` - Erabiltzaile berria erregistratu
 - `POST /api/auth/login` - Saioa hasi
 - `POST /api/auth/mfa/setup` - MFA konfiguratu
@@ -540,21 +569,25 @@ Permissions-Policy: geolocation=(), microphone=()
 - `POST /api/auth/mfa/disable` - MFA desgaitu
 
 **Produktuak:**
+
 - `GET /api/products` - Produktu guztiak lortu
 - `GET /api/products/:id` - Produktua id bidez lortu (etorkizunean)
 
 **Eskaerak:**
+
 - `POST /api/orders` - Eskaera berria sortu
 - `GET /api/orders` - Erabiltzailearen eskaerak lortu (etorkizunean)
 - `GET /api/orders/:id` - Eskaera id bidez lortu (etorkizunean)
 
 **Sistema:**
+
 - `GET /api/health` - Osasun egiaztapena
 - `GET /` - API informazioa
 
 #### 5.3.2 Erantzun Formatua
 
 **Arrakasta:**
+
 ```json
 {
   "success": true,
@@ -564,6 +597,7 @@ Permissions-Policy: geolocation=(), microphone=()
 ```
 
 **Errorea:**
+
 ```json
 {
   "success": false,
@@ -588,6 +622,7 @@ Permissions-Policy: geolocation=(), microphone=()
 | Sarea | 100Mbps | 1Gbps |
 
 **Software Baldintzak:**
+
 - Docker 20.10+
 - Docker Compose 2.0+
 - Node.js 18+
@@ -708,6 +743,7 @@ server {
 #### 7.1.1 Aplikazio Monitorizazioa
 
 **Monitorizatu beharreko Metrikak:**
+
 - Erantzun denbora
 - Errore tasa
 - Throughput (errendimendua)
@@ -716,6 +752,7 @@ server {
 - Disko I/O
 
 **Tresnak:**
+
 - SIEM (ELK Stack)
 - Osasun egiaztapen pertsonalizatuak
 - Aplikazio log-ak
@@ -723,6 +760,7 @@ server {
 #### 7.1.2 SIEM Monitorizazioa
 
 **Alerta Arauak:**
+
 - 5+ saio-hasiera hutsegite / 15 minutu
 - SQL injection saiakerak
 - XSS saiakerak
@@ -731,18 +769,21 @@ server {
 - API erantzun denbora > 5s
 
 **Panela:**
-- http://kibana.zabala-gailetak.com:5601
+
+- <http://kibana.zabala-gailetak.com:5601>
 
 ### 7.2 Babeskopia Estrategia (Backup)
 
 #### 7.2.1 Datu-basearen Babeskopiak
 
 **Egutegia:**
+
 - **Egunero**: Babeskopia osoa 2:00etan
 - **Astero**: Babeskopia osoa + atxikipena (30 egun)
 - **Hilero**: Artxibo babeskopia (urtebeteko atxikipena)
 
 **Inplementazioa:**
+
 ```bash
 # Eguneroko babeskopia
 mongodump --uri="$MONGODB_URI" --out=/backups/daily/$(date +%Y%m%d)
@@ -757,6 +798,7 @@ tar -czf /backups/archive/$(date +%Y%m).tar.gz /backups/weekly/*
 #### 7.2.2 Aplikazioaren Babeskopiak
 
 **Zer kopiatu:**
+
 - Iturburu kodea (Git)
 - Konfigurazio fitxategiak
 - SSL ziurtagiriak
@@ -766,24 +808,28 @@ tar -czf /backups/archive/$(date +%Y%m).tar.gz /backups/weekly/*
 ### 7.3 Mantentze Egutegia
 
 #### 7.3.1 Eguneroko Zereginak
+
 - Sistema osasuna monitorizatu
 - SIEM alertak berrikusi
 - Babeskopia osatzea egiaztatu
 - Errore log-ak berrikusi
 
 #### 7.3.2 Asteroko Zereginak
+
 - Segurtasun log-ak berrikusi
 - Dependentziak eguneratu
 - Errendimendu optimizazioa
 - Edukiera plangintza
 
 #### 7.3.3 Hileroko Zereginak
+
 - Segurtasun auditoria
 - Babeskopia proba
 - Errendimendu berrikuspena
 - Dokumentazioa eguneratu
 
 #### 7.3.4 Hiruhileroko Zereginak
+
 - Segurtasun ebaluazio osoa
 - Hondamendi berreskurapen proba (Disaster Recovery)
 - Arkitektura berrikuspena
@@ -846,6 +892,7 @@ tar -czf /backups/archive/$(date +%Y%m).tar.gz /backups/weekly/*
 ### 8.3 GDPR Betetzea
 
 **Datu Babeserako Neurriak:**
+
 - **Baimena**: Datuen tratamendurako berariazko baimena
 - **Helburu Mugaketa**: Datuak adierazitako helburuetarako bakarrik erabili
 - **Datu Minimizazioa**: Beharrezko datuak bakarrik bildu
@@ -856,6 +903,7 @@ tar -czf /backups/archive/$(date +%Y%m).tar.gz /backups/weekly/*
 ### 8.4 IEC 62443 (Industria Segurtasuna)
 
 **Inplementatutako Neurriak:**
+
 - Sare segmentazioa (IT/OT bereizketa)
 - Industria protokolo segurtasuna (Modbus, S7)
 - Honeypot mehatxuak detektatzeko
@@ -871,11 +919,13 @@ tar -czf /backups/archive/$(date +%Y%m).tar.gz /backups/weekly/*
 #### 9.1.1 JavaScript/Node.js
 
 **Estilo Gida:**
+
 - Airbnb JavaScript Style Guide
 - ESLint betearazteko
 - Prettier formatua emateko
 
 **Praktika Onak:**
+
 - Erabili const/let, saihestu var
 - Async/await callbacks baino hobeto
 - Errore kudeaketa try/catch-ekin
@@ -886,6 +936,7 @@ tar -czf /backups/archive/$(date +%Y%m).tar.gz /backups/weekly/*
 #### 9.1.2 React
 
 **Praktika Onak:**
+
 - Osagai funtzionalak hook-ekin
 - Context API egoera globalerako
 - Props balidazioa (PropTypes)
@@ -896,6 +947,7 @@ tar -czf /backups/archive/$(date +%Y%m).tar.gz /backups/weekly/*
 ### 9.2 Segurtasun Gidalerroak
 
 #### 9.2.1 Egin Beharrekoak (Do's)
+
 - ✅ Beti balidatu sarrera (input)
 - ✅ Erabili kontsulta parametrizatuak
 - ✅ Sanitizatu irteera (output)
@@ -906,6 +958,7 @@ tar -czf /backups/archive/$(date +%Y%m).tar.gz /backups/weekly/*
 - ✅ Mantendu dependentziak eguneratuta
 
 #### 9.2.2 Ez Egin Beharrekoak (Don'ts)
+
 - ❌ Inoiz ez fidatu erabiltzailearen sarreraz
 - ❌ Inoiz ez erregistratu datu sentikorrak log-etan
 - ❌ Inoiz ez igo sekreturik (commits)
@@ -953,6 +1006,7 @@ bugfix/auth-error
 #### 9.4.2 Commit Mezuak
 
 **Formatua:**
+
 ```
 <mota>(<eremua>): <gaia>
 
@@ -962,6 +1016,7 @@ bugfix/auth-error
 ```
 
 **Motak:**
+
 - `feat`: Ezaugarri berria
 - `fix`: Bug konponketa
 - `docs`: Dokumentazioa
@@ -977,6 +1032,7 @@ bugfix/auth-error
 ### 10.1 Dokumentazioa
 
 **Eskuragarri dagoen Dokumentazioa:**
+
 - `IMPLEMENTATION_SUMMARY.md` - Orokorra eta hasiera azkarra
 - `WEB_APP_GUIDE.md` - Web app gida zehatza
 - `MOBILE_APP_GUIDE.md` - Mobile app gida zehatza
@@ -987,6 +1043,7 @@ bugfix/auth-error
 ### 10.2 SOP-ak (Prozedura Operatibo Estandarrak)
 
 **Eskuragarri dauden SOP-ak:**
+
 - `devops/sop_secure_development.md` - Garapen segurua
 - `security/web_hardening_sop.md` - Web app hardening
 - `security/mobile_security_sop.md` - Mobile app segurtasuna
@@ -997,18 +1054,21 @@ bugfix/auth-error
 ### 10.3 Harremanetarako Informazioa
 
 **Garapen Taldea:**
+
 - **Lead Developer**: [Harremanetarako Info]
 - **Segurtasun Taldea**: [Harremanetarako Info]
 - **DevOps Taldea**: [Harremanetarako Info]
-- **Laguntza**: support@zabala-gailetak.com
+- **Laguntza**: <support@zabala-gailetak.com>
 
 **Larrialdi Kontaktuak:**
+
 - **Arazo Kritikoak**: 24/7 telefonoa: [Zenbakia]
-- **Segurtasun Intzidenteak**: security@zabala-gailetak.com
+- **Segurtasun Intzidenteak**: <security@zabala-gailetak.com>
 
 ### 10.4 Baliabideak
 
 **Barne Baliabideak:**
+
 - GitLab: [URL]
 - CI/CD: [URL]
 - Dokumentazioa: [URL]
@@ -1016,10 +1076,11 @@ bugfix/auth-error
 - Issue Tracker: [URL]
 
 **Kanpo Baliabideak:**
-- OWASP: https://owasp.org
-- NIST: https://csrc.nist.gov
-- ISO: https://www.iso.org
-- IEC: https://www.iec.ch
+
+- OWASP: <https://owasp.org>
+- NIST: <https://csrc.nist.gov>
+- ISO: <https://www.iso.org>
+- IEC: <https://www.iec.ch>
 
 ---
 
@@ -1032,6 +1093,7 @@ Ikusi `API_DOCUMENTATION.md` API erreferentzia osorako.
 ### A.2 Datu-base Eskema
 
 **Users Bilduma:**
+
 ```javascript
 {
   _id: ObjectId,
@@ -1046,6 +1108,7 @@ Ikusi `API_DOCUMENTATION.md` API erreferentzia osorako.
 ```
 
 **Products Bilduma:**
+
 ```javascript
 {
   _id: ObjectId,
@@ -1060,6 +1123,7 @@ Ikusi `API_DOCUMENTATION.md` API erreferentzia osorako.
 ```
 
 **Orders Bilduma:**
+
 ```javascript
 {
   _id: ObjectId,
@@ -1078,6 +1142,7 @@ Ikusi `API_DOCUMENTATION.md` API erreferentzia osorako.
 ### A.3 Konfigurazio Fitxategiak
 
 **Konfigurazio fitxategi osoak:**
+
 - `.env.example` - Ingurune aldagaiak
 - `webpack.config.js` - Webpack konfigurazioa
 - `docker-compose.yml` - Docker zerbitzuak
