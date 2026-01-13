@@ -3,7 +3,7 @@ require('dotenv').config();
 
 /**
  * Zabala Gailetak Datu-base Konfigurazioa
- * 
+ *
  * MongoDB konexio segurua inplementatzen du:
  * - Konexio multzoa (Connection pooling)
  * - Berriro konexio automatikoa
@@ -18,20 +18,20 @@ const NODE_ENV = process.env.NODE_ENV || 'development';
 // Konexio aukerak
 const options = {
   // Konexio multzo ezarpenak
-  maxPoolSize: parseInt(process.env.MONGODB_POOL_SIZE) || 10,
+  maxPoolSize: parseInt(process.env.MONGODB_POOL_SIZE, 10) || 10,
   minPoolSize: 2,
-  
+
   // Denbora-muga ezarpenak
   serverSelectionTimeoutMS: 5000, // 5 segundo
   socketTimeoutMS: 45000, // 45 segundo
-  
+
   // Berriro konexio automatikoa
   retryWrites: true,
   retryReads: true,
-  
+
   // Aplikazio izena monitorizaziorako
   appName: 'zabala-gailetak-api',
-  
+
   // Erabili URL parser berria
   useNewUrlParser: true,
   useUnifiedTopology: true
@@ -56,32 +56,32 @@ if (NODE_ENV === 'development') {
  */
 const connectDatabase = async () => {
   try {
-    console.log(`[Datu-basea] MongoDB-ra konektatzen...`);
+    console.log('[Datu-basea] MongoDB-ra konektatzen...');
     console.log(`[Datu-basea] Ingurunea: ${NODE_ENV}`);
-    
+
     await mongoose.connect(MONGODB_URI, options);
-    
-    console.log(`[Datu-basea] ✓ MongoDB-ra arrakastaz konektatuta`);
+
+    console.log('[Datu-basea] ✓ MongoDB-ra arrakastaz konektatuta');
     console.log(`[Datu-basea] Datu-basea: ${mongoose.connection.name}`);
     console.log(`[Datu-basea] Ostalaria: ${mongoose.connection.host}`);
-    
+
     // Gertaera entzuleak konfiguratu
     setupEventListeners();
-    
+
     return mongoose.connection;
   } catch (error) {
     console.error('[Datu-basea] ✗ MongoDB-ra konektatzeak huts egin du:', error.message);
-    
+
     if (error.name === 'MongoServerError' && error.code === 18) {
       console.error('[Datu-basea] Autentifikazioak huts egin du. Mesedez, egiaztatu MONGODB_USER eta MONGODB_PASSWORD');
     }
-    
+
     // Produkzioan, prozesua irten datu-basera konektatu ezin bada
     if (NODE_ENV === 'production') {
       console.error('[Datu-basea] Prozesua irteten datu-base konexio hutsegiteagatik');
       process.exit(1);
     }
-    
+
     throw error;
   }
 };
@@ -104,24 +104,24 @@ const disconnectDatabase = async () => {
  */
 const setupEventListeners = () => {
   const db = mongoose.connection;
-  
+
   db.on('error', (error) => {
     console.error('[Datu-basea] Konexio errorea:', error.message);
   });
-  
+
   db.on('disconnected', () => {
     console.warn('[Datu-basea] MongoDB-tik deskonektatuta');
-    
+
     // Berriro konektatzen saiatu garapenean
     if (NODE_ENV === 'development') {
       console.log('[Datu-basea] Berriro konektatzen saiatzen...');
     }
   });
-  
+
   db.on('reconnected', () => {
     console.log('[Datu-basea] ✓ MongoDB-ra berriro konektatuta');
   });
-  
+
   db.on('close', () => {
     console.log('[Datu-basea] Konexioa itxita');
   });
@@ -138,7 +138,7 @@ const checkConnection = () => {
     2: 'connecting',
     3: 'disconnecting'
   };
-  
+
   return {
     state: states[state] || 'unknown',
     isConnected: state === 1,
@@ -155,17 +155,18 @@ const getDatabaseStats = async () => {
     if (mongoose.connection.readyState !== 1) {
       return { error: 'Ez dago datu-basera konektatuta' };
     }
-    
+
+    // eslint-disable-next-line no-unused-vars
     const admin = mongoose.connection.db.admin();
     const dbStats = await mongoose.connection.db.stats();
-    
+
     return {
       database: mongoose.connection.name,
       collections: dbStats.collections,
-      dataSize: (dbStats.dataSize / 1024 / 1024).toFixed(2) + ' MB',
-      storageSize: (dbStats.storageSize / 1024 / 1024).toFixed(2) + ' MB',
+      dataSize: `${(dbStats.dataSize / 1024 / 1024).toFixed(2)} MB`,
+      storageSize: `${(dbStats.storageSize / 1024 / 1024).toFixed(2)} MB`,
       indexes: dbStats.indexes,
-      indexSize: (dbStats.indexSize / 1024 / 1024).toFixed(2) + ' MB',
+      indexSize: `${(dbStats.indexSize / 1024 / 1024).toFixed(2)} MB`,
       documents: dbStats.objects
     };
   } catch (error) {
@@ -180,14 +181,14 @@ const getDatabaseStats = async () => {
 const createIndexes = async () => {
   try {
     console.log('[Datu-basea] Indizeak sortzen...');
-    
+
     const models = mongoose.modelNames();
     for (const modelName of models) {
       const model = mongoose.model(modelName);
       await model.createIndexes();
       console.log(`[Datu-basea] ✓ Indizeak sortuta ${modelName}-rentzat`);
     }
-    
+
     console.log('[Datu-basea] ✓ Indize guztiak arrakastaz sortu dira');
   } catch (error) {
     console.error('[Datu-basea] ✗ Errorea indizeak sortzean:', error.message);
@@ -202,7 +203,7 @@ const dropDatabase = async () => {
   if (NODE_ENV === 'production') {
     throw new Error('Ezin da datu-basea ezabatu produkzio ingurunean');
   }
-  
+
   try {
     console.warn('[Datu-basea] ABISUA: Datu-basea ezabatzen...');
     await mongoose.connection.dropDatabase();
@@ -218,7 +219,7 @@ const dropDatabase = async () => {
  */
 const gracefulShutdown = async (signal) => {
   console.log(`[Datu-basea] ${signal} jasota. Datu-base konexioa ixten...`);
-  
+
   try {
     await disconnectDatabase();
     console.log('[Datu-basea] ✓ Datu-base konexioa dotoreki itxita');

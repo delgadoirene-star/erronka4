@@ -139,14 +139,14 @@ const SecondaryButton = styled.button`
 `;
 
 const MFAPanel = styled.div`
-  background: ${props => props.enabled ? '#efe' : '#fee'};
+  background: ${(props) => (props.enabled ? '#efe' : '#fee')};
   padding: 20px;
   border-radius: 8px;
   margin-top: 20px;
 `;
 
 const MFATitle = styled.h3`
-  color: ${props => props.enabled ? '#3c3' : '#c33'};
+  color: ${(props) => (props.enabled ? '#3c3' : '#c33')};
   margin: 0 0 10px 0;
 `;
 
@@ -174,10 +174,6 @@ const Dashboard = () => {
   const { user, logout } = useAuth();
   const navigate = useNavigate();
 
-  useEffect(() => {
-    loadDashboardData();
-  }, []);
-
   const loadDashboardData = async () => {
     try {
       const products = await getProducts();
@@ -193,6 +189,10 @@ const Dashboard = () => {
     }
   };
 
+  useEffect(() => {
+    loadDashboardData();
+  }, []);
+
   const handleToggleMFA = async () => {
     setMfaLoading(true);
     try {
@@ -205,6 +205,7 @@ const Dashboard = () => {
       }
     } catch (error) {
       console.error('MFA toggle error:', error);
+      // eslint-disable-next-line no-alert
       alert('Errorea MFA egoera aldatzean');
     } finally {
       setMfaLoading(false);
@@ -214,6 +215,13 @@ const Dashboard = () => {
   if (loading) {
     return <Container><Loading>Kargatzen...</Loading></Container>;
   }
+
+  const getMfaButtonText = () => {
+    if (mfaLoading) {
+      return 'Kargatzen...';
+    }
+    return mfaEnabled ? 'MFA Desgaitu' : 'MFA Gaitu';
+  };
 
   return (
     <Container>
@@ -264,7 +272,7 @@ const Dashboard = () => {
               : 'Segurtasuna hobetzeko faktore anitzeko autentifikazioa gaitzea gomendatzen dizugu.'}
           </MFADescription>
           <ActionButton onClick={handleToggleMFA} disabled={mfaLoading}>
-            {mfaLoading ? 'Kargatzen...' : mfaEnabled ? 'MFA Desgaitu' : 'MFA Gaitu'}
+            {getMfaButtonText()}
           </ActionButton>
         </MFAPanel>
       </Section>

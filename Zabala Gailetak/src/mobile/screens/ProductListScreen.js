@@ -22,7 +22,7 @@ const ProductListScreen = ({ navigation, route }) => {
   };
 
   const renderProduct = ({ item }) => (
-    <TouchableOpacity 
+    <TouchableOpacity
       style={styles.productItem}
       onPress={() => navigation.navigate('Order', { product: item, token: route.params.token })}
     >
@@ -52,42 +52,42 @@ const ProductListScreen = ({ navigation, route }) => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#f4f4f4',
-  },
   centerContainer: {
+    alignItems: 'center',
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
+  },
+  container: {
+    backgroundColor: '#f4f4f4',
+    flex: 1,
   },
   listContent: {
     padding: 15,
   },
   productItem: {
+    alignItems: 'center',
     backgroundColor: '#fff',
-    padding: 20,
     borderRadius: 10,
-    marginBottom: 15,
+    elevation: 3,
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center',
+    marginBottom: 15,
+    padding: 20,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 4,
-    elevation: 3,
   },
   productName: {
-    fontSize: 16,
-    fontWeight: '600',
     color: '#333',
     flex: 1,
+    fontSize: 16,
+    fontWeight: '600',
   },
   productPrice: {
+    color: '#333',
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#333',
   },
 });
 

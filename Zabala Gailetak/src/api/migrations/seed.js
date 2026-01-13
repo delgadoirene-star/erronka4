@@ -6,13 +6,13 @@ const AuditLog = require('../models/AuditLog');
 
 /**
  * Database Seed Script
- * 
+ *
  * Populates the database with initial data for development and testing
  */
 
 const seedUsers = async () => {
   console.log('[Seed] Creating users...');
-  
+
   const users = [
     {
       username: 'admin',
@@ -36,7 +36,7 @@ const seedUsers = async () => {
       mfaEnabled: true
     }
   ];
-  
+
   const createdUsers = [];
   for (const userData of users) {
     try {
@@ -53,13 +53,13 @@ const seedUsers = async () => {
       console.error(`[Seed] ✗ Failed to create user ${userData.username}:`, error.message);
     }
   }
-  
+
   return createdUsers;
 };
 
 const seedProducts = async () => {
   console.log('[Seed] Creating products...');
-  
+
   const products = [
     {
       name: 'Gaileta Tradizionalak',
@@ -152,7 +152,7 @@ const seedProducts = async () => {
       weight: 200
     }
   ];
-  
+
   const createdProducts = [];
   for (const productData of products) {
     try {
@@ -169,18 +169,18 @@ const seedProducts = async () => {
       console.error(`[Seed] ✗ Failed to create product ${productData.name}:`, error.message);
     }
   }
-  
+
   return createdProducts;
 };
 
 const seedOrders = async (users, products) => {
   console.log('[Seed] Creating sample orders...');
-  
+
   if (users.length === 0 || products.length === 0) {
     console.log('[Seed] ⊘ Skipping orders - no users or products available');
     return [];
   }
-  
+
   const orders = [
     {
       user: users[1]._id,
@@ -210,7 +210,7 @@ const seedOrders = async (users, products) => {
       status: 'delivered',
       paymentStatus: 'paid',
       paymentMethod: 'credit_card',
-      paymentTransactionId: 'TXN-' + Date.now(),
+      paymentTransactionId: `TXN-${Date.now()}`,
       shippingAddress: {
         fullName: 'User One',
         addressLine1: 'Kale Nagusia 123',
@@ -242,7 +242,7 @@ const seedOrders = async (users, products) => {
       status: 'processing',
       paymentStatus: 'paid',
       paymentMethod: 'paypal',
-      paymentTransactionId: 'PP-' + Date.now(),
+      paymentTransactionId: `PP-${Date.now()}`,
       shippingAddress: {
         fullName: 'Guest User',
         addressLine1: 'Erribera Kalea 45',
@@ -254,7 +254,7 @@ const seedOrders = async (users, products) => {
       }
     }
   ];
-  
+
   const createdOrders = [];
   for (const orderData of orders) {
     try {
@@ -262,16 +262,16 @@ const seedOrders = async (users, products) => {
       createdOrders.push(order);
       console.log(`[Seed] ✓ Created order: ${order.orderNumber} (${order.status})`);
     } catch (error) {
-      console.error(`[Seed] ✗ Failed to create order:`, error.message);
+      console.error('[Seed] ✗ Failed to create order:', error.message);
     }
   }
-  
+
   return createdOrders;
 };
 
 const seedAuditLogs = async (users) => {
   console.log('[Seed] Creating sample audit logs...');
-  
+
   const logs = [
     {
       action: 'auth.login.success',
@@ -316,13 +316,13 @@ const seedAuditLogs = async (users) => {
       timestamp: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000) // 2 days ago
     }
   ];
-  
+
   for (const logData of logs) {
     try {
       await AuditLog.log(logData);
       console.log(`[Seed] ✓ Created audit log: ${logData.action}`);
     } catch (error) {
-      console.error(`[Seed] ✗ Failed to create audit log:`, error.message);
+      console.error('[Seed] ✗ Failed to create audit log:', error.message);
     }
   }
 };
@@ -334,26 +334,25 @@ const seedDatabase = async () => {
   try {
     console.log('[Seed] Starting database seeding...');
     console.log('[Seed] ===================================');
-    
+
     // Connect to database
     await connectDatabase();
-    
+
     // Seed data in order
     const users = await seedUsers();
     const products = await seedProducts();
     const orders = await seedOrders(users, products);
     await seedAuditLogs(users);
-    
+
     console.log('[Seed] ===================================');
     console.log('[Seed] ✓ Database seeding completed successfully');
-    console.log(`[Seed] Summary:`);
+    console.log('[Seed] Summary:');
     console.log(`[Seed]   - Users: ${users.length}`);
     console.log(`[Seed]   - Products: ${products.length}`);
     console.log(`[Seed]   - Orders: ${orders.length}`);
-    
+
     // Disconnect
     await disconnectDatabase();
-    
   } catch (error) {
     console.error('[Seed] ✗ Error seeding database:', error);
     process.exit(1);

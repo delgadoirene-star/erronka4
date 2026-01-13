@@ -9,8 +9,7 @@ import MFAScreen from './screens/MFAScreen';
 
 const Stack = createStackNavigator();
 
-const App = () => {
-  return (
+const App = () => (
     <SafeAreaProvider>
       <NavigationContainer>
         <Stack.Navigator
@@ -28,7 +27,6 @@ const App = () => {
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
-  );
-};
+);
 
 export default App;

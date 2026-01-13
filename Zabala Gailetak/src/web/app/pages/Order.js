@@ -174,7 +174,7 @@ const Order = () => {
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
   const [loading, setLoading] = useState(false);
-  
+
   const navigate = useNavigate();
   const location = useLocation();
   const product = location.state?.product;
@@ -194,15 +194,15 @@ const Order = () => {
     try {
       const orderData = {
         productId: product.id,
-        quantity: parseInt(quantity),
+        quantity: parseInt(quantity, 10),
         customerName,
         customerEmail,
         shippingAddress
       };
-      
+
       const response = await createOrder(orderData);
       setSuccess(`Eskaera #${response.orderId} ondo jaso da!`);
-      
+
       setTimeout(() => {
         navigate('/products');
       }, 3000);
@@ -242,10 +242,10 @@ const Order = () => {
             <Label>Kantitatea:</Label>
             <Select
               value={quantity}
-              onChange={(e) => setQuantity(parseInt(e.target.value))}
+              onChange={(e) => setQuantity(parseInt(e.target.value, 10))}
               required
             >
-              {[...Array(10).keys()].map(i => (
+              {[...Array(10).keys()].map((i) => (
                 <option key={i + 1} value={i + 1}>
                   {i + 1}
                 </option>

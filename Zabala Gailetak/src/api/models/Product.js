@@ -17,7 +17,7 @@ const productSchema = new mongoose.Schema({
     type: Number,
     required: [true, 'Price is required'],
     min: [0, 'Price cannot be negative'],
-    set: val => Math.round(val * 100) / 100 // Round to 2 decimal places
+    set: (val) => Math.round(val * 100) / 100 // Round to 2 decimal places
   },
   stock: {
     type: Number,
@@ -97,17 +97,17 @@ productSchema.index({ isActive: 1, stock: 1 });
 productSchema.index({ price: 1 });
 
 // Virtual for checking if product is in stock
-productSchema.virtual('inStock').get(function() {
+productSchema.virtual('inStock').get(function () {
   return this.stock > 0;
 });
 
 // Virtual for low stock warning
-productSchema.virtual('lowStock').get(function() {
+productSchema.virtual('lowStock').get(function () {
   return this.stock > 0 && this.stock <= 10;
 });
 
 // Method to check stock availability
-productSchema.methods.checkAvailability = function(requestedQuantity) {
+productSchema.methods.checkAvailability = function (requestedQuantity) {
   if (!this.isActive) {
     return { available: false, reason: 'Product is not active' };
   }
@@ -118,7 +118,7 @@ productSchema.methods.checkAvailability = function(requestedQuantity) {
 };
 
 // Method to reduce stock
-productSchema.methods.reduceStock = async function(quantity) {
+productSchema.methods.reduceStock = async function (quantity) {
   if (this.stock < quantity) {
     throw new Error('Insufficient stock');
   }
@@ -127,13 +127,13 @@ productSchema.methods.reduceStock = async function(quantity) {
 };
 
 // Method to increase stock
-productSchema.methods.increaseStock = async function(quantity) {
+productSchema.methods.increaseStock = async function (quantity) {
   this.stock += quantity;
   return await this.save();
 };
 
 // Pre-save middleware to generate SKU if not provided
-productSchema.pre('save', function(next) {
+productSchema.pre('save', function (next) {
   if (!this.sku && this.isNew) {
     // Generate SKU: CAT-FIRST3CHARS-TIMESTAMP
     const categoryCode = this.category.substring(0, 3).toUpperCase();
@@ -145,9 +145,9 @@ productSchema.pre('save', function(next) {
 });
 
 // Ensure virtuals are included when converting to JSON
-productSchema.set('toJSON', { 
+productSchema.set('toJSON', {
   virtuals: true,
-  transform: function(doc, ret) {
+  transform(doc, ret) {
     delete ret.__v;
     return ret;
   }

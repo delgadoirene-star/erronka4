@@ -120,7 +120,7 @@ const MFA = () => {
 
     try {
       const result = await authVerifyMFA(token);
-      
+
       if (result.success) {
         setSuccess('MFA balidazioa arrakastatsua!');
         setTimeout(() => {
@@ -139,15 +139,15 @@ const MFA = () => {
       <Card>
         <Title>MFA Balidazioa</Title>
         <Subtitle>Sartu autentikatzaile aplikazioko kodea</Subtitle>
-        
+
         <Info>
           Zure autentikatzaile aplikaziotik (Google Authenticator, Authy, etab.)
           6 digituko kodea lortu eta beheko kutxan sartu.
         </Info>
-        
+
         {error && <Error>{error}</Error>}
         {success && <Success>{success}</Success>}
-        
+
         <Form onSubmit={handleSubmit}>
           <Input
             type="text"
@@ -158,7 +158,7 @@ const MFA = () => {
             required
             autoFocus
           />
-          
+
           <Button type="submit" disabled={loading}>
             {loading ? 'Balidatzen...' : 'Balidatu'}
           </Button>

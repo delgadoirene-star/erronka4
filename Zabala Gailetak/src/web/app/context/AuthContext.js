@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { apiService } from '../services/api';
 import Cookies from 'js-cookie';
+import * as apiService from '../services/api';
 
 const AuthContext = createContext();
 
@@ -18,10 +18,6 @@ export const AuthProvider = ({ children }) => {
   const [mfaRequired, setMfaRequired] = useState(false);
   const [userId, setUserId] = useState(null);
 
-  useEffect(() => {
-    checkAuth();
-  }, []);
-
   const checkAuth = async () => {
     try {
       const token = Cookies.get('auth_token');
@@ -36,50 +32,48 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  useEffect(() => {
+    checkAuth();
+  }, []);
+
   const login = async (username, password) => {
-    try {
-      const response = await apiService.login(username, password);
-      
-      if (response.requiresMFA) {
-        setMfaRequired(true);
-        setUserId(response.userId);
-        return { requiresMFA: true, userId: response.userId };
-      }
-      
-      if (response.token) {
-        Cookies.set('auth_token', response.token, { 
-          secure: true, 
-          sameSite: 'strict',
-          expires: 1
-        });
-        apiService.setAuthToken(response.token);
-        setUser({ authenticated: true, id: response.userId });
-        setMfaRequired(false);
-        return { success: true };
-      }
-    } catch (error) {
-      throw error;
+    const response = await apiService.login(username, password);
+
+    if (response.requiresMFA) {
+      setMfaRequired(true);
+      setUserId(response.userId);
+      return { requiresMFA: true, userId: response.userId };
     }
+
+    if (response.token) {
+      Cookies.set('auth_token', response.token, {
+        secure: true,
+        sameSite: 'strict',
+        expires: 1
+      });
+      apiService.setAuthToken(response.token);
+      setUser({ authenticated: true, id: response.userId });
+      setMfaRequired(false);
+      return { success: true };
+    }
+    return undefined;
   };
 
   const verifyMFA = async (token) => {
-    try {
-      const response = await apiService.verifyMFA(token);
-      
-      if (response.token) {
-        Cookies.set('auth_token', response.token, { 
-          secure: true, 
-          sameSite: 'strict',
-          expires: 1
-        });
-        apiService.setAuthToken(response.token);
-        setUser({ authenticated: true });
-        setMfaRequired(false);
-        return { success: true };
-      }
-    } catch (error) {
-      throw error;
+    const response = await apiService.verifyMFA(token);
+
+    if (response.token) {
+      Cookies.set('auth_token', response.token, {
+        secure: true,
+        sameSite: 'strict',
+        expires: 1
+      });
+      apiService.setAuthToken(response.token);
+      setUser({ authenticated: true });
+      setMfaRequired(false);
+      return { success: true };
     }
+    return undefined;
   };
 
   const logout = () => {

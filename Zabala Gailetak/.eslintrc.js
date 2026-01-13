@@ -32,7 +32,17 @@ module.exports = {
     'operator-linebreak': 'off',
     'function-paren-newline': 'off',
     'comma-dangle': 'off',
-    'object-curly-newline': 'off'
+    'object-curly-newline': 'off',
+    'no-restricted-syntax': 'off',
+    'no-await-in-loop': 'off',
+    'no-use-before-define': 'off',
+    'consistent-return': 'off',
+    'no-return-await': 'off',
+    'func-names': 'off',
+    'no-underscore-dangle': 'off',
+    'no-param-reassign': 'off',
+    'import/no-unresolved': 'off',
+    'max-len': ['error', { code: 120 }]
   },
   plugins: [
     'security'

@@ -16,7 +16,7 @@ const LoginScreen = ({ navigation }) => {
     setLoading(true);
     try {
       const response = await login(username, password);
-      
+
       if (response.requiresMFA) {
         navigation.navigate('MFA', { userId: response.userId });
       } else if (response.token) {
@@ -33,7 +33,7 @@ const LoginScreen = ({ navigation }) => {
     <View style={styles.container}>
       <Text style={styles.title}>Zabala Gailetak</Text>
       <Text style={styles.subtitle}>Sartu zure kontuan</Text>
-      
+
       <TextInput
         style={styles.input}
         placeholder="Erabiltzailea"
@@ -42,7 +42,7 @@ const LoginScreen = ({ navigation }) => {
         autoCapitalize="none"
         autoCorrect={false}
       />
-      
+
       <TextInput
         style={styles.input}
         placeholder="Pasahitza"
@@ -50,8 +50,8 @@ const LoginScreen = ({ navigation }) => {
         onChangeText={setPassword}
         secureTextEntry
       />
-      
-      <TouchableOpacity 
+
+      <TouchableOpacity
         style={[styles.button, loading && styles.buttonDisabled]}
         onPress={handleLogin}
         disabled={loading}
@@ -67,37 +67,11 @@ const LoginScreen = ({ navigation }) => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    padding: 20,
-    backgroundColor: '#f4f4f4',
-  },
-  title: {
-    fontSize: 32,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    marginBottom: 10,
-    color: '#333',
-  },
-  subtitle: {
-    fontSize: 16,
-    textAlign: 'center',
-    marginBottom: 30,
-    color: '#666',
-  },
-  input: {
-    backgroundColor: '#fff',
-    padding: 15,
-    borderRadius: 8,
-    marginBottom: 15,
-    fontSize: 16,
-  },
   button: {
-    backgroundColor: '#333',
-    padding: 15,
-    borderRadius: 8,
     alignItems: 'center',
+    backgroundColor: '#333',
+    borderRadius: 8,
+    padding: 15,
   },
   buttonDisabled: {
     backgroundColor: '#999',
@@ -106,6 +80,32 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontSize: 16,
     fontWeight: 'bold',
+  },
+  container: {
+    backgroundColor: '#f4f4f4',
+    flex: 1,
+    justifyContent: 'center',
+    padding: 20,
+  },
+  input: {
+    backgroundColor: '#fff',
+    borderRadius: 8,
+    fontSize: 16,
+    marginBottom: 15,
+    padding: 15,
+  },
+  subtitle: {
+    color: '#666',
+    fontSize: 16,
+    marginBottom: 30,
+    textAlign: 'center',
+  },
+  title: {
+    color: '#333',
+    fontSize: 32,
+    fontWeight: 'bold',
+    marginBottom: 10,
+    textAlign: 'center',
   },
 });
 

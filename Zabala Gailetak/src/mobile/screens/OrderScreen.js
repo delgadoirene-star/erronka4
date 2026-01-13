@@ -19,11 +19,11 @@ const OrderScreen = ({ route, navigation }) => {
     try {
       const orderData = {
         productId: product.id,
-        quantity: parseInt(quantity),
+        quantity: parseInt(quantity, 10),
         customerName,
         customerEmail
       };
-      
+
       const response = await createOrder(orderData);
       Alert.alert('Arrakasta', `Eskaera #${response.orderId} ondo jaso da`, [
         {
@@ -44,7 +44,7 @@ const OrderScreen = ({ route, navigation }) => {
         <Text style={styles.productName}>{product.name}</Text>
         <Text style={styles.productPrice}>€{product.price.toFixed(2)}</Text>
       </View>
-      
+
       <Text style={styles.label}>Kantitatea:</Text>
       <TextInput
         style={styles.input}
@@ -52,7 +52,7 @@ const OrderScreen = ({ route, navigation }) => {
         onChangeText={setQuantity}
         keyboardType="number-pad"
       />
-      
+
       <Text style={styles.label}>Izena:</Text>
       <TextInput
         style={styles.input}
@@ -60,7 +60,7 @@ const OrderScreen = ({ route, navigation }) => {
         onChangeText={setCustomerName}
         placeholder="Zure izena"
       />
-      
+
       <Text style={styles.label}>Emaila:</Text>
       <TextInput
         style={styles.input}
@@ -70,13 +70,13 @@ const OrderScreen = ({ route, navigation }) => {
         keyboardType="email-address"
         autoCapitalize="none"
       />
-      
+
       <View style={styles.totalContainer}>
         <Text style={styles.totalLabel}>Total:</Text>
-        <Text style={styles.totalValue}>€{(product.price * parseInt(quantity || 0)).toFixed(2)}</Text>
+        <Text style={styles.totalValue}>€{(product.price * parseInt(quantity || 0, 10)).toFixed(2)}</Text>
       </View>
-      
-      <TouchableOpacity 
+
+      <TouchableOpacity
         style={[styles.button, loading && styles.buttonDisabled]}
         onPress={handleCreateOrder}
         disabled={loading}
@@ -92,68 +92,11 @@ const OrderScreen = ({ route, navigation }) => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 20,
-    backgroundColor: '#f4f4f4',
-  },
-  productSummary: {
-    backgroundColor: '#fff',
-    padding: 20,
-    borderRadius: 10,
-    marginBottom: 20,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
-  productName: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    color: '#333',
-    flex: 1,
-  },
-  productPrice: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    color: '#333',
-  },
-  label: {
-    fontSize: 14,
-    fontWeight: '600',
-    marginBottom: 5,
-    color: '#666',
-  },
-  input: {
-    backgroundColor: '#fff',
-    padding: 15,
-    borderRadius: 8,
-    marginBottom: 15,
-    fontSize: 16,
-  },
-  totalContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginVertical: 20,
-    padding: 15,
-    backgroundColor: '#fff',
-    borderRadius: 8,
-  },
-  totalLabel: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    color: '#333',
-  },
-  totalValue: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: '#333',
-  },
   button: {
-    backgroundColor: '#333',
-    padding: 15,
-    borderRadius: 8,
     alignItems: 'center',
+    backgroundColor: '#333',
+    borderRadius: 8,
+    padding: 15,
   },
   buttonDisabled: {
     backgroundColor: '#999',
@@ -161,6 +104,63 @@ const styles = StyleSheet.create({
   buttonText: {
     color: '#fff',
     fontSize: 16,
+    fontWeight: 'bold',
+  },
+  container: {
+    backgroundColor: '#f4f4f4',
+    flex: 1,
+    padding: 20,
+  },
+  input: {
+    backgroundColor: '#fff',
+    borderRadius: 8,
+    fontSize: 16,
+    marginBottom: 15,
+    padding: 15,
+  },
+  label: {
+    color: '#666',
+    fontSize: 14,
+    fontWeight: '600',
+    marginBottom: 5,
+  },
+  productName: {
+    color: '#333',
+    flex: 1,
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
+  productPrice: {
+    color: '#333',
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  productSummary: {
+    alignItems: 'center',
+    backgroundColor: '#fff',
+    borderRadius: 10,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 20,
+    padding: 20,
+  },
+  totalContainer: {
+    alignItems: 'center',
+    backgroundColor: '#fff',
+    borderRadius: 8,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginVertical: 20,
+    padding: 15,
+  },
+  totalLabel: {
+    color: '#333',
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
+  totalValue: {
+    color: '#333',
+    fontSize: 24,
     fontWeight: 'bold',
   },
 });

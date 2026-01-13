@@ -12,38 +12,24 @@ const apiClient = axios.create({
   }
 });
 
-// Eskaera interceptor-a: Tokena eta CSRF tokena gehitzeko
-apiClient.interceptors.request.use((config) => {
-  const token = localStorage.getItem('auth_token') || document.cookie.match(/auth_token=([^;]+)/)?.[1];
-  if (token) {
-    config.headers.Authorization = `Bearer ${token}`;
-  }
-  
-  config.headers['X-CSRF-Token'] = getCsrfToken();
-  
-  return config;
-}, (error) => {
-  return Promise.reject(error);
-});
-
-// Erantzun interceptor-a: 401 erroreak kudeatzeko (saioa itxi)
-apiClient.interceptors.response.use(
-  (response) => response,
-  async (error) => {
-    if (error.response?.status === 401) {
-      localStorage.removeItem('auth_token');
-      document.cookie = 'auth_token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
-      window.location.href = '/login';
-    }
-    return Promise.reject(error);
-  }
-);
-
 // CSRF tokena lortzeko funtzioa
 const getCsrfToken = () => {
   const token = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content');
   return token || '';
 };
+
+// Eskaera interceptor-a: Tokena eta CSRF tokena gehitzeko
+apiClient.interceptors.request.use((config) => {
+  const newConfig = { ...config };
+  const token = localStorage.getItem('auth_token') || document.cookie.match(/auth_token=([^;]+)/)?.[1];
+  if (token) {
+    newConfig.headers.Authorization = `Bearer ${token}`;
+  }
+
+  newConfig.headers['X-CSRF-Token'] = getCsrfToken();
+
+  return newConfig;
+}, (error) => Promise.reject(error));
 
 // Sarrera sanitizatzeko funtzioa (XSS prebentzioa)
 const sanitizeInput = (data) => {
@@ -52,7 +38,7 @@ const sanitizeInput = (data) => {
   }
   if (typeof data === 'object' && data !== null) {
     const sanitized = {};
-    Object.keys(data).forEach(key => {
+    Object.keys(data).forEach((key) => {
       sanitized[key] = sanitizeInput(data[key]);
     });
     return sanitized;
@@ -63,9 +49,9 @@ const sanitizeInput = (data) => {
 // Saioa hasteko funtzioa
 const login = async (username, password) => {
   try {
-    const response = await apiClient.post('/auth/login', { 
-      username: sanitizeInput(username), 
-      password 
+    const response = await apiClient.post('/auth/login', {
+      username: sanitizeInput(username),
+      password
     });
     return response.data;
   } catch (error) {
@@ -76,8 +62,8 @@ const login = async (username, password) => {
 // MFA egiaztatzeko funtzioa
 const verifyMFA = async (token) => {
   try {
-    const response = await apiClient.post('/auth/mfa/verify', { 
-      token: sanitizeInput(token) 
+    const response = await apiClient.post('/auth/mfa/verify', {
+      token: sanitizeInput(token)
     });
     return response.data;
   } catch (error) {

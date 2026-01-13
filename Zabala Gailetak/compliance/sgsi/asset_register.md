@@ -70,7 +70,7 @@ Aktiboak honela sailkatzen dira:
 | SRV-009 | Garapen | Birtuala | DC | IT Kude. | Dev Tald. | B/E/B | Probak | 5.000 | 2026-01-08 |
 | SRV-010 | ELK Stack | Birt. (AWS) | eu-w-1a | CISO | Seg Tald. | OK/A/A | SIEM/Moni. | 18.000 | 2026-01-08 |
 
-#### Sailkapen Legenda:
+#### Sailkapen Legenda
 
 - **K (Konfidentzialtasuna):** P=Publikoa, B=Barnekoa, K=Konfidentziala, OK=Oso Konfidentziala
 - **O (Osotasuna):** B=Baxua, E=Ertaina, A=Altua, K=Kritikoa
@@ -616,7 +616,7 @@ Aktiboak honela sailkatzen dira:
 
 ---
 
-### KONFIDENTZIALTASUN OHARRA:
+### KONFIDENTZIALTASUN OHARRA
 
 Dokumentu honek Zabala Gailetak-en informazio-aktiboei buruzko informazio zehatza dauka, sistemak,
 ahultasunak eta segurtasun neurriak barne. Baimenik gabeko ezagutarazteak erakundearen

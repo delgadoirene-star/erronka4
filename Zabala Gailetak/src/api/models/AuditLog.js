@@ -18,26 +18,26 @@ const auditLogSchema = new mongoose.Schema({
       'auth.mfa.disabled',
       'auth.mfa.verified',
       'auth.account.locked',
-      
+
       // User management
       'user.create',
       'user.update',
       'user.delete',
       'user.role.change',
-      
+
       // Product management
       'product.create',
       'product.update',
       'product.delete',
       'product.stock.update',
-      
+
       // Order management
       'order.create',
       'order.update',
       'order.status.change',
       'order.cancel',
       'order.refund',
-      
+
       // Security events
       'security.access.denied',
       'security.sql.injection.attempt',
@@ -45,18 +45,18 @@ const auditLogSchema = new mongoose.Schema({
       'security.rate.limit.exceeded',
       'security.invalid.token',
       'security.suspicious.activity',
-      
+
       // System events
       'system.start',
       'system.stop',
       'system.error',
       'system.config.change',
-      
+
       // Data access
       'data.read',
       'data.export',
       'data.import',
-      
+
       // Compliance
       'gdpr.data.request',
       'gdpr.data.delete',
@@ -181,7 +181,7 @@ auditLogSchema.index({ timestamp: -1 }); // For time-based queries
 auditLogSchema.index({ timestamp: 1 }, { expireAfterSeconds: 63072000 }); // 730 days
 
 // Static method to create audit log entry
-auditLogSchema.statics.log = async function(logData) {
+auditLogSchema.statics.log = async function (logData) {
   try {
     const auditLog = new this(logData);
     await auditLog.save();
@@ -194,7 +194,7 @@ auditLogSchema.statics.log = async function(logData) {
 };
 
 // Static method to query logs by date range
-auditLogSchema.statics.findByDateRange = function(startDate, endDate, filters = {}) {
+auditLogSchema.statics.findByDateRange = function (startDate, endDate, filters = {}) {
   const query = {
     timestamp: {
       $gte: startDate,
@@ -206,16 +206,16 @@ auditLogSchema.statics.findByDateRange = function(startDate, endDate, filters = 
 };
 
 // Static method to find failed login attempts
-auditLogSchema.statics.findFailedLogins = function(ipAddress, since) {
+auditLogSchema.statics.findFailedLogins = function (ipAddress, since) {
   return this.find({
     action: 'auth.login.failed',
-    ipAddress: ipAddress,
+    ipAddress,
     timestamp: { $gte: since }
   }).sort({ timestamp: -1 });
 };
 
 // Static method to find suspicious activities
-auditLogSchema.statics.findSuspiciousActivities = function(since) {
+auditLogSchema.statics.findSuspiciousActivities = function (since) {
   return this.find({
     $or: [
       { severity: { $in: ['high', 'critical'] } },
@@ -227,7 +227,7 @@ auditLogSchema.statics.findSuspiciousActivities = function(since) {
 };
 
 // Static method to generate security report
-auditLogSchema.statics.generateSecurityReport = async function(startDate, endDate) {
+auditLogSchema.statics.generateSecurityReport = async function (startDate, endDate) {
   const report = {
     totalEvents: 0,
     authenticationEvents: 0,
@@ -239,49 +239,49 @@ auditLogSchema.statics.generateSecurityReport = async function(startDate, endDat
     topIPs: [],
     topActions: []
   };
-  
+
   const dateFilter = {
     timestamp: { $gte: startDate, $lte: endDate }
   };
-  
+
   // Total events
   report.totalEvents = await this.countDocuments(dateFilter);
-  
+
   // Authentication events
   report.authenticationEvents = await this.countDocuments({
     ...dateFilter,
     action: { $regex: /^auth\./ }
   });
-  
+
   // Failed logins
   report.failedLogins = await this.countDocuments({
     ...dateFilter,
     action: 'auth.login.failed'
   });
-  
+
   // Successful logins
   report.successfulLogins = await this.countDocuments({
     ...dateFilter,
     action: 'auth.login.success'
   });
-  
+
   // Security events
   report.securityEvents = await this.countDocuments({
     ...dateFilter,
     action: { $regex: /^security\./ }
   });
-  
+
   // Critical events
   report.criticalEvents = await this.countDocuments({
     ...dateFilter,
     severity: 'critical'
   });
-  
+
   return report;
 };
 
 // Method to anonymize user data (for GDPR compliance)
-auditLogSchema.methods.anonymize = async function() {
+auditLogSchema.methods.anonymize = async function () {
   this.user = null;
   this.username = 'ANONYMIZED';
   this.ipAddress = '0.0.0.0';

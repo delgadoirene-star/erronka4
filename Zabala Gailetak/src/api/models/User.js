@@ -17,7 +17,11 @@ const userSchema = new mongoose.Schema({
     unique: true,
     lowercase: true,
     trim: true,
-    match: [/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/, 'Mesedez, eman baliozko email bat']
+    match: [
+      // eslint-disable-next-line security/detect-unsafe-regex
+      /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/,
+      'Mesedez, eman baliozko email bat'
+    ]
   },
   password: {
     type: String,
@@ -72,19 +76,20 @@ userSchema.index({ email: 1 });
 userSchema.index({ accountLocked: 1, lockUntil: 1 });
 
 // Pasahitza hash-eatu gorde aurretik
-userSchema.pre('save', async function(next) {
+userSchema.pre('save', async function (next) {
   // Pasahitza aldatu bada bakarrik hash-eatu
   if (!this.isModified('password')) return next();
-  
+
   try {
     const salt = await bcrypt.genSalt(12);
     this.password = await bcrypt.hash(this.password, salt);
-    
+
     // Ezarri pasahitz aldaketa denbora-marka
     if (!this.isNew) {
-      this.passwordChangedAt = Date.now() - 1000; // Segundo 1 kendu JWT pasahitz aldaketaren ondoren jaulki dela ziurtatzeko
+      // Segundo 1 kendu JWT pasahitz aldaketaren ondoren jaulki dela ziurtatzeko
+      this.passwordChangedAt = Date.now() - 1000;
     }
-    
+
     next();
   } catch (error) {
     next(error);
@@ -92,18 +97,18 @@ userSchema.pre('save', async function(next) {
 });
 
 // Pasahitza konparatzeko metodoa
-userSchema.methods.comparePassword = async function(candidatePassword) {
+userSchema.methods.comparePassword = async function (candidatePassword) {
   return await bcrypt.compare(candidatePassword, this.password);
 };
 
 // Kontua blokeatuta dagoen egiaztatzeko metodoa
-userSchema.methods.isLocked = function() {
+userSchema.methods.isLocked = function () {
   // Egiaztatu kontua blokeatuta dagoen eta blokeoa ez den iraungi
   return !!(this.accountLocked && this.lockUntil && this.lockUntil > Date.now());
 };
 
 // Huts egindako saio-hasiera saiakerak handitzeko metodoa
-userSchema.methods.incrementLoginAttempts = async function() {
+userSchema.methods.incrementLoginAttempts = async function () {
   // Berrezarri saiakerak blokeoa iraungi bada
   if (this.lockUntil && this.lockUntil < Date.now()) {
     return await this.updateOne({
@@ -114,26 +119,26 @@ userSchema.methods.incrementLoginAttempts = async function() {
       }
     });
   }
-  
+
   // Handitu saiakerak
   const updates = { $inc: { failedLoginAttempts: 1 } };
-  
+
   // Blokeatu kontua 5 saiakera okerren ondoren (30 minutu)
   const maxAttempts = 5;
   const lockTime = 30 * 60 * 1000; // 30 minutu
-  
+
   if (this.failedLoginAttempts + 1 >= maxAttempts && !this.accountLocked) {
     updates.$set = {
       accountLocked: true,
       lockUntil: Date.now() + lockTime
     };
   }
-  
+
   return await this.updateOne(updates);
 };
 
 // Saio-hasiera saiakerak berrezartzeko metodoa
-userSchema.methods.resetLoginAttempts = async function() {
+userSchema.methods.resetLoginAttempts = async function () {
   return await this.updateOne({
     $set: {
       failedLoginAttempts: 0,
@@ -145,7 +150,7 @@ userSchema.methods.resetLoginAttempts = async function() {
 };
 
 // Birtuala pasahitza JWT jaulki ondoren aldatu den egiaztatzeko
-userSchema.methods.changedPasswordAfter = function(JWTTimestamp) {
+userSchema.methods.changedPasswordAfter = function (JWTTimestamp) {
   if (this.passwordChangedAt) {
     const changedTimestamp = parseInt(this.passwordChangedAt.getTime() / 1000, 10);
     return JWTTimestamp < changedTimestamp;

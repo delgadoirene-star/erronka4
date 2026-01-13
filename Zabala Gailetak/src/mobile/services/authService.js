@@ -17,7 +17,9 @@ apiClient.interceptors.request.use(async (config) => {
 
   const credentials = await Keychain.getGenericPassword();
   if (credentials) {
-    config.headers.Authorization = `Bearer ${credentials.password}`;
+    const newConfig = { ...config };
+    newConfig.headers.Authorization = `Bearer ${credentials.password}`;
+    return newConfig;
   }
   return config;
 });
@@ -35,15 +37,15 @@ apiClient.interceptors.response.use(
 const login = async (username, password) => {
   try {
     const response = await apiClient.post('/auth/login', { username, password });
-    
+
     if (response.data.requiresMFA) {
       return response.data;
     }
-    
+
     if (response.data.token) {
       await Keychain.setGenericPassword(username, response.data.token);
     }
-    
+
     return response.data;
   } catch (error) {
     throw new Error(error.response?.data?.error || 'Login errorea');
@@ -53,14 +55,14 @@ const login = async (username, password) => {
 const verifyMFA = async (token) => {
   try {
     const response = await apiClient.post('/auth/mfa/verify', { token });
-    
+
     if (response.data.token) {
       const credentials = await Keychain.getGenericPassword();
       if (credentials) {
         await Keychain.setGenericPassword(credentials.username, response.data.token);
       }
     }
-    
+
     return response.data;
   } catch (error) {
     throw new Error(error.response?.data?.error || 'MFA errorea');

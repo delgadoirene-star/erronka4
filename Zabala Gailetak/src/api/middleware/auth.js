@@ -7,19 +7,17 @@ const QRCode = require('qrcode');
 const users = [];
 
 // JWT tokena sortzeko funtzioa
-const generateToken = (userId) => {
-  return jwt.sign({ userId }, process.env.JWT_SECRET, {
-    expiresIn: process.env.JWT_EXPIRES_IN || '1h'
-  });
-};
+const generateToken = (userId) => jwt.sign({ userId }, process.env.JWT_SECRET, {
+  expiresIn: process.env.JWT_EXPIRES_IN || '1h'
+});
 
 // Erabiltzailea erregistratzeko funtzioa
 const register = async (req, res) => {
   try {
     const { username, email, password } = req.body;
-    
+
     // Egiaztatu erabiltzailea jada existitzen den
-    const existingUser = users.find(u => u.username === username || u.email === email);
+    const existingUser = users.find((u) => u.username === username || u.email === email);
     if (existingUser) {
       return res.status(400).json({ error: 'Erabiltzailea jada existitzen da' });
     }
@@ -39,7 +37,7 @@ const register = async (req, res) => {
     users.push(user);
     const token = generateToken(user.id);
 
-    res.status(201).json({ 
+    res.status(201).json({
       message: 'Erabiltzailea ondo sortu da',
       token,
       userId: user.id
@@ -53,9 +51,9 @@ const register = async (req, res) => {
 const login = async (req, res) => {
   try {
     const { username, password } = req.body;
-    
+
     // Bilatu erabiltzailea
-    const user = users.find(u => u.username === username);
+    const user = users.find((u) => u.username === username);
     if (!user) {
       return res.status(401).json({ error: 'Erabiltzailea edo pasahitza okerra' });
     }
@@ -68,8 +66,8 @@ const login = async (req, res) => {
 
     // MFA gaituta badago, kodea eskatu
     if (user.mfaEnabled) {
-      return res.json({ 
-        requiresMFA: true, 
+      return res.json({
+        requiresMFA: true,
         userId: user.id,
         message: 'MFA kodea behar da'
       });
@@ -87,8 +85,8 @@ const login = async (req, res) => {
 const setupMFA = async (req, res) => {
   try {
     const { userId } = req;
-    const user = users.find(u => u.id === userId);
-    
+    const user = users.find((u) => u.id === userId);
+
     if (!user) {
       return res.status(404).json({ error: 'Erabiltzailea ez da aurkitu' });
     }
@@ -104,7 +102,7 @@ const setupMFA = async (req, res) => {
     });
 
     user.mfaSecret = secret.base32;
-    
+
     // QR kodea sortu erabiltzaileak eskaneatzeko
     const qrCodeUrl = await QRCode.toDataURL(secret.otpauth_url);
 
@@ -123,8 +121,8 @@ const verifyMFA = async (req, res) => {
   try {
     const { userId } = req;
     const { token } = req.body;
-    
-    const user = users.find(u => u.id === userId);
+
+    const user = users.find((u) => u.id === userId);
     if (!user || !user.mfaSecret) {
       return res.status(404).json({ error: 'MFA ez dago konfiguratuta' });
     }
@@ -140,12 +138,12 @@ const verifyMFA = async (req, res) => {
       // Lehen aldia bada, gaitu MFA
       if (!user.mfaEnabled) {
         user.mfaEnabled = true;
-        return res.json({ 
+        return res.json({
           message: 'MFA ondo gaitu da',
           enabled: true
         });
       }
-      
+
       // Saio hasiera bada, tokena itzuli
       const authToken = generateToken(user.id);
       res.json({ token: authToken, message: 'MFA balidazioa arrakastatsua' });
@@ -161,8 +159,8 @@ const verifyMFA = async (req, res) => {
 const disableMFA = async (req, res) => {
   try {
     const { userId } = req;
-    const user = users.find(u => u.id === userId);
-    
+    const user = users.find((u) => u.id === userId);
+
     if (!user) {
       return res.status(404).json({ error: 'Erabiltzailea ez da aurkitu' });
     }
@@ -179,7 +177,7 @@ const disableMFA = async (req, res) => {
 // Autentifikazio middleware-a
 const authMiddleware = (req, res, next) => {
   const token = req.header('Authorization')?.replace('Bearer ', '');
-  
+
   if (!token) {
     return res.status(401).json({ error: 'Sarbidea ukatua: tokenik ez' });
   }

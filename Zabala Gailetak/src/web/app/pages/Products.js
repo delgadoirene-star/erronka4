@@ -134,10 +134,6 @@ const Products = () => {
   const { logout } = useAuth();
   const navigate = useNavigate();
 
-  useEffect(() => {
-    loadProducts();
-  }, []);
-
   const loadProducts = async () => {
     try {
       const data = await getProducts();
@@ -148,6 +144,10 @@ const Products = () => {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    loadProducts();
+  }, []);
 
   const handleOrder = (product) => {
     navigate(`/order/${product.id}`, { state: { product } });

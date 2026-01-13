@@ -117,7 +117,7 @@ const Login = () => {
 
     try {
       const result = await authLogin(username, password);
-      
+
       if (result.requiresMFA) {
         navigate('/mfa');
       } else if (result.success) {
@@ -135,9 +135,9 @@ const Login = () => {
       <Card>
         <Title>Zabala Gailetak</Title>
         <Subtitle>Sartu zure kontuan</Subtitle>
-        
+
         {error && <Error>{error}</Error>}
-        
+
         <Form onSubmit={handleSubmit}>
           <Input
             type="text"
@@ -147,7 +147,7 @@ const Login = () => {
             required
             autoComplete="username"
           />
-          
+
           <Input
             type="password"
             placeholder="Pasahitza"
@@ -156,12 +156,12 @@ const Login = () => {
             required
             autoComplete="current-password"
           />
-          
+
           <Button type="submit" disabled={loading}>
             {loading ? 'Kargatzen...' : 'Saioa Hasi'}
           </Button>
         </Form>
-        
+
         <Footer>
           Ez duzu konturik? <FooterLink to="/register">Sortu kontua</FooterLink>
         </Footer>

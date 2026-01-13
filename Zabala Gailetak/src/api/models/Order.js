@@ -215,7 +215,7 @@ orderSchema.index({ status: 1, paymentStatus: 1 });
 orderSchema.index({ createdAt: -1 });
 
 // Pre-save middleware to generate order number
-orderSchema.pre('save', async function(next) {
+orderSchema.pre('save', async function (next) {
   if (!this.orderNumber && this.isNew) {
     // Generate order number: ORD-YYYYMMDD-XXXXX
     const date = new Date();
@@ -229,14 +229,14 @@ orderSchema.pre('save', async function(next) {
 });
 
 // Pre-save middleware to calculate totals
-orderSchema.pre('save', function(next) {
+orderSchema.pre('save', function (next) {
   if (this.isModified('items') || this.isModified('taxRate') || this.isModified('shippingCost')) {
     // Calculate subtotal from items
     this.subtotal = this.items.reduce((sum, item) => sum + item.subtotal, 0);
-    
+
     // Calculate tax
     this.taxAmount = Math.round(this.subtotal * this.taxRate * 100) / 100;
-    
+
     // Calculate total
     this.totalAmount = Math.round((this.subtotal + this.taxAmount + this.shippingCost) * 100) / 100;
   }
@@ -244,7 +244,7 @@ orderSchema.pre('save', function(next) {
 });
 
 // Pre-save middleware to add status to history
-orderSchema.pre('save', function(next) {
+orderSchema.pre('save', function (next) {
   if (this.isModified('status') && !this.isNew) {
     this.statusHistory.push({
       status: this.status,
@@ -255,19 +255,19 @@ orderSchema.pre('save', function(next) {
 });
 
 // Method to update order status
-orderSchema.methods.updateStatus = async function(newStatus, notes, updatedBy) {
+orderSchema.methods.updateStatus = async function (newStatus, notes, updatedBy) {
   this.status = newStatus;
   this.statusHistory.push({
     status: newStatus,
     timestamp: new Date(),
-    notes: notes,
-    updatedBy: updatedBy
+    notes,
+    updatedBy
   });
   return await this.save();
 };
 
 // Method to cancel order
-orderSchema.methods.cancel = async function(reason, updatedBy) {
+orderSchema.methods.cancel = async function (reason, updatedBy) {
   if (['delivered', 'cancelled', 'refunded'].includes(this.status)) {
     throw new Error(`Cannot cancel order with status: ${this.status}`);
   }
@@ -277,13 +277,13 @@ orderSchema.methods.cancel = async function(reason, updatedBy) {
     status: 'cancelled',
     timestamp: new Date(),
     notes: `Cancelled: ${reason}`,
-    updatedBy: updatedBy
+    updatedBy
   });
   return await this.save();
 };
 
 // Method to mark as paid
-orderSchema.methods.markAsPaid = async function(transactionId, paymentMethod) {
+orderSchema.methods.markAsPaid = async function (transactionId, paymentMethod) {
   this.paymentStatus = 'paid';
   this.paymentTransactionId = transactionId;
   this.paymentMethod = paymentMethod;
@@ -291,19 +291,19 @@ orderSchema.methods.markAsPaid = async function(transactionId, paymentMethod) {
 };
 
 // Virtual for checking if order is editable
-orderSchema.virtual('isEditable').get(function() {
+orderSchema.virtual('isEditable').get(function () {
   return ['pending', 'confirmed'].includes(this.status);
 });
 
 // Virtual for checking if order is cancellable
-orderSchema.virtual('isCancellable').get(function() {
+orderSchema.virtual('isCancellable').get(function () {
   return ['pending', 'confirmed', 'processing'].includes(this.status);
 });
 
 // Ensure virtuals are included when converting to JSON
-orderSchema.set('toJSON', { 
+orderSchema.set('toJSON', {
   virtuals: true,
-  transform: function(doc, ret) {
+  transform(doc, ret) {
     delete ret.__v;
     return ret;
   }

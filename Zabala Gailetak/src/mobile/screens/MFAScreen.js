@@ -33,7 +33,7 @@ const MFAScreen = ({ route, navigation }) => {
     <View style={styles.container}>
       <Text style={styles.title}>MFA Balidazioa</Text>
       <Text style={styles.subtitle}>Autentikatzaile aplikazioko kodea sartu</Text>
-      
+
       <TextInput
         style={styles.input}
         placeholder="000000"
@@ -44,8 +44,8 @@ const MFAScreen = ({ route, navigation }) => {
         textAlign="center"
         autoFocus
       />
-      
-      <TouchableOpacity 
+
+      <TouchableOpacity
         style={[styles.button, loading && styles.buttonDisabled]}
         onPress={handleVerifyMFA}
         disabled={loading}
@@ -61,39 +61,11 @@ const MFAScreen = ({ route, navigation }) => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    padding: 20,
-    backgroundColor: '#f4f4f4',
-  },
-  title: {
-    fontSize: 28,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    marginBottom: 10,
-    color: '#333',
-  },
-  subtitle: {
-    fontSize: 16,
-    textAlign: 'center',
-    marginBottom: 30,
-    color: '#666',
-  },
-  input: {
-    backgroundColor: '#fff',
-    padding: 15,
-    borderRadius: 8,
-    marginBottom: 20,
-    fontSize: 24,
-    letterSpacing: 8,
-    fontWeight: 'bold',
-  },
   button: {
-    backgroundColor: '#333',
-    padding: 15,
-    borderRadius: 8,
     alignItems: 'center',
+    backgroundColor: '#333',
+    borderRadius: 8,
+    padding: 15,
   },
   buttonDisabled: {
     backgroundColor: '#999',
@@ -102,6 +74,34 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontSize: 16,
     fontWeight: 'bold',
+  },
+  container: {
+    backgroundColor: '#f4f4f4',
+    flex: 1,
+    justifyContent: 'center',
+    padding: 20,
+  },
+  input: {
+    backgroundColor: '#fff',
+    borderRadius: 8,
+    fontSize: 24,
+    fontWeight: 'bold',
+    letterSpacing: 8,
+    marginBottom: 20,
+    padding: 15,
+  },
+  subtitle: {
+    color: '#666',
+    fontSize: 16,
+    marginBottom: 30,
+    textAlign: 'center',
+  },
+  title: {
+    color: '#333',
+    fontSize: 28,
+    fontWeight: 'bold',
+    marginBottom: 10,
+    textAlign: 'center',
   },
 });
 

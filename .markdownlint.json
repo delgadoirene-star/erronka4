@@ -2,5 +2,12 @@
   "MD013": { "line_length": 120 },
   "MD033": false,
   "MD007": { "indent": 2 },
-  "MD041": false
+  "MD041": false,
+  "MD036": false,
+  "MD040": { "language": "en" },
+  "MD060": false,
+  "MD024": false,
+  "MD001": false,
+  "MD045": false,
+  "MD035": { "style": "---" }
 }

@@ -12,8 +12,6 @@
     "lint:fix": "eslint src/api/**/*.js --fix",
     "audit": "npm audit",
     "audit:fix": "npm audit fix",
-    "sast": "sonar-scanner",
-    "dast": "zap-cli quick-scan --self-contained --start-options '-config api.conf' http://localhost:3000",
     "build": "docker build -t zabala-gailetak-api .",
     "docker:run": "docker run -p 3000:3000 --env-file .env zabala-gailetak-api",
     "web:start": "cd src/web/app && npm run start",
@@ -54,10 +52,7 @@
     "eslint": "^8.55.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-security": "^1.7.1",
-    "sonar-scanner": "^3.3.0",
-    "zap-cli": "^0.0.13",
-    "npm-audit-resolver": "^3.0.0-rc.3"
+    "eslint-plugin-security": "^1.7.1"
   },
   "jest": {
     "testEnvironment": "node",
