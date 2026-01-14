@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace HrPortal\Middleware;
+namespace ZabalaGailetak\HrPortal\Middleware;
 
-use HrPortal\Http\Request;
-use HrPortal\Http\Response;
+use ZabalaGailetak\HrPortal\Http\Request;
+use ZabalaGailetak\HrPortal\Http\Response;
 
 /**
  * Security Headers Middleware

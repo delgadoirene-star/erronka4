@@ -11,7 +11,10 @@ RUN apk add --no-cache \
     git \
     curl \
     nginx \
-    supervisor
+    supervisor \
+    autoconf \
+    g++ \
+    make
 
 # Install PHP extensions
 RUN docker-php-ext-configure gd --with-freetype --with-jpeg \
@@ -36,6 +39,9 @@ COPY . /var/www/html
 
 # Install PHP dependencies
 RUN composer install --no-dev --optimize-autoloader
+
+# Create required directories
+RUN mkdir -p storage/cache storage/sessions logs
 
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html \

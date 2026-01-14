@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace HrPortal\Http;
+namespace ZabalaGailetak\HrPortal\Http;
 
 /**
  * HTTP Request Class (PSR-7 compliant)
@@ -18,6 +18,7 @@ class Request
     private array $server;
     private array $cookies;
     private ?string $body;
+    private array $attributes = []; // For storing request-level data
     
     public function __construct(
         string $method,
@@ -69,7 +70,7 @@ class Request
         return parse_url($this->uri, PHP_URL_PATH) ?: '/';
     }
     
-    public function getQuery(string $key = null, $default = null)
+    public function getQuery(?string $key = null, mixed $default = null): mixed
     {
         if ($key === null) {
             return $this->query;
@@ -78,7 +79,7 @@ class Request
         return $this->query[$key] ?? $default;
     }
     
-    public function getPost(string $key = null, $default = null)
+    public function getPost(?string $key = null, mixed $default = null): mixed
     {
         if ($key === null) {
             return $this->post;
@@ -97,7 +98,7 @@ class Request
         return $this->headers;
     }
     
-    public function getCookie(string $name, $default = null)
+    public function getCookie(string $name, mixed $default = null): mixed
     {
         return $this->cookies[$name] ?? $default;
     }
@@ -114,6 +115,19 @@ class Request
         }
         
         return json_decode($this->body, true);
+    }
+    
+    /**
+     * Get parsed body (JSON or form data)
+     */
+    public function getParsedBody(): ?array
+    {
+        if ($this->isJson()) {
+            return $this->getJsonBody();
+        }
+        
+        // For form data, return POST array
+        return $this->post;
     }
     
     public function isJson(): bool
@@ -140,5 +154,29 @@ class Request
     public function isDelete(): bool
     {
         return $this->method === 'DELETE';
+    }
+    
+    /**
+     * Set an attribute
+     */
+    public function setAttribute(string $name, mixed $value): void
+    {
+        $this->attributes[$name] = $value;
+    }
+    
+    /**
+     * Get an attribute
+     */
+    public function getAttribute(string $name, mixed $default = null): mixed
+    {
+        return $this->attributes[$name] ?? $default;
+    }
+    
+    /**
+     * Get all attributes
+     */
+    public function getAttributes(): array
+    {
+        return $this->attributes;
     }
 }

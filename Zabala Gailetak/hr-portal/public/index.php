@@ -9,7 +9,7 @@ declare(strict_types=1);
  * @author Zabala Gailetak
  */
 
-use HrPortal\App;
+use ZabalaGailetak\HrPortal\App;
 
 // Define root path
 define('ROOT_PATH', dirname(__DIR__));

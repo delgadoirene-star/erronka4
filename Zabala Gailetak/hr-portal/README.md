@@ -1,202 +1,147 @@
-# Zabala Gailetak HR Portal
+# Zabala Gailetak - HR Portal 🏢
 
-Sistema interno de gestión de recursos humanos para Zabala Gailetak.
+Sistema interno de gestión de recursos humanos con seguridad avanzada implementada.
 
-## 🚀 Tecnologías
+## 🎯 Estado del Proyecto
 
-- **Backend**: PHP 8.4 Vanilla (PSR-4, PSR-7, PSR-15)
-- **Base de Datos**: PostgreSQL 16
-- **Caché**: Redis 7
-- **Web Server**: Nginx
-- **Containerización**: Docker & Docker Compose
+**Fase Actual**: ✅ Fase 2 Completada - Autenticación Avanzada  
+**Última Actualización**: 14 de Enero, 2026
 
-## 📋 Requisitos
+### Fases Completadas
 
-- Docker >= 20.10
-- Docker Compose >= 2.0
-- PHP >= 8.4 (para desarrollo local)
-- Composer >= 2.0
+- ✅ **Fase 1**: Estructura Base y Migraciones
+- ✅ **Fase 2**: Autenticación Avanzada (JWT + MFA + RBAC)
+- ⏳ **Fase 3**: Employee CRUD (próxima)
 
-## 🏗️ Instalación
+---
 
-### Con Docker (Recomendado)
+## 🚀 Quick Start
+
+### Prerequisitos
+
+- Docker & Docker Compose
+- Arch Linux (o compatible)
+- Puertos disponibles: 8080 (HTTP), 8443 (HTTPS), 5432 (PostgreSQL), 6379 (Redis)
+
+### Inicio Rápido
 
 ```bash
-# Clonar repositorio
-git clone <repository-url>
+# 1. Clonar repositorio
+cd "Zabala Gailetak"
+
+# 2. Configurar variables de entorno
 cd hr-portal
-
-# Copiar archivo de entorno
 cp .env.example .env
+# Editar .env con tus secretos
 
-# Editar .env con tus configuraciones
-nano .env
+# 3. Iniciar servicios
+cd ..
+docker-compose -f docker-compose.hrportal.yml up -d
 
-# Iniciar servicios
-docker-compose up -d
+# 4. Instalar dependencias PHP
+docker-compose -f docker-compose.hrportal.yml exec php composer install
 
-# Ejecutar migraciones
-docker-compose exec php php /var/www/html/scripts/migrate.php
+# 5. Ejecutar migraciones
+docker-compose -f docker-compose.hrportal.yml exec postgres psql -U hr_user -d hr_portal -f /docker-entrypoint-initdb.d/001_init_schema.sql
+
+# 6. Verificar instalación
+curl http://localhost:8080/api/health
 ```
 
-### Desarrollo Local
+---
 
-```bash
-# Instalar dependencias
-composer install
+## 📋 Arquitectura
 
-# Copiar archivo de entorno
-cp .env.example .env
+### Stack Tecnológico
 
-# Configurar base de datos en .env
-# Ejecutar migraciones
-php scripts/migrate.php
+- **Backend**: PHP 8.4 (FPM Alpine)
+- **Base de Datos**: PostgreSQL 16 Alpine
+- **Cache/Sessions**: Redis 7 Alpine
+- **Web Server**: Nginx Alpine
+- **Autenticación**: JWT (firebase/php-jwt)
+- **MFA**: TOTP (spomky-labs/otphp)
 
-# Iniciar servidor de desarrollo
-php -S localhost:8000 -t public/
-```
+### Servicios Docker
 
-## 📁 Estructura del Proyecto
+| Servicio | Puerto | Estado | Descripción |
+|----------|--------|--------|-------------|
+| nginx | 8080, 8443 | ✅ Running | Reverse proxy y SSL |
+| php | 9000 | ✅ Running | PHP-FPM 8.4 |
+| postgres | 5432 | ✅ Healthy | Base de datos principal |
+| redis | 6379 | ✅ Healthy | Cache y sesiones |
 
-```
-hr-portal/
-├── config/                 # Configuración
-├── public/                 # Archivos públicos (entry point)
-├── src/                    # Código fuente (PSR-4)
-│   ├── Auth/              # Autenticación y autorización
-│   ├── Database/          # Capa de base de datos
-│   ├── Http/              # Request/Response (PSR-7)
-│   ├── Middleware/        # Middleware (PSR-15)
-│   ├── Models/            # Modelos de datos
-│   ├── Repositories/      # Repositorios
-│   ├── Routing/           # Sistema de rutas
-│   ├── Security/          # Seguridad (CSRF, XSS, etc.)
-│   ├── Services/          # Lógica de negocio
-│   └── View/              # Sistema de templates
-├── templates/             # Plantillas HTML
-├── tests/                 # Tests (PHPUnit)
-├── migrations/            # Migraciones de base de datos
-├── logs/                  # Archivos de log
-└── storage/               # Almacenamiento de archivos
-```
+---
 
-## 🔧 Comandos Útiles
+## 🔐 Autenticación y Seguridad
 
-### Composer
+### Características Implementadas
 
-```bash
-# Instalar dependencias
-composer install
+- ✅ **JWT Tokens**: Access tokens (1h) y refresh tokens (7d)
+- ✅ **MFA/TOTP**: Autenticación de dos factores con códigos QR
+- ✅ **RBAC**: Control de acceso basado en roles (4 roles, 43 permisos)
+- ✅ **Session Management**: Sesiones persistentes en Redis
+- ✅ **Rate Limiting**: Protección contra fuerza bruta
+- ✅ **Account Locking**: Bloqueo tras intentos fallidos
+- ✅ **Backup Codes**: Códigos de respaldo para MFA
 
-# Actualizar dependencias
-composer update
+### Roles y Permisos
 
-# Tests
-composer test
+| Rol | Permisos | Descripción |
+|-----|----------|-------------|
+| **admin** | 43 (todos) | Acceso completo al sistema |
+| **hr_manager** | 31 | Gestión de RRHH |
+| **department_head** | 15 | Gestión de departamento |
+| **employee** | 7 | Acceso básico |
 
-# Análisis estático (PHPStan)
-composer phpstan
+---
 
-# Code style check
-composer cs-check
+## 🔌 API Endpoints
 
-# Code style fix
-composer cs-fix
-```
+Ver documentación completa en [FASE_2_COMPLETADA.md](./FASE_2_COMPLETADA.md)
 
-### Docker
+### Públicos
+- `GET /api/health` - Health check
+- `POST /api/auth/login` - Login
+- `POST /api/auth/refresh` - Renovar token
 
-```bash
-# Iniciar servicios
-docker-compose up -d
+### Protegidos
+- `GET /api/auth/me` - Usuario actual
+- `POST /api/auth/logout` - Cerrar sesión
+- `POST /api/auth/mfa/setup` - Configurar MFA
+- `POST /api/auth/mfa/enable` - Activar MFA
+- `POST /api/auth/mfa/verify` - Verificar MFA
 
-# Ver logs
-docker-compose logs -f
-
-# Detener servicios
-docker-compose down
-
-# Reconstruir contenedores
-docker-compose build --no-cache
-
-# Ejecutar comando en contenedor PHP
-docker-compose exec php <command>
-```
+---
 
 ## 🧪 Testing
 
 ```bash
-# Ejecutar todos los tests
-composer test
+# Tests unitarios
+docker-compose -f docker-compose.hrportal.yml exec php ./vendor/bin/phpunit --testdox
 
-# Tests con cobertura
-composer test -- --coverage-html coverage/
-
-# Test específico
-./vendor/bin/phpunit tests/Unit/Auth/SessionManagerTest.php
+# Estado: ✅ 11/11 tests passing
 ```
-
-## 🔒 Seguridad
-
-Este proyecto implementa múltiples capas de seguridad:
-
-- ✅ Headers de seguridad (CSP, X-Frame-Options, etc.)
-- ✅ Protección CSRF
-- ✅ Protección XSS
-- ✅ Rate limiting
-- ✅ Autenticación JWT
-- ✅ MFA (TOTP)
-- ✅ Passkey/WebAuthn
-- ✅ Password hashing (bcrypt)
-- ✅ Auditoría completa
-- ✅ Prepared statements (SQL injection prevention)
-
-## 📚 API Documentation
-
-La documentación completa de la API está disponible en `/docs/API.md`.
-
-### Endpoints Principales
-
-- `POST /api/auth/login` - Login
-- `POST /api/auth/logout` - Logout
-- `GET /api/employees` - Listar empleados
-- `POST /api/vacations` - Solicitar vacaciones
-- `GET /api/payroll` - Ver nóminas
-- `POST /api/documents/upload` - Subir documentos
-- `GET /api/chat/messages/{id}` - Mensajes de chat
-
-## 🌐 Entorno de Producción
-
-### Requisitos Mínimos
-
-- CPU: 2 cores
-- RAM: 4GB
-- Disco: 20GB SSD
-- PostgreSQL 16
-- Redis 7
-- PHP 8.4 con extensiones: pdo_pgsql, redis, gd, opcache
-
-### Configuración
-
-1. Configurar variables de entorno en `.env`
-2. Establecer `APP_ENV=production` y `APP_DEBUG=false`
-3. Configurar HTTPS/SSL
-4. Configurar backups automáticos
-5. Configurar monitoreo y alertas
-
-## 👥 Contribuir
-
-Ver [CONTRIBUTING.md](docs/CONTRIBUTING.md) para guías de contribución.
-
-## 📝 Licencia
-
-Propietario - Zabala Gailetak
-
-## 📞 Soporte
-
-Para soporte, contactar con el equipo de IT de Zabala Gailetak.
 
 ---
 
-**Versión**: 1.0.0  
-**Última actualización**: Enero 2026
+## 👥 Usuario de Prueba
+
+```
+Email: admin@zabalagailetak.com
+Password: password
+Rol: admin
+```
+
+---
+
+## 📚 Documentación
+
+- [FASE_2_COMPLETADA.md](./FASE_2_COMPLETADA.md) - Detalles técnicos Fase 2
+- [API_DOCUMENTATION.md](../API_DOCUMENTATION.md) - API completa
+- [MIGRATION_PLAN.md](../MIGRATION_PLAN.md) - Plan de migración
+
+---
+
+**Versión**: 1.0.0-alpha  
+**Estado**: En desarrollo activo  
+**Licencia**: Proprietary - Zabala Gailetak

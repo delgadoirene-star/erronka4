@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace HrPortal\Database;
+namespace ZabalaGailetak\HrPortal\Database;
 
 use PDO;
 use PDOException;
@@ -71,6 +71,14 @@ class Database
         $stmt->execute($params);
         
         return $stmt;
+    }
+    
+    /**
+     * Prepare a statement
+     */
+    public function prepare(string $sql): \PDOStatement
+    {
+        return $this->getConnection()->prepare($sql);
     }
     
     /**

@@ -8,14 +8,43 @@ declare(strict_types=1);
  * Define all application routes here
  */
 
-use HrPortal\Http\Request;
-use HrPortal\Http\Response;
+use ZabalaGailetak\HrPortal\Http\Request;
+use ZabalaGailetak\HrPortal\Http\Response;
+use ZabalaGailetak\HrPortal\Controllers\AuthController;
+use ZabalaGailetak\HrPortal\Auth\TokenManager;
+use ZabalaGailetak\HrPortal\Auth\SessionManager;
+use ZabalaGailetak\HrPortal\Auth\MFA\TOTPService;
+use ZabalaGailetak\HrPortal\Database\Database;
 
 $router = $GLOBALS['app']->getRouter() ?? null;
 
 if ($router === null) {
     throw new \RuntimeException('Router not initialized');
 }
+
+// Initialize services
+$db = $GLOBALS['app']->getDatabase();
+
+// Connect to Redis
+$redis = new \Redis();
+$redis->connect($_ENV['REDIS_HOST'] ?? 'redis', (int)($_ENV['REDIS_PORT'] ?? 6379));
+if (!empty($_ENV['REDIS_PASSWORD'])) {
+    $redis->auth($_ENV['REDIS_PASSWORD']);
+}
+$redis->select((int)($_ENV['REDIS_DB'] ?? 0));
+
+$tokenManager = new TokenManager([
+    'jwt_secret' => $_ENV['JWT_SECRET'] ?? 'change_this_secret_key',
+    'jwt_issuer' => $_ENV['APP_URL'] ?? 'http://localhost:8080',
+    'jwt_access_expiry' => 3600,
+    'jwt_refresh_expiry' => 604800
+]);
+$sessionManager = new SessionManager($redis, [
+    'session_prefix' => 'hrportal:session:',
+    'session_ttl' => (int)($_ENV['SESSION_LIFETIME'] ?? 28800)
+]);
+$totpService = new TOTPService();
+$authController = new AuthController($db, $tokenManager, $sessionManager, $totpService);
 
 // ============================================================================
 // Web Routes
@@ -53,17 +82,16 @@ $router->get('/api/health', function (Request $request): Response {
 });
 
 // API Auth
-$router->post('/api/auth/login', function (Request $request): Response {
-    return Response::json(['message' => 'API Login - TODO']);
-});
+$router->post('/api/auth/login', [$authController, 'login']);
+$router->post('/api/auth/logout', [$authController, 'logout']);
+$router->post('/api/auth/refresh', [$authController, 'refresh']);
+$router->get('/api/auth/me', [$authController, 'me']);
 
-$router->post('/api/auth/register', function (Request $request): Response {
-    return Response::json(['message' => 'API Register - TODO']);
-});
-
-$router->post('/api/auth/logout', function (Request $request): Response {
-    return Response::json(['message' => 'API Logout - TODO']);
-});
+// MFA endpoints
+$router->post('/api/auth/mfa/verify', [$authController, 'verifyMfa']);
+$router->post('/api/auth/mfa/setup', [$authController, 'setupMfa']);
+$router->post('/api/auth/mfa/enable', [$authController, 'enableMfa']);
+$router->post('/api/auth/mfa/disable', [$authController, 'disableMfa']);
 
 // API Employees
 $router->get('/api/employees', function (Request $request): Response {

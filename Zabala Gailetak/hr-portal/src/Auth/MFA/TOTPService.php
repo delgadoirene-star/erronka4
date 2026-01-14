@@ -67,7 +67,8 @@ class TOTPService
         $imageData = @file_get_contents($qrUrl);
         
         if ($imageData === false) {
-            throw new Exception('No se pudo generar el código QR');
+            // Si falla, devolver URL del QR en lugar de data URI
+            return $qrUrl;
         }
         
         return 'data:image/png;base64,' . base64_encode($imageData);

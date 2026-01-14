@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace HrPortal\Routing;
+namespace ZabalaGailetak\HrPortal\Routing;
 
-use HrPortal\Http\Request;
-use HrPortal\Http\Response;
+use ZabalaGailetak\HrPortal\Http\Request;
+use ZabalaGailetak\HrPortal\Http\Response;
 
 /**
  * Application Router
@@ -19,7 +19,7 @@ class Router
     /**
      * Register a GET route
      */
-    public function get(string $path, callable $handler): void
+    public function get(string $path, callable|array $handler): void
     {
         $this->addRoute('GET', $path, $handler);
     }
@@ -27,7 +27,7 @@ class Router
     /**
      * Register a POST route
      */
-    public function post(string $path, callable $handler): void
+    public function post(string $path, callable|array $handler): void
     {
         $this->addRoute('POST', $path, $handler);
     }
@@ -35,7 +35,7 @@ class Router
     /**
      * Register a PUT route
      */
-    public function put(string $path, callable $handler): void
+    public function put(string $path, callable|array $handler): void
     {
         $this->addRoute('PUT', $path, $handler);
     }
@@ -43,7 +43,7 @@ class Router
     /**
      * Register a DELETE route
      */
-    public function delete(string $path, callable $handler): void
+    public function delete(string $path, callable|array $handler): void
     {
         $this->addRoute('DELETE', $path, $handler);
     }
@@ -51,7 +51,7 @@ class Router
     /**
      * Add a route
      */
-    private function addRoute(string $method, string $path, callable $handler): void
+    private function addRoute(string $method, string $path, callable|array $handler): void
     {
         $this->routes[] = [
             'method' => $method,
@@ -88,7 +88,17 @@ class Router
                 array_shift($matches); // Remove full match
                 
                 try {
-                    $response = call_user_func_array($route['handler'], array_merge([$request], $matches));
+                    $handler = $route['handler'];
+                    
+                    // If handler is array [ClassName::class, 'method'], instantiate the controller
+                    if (is_array($handler) && count($handler) === 2) {
+                        [$class, $method] = $handler;
+                        if (is_string($class) && class_exists($class)) {
+                            $handler = [new $class(), $method];
+                        }
+                    }
+                    
+                    $response = call_user_func_array($handler, array_merge([$request], $matches));
                     
                     if (!$response instanceof Response) {
                         throw new \RuntimeException('Handler must return Response instance');

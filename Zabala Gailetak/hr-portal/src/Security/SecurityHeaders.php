@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace HrPortal\Security;
+namespace ZabalaGailetak\HrPortal\Security;
 
 /**
  * Security Headers Manager

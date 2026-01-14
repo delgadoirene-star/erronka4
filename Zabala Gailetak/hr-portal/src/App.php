@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace HrPortal;
+namespace ZabalaGailetak\HrPortal;
 
-use HrPortal\Http\Request;
-use HrPortal\Http\Response;
-use HrPortal\Routing\Router;
-use HrPortal\Database\Database;
-use HrPortal\Security\CSRFProtection;
-use HrPortal\Security\SecurityHeaders;
-use HrPortal\Middleware\ErrorHandlerMiddleware;
-use HrPortal\Middleware\SecurityHeadersMiddleware;
-use HrPortal\Middleware\CSRFMiddleware;
+use ZabalaGailetak\HrPortal\Http\Request;
+use ZabalaGailetak\HrPortal\Http\Response;
+use ZabalaGailetak\HrPortal\Routing\Router;
+use ZabalaGailetak\HrPortal\Database\Database;
+use ZabalaGailetak\HrPortal\Security\CSRFProtection;
+use ZabalaGailetak\HrPortal\Security\SecurityHeaders;
+use ZabalaGailetak\HrPortal\Middleware\ErrorHandlerMiddleware;
+use ZabalaGailetak\HrPortal\Middleware\SecurityHeadersMiddleware;
+use ZabalaGailetak\HrPortal\Middleware\CSRFMiddleware;
 
 /**
  * Main Application Class
@@ -57,6 +57,7 @@ class App
      */
     private function loadRoutes(): void
     {
+        $GLOBALS['app'] = $this;
         require ROOT_PATH . '/config/routes.php';
     }
     

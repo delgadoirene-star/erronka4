@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace HrPortal\Http;
+namespace ZabalaGailetak\HrPortal\Http;
 
 /**
  * HTTP Response Class (PSR-7 compliant)
