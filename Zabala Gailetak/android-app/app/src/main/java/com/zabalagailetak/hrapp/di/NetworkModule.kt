@@ -1,7 +1,7 @@
 package com.zabalagailetak.hrapp.di
 
 import com.zabalagailetak.hrapp.BuildConfig
-import com.zabalagailetak.hrapp.data.api.VacationApiService
+import com.zabalagailetak.hrapp.data.api.*
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -46,5 +46,29 @@ object NetworkModule {
     @Singleton
     fun provideVacationApiService(retrofit: Retrofit): VacationApiService {
         return retrofit.create(VacationApiService::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun provideAuthApiService(retrofit: Retrofit): AuthApiService {
+        return retrofit.create(AuthApiService::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun provideEmployeeApiService(retrofit: Retrofit): EmployeeApiService {
+        return retrofit.create(EmployeeApiService::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun providePayslipApiService(retrofit: Retrofit): PayslipApiService {
+        return retrofit.create(PayslipApiService::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun provideDocumentApiService(retrofit: Retrofit): DocumentApiService {
+        return retrofit.create(DocumentApiService::class.java)
     }
 }
