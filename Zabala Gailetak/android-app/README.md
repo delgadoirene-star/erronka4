@@ -2,33 +2,59 @@
 
 Aplicación móvil Android para el sistema de gestión de recursos humanos de Zabala Gailetak.
 
+## ⚡ Stack Actualizado (2026-01-23)
+
+- **Gradle**: 8.10.2
+- **Android Gradle Plugin**: 8.7.3
+- **Kotlin**: 2.0.21 (con Compose plugin oficial)
+- **KSP**: 2.0.21-1.0.28 (migrado desde KAPT)
+- **Min SDK**: 24 (Android 7.0) - ampliada compatibilidad
+- **Target SDK**: 35 (Android 15)
+- **JDK**: 17
+
 ## 🚀 Tecnologías
 
-- **Lenguaje**: Kotlin 2.0
-- **UI**: Jetpack Compose + Material 3
+- **Lenguaje**: Kotlin 2.0.21
+- **UI**: Jetpack Compose (BOM 2024.12.01) + Material 3
 - **Arquitectura**: Clean Architecture + MVI
-- **DI**: Hilt (Dagger)
-- **Networking**: Retrofit + OkHttp
-- **Local DB**: Room
-- **Async**: Coroutines + Flow
-- **Seguridad**: Credential Manager API, Biometric, EncryptedSharedPreferences
-- **Min SDK**: 26 (Android 8.0)
-- **Target SDK**: 35 (Android 15)
+- **DI**: Hilt 2.54 (con KSP)
+- **Networking**: Retrofit 2.11.0 + OkHttp 4.12.0
+- **Local DB**: Room 2.6.1 (con KSP)
+- **Async**: Coroutines 1.9.0 + Flow
+- **Seguridad**: Credential Manager API 1.5.0, Biometric 1.2.0, Android Keystore
+
+> ⚠️ **Nota**: `androidx.security:security-crypto` fue eliminado (deprecado). Ver [MIGRATION_KOTLIN_2.0.md](MIGRATION_KOTLIN_2.0.md) para migración.
 
 ## 📋 Requisitos
 
-- Android Studio Hedgehog | 2023.1.1 o superior
-- JDK 17
-- Android SDK 35
-- Gradle 8.2.0
+- **Android Studio**: Koala (2024.1) o superior
+- **JDK**: 17
+- **Android SDK**: 35
+- **Gradle**: 8.10.2 (incluido en wrapper)
 
 ## 🏗️ Setup del Proyecto
 
+### Primera vez (o después de actualización)
+
 1. Clonar el repositorio
 2. Abrir el proyecto en Android Studio
-3. Sync Gradle files
-4. Configurar emulador o dispositivo físico
-5. Run app
+3. **Importante**: Si vienes de versión anterior, ejecutar script de migración:
+   ```bash
+   cd android-app
+   ./post-migration-check.sh
+   ```
+4. En Android Studio: **File → Invalidate Caches / Restart**
+5. Sync Gradle files (puede tardar en primera sincronización con AGP 9)
+6. Configurar emulador o dispositivo físico
+7. Run app
+
+### Después de actualización Kotlin 2.0 / AGP 9
+
+Si experimentas problemas después del pull:
+- Ejecutar `./post-migration-check.sh` para verificar configuración
+- Limpiar caches: `./gradlew clean`
+- Invalidar caches de Android Studio
+- Consultar [MIGRATION_KOTLIN_2.0.md](MIGRATION_KOTLIN_2.0.md) para detalles completos
 
 ## 📁 Estructura del Proyecto
 

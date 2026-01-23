@@ -1,0 +1,188 @@
+#!/bin/bash
+# Script de verificación post-migración Kotlin 2.0 / AGP 9
+# Ejecutar desde: Zabala Gailetak/android-app/
+
+set -e
+
+echo "=== Verificación Post-Migración Kotlin 2.0 + AGP 8.7 ===""
+echo ""
+
+# Colores para output
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+
+# 1. Verificar versiones en archivos
+echo "1. Verificando versiones configuradas..."
+echo ""
+
+if grep -q "gradle-8.10.2-bin.zip" gradle/wrapper/gradle-wrapper.properties; then
+    echo -e "${GREEN}✓${NC} Gradle wrapper: 8.10.2"
+else
+    echo -e "${RED}✗${NC} Gradle wrapper no actualizado"
+    exit 1
+fi
+
+if grep -q "9.0.0\|8.7" build.gradle.kts; then
+    echo -e "${GREEN}✓${NC} AGP: 8.7.3 (estable)"
+else
+    echo -e "${RED}✗${NC} AGP no actualizado"
+    exit 1
+fi
+
+if grep -q "2.0.21" build.gradle.kts; then
+    echo -e "${GREEN}✓${NC} Kotlin: 2.0.21"
+else
+    echo -e "${RED}✗${NC} Kotlin no actualizado"
+    exit 1
+fi
+
+if grep -q "org.jetbrains.kotlin.plugin.compose" build.gradle.kts; then
+    echo -e "${GREEN}✓${NC} Compose plugin Kotlin 2+ configurado"
+else
+    echo -e "${YELLOW}⚠${NC} Compose plugin no encontrado"
+fi
+
+if grep -q "com.google.devtools.ksp" build.gradle.kts; then
+    echo -e "${GREEN}✓${NC} KSP plugin configurado"
+else
+    echo -e "${RED}✗${NC} KSP plugin no configurado"
+    exit 1
+fi
+
+if grep -q "minSdk = 24" app/build.gradle.kts; then
+    echo -e "${GREEN}✓${NC} minSdk: 24"
+else
+    echo -e "${YELLOW}⚠${NC} minSdk no es 24"
+fi
+
+# 2. Verificar que security-crypto fue eliminado
+echo ""
+echo "2. Verificando eliminación de dependencias deprecadas..."
+if grep -q "security-crypto" app/build.gradle.kts; then
+    echo -e "${RED}✗${NC} security-crypto aún presente (deprecado)"
+    exit 1
+else
+    echo -e "${GREEN}✓${NC} security-crypto eliminado correctamente"
+fi
+
+# 3. Verificar que KAPT fue reemplazado por KSP
+echo ""
+echo "3. Verificando migración KAPT → KSP..."
+if grep -q 'kotlin("kapt")' app/build.gradle.kts; then
+    echo -e "${RED}✗${NC} KAPT aún configurado en plugins"
+    exit 1
+else
+    echo -e "${GREEN}✓${NC} Plugin KAPT eliminado"
+fi
+
+if grep -q "kapt(" app/build.gradle.kts; then
+    echo -e "${RED}✗${NC} Dependencias con kapt() encontradas"
+    exit 1
+else
+    echo -e "${GREEN}✓${NC} Todas las dependencias migradas a ksp()"
+fi
+
+# 4. Verificar optimizaciones de build
+echo ""
+echo "4. Verificando optimizaciones de build speed..."
+if grep -q "org.gradle.configuration-cache=true" gradle.properties; then
+    echo -e "${GREEN}✓${NC} Configuration cache activado"
+else
+    echo -e "${YELLOW}⚠${NC} Configuration cache no activado"
+fi
+
+if grep -q "ksp.incremental=true" gradle.properties; then
+    echo -e "${GREEN}✓${NC} KSP incremental activado"
+else
+    echo -e "${YELLOW}⚠${NC} KSP incremental no activado"
+fi
+
+# 5. Clean build directories
+echo ""
+echo "5. Limpiando build directories antiguos..."
+rm -rf .gradle/
+rm -rf app/build/
+rm -rf build/
+echo -e "${GREEN}✓${NC} Build directories limpiados"
+
+# 6. Verificar wrapper (actualizar si es necesario)
+echo ""
+echo "6. Actualizando Gradle wrapper..."
+./gradlew wrapper --gradle-version=8.10.2 --quiet
+echo -e "${GREEN}✓${NC} Wrapper actualizado"
+
+# 7. Sync de dependencias (sin build aún)
+echo ""
+echo "7. Sincronizando dependencias..."
+if ./gradlew tasks --quiet > /dev/null 2>&1; then
+    echo -e "${GREEN}✓${NC} Sincronización exitosa"
+else
+    echo -e "${RED}✗${NC} Error en sincronización de Gradle"
+    echo ""
+    echo "Ejecutar manualmente para ver detalles:"
+    echo "  ./gradlew tasks --info"
+    exit 1
+fi
+
+# 8. Buscar uso de security-crypto en código fuente
+echo ""
+echo "8. Buscando referencias a security-crypto en código..."
+CRYPTO_REFS=$(grep -r "EncryptedSharedPreferences\|EncryptedFile\|MasterKey\|security.crypto" app/src/ 2>/dev/null || true)
+if [ -n "$CRYPTO_REFS" ]; then
+    echo -e "${YELLOW}⚠${NC} Referencias a security-crypto encontradas en código:"
+    echo "$CRYPTO_REFS" | head -10
+    echo ""
+    echo "   → Revisar MIGRATION_KOTLIN_2.0.md sección 'Migración de security-crypto'"
+else
+    echo -e "${GREEN}✓${NC} No se encontraron referencias a security-crypto"
+fi
+
+# 9. Test build (opcional, comentar si tarda mucho)
+echo ""
+echo "9. Ejecutando build de prueba (puede tardar)..."
+echo "   (presiona Ctrl+C para saltar si prefieres hacerlo manual)"
+sleep 2
+
+if ./gradlew :app:assembleDebug --quiet; then
+    echo -e "${GREEN}✓${NC} Build exitoso"
+else
+    echo -e "${RED}✗${NC} Build falló"
+    echo ""
+    echo "Ejecutar con más detalle:"
+    echo "  ./gradlew :app:assembleDebug --info"
+    exit 1
+fi
+
+# 10. Verificar generación de código KSP
+echo ""
+echo "10. Verificando generación de código KSP..."
+if [ -d "app/build/generated/ksp/debug/kotlin" ]; then
+    HILT_COUNT=$(find app/build/generated/ksp -name "*Hilt*" 2>/dev/null | wc -l)
+    ROOM_COUNT=$(find app/build/generated/ksp -name "*_Impl.kt" 2>/dev/null | wc -l)
+    
+    echo -e "${GREEN}✓${NC} KSP generó código correctamente"
+    echo "   - Archivos Hilt: $HILT_COUNT"
+    echo "   - Archivos Room: $ROOM_COUNT"
+else
+    echo -e "${YELLOW}⚠${NC} No se encontró código generado por KSP"
+fi
+
+# Resumen final
+echo ""
+echo "============================================"
+echo -e "${GREEN}✓ Verificación completada exitosamente${NC}"
+echo "============================================"
+echo ""
+echo "Próximos pasos:"
+echo "  1. Abrir Android Studio y hacer 'Invalidate Caches / Restart'"
+echo "  2. Ejecutar 'Build → Rebuild Project'"
+echo "  3. Ejecutar tests: ./gradlew :app:testDebugUnitTest"
+echo "  4. Probar app en emulador API 24 (nueva compatibilidad)"
+echo "  5. Revisar MIGRATION_KOTLIN_2.0.md para migración de security-crypto"
+echo ""
+echo "Para ver mejora en velocidad:"
+echo "  ./gradlew :app:assembleDebug --profile"
+echo "  (genera reporte en build/reports/profile/)"
+echo ""
