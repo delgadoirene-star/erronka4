@@ -25,25 +25,9 @@ if ($router === null) {
 // Initialize services
 $db = $GLOBALS['app']->getDatabase();
 
-// Connect to Redis
-if (!class_exists('Redis')) {
-    throw new \Exception('Redis extension is required');
-}
-$redis = new \Redis();
-$redis->connect($_ENV['REDIS_HOST'] ?? 'redis', (int)($_ENV['REDIS_PORT'] ?? 6379));
-if (!empty($_ENV['REDIS_PASSWORD'])) {
-    $redis->auth($_ENV['REDIS_PASSWORD']);
-}
-$redis->select((int)($_ENV['REDIS_DB'] ?? 0));
-
-$tokenManager = new TokenManager([
-    'jwt_secret' => $_ENV['JWT_SECRET'] ?? 'change_this_secret_key',
-    'jwt_issuer' => $_ENV['APP_URL'] ?? 'http://localhost:8080',
-    'jwt_access_expiry' => 3600,
-    'jwt_refresh_expiry' => 604800
-]);
-$sessionManager = new SessionManager($redis, [
-    'session_prefix' => 'hrportal:session:',
+// Session Manager (Native PHP Sessions)
+$sessionManager = new \ZabalaGailetak\HrPortal\Auth\NativeSessionManager([
+    'session_prefix' => 'hrportal:',
     'session_ttl' => (int)($_ENV['SESSION_LIFETIME'] ?? 28800)
 ]);
 $totpService = new TOTPService();
