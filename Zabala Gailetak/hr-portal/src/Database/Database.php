@@ -40,20 +40,34 @@ class Database
     private function connect(): void
     {
         $dbConfig = $this->config['database'];
+        $driver = $dbConfig['driver'] ?? 'pgsql';
         
-        $dsn = sprintf(
-            'pgsql:host=%s;port=%d;dbname=%s',
-            $dbConfig['host'],
-            $dbConfig['port'],
-            $dbConfig['database']
-        );
+        if ($driver === 'pgsql') {
+            $dsn = sprintf(
+                'pgsql:host=%s;port=%d;dbname=%s',
+                $dbConfig['host'],
+                $dbConfig['port'],
+                $dbConfig['database']
+            );
+        } else {
+            $dsn = sprintf(
+                'mysql:host=%s;port=%d;dbname=%s;charset=utf8mb4',
+                $dbConfig['host'],
+                $dbConfig['port'] ?? 3306,
+                $dbConfig['database']
+            );
+        }
         
         try {
             self::$connection = new PDO(
                 $dsn,
                 $dbConfig['username'],
                 $dbConfig['password'],
-                $dbConfig['options']
+                $dbConfig['options'] ?? [
+                    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+                    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+                    PDO::ATTR_EMULATE_PREPARES => false,
+                ]
             );
         } catch (PDOException $e) {
             error_log('Database connection failed: ' . $e->getMessage());

@@ -15,11 +15,11 @@ use ZabalaGailetak\HrPortal\App;
 define('ROOT_PATH', dirname(__DIR__));
 
 // Load Native Autoloader (Zero Trust)
-require ROOT_PATH . '/src/Core/Autoloader.php';
-\ZabalaGailetak\HrPortal\Core\Autoloader::register();
+require ROOT_PATH . '/src/Core/ClassLoader.php';
+\ZabalaGailetak\HrPortal\Core\ClassLoader::register();
 
 // Load environment variables (Native)
-\ZabalaGailetak\HrPortal\Core\DotEnv::load(ROOT_PATH);
+\ZabalaGailetak\HrPortal\Core\EnvLoader::load(ROOT_PATH);
 
 // Error handling based on environment
 if (isset($_ENV['APP_ENV']) && $_ENV['APP_ENV'] === 'production') {

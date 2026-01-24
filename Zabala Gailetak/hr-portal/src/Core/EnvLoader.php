@@ -7,10 +7,10 @@ namespace ZabalaGailetak\HrPortal\Core;
 use Exception;
 
 /**
- * Native DotEnv Parser
+ * Native EnvLoader Parser
  * Replaces vlucas/phpdotenv for Zero Trust environments.
  */
-class DotEnv
+class EnvLoader
 {
     /**
      * Load environment variables from .env file.

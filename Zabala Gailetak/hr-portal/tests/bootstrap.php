@@ -6,11 +6,11 @@ declare(strict_types=1);
 define('ROOT_PATH', dirname(__DIR__));
 
 // Load Native Autoloader (Zero Trust)
-require_once ROOT_PATH . '/src/Core/Autoloader.php';
-\ZabalaGailetak\HrPortal\Core\Autoloader::register();
+require_once ROOT_PATH . '/src/Core/ClassLoader.php';
+\ZabalaGailetak\HrPortal\Core\ClassLoader::register();
 
 // Load environment variables for testing (Native)
-\ZabalaGailetak\HrPortal\Core\DotEnv::load(ROOT_PATH);
+\ZabalaGailetak\HrPortal\Core\EnvLoader::load(ROOT_PATH);
 
 // Set testing environment
 $_ENV['APP_ENV'] = 'testing';

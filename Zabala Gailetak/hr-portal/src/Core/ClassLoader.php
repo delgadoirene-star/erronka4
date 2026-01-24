@@ -5,10 +5,10 @@ declare(strict_types=1);
 namespace ZabalaGailetak\HrPortal\Core;
 
 /**
- * Native PSR-4 Autoloader
+ * Native PSR-4 ClassLoader
  * Replaces Composer's autoloader for Zero Trust environments.
  */
-class Autoloader
+class ClassLoader
 {
     /**
      * Register the autoloader.

@@ -1,0 +1,18 @@
+# Secrets & Credentials
+DEPLOY_INFINITYFREE.md
+**/.env
+**/.env.production
+**/.env.local
+
+# Dependency directories
+/node_modules
+/vendor
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea
+.vscode
+*.swp

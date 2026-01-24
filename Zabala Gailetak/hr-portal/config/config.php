@@ -13,6 +13,7 @@ return [
     ],
     
     'database' => [
+        'driver' => $_ENV['DB_DRIVER'] ?? 'pgsql',
         'host' => $_ENV['DB_HOST'] ?? 'localhost',
         'port' => (int)($_ENV['DB_PORT'] ?? 5432),
         'database' => $_ENV['DB_NAME'] ?? 'hr_portal',
