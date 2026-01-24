@@ -56,7 +56,7 @@ class WebAuthController
             }
         } catch (\Exception $e) {
             error_log("Login error: " . $e->getMessage());
-            return Response::view('auth/login', ['error' => 'Error del sistema']);
+            return Response::view('auth/login', ['error' => 'Error: ' . $e->getMessage()]);
         }
 
         return Response::view('auth/login', ['error' => 'Credenciales incorrectas']);
