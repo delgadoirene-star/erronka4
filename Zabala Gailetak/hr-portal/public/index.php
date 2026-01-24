@@ -14,15 +14,15 @@ use ZabalaGailetak\HrPortal\App;
 // Define root path
 define('ROOT_PATH', dirname(__DIR__));
 
-// Load Composer autoloader
-require ROOT_PATH . '/vendor/autoload.php';
+// Load Native Autoloader (Zero Trust)
+require ROOT_PATH . '/src/Core/Autoloader.php';
+\ZabalaGailetak\HrPortal\Core\Autoloader::register();
 
-// Load environment variables
-$dotenv = \Dotenv\Dotenv::createImmutable(ROOT_PATH);
-$dotenv->load();
+// Load environment variables (Native)
+\ZabalaGailetak\HrPortal\Core\DotEnv::load(ROOT_PATH);
 
 // Error handling based on environment
-if ($_ENV['APP_ENV'] === 'production') {
+if (isset($_ENV['APP_ENV']) && $_ENV['APP_ENV'] === 'production') {
     error_reporting(0);
     ini_set('display_errors', '0');
 } else {

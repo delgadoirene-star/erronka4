@@ -58,27 +58,29 @@ $auditLogger = new \ZabalaGailetak\HrPortal\Services\AuditLogger($db);
 $vacationService = new \ZabalaGailetak\HrPortal\Services\VacationService($db);
 $vacationController = new \ZabalaGailetak\HrPortal\Controllers\VacationController($vacationService, $auditLogger);
 
+use ZabalaGailetak\HrPortal\Controllers\Web\WebAuthController;
+use ZabalaGailetak\HrPortal\Controllers\Web\WebDashboardController;
+
+// Initialize Web Controllers
+$webAuthController = new WebAuthController($db);
+$webDashboardController = new WebDashboardController();
+
 // ============================================================================
-// Web Routes
+// Web Routes (Server Side Rendering)
 // ============================================================================
 
-// Home
+// Public Routes
 $router->get('/', function (Request $request): Response {
-    return Response::html('<h1>Zabala Gailetak HR Portal</h1><p>Sistema en construcción...</p>');
-});
-
-// Auth routes
-$router->get('/login', function (Request $request): Response {
-    return Response::html('<h1>Login</h1><!-- TODO: Implement login page -->');
-});
-
-$router->post('/login', function (Request $request): Response {
-    return Response::json(['message' => 'Login endpoint - TODO']);
-});
-
-$router->get('/logout', function (Request $request): Response {
     return Response::redirect('/login');
 });
+
+$router->get('/login', [$webAuthController, 'loginForm']);
+$router->post('/login', [$webAuthController, 'login']);
+$router->get('/logout', [$webAuthController, 'logout']);
+
+// Protected Routes
+$router->get('/dashboard', [$webDashboardController, 'index']);
+// $router->get('/employees', [$webEmployeeController, 'index']); // TODO: Implement
 
 // ============================================================================
 // API Routes

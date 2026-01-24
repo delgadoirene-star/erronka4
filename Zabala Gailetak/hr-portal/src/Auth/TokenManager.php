@@ -4,20 +4,16 @@ declare(strict_types=1);
 
 namespace ZabalaGailetak\HrPortal\Auth;
 
-use Firebase\JWT\JWT;
-use Firebase\JWT\Key;
-use Firebase\JWT\ExpiredException;
-use Firebase\JWT\SignatureInvalidException;
-use Firebase\JWT\BeforeValidException;
 use DateTime;
 use DateInterval;
 use Exception;
+use stdClass;
 
 /**
- * JWT Token Manager
+ * JWT Token Manager (Native Implementation)
  * 
- * Gestiona la creación, validación y renovación de tokens JWT
- * para autenticación de usuarios en el sistema
+ * Replaces Firebase\JWT library for Zero Trust compliance.
+ * Implements native HMAC-SHA256 signature and Base64Url encoding.
  */
 class TokenManager
 {
@@ -53,7 +49,7 @@ class TokenManager
             'iss' => $this->issuer,
             'iat' => $now->getTimestamp(),
             'exp' => $expiry->getTimestamp(),
-            'sub' => $userData['id'],
+            'sub' => (string)$userData['id'],
             'type' => 'access',
             'data' => [
                 'email' => $userData['email'] ?? null,
@@ -63,7 +59,7 @@ class TokenManager
             ]
         ];
         
-        return JWT::encode($payload, $this->secretKey, $this->algorithm);
+        return $this->encode($payload);
     }
     
     /**
@@ -83,34 +79,102 @@ class TokenManager
             'jti' => bin2hex(random_bytes(16)) // Token ID único
         ];
         
-        return JWT::encode($payload, $this->secretKey, $this->algorithm);
+        return $this->encode($payload);
     }
     
+    /**
+     * Genera un token temporal para verificación MFA
+     */
+    public function generateMfaToken(string $userId): string
+    {
+        $now = new DateTime();
+        $expiry = (clone $now)->add(new DateInterval('PT5M')); // 5 minutos
+        
+        $payload = [
+            'iss' => $this->issuer,
+            'iat' => $now->getTimestamp(),
+            'exp' => $expiry->getTimestamp(),
+            'sub' => $userId,
+            'type' => 'mfa_pending'
+        ];
+        
+        return $this->encode($payload);
+    }
+
+    /**
+     * Encode JWT (Native)
+     */
+    private function encode(array $payload): string
+    {
+        $header = json_encode(['typ' => 'JWT', 'alg' => $this->algorithm]);
+        $payloadJson = json_encode($payload);
+        
+        $base64UrlHeader = $this->base64UrlEncode($header);
+        $base64UrlPayload = $this->base64UrlEncode($payloadJson);
+        
+        $signature = hash_hmac('sha256', $base64UrlHeader . "." . $base64UrlPayload, $this->secretKey, true);
+        $base64UrlSignature = $this->base64UrlEncode($signature);
+        
+        return $base64UrlHeader . "." . $base64UrlPayload . "." . $base64UrlSignature;
+    }
+
     /**
      * Valida y decodifica un token JWT
      */
     public function validateToken(string $token): ?object
     {
-        try {
-            $decoded = JWT::decode($token, new Key($this->secretKey, $this->algorithm));
-            
-            // Verificar issuer
-            if ($decoded->iss !== $this->issuer) {
-                return null;
-            }
-            
-            return $decoded;
-        } catch (ExpiredException $e) {
-            throw new Exception('Token ha expirado', 401);
-        } catch (SignatureInvalidException $e) {
-            throw new Exception('Firma del token inválida', 401);
-        } catch (BeforeValidException $e) {
-            throw new Exception('Token aún no es válido', 401);
-        } catch (Exception $e) {
-            throw new Exception('Token inválido: ' . $e->getMessage(), 401);
+        $parts = explode('.', $token);
+        
+        if (count($parts) !== 3) {
+            throw new Exception('Formato de token inválido', 401);
         }
+        
+        [$headerB64, $payloadB64, $sigB64] = $parts;
+        
+        // Verify Signature
+        $signature = $this->base64UrlDecode($sigB64);
+        $expectedSignature = hash_hmac('sha256', $headerB64 . "." . $payloadB64, $this->secretKey, true);
+        
+        if (!hash_equals($expectedSignature, $signature)) {
+            throw new Exception('Firma del token inválida', 401);
+        }
+        
+        // Decode Payload
+        $payload = json_decode($this->base64UrlDecode($payloadB64));
+        
+        if (!$payload) {
+            throw new Exception('Payload del token corrupto', 401);
+        }
+        
+        // Check Expiry
+        if (isset($payload->exp) && $payload->exp < time()) {
+            throw new Exception('Token ha expirado', 401);
+        }
+        
+        // Check Issuer
+        if (isset($payload->iss) && $payload->iss !== $this->issuer) {
+            throw new Exception('Emisor del token inválido', 401);
+        }
+        
+        return $payload;
     }
     
+    /**
+     * Helper: Base64Url Encode
+     */
+    private function base64UrlEncode(string $data): string
+    {
+        return rtrim(strtr(base64_encode($data), '+/', '-_'), '=');
+    }
+
+    /**
+     * Helper: Base64Url Decode
+     */
+    private function base64UrlDecode(string $data): string
+    {
+        return base64_decode(str_pad(strtr($data, '-_', '+/'), strlen($data) % 4, '=', STR_PAD_RIGHT));
+    }
+
     /**
      * Extrae el token del header Authorization
      */
@@ -169,25 +233,6 @@ class TokenManager
     public function getUserRole(object $decoded): ?string
     {
         return $decoded->data->role ?? null;
-    }
-    
-    /**
-     * Genera un token temporal para verificación MFA
-     */
-    public function generateMfaToken(string $userId): string
-    {
-        $now = new DateTime();
-        $expiry = (clone $now)->add(new DateInterval('PT5M')); // 5 minutos
-        
-        $payload = [
-            'iss' => $this->issuer,
-            'iat' => $now->getTimestamp(),
-            'exp' => $expiry->getTimestamp(),
-            'sub' => $userId,
-            'type' => 'mfa_pending'
-        ];
-        
-        return JWT::encode($payload, $this->secretKey, $this->algorithm);
     }
     
     /**

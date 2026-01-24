@@ -43,6 +43,33 @@ class Response
             ['Content-Type' => 'text/html; charset=utf-8']
         );
     }
+
+    /**
+     * Render a view file and return HTML response
+     */
+    public static function view(string $viewPath, array $data = [], int $statusCode = 200): self
+    {
+        // Extract data to make variables available in view
+        extract($data);
+        
+        // Start buffering
+        ob_start();
+        
+        // Define path relative to project root
+        $fullPath = dirname(__DIR__, 2) . '/public/views/' . $viewPath . '.php';
+        
+        if (!file_exists($fullPath)) {
+            // Fallback for development debugging
+            return self::html("View not found: $viewPath", 500);
+        }
+        
+        require $fullPath;
+        
+        // Get content
+        $content = ob_get_clean();
+        
+        return self::html($content, $statusCode);
+    }
     
     /**
      * Create a redirect response
