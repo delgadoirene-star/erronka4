@@ -35,19 +35,18 @@ jobs:
       with:
         php-version: '8.4'
         extensions: pdo_pgsql, redis, gd
-        tools: composer:v2
+        # Install tools globally since we removed composer/vendor
+        tools: phpcs, phpstan, phpunit
 
-    - name: Install Dependencies
-      working-directory: ./Zabala Gailetak/hr-portal
-      run: composer install --prefer-dist --no-progress
+    # Removed "Install Dependencies" (Composer)
 
     - name: Run PHP Code Sniffer
       working-directory: ./Zabala Gailetak/hr-portal
-      run: ./vendor/bin/phpcs --standard=PSR12 src
+      run: phpcs --standard=PSR12 src
 
     - name: Run PHPStan (Static Analysis)
       working-directory: ./Zabala Gailetak/hr-portal
-      run: ./vendor/bin/phpstan analyse src --level 5
+      run: phpstan analyse src --level 5
 
     - name: Run PHPUnit Tests
       working-directory: ./Zabala Gailetak/hr-portal
@@ -57,39 +56,14 @@ jobs:
         DB_NAME: hr_portal_test
         DB_USER: user
         DB_PASS: password
-      run: ./vendor/bin/phpunit
+      run: phpunit
 
-  frontend-tests:
-    name: React (Frontend) Build & Lint
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'
-        cache: 'npm'
-        cache-dependency-path: 'Zabala Gailetak/hr-portal/web/package-lock.json'
-
-    - name: Install Dependencies
-      working-directory: ./Zabala Gailetak/hr-portal/web
-      run: npm ci
-
-    - name: Run ESLint
-      working-directory: ./Zabala Gailetak/hr-portal/web
-      run: npm run lint
-
-    - name: Build Frontend
-      working-directory: ./Zabala Gailetak/hr-portal/web
-      run: npm run build
+  # Removed "frontend-tests" job (React is gone)
 
   docker-build:
     name: Build & Push Docker Images
     runs-on: ubuntu-latest
-    needs: [backend-tests, frontend-tests]
+    needs: [backend-tests]
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
 
     steps:

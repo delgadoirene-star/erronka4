@@ -5,12 +5,12 @@ declare(strict_types=1);
 // Define ROOT_PATH constant for tests
 define('ROOT_PATH', dirname(__DIR__));
 
-// Load Composer autoloader
-require_once ROOT_PATH . '/vendor/autoload.php';
+// Load Native Autoloader (Zero Trust)
+require_once ROOT_PATH . '/src/Core/Autoloader.php';
+\ZabalaGailetak\HrPortal\Core\Autoloader::register();
 
-// Load environment variables for testing
-$dotenv = Dotenv\Dotenv::createImmutable(ROOT_PATH);
-$dotenv->safeLoad();
+// Load environment variables for testing (Native)
+\ZabalaGailetak\HrPortal\Core\DotEnv::load(ROOT_PATH);
 
 // Set testing environment
 $_ENV['APP_ENV'] = 'testing';
