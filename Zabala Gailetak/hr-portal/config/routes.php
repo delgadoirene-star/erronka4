@@ -72,6 +72,8 @@ $router->get('/logout', [$webAuthController, 'logout']);
 
 // Protected Routes
 $router->get('/dashboard', [$webDashboardController, 'index']);
+$router->get('/employees', [$webDashboardController, 'employees']);
+$router->get('/vacations', [$webDashboardController, 'vacations']);
 
 // ============================================================================
 // API Routes

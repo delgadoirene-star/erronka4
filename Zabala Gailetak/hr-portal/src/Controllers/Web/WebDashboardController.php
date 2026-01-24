@@ -11,13 +11,30 @@ class WebDashboardController
 {
     public function index(Request $request): Response
     {
-        // Simple Auth Check (Middleware pattern recommended for future)
-        if (!isset($_SESSION['user_id'])) {
-            return Response::redirect('/login');
-        }
-
+        $this->requireAuth();
         return Response::view('dashboard/index', [
-            'user' => $_SESSION['user_name']
+            'user' => $_SESSION['user_name'] ?? 'Usuario'
         ]);
+    }
+
+    public function employees(Request $request): Response
+    {
+        $this->requireAuth();
+        // In a real app, fetch employees from DB here
+        return Response::view('employees/index');
+    }
+
+    public function vacations(Request $request): Response
+    {
+        $this->requireAuth();
+        return Response::view('vacations/index');
+    }
+
+    private function requireAuth(): void
+    {
+        if (!isset($_SESSION['user_id'])) {
+            header('Location: /login');
+            exit;
+        }
     }
 }
