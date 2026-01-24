@@ -18,8 +18,8 @@ class VacationRequest
     public const STATUS_CANCELLED = 'CANCELLED';
 
     public function __construct(
-        public ?int $id = null,
-        public ?int $employeeId = null,
+        public string|int|null $id = null,
+        public string|int|null $employeeId = null,
         public ?string $startDate = null,
         public ?string $endDate = null,
         public ?float $totalDays = null,

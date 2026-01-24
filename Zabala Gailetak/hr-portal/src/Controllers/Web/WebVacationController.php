@@ -120,9 +120,9 @@ class WebVacationController
         }
     }
 
-    private function getCurrentEmployeeId(): ?int
+    private function getCurrentEmployeeId(): ?string
     {
-        if (isset($_SESSION['employee_id'])) return (int)$_SESSION['employee_id'];
+        if (isset($_SESSION['employee_id'])) return (string)$_SESSION['employee_id'];
 
         $stmt = $this->db->prepare("SELECT id FROM employees WHERE user_id = :user_id");
         $stmt->execute(['user_id' => $_SESSION['user_id']]);
@@ -130,7 +130,7 @@ class WebVacationController
         
         if ($id) {
             $_SESSION['employee_id'] = $id;
-            return (int)$id;
+            return (string)$id;
         }
         return null;
     }

@@ -111,27 +111,31 @@ class WebEmployeeController
         try {
             $this->db->beginTransaction();
 
+            $userId = bin2hex(random_bytes(16));
+            $employeeId = bin2hex(random_bytes(16));
+
             // 1. Create User
-            $stmt = $this->db->prepare("INSERT INTO users (email, password_hash, role) VALUES (:email, :password, :role)");
+            $stmt = $this->db->prepare("INSERT INTO users (id, email, password_hash, role) VALUES (:id, :email, :password, :role)");
             $stmt->execute([
+                'id' => $userId,
                 'email' => $data['email'],
                 'password' => password_hash($data['password'], PASSWORD_BCRYPT),
                 'role' => $data['role'] ?? 'employee'
             ]);
-            $userId = $this->db->lastInsertId();
 
             // 2. Create Employee
             $empNum = $this->generateEmployeeNumber();
             $stmt = $this->db->prepare("
                 INSERT INTO employees (
-                    user_id, employee_number, first_name, last_name, nif, 
+                    id, user_id, employee_number, first_name, last_name, nif, 
                     position, department_id, hire_date, salary, is_active
                 ) VALUES (
-                    :user_id, :emp_num, :first_name, :last_name, :nif, 
+                    :id, :user_id, :emp_num, :first_name, :last_name, :nif, 
                     :position, :dept_id, :hire_date, :salary, TRUE
                 )
             ");
             $stmt->execute([
+                'id' => $employeeId,
                 'user_id' => $userId,
                 'emp_num' => $empNum,
                 'first_name' => $data['first_name'],
@@ -142,7 +146,6 @@ class WebEmployeeController
                 'hire_date' => $data['hire_date'] ?: date('Y-m-d'),
                 'salary' => $data['salary'] ?: 0
             ]);
-            $employeeId = $this->db->lastInsertId();
 
             $this->db->commit();
             

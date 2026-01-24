@@ -29,7 +29,7 @@ class VacationService
     /**
      * Get vacation balance for employee and year
      */
-    public function getBalance(int $employeeId, int $year): ?VacationBalance
+    public function getBalance(string|int $employeeId, int $year): ?VacationBalance
     {
         $stmt = $this->db->prepare('
             SELECT * FROM vacation_balances
@@ -48,32 +48,33 @@ class VacationService
     /**
      * Initialize balance for employee if not exists
      */
-    public function initializeBalance(int $employeeId, int $year, float $totalDays = 22.0): VacationBalance
+    public function initializeBalance(string|int $employeeId, int $year, float $totalDays = 22.0): VacationBalance
     {
         $existing = $this->getBalance($employeeId, $year);
         if ($existing) {
             return $existing;
         }
 
+        $id = bin2hex(random_bytes(16)); // Simple UUID v4 alternative
         $stmt = $this->db->prepare('
-            INSERT INTO vacation_balances (employee_id, year, total_days)
-            VALUES (:employee_id, :year, :total_days)
-            RETURNING *
+            INSERT INTO vacation_balances (id, employee_id, year, total_days)
+            VALUES (:id, :employee_id, :year, :total_days)
         ');
         $stmt->execute([
+            'id' => $id,
             'employee_id' => $employeeId,
             'year' => $year,
             'total_days' => $totalDays
         ]);
 
-        return VacationBalance::fromArray($stmt->fetch(PDO::FETCH_ASSOC));
+        return $this->getBalance($employeeId, $year);
     }
 
     /**
      * Create vacation request
      */
     public function createRequest(
-        int $employeeId,
+        string|int $employeeId,
         string $startDate,
         string $endDate,
         ?string $notes = null
@@ -93,15 +94,16 @@ class VacationService
             throw new \Exception('Opor egun nahikorik ez dago / No hay suficientes días disponibles');
         }
 
+        $id = bin2hex(random_bytes(16));
         // Create request
         $stmt = $this->db->prepare('
             INSERT INTO vacation_requests 
-            (employee_id, start_date, end_date, total_days, notes, status)
-            VALUES (:employee_id, :start_date, :end_date, :total_days, :notes, :status)
-            RETURNING *
+            (id, employee_id, start_date, end_date, total_days, notes, status)
+            VALUES (:id, :employee_id, :start_date, :end_date, :total_days, :notes, :status)
         ');
 
         $stmt->execute([
+            'id' => $id,
             'employee_id' => $employeeId,
             'start_date' => $startDate,
             'end_date' => $endDate,
@@ -110,13 +112,13 @@ class VacationService
             'status' => VacationRequest::STATUS_PENDING
         ]);
 
-        return VacationRequest::fromArray($stmt->fetch(PDO::FETCH_ASSOC));
+        return $this->getRequest($id);
     }
 
     /**
      * Get all requests for employee
      */
-    public function getEmployeeRequests(int $employeeId, ?int $year = null): array
+    public function getEmployeeRequests(string|int $employeeId, ?int $year = null): array
     {
         $sql = '
             SELECT vr.*, 
@@ -216,7 +218,7 @@ class VacationService
     /**
      * Approve request by manager
      */
-    public function approveByManager(int $requestId, int $managerId, ?string $notes = null): VacationRequest
+    public function approveByManager(string|int $requestId, string|int $managerId, ?string $notes = null): VacationRequest
     {
         $request = $this->getRequest($requestId);
         if (!$request) {
@@ -235,7 +237,6 @@ class VacationService
                 manager_approval_notes = :notes,
                 updated_at = CURRENT_TIMESTAMP
             WHERE id = :id
-            RETURNING *
         ');
 
         $stmt->execute([
@@ -245,13 +246,13 @@ class VacationService
             'id' => $requestId
         ]);
 
-        return VacationRequest::fromArray($stmt->fetch(PDO::FETCH_ASSOC));
+        return $this->getRequest($requestId);
     }
 
     /**
      * Approve request by HR (final approval)
      */
-    public function approveByHR(int $requestId, int $hrId, ?string $notes = null): VacationRequest
+    public function approveByHR(string|int $requestId, string|int $hrId, ?string $notes = null): VacationRequest
     {
         $request = $this->getRequest($requestId);
         if (!$request) {
@@ -270,7 +271,6 @@ class VacationService
                 hr_approval_notes = :notes,
                 updated_at = CURRENT_TIMESTAMP
             WHERE id = :id
-            RETURNING *
         ');
 
         $stmt->execute([
@@ -280,13 +280,13 @@ class VacationService
             'id' => $requestId
         ]);
 
-        return VacationRequest::fromArray($stmt->fetch(PDO::FETCH_ASSOC));
+        return $this->getRequest($requestId);
     }
 
     /**
      * Reject request
      */
-    public function reject(int $requestId, int $approverId, string $reason): VacationRequest
+    public function reject(string|int $requestId, string|int $approverId, string $reason): VacationRequest
     {
         $stmt = $this->db->prepare('
             UPDATE vacation_requests
@@ -294,7 +294,6 @@ class VacationService
                 rejection_reason = :reason,
                 updated_at = CURRENT_TIMESTAMP
             WHERE id = :id
-            RETURNING *
         ');
 
         $stmt->execute([
@@ -303,13 +302,13 @@ class VacationService
             'id' => $requestId
         ]);
 
-        return VacationRequest::fromArray($stmt->fetch(PDO::FETCH_ASSOC));
+        return $this->getRequest($requestId);
     }
 
     /**
      * Cancel request (by employee)
      */
-    public function cancel(int $requestId, int $employeeId): VacationRequest
+    public function cancel(string|int $requestId, string|int $employeeId): VacationRequest
     {
         $request = $this->getRequest($requestId);
         if (!$request || $request->employeeId !== $employeeId) {
@@ -325,7 +324,6 @@ class VacationService
             SET status = :status,
                 updated_at = CURRENT_TIMESTAMP
             WHERE id = :id
-            RETURNING *
         ');
 
         $stmt->execute([
@@ -333,13 +331,13 @@ class VacationService
             'id' => $requestId
         ]);
 
-        return VacationRequest::fromArray($stmt->fetch(PDO::FETCH_ASSOC));
+        return $this->getRequest($requestId);
     }
 
     /**
      * Get single request by ID
      */
-    public function getRequest(int $id): ?VacationRequest
+    public function getRequest(string|int $id): ?VacationRequest
     {
         $stmt = $this->db->prepare('
             SELECT vr.*, 
@@ -412,7 +410,7 @@ class VacationService
     /**
      * Get calendar view of vacations for a department or company
      */
-    public function getCalendar(?int $departmentId = null, ?int $year = null, ?int $month = null): array
+    public function getCalendar(string|int|null $departmentId = null, ?int $year = null, ?int $month = null): array
     {
         $year = $year ?? (int)date('Y');
 

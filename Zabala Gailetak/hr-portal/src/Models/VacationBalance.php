@@ -12,8 +12,8 @@ namespace ZabalaGailetak\HrPortal\Models;
 class VacationBalance
 {
     public function __construct(
-        public ?int $id = null,
-        public ?int $employeeId = null,
+        public string|int|null $id = null,
+        public string|int|null $employeeId = null,
         public ?int $year = null,
         public float $totalDays = 22.0,
         public float $usedDays = 0.0,
