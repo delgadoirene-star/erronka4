@@ -33,18 +33,30 @@ class WebAuthController
         $email = $data['email'] ?? '';
         $password = $data['password'] ?? '';
 
-        // TODO: Use real authentication logic from Services/AuthService
-        // This is a simplified migration example
+        if (empty($email) || empty($password)) {
+            return Response::view('auth/login', ['error' => 'Email y contraseña requeridos']);
+        }
 
-        // Simulating DB check for now (Replace with real Auth logic)
-        // In a real scenario: $user = $this->authService->authenticate($email, $password);
+        // Real Database Authentication
+        try {
+            $stmt = $this->db->prepare('SELECT id, email, password_hash, role, mfa_enabled FROM users WHERE email = :email');
+            $stmt->execute(['email' => $email]);
+            $user = $stmt->fetch();
 
-        if ($email === 'admin@zabala.com' && $password === 'password') {
-            $_SESSION['user_id'] = 1;
-            $_SESSION['user_name'] = 'Admin User';
-            $_SESSION['role'] = 'admin';
+            if ($user && password_verify($password, $user['password_hash'])) {
+                // Login Success
+                $_SESSION['user_id'] = $user['id'];
+                $_SESSION['user_email'] = $user['email'];
+                $_SESSION['user_role'] = $user['role'];
+                $_SESSION['user_name'] = 'Admin'; // Todo: Fetch from employees table
 
-            return Response::redirect('/dashboard');
+                // Optional: Check MFA here if needed
+                
+                return Response::redirect('/dashboard');
+            }
+        } catch (\Exception $e) {
+            error_log("Login error: " . $e->getMessage());
+            return Response::view('auth/login', ['error' => 'Error del sistema']);
         }
 
         return Response::view('auth/login', ['error' => 'Credenciales incorrectas']);
