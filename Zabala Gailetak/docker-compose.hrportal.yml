@@ -50,18 +50,16 @@ services:
     environment:
       APP_ENV: development
       APP_DEBUG: "true"
-      DB_HOST: postgres
-      DB_PORT: 5432
+      DB_HOST: host.docker.internal # Allow connection to host DB if needed
+      DB_PORT: 3306
       DB_NAME: hr_portal
       DB_USER: hr_user
       DB_PASSWORD: hr_password_change_me
-      REDIS_HOST: redis
-      REDIS_PORT: 6379
-    depends_on:
-      postgres:
-        condition: service_healthy
-      redis:
-        condition: service_healthy
+    # depends_on:
+    #   postgres:
+    #     condition: service_healthy
+    #   redis:
+    #     condition: service_healthy
     networks:
       - hr_network
 

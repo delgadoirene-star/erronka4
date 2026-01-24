@@ -25,23 +25,18 @@ RUN docker-php-ext-configure gd --with-freetype --with-jpeg \
     opcache \
     bcmath
 
-# Install Redis extension
-RUN pecl install redis && docker-php-ext-enable redis
-
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 # Set working directory
 WORKDIR /var/www/html
 
-# Copy application files
+# Copy application code
 COPY . /var/www/html
 
-# Install PHP dependencies
-RUN composer install --no-dev --optimize-autoloader
-
 # Create required directories
-RUN mkdir -p storage/cache storage/sessions logs
+RUN mkdir -p /var/www/html/storage \
+    && mkdir -p /var/www/html/logs
 
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html \
