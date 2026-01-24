@@ -4,8 +4,8 @@ parameters:
         - src
         - tests
     excludePaths:
-        - vendor
-        - node_modules
+        - vendor (?)
+        - node_modules (?)
     
     # Ignore Redis extension not being loaded
     ignoreErrors:
