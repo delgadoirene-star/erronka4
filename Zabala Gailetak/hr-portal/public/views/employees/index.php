@@ -3,12 +3,12 @@
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
     <h1 class="h2">Empleados</h1>
     <div class="btn-toolbar mb-2 mb-md-0">
-        <button type="button" class="btn btn-sm btn-outline-secondary">
+        <a href="/employees/export" class="btn btn-sm btn-outline-secondary">
             Exportar
-        </button>
-        <button type="button" class="btn btn-sm btn-primary ms-2">
+        </a>
+        <a href="/employees/create" class="btn btn-sm btn-primary ms-2">
             Nuevo Empleado
-        </button>
+        </a>
     </div>
 </div>
 
@@ -25,32 +25,41 @@
             </tr>
         </thead>
         <tbody>
+            <?php foreach ($employees as $employee): ?>
             <tr>
-                <td>1,001</td>
-                <td>Jon</td>
-                <td>Ander</td>
-                <td>Operario</td>
-                <td>Producción</td>
-                <td><span class="badge bg-success">Activo</span></td>
+                <td><?= htmlspecialchars($employee['employee_number']) ?></td>
+                <td><?= htmlspecialchars($employee['first_name']) ?></td>
+                <td><?= htmlspecialchars($employee['last_name']) ?></td>
+                <td><?= htmlspecialchars($employee['position']) ?></td>
+                <td><?= htmlspecialchars($employee['department_name'] ?? 'N/A') ?></td>
+                <td>
+                    <?php if ($employee['is_active']): ?>
+                        <span class="badge bg-success">Activo</span>
+                    <?php else: ?>
+                        <span class="badge bg-secondary">Inactivo</span>
+                    <?php endif; ?>
+                </td>
             </tr>
+            <?php endforeach; ?>
+            <?php if (empty($employees)): ?>
             <tr>
-                <td>1,002</td>
-                <td>Amaia</td>
-                <td>Etxebarria</td>
-                <td>Manager</td>
-                <td>HR</td>
-                <td><span class="badge bg-success">Activo</span></td>
+                <td colspan="6" class="text-center">No hay empleados registrados.</td>
             </tr>
-            <tr>
-                <td>1,003</td>
-                <td>Mikel</td>
-                <td>Otegi</td>
-                <td>SysAdmin</td>
-                <td>IT</td>
-                <td><span class="badge bg-warning">Vacaciones</span></td>
-            </tr>
+            <?php endif; ?>
         </tbody>
     </table>
 </div>
+
+<?php if (isset($totalPages) && $totalPages > 1): ?>
+<nav aria-label="Page navigation" class="mt-4">
+  <ul class="pagination justify-content-center">
+    <?php for ($i = 1; $i <= $totalPages; $i++): ?>
+    <li class="page-item <?= ($i === $page) ? 'active' : '' ?>">
+        <a class="page-link" href="?page=<?= $i ?>"><?= $i ?></a>
+    </li>
+    <?php endfor; ?>
+  </ul>
+</nav>
+<?php endif; ?>
 
 <?php require dirname(__DIR__) . '/layouts/footer.php'; ?>
