@@ -40,7 +40,7 @@ try {
     
     // Show error page
     http_response_code(500);
-    if ($_ENV['APP_DEBUG'] === 'true') {
+    if (($_ENV['APP_DEBUG'] ?? 'false') === 'true') {
         echo '<h1>Error</h1>';
         echo '<pre>' . $e->getMessage() . '</pre>';
         echo '<pre>' . $e->getTraceAsString() . '</pre>';

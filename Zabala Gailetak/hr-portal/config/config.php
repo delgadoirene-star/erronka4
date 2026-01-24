@@ -38,7 +38,7 @@ return [
         'lifetime' => (int)($_ENV['SESSION_LIFETIME'] ?? 28800), // 8 hours
         'cookie_name' => 'HRPORTAL_SESSION',
         'cookie_httponly' => true,
-        'cookie_secure' => $_ENV['APP_ENV'] === 'production',
+        'cookie_secure' => ($_ENV['APP_ENV'] ?? 'production') === 'production',
         'cookie_samesite' => 'Lax',
     ],
     
