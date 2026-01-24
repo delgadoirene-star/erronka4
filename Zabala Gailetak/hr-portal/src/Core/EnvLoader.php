@@ -63,4 +63,19 @@ class EnvLoader
             }
         }
     }
+
+    /**
+     * Ensure $_ENV is populated from getenv/server if empty (common in shared hosting)
+     */
+    public static function ensurePopulated(): void
+    {
+        if (empty($_ENV)) {
+            $_ENV = $_SERVER;
+            foreach (getenv() as $key => $val) {
+                if (!isset($_ENV[$key])) {
+                    $_ENV[$key] = $val;
+                }
+            }
+        }
+    }
 }

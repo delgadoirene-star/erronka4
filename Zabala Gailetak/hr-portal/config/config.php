@@ -2,23 +2,28 @@
 
 declare(strict_types=1);
 
+// Helper to safely get env vars
+$env = function($key, $default = null) {
+    return $_ENV[$key] ?? $_SERVER[$key] ?? getenv($key) ?: $default;
+};
+
 return [
     'app' => [
-        'name' => $_ENV['APP_NAME'] ?? 'HR Portal',
-        'env' => $_ENV['APP_ENV'] ?? 'production',
-        'debug' => filter_var($_ENV['APP_DEBUG'] ?? false, FILTER_VALIDATE_BOOLEAN),
-        'url' => $_ENV['APP_URL'] ?? 'http://localhost',
+        'name' => $env('APP_NAME', 'HR Portal'),
+        'env' => $env('APP_ENV', 'production'),
+        'debug' => filter_var($env('APP_DEBUG', false), FILTER_VALIDATE_BOOLEAN),
+        'url' => $env('APP_URL', 'http://localhost'),
         'timezone' => 'Europe/Madrid',
         'locale' => 'eu',
     ],
     
     'database' => [
-        'driver' => $_ENV['DB_DRIVER'] ?? 'pgsql',
-        'host' => $_ENV['DB_HOST'] ?? 'localhost',
-        'port' => (int)($_ENV['DB_PORT'] ?? 5432),
-        'database' => $_ENV['DB_NAME'] ?? 'hr_portal',
-        'username' => $_ENV['DB_USER'] ?? 'hr_user',
-        'password' => $_ENV['DB_PASSWORD'] ?? '',
+        'driver' => $env('DB_DRIVER', 'pgsql'),
+        'host' => $env('DB_HOST', 'localhost'),
+        'port' => (int)$env('DB_PORT', 5432),
+        'database' => $env('DB_NAME', 'hr_portal'),
+        'username' => $env('DB_USER', 'hr_user'),
+        'password' => $env('DB_PASSWORD', ''),
         'charset' => 'utf8',
         'options' => [
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
@@ -28,49 +33,49 @@ return [
     ],
     
     'redis' => [
-        'host' => $_ENV['REDIS_HOST'] ?? 'localhost',
-        'port' => (int)($_ENV['REDIS_PORT'] ?? 6379),
-        'password' => $_ENV['REDIS_PASSWORD'] ?? null,
-        'database' => (int)($_ENV['REDIS_DB'] ?? 0),
+        'host' => $env('REDIS_HOST', 'localhost'),
+        'port' => (int)$env('REDIS_PORT', 6379),
+        'password' => $env('REDIS_PASSWORD'),
+        'database' => (int)$env('REDIS_DB', 0),
     ],
     
     'session' => [
-        'lifetime' => (int)($_ENV['SESSION_LIFETIME'] ?? 28800), // 8 hours
+        'lifetime' => (int)$env('SESSION_LIFETIME', 28800), // 8 hours
         'cookie_name' => 'HRPORTAL_SESSION',
         'cookie_httponly' => true,
-        'cookie_secure' => ($_ENV['APP_ENV'] ?? 'production') === 'production',
+        'cookie_secure' => $env('APP_ENV') === 'production',
         'cookie_samesite' => 'Lax',
     ],
     
     'security' => [
-        'jwt_secret' => $_ENV['JWT_SECRET'] ?? '',
+        'jwt_secret' => $env('JWT_SECRET', ''),
         'jwt_algorithm' => 'HS256',
         'jwt_expiration' => 3600, // 1 hour
-        'password_pepper' => $_ENV['PASSWORD_PEPPER'] ?? '',
-        'csrf_token_name' => $_ENV['CSRF_TOKEN_NAME'] ?? 'csrf_token',
-        'max_login_attempts' => (int)($_ENV['RATE_LIMIT_LOGIN'] ?? 5),
+        'password_pepper' => $env('PASSWORD_PEPPER', ''),
+        'csrf_token_name' => $env('CSRF_TOKEN_NAME', 'csrf_token'),
+        'max_login_attempts' => (int)$env('RATE_LIMIT_LOGIN', 5),
         'lockout_duration' => 900, // 15 minutes
     ],
     
     'upload' => [
-        'max_size' => (int)($_ENV['UPLOAD_MAX_SIZE'] ?? 10485760), // 10MB
-        'allowed_types' => explode(',', $_ENV['UPLOAD_ALLOWED_TYPES'] ?? 'pdf,doc,docx,jpg,jpeg,png'),
-        'path' => $_ENV['UPLOAD_PATH'] ?? ROOT_PATH . '/storage/uploads',
+        'max_size' => (int)$env('UPLOAD_MAX_SIZE', 10485760), // 10MB
+        'allowed_types' => explode(',', $env('UPLOAD_ALLOWED_TYPES', 'pdf,doc,docx,jpg,jpeg,png')),
+        'path' => $env('UPLOAD_PATH', ROOT_PATH . '/storage/uploads'),
     ],
     
     'mail' => [
-        'host' => $_ENV['MAIL_HOST'] ?? '',
-        'port' => (int)($_ENV['MAIL_PORT'] ?? 587),
-        'username' => $_ENV['MAIL_USERNAME'] ?? '',
-        'password' => $_ENV['MAIL_PASSWORD'] ?? '',
-        'from_address' => $_ENV['MAIL_FROM_ADDRESS'] ?? 'noreply@example.com',
-        'from_name' => $_ENV['MAIL_FROM_NAME'] ?? 'HR Portal',
+        'host' => $env('MAIL_HOST', ''),
+        'port' => (int)$env('MAIL_PORT', 587),
+        'username' => $env('MAIL_USERNAME', ''),
+        'password' => $env('MAIL_PASSWORD', ''),
+        'from_address' => $env('MAIL_FROM_ADDRESS', 'noreply@example.com'),
+        'from_name' => $env('MAIL_FROM_NAME', 'HR Portal'),
         'encryption' => 'tls',
     ],
     
     'logging' => [
-        'level' => $_ENV['LOG_LEVEL'] ?? 'info',
-        'path' => $_ENV['LOG_PATH'] ?? ROOT_PATH . '/logs',
+        'level' => $env('LOG_LEVEL', 'info'),
+        'path' => $env('LOG_PATH', ROOT_PATH . '/logs'),
         'channels' => [
             'application' => 'application.log',
             'security' => 'security.log',
@@ -80,8 +85,8 @@ return [
     ],
     
     'webauthn' => [
-        'name' => $_ENV['WEBAUTHN_NAME'] ?? 'HR Portal',
-        'id' => $_ENV['WEBAUTHN_ID'] ?? 'localhost',
-        'icon' => $_ENV['WEBAUTHN_ICON'] ?? '',
+        'name' => $env('WEBAUTHN_NAME', 'HR Portal'),
+        'id' => $env('WEBAUTHN_ID', 'localhost'),
+        'icon' => $env('WEBAUTHN_ICON', ''),
     ],
 ];

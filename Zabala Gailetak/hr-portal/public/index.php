@@ -20,9 +20,18 @@ require ROOT_PATH . '/src/Core/ClassLoader.php';
 
 // Load environment variables (Native)
 \ZabalaGailetak\HrPortal\Core\EnvLoader::load(ROOT_PATH);
+\ZabalaGailetak\HrPortal\Core\EnvLoader::ensurePopulated();
+
+// Safe Env Getter
+$env = function($key, $default = null) {
+    return $_ENV[$key] ?? $_SERVER[$key] ?? getenv($key) ?: $default;
+};
 
 // Error handling based on environment
-if (isset($_ENV['APP_ENV']) && $_ENV['APP_ENV'] === 'production') {
+$appEnv = $env('APP_ENV', 'production');
+$appDebug = filter_var($env('APP_DEBUG', false), FILTER_VALIDATE_BOOLEAN);
+
+if ($appEnv === 'production') {
     error_reporting(0);
     ini_set('display_errors', '0');
 } else {
@@ -40,12 +49,21 @@ try {
     
     // Show error page
     http_response_code(500);
-    if (($_ENV['APP_DEBUG'] ?? 'false') === 'true') {
+    
+    if ($appDebug) {
         echo '<h1>Error</h1>';
-        echo '<pre>' . $e->getMessage() . '</pre>';
-        echo '<pre>' . $e->getTraceAsString() . '</pre>';
+        echo '<pre>' . htmlspecialchars($e->getMessage()) . '</pre>';
+        echo '<pre>' . htmlspecialchars($e->getTraceAsString()) . '</pre>';
     } else {
-        echo '<h1>500 Internal Server Error</h1>';
-        echo '<p>An unexpected error occurred. Please try again later.</p>';
+        // Friendly error page for missing config
+        if (str_contains($e->getMessage(), 'SQLSTATE') || str_contains($e->getMessage(), 'Connection refused')) {
+            echo '<h1>Servicio No Disponible</h1>';
+            echo '<p>No se ha podido conectar con la base de datos. Por favor, verifica el archivo <code>.env</code>.</p>';
+            echo '<hr>';
+            echo '<small>Si eres el administrador, sube el archivo .env via FTP.</small>';
+        } else {
+            echo '<h1>500 Internal Server Error</h1>';
+            echo '<p>An unexpected error occurred. Please try again later.</p>';
+        }
     }
 }
