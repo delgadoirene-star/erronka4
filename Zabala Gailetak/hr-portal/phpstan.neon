@@ -12,10 +12,6 @@ parameters:
         - '#Undefined type.*Redis#'
         - '#Parameter .* of .* has invalid type.*Redis#'
         - '#has unknown class.*Redis as its type#'
-        
-    # PHPUnit mocking
-    universalObjectCrates:
-        - PHPUnit\Framework\MockObject\MockObject
     
     # Allow dynamic properties in tests
     reportUnmatchedIgnoredErrors: false
