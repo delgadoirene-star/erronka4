@@ -29,7 +29,7 @@ class WebAuthController
 
     public function login(Request $request): Response
     {
-        $data = $request->getBody();
+        $data = $request->getParsedBody();
         $email = $data['email'] ?? '';
         $password = $data['password'] ?? '';
 
