@@ -59,17 +59,16 @@ class WebEmployeeController
         ]);
     }
 
-    public function show(Request $request, string $id): Response
-    {
-        $this->requireAuth();
-        
-        $sql = "SELECT e.*, u.email, u.role, d.name as department_name
-                FROM employees e 
-                JOIN users u ON e.user_id = u.id 
-                LEFT JOIN departments d ON e.department_id = d.id 
-                WHERE e.id = :id";
-        $stmt = $this->db->prepare($sql);
-        $stmt->execute(['id' => $id]);
+        public function show(Request $request, string $id): Response
+        {
+            $this->requireAuth();
+    
+            $sql = "SELECT e.*, u.email, u.role, d.name as department_name
+                    FROM employees e
+                    JOIN users u ON e.user_id = u.id
+                    LEFT JOIN departments d ON e.department_id = d.id
+                    WHERE e.id = :id";
+            $stmt = $this->db->prepare($sql);        $stmt->execute(['id' => $id]);
         $employee = $stmt->fetch(PDO::FETCH_ASSOC);
 
         if (!$employee) {
