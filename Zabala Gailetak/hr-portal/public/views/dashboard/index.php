@@ -13,7 +13,7 @@
         <div class="card text-white bg-primary h-100">
             <div class="card-body">
                 <h5 class="card-title">Empleados</h5>
-                <p class="card-text display-4">124</p>
+                <p class="card-text display-4"><?= htmlspecialchars($stats['employees'] ?? 0) ?></p>
                 <a href="/employees" class="text-white">Ver listado &rarr;</a>
             </div>
         </div>
@@ -30,7 +30,7 @@
         <div class="card text-white bg-warning h-100">
             <div class="card-body">
                 <h5 class="card-title">Vacaciones Pendientes</h5>
-                <p class="card-text display-4">5</p>
+                <p class="card-text display-4"><?= htmlspecialchars($stats['pending_vacations'] ?? 0) ?></p>
                 <a href="/vacations" class="text-white">Gestionar &rarr;</a>
             </div>
         </div>
@@ -44,18 +44,20 @@
                 Últimos Fichajes
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Jon Ander (Producción)
-                    <span class="badge bg-success rounded-pill">07:55</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Amaia Etxebarria (HR)
-                    <span class="badge bg-success rounded-pill">08:02</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Mikel Otegi (IT)
-                    <span class="badge bg-success rounded-pill">08:15</span>
-                </li>
+                <?php if (!empty($upcomingVacations)): ?>
+                    <?php foreach ($upcomingVacations as $vacation): ?>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <?= htmlspecialchars($vacation['first_name'] . ' ' . $vacation['last_name']) ?>
+                            <span class="badge bg-info rounded-pill">
+                                <?= date('d/m', strtotime($vacation['start_date'])) ?> - <?= date('d/m', strtotime($vacation['end_date'])) ?>
+                            </span>
+                        </li>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <li class="list-group-item text-muted">
+                        No hay vacaciones próximas
+                    </li>
+                <?php endif; ?>
             </ul>
         </div>
     </div>

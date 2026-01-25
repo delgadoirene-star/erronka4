@@ -33,7 +33,7 @@ class WebDashboardController
             JOIN employees e ON vr.employee_id = e.id
             WHERE vr.status = 'APPROVED' 
               AND vr.start_date >= CURRENT_DATE 
-              AND vr.start_date <= CURRENT_DATE + INTERVAL '30 days'
+              AND vr.start_date <= DATE_ADD(CURRENT_DATE, INTERVAL 30 DAY)
             ORDER BY vr.start_date ASC
             LIMIT 5
         ");
@@ -44,7 +44,7 @@ class WebDashboardController
             'role' => $_SESSION['user_role'] ?? 'employee',
             'stats' => [
                 'employees' => $employeeCount,
-                'pending_vacations' => $pendingApprovals ?? $pendingVacations
+                'pending_vacations' => $pendingVacations
             ],
             'upcomingVacations' => $upcomingVacations
         ]);
