@@ -27,9 +27,16 @@ if ($router === null) {
 // Initialize services
 $db = $GLOBALS['app']->getDatabase();
 
-// 1. Instantiate TokenManager (Missing in previous commit!)
+// 1. Instantiate TokenManager
+// phpcs:disable Generic.CodeAnalysis.AssignmentInCondition
+$jwtSecret = $_ENV['JWT_SECRET'] ?? null;
+if ($jwtSecret === null) {
+    throw new \RuntimeException('JWT_SECRET environment variable is required');
+}
+// phpcs:enable Generic.CodeAnalysis.AssignmentInCondition
+
 $tokenManager = new TokenManager([
-    'jwt_secret' => $_ENV['JWT_SECRET'] ?? 'change_this_secret_key',
+    'jwt_secret' => $jwtSecret,
     'jwt_issuer' => $_ENV['APP_URL'] ?? 'http://localhost:8080',
     'jwt_access_expiry' => 3600,
     'jwt_refresh_expiry' => 604800
