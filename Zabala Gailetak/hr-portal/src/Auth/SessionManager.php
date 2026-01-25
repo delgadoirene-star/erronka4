@@ -30,7 +30,7 @@ class SessionManager
             ini_set('session.use_strict_mode', '1');
             ini_set('session.cookie_httponly', '1');
             ini_set('session.cookie_samesite', 'Lax');
-            
+
             if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') {
                 ini_set('session.cookie_secure', '1');
             }
@@ -46,7 +46,7 @@ class SessionManager
         $_SESSION[$this->prefix . 'created_at'] = time();
         $_SESSION[$this->prefix . 'last_activity'] = time();
         $_SESSION[$this->prefix . 'data'] = $data;
-        
+
         return session_id();
     }
 
@@ -70,7 +70,9 @@ class SessionManager
 
     public function updateSession(string $sessionId, array $data): bool
     {
-        if ($sessionId !== session_id()) return false;
+        if ($sessionId !== session_id()) {
+            return false;
+        }
 
         $_SESSION[$this->prefix . 'last_activity'] = time();
         $_SESSION[$this->prefix . 'data'] = array_merge($_SESSION[$this->prefix . 'data'] ?? [], $data);

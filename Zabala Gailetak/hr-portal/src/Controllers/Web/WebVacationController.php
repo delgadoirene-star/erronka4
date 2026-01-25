@@ -35,9 +35,9 @@ class WebVacationController
         }
 
         $year = (int)date('Y');
-        $balance = $this->vacationService->getBalance($employeeId, $year) 
+        $balance = $this->vacationService->getBalance($employeeId, $year)
                    ?? $this->vacationService->initializeBalance($employeeId, $year);
-        
+
         $requests = $this->vacationService->getEmployeeRequests($employeeId, $year);
 
         // If admin, also get pending requests
@@ -66,7 +66,9 @@ class WebVacationController
         $data = $request->getParsedBody();
         $employeeId = $this->getCurrentEmployeeId();
 
-        if (!$employeeId) return Response::redirect('/vacations');
+        if (!$employeeId) {
+            return Response::redirect('/vacations');
+        }
 
         try {
             $this->vacationService->createRequest(
@@ -122,12 +124,14 @@ class WebVacationController
 
     private function getCurrentEmployeeId(): ?string
     {
-        if (isset($_SESSION['employee_id'])) return (string)$_SESSION['employee_id'];
+        if (isset($_SESSION['employee_id'])) {
+            return (string)$_SESSION['employee_id'];
+        }
 
         $stmt = $this->db->prepare("SELECT id FROM employees WHERE user_id = :user_id");
         $stmt->execute(['user_id' => $_SESSION['user_id']]);
         $id = $stmt->fetchColumn();
-        
+
         if ($id) {
             $_SESSION['employee_id'] = $id;
             return (string)$id;

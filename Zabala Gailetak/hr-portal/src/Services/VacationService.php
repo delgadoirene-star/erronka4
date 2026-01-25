@@ -218,8 +218,11 @@ class VacationService
     /**
      * Approve request by manager
      */
-    public function approveByManager(string|int $requestId, string|int $managerId, ?string $notes = null): VacationRequest
-    {
+    public function approveByManager(
+        string|int $requestId,
+        string|int $managerId,
+        ?string $notes = null
+    ): VacationRequest {
         $request = $this->getRequest($requestId);
         if (!$request) {
             throw new \Exception('Eskaera ez da aurkitu / Solicitud no encontrada');

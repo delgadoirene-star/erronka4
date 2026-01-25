@@ -34,49 +34,54 @@ class Database
         return self::$connection;
     }
 
-        /**
-         * Establish database connection
-         */
-        private function connect(): void
-        {
-            $dbConfig = $this->config['database'];
-            
-            // Safe Env Getter (duplicated for robustness in low-level class)
-            $env = function($key, $default = null) {
-                return $_ENV[$key] ?? $_SERVER[$key] ?? getenv($key) ?: $default;
-            };
-    
-            $driver = $dbConfig['driver'] ?? $env('DB_DRIVER', 'pgsql');
-            $host = $dbConfig['host'] ?? $env('DB_HOST', 'localhost');
-            $port = $dbConfig['port'] ?? $env('DB_PORT', 5432);
-            $dbname = $dbConfig['database'] ?? $env('DB_NAME', 'hr_portal');
-            $user = $dbConfig['username'] ?? $env('DB_USER', 'hr_user');
-            $pass = $dbConfig['password'] ?? $env('DB_PASSWORD', '');
-            
-            if ($driver === 'pgsql') {
-                $dsn = sprintf(
-                    'pgsql:host=%s;port=%d;dbname=%s',
-                    $host, $port, $dbname
-                );
-            } else {
-                $dsn = sprintf(
-                    'mysql:host=%s;port=%d;dbname=%s;charset=utf8mb4',
-                    $host, $port ?? 3306, $dbname
-                );
-            }
-            
-            try {
-                self::$connection = new PDO(
-                    $dsn,
-                    $user,
-                    $pass,
-                    $dbConfig['options'] ?? [
-                        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-                        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-                        PDO::ATTR_EMULATE_PREPARES => false,
-                    ]
-                );
-            } catch (PDOException $e) {            error_log('Database connection failed: ' . $e->getMessage());
+    /**
+     * Establish database connection
+     */
+    private function connect(): void
+    {
+        $dbConfig = $this->config['database'];
+
+        // Safe Env Getter (duplicated for robustness in low-level class)
+        $env = function ($key, $default = null) {
+            return $_ENV[$key] ?? $_SERVER[$key] ?? getenv($key) ?: $default;
+        };
+
+        $driver = $dbConfig['driver'] ?? $env('DB_DRIVER', 'pgsql');
+        $host = $dbConfig['host'] ?? $env('DB_HOST', 'localhost');
+        $port = $dbConfig['port'] ?? $env('DB_PORT', 5432);
+        $dbname = $dbConfig['database'] ?? $env('DB_NAME', 'hr_portal');
+        $user = $dbConfig['username'] ?? $env('DB_USER', 'hr_user');
+        $pass = $dbConfig['password'] ?? $env('DB_PASSWORD', '');
+
+        if ($driver === 'pgsql') {
+            $dsn = sprintf(
+                'pgsql:host=%s;port=%d;dbname=%s',
+                $host,
+                $port,
+                $dbname
+            );
+        } else {
+            $dsn = sprintf(
+                'mysql:host=%s;port=%d;dbname=%s;charset=utf8mb4',
+                $host,
+                $port ?? 3306,
+                $dbname
+            );
+        }
+
+        try {
+            self::$connection = new PDO(
+                $dsn,
+                $user,
+                $pass,
+                $dbConfig['options'] ?? [
+                    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+                    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+                    PDO::ATTR_EMULATE_PREPARES => false,
+                ]
+            );
+        } catch (PDOException $e) {
+            error_log('Database connection failed: ' . $e->getMessage());
             throw new \RuntimeException('Database connection failed');
         }
     }

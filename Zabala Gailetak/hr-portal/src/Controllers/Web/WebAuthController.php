@@ -39,7 +39,8 @@ class WebAuthController
 
         // Real Database Authentication
         try {
-            $stmt = $this->db->prepare('SELECT id, email, password_hash, role, mfa_enabled FROM users WHERE email = :email');
+            $sql = 'SELECT id, email, password_hash, role, mfa_enabled FROM users WHERE email = :email';
+            $stmt = $this->db->prepare($sql);
             $stmt->execute(['email' => $email]);
             $user = $stmt->fetch();
 
@@ -51,7 +52,7 @@ class WebAuthController
                 $_SESSION['user_name'] = 'Admin'; // Todo: Fetch from employees table
 
                 // Optional: Check MFA here if needed
-                
+
                 return Response::redirect('/dashboard');
             }
         } catch (\Exception $e) {

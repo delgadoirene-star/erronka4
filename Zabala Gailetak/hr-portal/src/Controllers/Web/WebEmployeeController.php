@@ -32,7 +32,7 @@ class WebEmployeeController
         $page = (int)($request->getQuery('page') ?? 1);
         $limit = 10;
         $offset = ($page - 1) * $limit;
-        
+
         $sql = "SELECT 
                 e.id, e.employee_number, e.first_name, e.last_name, e.position, e.is_active,
                 d.name as department_name, u.email
@@ -67,7 +67,6 @@ class WebEmployeeController
                 FROM employees e 
                 JOIN users u ON e.user_id = u.id 
                 LEFT JOIN departments d ON e.department_id = d.id 
-                WHERE e.id = :id";
         $stmt = $this->db->prepare($sql);
         $stmt->execute(['id' => $id]);
         $employee = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -97,7 +96,7 @@ class WebEmployeeController
         $this->requireAuth();
         $data = $request->getParsedBody();
         $data = $this->validator->sanitizeData($data);
-        
+
         $errors = $this->validator->validate($data, false);
         if (!empty($errors)) {
             $stmt = $this->db->query("SELECT id, name FROM departments WHERE is_active = TRUE ORDER BY name");
@@ -115,7 +114,8 @@ class WebEmployeeController
             $employeeId = bin2hex(random_bytes(16));
 
             // 1. Create User
-            $stmt = $this->db->prepare("INSERT INTO users (id, email, password_hash, role) VALUES (:id, :email, :password, :role)");
+            $sql = "INSERT INTO users (id, email, password_hash, role) VALUES (:id, :email, :password, :role)";
+            $stmt = $this->db->prepare($sql);
             $stmt->execute([
                 'id' => $userId,
                 'email' => $data['email'],
@@ -148,7 +148,7 @@ class WebEmployeeController
             ]);
 
             $this->db->commit();
-            
+
             $this->auditLogger->logCreate('employee', (string)$employeeId, $data, $_SESSION['user_id']);
 
             return Response::redirect('/employees');
@@ -172,7 +172,9 @@ class WebEmployeeController
         $stmt->execute(['id' => $id]);
         $employee = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        if (!$employee) return Response::redirect('/employees');
+        if (!$employee) {
+            return Response::redirect('/employees');
+        }
 
         $stmt = $this->db->query("SELECT id, name FROM departments WHERE is_active = TRUE ORDER BY name");
         $departments = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -189,7 +191,7 @@ class WebEmployeeController
         $this->requireAuth();
         $data = $request->getParsedBody();
         $data = $this->validator->sanitizeData($data);
-        
+
         $errors = $this->validator->validate($data, true);
         if (!empty($errors)) {
              // Handle redirect back with errors
@@ -238,7 +240,9 @@ class WebEmployeeController
         ob_start();
         $df = fopen("php://output", 'w');
         fputcsv($df, array_keys($employees[0] ?? []));
-        foreach ($employees as $row) fputcsv($df, $row);
+        foreach ($employees as $row) {
+            fputcsv($df, $row);
+        }
         fclose($df);
         $csv = ob_get_clean();
 
