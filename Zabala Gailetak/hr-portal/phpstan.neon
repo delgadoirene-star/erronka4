@@ -4,8 +4,7 @@ parameters:
         - src
         - tests
     excludePaths:
-        - vendor (?)
-        - node_modules (?)
+        - vendor
     
     # Allow dynamic properties in tests
     reportUnmatchedIgnoredErrors: false
@@ -13,3 +12,8 @@ parameters:
     # Native bootstrap (Zero Trust)
     bootstrapFiles:
         - tests/bootstrap.php
+
+    # Ignore missing dependencies in CI environment
+    ignoreErrors:
+        - '#unknown class OTPHP\\\/TOTP#'
+        - '#Call to static method .* on an unknown class OTPHP\\\/TOTP#'

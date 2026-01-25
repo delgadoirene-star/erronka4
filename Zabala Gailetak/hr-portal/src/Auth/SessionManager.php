@@ -13,16 +13,11 @@ namespace ZabalaGailetak\HrPortal\Auth;
 class SessionManager
 {
     private string $prefix = 'hrportal:';
-    private int $defaultTtl = 3600;
 
     public function __construct(array $config = [])
     {
         if (isset($config['session_prefix'])) {
             $this->prefix = $config['session_prefix'];
-        }
-
-        if (isset($config['session_ttl'])) {
-            $this->defaultTtl = (int) $config['session_ttl'];
         }
 
         if (session_status() === PHP_SESSION_NONE) {
@@ -86,5 +81,17 @@ class SessionManager
             return true;
         }
         return false;
+    }
+
+    public function sessionExists(string $sessionId): bool
+    {
+        return $sessionId === session_id() && isset($_SESSION[$this->prefix . 'user_id']);
+    }
+
+    public function refreshSession(string $sessionId): void
+    {
+        if ($sessionId === session_id()) {
+            $_SESSION[$this->prefix . 'last_activity'] = time();
+        }
     }
 }

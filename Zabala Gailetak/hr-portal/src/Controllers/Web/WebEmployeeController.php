@@ -150,7 +150,14 @@ class WebEmployeeController
 
             $this->db->commit();
 
-            $this->auditLogger->logCreate('employee', (string)$employeeId, $data, $_SESSION['user_id']);
+            $this->auditLogger->logCreate(
+                'employee',
+                (string)$employeeId,
+                $data,
+                $_SESSION['user_id'],
+                $_SESSION['user_email'],
+                $_SESSION['user_role']
+            );
 
             return Response::redirect('/employees');
         } catch (Exception $e) {

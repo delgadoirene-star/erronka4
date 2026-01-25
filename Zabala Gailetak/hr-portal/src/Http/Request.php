@@ -14,8 +14,6 @@ class Request
     private array $headers;
     private array $query;
     private array $post;
-    private array $files;
-    private array $server;
     private array $cookies;
     private ?string $body;
     private array $attributes = []; // For storing request-level data
@@ -26,8 +24,6 @@ class Request
         array $headers = [],
         array $query = [],
         array $post = [],
-        array $files = [],
-        array $server = [],
         array $cookies = [],
         ?string $body = null
     ) {
@@ -36,8 +32,6 @@ class Request
         $this->headers = $headers;
         $this->query = $query;
         $this->post = $post;
-        $this->files = $files;
-        $this->server = $server;
         $this->cookies = $cookies;
         $this->body = $body;
     }
@@ -66,8 +60,6 @@ class Request
             $headers,
             $_GET,
             $_POST,
-            $_FILES,
-            $_SERVER,
             $_COOKIE,
             file_get_contents('php://input') ?: null
         );

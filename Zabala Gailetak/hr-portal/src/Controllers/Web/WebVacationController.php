@@ -16,13 +16,11 @@ class WebVacationController
 {
     private Database $db;
     private VacationService $vacationService;
-    private AuditLogger $auditLogger;
 
     public function __construct(Database $db, VacationService $vacationService)
     {
         $this->db = $db;
         $this->vacationService = $vacationService;
-        $this->auditLogger = new AuditLogger($db);
     }
 
     public function index(Request $request): Response
