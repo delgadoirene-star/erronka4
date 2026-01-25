@@ -67,6 +67,7 @@ class WebEmployeeController
                 FROM employees e 
                 JOIN users u ON e.user_id = u.id 
                 LEFT JOIN departments d ON e.department_id = d.id 
+                WHERE e.id = :id";
         $stmt = $this->db->prepare($sql);
         $stmt->execute(['id' => $id]);
         $employee = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -81,7 +82,7 @@ class WebEmployeeController
     public function createForm(Request $request): Response
     {
         $this->requireAuth();
-        $stmt = $this->db->query("SELECT id, name FROM departments WHERE is_active = TRUE ORDER BY name");
+        $stmt = $this->db->query("SELECT id, name FROM departments WHERE is_active = true ORDER BY name");
         $departments = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         return Response::view('employees/create', [
@@ -99,7 +100,7 @@ class WebEmployeeController
 
         $errors = $this->validator->validate($data, false);
         if (!empty($errors)) {
-            $stmt = $this->db->query("SELECT id, name FROM departments WHERE is_active = TRUE ORDER BY name");
+            $stmt = $this->db->query("SELECT id, name FROM departments WHERE is_active = true ORDER BY name");
             return Response::view('employees/create', [
                 'departments' => $stmt->fetchAll(PDO::FETCH_ASSOC),
                 'errors' => $errors,
@@ -131,7 +132,7 @@ class WebEmployeeController
                     position, department_id, hire_date, salary, is_active
                 ) VALUES (
                     :id, :user_id, :emp_num, :first_name, :last_name, :nif, 
-                    :position, :dept_id, :hire_date, :salary, TRUE
+                    :position, :dept_id, :hire_date, :salary, true
                 )
             ");
             $stmt->execute([
@@ -176,7 +177,7 @@ class WebEmployeeController
             return Response::redirect('/employees');
         }
 
-        $stmt = $this->db->query("SELECT id, name FROM departments WHERE is_active = TRUE ORDER BY name");
+        $stmt = $this->db->query("SELECT id, name FROM departments WHERE is_active = true ORDER BY name");
         $departments = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         return Response::view('employees/edit', [
@@ -226,7 +227,7 @@ class WebEmployeeController
     {
         $this->requireAuth();
         // Soft delete
-        $stmt = $this->db->prepare("UPDATE employees SET is_active = FALSE WHERE id = :id");
+        $stmt = $this->db->prepare("UPDATE employees SET is_active = false WHERE id = :id");
         $stmt->execute(['id' => $id]);
         return Response::redirect('/employees');
     }
