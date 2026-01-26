@@ -124,10 +124,11 @@ class VacationService
                    e.first_name as employee_first_name,
                    e.last_name as employee_last_name,
                    u.email as employee_email,
-                   e.department as employee_department
+                   d.name as employee_department
             FROM vacation_requests vr
             JOIN employees e ON vr.employee_id = e.id
             JOIN users u ON e.user_id = u.id
+            JOIN departments d ON e.department_id = d.id
             WHERE vr.employee_id = :employee_id
         ';
 
@@ -162,15 +163,16 @@ class VacationService
                    e.first_name as employee_first_name,
                    e.last_name as employee_last_name,
                    u.email as employee_email,
-                   e.department as employee_department
+                   d.name as employee_department
             FROM vacation_requests vr
             JOIN employees e ON vr.employee_id = e.id
             JOIN users u ON e.user_id = u.id
+            JOIN departments d ON e.department_id = d.id
             WHERE vr.status = :status
         ';
 
         if ($departmentId) {
-            $sql .= ' AND e.department = :department';
+            $sql .= ' AND e.department_id = :department';
         }
 
         $sql .= ' ORDER BY vr.request_date ASC';
@@ -200,10 +202,11 @@ class VacationService
                    e.first_name as employee_first_name,
                    e.last_name as employee_last_name,
                    u.email as employee_email,
-                   e.department as employee_department
+                   d.name as employee_department
             FROM vacation_requests vr
             JOIN employees e ON vr.employee_id = e.id
             JOIN users u ON e.user_id = u.id
+            JOIN departments d ON e.department_id = d.id
             WHERE vr.status = :status
             ORDER BY vr.request_date ASC
         ');
@@ -349,10 +352,11 @@ class VacationService
                    e.first_name as employee_first_name,
                    e.last_name as employee_last_name,
                    u.email as employee_email,
-                   e.department as employee_department
+                   d.name as employee_department
             FROM vacation_requests vr
             JOIN employees e ON vr.employee_id = e.id
             JOIN users u ON e.user_id = u.id
+            JOIN departments d ON e.department_id = d.id
             WHERE vr.id = :id
         ');
         $stmt->execute(['id' => $id]);
@@ -422,7 +426,7 @@ class VacationService
 
         $sql = '
             SELECT vr.*, 
-                   e.first_name, e.last_name, e.department
+                   e.first_name, e.last_name, e.department_id
             FROM vacation_requests vr
             JOIN employees e ON vr.employee_id = e.id
             WHERE vr.status IN (:status1, :status2)
@@ -436,7 +440,7 @@ class VacationService
         ];
 
         if ($departmentId) {
-            $sql .= ' AND e.department = :department';
+            $sql .= ' AND e.department_id = :department';
             $params['department'] = $departmentId;
         }
 
