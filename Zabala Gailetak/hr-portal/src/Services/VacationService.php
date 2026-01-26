@@ -123,10 +123,11 @@ class VacationService
             SELECT vr.*, 
                    e.first_name as employee_first_name,
                    e.last_name as employee_last_name,
-                   e.email as employee_email,
+                   u.email as employee_email,
                    e.department as employee_department
             FROM vacation_requests vr
             JOIN employees e ON vr.employee_id = e.id
+            JOIN users u ON e.user_id = u.id
             WHERE vr.employee_id = :employee_id
         ';
 
@@ -160,10 +161,11 @@ class VacationService
             SELECT vr.*, 
                    e.first_name as employee_first_name,
                    e.last_name as employee_last_name,
-                   e.email as employee_email,
+                   u.email as employee_email,
                    e.department as employee_department
             FROM vacation_requests vr
             JOIN employees e ON vr.employee_id = e.id
+            JOIN users u ON e.user_id = u.id
             WHERE vr.status = :status
         ';
 
@@ -197,10 +199,11 @@ class VacationService
             SELECT vr.*, 
                    e.first_name as employee_first_name,
                    e.last_name as employee_last_name,
-                   e.email as employee_email,
+                   u.email as employee_email,
                    e.department as employee_department
             FROM vacation_requests vr
             JOIN employees e ON vr.employee_id = e.id
+            JOIN users u ON e.user_id = u.id
             WHERE vr.status = :status
             ORDER BY vr.request_date ASC
         ');
@@ -345,10 +348,11 @@ class VacationService
             SELECT vr.*, 
                    e.first_name as employee_first_name,
                    e.last_name as employee_last_name,
-                   e.email as employee_email,
+                   u.email as employee_email,
                    e.department as employee_department
             FROM vacation_requests vr
             JOIN employees e ON vr.employee_id = e.id
+            JOIN users u ON e.user_id = u.id
             WHERE vr.id = :id
         ');
         $stmt->execute(['id' => $id]);
