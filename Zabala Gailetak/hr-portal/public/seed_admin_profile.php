@@ -171,8 +171,8 @@ try {
     echo "📋 Creating audit log entry...\n";
     
     $stmt = $pdo->prepare("
-        INSERT INTO audit_logs (id, user_id, action, entity_type, entity_id, details, ip_address, user_agent, created_at)
-        VALUES (UUID(), :user_id, :action, :entity_type, :entity_id, :details, :ip_address, :user_agent, NOW())
+        INSERT INTO audit_logs (id, user_id, action, entity_type, entity_id, ip_address, user_agent, created_at)
+        VALUES (UUID(), :user_id, :action, :entity_type, :entity_id, :ip_address, :user_agent, NOW())
     ");
     
     $stmt->execute([
@@ -180,7 +180,6 @@ try {
         'action' => 'admin_profile_seeded_web',
         'entity_type' => 'system',
         'entity_id' => $userId,
-        'details' => 'Admin profile and employee data seeded via web interface',
         'ip_address' => $_SERVER['REMOTE_ADDR'] ?? 'unknown',
         'user_agent' => $_SERVER['HTTP_USER_AGENT'] ?? 'Web Seeder'
     ]);
