@@ -9,6 +9,24 @@ declare(strict_types=1);
  * @author Zabala Gailetak
  */
 
+// CORS / Preflight handling (for mobile/web clients)
+$allowedOrigin = 'https://zabala-gailetak.infinityfreeapp.com';
+if (isset($_SERVER['HTTP_ORIGIN'])) {
+    $origin = $_SERVER['HTTP_ORIGIN'];
+} else {
+    $origin = $allowedOrigin;
+}
+header('Access-Control-Allow-Origin: ' . $allowedOrigin);
+header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
+header('Access-Control-Allow-Headers: Authorization, Content-Type, X-Requested-With');
+header('Access-Control-Allow-Credentials: false');
+
+// Preflight request: return 204 and exit early
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(204);
+    exit;
+}
+
 // Initialize session for web interface
 if (session_status() === PHP_SESSION_NONE) {
     session_start([
@@ -32,7 +50,7 @@ require ROOT_PATH . '/src/Core/ClassLoader.php';
 \ZabalaGailetak\HrPortal\Core\EnvLoader::ensurePopulated();
 
 // Safe Env Getter
-$env = function($key, $default = null) {
+$env = function ($key, $default = null) {
     return $_ENV[$key] ?? $_SERVER[$key] ?? getenv($key) ?: $default;
 };
 
@@ -55,10 +73,10 @@ try {
 } catch (\Throwable $e) {
     // Log error
     error_log($e->getMessage());
-    
+
     // Show error page
     http_response_code(500);
-    
+
     if ($appDebug) {
         echo '<h1>Error</h1>';
         echo '<pre>' . htmlspecialchars($e->getMessage()) . '</pre>';

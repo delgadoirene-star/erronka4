@@ -17,6 +17,9 @@ interface AuthApiService {
     
     @POST("auth/logout")
     suspend fun logout(): Response<Unit>
+
+    @POST("auth/refresh")
+    suspend fun refresh(@Body body: Map<String, String>): Response<LoginResponse>
     
     @GET("auth/me")
     suspend fun getCurrentUser(): Response<Employee>

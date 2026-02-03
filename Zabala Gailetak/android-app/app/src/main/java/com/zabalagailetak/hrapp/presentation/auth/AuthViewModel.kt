@@ -17,7 +17,8 @@ import javax.inject.Inject
  */
 @HiltViewModel
 class AuthViewModel @Inject constructor(
-    private val authApi: AuthApiService
+    private val authApi: AuthApiService,
+    private val tokenStore: com.zabalagailetak.hrapp.data.auth.TokenStore
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(AuthUiState())
@@ -56,12 +57,25 @@ class AuthViewModel @Inject constructor(
                         )
                     }
                 } else {
-                    // Save token (TODO: implement secure storage)
+                    // Save token to secure store
+                    val token = loginResponse.token
+                    if (!token.isNullOrBlank()) {
+                        try {
+                            tokenStore.saveToken(token)
+                            // Persist refresh token if provided by API
+                            loginResponse.refreshToken?.let { rf ->
+                                if (rf.isNotBlank()) tokenStore.saveRefreshToken(rf)
+                            }
+                        } catch (_: Exception) {
+                            // ignore store errors for now
+                        }
+                    }
+
                     _uiState.update {
                         it.copy(
                             isLoading = false,
                             loginSuccess = true,
-                            token = loginResponse.token,
+                            token = token,
                             error = null
                         )
                     }

@@ -2,15 +2,15 @@
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
-    
-# Redirect to HTTPS (uncomment in production)
-# RewriteCond %{HTTPS} off
-# RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
-    
+
+# Redirect to HTTPS (enabled for production)
+RewriteCond % { HTTPS } off
+RewriteRule ^(.*)$ https://% { HTTP_HOST }/$1 [R=301, L]
+
 # Handle Authorization Header
 RewriteCond % { HTTP:Authorization } .
 RewriteRule .* - [E=HTTP_AUTHORIZATION:% { HTTP:Authorization }]
-    
+
 # Redirect all requests to index.php
 RewriteCond % { REQUEST_FILENAME } !-f
 RewriteCond % { REQUEST_FILENAME } !-d
@@ -31,8 +31,8 @@ Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsaf
 # CORS: allow browser clients from the production domain to call the API
 Header always set Access-Control-Allow-Origin "https://zabala-gailetak.infinityfreeapp.com"
 Header always set Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS"
-Header always set Access-Control-Allow-Headers "Authorization,Content-Type,X-Requested-With"
-Header always set Access-Control-Allow-Credentials "true"
+Header always set Access-Control-Allow-Headers "Authorization, Content-Type, X-Requested-With"
+Header always set Access-Control-Allow-Credentials "false"
 </IfModule>
 
 # Disable directory browsing

@@ -50,8 +50,27 @@ class Request
                     $headers[$headerName] = $value;
                 }
             }
+
+            // Some SAPIs (or mod_rewrite rules) expose Authorization as REDIRECT_HTTP_AUTHORIZATION
+            if (isset($_SERVER['REDIRECT_HTTP_AUTHORIZATION']) && !isset($headers['Authorization'])) {
+                $headers['Authorization'] = $_SERVER['REDIRECT_HTTP_AUTHORIZATION'];
+            }
+
+            // Direct HTTP_AUTHORIZATION (some setups)
+            if (isset($_SERVER['HTTP_AUTHORIZATION']) && !isset($headers['Authorization'])) {
+                $headers['Authorization'] = $_SERVER['HTTP_AUTHORIZATION'];
+            }
         } else {
             $headers = getallheaders() ?: [];
+
+            // Ensure Authorization present when available via server vars
+            if (!isset($headers['Authorization'])) {
+                if (isset($_SERVER['REDIRECT_HTTP_AUTHORIZATION'])) {
+                    $headers['Authorization'] = $_SERVER['REDIRECT_HTTP_AUTHORIZATION'];
+                } elseif (isset($_SERVER['HTTP_AUTHORIZATION'])) {
+                    $headers['Authorization'] = $_SERVER['HTTP_AUTHORIZATION'];
+                }
+            }
         }
 
         return new self(

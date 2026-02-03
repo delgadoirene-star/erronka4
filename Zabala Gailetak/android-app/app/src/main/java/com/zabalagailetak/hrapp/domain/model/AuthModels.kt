@@ -15,6 +15,8 @@ data class LoginRequest(
  */
 data class LoginResponse(
     val token: String,
+    @SerializedName("refresh_token")
+    val refreshToken: String? = null,
     val message: String,
     @SerializedName("mfa_required")
     val mfaRequired: Boolean = false,
