@@ -18,7 +18,6 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.zabalagailetak.hrapp.presentation.ui.theme.*
 
@@ -437,39 +436,6 @@ fun SettingsOptionCard(
                     tint = MaterialTheme.colorScheme.onSurfaceVariant
                 )
             }
-        )
-    }
-}
-
-// ============================================
-// Previews
-// ============================================
-
-@Preview(
-    name = "Profile Screen - Light",
-    showBackground = true,
-    showSystemUi = true
-)
-@Composable
-private fun ProfileScreenPreview() {
-    ZabalaGaileTakHRTheme(darkTheme = false) {
-        ProfileScreen(
-            onLogout = {}
-        )
-    }
-}
-
-@Preview(
-    name = "Profile Screen - Dark",
-    showBackground = true,
-    showSystemUi = true,
-    uiMode = android.content.res.Configuration.UI_MODE_NIGHT_YES
-)
-@Composable
-private fun ProfileScreenDarkPreview() {
-    ZabalaGaileTakHRTheme(darkTheme = true) {
-        ProfileScreen(
-            onLogout = {}
         )
     }
 }

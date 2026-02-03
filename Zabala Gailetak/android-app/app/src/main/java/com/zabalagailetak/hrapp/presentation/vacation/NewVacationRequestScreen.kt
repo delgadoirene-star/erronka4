@@ -306,36 +306,6 @@ fun NewVacationRequestPreview() {
     }
 }
 
-    // Date Pickers
-    if (showStartDatePicker) {
-        DatePickerDialog(
-            onDismissRequest = { showStartDatePicker = false },
-            confirmButton = {
-                TextButton(onClick = { showStartDatePicker = false }) {
-                    Text("OK")
-                }
-            }
-        ) {
-            // Note: DatePicker implementation requires Material3 DatePicker
-            // This is a simplified version - actual implementation would use DatePicker composable
-            Text("Date picker implementation here")
-        }
-    }
-
-    if (showEndDatePicker) {
-        DatePickerDialog(
-            onDismissRequest = { showEndDatePicker = false },
-            confirmButton = {
-                TextButton(onClick = { showEndDatePicker = false }) {
-                    Text("OK")
-                }
-            }
-        ) {
-            Text("Date picker implementation here")
-        }
-    }
-}
-
 private fun calculateBusinessDays(start: LocalDate, end: LocalDate): Int {
     if (end < start) return 0
     
