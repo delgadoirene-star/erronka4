@@ -499,3 +499,15 @@ private fun getGreeting(): String {
         else -> "Gau on"
     }
 }
+
+@Preview(showBackground = true, name = "Light")
+@Composable
+fun DashboardScreenPreview() {
+    ZabalaGaileTakHRTheme {
+        DashboardScreen(
+            onNavigateToVacations = {},
+            onNavigateToPayslips = {},
+            onNavigateToDocuments = {}
+        )
+    }
+}

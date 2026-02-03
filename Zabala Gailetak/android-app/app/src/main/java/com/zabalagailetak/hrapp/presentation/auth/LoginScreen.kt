@@ -345,12 +345,34 @@ fun LoginContent(
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, name = "Light")
 @Composable
 fun LoginPreview() {
     ZabalaGaileTakHRTheme {
         LoginContent(
             uiState = AuthUiState(),
+            onLogin = { _, _ -> }
+        )
+    }
+}
+
+@Preview(showBackground = true, name = "With Loading")
+@Composable
+fun LoginPreviewLoading() {
+    ZabalaGaileTakHRTheme {
+        LoginContent(
+            uiState = AuthUiState(isLoading = true),
+            onLogin = { _, _ -> }
+        )
+    }
+}
+
+@Preview(showBackground = true, name = "With Error")
+@Composable
+fun LoginPreviewError() {
+    ZabalaGaileTakHRTheme {
+        LoginContent(
+            uiState = AuthUiState(error = "Kredenzialak okerrak dira"),
             onLogin = { _, _ -> }
         )
     }

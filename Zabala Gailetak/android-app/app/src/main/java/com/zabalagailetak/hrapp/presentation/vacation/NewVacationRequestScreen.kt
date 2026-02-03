@@ -326,3 +326,27 @@ private fun calculateBusinessDays(start: LocalDate, end: LocalDate): Int {
 private fun formatDateLong(date: LocalDate): String {
     return date.format(DateTimeFormatter.ofPattern("EEEE, d MMMM yyyy"))
 }
+
+@Preview(showBackground = true, name = "Light")
+@Composable
+fun NewVacationRequestScreenPreview() {
+    ZabalaGaileTakHRTheme {
+        NewVacationRequestContent(
+            uiState = VacationUiState(),
+            onCreateRequest = { _, _, _ -> },
+            onNavigateBack = {}
+        )
+    }
+}
+
+@Preview(showBackground = true, name = "With Error")
+@Composable
+fun NewVacationRequestScreenErrorPreview() {
+    ZabalaGaileTakHRTheme {
+        NewVacationRequestContent(
+            uiState = VacationUiState(error = "Ezin dituzu baino gehiago egunean ostera hartu"),
+            onCreateRequest = { _, _, _ -> },
+            onNavigateBack = {}
+        )
+    }
+}

@@ -373,3 +373,50 @@ private fun formatDate(dateString: String): String {
         dateString
     }
 }
+
+@Preview(showBackground = true, name = "Light")
+@Composable
+fun VacationDashboardScreenPreview() {
+    ZabalaGaileTakHRTheme {
+        // Mock state
+        val mockVacationBalance = VacationBalance(
+            totalDays = 30,
+            usedDays = 10,
+            remainingDays = 20,
+            pendingDays = 5
+        )
+        
+        val mockRequests = listOf(
+            VacationRequest(
+                id = 1,
+                employeeId = 101,
+                startDate = "2024-03-01",
+                endDate = "2024-03-10",
+                daysRequested = 10,
+                reason = "Udareetara joatea",
+                status = VacationStatus.APPROVED,
+                createdAt = "2024-02-01"
+            ),
+            VacationRequest(
+                id = 2,
+                employeeId = 101,
+                startDate = "2024-04-15",
+                endDate = "2024-04-20",
+                daysRequested = 5,
+                reason = "Ostera",
+                status = VacationStatus.PENDING,
+                createdAt = "2024-02-10"
+            )
+        )
+        
+        // Display simplified version
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(MaterialTheme.colorScheme.background)
+                .padding(16.dp)
+        ) {
+            Text("Ostalagunaren iruzkina: $mockVacationBalance")
+        }
+    }
+}

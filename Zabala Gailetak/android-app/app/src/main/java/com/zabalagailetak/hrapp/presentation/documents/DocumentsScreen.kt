@@ -258,3 +258,32 @@ private fun getDocumentColor(category: DocumentCategory): Color {
         DocumentCategory.OTHER -> Color(0xFF6B7280)
     }
 }
+
+@Preview(showBackground = true, name = "Light")
+@Composable
+fun DocumentsScreenPreview() {
+    ZabalaGaileTakHRTheme {
+        val mockDocuments = listOf(
+            Document(1, 101, DocumentCategory.CONTRACT, "Kontratua", "2024-01-15", "contract.pdf"),
+            Document(2, 101, DocumentCategory.PAYSLIP, "Nomin 2024-01", "2024-01-31", "payslip.pdf"),
+            Document(3, 101, DocumentCategory.CERTIFICATE, "Laneko sertifikatua", "2024-02-01", "certificate.pdf")
+        )
+        
+        Box(
+            modifier = Modifier
+                .background(MaterialTheme.colorScheme.background)
+                .fillMaxSize()
+        ) {
+            LazyColumn(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(16.dp),
+                verticalArrangement = Arrangement.spacedBy(12.dp)
+            ) {
+                items(mockDocuments) { document ->
+                    DocumentCard(document = document, onDownload = {})
+                }
+            }
+        }
+    }
+}

@@ -436,3 +436,26 @@ private fun formatCurrency(amount: Float): String {
     val format = NumberFormat.getCurrencyInstance(Locale("eu", "ES"))
     return format.format(amount)
 }
+
+@Preview(showBackground = true, name = "Default")
+@Composable
+fun PayslipsScreenPreview() {
+    ZabalaGaileTakHRTheme {
+        PayslipsScreen({})
+    }
+}
+
+@Preview(showBackground = true, name = "Empty State")
+@Composable
+fun PayslipsScreenEmptyPreview() {
+    ZabalaGaileTakHRTheme {
+        Box(
+            modifier = Modifier
+                .background(MaterialTheme.colorScheme.background)
+                .fillMaxSize(),
+            contentAlignment = Alignment.Center
+        ) {
+            Text("Ez dago nominik")
+        }
+    }
+}

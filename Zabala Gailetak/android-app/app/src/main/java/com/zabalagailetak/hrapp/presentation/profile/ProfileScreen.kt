@@ -21,6 +21,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.zabalagailetak.hrapp.presentation.ui.theme.*
 
+import androidx.compose.ui.tooling.preview.Preview
+import com.zabalagailetak.hrapp.presentation.ui.theme.ZabalaGaileTakHRTheme
+
 /**
  * Profile Screen - User profile and settings
  */
@@ -437,5 +440,13 @@ fun SettingsOptionCard(
                 )
             }
         )
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun ProfileScreenPreview() {
+    ZabalaGaileTakHRTheme {
+        ProfileScreen(onLogout = {})
     }
 }
